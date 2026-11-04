@@ -1,0 +1,24 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.kicad-backups/
+*-backups/
+*.kicad_prl
+*.lck
+*.log
+.env
+.env.*
+!.env.example
+
+# Managed independently using tools/fetch_upstream.py
+/hardware/reference/HSLink-hardware/
+/firmware/upstream/CherryDAP/
+/firmware/sdk/hpm_sdk/
+
+/hardware/production/
+/measurements/raw/

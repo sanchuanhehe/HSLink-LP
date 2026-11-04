@@ -1,0 +1,11 @@
+block,candidate,quantity,status,validation
+MCU,HPM5301,1,baseline,"复核封装、引脚与资源分配"
+Signal disconnect,ADG4612,5,candidate,"40 MHz、室温整板附加电流、5 V信号及掉电行为"
+Internal supply,TPS63811,1,candidate,"1.8～5.0 V/1 A、瞬态、纹波、热与保护"
+USB-C CC,TUSB320LAI,1,candidate,"电流声明识别、默认电流和限功率策略"
+Power switch,TLP3547 A connection,1,candidate,"压降、2 A温升、反向阻断及关闭漏电"
+GPIO expansion,TCA9539,1,candidate,"启动默认输入、输出使能互锁、DTR/RTS时序"
+Source selector,2 A DC break-before-make mechanical selector,1,unconfirmed,"用户尚未确认机械来源选择、复核绝缘和额定值"
+Level translation,Direction-controlled dual-supply translator,,not_selected,"覆盖1.8～5.0 V并通过40 MHz验收"
+VIO supply,USB-powered adjustable VIO supply,,not_selected,"不从目标Vref取电、留电压容差"
+Target-side ESD,Low-leakage low-capacitance protection,,not_selected,"最大漏电及电容纳入整板预算"

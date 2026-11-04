@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-04",
+  "dependencies": {
+    "hardware": {
+      "url": "https://github.com/cherry-embedded/HSLink-hardware.git",
+      "ref": "c315927df32c9de4cd2d5447a6e171fc19618024",
+      "revision_kind": "commit",
+      "path": "hardware/reference/HSLink-hardware",
+      "reference_subdirectory": "HSLinkPro_v1.2.0",
+      "recursive_submodules": false
+    },
+    "firmware": {
+      "url": "https://github.com/cherry-embedded/CherryDAP.git",
+      "ref": "67fb4b5412772a6a435e5f02f694f1615f0b5030",
+      "revision_kind": "commit",
+      "path": "firmware/upstream/CherryDAP",
+      "reference_subdirectory": "projects/HSLink-Pro",
+      "recursive_submodules": true
+    },
+    "sdk": {
+      "url": "https://github.com/hpmicro/hpm_sdk.git",
+      "ref": "v1.9.0",
+      "revision_kind": "tag",
+      "path": "firmware/sdk/hpm_sdk",
+      "recursive_submodules": true
+    }
+  },
+  "toolchain": {
+    "name": "xPack RISC-V GCC",
+    "version": "13.2.0-2",
+    "host": "darwin-arm64",
+    "prefix": "riscv-none-elf",
+    "status": "not_installed_by_project_initialization"
+  }
+}
