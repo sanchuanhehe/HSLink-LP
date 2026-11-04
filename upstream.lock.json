@@ -20,8 +20,9 @@
     },
     "sdk": {
       "url": "https://github.com/hpmicro/hpm_sdk.git",
-      "ref": "v1.9.0",
-      "revision_kind": "tag",
+      "ref": "d64c133d0626a6986125f33c2e3f9283c7088e88",
+      "revision_kind": "commit",
+      "source_tag": "v1.9.0",
       "path": "firmware/sdk/hpm_sdk",
       "recursive_submodules": true
     }

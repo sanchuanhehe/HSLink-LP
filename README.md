@@ -2,7 +2,7 @@
 
 基于 HSLink Pro 1.2.0 / HPM5301 的双串口调试与低功耗测试工程。
 
-**当前状态：工程初始化。** 已保存需求、架构、验收计划和软件目录；尚未完成改版原理图、PCB、固件或真实设备通信。器件清单是待验证候选，不是生产 BOM。
+**当前状态：已建立工程骨架，上游源码通过 Git 子模块管理。** 已保存需求、架构、验收计划和软件目录；尚未完成改版原理图、PCB、固件或真实设备通信。器件清单是待验证候选，不是生产 BOM。
 
 ## 已确定的目标
 
@@ -45,7 +45,14 @@ PYTHONPATH=host/src python3 -m hslink_lp info
 python3 tools/fetch_upstream.py --list
 ```
 
-按需下载固定版本源码：
+克隆本工程后，在工程根目录恢复全部上游源码及其嵌套子模块：
+
+```bash
+git submodule update --init --recursive --depth=1
+python3 tools/fetch_upstream.py --check
+```
+
+也可按需初始化单个上游工程：
 
 ```bash
 python3 tools/fetch_upstream.py hardware
@@ -53,7 +60,7 @@ python3 tools/fetch_upstream.py firmware
 python3 tools/fetch_upstream.py sdk
 ```
 
-SDK 和固件子模块下载可能较大。工具不会修改任何已有目标目录，也不会执行上游构建脚本。初始化阶段不自动安装 SDK、编译器或全局依赖。上游与器件资料见 [参考资料](docs/references.md)。
+SDK 和固件子模块下载可能较大。辅助工具会核对锁文件与 Git 子模块提交，拒绝覆盖已有修改或不同版本的工作区。它不执行上游构建脚本、不安装编译器或全局依赖。维护方法见 [上游工程](docs/upstream.md)，器件资料见 [参考资料](docs/references.md)。
 
 ## 当前边界
 

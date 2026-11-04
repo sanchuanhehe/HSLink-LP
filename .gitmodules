@@ -1,0 +1,9 @@
+[submodule "hardware/reference/HSLink-hardware"]
+	path = hardware/reference/HSLink-hardware
+	url = https://github.com/cherry-embedded/HSLink-hardware.git
+[submodule "firmware/upstream/CherryDAP"]
+	path = firmware/upstream/CherryDAP
+	url = https://github.com/cherry-embedded/CherryDAP.git
+[submodule "firmware/sdk/hpm_sdk"]
+	path = firmware/sdk/hpm_sdk
+	url = https://github.com/hpmicro/hpm_sdk.git

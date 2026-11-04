@@ -15,10 +15,5 @@ dist/
 .env.*
 !.env.example
 
-# Managed independently using tools/fetch_upstream.py
-/hardware/reference/HSLink-hardware/
-/firmware/upstream/CherryDAP/
-/firmware/sdk/hpm_sdk/
-
 /hardware/production/
 /measurements/raw/
