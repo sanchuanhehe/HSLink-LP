@@ -14,7 +14,8 @@
 
 | 器件 | 资料 | 设计前必须核查 |
 | --- | --- | --- |
-| ADG4612 | [数据手册](https://www.analog.com/media/en/technical-documentation/data-sheets/adg4612_4613.pdf) | 实际供电下的信号范围、全温漏电、导通电阻及寄生电容；40 MHz 须实测 |
+| FSA2466 | [数据手册](https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf) | 1.8～3.3 V 信号、3.6 V 供电、漏电预算、USB 掉电风险；40 MHz 须实测 |
+| ADG4612 | [数据手册](https://www.analog.com/media/en/technical-documentation/data-sheets/adg4612_4613.pdf) | 仅用于 Vref/采样/放电，单 12 V 供电时的信号范围、全温漏电及保护 |
 | TPS63811 | [TPS63810/TPS63811 数据手册](https://www.ti.com/lit/ds/symlink/tps63810.pdf) | 上电默认状态、输入能力、输出功率和热设计 |
 | TUSB320LAI | [产品与资料](https://www.ti.com/product/TUSB320LAI) | Type-C 可用电流识别与系统限流的配合 |
 | TLP3547 | [数据手册](https://toshiba-semicon-storage.com/info/docget.jsp?did=36853&prodName=TLP3547) | A 接法、导通压降、温度降额、关闭漏电与开关时间 |

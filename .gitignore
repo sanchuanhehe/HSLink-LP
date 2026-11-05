@@ -1,4 +1,10 @@
 .DS_Store
+.vscode/settings.json
+.idea/
+.tools/
+work/
+outputs/
+node_modules/
 __pycache__/
 *.py[cod]
 .venv/
@@ -6,14 +12,21 @@ build/
 dist/
 *.egg-info/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .kicad-backups/
 *-backups/
 *.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
 *.lck
+*~
 *.log
 .env
 .env.*
 !.env.example
 
 /hardware/production/
+/hardware/design/reports/
 /measurements/raw/

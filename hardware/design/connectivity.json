@@ -1,10 +1,10 @@
 [
   {
     "reference": "U1",
-    "symbol": "HSLinkLP:HPM5301IEG1",
+    "symbol": "UpstreamCache:HPM5301IEG1",
     "value": "HPM5301IEG1",
     "footprint": "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm",
-    "sheet": "01_mcu",
+    "sheet": "Power",
     "nets": {
       "1": "SIG_ARM_REQ",
       "2": "UART_A_TX",
@@ -60,10 +60,10 @@
   },
   {
     "reference": "Y1",
-    "symbol": "Device:Crystal_GND24",
+    "symbol": "UpstreamCache:Crystal_GND24",
     "value": "24MHz / CL待配",
     "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "XTALI",
       "2": "GND",
@@ -77,7 +77,7 @@
     "symbol": "Device:C",
     "value": "15p/C0G",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "XTALI",
       "2": "GND"
@@ -89,7 +89,7 @@
     "symbol": "Device:C",
     "value": "15p/C0G",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "XTALO",
       "2": "GND"
@@ -101,10 +101,10 @@
     "symbol": "Device:R",
     "value": "22R",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
-      "1": "SWD_MOSI",
-      "2": "SWD_MCU"
+      "1": "SWD_MCU",
+      "2": "SWD_MOSI"
     },
     "datasheet": ""
   },
@@ -113,10 +113,10 @@
     "symbol": "Device:R",
     "value": "22R",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
-      "1": "SWD_MISO",
-      "2": "SWD_MCU"
+      "1": "SWD_MCU",
+      "2": "SWD_MISO"
     },
     "datasheet": ""
   },
@@ -125,7 +125,7 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "BOOT0",
       "2": "GND"
@@ -137,7 +137,7 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "BOOT1",
       "2": "GND"
@@ -149,7 +149,7 @@
     "symbol": "Switch:SW_Push",
     "value": "BOOT1",
     "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "BOOT1",
       "2": "P3V3"
@@ -161,7 +161,7 @@
     "symbol": "Switch:SW_Push",
     "value": "RESET",
     "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "SYS_RESETn",
       "2": "GND"
@@ -173,7 +173,7 @@
     "symbol": "Connector_Generic:Conn_01x06",
     "value": "服务接口 / ISP",
     "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "P3V3",
       "2": "GND",
@@ -189,7 +189,7 @@
     "symbol": "Connector:TestPoint",
     "value": "SPARE_GPIO",
     "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
-    "sheet": "01_mcu",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "SPARE_GPIO"
     },
@@ -200,10 +200,10 @@
     "symbol": "Device:L",
     "value": "SRN4018-4R7M / 4.7uH",
     "footprint": "Inductor_SMD:L_Bourns-SRN4018",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
-      "1": "SOC_SW",
-      "2": "VDD_SOC"
+      "1": "VDD_SOC",
+      "2": "SOC_SW"
     },
     "datasheet": ""
   },
@@ -212,7 +212,7 @@
     "symbol": "Device:C",
     "value": "22u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -224,7 +224,7 @@
     "symbol": "Device:C",
     "value": "22u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -236,7 +236,7 @@
     "symbol": "Device:C",
     "value": "10u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -248,7 +248,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -260,7 +260,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -272,7 +272,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -284,7 +284,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -296,7 +296,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
@@ -308,7 +308,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -320,7 +320,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -332,7 +332,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -344,7 +344,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -356,7 +356,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -368,7 +368,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -380,7 +380,7 @@
     "symbol": "Device:C",
     "value": "4.7u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "OTPCAP",
       "2": "GND"
@@ -392,7 +392,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "OTPCAP",
       "2": "GND"
@@ -404,7 +404,7 @@
     "symbol": "Device:C",
     "value": "4.7u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "PMCCAP",
       "2": "GND"
@@ -416,7 +416,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "Power",
     "nets": {
       "1": "PMCCAP",
       "2": "GND"
@@ -428,7 +428,7 @@
     "symbol": "HSLinkLP:TLV803EA30DBZR",
     "value": "TLV803EA30DBZR",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "02_mcu_power",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "GND",
       "2": "SYS_RESETn",
@@ -441,10 +441,10 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "HSLink-LP",
     "nets": {
-      "1": "SYS_RESETn",
-      "2": "P3V3"
+      "1": "P3V3",
+      "2": "SYS_RESETn"
     },
     "datasheet": ""
   },
@@ -453,7 +453,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "SYS_RESETn",
       "2": "GND"
@@ -465,7 +465,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "SIG_ARM_REQ",
       "2": "GND"
@@ -477,7 +477,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "POWER_REQ",
       "2": "GND"
@@ -489,7 +489,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "02_mcu_power",
+    "sheet": "HSLink-LP",
     "nets": {
       "1": "VIO_EN",
       "2": "GND"
@@ -501,7 +501,7 @@
     "symbol": "Connector:USB_C_Receptacle_USB2.0_16P",
     "value": "USB4105-GF-A",
     "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "A1": "GND",
       "A4": "VBUS_RAW",
@@ -528,7 +528,7 @@
     "symbol": "HSLinkLP:TUSB320LAIRWBR",
     "value": "TUSB320LAIRWBR",
     "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "CC1",
       "2": "CC2",
@@ -550,7 +550,7 @@
     "symbol": "Device:R",
     "value": "900k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "VBUS_RAW",
       "2": "VBUS_DET"
@@ -562,7 +562,7 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "CC_INTn",
       "2": "P3V3"
@@ -574,7 +574,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -586,7 +586,7 @@
     "symbol": "HSLinkLP:TPS259531DSGR",
     "value": "TPS259531DSGR",
     "footprint": "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_DVDT",
       "2": "VBUS_RAW",
@@ -605,7 +605,7 @@
     "symbol": "Device:C",
     "value": "4.7n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_DVDT",
       "2": "GND"
@@ -617,7 +617,7 @@
     "symbol": "Device:C",
     "value": "1u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "VBUS_RAW",
       "2": "GND"
@@ -629,7 +629,7 @@
     "symbol": "Device:C",
     "value": "22u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -641,7 +641,7 @@
     "symbol": "Device:R",
     "value": "4.99k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_ILIM",
       "2": "GND"
@@ -653,7 +653,7 @@
     "symbol": "Device:R",
     "value": "2.21k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_ILIM",
       "2": "ILIM_T1_D"
@@ -665,7 +665,7 @@
     "symbol": "Transistor_FET:2N7002",
     "value": "2N7002",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_TIER1",
       "2": "GND",
@@ -678,7 +678,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_TIER1",
       "2": "GND"
@@ -690,7 +690,7 @@
     "symbol": "Device:R",
     "value": "1.50k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_ILIM",
       "2": "ILIM_T2_D"
@@ -702,7 +702,7 @@
     "symbol": "Transistor_FET:2N7002",
     "value": "2N7002",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_TIER2",
       "2": "GND",
@@ -715,7 +715,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_TIER2",
       "2": "GND"
@@ -727,7 +727,7 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "FAULTn",
       "2": "P3V3"
@@ -739,7 +739,7 @@
     "symbol": "HSLinkLP:TPD2E2U06DCKR",
     "value": "TPD2E2U06DCKR / VBUS",
     "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "VBUS_RAW",
       "2": null,
@@ -752,7 +752,7 @@
     "symbol": "HSLinkLP:TPD2E2U06DCKR",
     "value": "TPD2E2U06DCKR / USB HS",
     "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
-    "sheet": "03_usb",
+    "sheet": "Interface",
     "nets": {
       "1": "USB_DP",
       "2": "USB_DM",
@@ -765,7 +765,7 @@
     "symbol": "HSLinkLP:TCA9539PWR",
     "value": "TCA9539PWR / 0x74",
     "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": null,
       "2": "GND",
@@ -799,7 +799,7 @@
     "symbol": "HSLinkLP:TCA9543APWR",
     "value": "TCA9543APWR / 0x70",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "GND",
       "2": "GND",
@@ -823,7 +823,7 @@
     "symbol": "Device:R",
     "value": "4.7k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "I2C_SCL",
       "2": "P3V3"
@@ -835,7 +835,7 @@
     "symbol": "Device:R",
     "value": "4.7k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "I2C_SDA",
       "2": "P3V3"
@@ -847,7 +847,7 @@
     "symbol": "Device:R",
     "value": "4.7k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "INT_SCL",
       "2": "P3V3"
@@ -859,7 +859,7 @@
     "symbol": "Device:R",
     "value": "4.7k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "INT_SDA",
       "2": "P3V3"
@@ -871,7 +871,7 @@
     "symbol": "Device:R",
     "value": "4.7k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "VIO_SCL",
       "2": "P3V3"
@@ -883,7 +883,7 @@
     "symbol": "Device:R",
     "value": "4.7k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "VIO_SDA",
       "2": "P3V3"
@@ -895,7 +895,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "DEBUG_REQ",
       "2": "GND"
@@ -907,7 +907,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "UART_A_REQ",
       "2": "GND"
@@ -919,7 +919,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "UART_B_REQ",
       "2": "GND"
@@ -931,7 +931,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "RESET_REQ",
       "2": "GND"
@@ -943,7 +943,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "SENSE_REQ",
       "2": "GND"
@@ -955,7 +955,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "DISCH_REQ",
       "2": "GND"
@@ -967,7 +967,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "INT_EN",
       "2": "GND"
@@ -979,7 +979,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -991,7 +991,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "04_control",
+    "sheet": "Control",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1003,7 +1003,7 @@
     "symbol": "HSLinkLP:SN74LVC08APWR",
     "value": "SN74LVC08APWR",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "SIG_ARM_REQ",
       "2": "SYS_RESETn",
@@ -1027,7 +1027,7 @@
     "symbol": "HSLinkLP:SN74LVC08APWR",
     "value": "SN74LVC08APWR",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "UART_B_REQ",
       "2": "SIG_ARM",
@@ -1051,7 +1051,7 @@
     "symbol": "HSLinkLP:SN74LVC08APWR",
     "value": "SN74LVC08APWR",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "DISCH_ARM",
       "2": "POWER_OFF",
@@ -1075,7 +1075,7 @@
     "symbol": "HSLinkLP:SN74LVC1G04DBVR",
     "value": "SN74LVC1G04DBVR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-5",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": null,
       "2": "POWER_SAFE",
@@ -1090,7 +1090,7 @@
     "symbol": "HSLinkLP:SN74LVC1G04DBVR",
     "value": "SN74LVC1G04DBVR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-5",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": null,
       "2": "SIG_ARM",
@@ -1105,7 +1105,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1117,7 +1117,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1129,7 +1129,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1141,7 +1141,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1153,7 +1153,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1165,7 +1165,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "SIG_ARM",
       "2": "GND"
@@ -1177,7 +1177,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "POWER_SAFE",
       "2": "GND"
@@ -1189,7 +1189,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "DEBUG_ON",
       "2": "GND"
@@ -1201,7 +1201,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "UART_A_ON",
       "2": "GND"
@@ -1213,7 +1213,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "UART_B_ON",
       "2": "GND"
@@ -1225,7 +1225,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "RESET_ON",
       "2": "GND"
@@ -1237,7 +1237,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "SENSE_ON",
       "2": "GND"
@@ -1249,7 +1249,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "05_safety",
+    "sheet": "Safety",
     "nets": {
       "1": "DISCH_ON",
       "2": "GND"
@@ -1261,7 +1261,7 @@
     "symbol": "HSLinkLP:TLV62568DBVR",
     "value": "TLV62568DBVR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-5",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "USB_5V",
       "2": "GND",
@@ -1276,7 +1276,7 @@
     "symbol": "Device:L",
     "value": "SRN4018-2R2M / 2.2uH",
     "footprint": "Inductor_SMD:L_Bourns-SRN4018",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "BUCK3_SW",
       "2": "P3V3"
@@ -1288,7 +1288,7 @@
     "symbol": "Device:R",
     "value": "450k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "BUCK3_FB"
@@ -1300,7 +1300,7 @@
     "symbol": "Device:R",
     "value": "100k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "BUCK3_FB",
       "2": "GND"
@@ -1312,7 +1312,7 @@
     "symbol": "Device:C",
     "value": "10u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1324,7 +1324,7 @@
     "symbol": "Device:C",
     "value": "22u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1336,7 +1336,7 @@
     "symbol": "HSLinkLP:TLV75536PDBVR",
     "value": "TLV75536PDBVR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-5",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "USB_5V",
       "2": "GND",
@@ -1351,7 +1351,7 @@
     "symbol": "Device:C",
     "value": "1u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1363,7 +1363,7 @@
     "symbol": "Device:C",
     "value": "10u/6.3V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
@@ -1375,7 +1375,7 @@
     "symbol": "HSLinkLP:TPS61040DBVR",
     "value": "TPS61040DBVR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-5",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "BOOST_SW",
       "2": "GND",
@@ -1390,7 +1390,7 @@
     "symbol": "Device:L",
     "value": "SRN4018-100M / 10uH",
     "footprint": "Inductor_SMD:L_Bourns-SRN4018",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "USB_5V",
       "2": "BOOST_SW"
@@ -1402,7 +1402,7 @@
     "symbol": "Device:D_Schottky",
     "value": "BAT54H / 30V",
     "footprint": "Diode_SMD:D_SOD-123",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "P12V_SW",
       "2": "BOOST_SW"
@@ -1414,7 +1414,7 @@
     "symbol": "Device:R",
     "value": "1.74M/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "P12V_SW",
       "2": "BOOST_FB"
@@ -1426,7 +1426,7 @@
     "symbol": "Device:R",
     "value": "200k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "BOOST_FB",
       "2": "GND"
@@ -1438,7 +1438,7 @@
     "symbol": "Device:C",
     "value": "4.7u/25V",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "P12V_SW",
       "2": "GND"
@@ -1450,7 +1450,7 @@
     "symbol": "Device:C",
     "value": "4.7u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "06_aux_power",
+    "sheet": "Power",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1462,7 +1462,7 @@
     "symbol": "HSLinkLP:TPS63811YFFR",
     "value": "TPS63811YFFR",
     "footprint": "",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "A1": "INT_EN",
       "A2": "USB_5V",
@@ -1487,7 +1487,7 @@
     "symbol": "Device:L",
     "value": "XFL4015-471MEC / 470nH",
     "footprint": "",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_LX1",
       "2": "INT_LX2"
@@ -1499,7 +1499,7 @@
     "symbol": "Device:C",
     "value": "10u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1511,7 +1511,7 @@
     "symbol": "Device:C",
     "value": "47u/10V",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_RAW",
       "2": "GND"
@@ -1523,7 +1523,7 @@
     "symbol": "Device:C",
     "value": "47u/10V",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_RAW",
       "2": "GND"
@@ -1535,7 +1535,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1547,7 +1547,7 @@
     "symbol": "HSLinkLP:TPS63811YFFR",
     "value": "TPS63811YFFR",
     "footprint": "",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "A1": "VIO_EN",
       "A2": "USB_5V",
@@ -1572,7 +1572,7 @@
     "symbol": "Device:L",
     "value": "XFL4015-471MEC / 470nH",
     "footprint": "",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "VIO_LX1",
       "2": "VIO_LX2"
@@ -1584,7 +1584,7 @@
     "symbol": "Device:C",
     "value": "10u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1596,7 +1596,7 @@
     "symbol": "Device:C",
     "value": "47u/10V",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
@@ -1608,7 +1608,7 @@
     "symbol": "Device:C",
     "value": "47u/10V",
     "footprint": "Capacitor_SMD:C_0805_2012Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
@@ -1620,7 +1620,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "USB_5V",
       "2": "GND"
@@ -1632,7 +1632,7 @@
     "symbol": "HSLinkLP:TPS22950DDCR",
     "value": "TPS22950DDCR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-6",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_EN",
       "2": "INT_RAW",
@@ -1648,7 +1648,7 @@
     "symbol": "Device:R",
     "value": "1.15k/1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_ILIM",
       "2": "GND"
@@ -1660,7 +1660,7 @@
     "symbol": "Device:C",
     "value": "1u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "07_adjustable",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_PROTECTED",
       "2": "GND"
@@ -1672,7 +1672,7 @@
     "symbol": "Connector_Generic:Conn_01x02",
     "value": "外部仪器 1.8–5.5V / 2A",
     "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "EXT_INPUT",
       "2": "GND"
@@ -1684,7 +1684,7 @@
     "symbol": "HSLinkLP:M2022SS1W03",
     "value": "M2022SS1W03 / BBM待核",
     "footprint": "",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "INT_PROTECTED",
       "2": "SOURCE_POWER",
@@ -1700,7 +1700,7 @@
     "symbol": "HSLinkLP:TLP3547_TP1_F",
     "value": "TLP3547(TP1,F",
     "footprint": "",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": null,
       "2": "TLP_LED_A",
@@ -1718,7 +1718,7 @@
     "symbol": "Device:R",
     "value": "330R",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "VBUS_RAW",
       "2": "TLP_LED_A"
@@ -1730,7 +1730,7 @@
     "symbol": "Transistor_FET:2N7002",
     "value": "2N7002",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "POWER_SAFE",
       "2": "GND",
@@ -1743,7 +1743,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "POWER_SAFE",
       "2": "GND"
@@ -1755,7 +1755,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "SOURCE_EXT",
       "2": "GND"
@@ -1767,7 +1767,7 @@
     "symbol": "Connector_Generic:Conn_01x02",
     "value": "目标供电 / 2A",
     "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-    "sheet": "08_target_power",
+    "sheet": "TargetPower",
     "nets": {
       "1": "DUT_OUT",
       "2": "GND"
@@ -1779,7 +1779,7 @@
     "symbol": "HSLinkLP:SN74LXC8T245QPWRQ1",
     "value": "SN74LXC8T245QPWRQ1",
     "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "P3V3",
@@ -1813,7 +1813,7 @@
     "symbol": "HSLinkLP:SN74LXC2T45DCUR",
     "value": "SN74LXC2T45DCUR",
     "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "SWD_MCU",
@@ -1831,7 +1831,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "SWD_UNUSED_A",
       "2": "GND"
@@ -1843,7 +1843,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "SWD_UNUSED_B",
       "2": "GND"
@@ -1855,7 +1855,7 @@
     "symbol": "HSLinkLP:SN74LXC2T45DCUR",
     "value": "SN74LXC2T45DCUR",
     "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "UART_A_RX",
@@ -1873,7 +1873,7 @@
     "symbol": "HSLinkLP:SN74LXC2T45DCUR",
     "value": "SN74LXC2T45DCUR",
     "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "TDO_MCU",
@@ -1891,7 +1891,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "TDO_UNUSED_B",
       "2": "GND"
@@ -1903,7 +1903,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1915,7 +1915,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
@@ -1927,7 +1927,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1939,7 +1939,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
@@ -1951,7 +1951,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1963,7 +1963,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
@@ -1975,7 +1975,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "P3V3",
       "2": "GND"
@@ -1987,7 +1987,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
@@ -1999,7 +1999,7 @@
     "symbol": "Transistor_FET:2N7002",
     "value": "2N7002",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "NRST_DRIVE",
       "2": "GND",
@@ -2012,7 +2012,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "NRST_DRIVE",
       "2": "GND"
@@ -2024,7 +2024,7 @@
     "symbol": "Transistor_FET:2N7002",
     "value": "2N7002",
     "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "NTRST_DRIVE",
       "2": "GND",
@@ -2037,7 +2037,7 @@
     "symbol": "Device:R",
     "value": "100k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "NTRST_DRIVE",
       "2": "GND"
@@ -2049,7 +2049,7 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "F_NRST",
       "2": "VIO_LOCAL"
@@ -2061,7 +2061,7 @@
     "symbol": "Device:R",
     "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "09_translation",
+    "sheet": "LogicTranslation",
     "nets": {
       "1": "F_NTRST",
       "2": "VIO_LOCAL"
@@ -2073,7 +2073,7 @@
     "symbol": "HSLinkLP:FSA2466UMX",
     "value": "FSA2466UMX",
     "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "6": "GND",
       "14": "P3V6_SW",
@@ -2099,7 +2099,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
@@ -2111,7 +2111,7 @@
     "symbol": "HSLinkLP:FSA2466UMX",
     "value": "FSA2466UMX",
     "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "6": "GND",
       "14": "P3V6_SW",
@@ -2137,7 +2137,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
@@ -2149,7 +2149,7 @@
     "symbol": "HSLinkLP:FSA2466UMX",
     "value": "FSA2466UMX",
     "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "6": "GND",
       "14": "P3V6_SW",
@@ -2175,7 +2175,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
@@ -2187,7 +2187,7 @@
     "symbol": "HSLinkLP:FSA2466UMX",
     "value": "FSA2466UMX",
     "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "6": "GND",
       "14": "P3V6_SW",
@@ -2213,7 +2213,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
@@ -2225,7 +2225,7 @@
     "symbol": "Connector_Generic:Conn_02x05_Odd_Even",
     "value": "ARM 10-pin SWD",
     "footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "DUT_VREF",
       "2": "DUT_SWDIO",
@@ -2245,7 +2245,7 @@
     "symbol": "Connector_Generic:Conn_01x02",
     "value": "JTAG nTRST",
     "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "DUT_NTRST",
       "2": "GND"
@@ -2257,7 +2257,7 @@
     "symbol": "Connector_Generic:Conn_01x05",
     "value": "UART_A / TX RX DTR RTS GND",
     "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "DUT_UART_A_TX",
       "2": "DUT_UART_A_RX",
@@ -2272,7 +2272,7 @@
     "symbol": "Connector_Generic:Conn_01x05",
     "value": "UART_B / TX RX DTR RTS GND",
     "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
-    "sheet": "10_disconnect",
+    "sheet": "Disconnect",
     "nets": {
       "1": "DUT_UART_B_TX",
       "2": "DUT_UART_B_RX",
@@ -2287,7 +2287,7 @@
     "symbol": "HSLinkLP:ADG4612BRUZ",
     "value": "ADG4612BRUZ / 高压支路",
     "footprint": "Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "SENSE_ON",
       "2": "VREF_SENSE_IN",
@@ -2313,7 +2313,7 @@
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "P12V_SW",
       "2": "GND"
@@ -2325,7 +2325,7 @@
     "symbol": "Device:R",
     "value": "100k/0.1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "VREF_SENSE_IN",
       "2": "ADC_VREF"
@@ -2337,7 +2337,7 @@
     "symbol": "Device:R",
     "value": "100k/0.1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "ADC_VREF",
       "2": "GND"
@@ -2349,7 +2349,7 @@
     "symbol": "Device:C",
     "value": "1n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "ADC_VREF",
       "2": "GND"
@@ -2361,7 +2361,7 @@
     "symbol": "Device:R",
     "value": "100k/0.1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "VOUT_SENSE_IN",
       "2": "ADC_VOUT"
@@ -2373,7 +2373,7 @@
     "symbol": "Device:R",
     "value": "100k/0.1%",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "ADC_VOUT",
       "2": "GND"
@@ -2385,7 +2385,7 @@
     "symbol": "Device:C",
     "value": "1n",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "ADC_VOUT",
       "2": "GND"
@@ -2397,65 +2397,10 @@
     "symbol": "Device:R",
     "value": "1k/0.125W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "11_sense",
+    "sheet": "Sense",
     "nets": {
       "1": "DISCH_RES",
       "2": "GND"
-    },
-    "datasheet": ""
-  },
-  {
-    "reference": "#FLG1",
-    "symbol": "power:PWR_FLAG",
-    "value": "VBUS_RAW",
-    "footprint": "",
-    "sheet": "12_power_flags",
-    "nets": {
-      "1": "VBUS_RAW"
-    },
-    "datasheet": ""
-  },
-  {
-    "reference": "#FLG2",
-    "symbol": "power:PWR_FLAG",
-    "value": "GND",
-    "footprint": "",
-    "sheet": "12_power_flags",
-    "nets": {
-      "1": "GND"
-    },
-    "datasheet": ""
-  },
-  {
-    "reference": "#FLG3",
-    "symbol": "power:PWR_FLAG",
-    "value": "P3V3",
-    "footprint": "",
-    "sheet": "12_power_flags",
-    "nets": {
-      "1": "P3V3"
-    },
-    "datasheet": ""
-  },
-  {
-    "reference": "#FLG4",
-    "symbol": "power:PWR_FLAG",
-    "value": "VDD_SOC",
-    "footprint": "",
-    "sheet": "12_power_flags",
-    "nets": {
-      "1": "VDD_SOC"
-    },
-    "datasheet": ""
-  },
-  {
-    "reference": "#FLG5",
-    "symbol": "power:PWR_FLAG",
-    "value": "P12V_SW",
-    "footprint": "",
-    "sheet": "12_power_flags",
-    "nets": {
-      "1": "P12V_SW"
     },
     "datasheet": ""
   }

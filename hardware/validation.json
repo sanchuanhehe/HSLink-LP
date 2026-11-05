@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "scope": "原理图文件检查；不是 PCB、封装或硬件性能验收",
+  "checked_at": "2026-11-05T23:39:44+08:00",
+  "kicad_version": "10.0.7",
+  "schematic": {
+    "version": "0.2-draft-upstream1",
+    "path": "design/HSLink-LP.kicad_pro",
+    "status": "上游原图基础上的 MCP 增改与文字排版审阅稿",
+    "hardware_validated": false,
+    "validation": "KiCad ERC、实际网表与连接基线、上游保留位置及源文件哈希均已核对；图面沿用整理前相同源文件的检查结果"
+  },
+  "pcb": {
+    "version": null,
+    "status": "未设计，无 DRC 或生产文件"
+  },
+  "firmware": {
+    "version": null,
+    "status": "仅固定上游参考；新板型、双 CDC 与控制协议未实现"
+  },
+  "host": {
+    "version": "0.1.0.dev0",
+    "status": "工程信息命令骨架，无真实 HID 传输或设备控制"
+  },
+  "document_checks": "PASS",
+  "hardware_readiness": "NOT_READY",
+  "erc": {
+    "errors": 0,
+    "warnings": 0,
+    "sheet_count": 9,
+    "ignored_checks": [
+      "single_global_label",
+      "four_way_junction",
+      "simulation_model_issue",
+      "footprint_filter"
+    ]
+  },
+  "connectivity": {
+    "status": "PASS",
+    "physical_components": 172,
+    "expected_nets": 129,
+    "connected_pins": 643,
+    "no_connect_shorts": []
+  },
+  "upstream_layout": {
+    "status": "PASS",
+    "source_commit": "c315927df32c9de4cd2d5447a6e171fc19618024",
+    "retained_symbol_units": 34,
+    "physical_references": 33,
+    "scope": "真实上游文件与最终文件中的符号中心坐标、旋转、单元；不比较显示字段，不证明电路性能",
+    "differences": []
+  },
+  "visual_review": {
+    "checked_at": "2026-11-05T22:41:59+08:00",
+    "pages": 9,
+    "method": "实际 PDF 逐页渲染检查；另检查默认 KiCad 字体与 Arial Unicode MS 导出文本包围盒",
+    "text_overlap_candidates": {
+      "native": 0,
+      "arial": 0
+    },
+    "scope": "已检查位号、数值、型号、引脚名、标签、说明、页框和标题栏；文本包围盒仅辅助，不证明硬件性能",
+    "source_files_unchanged_after_relocation": true
+  },
+  "missing_footprints": [
+    "U501",
+    "L4",
+    "U502",
+    "L5",
+    "SW601",
+    "U601"
+  ],
+  "hardware_tests_executed": [],
+  "limitations": [
+    "尚无 PCB、DRC 或生产文件",
+    "物理引脚与封装完整签核待完成",
+    "100 nA 最坏情况漏电预算未闭合",
+    "40 MHz、输出能力、USB 掉电隔离均未验证",
+    "固件新板型和真实 HID 未实现"
+  ],
+  "sha256": {
+    "design/Disconnect.kicad_sch": "97daec15db374939b4d1b3a3fe22fe62f80381086c53fdf3ae9d49c77210f08b",
+    "design/LogicTranslation.kicad_sch": "8345528a91556e38d9e2dd84806b7b509f4751d2a8914e2b668915def36a9f21",
+    "design/Power.kicad_sch": "880af0182a5300904912464d58d744bd37218fb6238455f378237bab140e76dc",
+    "design/HSLink-LP.kicad_sch": "bbd20b38d0189357f37e5a6363ec2b25dd7b65d574275441f8797aaa10a326a5",
+    "design/Safety.kicad_sch": "e7c800dd992aa0a137393b7a0dc1950347978245cfd6716a19868e398e60d5bc",
+    "design/Control.kicad_sch": "3976a96a09aa41173455d59c2a8f6f4b9809a4ff5090be63f17d3c317a12b9d2",
+    "design/Interface.kicad_sch": "8ae4e483972be14b1f4fddbdcc2ae3c895ea05807ae7897ec3557e73852f6ac2",
+    "design/TargetPower.kicad_sch": "e96182a42de462d719a1b6d8b34407dc5dc9bc63c36301d2a0013db958cab36b",
+    "design/Sense.kicad_sch": "3417e2670e5a3b05cd5d0405d123f2bd17aefada78e21f2a86c68ee1076e2ff1",
+    "design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
+    "design/connectivity.json": "c6f1a3380209e49b3363234359c00b75dfe68c797b4aaf23e9ecf85f8e193d5f",
+    "design/upstream-layout.json": "e6962e3a65707d2e4724f4d9d631ae3eb26cebda244bd3fb494957db5cd38669",
+    "design/sym-lib-table": "e0e88c3fed6aaa15df3edefc646d219f6da073e28f7add2ae51a7c34c56f2d99",
+    "design/libraries/UpstreamCache.kicad_sym": "d6ed4065fd123f2e33a4f17fb8f2de914e8222b302d1418d90f167fba3bc4a38",
+    "design/libraries/HSLinkLP.kicad_sym": "5694c1a675ebe9f7a5c20a6c4a57f182e6f87f1b6d84467485d99fecc1123f90"
+  },
+  "relocation": {
+    "source_files_unchanged": true,
+    "checked_source_files": 15,
+    "hierarchy_files_resolved": true
+  },
+  "generated_reports": {
+    "design/reports/HSLink-LP.pdf": "3eef5e7aa97fbe14fc78e1e900341853764f987764a234487a72ed6771345af7",
+    "design/reports/erc.json": "f87f745465a509dfe88dd7c7fca6e0fa9d22c07d75fc98f8af25e3c44dc36eae",
+    "design/reports/netlist.xml": "64079200b60cc6b5bd9b6b57ac9bd2439fe5c8da427601b951da99527e88ba03"
+  }
+}

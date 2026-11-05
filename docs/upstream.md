@@ -26,20 +26,20 @@ CherryDAP 包含 13 个递归子模块，包括 CherryUSB、CherryRB 和 HSLink-
 
 ```bash
 git submodule update --init --recursive --depth=1
-python3 tools/fetch_upstream.py --check
+uv run --python 3.12 tools/fetch_upstream.py --check
 ```
 
 辅助工具支持按需初始化或补齐缺失的嵌套依赖：
 
 ```bash
-python3 tools/fetch_upstream.py hardware
-python3 tools/fetch_upstream.py firmware
-python3 tools/fetch_upstream.py sdk
+uv run --python 3.12 tools/fetch_upstream.py hardware
+uv run --python 3.12 tools/fetch_upstream.py firmware
+uv run --python 3.12 tools/fetch_upstream.py sdk
 ```
 
 初始化前，工具检查 `.gitmodules`、Git 索引中的子模块提交与锁文件；已有上游工作区如有本地修改或处于不同版本，会报错并保留现场。下载失败后不要直接删除目录，先查看错误与 `git submodule status --recursive`，确认现场后再恢复。
 
-只读检查不会下载或改变版本。命令不带依赖名时检查全部依赖，也可执行 `python3 tools/fetch_upstream.py firmware --check` 检查单个依赖。
+只读检查不会下载或改变版本。命令不带依赖名时检查全部依赖，也可执行 `uv run --python 3.12 tools/fetch_upstream.py firmware --check` 检查单个依赖。
 
 本次下载使用浅克隆，只包含固定提交所需的历史。后续需要查阅更早提交时，在对应子模块内按需执行 `git fetch --unshallow`。
 

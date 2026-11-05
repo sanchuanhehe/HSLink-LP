@@ -41,4 +41,6 @@
     (type "KiCad") 
     (uri "${KICAD10_SYMBOL_DIR}/power.kicad_sym") 
     (options "") 
-    (descr "")))
+    (descr ""))
+ (lib (name "UpstreamCache") (type "KiCad") (uri "${KIPRJMOD}/libraries/UpstreamCache.kicad_sym") (options "") (descr "Preserved symbols from HSLink Pro 1.2.0"))
+)

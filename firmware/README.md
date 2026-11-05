@@ -5,11 +5,11 @@
 工具链基线：xPack RISC-V GCC 13.2.0-2，darwin-arm64，riscv-none-elf。
 
 ```bash
-python3 tools/fetch_upstream.py firmware
-python3 tools/fetch_upstream.py sdk
+uv run --python 3.12 tools/fetch_upstream.py firmware
+uv run --python 3.12 tools/fetch_upstream.py sdk
 ```
 
-在工程根目录运行。CherryDAP 与 HPM SDK 均通过 Git 子模块管理，嵌套依赖按各自仓库记录的提交恢复。执行 `python3 tools/fetch_upstream.py --check` 可核对全部版本与工作区。维护方法见 [上游工程](../docs/upstream.md)。
+在工程根目录运行。CherryDAP 与 HPM SDK 均通过 Git 子模块管理，嵌套依赖按各自仓库记录的提交恢复。执行 `uv run --python 3.12 tools/fetch_upstream.py --check` 可核对全部版本与工作区。维护方法见 [上游工程](../docs/upstream.md)。
 
 工具链需单独安装，当前没有安装或编译。
 

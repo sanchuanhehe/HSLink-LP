@@ -1,0 +1,388 @@
+{
+  "source_commit": "c315927df32c9de4cd2d5447a6e171fc19618024",
+  "retained_placements": [
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "C21",
+      "reference": "C1",
+      "unit": 1,
+      "position": [
+        22.86,
+        139.7
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R23",
+      "reference": "R1",
+      "unit": 1,
+      "position": [
+        27.94,
+        64.77
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R18",
+      "reference": "R4",
+      "unit": 1,
+      "position": [
+        80.01,
+        129.54
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R22",
+      "reference": "R2",
+      "unit": 1,
+      "position": [
+        27.94,
+        62.23
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R2",
+      "reference": "R6",
+      "unit": 1,
+      "position": [
+        80.01,
+        134.62
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "C23",
+      "reference": "C21",
+      "unit": 1,
+      "position": [
+        105.41,
+        144.78
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R17",
+      "reference": "R3",
+      "unit": 1,
+      "position": [
+        80.01,
+        127.0
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "C22",
+      "reference": "C2",
+      "unit": 1,
+      "position": [
+        38.1,
+        139.7
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "Y1",
+      "reference": "Y1",
+      "unit": 1,
+      "position": [
+        30.48,
+        133.35
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R21",
+      "reference": "R7",
+      "unit": 1,
+      "position": [
+        80.01,
+        132.08
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "U1",
+      "reference": "U1",
+      "unit": 2,
+      "position": [
+        92.71,
+        67.31
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "SW1",
+      "reference": "SW1",
+      "unit": 1,
+      "position": [
+        73.66,
+        152.4
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "HSLinkPro",
+      "source_reference": "R1",
+      "reference": "R5",
+      "unit": 1,
+      "position": [
+        105.41,
+        134.62
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C14",
+      "reference": "C15",
+      "unit": 1,
+      "position": [
+        33.02,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C9",
+      "reference": "C5",
+      "unit": 1,
+      "position": [
+        27.94,
+        50.8
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C13",
+      "reference": "C14",
+      "unit": 1,
+      "position": [
+        27.94,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "U1",
+      "reference": "U1",
+      "unit": 1,
+      "position": [
+        68.58,
+        43.18
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C20",
+      "reference": "C10",
+      "unit": 1,
+      "position": [
+        69.85,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C3",
+      "reference": "C18",
+      "unit": 1,
+      "position": [
+        101.6,
+        30.48
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C6",
+      "reference": "C17",
+      "unit": 1,
+      "position": [
+        101.6,
+        35.56
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "L1",
+      "reference": "L1",
+      "unit": 1,
+      "position": [
+        39.37,
+        45.72
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C16",
+      "reference": "C6",
+      "unit": 1,
+      "position": [
+        49.53,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C1",
+      "reference": "C20",
+      "unit": 1,
+      "position": [
+        101.6,
+        20.32
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C4",
+      "reference": "C11",
+      "unit": 1,
+      "position": [
+        33.02,
+        33.02
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C18",
+      "reference": "C8",
+      "unit": 1,
+      "position": [
+        59.69,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C7",
+      "reference": "C3",
+      "unit": 1,
+      "position": [
+        17.78,
+        50.8
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C17",
+      "reference": "C7",
+      "unit": 1,
+      "position": [
+        54.61,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C19",
+      "reference": "C9",
+      "unit": 1,
+      "position": [
+        64.77,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C5",
+      "reference": "C12",
+      "unit": 1,
+      "position": [
+        38.1,
+        33.02
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C2",
+      "reference": "C19",
+      "unit": 1,
+      "position": [
+        101.6,
+        25.4
+      ],
+      "rotation": 90
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C8",
+      "reference": "C4",
+      "unit": 1,
+      "position": [
+        22.86,
+        50.8
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C15",
+      "reference": "C16",
+      "unit": 1,
+      "position": [
+        38.1,
+        95.25
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Power",
+      "source_reference": "C11",
+      "reference": "C13",
+      "unit": 1,
+      "position": [
+        35.56,
+        59.69
+      ],
+      "rotation": 0
+    },
+    {
+      "source_sheet": "Interface",
+      "source_reference": "J2",
+      "reference": "J101",
+      "unit": 1,
+      "position": [
+        27.94,
+        38.1
+      ],
+      "rotation": 0
+    }
+  ],
+  "passive_pin_permutations": [
+    "R1",
+    "R2",
+    "L1",
+    "R5"
+  ],
+  "connector_pin_alias": {},
+  "note": "复制上游原图后按 UUID 裁除被替换电路；保留记录中的器件坐标、旋转及未裁除的原始连线。",
+  "connector_note": "J101 保留上游 J2 的中心坐标；符号替换为当前 USB4105-GF-A 所用 16P 符号，维持 Rev0.1 的 SH 引脚与 GCT 封装候选。"
+}

@@ -1,0 +1,30 @@
+{
+  "currency": "CNY",
+  "prototype_quantity": 10,
+  "bom_per_board": 427.23,
+  "bom_batch": 4272.3,
+  "component_contingency_10pct": 427.23,
+  "pcb_batch_range": [
+    200,
+    400
+  ],
+  "assembly_batch_range": [
+    450,
+    1000
+  ],
+  "stencil_shipping_misc_batch_range": [
+    100,
+    300
+  ],
+  "total_batch_budget_range": [
+    4980,
+    7104
+  ],
+  "assumptions": [
+    "4 层约 90×60 mm，尺寸未布局确认",
+    "包含 10% 物料备损；采购波动区间 -10%/+15%",
+    "不含外部测量仪器、外壳、线缆、研发人工及返版",
+    "PCB/贴装/钢网与运输为预算，不是厂商报价"
+  ],
+  "status": "工程预算，未下单"
+}

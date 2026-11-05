@@ -1,10 +1,25 @@
 # 验证计划
 
-所有项目当前均为未执行，不得把此清单当作通过报告。
+下表为硬件验收项目，全部尚未执行。原理图文件检查摘要及源文件哈希记录在 [hardware/validation.json](../hardware/validation.json)；ERC 和网表比较不能代替硬件验收。版本使用 Git 提交定位，不复制工程目录。
+
+## 原理图文件检查
+
+在工程根目录使用 KiCad 10 的命令行重新导出：
+
+```bash
+mkdir -p hardware/design/reports
+kicad-cli sch erc --format json --exit-code-violations -o hardware/design/reports/erc.json hardware/design/HSLink-LP.kicad_sch
+kicad-cli sch export netlist --format kicadxml -o hardware/design/reports/netlist.xml hardware/design/HSLink-LP.kicad_sch
+kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/design/HSLink-LP.kicad_sch
+```
+
+`reports/` 为可再生成输出，Git 忽略。每次电路修改后，核对实际 XML 网表与 `hardware/design/connectivity.json` 中的器件及引脚网络集合，同时检查未连接引脚、缺失封装，并逐页查看实际图面。验证通过后更新摘要和文件哈希；临时检查脚本不保留在工作区。`connectivity.json` 是设计基线，不能代替实际导出网表。
+
+## 硬件验收
 
 | 项目 | 方法与通过条件 |
 | --- | --- |
-| 40 MHz | 在支持该频率的目标或测试夹具上检查实际时钟、双向时序、波形及错误；记录 1.8/3.3/5.0 V、线长、负载和探头 |
+| 40 MHz | 在支持该频率的目标或测试夹具上检查实际时钟、双向时序、波形及错误；记录 1.8/3.3 V 信号电平、线长、负载和探头 |
 | 双串口 | 两路 3 Mbaud / 8N1 同时收发并执行调试，使用序列号或 CRC 检查丢字节和串扰；检查两组 DTR/RTS |
 | 内置供电 | 1.8/3.3/5.0 V 下检查空载、负载、瞬态、纹波、温升、过流保护及 USB 输入电流预算 |
 | 外部路径 | 最高 5.5 V / 2 A 条件检查压降、温升、反向供电及关断 |
