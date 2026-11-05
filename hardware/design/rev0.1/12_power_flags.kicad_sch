@@ -1,0 +1,403 @@
+(kicad_sch 
+  (version 20250114) 
+  (generator "eeschema") 
+  (uuid "3782a8a9-147b-55e3-815c-937ac99f191c") 
+  (paper "A3") 
+  (title_block 
+    (title "12 电源网与审阅注意") 
+    (date "2026-11-04") 
+    (rev "0.1-DRAFT") 
+    (comment 1 "未经样机验证；封装与生产风险见 design-review.md")) 
+  (lib_symbols 
+    (symbol "power:PWR_FLAG" 
+      (power global) 
+      (pin_numbers 
+        (hide yes)) 
+      (pin_names 
+        (offset 0) 
+        (hide yes)) 
+      (exclude_from_sim no) 
+      (in_bom yes) 
+      (on_board yes) 
+      (in_pos_files yes) 
+      (duplicate_pin_numbers_are_jumpers no) 
+      (property "Reference" "#FLG" 
+        (at 0 1.905 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Value" "PWR_FLAG" 
+        (at 0 3.81 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Footprint" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Datasheet" "" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "Description" "Special symbol for telling ERC where power comes from" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (property "ki_keywords" "flag power" 
+        (at 0 0 0) 
+        (show_name no) 
+        (do_not_autoplace no) 
+        (hide yes) 
+        (effects 
+          (font 
+            (size 1.27 1.27)))) 
+      (symbol "PWR_FLAG_0_0" 
+        (pin power_out line 
+          (at 0 0 90) 
+          (length 0) 
+          (name "" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))) 
+          (number "1" 
+            (effects 
+              (font 
+                (size 1.27 1.27)))))) 
+      (symbol "PWR_FLAG_0_1" 
+        (polyline 
+          (pts 
+            (xy 0 0) 
+            (xy 0 1.27) 
+            (xy -1.016 1.905) 
+            (xy 0 2.54) 
+            (xy 1.016 1.905) 
+            (xy 0 1.27)) 
+          (stroke 
+            (width 0) 
+            (type default)) 
+          (fill 
+            (type none)))) 
+      (embedded_fonts no))) 
+  (text "12 电源网与审阅注意 / Rev 0.1 审阅稿" 
+    (at 15 17 0) 
+    (effects 
+      (font 
+        (size 1.8 1.8)) 
+      (justify left top)) 
+    (uuid "eda0f672-de4e-5bbf-a852-8ccccf402473")) 
+  (text "PWR_FLAG 仅声明经连接器、开关或电感进入的电源。它不能证明电源时序、功率预算、漏电、保护或 PCB 已通过验证。" 
+    (at 15 24 0) 
+    (effects 
+      (font 
+        (size 1.0 1.0)) 
+      (justify left top)) 
+    (uuid "2fa246c5-cd03-5311-9418-ad18b0d30075")) 
+  (symbol 
+    (lib_id "power:PWR_FLAG") 
+    (at 74.93 53.34 0) 
+    (unit 1) 
+    (in_bom yes) 
+    (on_board yes) 
+    (dnp no) 
+    (uuid "41745907-b18a-51ea-86a5-6ced8ee918db") 
+    (property "Reference" "#FLG1" 
+      (at 74.93 44.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Value" "VBUS_RAW" 
+      (at 74.93 47.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Footprint" "" 
+      (at 74.93 53.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (property "Datasheet" "" 
+      (at 74.93 53.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (instances 
+      (project "HSLink-LP" 
+        (path "/21e481e4-0ccf-50cd-a69d-fa3c10dc94c3/ad6de112-6cad-5b3e-82c2-4123c008667e" 
+          (reference "#FLG1") 
+          (unit 1))))) 
+  (wire 
+    (pts 
+      (xy 74.93 53.34) 
+      (xy 74.93 58.42)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "03d94ab2-38cb-53c8-8602-c7556aadf027")) 
+  (global_label "VBUS_RAW" 
+    (shape bidirectional) 
+    (at 74.93 58.42 270) 
+    (effects 
+      (font 
+        (size 0.95 0.95)) 
+      (justify left)) 
+    (uuid "6eb26cb0-a14f-59a7-a728-6ef766adf95c") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 74.93 58.42 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes)))) 
+  (symbol 
+    (lib_id "power:PWR_FLAG") 
+    (at 204.47 53.34 0) 
+    (unit 1) 
+    (in_bom yes) 
+    (on_board yes) 
+    (dnp no) 
+    (uuid "0cc80526-3355-5099-aa4d-6f9afa558ee2") 
+    (property "Reference" "#FLG2" 
+      (at 204.47 44.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Value" "GND" 
+      (at 204.47 47.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Footprint" "" 
+      (at 204.47 53.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (property "Datasheet" "" 
+      (at 204.47 53.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (instances 
+      (project "HSLink-LP" 
+        (path "/21e481e4-0ccf-50cd-a69d-fa3c10dc94c3/ad6de112-6cad-5b3e-82c2-4123c008667e" 
+          (reference "#FLG2") 
+          (unit 1))))) 
+  (wire 
+    (pts 
+      (xy 204.47 53.34) 
+      (xy 204.47 58.42)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "a0cef8fe-a58c-5f27-b645-d863f6d30c82")) 
+  (global_label "GND" 
+    (shape bidirectional) 
+    (at 204.47 58.42 270) 
+    (effects 
+      (font 
+        (size 0.95 0.95)) 
+      (justify left)) 
+    (uuid "26c53988-c6b5-564c-9a6b-70ab71e57387") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 204.47 58.42 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes)))) 
+  (symbol 
+    (lib_id "power:PWR_FLAG") 
+    (at 335.28000000000003 53.34 0) 
+    (unit 1) 
+    (in_bom yes) 
+    (on_board yes) 
+    (dnp no) 
+    (uuid "9e6ed34f-7c8f-5320-a91a-1a958cc99c69") 
+    (property "Reference" "#FLG3" 
+      (at 335.28000000000003 44.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Value" "P3V3" 
+      (at 335.28000000000003 47.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Footprint" "" 
+      (at 335.28000000000003 53.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (property "Datasheet" "" 
+      (at 335.28000000000003 53.34 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (instances 
+      (project "HSLink-LP" 
+        (path "/21e481e4-0ccf-50cd-a69d-fa3c10dc94c3/ad6de112-6cad-5b3e-82c2-4123c008667e" 
+          (reference "#FLG3") 
+          (unit 1))))) 
+  (wire 
+    (pts 
+      (xy 335.28 53.34) 
+      (xy 335.28 58.42)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "22df24f6-140d-5166-9d7d-bfd415a41738")) 
+  (global_label "P3V3" 
+    (shape bidirectional) 
+    (at 335.28 58.42 270) 
+    (effects 
+      (font 
+        (size 0.95 0.95)) 
+      (justify left)) 
+    (uuid "a0165ff6-fd0f-5833-8d6f-5c66a7899db3") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 335.28 58.42 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes)))) 
+  (symbol 
+    (lib_id "power:PWR_FLAG") 
+    (at 74.93 74.93 0) 
+    (unit 1) 
+    (in_bom yes) 
+    (on_board yes) 
+    (dnp no) 
+    (uuid "e0cd6309-c5f4-55cd-bd15-3c355b4f0f9a") 
+    (property "Reference" "#FLG4" 
+      (at 74.93 65.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Value" "VDD_SOC" 
+      (at 74.93 68.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Footprint" "" 
+      (at 74.93 74.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (property "Datasheet" "" 
+      (at 74.93 74.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (instances 
+      (project "HSLink-LP" 
+        (path "/21e481e4-0ccf-50cd-a69d-fa3c10dc94c3/ad6de112-6cad-5b3e-82c2-4123c008667e" 
+          (reference "#FLG4") 
+          (unit 1))))) 
+  (wire 
+    (pts 
+      (xy 74.93 74.93) 
+      (xy 74.93 80.01)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "b7390a65-ae33-5797-bd97-5489db2828cf")) 
+  (global_label "VDD_SOC" 
+    (shape bidirectional) 
+    (at 74.93 80.01 270) 
+    (effects 
+      (font 
+        (size 0.95 0.95)) 
+      (justify left)) 
+    (uuid "6bc4273b-1989-5105-b83f-9e1b4a959268") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 74.93 80.01 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes)))) 
+  (symbol 
+    (lib_id "power:PWR_FLAG") 
+    (at 204.47 74.93 0) 
+    (unit 1) 
+    (in_bom yes) 
+    (on_board yes) 
+    (dnp no) 
+    (uuid "6c0122c1-0636-5cc5-aa7a-cb90177e4dcb") 
+    (property "Reference" "#FLG5" 
+      (at 204.47 65.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Value" "P12V_SW" 
+      (at 204.47 68.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)))) 
+    (property "Footprint" "" 
+      (at 204.47 74.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (property "Datasheet" "" 
+      (at 204.47 74.93 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes))) 
+    (instances 
+      (project "HSLink-LP" 
+        (path "/21e481e4-0ccf-50cd-a69d-fa3c10dc94c3/ad6de112-6cad-5b3e-82c2-4123c008667e" 
+          (reference "#FLG5") 
+          (unit 1))))) 
+  (wire 
+    (pts 
+      (xy 204.47 74.93) 
+      (xy 204.47 80.01)) 
+    (stroke 
+      (width 0) 
+      (type default)) 
+    (uuid "bc04602f-d953-52a4-972a-bd1eecdd3bad")) 
+  (global_label "P12V_SW" 
+    (shape bidirectional) 
+    (at 204.47 80.01 270) 
+    (effects 
+      (font 
+        (size 0.95 0.95)) 
+      (justify left)) 
+    (uuid "d1b0e265-de0f-5fb3-95ad-9a137932c9a1") 
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" 
+      (at 204.47 80.01 0) 
+      (effects 
+        (font 
+          (size 1.0 1.0)) 
+        (hide yes)))) 
+  (text "审阅重点\n1. 14 路 FSA 的 25°C 最大漏电合计已达 140 nA；100 nA 整板目标仍未闭合。\n2. FSA 无掉电保护；USB 断开且 DUT 自供电时不可保证隔离，需验证或修改。\n3. TLP3547、FSA2466、TPS63811、来源开关的自定义封装尚未签核。\n4. USB ESD、晶体、磁性元件及精确采购型号需继续复核。\n5. 未进行 PCB 布局、40 MHz 波形、供电热测试和整板漏电测试。" 
+    (at 15 180 0) 
+    (effects 
+      (font 
+        (size 1.1 1.1)) 
+      (justify left top)) 
+    (uuid "d6df0aac-89f9-550b-99f5-284f4153f094")))

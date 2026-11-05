@@ -1,0 +1,2462 @@
+[
+  {
+    "reference": "U1",
+    "symbol": "HSLinkLP:HPM5301IEG1",
+    "value": "HPM5301IEG1",
+    "footprint": "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "SIG_ARM_REQ",
+      "2": "UART_A_TX",
+      "3": "UART_A_RX",
+      "4": "VIO_EN",
+      "5": "VDD_SOC",
+      "6": "P3V3",
+      "7": "BOOT1",
+      "8": "BOOT0",
+      "9": "VDD_SOC",
+      "10": "OTPCAP",
+      "11": "UART_B_RX",
+      "12": "UART_B_TX",
+      "13": "SYS_RESETn",
+      "14": "GND",
+      "15": "SOC_SW",
+      "16": "P3V3",
+      "17": "PMCCAP",
+      "18": "FAULTn",
+      "19": "SPARE_GPIO",
+      "20": "NRST_DRIVE",
+      "21": "NTRST_DRIVE",
+      "22": "TDI_MCU",
+      "23": "TDO_MCU",
+      "24": "TCK_MCU",
+      "25": "SPI_CS",
+      "26": "ADC_VOUT",
+      "27": "ADC_VREF",
+      "28": "VDD_SOC",
+      "29": "P3V3",
+      "30": "GND",
+      "31": "P3V3",
+      "32": "P3V3",
+      "33": "VDD_SOC",
+      "34": "P3V3",
+      "35": "XTALI",
+      "36": "XTALO",
+      "37": "POWER_REQ",
+      "38": "SWD_DIR",
+      "39": "SWD_MOSI",
+      "40": "SWD_MISO",
+      "41": "TCK_MCU",
+      "42": "SPI_CS",
+      "43": "USB_DM",
+      "44": "USB_DP",
+      "45": "VDD_SOC",
+      "46": "I2C_SCL",
+      "47": "I2C_SDA",
+      "48": "CC_INTn",
+      "49": "GND"
+    },
+    "datasheet": "https://www.hpmicro.com/"
+  },
+  {
+    "reference": "Y1",
+    "symbol": "Device:Crystal_GND24",
+    "value": "24MHz / CL待配",
+    "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "XTALI",
+      "2": "GND",
+      "3": "XTALO",
+      "4": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C1",
+    "symbol": "Device:C",
+    "value": "15p/C0G",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "XTALI",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C2",
+    "symbol": "Device:C",
+    "value": "15p/C0G",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "XTALO",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R1",
+    "symbol": "Device:R",
+    "value": "22R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "SWD_MOSI",
+      "2": "SWD_MCU"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R2",
+    "symbol": "Device:R",
+    "value": "22R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "SWD_MISO",
+      "2": "SWD_MCU"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R3",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "BOOT0",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R4",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "BOOT1",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "SW1",
+    "symbol": "Switch:SW_Push",
+    "value": "BOOT1",
+    "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "BOOT1",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "SW2",
+    "symbol": "Switch:SW_Push",
+    "value": "RESET",
+    "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "SYS_RESETn",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J1",
+    "symbol": "Connector_Generic:Conn_01x06",
+    "value": "服务接口 / ISP",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_B_TX",
+      "4": "UART_B_RX",
+      "5": "BOOT1",
+      "6": "SYS_RESETn"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "TP1",
+    "symbol": "Connector:TestPoint",
+    "value": "SPARE_GPIO",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "sheet": "01_mcu",
+    "nets": {
+      "1": "SPARE_GPIO"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "L1",
+    "symbol": "Device:L",
+    "value": "SRN4018-4R7M / 4.7uH",
+    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "SOC_SW",
+      "2": "VDD_SOC"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C3",
+    "symbol": "Device:C",
+    "value": "22u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C4",
+    "symbol": "Device:C",
+    "value": "22u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C5",
+    "symbol": "Device:C",
+    "value": "10u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C6",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C7",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C8",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C9",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C10",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VDD_SOC",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C11",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C12",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C13",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C14",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C15",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C16",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C17",
+    "symbol": "Device:C",
+    "value": "4.7u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "OTPCAP",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C18",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "OTPCAP",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C19",
+    "symbol": "Device:C",
+    "value": "4.7u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "PMCCAP",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C20",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "PMCCAP",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U2",
+    "symbol": "HSLinkLP:TLV803EA30DBZR",
+    "value": "TLV803EA30DBZR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "GND",
+      "2": "SYS_RESETn",
+      "3": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+  },
+  {
+    "reference": "R5",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "SYS_RESETn",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C21",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "SYS_RESETn",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R6",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "SIG_ARM_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R7",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "POWER_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R8",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "02_mcu_power",
+    "nets": {
+      "1": "VIO_EN",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J101",
+    "symbol": "Connector:USB_C_Receptacle_USB2.0_16P",
+    "value": "USB4105-GF-A",
+    "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "sheet": "03_usb",
+    "nets": {
+      "A1": "GND",
+      "A4": "VBUS_RAW",
+      "A5": "CC1",
+      "A6": "USB_DP",
+      "A7": "USB_DM",
+      "A8": null,
+      "A9": "VBUS_RAW",
+      "A12": "GND",
+      "B1": "GND",
+      "B4": "VBUS_RAW",
+      "B5": "CC2",
+      "B6": "USB_DP",
+      "B7": "USB_DM",
+      "B8": null,
+      "B9": "VBUS_RAW",
+      "B12": "GND",
+      "SH": "GND"
+    },
+    "datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+  },
+  {
+    "reference": "U101",
+    "symbol": "HSLinkLP:TUSB320LAIRWBR",
+    "value": "TUSB320LAIRWBR",
+    "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "CC1",
+      "2": "CC2",
+      "3": "GND",
+      "4": "VBUS_DET",
+      "5": "GND",
+      "6": "CC_INTn",
+      "7": "I2C_SDA",
+      "8": "I2C_SCL",
+      "9": null,
+      "10": "GND",
+      "11": "GND",
+      "12": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf"
+  },
+  {
+    "reference": "R9",
+    "symbol": "Device:R",
+    "value": "900k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": "VBUS_DET"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R10",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "CC_INTn",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C22",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U102",
+    "symbol": "HSLinkLP:TPS259531DSGR",
+    "value": "TPS259531DSGR",
+    "footprint": "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_DVDT",
+      "2": "VBUS_RAW",
+      "3": "VBUS_RAW",
+      "4": "VBUS_RAW",
+      "5": "USB_5V",
+      "6": "FAULTn",
+      "7": "USB_ILIM",
+      "8": "GND",
+      "9": "GND"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps2595.pdf"
+  },
+  {
+    "reference": "C23",
+    "symbol": "Device:C",
+    "value": "4.7n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_DVDT",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C24",
+    "symbol": "Device:C",
+    "value": "1u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C25",
+    "symbol": "Device:C",
+    "value": "22u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R11",
+    "symbol": "Device:R",
+    "value": "4.99k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_ILIM",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R12",
+    "symbol": "Device:R",
+    "value": "2.21k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_ILIM",
+      "2": "ILIM_T1_D"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "Q101",
+    "symbol": "Transistor_FET:2N7002",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_TIER1",
+      "2": "GND",
+      "3": "ILIM_T1_D"
+    },
+    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+  },
+  {
+    "reference": "R13",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_TIER1",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R14",
+    "symbol": "Device:R",
+    "value": "1.50k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_ILIM",
+      "2": "ILIM_T2_D"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "Q102",
+    "symbol": "Transistor_FET:2N7002",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_TIER2",
+      "2": "GND",
+      "3": "ILIM_T2_D"
+    },
+    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+  },
+  {
+    "reference": "R15",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_TIER2",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R16",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "FAULTn",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "D101",
+    "symbol": "HSLinkLP:TPD2E2U06DCKR",
+    "value": "TPD2E2U06DCKR / VBUS",
+    "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": null,
+      "3": "GND"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+  },
+  {
+    "reference": "D102",
+    "symbol": "HSLinkLP:TPD2E2U06DCKR",
+    "value": "TPD2E2U06DCKR / USB HS",
+    "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+    "sheet": "03_usb",
+    "nets": {
+      "1": "USB_DP",
+      "2": "USB_DM",
+      "3": "GND"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+  },
+  {
+    "reference": "U201",
+    "symbol": "HSLinkLP:TCA9539PWR",
+    "value": "TCA9539PWR / 0x74",
+    "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+    "sheet": "04_control",
+    "nets": {
+      "1": null,
+      "2": "GND",
+      "3": "SYS_RESETn",
+      "4": "UART_A_DTR",
+      "5": "UART_A_RTS",
+      "6": "UART_B_DTR",
+      "7": "UART_B_RTS",
+      "8": "DEBUG_REQ",
+      "9": "UART_A_REQ",
+      "10": "UART_B_REQ",
+      "11": "RESET_REQ",
+      "12": "GND",
+      "13": "SENSE_REQ",
+      "14": "DISCH_REQ",
+      "15": "INT_EN",
+      "16": null,
+      "17": "USB_TIER1",
+      "18": "USB_TIER2",
+      "19": "FAULTn",
+      "20": "SOURCE_EXT",
+      "21": "GND",
+      "22": "I2C_SCL",
+      "23": "I2C_SDA",
+      "24": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tca9539.pdf"
+  },
+  {
+    "reference": "U202",
+    "symbol": "HSLinkLP:TCA9543APWR",
+    "value": "TCA9543APWR / 0x70",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "sheet": "04_control",
+    "nets": {
+      "1": "GND",
+      "2": "GND",
+      "3": "SYS_RESETn",
+      "4": "P3V3",
+      "5": "INT_SDA",
+      "6": "INT_SCL",
+      "7": "GND",
+      "8": "P3V3",
+      "9": "VIO_SDA",
+      "10": "VIO_SCL",
+      "11": null,
+      "12": "I2C_SCL",
+      "13": "I2C_SDA",
+      "14": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tca9543a.pdf"
+  },
+  {
+    "reference": "R17",
+    "symbol": "Device:R",
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "I2C_SCL",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R18",
+    "symbol": "Device:R",
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "I2C_SDA",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R19",
+    "symbol": "Device:R",
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "INT_SCL",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R20",
+    "symbol": "Device:R",
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "INT_SDA",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R21",
+    "symbol": "Device:R",
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "VIO_SCL",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R22",
+    "symbol": "Device:R",
+    "value": "4.7k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "VIO_SDA",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R23",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "DEBUG_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R24",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "UART_A_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R25",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "UART_B_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R26",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "RESET_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R27",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "SENSE_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R28",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "DISCH_REQ",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R29",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "INT_EN",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C26",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C27",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "04_control",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U301",
+    "symbol": "HSLinkLP:SN74LVC08APWR",
+    "value": "SN74LVC08APWR",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "SIG_ARM_REQ",
+      "2": "SYS_RESETn",
+      "3": "SIG_ARM",
+      "4": "POWER_REQ",
+      "5": "SYS_RESETn",
+      "6": "POWER_SAFE",
+      "7": "GND",
+      "8": "DEBUG_ON",
+      "9": "DEBUG_REQ",
+      "10": "SIG_ARM",
+      "11": "UART_A_ON",
+      "12": "UART_A_REQ",
+      "13": "SIG_ARM",
+      "14": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf"
+  },
+  {
+    "reference": "U302",
+    "symbol": "HSLinkLP:SN74LVC08APWR",
+    "value": "SN74LVC08APWR",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "UART_B_REQ",
+      "2": "SIG_ARM",
+      "3": "UART_B_ON",
+      "4": "RESET_REQ",
+      "5": "SIG_ARM",
+      "6": "RESET_ON",
+      "7": "GND",
+      "8": "SENSE_ON",
+      "9": "SENSE_REQ",
+      "10": "SIG_ARM",
+      "11": "DISCH_ARM",
+      "12": "DISCH_REQ",
+      "13": "SIG_ARM",
+      "14": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf"
+  },
+  {
+    "reference": "U303",
+    "symbol": "HSLinkLP:SN74LVC08APWR",
+    "value": "SN74LVC08APWR",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "DISCH_ARM",
+      "2": "POWER_OFF",
+      "3": "DISCH_ON",
+      "4": "GND",
+      "5": "GND",
+      "6": null,
+      "7": "GND",
+      "8": null,
+      "9": "GND",
+      "10": "GND",
+      "11": null,
+      "12": "GND",
+      "13": "GND",
+      "14": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf"
+  },
+  {
+    "reference": "U304",
+    "symbol": "HSLinkLP:SN74LVC1G04DBVR",
+    "value": "SN74LVC1G04DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "sheet": "05_safety",
+    "nets": {
+      "1": null,
+      "2": "POWER_SAFE",
+      "3": "GND",
+      "4": "POWER_OFF",
+      "5": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"
+  },
+  {
+    "reference": "U305",
+    "symbol": "HSLinkLP:SN74LVC1G04DBVR",
+    "value": "SN74LVC1G04DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "sheet": "05_safety",
+    "nets": {
+      "1": null,
+      "2": "SIG_ARM",
+      "3": "GND",
+      "4": "XLAT_OEn",
+      "5": "P3V3"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"
+  },
+  {
+    "reference": "C28",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C29",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C30",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C31",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C32",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R30",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "SIG_ARM",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R31",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "POWER_SAFE",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R32",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "DEBUG_ON",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R33",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "UART_A_ON",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R34",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "UART_B_ON",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R35",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "RESET_ON",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R36",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "SENSE_ON",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R37",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "05_safety",
+    "nets": {
+      "1": "DISCH_ON",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U401",
+    "symbol": "HSLinkLP:TLV62568DBVR",
+    "value": "TLV62568DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND",
+      "3": "BUCK3_SW",
+      "4": "USB_5V",
+      "5": "BUCK3_FB"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv62568.pdf"
+  },
+  {
+    "reference": "L2",
+    "symbol": "Device:L",
+    "value": "SRN4018-2R2M / 2.2uH",
+    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "BUCK3_SW",
+      "2": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R38",
+    "symbol": "Device:R",
+    "value": "450k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "BUCK3_FB"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R39",
+    "symbol": "Device:R",
+    "value": "100k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "BUCK3_FB",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C33",
+    "symbol": "Device:C",
+    "value": "10u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C34",
+    "symbol": "Device:C",
+    "value": "22u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U402",
+    "symbol": "HSLinkLP:TLV75536PDBVR",
+    "value": "TLV75536PDBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND",
+      "3": "USB_5V",
+      "4": null,
+      "5": "P3V6_SW"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+  },
+  {
+    "reference": "C35",
+    "symbol": "Device:C",
+    "value": "1u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C36",
+    "symbol": "Device:C",
+    "value": "10u/6.3V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "P3V6_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U403",
+    "symbol": "HSLinkLP:TPS61040DBVR",
+    "value": "TPS61040DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "BOOST_SW",
+      "2": "GND",
+      "3": "BOOST_FB",
+      "4": "USB_5V",
+      "5": "USB_5V"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps61040.pdf"
+  },
+  {
+    "reference": "L3",
+    "symbol": "Device:L",
+    "value": "SRN4018-100M / 10uH",
+    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "USB_5V",
+      "2": "BOOST_SW"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "D1",
+    "symbol": "Device:D_Schottky",
+    "value": "BAT54H / 30V",
+    "footprint": "Diode_SMD:D_SOD-123",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "P12V_SW",
+      "2": "BOOST_SW"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R40",
+    "symbol": "Device:R",
+    "value": "1.74M/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "P12V_SW",
+      "2": "BOOST_FB"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R41",
+    "symbol": "Device:R",
+    "value": "200k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "BOOST_FB",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C37",
+    "symbol": "Device:C",
+    "value": "4.7u/25V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "P12V_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C38",
+    "symbol": "Device:C",
+    "value": "4.7u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "06_aux_power",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U501",
+    "symbol": "HSLinkLP:TPS63811YFFR",
+    "value": "TPS63811YFFR",
+    "footprint": "",
+    "sheet": "07_adjustable",
+    "nets": {
+      "A1": "INT_EN",
+      "A2": "USB_5V",
+      "A3": "USB_5V",
+      "B1": "GND",
+      "B2": "INT_LX1",
+      "B3": "INT_LX1",
+      "C1": "GND",
+      "C2": "GND",
+      "C3": "GND",
+      "D1": "INT_SCL",
+      "D2": "INT_LX2",
+      "D3": "INT_LX2",
+      "E1": "INT_SDA",
+      "E2": "INT_RAW",
+      "E3": "INT_RAW"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps63810.pdf"
+  },
+  {
+    "reference": "L4",
+    "symbol": "Device:L",
+    "value": "XFL4015-471MEC / 470nH",
+    "footprint": "",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "INT_LX1",
+      "2": "INT_LX2"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C39",
+    "symbol": "Device:C",
+    "value": "10u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C40",
+    "symbol": "Device:C",
+    "value": "47u/10V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "INT_RAW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C41",
+    "symbol": "Device:C",
+    "value": "47u/10V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "INT_RAW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C42",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U502",
+    "symbol": "HSLinkLP:TPS63811YFFR",
+    "value": "TPS63811YFFR",
+    "footprint": "",
+    "sheet": "07_adjustable",
+    "nets": {
+      "A1": "VIO_EN",
+      "A2": "USB_5V",
+      "A3": "USB_5V",
+      "B1": "GND",
+      "B2": "VIO_LX1",
+      "B3": "VIO_LX1",
+      "C1": "GND",
+      "C2": "GND",
+      "C3": "GND",
+      "D1": "VIO_SCL",
+      "D2": "VIO_LX2",
+      "D3": "VIO_LX2",
+      "E1": "VIO_SDA",
+      "E2": "VIO_LOCAL",
+      "E3": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps63810.pdf"
+  },
+  {
+    "reference": "L5",
+    "symbol": "Device:L",
+    "value": "XFL4015-471MEC / 470nH",
+    "footprint": "",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "VIO_LX1",
+      "2": "VIO_LX2"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C43",
+    "symbol": "Device:C",
+    "value": "10u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C44",
+    "symbol": "Device:C",
+    "value": "47u/10V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C45",
+    "symbol": "Device:C",
+    "value": "47u/10V",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C46",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U503",
+    "symbol": "HSLinkLP:TPS22950DDCR",
+    "value": "TPS22950DDCR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "INT_EN",
+      "2": "INT_RAW",
+      "3": "GND",
+      "4": "INT_ILIM",
+      "5": "INT_PROTECTED",
+      "6": "FAULTn"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps22950.pdf"
+  },
+  {
+    "reference": "R42",
+    "symbol": "Device:R",
+    "value": "1.15k/1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "INT_ILIM",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C47",
+    "symbol": "Device:C",
+    "value": "1u/10V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "07_adjustable",
+    "nets": {
+      "1": "INT_PROTECTED",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J601",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "value": "外部仪器 1.8–5.5V / 2A",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "EXT_INPUT",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "SW601",
+    "symbol": "HSLinkLP:M2022SS1W03",
+    "value": "M2022SS1W03 / BBM待核",
+    "footprint": "",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "INT_PROTECTED",
+      "2": "SOURCE_POWER",
+      "3": "EXT_INPUT",
+      "4": "GND",
+      "5": "SOURCE_EXT",
+      "6": "P3V3"
+    },
+    "datasheet": "https://www.nkkswitches.com/wp-content/themes/impress-blank/search/inc/part.php?part_no=M2022SS1W03"
+  },
+  {
+    "reference": "U601",
+    "symbol": "HSLinkLP:TLP3547_TP1_F",
+    "value": "TLP3547(TP1,F",
+    "footprint": "",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": null,
+      "2": "TLP_LED_A",
+      "3": "TLP_LED_K",
+      "4": null,
+      "5": "SOURCE_POWER",
+      "6": null,
+      "7": null,
+      "8": "DUT_OUT"
+    },
+    "datasheet": "https://toshiba-semicon-storage.com/info/docget.jsp?did=36853&prodName=TLP3547"
+  },
+  {
+    "reference": "R43",
+    "symbol": "Device:R",
+    "value": "330R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "VBUS_RAW",
+      "2": "TLP_LED_A"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "Q601",
+    "symbol": "Transistor_FET:2N7002",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "POWER_SAFE",
+      "2": "GND",
+      "3": "TLP_LED_K"
+    },
+    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+  },
+  {
+    "reference": "R44",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "POWER_SAFE",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R45",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "SOURCE_EXT",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J602",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "value": "目标供电 / 2A",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "sheet": "08_target_power",
+    "nets": {
+      "1": "DUT_OUT",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U701",
+    "symbol": "HSLinkLP:SN74LXC8T245QPWRQ1",
+    "value": "SN74LXC8T245QPWRQ1",
+    "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "P3V3",
+      "11": "GND",
+      "12": "GND",
+      "13": "GND",
+      "22": "XLAT_OEn",
+      "23": "VIO_LOCAL",
+      "24": "VIO_LOCAL",
+      "3": "TCK_MCU",
+      "21": "F_TCK",
+      "4": "TDI_MCU",
+      "20": "F_TDI",
+      "5": "UART_A_TX",
+      "19": "F_UART_A_TX",
+      "6": "UART_A_DTR",
+      "18": "F_UART_A_DTR",
+      "7": "UART_A_RTS",
+      "17": "F_UART_A_RTS",
+      "8": "UART_B_TX",
+      "16": "F_UART_B_TX",
+      "9": "UART_B_DTR",
+      "15": "F_UART_B_DTR",
+      "10": "UART_B_RTS",
+      "14": "F_UART_B_RTS"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc8t245-q1.pdf"
+  },
+  {
+    "reference": "U702",
+    "symbol": "HSLinkLP:SN74LXC2T45DCUR",
+    "value": "SN74LXC2T45DCUR",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "SWD_MCU",
+      "3": "SWD_UNUSED_A",
+      "4": "GND",
+      "5": "SWD_DIR",
+      "6": "SWD_UNUSED_B",
+      "7": "F_SWDIO",
+      "8": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf"
+  },
+  {
+    "reference": "R46",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "SWD_UNUSED_A",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R47",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "SWD_UNUSED_B",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U703",
+    "symbol": "HSLinkLP:SN74LXC2T45DCUR",
+    "value": "SN74LXC2T45DCUR",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_A_RX",
+      "3": "UART_B_RX",
+      "4": "GND",
+      "5": "GND",
+      "6": "F_UART_B_RX",
+      "7": "F_UART_A_RX",
+      "8": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf"
+  },
+  {
+    "reference": "U704",
+    "symbol": "HSLinkLP:SN74LXC2T45DCUR",
+    "value": "SN74LXC2T45DCUR",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "TDO_MCU",
+      "3": null,
+      "4": "GND",
+      "5": "GND",
+      "6": "TDO_UNUSED_B",
+      "7": "F_TDO",
+      "8": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf"
+  },
+  {
+    "reference": "R48",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "TDO_UNUSED_B",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C48",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C49",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C50",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C51",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C52",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C53",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C54",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C55",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "Q701",
+    "symbol": "Transistor_FET:2N7002",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "NRST_DRIVE",
+      "2": "GND",
+      "3": "F_NRST"
+    },
+    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+  },
+  {
+    "reference": "R49",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "NRST_DRIVE",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "Q702",
+    "symbol": "Transistor_FET:2N7002",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "NTRST_DRIVE",
+      "2": "GND",
+      "3": "F_NTRST"
+    },
+    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+  },
+  {
+    "reference": "R50",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "NTRST_DRIVE",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R51",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "F_NRST",
+      "2": "VIO_LOCAL"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R52",
+    "symbol": "Device:R",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "09_translation",
+    "nets": {
+      "1": "F_NTRST",
+      "2": "VIO_LOCAL"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U801",
+    "symbol": "HSLinkLP:FSA2466UMX",
+    "value": "FSA2466UMX",
+    "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
+    "sheet": "10_disconnect",
+    "nets": {
+      "6": "GND",
+      "14": "P3V6_SW",
+      "2": "DEBUG_ON",
+      "10": "DEBUG_ON",
+      "16": "F_SWDIO",
+      "15": "DUT_SWDIO",
+      "1": null,
+      "4": "F_TCK",
+      "3": "DUT_TCK",
+      "5": null,
+      "8": "F_TDI",
+      "7": "DUT_TDI",
+      "9": null,
+      "12": "F_TDO",
+      "11": "DUT_TDO",
+      "13": null
+    },
+    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+  },
+  {
+    "reference": "C56",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "P3V6_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U802",
+    "symbol": "HSLinkLP:FSA2466UMX",
+    "value": "FSA2466UMX",
+    "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
+    "sheet": "10_disconnect",
+    "nets": {
+      "6": "GND",
+      "14": "P3V6_SW",
+      "2": "UART_A_ON",
+      "10": "UART_A_ON",
+      "16": "F_UART_A_TX",
+      "15": "DUT_UART_A_TX",
+      "1": null,
+      "4": "F_UART_A_RX",
+      "3": "DUT_UART_A_RX",
+      "5": null,
+      "8": "F_UART_A_DTR",
+      "7": "DUT_UART_A_DTR",
+      "9": null,
+      "12": "F_UART_A_RTS",
+      "11": "DUT_UART_A_RTS",
+      "13": null
+    },
+    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+  },
+  {
+    "reference": "C57",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "P3V6_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U803",
+    "symbol": "HSLinkLP:FSA2466UMX",
+    "value": "FSA2466UMX",
+    "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
+    "sheet": "10_disconnect",
+    "nets": {
+      "6": "GND",
+      "14": "P3V6_SW",
+      "2": "UART_B_ON",
+      "10": "UART_B_ON",
+      "16": "F_UART_B_TX",
+      "15": "DUT_UART_B_TX",
+      "1": null,
+      "4": "F_UART_B_RX",
+      "3": "DUT_UART_B_RX",
+      "5": null,
+      "8": "F_UART_B_DTR",
+      "7": "DUT_UART_B_DTR",
+      "9": null,
+      "12": "F_UART_B_RTS",
+      "11": "DUT_UART_B_RTS",
+      "13": null
+    },
+    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+  },
+  {
+    "reference": "C58",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "P3V6_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U804",
+    "symbol": "HSLinkLP:FSA2466UMX",
+    "value": "FSA2466UMX",
+    "footprint": "Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm",
+    "sheet": "10_disconnect",
+    "nets": {
+      "6": "GND",
+      "14": "P3V6_SW",
+      "2": "RESET_ON",
+      "10": "GND",
+      "16": "F_NRST",
+      "15": "DUT_NRST",
+      "1": null,
+      "4": "F_NTRST",
+      "3": "DUT_NTRST",
+      "5": null,
+      "8": null,
+      "7": null,
+      "9": null,
+      "12": null,
+      "11": null,
+      "13": null
+    },
+    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+  },
+  {
+    "reference": "C59",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "P3V6_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J801",
+    "symbol": "Connector_Generic:Conn_02x05_Odd_Even",
+    "value": "ARM 10-pin SWD",
+    "footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "DUT_VREF",
+      "2": "DUT_SWDIO",
+      "3": "GND",
+      "4": "DUT_TCK",
+      "5": "GND",
+      "6": "DUT_TDO",
+      "7": null,
+      "8": "DUT_TDI",
+      "9": "GND",
+      "10": "DUT_NRST"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J802",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "value": "JTAG nTRST",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "DUT_NTRST",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J803",
+    "symbol": "Connector_Generic:Conn_01x05",
+    "value": "UART_A / TX RX DTR RTS GND",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "DUT_UART_A_TX",
+      "2": "DUT_UART_A_RX",
+      "3": "DUT_UART_A_DTR",
+      "4": "DUT_UART_A_RTS",
+      "5": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "J804",
+    "symbol": "Connector_Generic:Conn_01x05",
+    "value": "UART_B / TX RX DTR RTS GND",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "sheet": "10_disconnect",
+    "nets": {
+      "1": "DUT_UART_B_TX",
+      "2": "DUT_UART_B_RX",
+      "3": "DUT_UART_B_DTR",
+      "4": "DUT_UART_B_RTS",
+      "5": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "U901",
+    "symbol": "HSLinkLP:ADG4612BRUZ",
+    "value": "ADG4612BRUZ / 高压支路",
+    "footprint": "Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "SENSE_ON",
+      "2": "VREF_SENSE_IN",
+      "3": "DUT_VREF",
+      "4": "GND",
+      "5": "GND",
+      "6": null,
+      "7": null,
+      "8": "GND",
+      "9": "DISCH_ON",
+      "10": "DISCH_RES",
+      "11": "DUT_OUT",
+      "12": null,
+      "13": "P12V_SW",
+      "14": "DUT_OUT",
+      "15": "VOUT_SENSE_IN",
+      "16": "SENSE_ON"
+    },
+    "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/adg4612_4613.pdf"
+  },
+  {
+    "reference": "C60",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "P12V_SW",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R53",
+    "symbol": "Device:R",
+    "value": "100k/0.1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "VREF_SENSE_IN",
+      "2": "ADC_VREF"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R54",
+    "symbol": "Device:R",
+    "value": "100k/0.1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "ADC_VREF",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C61",
+    "symbol": "Device:C",
+    "value": "1n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "ADC_VREF",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R55",
+    "symbol": "Device:R",
+    "value": "100k/0.1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "VOUT_SENSE_IN",
+      "2": "ADC_VOUT"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R56",
+    "symbol": "Device:R",
+    "value": "100k/0.1%",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "ADC_VOUT",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "C62",
+    "symbol": "Device:C",
+    "value": "1n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "ADC_VOUT",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "R57",
+    "symbol": "Device:R",
+    "value": "1k/0.125W",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "11_sense",
+    "nets": {
+      "1": "DISCH_RES",
+      "2": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "#FLG1",
+    "symbol": "power:PWR_FLAG",
+    "value": "VBUS_RAW",
+    "footprint": "",
+    "sheet": "12_power_flags",
+    "nets": {
+      "1": "VBUS_RAW"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "#FLG2",
+    "symbol": "power:PWR_FLAG",
+    "value": "GND",
+    "footprint": "",
+    "sheet": "12_power_flags",
+    "nets": {
+      "1": "GND"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "#FLG3",
+    "symbol": "power:PWR_FLAG",
+    "value": "P3V3",
+    "footprint": "",
+    "sheet": "12_power_flags",
+    "nets": {
+      "1": "P3V3"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "#FLG4",
+    "symbol": "power:PWR_FLAG",
+    "value": "VDD_SOC",
+    "footprint": "",
+    "sheet": "12_power_flags",
+    "nets": {
+      "1": "VDD_SOC"
+    },
+    "datasheet": ""
+  },
+  {
+    "reference": "#FLG5",
+    "symbol": "power:PWR_FLAG",
+    "value": "P12V_SW",
+    "footprint": "",
+    "sheet": "12_power_flags",
+    "nets": {
+      "1": "P12V_SW"
+    },
+    "datasheet": ""
+  }
+]
