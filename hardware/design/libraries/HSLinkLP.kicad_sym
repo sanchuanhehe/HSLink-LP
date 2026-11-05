@@ -833,144 +833,6 @@
       )
     )
   )
-  (symbol "TPS259531DSGR"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "TPS259531DSGR"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2595.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "USB 输入 eFuse；限流默认约 0.44 A，CC 许可后分级增大；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "TPS259531DSGR_0_1"
-      (rectangle
-        (start -7.62 7.62)
-        (end 7.62 -6.35)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "TPS259531DSGR_1_1"
-      (pin passive line
-        (at -8.89 -3.81 0)
-        (length 1.27)
-        (name "dVdt"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -1.27 0)
-        (length 1.27)
-        (name "EN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at -8.89 3.81 0)
-        (length 1.27)
-        (name "IN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at -8.89 1.27 0)
-        (length 1.27)
-        (name "IN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_out line
-        (at 8.89 2.54 180)
-        (length 1.27)
-        (name "OUT"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin open_collector line
-        (at 8.89 0 180)
-        (length 1.27)
-        (name "FLTn"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at 8.89 -2.54 180)
-        (length 1.27)
-        (name "ILM"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "7"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at -1.27 -8.89 90)
-        (length 1.27)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "8"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 1.27 -8.89 90)
-        (length 1.27)
-        (name "EP"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "9"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
   (symbol "TUSB320LAIRWBR"
     (exclude_from_sim no)
     (in_bom yes)
@@ -1555,294 +1417,6 @@
       )
     )
   )
-  (symbol "TCA9539PWR"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "TCA9539PWR"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9539.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "I2C 0x74；上电全输入；控制输出须先写 0 再配置方向；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "TCA9539PWR_0_1"
-      (rectangle
-        (start -8.89 19.05)
-        (end 8.89 -17.78)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "TCA9539PWR_1_1"
-      (pin open_collector line
-        (at -10.16 -7.62 0)
-        (length 1.27)
-        (name "INTn"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -10.16 2.54 0)
-        (length 1.27)
-        (name "A1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -10.16 5.08 0)
-        (length 1.27)
-        (name "RESETn"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 15.24 180)
-        (length 1.27)
-        (name "P00"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 12.7 180)
-        (length 1.27)
-        (name "P01"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 10.16 180)
-        (length 1.27)
-        (name "P02"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 7.62 180)
-        (length 1.27)
-        (name "P03"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "7"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 5.08 180)
-        (length 1.27)
-        (name "P04"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "8"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 2.54 180)
-        (length 1.27)
-        (name "P05"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "9"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 0 180)
-        (length 1.27)
-        (name "P06"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "10"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 -2.54 180)
-        (length 1.27)
-        (name "P07"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "11"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 -19.05 90)
-        (length 1.27)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "12"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 -5.08 180)
-        (length 1.27)
-        (name "P10"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "13"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 -7.62 180)
-        (length 1.27)
-        (name "P11"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "14"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 -10.16 180)
-        (length 1.27)
-        (name "P12"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "15"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -10.16 -10.16 0)
-        (length 1.27)
-        (name "P13"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "16"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 -12.7 180)
-        (length 1.27)
-        (name "P14"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "17"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 10.16 -15.24 180)
-        (length 1.27)
-        (name "P15"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "18"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -10.16 -2.54 0)
-        (length 1.27)
-        (name "P16"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "19"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -10.16 -5.08 0)
-        (length 1.27)
-        (name "P17"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "20"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -10.16 0 0)
-        (length 1.27)
-        (name "A0"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "21"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -10.16 10.16 0)
-        (length 1.27)
-        (name "SCL"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "22"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -10.16 7.62 0)
-        (length 1.27)
-        (name "SDA"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "23"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 19.05 270)
-        (length 1.27)
-        (name "VCC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "24"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
   (symbol "TCA9543APWR"
     (exclude_from_sim no)
     (in_bom yes)
@@ -2021,194 +1595,6 @@
       )
       (pin power_in line
         (at 0 11.43 270)
-        (length 1.27)
-        (name "VCC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "14"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
-  (symbol "SN74LVC08APWR"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "SN74LVC08APWR"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "四路与门；安全使能与组请求进行硬件门控；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "SN74LVC08APWR_0_1"
-      (rectangle
-        (start -6.35 12.7)
-        (end 7.62 -11.43)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "SN74LVC08APWR_1_1"
-      (pin input line
-        (at -8.89 8.89 0)
-        (length 1.27)
-        (name "1A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 6.35 0)
-        (length 1.27)
-        (name "1B"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin output line
-        (at 8.89 7.62 180)
-        (length 1.27)
-        (name "1Y"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 3.81 0)
-        (length 1.27)
-        (name "2A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 1.27 0)
-        (length 1.27)
-        (name "2B"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin output line
-        (at 8.89 2.54 180)
-        (length 1.27)
-        (name "2Y"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 -12.7 90)
-        (length 1.27)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "7"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin output line
-        (at 8.89 -2.54 180)
-        (length 1.27)
-        (name "3Y"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "8"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -1.27 0)
-        (length 1.27)
-        (name "3A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "9"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -3.81 0)
-        (length 1.27)
-        (name "3B"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "10"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin output line
-        (at 8.89 -7.62 180)
-        (length 1.27)
-        (name "4Y"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "11"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -6.35 0)
-        (length 1.27)
-        (name "4A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "12"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -8.89 0)
-        (length 1.27)
-        (name "4B"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "13"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 13.97 270)
         (length 1.27)
         (name "VCC"
           (effects (font (size 1.27 1.27)))
@@ -3446,6 +2832,620 @@
           (effects (font (size 1.27 1.27)))
         )
         (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "TPS259531DSGR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "TPS259531DSGR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2595.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "USB 输入 eFuse；限流默认约 0.44 A，CC 许可后分级增大；按功能重排引脚，物理编号不变"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "TPS259531DSGR_0_1"
+      (rectangle
+        (start -7.62 7.62)
+        (end 7.62 -6.35)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "TPS259531DSGR_1_1"
+      (pin passive line
+        (at -8.89 -3.81 0)
+        (length 1.27)
+        (name "dVdt"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -1.27 0)
+        (length 1.27)
+        (name "EN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -8.89 3.81 0)
+        (length 1.27)
+        (name "IN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -8.89 1.27 0)
+        (length 1.27)
+        (name "IN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_out line
+        (at 8.89 2.54 180)
+        (length 1.27)
+        (name "OUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin open_collector line
+        (at 8.89 0 180)
+        (length 1.27)
+        (name "FLTn"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 8.89 -2.54 180)
+        (length 1.27)
+        (name "ILM"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at -1.27 -8.89 90)
+        (length 2.54)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 1.27 -8.89 90)
+        (length 2.54)
+        (name "EP"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "TCA9539PWR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "TCA9539PWR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9539.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "I2C 0x74；上电全输入；控制输出须先写 0 再配置方向；按功能重排引脚，物理编号不变"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "TCA9539PWR_0_1"
+      (rectangle
+        (start -8.89 17.78)
+        (end 8.89 -17.78)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "TCA9539PWR_1_1"
+      (pin open_collector line
+        (at -10.16 -7.62 0)
+        (length 1.27)
+        (name "INTn"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 2.54 0)
+        (length 1.27)
+        (name "A1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 5.08 0)
+        (length 1.27)
+        (name "RESETn"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 15.24 180)
+        (length 1.27)
+        (name "P00"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 12.7 180)
+        (length 1.27)
+        (name "P01"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 10.16 180)
+        (length 1.27)
+        (name "P02"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 7.62 180)
+        (length 1.27)
+        (name "P03"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 5.08 180)
+        (length 1.27)
+        (name "P04"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 2.54 180)
+        (length 1.27)
+        (name "P05"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 0 180)
+        (length 1.27)
+        (name "P06"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "10"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 -2.54 180)
+        (length 1.27)
+        (name "P07"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 -19.05 90)
+        (length 1.27)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "12"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 -5.08 180)
+        (length 1.27)
+        (name "P10"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "13"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 -7.62 180)
+        (length 1.27)
+        (name "P11"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "14"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 -10.16 180)
+        (length 1.27)
+        (name "P12"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "15"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at -10.16 -10.16 0)
+        (length 1.27)
+        (name "P13"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "16"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 -12.7 180)
+        (length 1.27)
+        (name "P14"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "17"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 10.16 -15.24 180)
+        (length 1.27)
+        (name "P15"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "18"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at -10.16 -2.54 0)
+        (length 1.27)
+        (name "P16"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "19"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at -10.16 -5.08 0)
+        (length 1.27)
+        (name "P17"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "20"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 0 0)
+        (length 1.27)
+        (name "A0"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "21"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -10.16 10.16 0)
+        (length 1.27)
+        (name "SCL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "22"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at -10.16 7.62 0)
+        (length 1.27)
+        (name "SDA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "23"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 19.05 270)
+        (length 1.27)
+        (name "VCC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "24"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "SN74LVC08APWR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "SN74LVC08APWR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "四路与门；安全使能与组请求进行硬件门控；按功能重排引脚，物理编号不变"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "SN74LVC08APWR_0_1"
+      (rectangle
+        (start -6.35 12.7)
+        (end 7.62 -11.43)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "SN74LVC08APWR_1_1"
+      (pin input line
+        (at -8.89 8.89 0)
+        (length 2.54)
+        (name "1A"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 6.35 0)
+        (length 2.54)
+        (name "1B"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 8.89 7.62 180)
+        (length 1.27)
+        (name "1Y"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 3.81 0)
+        (length 2.54)
+        (name "2A"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 1.27 0)
+        (length 2.54)
+        (name "2B"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 8.89 2.54 180)
+        (length 1.27)
+        (name "2Y"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 -12.7 90)
+        (length 1.27)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 8.89 -2.54 180)
+        (length 1.27)
+        (name "3Y"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -1.27 0)
+        (length 2.54)
+        (name "3A"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -3.81 0)
+        (length 2.54)
+        (name "3B"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "10"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin output line
+        (at 8.89 -7.62 180)
+        (length 1.27)
+        (name "4Y"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -6.35 0)
+        (length 2.54)
+        (name "4A"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "12"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -8.89 0)
+        (length 2.54)
+        (name "4B"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "13"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 13.97 270)
+        (length 1.27)
+        (name "VCC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "14"
           (effects (font (size 1.27 1.27)))
         )
       )
