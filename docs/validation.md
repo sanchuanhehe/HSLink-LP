@@ -17,7 +17,7 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 
 版面修改也必须核对网表。对每个标签，检查文字是否被导线、引脚或符号边框穿过，移动后是否仍有明确接点；电源汇线应避开引脚编号。对自定义符号，核对引脚线内端与边框、脚名位置，并确认脚号、电气类型和外部连接端坐标未被排版操作改动。分别查看默认字体和实际阅读字体的导出图；过滤空白字符后的文本包围盒检测只能作为辅助。
 
-2026-11-06 的检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
+最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
 
 ## 硬件验收
 
@@ -30,6 +30,8 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 | 低功耗 | 25±5°C、保持相同目标端电压，比对物理拔线与软件断开，附加电流 ≤0.1 µA；记录仪器误差与环境条件 |
 | 断开覆盖 | 逐项检查调试、复位、两路 UART、Vref、目标电压、放电、ESD 与备用接口 |
 | 异常恢复 | USB 拔插、复位、Bootloader、外部电源掉电、断开时打开串口或发送 DAP，不能意外接通 |
+| 继电器 | 最小负载接触、1/2 A 压降温升、浪涌和寿命；示波器测含续流的释放/吸合时间，确认供电与放电接点无重叠 |
+| VIO | DAC 启动值、通信故障、默认 EN、1.8～3.3 V 精度/过冲及 100 mA 预算下热验证 |
 | 重复性 | 至少 1000 次连接、隔离、恢复和电源循环，检查最终状态和数据一致性 |
 
 ## 前置验证

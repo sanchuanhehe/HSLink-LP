@@ -1,0 +1,115 @@
+(footprint "Relay_Hongfa_HFD2"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "HFD2/005-S 20.2x10.2 mm; bottom-view drawing mirrored to top; pin1 square")
+
+  (property "Reference" "REF**" (at 0 -6.8 0)
+    (layer "F.SilkS")
+    (uuid "6d307758-385f-4162-838a-9e19683fd1e0")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "Relay_Hongfa_HFD2" (at 0 6.8 0)
+    (layer "F.Fab")
+    (uuid "accbcae3-b970-4611-9a00-898da11d7358")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "887354a6-aba5-4e08-a3e1-57fe606753e4")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -10.55 -5.55)
+    (end 10.55 5.55)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "a06905bc-86eb-4dfe-894f-a24b8dcc8941")
+  )
+
+  (fp_rect
+    (start -9.49 5.25)
+    (end -8.29 5.55)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "65455dca-d5f0-4c25-9b68-33e2a1a82a71")
+  )
+
+  (fp_rect
+    (start -10.1 -5.1)
+    (end 10.1 5.1)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "434adfae-03ba-4d7c-bbcd-f8ce1959432d")
+  )
+
+  (pad "1" thru_hole rect
+    (at -8.89 3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "9b123bfe-e751-4ce0-b30b-38d6e3922c85")
+  )
+
+  (pad "4" thru_hole circle
+    (at -1.27 3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "3a14bf0d-01a0-4430-8b5b-1fae100e5fb7")
+  )
+
+  (pad "6" thru_hole circle
+    (at 3.81 3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "51638eda-d32d-4d97-8e23-8a31ccf57b1f")
+  )
+
+  (pad "8" thru_hole circle
+    (at 8.89 3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "19c5ebdb-37fe-4f3d-b50a-8bef2576bd55")
+  )
+
+  (pad "16" thru_hole circle
+    (at -8.89 -3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "3cea2148-2db0-43f4-8450-100b05ccdeff")
+  )
+
+  (pad "13" thru_hole circle
+    (at -1.27 -3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "47a5c6cd-ac7b-4a24-a7ad-26ec5cc2e0b0")
+  )
+
+  (pad "11" thru_hole circle
+    (at 3.81 -3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "f6b2c946-4b72-454b-bc1e-46aea34c5dd4")
+  )
+
+  (pad "9" thru_hole circle
+    (at 8.89 -3.81)
+    (size 1.8 1.8)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "e8c69361-6ea3-4e05-9c4c-7728b9d8f415")
+  )
+
+)

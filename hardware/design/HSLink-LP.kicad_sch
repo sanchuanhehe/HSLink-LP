@@ -6402,7 +6402,7 @@
 			)
 		)
 	)
-	(text "HSLink-LP  Rev 0.2"
+	(text "HSLink-LP  设计审阅稿"
 		(exclude_from_sim no)
 		(at 190.5 17.78 0)
 		(effects
@@ -7549,10 +7549,5 @@
 		)
 	)
 	(embedded_fonts no)
-	(title_block
-		(title "主控与恢复接口")
-		(rev "0.2 DRAFT")
-		(date "2026-11-05")
-		(company "HSLink-LP / based on HSLink Pro 1.2.0")
-	)
+	(title_block (title "主控与恢复接口") (date "2026-11-07") (rev "DRAFT / Git") (company "HSLink-LP / based on HSLink Pro 1.2.0"))
 )

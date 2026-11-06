@@ -735,104 +735,6 @@
       )
     )
   )
-  (symbol "TPS61040DBVR"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "TPS61040DBVR"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61040.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "USB 辅助升压约 12 V；不从仪器路径取电；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "TPS61040DBVR_0_1"
-      (rectangle
-        (start -5.08 5.08)
-        (end 6.35 -5.08)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "TPS61040DBVR_1_1"
-      (pin bidirectional line
-        (at 7.62 1.27 180)
-        (length 1.27)
-        (name "SW"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 -6.35 90)
-        (length 1.27)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at 7.62 -1.27 180)
-        (length 1.27)
-        (name "FB"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -6.35 -1.27 0)
-        (length 1.27)
-        (name "EN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at -6.35 1.27 0)
-        (length 1.27)
-        (name "VIN"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
   (symbol "TUSB320LAIRWBR"
     (exclude_from_sim no)
     (in_bom yes)
@@ -1605,134 +1507,6 @@
       )
     )
   )
-  (symbol "M2022SS1W03"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "M2022SS1W03"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" ""
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.nkkswitches.com/wp-content/themes/impress-blank/search/inc/part.php?part_no=M2022SS1W03"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "NKK DPDT ON-ON；2/5 为公共端；正式封装和先断后接需采购核验；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "M2022SS1W03_0_1"
-      (rectangle
-        (start -6.35 8.89)
-        (end 6.35 -8.89)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 6.35 2.54)
-          (xy 2.54 2.54)
-          (xy -3.81 3.81)
-          (xy -6.35 3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 6.35 -5.08)
-          (xy 2.54 -5.08)
-          (xy -3.81 -3.81)
-          (xy -6.35 -3.81)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "M2022SS1W03_1_1"
-      (pin passive line
-        (at -7.62 3.81 0)
-        (length 1.27)
-        (name "1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at 7.62 2.54 180)
-        (length 1.27)
-        (name "2"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at -7.62 1.27 0)
-        (length 1.27)
-        (name "3"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at -7.62 -3.81 0)
-        (length 1.27)
-        (name "4"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at 7.62 -5.08 180)
-        (length 1.27)
-        (name "5"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at -7.62 -6.35 0)
-        (length 1.27)
-        (name "6"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
   (symbol "TLV803EA30DBZR"
     (exclude_from_sim no)
     (in_bom yes)
@@ -2014,342 +1788,6 @@
           (effects (font (size 1.27 1.27)))
         )
         (number "16"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
-  (symbol "ADG4612BRUZ"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "ADG4612BRUZ"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg4612_4613.pdf"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "仅用于 Vref、目标电压、放电的高压隔离；非高速信号；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "ADG4612BRUZ_0_1"
-      (rectangle
-        (start -7.62 12.7)
-        (end 7.62 -16.51)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "ADG4612BRUZ_1_1"
-      (pin input line
-        (at -8.89 6.35 0)
-        (length 1.27)
-        (name "IN1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 8.89 8.89 180)
-        (length 1.27)
-        (name "D1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -8.89 8.89 0)
-        (length 1.27)
-        (name "S1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at -2.54 -17.78 90)
-        (length 1.27)
-        (name "VSS"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 -17.78 90)
-        (length 1.27)
-        (name "GND"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -8.89 -10.16 0)
-        (length 1.27)
-        (name "S4"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 8.89 -10.16 180)
-        (length 1.27)
-        (name "D4"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "7"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -12.7 0)
-        (length 1.27)
-        (name "IN4"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "8"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 -6.35 0)
-        (length 1.27)
-        (name "IN3"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "9"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 8.89 -3.81 180)
-        (length 1.27)
-        (name "D3"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "10"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -8.89 -3.81 0)
-        (length 1.27)
-        (name "S3"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "11"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin no_connect line
-        (at 8.89 -12.7 180)
-        (length 1.27)
-        (name "NC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "12"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin power_in line
-        (at 0 13.97 270)
-        (length 1.27)
-        (name "VDD"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "13"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at -8.89 2.54 0)
-        (length 1.27)
-        (name "S2"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "14"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin bidirectional line
-        (at 8.89 2.54 180)
-        (length 1.27)
-        (name "D2"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "15"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin input line
-        (at -8.89 0 0)
-        (length 1.27)
-        (name "IN2"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "16"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-    )
-  )
-  (symbol "TLP3547_TP1_F"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property "Reference" "U"
-      (at 2.54 0 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Value" "TLP3547_TP1_F"
-      (at 0 -2.54 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-    )
-    (property "Footprint" ""
-      (at 0 -5.08 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Datasheet" "https://toshiba-semicon-storage.com/info/docget.jsp?did=36853&prodName=TLP3547"
-      (at 0 -7.62 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (property "Description" "A 接法；5/8 主功率端，6/7 悬空；USB LED 侧控制；按功能重排引脚，物理编号不变"
-      (at 0 -10.16 0)
-      (effects
-        (font (size 1.27 1.27))
-      )
-      (hide yes)
-    )
-    (symbol "TLP3547_TP1_F_0_1"
-      (rectangle
-        (start -7.62 8.89)
-        (end 8.89 -11.43)
-        (stroke (width 0.254) (type default))
-        (fill (type background))
-      )
-    )
-    (symbol "TLP3547_TP1_F_1_1"
-      (pin no_connect line
-        (at 10.16 -1.27 180)
-        (length 1.27)
-        (name "NC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "1"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at -8.89 -1.27 0)
-        (length 1.27)
-        (name "LED_A"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "2"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at -8.89 -5.08 0)
-        (length 1.27)
-        (name "LED_K"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "3"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin no_connect line
-        (at 10.16 -3.81 180)
-        (length 1.27)
-        (name "NC"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "4"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at -8.89 5.08 0)
-        (length 1.27)
-        (name "DRAIN1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "5"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at 10.16 -6.35 180)
-        (length 1.27)
-        (name "SOURCE1"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "6"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at 10.16 -8.89 180)
-        (length 1.27)
-        (name "SOURCE2"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "7"
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (pin passive line
-        (at 10.16 5.08 180)
-        (length 1.27)
-        (name "DRAIN2"
-          (effects (font (size 1.27 1.27)))
-        )
-        (number "8"
           (effects (font (size 1.27 1.27)))
         )
       )
@@ -3446,6 +2884,242 @@
           (effects (font (size 1.27 1.27)))
         )
         (number "14"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "HFD2_005_S"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "K"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "HFD2_005_S"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "HSLinkLP:Relay_Hongfa_HFD2"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "Hongfa HFD2/005-S non-latching DPDT relay; 5V coil; bottom-view mapping verified"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "HFD2_005_S_0_1"
+      (rectangle
+        (start -10.16 17.78)
+        (end 10.16 -17.78)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "HFD2_005_S_1_1"
+      (pin passive line
+        (at -12.7 -10.16 0)
+        (length 2.54)
+        (name "COIL+"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -12.7 -15.24 0)
+        (length 2.54)
+        (name "COIL-"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "16"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -12.7 10.16 0)
+        (length 2.54)
+        (name "COM1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 12.7 15.24 180)
+        (length 2.54)
+        (name "NC1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 12.7 10.16 180)
+        (length 2.54)
+        (name "NO1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -12.7 0 0)
+        (length 2.54)
+        (name "COM2"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "13"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 12.7 5.08 180)
+        (length 2.54)
+        (name "NC2"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 12.7 0 180)
+        (length 2.54)
+        (name "NO2"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "Dailywell_2MD1T1B1M2QES_5"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "SW"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "Dailywell_2MD1T1B1M2QES_5"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "HSLinkLP:SW_Dailywell_2MD1T1B1M2QES_5"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.thonk.co.uk/wp-content/uploads/2017/05/DW3-DPDT-ON-ON-2MD1T1B1M2QES.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "DPDT source selector; 2/5 common, 1/4 internal, 3/6 external; BBM pending supplier confirmation"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "Dailywell_2MD1T1B1M2QES_5_0_1"
+      (rectangle
+        (start -10.16 10.16)
+        (end 10.16 -10.16)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "Dailywell_2MD1T1B1M2QES_5_1_1"
+      (pin passive line
+        (at -12.7 7.62 0)
+        (length 2.54)
+        (name "INT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -12.7 2.54 0)
+        (length 2.54)
+        (name "EXT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 12.7 5.08 180)
+        (length 2.54)
+        (name "COM"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -12.7 -2.54 0)
+        (length 2.54)
+        (name "INT_ID"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at -12.7 -7.62 0)
+        (length 2.54)
+        (name "EXT_ID"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin passive line
+        (at 12.7 -5.08 180)
+        (length 2.54)
+        (name "ID_COM"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
           (effects (font (size 1.27 1.27)))
         )
       )

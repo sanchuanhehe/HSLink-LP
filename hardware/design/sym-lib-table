@@ -43,4 +43,6 @@
     (options "") 
     (descr ""))
  (lib (name "UpstreamCache") (type "KiCad") (uri "${KIPRJMOD}/libraries/UpstreamCache.kicad_sym") (options "") (descr "Preserved symbols from HSLink Pro 1.2.0"))
+  (lib (name "Regulator_Linear")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym")(options "")(descr ""))
+  (lib (name "Analog_DAC")(type "KiCad")(uri "${KICAD10_SYMBOL_DIR}/Analog_DAC.kicad_sym")(options "")(descr ""))
 )
