@@ -53,20 +53,24 @@
 | 5 | OUT | 5 / power_out | 5 | 1.1375 / -0.9500 | None / 1.325×0.6 |
 
 
-## MCP4725A0T-E/CH
+## MCP4726A0T-E/CH
 
-来源：[Microchip DS20002039F](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP4725-12-Bit-Digital-to-Analog-Converter-with-EEPROM-Memory-DS20002039.pdf)，第 2 页 CH/SOT-23-6 顶视图，1 脚左上；不是 DFN 引脚图。
+来源：[Microchip DS22272C](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22272C.pdf)，第 1 页 CH/SOT-23-6 引脚图、第 33 页表 3-1、第 76～77 页封装及推荐焊盘；器件面顶视，定位点所在 1 脚左上，左列向下为 1/2/3，右列向上为 4/5/6。不是 DFN 图，第 6 脚为 VREF，不是旧 MCP4725 的 A0。
 
-符号 `Analog_DAC:MCP4725xxx-xCH`；封装 `Package_TO_SOT_SMD:SOT-23-6`。引脚／符号脚／电气焊盘均为 6，无重复焊盘、散热焊盘或机械孔。映射核对：通过；非整板硬件签核。
+符号 `HSLinkLP:MCP4726A0T_E_CH`；标准封装 `Package_TO_SOT_SMD:SOT-23-6`。数据手册实物脚、符号电气脚和封装电气焊盘均为 6，无重复、散热或机械焊盘。已通过 MCP 查询及临时工程放置、焊盘回读和实际渲染检查；未代表 PCB/硬件验收。标准封装有 1 脚外侧三角丝印及 F.Fab 倒角，六个焊盘均为顶层 SMD roundrect、无孔，验证时器件置于 F.Cu、旋转 0°；库查询包含 F.Cu/F.Paste/F.Mask。院落中心线尺寸 4.1×3.4 mm。MCP 焊盘接口未返回逐焊盘层集及旋转字段，不将这些字段记为已独立回读通过。
 
-| 实物端子 | 功能 | 符号脚／类型 | 焊盘 | 顶视 X / Y（mm） | 孔径 / 尺寸（mm） |
-|---|---|---|---|---|---|
-| 1 | VOUT | 1 / output | 1 | -1.1375 / -0.9500 | None / 1.325×0.6 |
-| 2 | VSS | 2 / power_in | 2 | -1.1375 / 0.0000 | None / 1.325×0.6 |
-| 3 | VDD | 3 / power_in | 3 | -1.1375 / 0.9500 | None / 1.325×0.6 |
-| 4 | SDA | 4 / bidirectional | 4 | 1.1375 / 0.9500 | None / 1.325×0.6 |
-| 5 | SCL | 5 / input | 5 | 1.1375 / 0.0000 | None / 1.325×0.6 |
-| 6 | A0 | 6 / input | 6 | 1.1375 / -0.9500 | None / 1.325×0.6 |
+| 实物端子 | 功能 | 符号脚／类型 | 焊盘 | 顶视 X / Y（mm） | 孔径 / 尺寸（mm） | 图示依据 |
+|---|---|---|---|---|---|---|
+| 1 | VOUT | 1 / output | 1 | -1.1375 / -0.9500 | 无孔 / 1.325×0.6 | p.1/33，顶视左上 |
+| 2 | VSS | 2 / power_in | 2 | -1.1375 / 0.0000 | 无孔 / 1.325×0.6 | p.1/33，顶视左中 |
+| 3 | VDD | 3 / power_in | 3 | -1.1375 / 0.9500 | 无孔 / 1.325×0.6 | p.1/33，顶视左下 |
+| 4 | SDA | 4 / bidirectional | 4 | 1.1375 / 0.9500 | 无孔 / 1.325×0.6 | p.1/33，顶视右下 |
+| 5 | SCL | 5 / input | 5 | 1.1375 / 0.0000 | 无孔 / 1.325×0.6 | p.1/33，顶视右中 |
+| 6 | VREF | 6 / input | 6 | 1.1375 / -0.9500 | 无孔 / 1.325×0.6 | p.1/33，顶视右上 |
+
+采用 KiCad 通用 SOT-23-6 焊盘：0.95 mm 节距、左右焊盘中心距 2.275 mm、单焊盘 1.325×0.6 mm。原厂第 77 页推荐中心距为 2.8 mm、单焊盘 1.1×0.6 mm；本工程没有逐尺寸复制原厂推荐图。引脚顺序和节距已核对，最终焊盘可制造性仍须结合装配工艺进行 DFM。
+
+VREF 接 GND；使用 VDD 参考（VREF1:VREF0=00）、1x 增益和正常模式。内部参考选 VDD 时，第 6 脚与内部电阻梯隔离（手册第 34 页）。地址 A0 订货版本为固定 0x60，不能再将第 6 脚视作地址设置。初始化和错误处理要求见 [降本设计](cost-down.md)。
 
 
 ## AO3400A

@@ -852,31 +852,6 @@
     "display_value": "TCA9539PWR"
   },
   {
-    "reference": "U202",
-    "symbol": "HSLinkLP:TCA9543APWR",
-    "value": "TCA9543APWR / 0x70",
-    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
-    "sheet": "Control",
-    "nets": {
-      "1": "GND",
-      "2": "GND",
-      "3": "SYS_RESETn",
-      "4": "P3V3",
-      "5": "INT_SDA",
-      "6": "INT_SCL",
-      "7": "GND",
-      "8": "P3V3",
-      "9": "VIO_SDA",
-      "10": "VIO_SCL",
-      "11": null,
-      "12": "I2C_SCL",
-      "13": "I2C_SDA",
-      "14": "P3V3"
-    },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tca9543a.pdf",
-    "display_value": "TCA9543APWR"
-  },
-  {
     "reference": "R17",
     "symbol": "Device:R",
     "value": "4.7k",
@@ -897,58 +872,6 @@
     "sheet": "Control",
     "nets": {
       "1": "I2C_SDA",
-      "2": "P3V3"
-    },
-    "datasheet": "",
-    "display_value": "4.7k"
-  },
-  {
-    "reference": "R19",
-    "symbol": "Device:R",
-    "value": "4.7k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "Control",
-    "nets": {
-      "1": "INT_SCL",
-      "2": "P3V3"
-    },
-    "datasheet": "",
-    "display_value": "4.7k"
-  },
-  {
-    "reference": "R20",
-    "symbol": "Device:R",
-    "value": "4.7k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "Control",
-    "nets": {
-      "1": "INT_SDA",
-      "2": "P3V3"
-    },
-    "datasheet": "",
-    "display_value": "4.7k"
-  },
-  {
-    "reference": "R21",
-    "symbol": "Device:R",
-    "value": "4.7k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "Control",
-    "nets": {
-      "1": "VIO_SCL",
-      "2": "P3V3"
-    },
-    "datasheet": "",
-    "display_value": "4.7k"
-  },
-  {
-    "reference": "R22",
-    "symbol": "Device:R",
-    "value": "4.7k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "Control",
-    "nets": {
-      "1": "VIO_SDA",
       "2": "P3V3"
     },
     "datasheet": "",
@@ -1047,19 +970,6 @@
   },
   {
     "reference": "C26",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "Control",
-    "nets": {
-      "1": "P3V3",
-      "2": "GND"
-    },
-    "datasheet": "",
-    "display_value": "100n"
-  },
-  {
-    "reference": "C27",
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -1486,10 +1396,10 @@
       "C1": "GND",
       "C2": "GND",
       "C3": "GND",
-      "D1": "INT_SCL",
+      "D1": "I2C_SCL",
       "D2": "INT_LX2",
       "D3": "INT_LX2",
-      "E1": "INT_SDA",
+      "E1": "I2C_SDA",
       "E2": "INT_RAW",
       "E3": "INT_RAW"
     },
@@ -2376,20 +2286,20 @@
   },
   {
     "reference": "U504",
-    "symbol": "Analog_DAC:MCP4725xxx-xCH",
-    "value": "MCP4725A0T-E/CH",
+    "symbol": "HSLinkLP:MCP4726A0T_E_CH",
+    "value": "MCP4726A0T-E/CH",
     "footprint": "Package_TO_SOT_SMD:SOT-23-6",
     "sheet": "TargetPower",
     "nets": {
       "1": "VIO_DAC",
       "2": "GND",
       "3": "P3V3",
-      "4": "VIO_SDA",
-      "5": "VIO_SCL",
+      "4": "I2C_SDA",
+      "5": "I2C_SCL",
       "6": "GND"
     },
-    "datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP4725-12-Bit-Digital-to-Analog-Converter-with-EEPROM-Memory-DS20002039.pdf",
-    "display_value": "MCP4725A0T-E/CH"
+    "datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22272C.pdf",
+    "display_value": "MCP4726A0T-E/CH"
   },
   {
     "reference": "R58",

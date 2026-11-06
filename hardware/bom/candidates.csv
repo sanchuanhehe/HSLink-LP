@@ -1,5 +1,5 @@
 references,candidate_mpn_or_spec,value,footprint,qty_per_board,qty_10_boards,unit_budget_cny,board_budget_cny,batch_budget_cny,price_status,source_url,basis,engineering_status,accessed_date
-U1,HPM5301IEG1,HPM5301IEG1,Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm,1,10,30,30,300,预算,https://www.lcsc.com/brand/941-18883.html,国产 MCU；10 件询价待核,候选/未硬件验证,2026-11-05
+U1,HPM5301IEG1,HPM5301IEG1,Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm,1,10,11.90,11.90,119.00,网页参考价／未下单,https://www.hqchip.com/gongsi/75936.html,华秋同型号 1+ 档 ¥11.90；10 套按 10 颗计算，非专门 10 件报价；批次、库存、税运待下单复核,候选/未硬件验证,2026-11-07
 Y1,24MHz / CL待配,24MHz / CL待配,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,1,10,3,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 C1 C2,15p/C0G,15p/C0G,Capacitor_SMD:C_0603_1608Metric,2,20,0.15,0.30,3.00,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 R1 R2,22R,22R,Resistor_SMD:R_0603_1608Metric,2,20,0.1,0.2,2.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
@@ -11,7 +11,7 @@ TP1,SPARE_GPIO,SPARE_GPIO,TestPoint:TestPoint_Pad_D1.0mm,1,10,0,0,0,预算,,PCB 
 L1,SRN4018-4R7M / 4.7uH,SRN4018-4R7M / 4.7uH,Inductor_SMD:L_Bourns-SRN4018,1,10,3,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 C3 C4 C34,22u/6.3V,22u/6.3V,Capacitor_SMD:C_0603_1608Metric,3,30,1,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 C5 C36,10u/6.3V,10u/6.3V,Capacitor_SMD:C_0603_1608Metric,2,20,0.6,1.2,12.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C18 C20 C21 C22 C26 C27 C28 C29 C30 C31 C32 C42 C46 C48 C49 C50 C51 C52 C53 C54 C55 C56 C57 C58 C59,100n/16V,100n/16V,Capacitor_SMD:C_0603_1608Metric,36,360,0.15,5.40,54.00,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
+C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C18 C20 C21 C22 C26 C28 C29 C30 C31 C32 C42 C46 C48 C49 C50 C51 C52 C53 C54 C55 C56 C57 C58 C59,100n/16V,100n/16V,Capacitor_SMD:C_0603_1608Metric,35,350,0.15,5.25,52.50,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 C17 C19,4.7u/6.3V,4.7u/6.3V,Capacitor_SMD:C_0603_1608Metric,2,20,0.5,1.0,10.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 U2,TLV803EA30DBZR,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23,1,10,1.5,1.5,15.0,预算,https://www.ti.com/product/TLV803E,10 件预算，非报价,候选/未硬件验证,2026-11-05
 R6 R7 R8 R13 R15 R23 R24 R25 R26 R27 R28 R29 R30 R31 R32 R33 R34 R35 R36 R37 R44 R45 R46 R47 R48 R49 R50,100k,100k,Resistor_SMD:R_0603_1608Metric,27,270,0.1,2.7,27.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
@@ -29,8 +29,7 @@ R14,1.50k/1%,1.50k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,�
 D101,TPD2E2U06DCKR,TPD2E2U06DCKR / VBUS,Package_TO_SOT_SMD:SOT-323_SC-70,1,10,2,2,20,预算,https://www.ti.com/product/TPD2E2U06,20 件预算，非报价,候选/未硬件验证,2026-11-05
 D102,TPD2E2U06DCKR,TPD2E2U06DCKR / USB HS,Package_TO_SOT_SMD:SOT-323_SC-70,1,10,2,2,20,预算,https://www.ti.com/product/TPD2E2U06,20 件预算，非报价,候选/未硬件验证,2026-11-05
 U201,TCA9539PWR,TCA9539PWR / 0x74,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,10,9,9,90,预算,https://www.ti.com/product/TCA9539,10 件预算，非报价,候选/未硬件验证,2026-11-05
-U202,TCA9543APWR,TCA9543APWR / 0x70,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,10,8,8,80,预算,https://www.ti.com/product/TCA9543A,10 件预算，非报价,候选/未硬件验证,2026-11-05
-R17 R18 R19 R20 R21 R22,4.7k,4.7k,Resistor_SMD:R_0603_1608Metric,6,60,0.1,0.6,6.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
+R17 R18,4.7k,4.7k,Resistor_SMD:R_0603_1608Metric,2,20,0.1,0.2,2.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
 U301 U302 U303,SN74LVC08APWR,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,3,30,2,6,60,预算,https://www.ti.com/product/SN74LVC08A,30 件预算，非报价,候选/未硬件验证,2026-11-05
 U304 U305,SN74LVC1G04DBVR,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,2,20,0.5,1.0,10.0,预算,https://www.ti.com/product/SN74LVC1G04,20 件预算，非报价,候选/未硬件验证,2026-11-05
 U401,TLV62568DBVR,TLV62568DBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,2,2,20,预算,https://www.ti.com/product/TLV62568,10 件预算，非报价,候选/未硬件验证,2026-11-05
@@ -58,7 +57,7 @@ R57,1k/0.125W,1k/0.125W,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,
 SW601,2MD1T1B1M2QES-5,2MD1T1B1M2QES-5,HSLinkLP:SW_Dailywell_2MD1T1B1M2QES_5,1,10,12,12,120,预算／非有效报价,https://www.lcsc.com/product-detail/C908282.html,10 件档 US$1.4083 页面参考；7.20 预算汇率及 13% 余量；BBM 及准确后缀 DC 额定值待供应商确认,候选/未硬件验证,2026-11-07
 K601 K901 K902,HFD2/005-S,HFD2/005-S,HSLinkLP:Relay_Hongfa_HFD2,3,30,8,24,240,预算／非有效报价,https://www.lcsc.com/zh-CN/product-detail/C42415145.html,30 件采购参考 25 件档 US$0.9589；7.20 预算汇率及 13% 余量，向上预留；非当日成交价,候选/未硬件验证,2026-11-07
 U502,TLV75801PDBVR,TLV75801PDBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,1,1,10,预算／非有效报价,https://www.lcsc.com/product-detail/C2877852.html,页面 5 件档 US$0.0908 参考；按 10 件保守预留 ¥1,候选/未硬件验证,2026-11-07
-U504,MCP4725A0T-E/CH,MCP4725A0T-E/CH,Package_TO_SOT_SMD:SOT-23-6,1,10,9,9,90,预算／非有效报价,https://www.tme.com/us/en-us/details/mcp4725a0t-e_ch/d-a-converters-integrated-circuits/microchip-technology/,10 件档 US$1.07 页面参考；7.20 预算汇率及 13% 余量，向上预留,候选/未硬件验证,2026-11-07
+U504,MCP4726A0T-E/CH,MCP4726A0T-E/CH,Package_TO_SOT_SMD:SOT-23-6,1,10,9,9,90,预算／非有效报价,https://www.lcsc.com/product-detail/C191581.html,LCSC 搜索缓存 10 件档 US$1.1032；7.20 预算汇率与 13% 余量约 ¥8.98，取 ¥9；非当日成交价。原厂 In Production,候选/未硬件验证,2026-11-07
 Q601 Q901 Q902,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,3,30,0.5,1.5,15.0,预算／非有效报价,https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf,MOS 驱动器预算；原厂 Rds(on) 在 2.5 V 有规格，非报价,候选/未硬件验证,2026-11-07
 D601 D901 D902,1N4148W-7-F,1N4148W-7-F,Diode_SMD:D_SOD-123,3,30,0.2,0.6,6.0,预算／非有效报价,https://www.diodes.com/assets/Datasheets/ds30086.pdf,SOD123 续流二极管预算；非报价,候选/未硬件验证,2026-11-07
 C43 C44,4.7u/10V/X7R,4.7u/10V,Capacitor_SMD:C_0603_1608Metric,2,20,0.5,1.0,10.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07

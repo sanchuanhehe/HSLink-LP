@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "scope": "降本原理图、BOM、定制器件映射与图面文件检查；非 PCB 或硬件性能验收",
-  "checked_at": "2026-11-07T02:27:42+08:00",
+  "scope": "主控预算修正、删除 I2C 多路器、MCP4726 替换及相关网表和图面检查；非 PCB 或硬件性能验收",
+  "checked_at": "2026-11-07T02:56:27+08:00",
   "kicad_version": "10.0.7",
-  "baseline_commit": "277724bc5748ce033238e90398618ac6aadc32d7",
+  "baseline_commit": "3c6e764ea029540a0da25d160ed4a9f9ce25b851",
   "schematic": {
     "version": "Git working tree + sha256",
     "path": "design/HSLink-LP.kicad_pro",
     "status": "降本电路审阅稿",
     "hardware_validated": false,
-    "validation": "MCP 修改和回读；独立意图网表全量比较；直接 KiCad ERC；实际图面检查；最后仅清理一处空行空白，MCP 再证电气对象逐字节不变"
+    "validation": "MCP 修改及保存；独立意图全量网表比较；KiCad ERC；双字体实际图面检查"
   },
   "pcb": {
     "version": null,
@@ -40,68 +40,69 @@
   },
   "connectivity": {
     "status": "PASS",
-    "physical_components": 174,
-    "expected_nets": 127,
-    "connected_pins": 635,
-    "isolated_no_connect_pins": 45,
+    "physical_components": 168,
+    "expected_nets": 123,
+    "actual_connected_nets": 123,
+    "connected_pins": 612,
+    "isolated_no_connect_pins": 44,
     "missing_expected_connections": [],
     "unexpected_actual_connections": [],
     "missing_nc": [],
     "extra_nc": [],
+    "malformed_nc": [],
     "metadata_differences": [],
-    "scope": "逐网比较所有物理引脚集合，不依赖自动生成网名；基线在布线前独立定义"
+    "bom_per_board_cny": "254.78",
+    "bom_batch_10_cny": "2547.80",
+    "scope": "逐网比较物理引脚集合，检查全部 NC、位号、显示值、符号、封装、引脚数和 BOM 数量/金额；意图在修改前独立定义"
   },
   "upstream_layout": {
     "status": "PASS",
     "source_commit": "c315927df32c9de4cd2d5447a6e171fc19618024",
     "retained_symbol_units": 34,
     "physical_references": 33,
-    "scope": "MCP 回读坐标/旋转与已记录的上游布局映射比较；不证明电路性能",
+    "scope": "继承 Git 3c6e764 的 MCP 布局比较记录；本轮根页及主控电源页源文件逐字节未变；不证明电路性能",
     "differences": []
   },
   "visual_review": {
-    "checked_at": "2026-11-07T02:27:42+08:00",
+    "checked_at": "2026-11-07T02:56:27+08:00",
     "pages_exported_per_font": 9,
     "modified_pages_inspected": [
-      "HSLink-LP",
-      "Power",
-      "TargetPower",
-      "Sense"
+      "Control",
+      "TargetPower"
     ],
     "fonts": [
       "KiCad native",
       "Arial Unicode MS"
     ],
     "unchanged_pages_byte_identical_to_baseline": [
+      "Disconnect",
+      "HSLink-LP",
       "Interface",
       "LogicTranslation",
-      "Control",
+      "Power",
       "Safety",
-      "Disconnect"
+      "Sense"
     ],
-    "method": "查看两种字体的实际 PDF 图面；放大复核电容、标签、继电器及驱动字段；未重新运行旧版字符包围盒统计",
+    "method": "实际查看两种字体 PDF 渲染图及 DAC/电源 I2C 区域放大图",
     "findings_resolved": [
-      "自动字段落在器件边框/主体",
-      "电源符号参考号显示及 GND 文字位置",
-      "全局标签与支路接点的方向",
-      "相邻电容字段间距",
-      "源选择标题与接地符号相交",
-      "驱动下拉接地与标题栏边界"
+      "新 DAC 位号/数值字段位置",
+      "全局 I2C 标签反向放置以避开器件引脚文字",
+      "过时的两颗同地址电源说明"
     ],
-    "scope": "本次修改页的图面检查；其他五页以源文件不变和原已记录检查为依据，不是硬件验证"
+    "scope": "本轮修改页；其余七页按源文件与已验证 Git 基线一致处理，不是硬件验收"
   },
   "missing_footprints": [
     "L4",
     "U501"
   ],
   "physical_pinmap": {
-    "scope": "新增/替换器件六类的物理映射；不等于全部旧器件签核",
+    "scope": "保留上轮五类器件映射记录；本轮替换 MCP4726 并核对符号、封装引脚、临时放置及实际渲染，不等于 PCB/DFM 签核",
     "record": "../docs/costdown-pinmap.md",
     "accepted_parts": [
       "HFD2/005-S",
       "2MD1T1B1M2QES-5",
       "TLV75801PDBVR",
-      "MCP4725A0T-E/CH",
+      "MCP4726A0T-E/CH",
       "AO3400A",
       "1N4148W-7-F"
     ],
@@ -111,17 +112,18 @@
       "SW.pdf": "611a2bfafcc115b36b07bd3ba3aa3d5470e507cc32fce10ae0015840c8eef7ca",
       "2M-family.pdf": "a8c5687f9fd671b0299354f813d38ddd5241fda2afe89b4d18155f94bd6fac48",
       "TLV.pdf": "4a86306d6734f1f4212e897c29787a93b56724c06adf87d926cc7b603a694d12",
-      "DAC.pdf": "8623f4eb8030104be6fa3b4db0013caca987ff2afb8def70e02212aa3d7077e9",
       "AO.pdf": "9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033",
-      "diode.pdf": "f3bdb7a3d28c04d0148c300ddb0307000291dfce3a1deef62b3906383371a3f1"
-    }
+      "diode.pdf": "f3bdb7a3d28c04d0148c300ddb0307000291dfce3a1deef62b3906383371a3f1",
+      "MCP4726.pdf": "f89f3345410b50130f5b83b90aa2e63fd58c5ffbbb8ad8b9dca0c3cdbfe6ccd2"
+    },
+    "mcp4726_land_pattern": "KiCad 通用 SOT-23-6 与原厂 p.77 推荐焊盘尺寸不同，见物理引脚表；DFM 未完成；标准 MCP 未单独返回每个焊盘的旋转及层集"
   },
   "bom": {
     "status": "PASS",
-    "physical_references": 174,
-    "per_board_cny": 281.43,
-    "batch_10_cny": 2814.3,
-    "price_status": "候选预算，未下单"
+    "physical_references": 168,
+    "per_board_cny": 254.78,
+    "batch_10_cny": 2547.8,
+    "price_status": "候选预算；MCU 1+ 网页参考，DAC 搜索缓存；未下单"
   },
   "hardware_tests_executed": [],
   "limitations": [
@@ -131,17 +133,21 @@
     "50 ms 切换死区为待实测初值，逻辑互锁不能证明触点互锁",
     "VIO 100 mA 为预算假设，精度/启动/热与动态负载待测，无独立 VIO ADC",
     "100 nA 整板最坏情况预算未闭合；USB 掉电隔离未保证",
-    "40 MHz、输出 1 A/2 A、固件与真实 HID 均未验证/未实现"
+    "40 MHz、输出 1 A/2 A、固件与真实 HID 均未验证/未实现",
+    "移除 I2C 多路器后使用共享总线，上升时间、总线恢复及新 DAC 驱动尚待固件/样机验证"
   ],
   "mcp": {
     "standard_server_modified": false,
-    "temporary_annotation_extension": "本次仅用于自由文字及图签；逐字节校验电气对象不变；使用后删除",
-    "temporary_global_library_removed": true
+    "temporary_annotation_extension": "自由文字编辑逐字节保持非文字对象；按唯一 UUID 删除 ERC 确认的一个孤立 NC，其余对象不变；用后删除",
+    "temporary_global_library_removed": true,
+    "native_open_project": "仅有原理图的正式工程返回 SWIG 错误；未创建 PCB、未调用 save_project；文件级 MCP 保存及独立进程导出成功",
+    "new_global_library_registered": false,
+    "final_whitespace_cleanup": "MCP 删除孤立 NC 后残留的一处空白行空格；验证全部原理图对象逐字节不变，报告见 whitespace-cleanup.json"
   },
   "sha256": {
-    "bom/candidates.csv": "79e045e93a3b8864cb06d5cbc661fba5e94b817a0de9d4a7c5f128408a6ed6e2",
-    "bom/cost-summary.json": "c7ca0d1da2556047810f24de08821a1af422a4121204516094a8dd0a27ab1a4a",
-    "design/Control.kicad_sch": "4db41f531857a6f0d8ef3e13d7d93b4a7aabed3fa3b4f9ef09f72a609e46379a",
+    "bom/candidates.csv": "d32ed0f5a7660cfdd72b2616e33211b94a560c96dd0da40cbc265f79c066bd07",
+    "bom/cost-summary.json": "66fd9c012c6cc8e81b97e0c4de2c1541ce38c5219086363a9f8b6aa99d8b1780",
+    "design/Control.kicad_sch": "27330ce34e9bd46717b9cd343090a6ac1e90d99e7538ab78439d15545152dcc7",
     "design/Disconnect.kicad_sch": "70558ed19a1ec8e47671b70764db9f179f156d9ce2e704c56dbbf16dcf2c7655",
     "design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
     "design/HSLink-LP.kicad_sch": "f7046f79c080362edcbace2673c7fc50d2872517ca569ce0955bace0d90d1203",
@@ -150,25 +156,42 @@
     "design/Power.kicad_sch": "d658d12b14c208aff9e4ce414e55d8635968d2334c4d860352b148b8d673feae",
     "design/Safety.kicad_sch": "82ca9923f7e030b35d685d1a56334b01c7bcfc5682e3a5a1ee2d617838804bb7",
     "design/Sense.kicad_sch": "2035ab37a27a6781c68bbab83dffdf9076f4db41a15497d209b86ee6cd98a875",
-    "design/TargetPower.kicad_sch": "999feb0942632072857d3762db1ace2f47ebee5a3d941aa72b6f09d0a73dfd80",
-    "design/connectivity.json": "fee23a2da6108b524cab29da19b16bba484dea3e66ded95604c8a493cbf17ba3",
+    "design/TargetPower.kicad_sch": "a580176e6c2502926ff9e3276e49ddbb86fe7485fe8e39ca693abe8f9a105170",
+    "design/connectivity.json": "03283db411c8eb9aed5ea37f1b57fa3cd8bb8f130b8e25b0bab779824f764ca0",
     "design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
-    "design/libraries/HSLinkLP.kicad_sym": "245924b947f547cc6aa554300638d1ceef3333f291a39d575c4139fe530aca81",
+    "design/libraries/HSLinkLP.kicad_sym": "9e007a927f92282964642dbc03bc980d577fac799ec94b0fbd18c71d6bc55e33",
     "design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "1a76d9761cd31a71d566c16c48b550f36eacbfe5be1d3814648ba9690c844945",
     "design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "c6c70a123890e5a9a38172714036cc623bcc3c5e3ed3e60ad884bae737a0ae17",
     "design/libraries/UpstreamCache.kicad_sym": "d6ed4065fd123f2e33a4f17fb8f2de914e8222b302d1418d90f167fba3bc4a38",
     "design/sym-lib-table": "364d910644ea9d5d8382fabc757f28c28fe42d0620aa4003298235108843523d",
-    "design/upstream-layout.json": "e6962e3a65707d2e4724f4d9d631ae3eb26cebda244bd3fb494957db5cd38669"
+    "design/upstream-layout.json": "e6962e3a65707d2e4724f4d9d631ae3eb26cebda244bd3fb494957db5cd38669",
+    "../docs/cost.md": "be0d30cd94f94e5b2ad6bd05a5fda5ef7f8e9d48beea85ae1b9b329f59415202",
+    "../docs/cost-down.md": "d01621bab0349154b57586f5b0a1a29885edb7625cd1589d431f9b57fab7c2e9",
+    "../docs/costdown-pinmap.md": "6f379f921feecf0fe709c06297658f91d860b38904945e5f752f1c530dbe5ec0",
+    "../docs/level-translation.md": "fe823a23105a60e691800dee7de72ac3f4b1ed91d56760264bc02b06f7f5459e",
+    "../docs/architecture.md": "e1a6e65698a100e4c1cf8545fa7bfed3665ec4e7b172525918527981d8430720",
+    "../docs/references.md": "c6ec7830e75c28c695d18c8277a5084c516ad845d505901f0e4b3280ed7865fd",
+    "../docs/kicad-integration.md": "055f9cdb9465c18fdcff0a7b66e6dbecdab715e4e1fa44e003d58502fd0551df",
+    "design/README.md": "a335a8e3d06f71ef991137a16e2ce64b4762ac2bd6121e3934b097205543f3da",
+    "../README.md": "2f6d868ef06ff31f56e3a6ca24da2f209cb736b2a50ed52425272a51de3199ff"
   },
   "generated_reports": {
-    "design/reports/HSLink-LP-native.pdf": "fd965489f3de54469ebd37fd4416bf363966101c13866533be09d0e549531ae9",
-    "design/reports/HSLink-LP.pdf": "b532f7c4e1c75291fc03089fcee3c1c3c1b804e199377dd302595d5277febf29",
-    "design/reports/connectivity-check.json": "b719bd360809e81bc4d205f8917e02608bba262a2c5c200908d156756622b012",
-    "design/reports/erc-mcp.json": "d7749e345dfd8f7c7bb671b68a99c42210b1b6fb942232955291a239bdedf790",
-    "design/reports/netlist.xml": "fe81d4782bafd10e3206acdcd64792a6194a062f6297ea93c9490ecda36cdc57",
+    "design/reports/HSLink-LP-native.pdf": "4eec4b7cea5cbe59e1f37b904ac14f6dae97ccc63ad706ccb4fadefadaf3084b",
+    "design/reports/HSLink-LP.pdf": "3b32f06fbc125414face89b0d7dbd167c460f6d55617e89e4ea7a50068b246ef",
+    "design/reports/connectivity-check.json": "580dd5f5c4e613fb42bc5fd8445f38c81772cddad2ec4aea6fa888b90c230bce",
+    "design/reports/erc-mcp.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+    "design/reports/netlist.xml": "8c8977ce236b9bb8dbfeb8d12fa0e302ae5599e34ba5bc3ec7e0500b386cd8b7",
     "design/reports/pincheck-pcb.pdf": "56aef66465af09e603d6be89db90ebf954384263b033ee5d737f61dd7bed40d9",
     "design/reports/pincheck.pdf": "3e512575675b6faa9bbcc489c148b01d8a5c56c9589259659b15543f6e4ff838",
     "design/reports/pinmap-query.json": "e596711dd4fa911fe597763641cd32667fc7710c9a6945c96339fc68d207c5e8",
-    "design/reports/visual-check.json": "bc4bd42d99fb2c123e574875656a81e005d073effa9e3cd11892a4eb502343a6"
+    "design/reports/visual-check.json": "794084017a3cce9ec7d7b1c72b3c9ad69fcaaadb9340abc1f735aa985bc1472f",
+    "design/reports/dac-pincheck-pcb.pdf": "e131cbf35db327dc91205e32994ca039687ab264302f98d6b756c09fdff22a9b",
+    "design/reports/dac-pincheck-sch.pdf": "afd3d116da421964af08fa4b12bef61f042a1c0440aba873bcdec3cac26486a1",
+    "design/reports/dac-pads.json": "d9ff38389fbc9d365326896da81c9603b975e9776691b5cc9bce3b1b58fe0d9d",
+    "design/reports/dac-footprint.json": "86158a88fdfd2a7ab70310b9b23e90a9f21b6ca9323a7af40d664c322cf16f88",
+    "design/reports/i2c-note-edit.json": "b193c1a89ede62097d94382a24b2fface6932230c7e4bb179980894a630a5cd5",
+    "design/reports/dac-note-edit.json": "d09421a245e81a1dea26cfe26870484a7fa38f395786ccf6ae094ff2e421220e",
+    "design/reports/orphan-nc-cleanup.json": "a248034ccf886a48db34d1de7756e46beb7ebc27295fb4095a1d3fcc47694e35",
+    "design/reports/whitespace-cleanup.json": "bc32178aeaeaeefca4c46720f203505d5a7993f06e048720edfbb6ee31200e1e"
   }
 }

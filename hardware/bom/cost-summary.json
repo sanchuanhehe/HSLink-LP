@@ -4,12 +4,12 @@
   "updated_at": "2026-11-07",
   "baseline_commit": "277724bc5748ce033238e90398618ac6aadc32d7",
   "baseline_bom_per_board": 427.233,
-  "bom_per_board": 281.43,
-  "bom_batch": 2814.3,
-  "savings_per_board": 145.803,
-  "savings_batch": 1458.03,
-  "savings_percent": 34.13,
-  "component_contingency_10pct": 281.43,
+  "bom_per_board": 254.78,
+  "bom_batch": 2547.8,
+  "savings_per_board": 172.453,
+  "savings_batch": 1724.53,
+  "savings_percent": 40.37,
+  "component_contingency_10pct": 254.78,
   "pcb_batch_range": [
     200,
     400
@@ -23,15 +23,19 @@
     300
   ],
   "total_batch_budget_range": [
-    3536,
-    5360
+    3272,
+    5023
   ],
   "assumptions": [
     "4 层约 90×60 mm；三个通孔继电器增加面积，尺寸待 PCB 布局确认",
     "包含 10% 物料备损；采购波动 -10%/+15% 后再加制造杂费",
     "贴装含通孔焊接预算；PCB/贴装/运输均未取得正式报价",
     "美元价格采用预算汇率 7.20 和 13% 余量，不代表实时汇率或税额",
-    "不含仪器、外壳、线缆、研发人工及返版"
+    "不含仪器、外壳、线缆、研发人工及返版",
+    "主控按华秋网页 1+ 档 ¥11.90 修正；未下单，批次/税运仍需确认"
   ],
-  "status": "降本工程预算，未下单，非生产 BOM"
+  "status": "降本工程预算，未下单，非生产 BOM",
+  "previous_bom_per_board": 281.43,
+  "additional_savings_per_board": 26.65,
+  "additional_savings_batch": 266.5
 }

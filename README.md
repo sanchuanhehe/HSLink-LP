@@ -16,7 +16,7 @@
 
 电源来源按用户选择采用板上手动切换。电脑控制目标板电源通断，与来源选择分开。
 
-打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，预算约 ¥281.43/板，见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
+打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，预算约 ¥254.78/板，见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
 
 工作区只保留一份当前设计，历史通过 Git 提交回溯，不再使用版本号目录副本。原理图、符号库、候选 BOM 和验证摘要纳入 Git；KiCad 本机设置、备份、锁文件、导出报告和缓存由 `.gitignore` 排除。临时生成、排版脚本已删除；已安装的 MCP 服务放在用户工具目录。
 

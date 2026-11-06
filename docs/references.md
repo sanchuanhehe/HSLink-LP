@@ -18,7 +18,7 @@
 | HFD2/005-S | [数据手册](https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf) | 触点最小负载、2 A 压降与热、带续流的释放时间 |
 | TPS63811 | [TPS63810/TPS63811 数据手册](https://www.ti.com/lit/ds/symlink/tps63810.pdf) | 上电默认状态、输入能力、输出功率和热设计 |
 | TUSB320LAI | [产品与资料](https://www.ti.com/product/TUSB320LAI) | Type-C 可用电流识别与系统限流的配合 |
-| TLV75801 / MCP4725 | [完整引脚与资料索引](costdown-pinmap.md) | 反馈注入公式、默认关闭、DAC 写入顺序和 VIO 热设计 |
+| TLV75801 / MCP4726 | [完整引脚与资料索引](costdown-pinmap.md) | 反馈注入公式、默认关闭、DAC 写入顺序和 VIO 热设计 |
 | Dailywell 2MD1T1B1M2QES-5 | [引脚与资料索引](costdown-pinmap.md) | 准确后缀、BBM 和 DC 额定值确认 |
 
 器件典型值不构成整板指标保证。BOM 冻结时应保存所用数据手册版本，并逐项记录工作条件与验证结果。
