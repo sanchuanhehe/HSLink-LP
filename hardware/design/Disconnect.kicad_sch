@@ -1606,7 +1606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf"
 			(at 59.69 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -1614,9 +1614,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Nordic nRF54L15 DK U4/U5 同款；B1 为 DUT，B0 悬空，选择 0 断开；按功能重排引脚，物理编号不变"
 			(at 59.69 39.37 0)
@@ -1634,10 +1632,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "FSA2466UMX" (at 59.69 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C457657" (at 59.69 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 59.69 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "98a4831e-39ae-41c5-819a-eb11fd26ebb4")
 		)
@@ -1746,7 +1751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf"
 			(at 187.96 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -1754,9 +1759,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Nordic nRF54L15 DK U4/U5 同款；B1 为 DUT，B0 悬空，选择 0 断开；按功能重排引脚，物理编号不变"
 			(at 187.96 39.37 0)
@@ -1774,10 +1777,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "FSA2466UMX" (at 187.96 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C457657" (at 187.96 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 187.96 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "006a5de9-573c-4d7f-bacb-fe410b9ab457")
 		)
@@ -1886,7 +1896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf"
 			(at 59.69 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -1894,9 +1904,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Nordic nRF54L15 DK U4/U5 同款；B1 为 DUT，B0 悬空，选择 0 断开；按功能重排引脚，物理编号不变"
 			(at 59.69 127 0)
@@ -1914,10 +1922,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "FSA2466UMX" (at 59.69 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C457657" (at 59.69 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 59.69 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "607b0318-8d2d-407e-ad14-652eb41c31b3")
 		)
@@ -2026,7 +2041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf"
 			(at 187.96 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2034,9 +2049,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Nordic nRF54L15 DK U4/U5 同款；B1 为 DUT，B0 悬空，选择 0 断开；按功能重排引脚，物理编号不变"
 			(at 187.96 127 0)
@@ -2054,10 +2067,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "FSA2466UMX" (at 187.96 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C457657" (at 187.96 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 187.96 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "5226afc5-0e62-4553-a925-029f543835fa")
 		)
@@ -2166,7 +2186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 30.48 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2174,9 +2194,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 30.48 27.94 0)
@@ -2189,15 +2207,22 @@
 				)
 			)
 		)
-		(property "Specification" "100n/16V"
+		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
 			(at 30.48 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 30.48 27.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 30.48 27.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 30.48 27.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b29f6061-8f61-4116-a92d-fbd95ff44367")
 		)
@@ -2264,7 +2289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 158.75 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2272,9 +2297,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 27.94 0)
@@ -2287,15 +2310,22 @@
 				)
 			)
 		)
-		(property "Specification" "100n/16V"
+		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
 			(at 158.75 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 158.75 27.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 158.75 27.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 158.75 27.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "6f741cd8-b79d-442f-b278-513852406e35")
 		)
@@ -2362,7 +2392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 30.48 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2370,9 +2400,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 30.48 115.57 0)
@@ -2385,15 +2413,22 @@
 				)
 			)
 		)
-		(property "Specification" "100n/16V"
+		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
 			(at 30.48 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 30.48 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 30.48 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 30.48 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "235b1014-8917-440a-99a2-b95fa292e798")
 		)
@@ -2460,7 +2495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 158.75 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2468,9 +2503,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 115.57 0)
@@ -2483,15 +2516,22 @@
 				)
 			)
 		)
-		(property "Specification" "100n/16V"
+		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
 			(at 158.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 158.75 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 158.75 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 158.75 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a24c517a-f3a4-4852-96b8-1ad124e0fc8f")
 		)
@@ -2556,7 +2596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20231122/F17CBFE608F16BCCADFE6957B6D7BD2D.pdf"
 			(at 116.84 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -2564,9 +2604,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 116.84 50.8 0)
@@ -2584,10 +2622,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "ZX-PZ1.27-2-5PZZ" (at 116.84 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C7501289" (at 116.84 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 116.84 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1dc50ac0-0e81-4a7f-839b-356fbff9d318")
 		)
@@ -2676,7 +2721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20221019/2EE72DAC61CAA62C0A53546E211F9C15.pdf"
 			(at 251.46 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -2684,9 +2729,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 251.46 139.7 0)
@@ -2704,10 +2747,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "B-2100S02P-A110" (at 251.46 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C124375" (at 251.46 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 251.46 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "9f9ce8a3-c3b5-47c2-a2ce-b46cde14e9b0")
 		)
@@ -2772,7 +2822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf"
 			(at 251.46 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -2780,9 +2830,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 251.46 49.53 0)
@@ -2800,10 +2848,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "PZ254V-11-05P" (at 251.46 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C492404" (at 251.46 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 251.46 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "7d8c0064-686f-4df2-9f29-978fedcc6f6d")
 		)
@@ -2877,7 +2932,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf"
 			(at 116.84 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -2885,9 +2940,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 116.84 137.16 0)
@@ -2905,10 +2958,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "PZ254V-11-05P" (at 116.84 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C492404" (at 116.84 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 116.84 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e8d3a056-919c-43ee-b894-7408c896840b")
 		)

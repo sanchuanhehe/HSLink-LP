@@ -17,7 +17,7 @@
 | FSA2466 | [数据手册](https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf) | 1.8～3.3 V 信号、3.6 V 供电、漏电预算、USB 掉电风险；40 MHz 须实测 |
 | HFD2/005-S | [数据手册](https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf) | 触点最小负载、2 A 压降与热、带续流的释放时间 |
 | TPS63811 | [TPS63810/TPS63811 数据手册](https://www.ti.com/lit/ds/symlink/tps63810.pdf) | 上电默认状态、输入能力、输出功率和热设计 |
-| TUSB320LAI | [产品与资料](https://www.ti.com/product/TUSB320LAI) | Type-C 可用电流识别与系统限流的配合 |
+| WUSB3801Q-12/TR、TPS7A2036、电感与连接器 | [本轮资料与计算](jlc-design-review.md)、[逐脚表](jlc-pinmap.md) | CC 驱动/预算、3.6 V 热、电感损耗与布局、插接和工艺 |
 | TLV75801 / MCP4726 | [完整引脚与资料索引](costdown-pinmap.md) | 反馈注入公式、默认关闭、DAC 写入顺序和 VIO 热设计 |
 | Dailywell 2MD1T1B1M2QES-5 | [引脚与资料索引](costdown-pinmap.md) | 准确后缀、BBM 和 DC 额定值确认 |
 

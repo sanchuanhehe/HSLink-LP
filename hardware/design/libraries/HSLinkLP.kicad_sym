@@ -3231,4 +3231,267 @@
       )
     )
   )
+(symbol "TPS7A2036PDBVR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "TPS7A2036PDBVR" (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf" (at 0 -7.62 0)
+      (hide yes)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Description" "3.6 V / 300 mA 固定 LDO；DBV 顶视引脚映射已核对，保持上游功能布局" (at 0 -10.16 0)
+      (hide yes)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (symbol "TPS7A2036PDBVR_0_1"
+      (rectangle
+        (start -5.08 5.08)
+        (end 6.35 -5.08)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "TPS7A2036PDBVR_1_1"
+      (pin power_in line
+        (at -6.35 1.27 0)
+        (length 1.27)
+        (name "IN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 -6.35 90)
+        (length 1.27)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -6.35 -1.27 0)
+        (length 1.27)
+        (name "EN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin no_connect line
+        (at 7.62 -1.27 180)
+        (length 1.27)
+        (name "NC"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_out line
+        (at 7.62 1.27 180)
+        (length 1.27)
+        (name "OUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
+  (symbol "WUSB3801Q_12_TR"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Value" "WUSB3801Q_12_TR"
+      (at 0 -2.54 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+    (property "Footprint" "HSLinkLP:WillSemi_QFN1616_12L"
+      (at 0 -5.08 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20220218/358FA27FD5CA391EB61300BD5A69029B.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (property "Description" "Sink only; CTRL=VDD selects I2C 0x68; VBUSD via 0R; no USB PD"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+    (symbol "WUSB3801Q_12_TR_0_1"
+      (rectangle
+        (start -7.62 8.89)
+        (end 7.62 -8.89)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    (symbol "WUSB3801Q_12_TR_1_1"
+      (pin bidirectional line
+        (at -8.89 6.35 0)
+        (length 1.27)
+        (name "CC1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at -8.89 3.81 0)
+        (length 1.27)
+        (name "CC2"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -1.27 0)
+        (length 1.27)
+        (name "ROLE"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 1.27 0)
+        (length 1.27)
+        (name "VBUSD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -3.81 0)
+        (length 1.27)
+        (name "CTRL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin open_collector line
+        (at 8.89 -1.27 180)
+        (length 1.27)
+        (name "INTB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin bidirectional line
+        (at 8.89 1.27 180)
+        (length 1.27)
+        (name "SDA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "7"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at 8.89 3.81 180)
+        (length 1.27)
+        (name "SCL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "8"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin open_collector line
+        (at 8.89 -3.81 180)
+        (length 1.27)
+        (name "ID"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "9"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 -10.16 90)
+        (length 1.27)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "10"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin input line
+        (at -8.89 -6.35 0)
+        (length 1.27)
+        (name "ENB"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "11"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (pin power_in line
+        (at 0 10.16 270)
+        (length 1.27)
+        (name "VDD"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "12"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+    )
+  )
 )

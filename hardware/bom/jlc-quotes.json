@@ -1,0 +1,2662 @@
+{
+  "supplier": "嘉立创 SMT 自营",
+  "currency": "CNY",
+  "tax_included": true,
+  "snapshot_date_local": "2026-11-07",
+  "note": "库存取已渲染页面；consultPrice 与 SSR stockNum 不作为现货报价。无订单/MOQ/增量确认。",
+  "quotes": [
+    {
+      "componentCode": "C83528",
+      "componentModel": "1N4148W-7-F",
+      "componentBrand": "DIODES(美台)",
+      "componentName": "1N4148W-7-F",
+      "componentSpecification": "SOD-123",
+      "paramTextAll": "二极管配置:独立式,反向恢复时间(Trr):4ns,反向电流(Ir):1uA@75V,工作结温范围:-65℃~+150℃,整流电流:300mA,正向压降(Vf):1.25V@150mA,直流反向耐压(Vr):100V,耗散功率(Pd):400mW,非重复峰值浪涌电流 (Ifsm):2A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C83528.html",
+      "retrieved_at": "2026-11-06T19:42:23.945Z",
+      "rendered_stock": 5337,
+      "rendered_price_rows": [],
+      "page_shows_book_price": true,
+      "consultPrice": 0.0936,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C23162",
+      "componentModel": "0603WAF4701T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 4.7kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C23162.html",
+      "retrieved_at": "2026-11-06T19:42:39.452Z",
+      "rendered_stock": 16199126,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0169
+        },
+        {
+          "start": 1000,
+          "price": 0.0134
+        },
+        {
+          "start": 5000,
+          "price": 0.0116
+        },
+        {
+          "start": 10000,
+          "price": 0.0096
+        },
+        {
+          "start": 50000,
+          "price": 0.0088
+        },
+        {
+          "start": 50200,
+          "price": 0.0088
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0116,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C1588",
+      "componentModel": "CL10B102KB8NNNC",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "1nF ±10% 50V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C1588.html",
+      "retrieved_at": "2026-11-06T19:42:34.525Z",
+      "rendered_stock": 5404625,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.05
+        },
+        {
+          "start": 500,
+          "price": 0.04
+        },
+        {
+          "start": 1500,
+          "price": 0.0356
+        },
+        {
+          "start": 4000,
+          "price": 0.0323
+        },
+        {
+          "start": 24000,
+          "price": 0.0309
+        },
+        {
+          "start": 48000,
+          "price": 0.03
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0323,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C1852138",
+      "componentModel": "TPS63811YFFR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "升压型 2.5A 2.2V~5.5V",
+      "componentSpecification": "DSBGA-15(1.3x2.3)",
+      "paramTextAll": "功能特性:轻载高效模式,功能特性:动态电压调节,功能特性:过流保护,功能特性:输出放电,功能特性:工作状态指示,功能特性:负载断开,功能类型:降压型,功能类型:升压型,同步整流:否,工作温度:-40℃~+85℃@(TA),工作电压:2.2V~5.5V,开关管(内置/外置):内置,开关频率:2MHz,开关频率:2.6MHz,开关频率:1.6MHz,开关频率:2MHz,开关频率:1.6MHz,开关频率:2.6MHz,拓扑结构:降压-升压式,输出电压:1.8V~5.2V,输出电流:2.5A,输出类型:可调,输出通道数:1,静态电流(Iq):13uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C1852138.html",
+      "retrieved_at": "2026-11-06T19:36:01.067Z",
+      "rendered_stock": 0,
+      "rendered_price_rows": [],
+      "page_shows_book_price": true,
+      "consultPrice": 22.21,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tps63811.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C7827",
+      "componentModel": "SN74LVC1G04DBVR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "单路反向器",
+      "componentSpecification": "SOT-23-5",
+      "paramTextAll": "传播延迟(tpd):3.7ns@5V,50pF,功能特性:电源关断保护,工作温度:-40℃~+125℃,工作电压:1.65V~5.5V,拉电流(IOH):32mA,灌电流(IOL):32mA,系列:74LVC,输入低电平(VIL):0.7V~0.8V,输入类型:标准CMOS,输入高电平(VIH):1.7V~2V,输出低电平(VOL):0.4V,输出类型:推挽式,输出高电平(VOH):2.4V,通道数:1,静态电流(Iq):10uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C7827.html",
+      "retrieved_at": "2026-11-06T19:42:15.112Z",
+      "rendered_stock": 70857,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.395
+        },
+        {
+          "start": 100,
+          "price": 0.311
+        },
+        {
+          "start": 300,
+          "price": 0.268
+        },
+        {
+          "start": 3000,
+          "price": 0.232
+        },
+        {
+          "start": 6000,
+          "price": 0.22
+        },
+        {
+          "start": 9000,
+          "price": 0.212
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.232,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1g04.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C705793",
+      "componentModel": "RT0603BRD0768KL",
+      "componentBrand": "YAGEO(国巨)",
+      "componentName": "薄膜电阻 68kΩ ±0.1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C705793.html",
+      "retrieved_at": "2026-11-06T19:42:55.303Z",
+      "rendered_stock": 14830,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.213
+        },
+        {
+          "start": 200,
+          "price": 0.18
+        },
+        {
+          "start": 600,
+          "price": 0.162
+        },
+        {
+          "start": 5000,
+          "price": 0.151
+        },
+        {
+          "start": 10000,
+          "price": 0.141
+        },
+        {
+          "start": 20000,
+          "price": 0.136
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.151,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C4363995",
+      "componentModel": "SN74LXC8T245PWR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "具有可配置电平转换和三态输出的8位双电源总线收发器",
+      "componentSpecification": "TSSOP-24",
+      "paramTextAll": "元件数:1,功能特性:输出使能高阻,功能特性:断电保护,功能特性:集成上拉电阻,工作温度:-40℃~+125℃,工作电压(VCCA):1.1V~5.5V,工作电压(VCCB):1.1V~5.5V,拉电流(IOH):-,接口类型:JTAG,接口类型:SPI,接口类型:UART,数据速率:420Mbps,每个电路通道数:8,灌电流(IOL):-,芯片类型:电平转换器,输出类型:三态,通道类型:双向",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C4363995.html",
+      "retrieved_at": "2026-11-06T19:35:57.841Z",
+      "rendered_stock": 1560,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 10.51
+        },
+        {
+          "start": 10,
+          "price": 9.03
+        },
+        {
+          "start": 30,
+          "price": 8.1
+        },
+        {
+          "start": 100,
+          "price": 7.15
+        },
+        {
+          "start": 500,
+          "price": 6.72
+        },
+        {
+          "start": 1000,
+          "price": 6.54
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 6.54,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc8t245.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C23046",
+      "componentModel": "0603WAF4991T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 4.99kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4990Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C23046.html",
+      "retrieved_at": "2026-11-06T19:42:41.269Z",
+      "rendered_stock": 1640996,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0125
+        },
+        {
+          "start": 1000,
+          "price": 0.0095
+        },
+        {
+          "start": 5000,
+          "price": 0.0079
+        },
+        {
+          "start": 10000,
+          "price": 0.0069
+        },
+        {
+          "start": 50000,
+          "price": 0.006
+        },
+        {
+          "start": 50200,
+          "price": 0.006
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0079,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C21190",
+      "componentModel": "0603WAF1001T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 1kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1000Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C21190.html",
+      "retrieved_at": "2026-11-06T19:42:48.276Z",
+      "rendered_stock": 27639359,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0101
+        },
+        {
+          "start": 1000,
+          "price": 0.008
+        },
+        {
+          "start": 5000,
+          "price": 0.007
+        },
+        {
+          "start": 10000,
+          "price": 0.0056
+        },
+        {
+          "start": 50000,
+          "price": 0.0051
+        },
+        {
+          "start": 50200,
+          "price": 0.0051
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.007,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C2155674",
+      "componentModel": "TPS259531DSGR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "2.7V至18V、4A、34mΩ电子保险丝，具有快速过压保护",
+      "componentSpecification": "WSON-8-EP(2x2)",
+      "paramTextAll": "FET类型:内置FET,功能特性:热保护,功能特性:过流保护,功能特性:过压钳位保护,功能特性:欠压锁定,功能特性:短路保护,安装方式:表面安装,宽度:2mm,导通电阻(RDS(on)):34mΩ,工作温度:-40℃~+125℃,工作电压:2.7V~18V,触发电流:0.5A~4A,通道数:1,长度:2mm,高度:0.75mm",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C2155674.html",
+      "retrieved_at": "2026-11-06T19:42:08.049Z",
+      "rendered_stock": 1273,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 5.36
+        },
+        {
+          "start": 10,
+          "price": 4.37
+        },
+        {
+          "start": 30,
+          "price": 3.88
+        },
+        {
+          "start": 100,
+          "price": 3.4
+        },
+        {
+          "start": 500,
+          "price": 3.11
+        },
+        {
+          "start": 1000,
+          "price": 2.95
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 2.95,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tps2595.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C705747",
+      "componentModel": "RT0603BRD0721K5L",
+      "componentBrand": "YAGEO(国巨)",
+      "componentName": "薄膜电阻 21.5kΩ ±0.1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C705747.html",
+      "retrieved_at": "2026-11-06T19:42:51.778Z",
+      "rendered_stock": 19,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.112
+        },
+        {
+          "start": 200,
+          "price": 0.11
+        },
+        {
+          "start": 600,
+          "price": 0.109
+        },
+        {
+          "start": 2000,
+          "price": 0.108
+        },
+        {
+          "start": 2040,
+          "price": 0.108
+        },
+        {
+          "start": 2080,
+          "price": 0.108
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.108,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C25804",
+      "componentModel": "0603WAF1002T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 10kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C25804.html",
+      "retrieved_at": "2026-11-06T19:35:56.173Z",
+      "rendered_stock": 42901571,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0142
+        },
+        {
+          "start": 1000,
+          "price": 0.0116
+        },
+        {
+          "start": 5000,
+          "price": 0.0103
+        },
+        {
+          "start": 10000,
+          "price": 0.0096
+        },
+        {
+          "start": 50000,
+          "price": 0.009
+        },
+        {
+          "start": 50200,
+          "price": 0.009
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0103,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C27643",
+      "componentModel": "SN74LVC8T245PWR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "具有可配置电压转换功能和三态输出的8位双电源总线收发器",
+      "componentSpecification": "TSSOP-24",
+      "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+85℃,工作电压(VCCA):1.65V~5.5V,工作电压(VCCB):1.65V~5.5V,拉电流(IOH):-,接口类型:-,数据速率:-,每个电路通道数:8,灌电流(IOL):-,芯片类型:电平转换器,输入信号:CMOS,输出信号:CMOS,输出类型:三态,通道类型:双向",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C27643.html",
+      "retrieved_at": "2026-11-06T19:43:46.859Z",
+      "rendered_stock": 73772,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 2.0409
+        },
+        {
+          "start": 50,
+          "price": 1.562
+        },
+        {
+          "start": 150,
+          "price": 1.329
+        },
+        {
+          "start": 500,
+          "price": 1.12
+        },
+        {
+          "start": 2000,
+          "price": 1.0628
+        },
+        {
+          "start": 4000,
+          "price": 1.0285
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.0628,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc8t245.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C2873626",
+      "componentModel": "TPS7A2036PDBVR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "3.6V 300mA 6V",
+      "componentSpecification": "SOT-23-5",
+      "paramTextAll": "功能特性:软启动,功能特性:使能控制,功能特性:内置软启动,功能特性:输入欠压保护,功能特性:过热保护,功能特性:热关断,功能特性:防倒灌,功能特性:浪涌保护,功能特性:欠压锁定,功能特性:短路保护,功能特性:过流保护,功能特性:输出放电,功能特性:热关断,压差:140mV@(300mA),噪声:10uVrms,工作温度:-40℃~+125℃@(Tj),工作电压:6V,电源纹波抑制比(PSRR):65dB@(100Hz),输出极性:正极,输出电压:3.6V,输出电流:300mA,输出类型:固定,输出通道数:1,静态电流(Iq):15uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C2873626.html",
+      "retrieved_at": "2026-11-06T19:42:18.662Z",
+      "rendered_stock": 2792,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 1.779
+        },
+        {
+          "start": 50,
+          "price": 1.386
+        },
+        {
+          "start": 150,
+          "price": 1.218
+        },
+        {
+          "start": 500,
+          "price": 1.0077
+        },
+        {
+          "start": 3000,
+          "price": 0.914
+        },
+        {
+          "start": 6000,
+          "price": 0.858
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.914,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tps7a20.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C408439",
+      "componentModel": "MWSA0603S-R47MT",
+      "componentBrand": "Sunlord(顺络)",
+      "componentName": "470nH ±20% 20A",
+      "componentSpecification": "SMD,7x6.6mm",
+      "paramTextAll": "应用等级:消费级,电感值:470nH,直流电阻(DCR):4.1mΩ,类型:-,精度:±20%,额定电流:18A,饱和电流(Isat):20A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C408439.html",
+      "retrieved_at": "2026-11-06T19:35:17.416Z",
+      "rendered_stock": 2408,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.852
+        },
+        {
+          "start": 50,
+          "price": 0.703
+        },
+        {
+          "start": 150,
+          "price": 0.628
+        },
+        {
+          "start": 1500,
+          "price": 0.533
+        },
+        {
+          "start": 3000,
+          "price": 0.488
+        },
+        {
+          "start": 4500,
+          "price": 0.466
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.533,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/CEE4AE5EC9F7EB97495A767C9ECB8960.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C2877852",
+      "componentModel": "TLV75801PDBVR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "550mV~5.5V 500mA 6V",
+      "componentSpecification": "SOT-23-5",
+      "paramTextAll": "功能特性:软启动,功能特性:内置软启动,功能特性:输出放电,功能特性:使能控制,功能特性:防静电保护,功能特性:带使能,功能特性:防倒灌,功能特性:短路保护,功能特性:欠压锁定,功能特性:自动放电功能,功能特性:短路保护,功能特性:过流保护,功能特性:热关断,功能特性:输入欠压保护,压差:130mV@(500mA),噪声:30uVrms,工作温度:-40℃~+125℃@(Tj),工作电压:6V,电源纹波抑制比(PSRR):50dB@(1kHz),输出极性:正极,输出电压:0.55V~5.5V,输出电流:500mA,输出类型:可调,输出通道数:1,静态电流(Iq):25uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C2877852.html",
+      "retrieved_at": "2026-11-06T19:36:04.364Z",
+      "rendered_stock": 62,
+      "rendered_price_rows": [],
+      "page_shows_book_price": true,
+      "consultPrice": 0.297,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tlv758p.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C3020560",
+      "componentModel": "USB4105-GF-A",
+      "componentBrand": "GCT",
+      "componentName": "Type-C 母 卧贴",
+      "componentSpecification": "SMD",
+      "paramTextAll": "公母:母,协议标准:USB 2.0,安装方式:卧贴,工作温度:-40℃~+85℃,端口数量:1,胶芯颜色:黑色,触点数量:12P,连接器类型:Type-C,额定电压:48V,额定电流 - 电源:5A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C3020560.html",
+      "retrieved_at": "2026-11-06T19:42:16.893Z",
+      "rendered_stock": 19437,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 6.24
+        },
+        {
+          "start": 10,
+          "price": 5.06
+        },
+        {
+          "start": 30,
+          "price": 4.47
+        },
+        {
+          "start": 100,
+          "price": 3.696
+        },
+        {
+          "start": 500,
+          "price": 3.363
+        },
+        {
+          "start": 800,
+          "price": 3.192
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 3.192,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20220520/320CE7E4F2C5E8A05ADD2DAC45B818D3.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C9382",
+      "componentModel": "SN74LVC1T45DCKR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "单比特双电源总线收发器，具备可配置电压转换和三态输出功能",
+      "componentSpecification": "SC-70-6",
+      "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+85℃,工作电压(VCCA):1.65V~5.5V,工作电压(VCCB):1.65V~5.5V,拉电流(IOH):-,接口类型:-,数据速率:420Mbps,每个电路通道数:1,灌电流(IOL):-,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:非反相,输出类型:三态,通道类型:双向",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C9382.html",
+      "retrieved_at": "2026-11-06T19:43:50.387Z",
+      "rendered_stock": 78224,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 1.404
+        },
+        {
+          "start": 50,
+          "price": 1.1
+        },
+        {
+          "start": 150,
+          "price": 0.952
+        },
+        {
+          "start": 500,
+          "price": 0.82
+        },
+        {
+          "start": 3000,
+          "price": 0.696
+        },
+        {
+          "start": 6000,
+          "price": 0.674
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.696,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1t45.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C22903",
+      "componentModel": "0603WAF2211T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 2.21kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:2210Ω",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C22903.html",
+      "retrieved_at": "2026-11-06T19:42:43.121Z",
+      "rendered_stock": 10826,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0172
+        },
+        {
+          "start": 1000,
+          "price": 0.0135
+        },
+        {
+          "start": 5000,
+          "price": 0.0116
+        },
+        {
+          "start": 10000,
+          "price": 0.0095
+        },
+        {
+          "start": 50000,
+          "price": 0.0083
+        },
+        {
+          "start": 50200,
+          "price": 0.0083
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0116,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C913474",
+      "componentModel": "GRM188Z71A475KE15D",
+      "componentBrand": "muRata(村田)",
+      "componentName": "4.7uF ±10% 10V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C913474.html",
+      "retrieved_at": "2026-11-06T19:42:36.222Z",
+      "rendered_stock": 2646,
+      "rendered_price_rows": [],
+      "page_shows_book_price": true,
+      "consultPrice": 0.248,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20201110/C913474_4DF5AD40636EBA2467CAA7A6A4C37EEF.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C1644",
+      "componentModel": "CL10C150JB8NNNC",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "15pF ±5% 50V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:15pF,温度系数:C0G,精度:±5%,额定电压:50V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C1644.html",
+      "retrieved_at": "2026-11-06T19:42:29.081Z",
+      "rendered_stock": 908352,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0675
+        },
+        {
+          "start": 500,
+          "price": 0.0513
+        },
+        {
+          "start": 1500,
+          "price": 0.0441
+        },
+        {
+          "start": 4000,
+          "price": 0.0387
+        },
+        {
+          "start": 24000,
+          "price": 0.0365
+        },
+        {
+          "start": 48000,
+          "price": 0.0351
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0387,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C1855726",
+      "componentModel": "TPD2E2U06DCKR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "双向TVS 5.5V截止 峰值浪涌电流：5.5A@8/20us",
+      "componentSpecification": "SC-70-3",
+      "paramTextAll": "Cj-结电容:1.5pF,击穿电压(VBR):6.5V,击穿电压(VBR):6.5V,反向工作电压(Vrwm):5.5V,反向截止电压(Vrwm):5.5V,反向漏电流(Ir):10nA,峰值脉冲功率(Ppp):75W@8/20us,峰值脉冲功率(Ppp)@8/20us:75W,峰值脉冲电流(Ipp):5.5A@8/20us,峰值脉冲电流(Ipp)@8/20us:5.5A@(8/20us),工作温度:-40℃~+125℃,工作温度:-40℃~+125℃@(Ta),极性:双向,类型:TVS,结电容(Cj)@1MHz:1.5pF@1MHz,通道数:2,通道数:双路,钳位电压:12.4V,钳位电压(Vc)@Ipp:12.4V,防护等级:IEC 61000-4-2,防护等级:IEC 61000-4-5",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C1855726.html",
+      "retrieved_at": "2026-11-06T19:42:11.463Z",
+      "rendered_stock": 0,
+      "rendered_price_rows": [],
+      "page_shows_book_price": true,
+      "consultPrice": 0.733,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C25803",
+      "componentModel": "0603WAF1003T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 100kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C25803.html",
+      "retrieved_at": "2026-11-06T19:35:54.684Z",
+      "rendered_stock": 16289957,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0176
+        },
+        {
+          "start": 1000,
+          "price": 0.0136
+        },
+        {
+          "start": 5000,
+          "price": 0.0117
+        },
+        {
+          "start": 10000,
+          "price": 0.0096
+        },
+        {
+          "start": 50000,
+          "price": 0.0088
+        },
+        {
+          "start": 50200,
+          "price": 0.0088
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0117,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C18185770",
+      "componentModel": "TCC0603X7R475K100CT",
+      "componentBrand": "CCTC(三环)",
+      "componentName": "4.7uF ±10% 10V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C18185770.html",
+      "retrieved_at": "2026-11-06T19:50:00.191Z",
+      "rendered_stock": 331813,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.106
+        },
+        {
+          "start": 500,
+          "price": 0.0804
+        },
+        {
+          "start": 1500,
+          "price": 0.069
+        },
+        {
+          "start": 4000,
+          "price": 0.0604
+        },
+        {
+          "start": 24000,
+          "price": 0.057
+        },
+        {
+          "start": 48000,
+          "price": 0.0547
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0604,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C23345",
+      "componentModel": "0603WAF220JT5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 22Ω ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:22000mΩ",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C23345.html",
+      "retrieved_at": "2026-11-06T19:42:37.727Z",
+      "rendered_stock": 6065059,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0101
+        },
+        {
+          "start": 1000,
+          "price": 0.0079
+        },
+        {
+          "start": 5000,
+          "price": 0.0068
+        },
+        {
+          "start": 10000,
+          "price": 0.0061
+        },
+        {
+          "start": 50000,
+          "price": 0.0056
+        },
+        {
+          "start": 50200,
+          "price": 0.0056
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0068,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C728585",
+      "componentModel": "RT0603BRD07200KL",
+      "componentBrand": "YAGEO(国巨)",
+      "componentName": "薄膜电阻 200kΩ ±0.1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C728585.html",
+      "retrieved_at": "2026-11-06T19:42:53.581Z",
+      "rendered_stock": 220735,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.342
+        },
+        {
+          "start": 200,
+          "price": 0.292
+        },
+        {
+          "start": 600,
+          "price": 0.265
+        },
+        {
+          "start": 5000,
+          "price": 0.248
+        },
+        {
+          "start": 10000,
+          "price": 0.234
+        },
+        {
+          "start": 20000,
+          "price": 0.226
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.248,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C5217891",
+      "componentModel": "SN74LXC2T45DCUR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "2-bit dual supply transceiver with configurable voltage-level shifting and 3-state outputs",
+      "componentSpecification": "VSSOP-8",
+      "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+125℃,工作电压(VCCA):1.1V~5.5V,工作电压(VCCB):1.1V~5.5V,拉电流(IOH):32mA,接口类型:-,数据速率:420Mbps,每个电路通道数:2,灌电流(IOL):32mA,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:推挽式,通道类型:双向",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C5217891.html",
+      "retrieved_at": "2026-11-06T19:35:59.336Z",
+      "rendered_stock": 9932,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 4.91
+        },
+        {
+          "start": 10,
+          "price": 4.15
+        },
+        {
+          "start": 30,
+          "price": 3.62
+        },
+        {
+          "start": 100,
+          "price": 3.18
+        },
+        {
+          "start": 500,
+          "price": 3.04
+        },
+        {
+          "start": 1000,
+          "price": 2.95
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 2.95,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C5218924",
+      "componentModel": "TLV803EA30DBZR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "低功耗和小尺寸电源电压监控器",
+      "componentSpecification": "SOT-23-3",
+      "paramTextAll": "受监控电压数:1,复位有效电平:低电平有效,复位超时:200ms,工作温度:-40℃~+125℃,工作电压:1.7V~6V,芯片类型:电压监控器,输出类型:开漏,阈值电压:3.08V,静态电流(Iq):250nA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C5218924.html",
+      "retrieved_at": "2026-11-06T19:42:09.745Z",
+      "rendered_stock": 7245,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 2.46
+        },
+        {
+          "start": 10,
+          "price": 1.94
+        },
+        {
+          "start": 30,
+          "price": 1.68
+        },
+        {
+          "start": 100,
+          "price": 1.45
+        },
+        {
+          "start": 500,
+          "price": 1.38
+        },
+        {
+          "start": 1000,
+          "price": 1.35
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.35,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tlv803e.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C7501289",
+      "componentModel": "ZX-PZ1.27-2-5PZZ",
+      "componentBrand": "Megastar(兆星)",
+      "componentName": "【插件】2x5P 间距:1.27mm 方针 直插",
+      "componentSpecification": "插件,P=1.27mm",
+      "paramTextAll": "圆针/方针:方针,塑高:1mm,安装方式:直插,安装方式:直插,工作温度:-40℃~+105℃,总PIN位数:10P,排数:双排,插针结构:2x5P,端接针长度:2.3mm,行距:1.27mm,触头材质:黄铜,触头镀层:金,配合针长度:3.9mm,间距:1.27mm,颜色:黑色,额定电压:-,额定电流:1A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C7501289.html",
+      "retrieved_at": "2026-11-06T19:35:51.366Z",
+      "rendered_stock": 14597,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.466
+        },
+        {
+          "start": 50,
+          "price": 0.394
+        },
+        {
+          "start": 150,
+          "price": 0.358
+        },
+        {
+          "start": 500,
+          "price": 0.331
+        },
+        {
+          "start": 2000,
+          "price": 0.304
+        },
+        {
+          "start": 4000,
+          "price": 0.293
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.304,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20231122/F17CBFE608F16BCCADFE6957B6D7BD2D.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C2886894",
+      "componentModel": "TL3342F260QG",
+      "componentBrand": "E-Switch",
+      "componentName": "5.2*5.2*1.54mm 立贴 轻触开关",
+      "componentSpecification": "SMD-4P,5.2x5.2mm",
+      "paramTextAll": "作用力:260gf,安装方式:立贴,工作寿命:100000次,工作温度:-20℃~+70℃,带支架:不带支架,开关宽度:5.2mm,开关长度:5.2mm,开关高度:1.54mm,引脚样式:鸥翼型,按钮/盖帽颜色:黄色,按钮形状:圆形按钮,电路结构:单刀单掷,触点电流:50mA,额定电压:12V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C2886894.html",
+      "retrieved_at": "2026-11-06T19:42:58.704Z",
+      "rendered_stock": 50,
+      "rendered_price_rows": [],
+      "page_shows_book_price": true,
+      "consultPrice": 3.11,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C124375",
+      "componentModel": "B-2100S02P-A110",
+      "componentBrand": "Ckmtw(灿科盟)",
+      "componentName": "1x2P 间距:2.54mm 方针 直插【排针】",
+      "componentSpecification": "插件,P=2.54mm",
+      "paramTextAll": "圆针/方针:方针,塑高:2.54mm,安装方式:直插,安装方式:直插,工作温度:-40℃~+105℃,总PIN位数:2,总PIN位数:2P,排数:单排,插针结构:1x2P,端接针长度:3mm,行距:-,触头材质:黄铜,触头镀层:金,配合针长度:6mm,间距:2.54mm,颜色:黑色,额定电压:-,额定电流:3A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C124375.html",
+      "retrieved_at": "2026-11-06T19:35:49.868Z",
+      "rendered_stock": 132053,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.17
+        },
+        {
+          "start": 200,
+          "price": 0.132
+        },
+        {
+          "start": 600,
+          "price": 0.115
+        },
+        {
+          "start": 5000,
+          "price": 0.0867
+        },
+        {
+          "start": 10000,
+          "price": 0.0819
+        },
+        {
+          "start": 20000,
+          "price": 0.0788
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0867,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20221019/2EE72DAC61CAA62C0A53546E211F9C15.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C95843",
+      "componentModel": "CL10B105KP8NNNC",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "1uF ±10% 10V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C95843.html",
+      "retrieved_at": "2026-11-06T19:42:30.917Z",
+      "rendered_stock": 454134,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.109
+        },
+        {
+          "start": 500,
+          "price": 0.0846
+        },
+        {
+          "start": 1500,
+          "price": 0.0711
+        },
+        {
+          "start": 4000,
+          "price": 0.0619
+        },
+        {
+          "start": 24000,
+          "price": 0.0549
+        },
+        {
+          "start": 48000,
+          "price": 0.0511
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0619,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C98400",
+      "componentModel": "SPH4018H4R7MT",
+      "componentBrand": "Sunlord(顺络)",
+      "componentName": "4.7uH ±20% 2A",
+      "componentSpecification": "SMD,4x4mm",
+      "paramTextAll": "应用等级:消费级,电感值:4.7uH,直流电阻(DCR):84mΩ,类型:-,精度:±20%,额定电流:1.7A,饱和电流(Isat):2A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C98400.html",
+      "retrieved_at": "2026-11-06T19:35:38.390Z",
+      "rendered_stock": 6025,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.474
+        },
+        {
+          "start": 100,
+          "price": 0.387
+        },
+        {
+          "start": 300,
+          "price": 0.344
+        },
+        {
+          "start": 3000,
+          "price": 0.308
+        },
+        {
+          "start": 6000,
+          "price": 0.282
+        },
+        {
+          "start": 9000,
+          "price": 0.269
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.308,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C474952",
+      "componentModel": "KF128-5.08-2P-AA",
+      "componentBrand": "KEFA(科发)",
+      "componentName": "1x2P 5.08mm 直插 排数:1 每排P数:2 【螺钉】",
+      "componentSpecification": "插件,P=5.08mm",
+      "paramTextAll": "安装类型:直插,工作温度:-40℃~+105℃,总PIN数:2P,排数:1,板上高度:14.1mm,每排PIN数:2,线规 - AWG:12~22,线规 - AWG:12~22,线规 - 平方毫米:2.5,结构:1x2P,螺钉规格:M2.5,间距:5.08mm,颜色:绿色,额定电压:250V,额定电流:24A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C474952.html",
+      "retrieved_at": "2026-11-06T19:35:44.656Z",
+      "rendered_stock": 74200,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 1.177
+        },
+        {
+          "start": 50,
+          "price": 0.921
+        },
+        {
+          "start": 150,
+          "price": 0.797
+        },
+        {
+          "start": 600,
+          "price": 0.631
+        },
+        {
+          "start": 2400,
+          "price": 0.602
+        },
+        {
+          "start": 4800,
+          "price": 0.585
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.631,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20240821/65781D2669BFD48A107CF288CD3FBA7A.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C163219",
+      "componentModel": "TLV62568DBVR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "降压型 1A 2.5V~5.5V",
+      "componentSpecification": "SOT-23-5",
+      "paramTextAll": "功能特性:轻载高效模式,功能特性:过流保护,功能特性:工作状态指示,功能类型:降压型,同步整流:是,工作温度:-40℃~+125℃@(TJ),工作电压:2.5V~5.5V,开关管(内置/外置):内置,开关频率:1.5MHz,拓扑结构:降压式,输出电压:0.6V~5.5V,输出电流:1A,输出类型:可调,输出通道数:1,静态电流(Iq):35uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C163219.html",
+      "retrieved_at": "2026-11-06T19:35:28.375Z",
+      "rendered_stock": 51255,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.457
+        },
+        {
+          "start": 50,
+          "price": 0.358
+        },
+        {
+          "start": 150,
+          "price": 0.308
+        },
+        {
+          "start": 500,
+          "price": 0.266
+        },
+        {
+          "start": 3000,
+          "price": 0.251
+        },
+        {
+          "start": 6000,
+          "price": 0.242
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.251,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tlv62568.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C122538",
+      "componentModel": "RT0603BRD07100KL",
+      "componentBrand": "YAGEO(国巨)",
+      "componentName": "薄膜电阻 100kΩ ±0.1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C122538.html",
+      "retrieved_at": "2026-11-06T19:42:50.038Z",
+      "rendered_stock": 1948547,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.167
+        },
+        {
+          "start": 200,
+          "price": 0.137
+        },
+        {
+          "start": 600,
+          "price": 0.124
+        },
+        {
+          "start": 5000,
+          "price": 0.109
+        },
+        {
+          "start": 10000,
+          "price": 0.105
+        },
+        {
+          "start": 20000,
+          "price": 0.102
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.109,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C492405",
+      "componentModel": "PZ254V-11-06P",
+      "componentBrand": "XFCN(兴飞)",
+      "componentName": "1x6P 间距:2.54mm 方针 直插【排针】",
+      "componentSpecification": "插件,P=2.54mm",
+      "paramTextAll": "圆针/方针:方针,塑高:2.5mm,安装方式:直插,安装方式:直插,工作温度:-40℃~+105℃,总PIN位数:6,总PIN位数:6P,排数:单排,插针结构:1x6P,端接针长度:3mm,行距:-,触头材质:黄铜,触头镀层:金,配合针长度:6.1mm,间距:2.54mm,颜色:黑色,额定电压:250V,额定电流:3A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C492405.html",
+      "retrieved_at": "2026-11-06T19:35:48.110Z",
+      "rendered_stock": 97077,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.25
+        },
+        {
+          "start": 200,
+          "price": 0.203
+        },
+        {
+          "start": 1000,
+          "price": 0.163
+        },
+        {
+          "start": 2000,
+          "price": 0.145
+        },
+        {
+          "start": 10000,
+          "price": 0.131
+        },
+        {
+          "start": 20000,
+          "price": 0.124
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.163,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C780206",
+      "componentModel": "SRN4018-4R7M",
+      "componentBrand": "BOURNS",
+      "componentName": "4.7uH ±20% 2A",
+      "componentSpecification": "SMD,4x4mm",
+      "paramTextAll": "应用等级:消费级,电感值:4.7uH,直流电阻(DCR):84mΩ,类型:-,精度:±20%,额定电流:1.9A,饱和电流(Isat):2A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C780206.html",
+      "retrieved_at": "2026-11-06T19:35:33.142Z",
+      "rendered_stock": 872,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 2.249
+        },
+        {
+          "start": 50,
+          "price": 1.819
+        },
+        {
+          "start": 150,
+          "price": 1.634
+        },
+        {
+          "start": 500,
+          "price": 1.404
+        },
+        {
+          "start": 3000,
+          "price": 1.157
+        },
+        {
+          "start": 6000,
+          "price": 1.0952
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.157,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200402/C503307_B7E9C822AE434E2FFFB3052CB2864C33.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C19702",
+      "componentModel": "CL10A106KP8NNNC",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "10uF ±10% 10V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C19702.html",
+      "retrieved_at": "2026-11-06T19:42:25.439Z",
+      "rendered_stock": 10462071,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.124
+        },
+        {
+          "start": 200,
+          "price": 0.0946
+        },
+        {
+          "start": 600,
+          "price": 0.0815
+        },
+        {
+          "start": 4000,
+          "price": 0.0716
+        },
+        {
+          "start": 8000,
+          "price": 0.0677
+        },
+        {
+          "start": 20000,
+          "price": 0.065
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0716,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C908282",
+      "componentModel": "2MD1T1B1M2QES-5",
+      "componentBrand": "Dailywell(德利威)",
+      "componentName": "三件套 2M系列 钮子开关 摇头开关 3件套【插件】",
+      "componentSpecification": "插件",
+      "paramTextAll": "安装方式:直插,工作寿命:30000次,工作温度:-40℃~+85℃,开关宽度:8.13mm,开关长度:9.14mm,开关高度:23.63mm,引脚样式:PC引脚,电路结构:双刀双掷,钮柄形状:圆柱钮柄",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C908282.html",
+      "retrieved_at": "2026-11-06T19:35:31.372Z",
+      "rendered_stock": 36,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 10.25
+        },
+        {
+          "start": 10,
+          "price": 8.72
+        },
+        {
+          "start": 30,
+          "price": 7.76
+        },
+        {
+          "start": 100,
+          "price": 6.78
+        },
+        {
+          "start": 500,
+          "price": 6.34
+        },
+        {
+          "start": 1000,
+          "price": 6.15
+        },
+        {
+          "start": 2000,
+          "price": 6.07
+        },
+        {
+          "start": 4000,
+          "price": 6.02
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 7.76,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200324/C496170_954A7394085DEA4CF4EC9443DF401EBE.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C457657",
+      "componentModel": "FSA2466UMX",
+      "componentBrand": "onsemi(安森美)",
+      "componentName": "低电压数据/音频双DPDT模拟开关",
+      "componentSpecification": "UFQFN-16(1.8x2.6)",
+      "paramTextAll": "传播延迟(tpd):-,关闭时间(toff):80ns,功能特性:-,导通时间(ton):50ns,导通电容(Con):16pF,导通电阻(Ron):2Ω,工作温度:-40℃~+85℃,工作电压:1.65V~4.45V,带宽:245MHz,开关电路:2:1,电荷注入:8pC,通道数:2",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C457657.html",
+      "retrieved_at": "2026-11-06T19:35:23.010Z",
+      "rendered_stock": 8469,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 3.04
+        },
+        {
+          "start": 10,
+          "price": 2.42
+        },
+        {
+          "start": 30,
+          "price": 2.16
+        },
+        {
+          "start": 100,
+          "price": 1.83
+        },
+        {
+          "start": 500,
+          "price": 1.68
+        },
+        {
+          "start": 1000,
+          "price": 1.59
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.59,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C2931342",
+      "componentModel": "WUSB3801Q-12/TR",
+      "componentBrand": "WILLSEMI(韦尔)",
+      "componentName": "USB Type-C配置通道可翻转适配器",
+      "componentSpecification": "QFN1616-12L(1.6x1.6)",
+      "paramTextAll": "USB协议版本:USB Type-C 1.2,功能特性:低功耗模式,工作温度:-40℃~+125℃,工作电压:2.7V~5.5V,工作电流:45uA,应用功能:-,数据速率:-,通道数:2,静态电流:1uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C2931342.html",
+      "retrieved_at": "2026-11-06T19:35:41.660Z",
+      "rendered_stock": 1760,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 2.0968
+        },
+        {
+          "start": 50,
+          "price": 1.663
+        },
+        {
+          "start": 150,
+          "price": 1.477
+        },
+        {
+          "start": 500,
+          "price": 1.245
+        },
+        {
+          "start": 3000,
+          "price": 1.141
+        },
+        {
+          "start": 6000,
+          "price": 1.0794
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.141,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20220218/358FA27FD5CA391EB61300BD5A69029B.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C70590",
+      "componentModel": "X322524MOB4SI",
+      "componentBrand": "YXC(扬兴晶振)",
+      "componentName": "YSX321SL 24MHZ 4P 3225 12PF ±10PPM -40~85℃ (±20PPM)",
+      "componentSpecification": "SMD3225-4P",
+      "paramTextAll": "工作温度:-40℃~+85℃,常温频差:±10ppm,晶振类型:贴片晶振,等效串联电阻(ESR):50Ω,负载电容:12pF,频率:24MHz,频率稳定度:±20ppm",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C70590.html",
+      "retrieved_at": "2026-11-06T19:42:57.021Z",
+      "rendered_stock": 194283,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.578
+        },
+        {
+          "start": 50,
+          "price": 0.462
+        },
+        {
+          "start": 150,
+          "price": 0.402
+        },
+        {
+          "start": 500,
+          "price": 0.335
+        },
+        {
+          "start": 3000,
+          "price": 0.29
+        },
+        {
+          "start": 6000,
+          "price": 0.279
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.29,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250928/BA09DC4959912CC648B409782DBA9F72.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C86295",
+      "componentModel": "CL10A226MP8NUNE",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "22uF ±20% 10V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C86295.html",
+      "retrieved_at": "2026-11-06T19:42:27.249Z",
+      "rendered_stock": 643687,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.199
+        },
+        {
+          "start": 100,
+          "price": 0.149
+        },
+        {
+          "start": 300,
+          "price": 0.127
+        },
+        {
+          "start": 3000,
+          "price": 0.11
+        },
+        {
+          "start": 6000,
+          "price": 0.104
+        },
+        {
+          "start": 9000,
+          "price": 0.0991
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.11,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C913207",
+      "componentModel": "SRN4018-2R2M",
+      "componentBrand": "BOURNS",
+      "componentName": "2.2uH ±20% 3A",
+      "componentSpecification": "SMD,4x4mm",
+      "paramTextAll": "应用等级:消费级,电感值:2.2uH,直流电阻(DCR):44mΩ,类型:-,精度:±20%,额定电流:2.9A,饱和电流(Isat):3A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C913207.html",
+      "retrieved_at": "2026-11-06T19:35:34.869Z",
+      "rendered_stock": 1735,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 2.151
+        },
+        {
+          "start": 50,
+          "price": 1.717
+        },
+        {
+          "start": 150,
+          "price": 1.531
+        },
+        {
+          "start": 500,
+          "price": 1.299
+        },
+        {
+          "start": 3000,
+          "price": 1.136
+        },
+        {
+          "start": 6000,
+          "price": 1.0738
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.136,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/231023/srn4018-04a3bc27e8c35d57b2988e979c521430.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C15741",
+      "componentModel": "SN74LVC2T45DCUR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "双位双电源总线收发器，带可配置电压转换和三态输出",
+      "componentSpecification": "VSSOP-8",
+      "paramTextAll": "传播延迟(tpd):-,元件数:2,功能特性:掉电隔离,功能特性:电平转换,工作温度:-40℃~+85℃,工作电压:1.65V~5.5V,拉电流(IOH):32mA,每个元件位数:2,灌电流(IOL):32mA,系列:74LVC,输入类型:-,输出类型:三态,通道类型:双向,静态电流(Iq):10uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C15741.html",
+      "retrieved_at": "2026-11-06T19:44:27.104Z",
+      "rendered_stock": 90520,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 1.271
+        },
+        {
+          "start": 50,
+          "price": 1
+        },
+        {
+          "start": 150,
+          "price": 0.867
+        },
+        {
+          "start": 500,
+          "price": 0.667
+        },
+        {
+          "start": 3000,
+          "price": 0.634
+        },
+        {
+          "start": 6000,
+          "price": 0.615
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.634,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc2t45.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C131972",
+      "componentModel": "TCA9539PWR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "TCA9539 低电压16位 I²C 和 SMBus 低功耗 I/O 扩展器，带中断输出、复位引脚和配置寄存器",
+      "componentSpecification": "TSSOP-24",
+      "paramTextAll": "I/O 数量:16,功能特性:复位功能,功能特性:级联与地址扩展,功能特性:内置LED驱动,工作温度:-40℃~+85℃,工作电压:1.65V~5.5V,拉电流(IOH):10mA,接口类型:I2C,接口类型:SMBus,支持设备数量:4,时钟频率(fc):400kHz,是否有中断输出:有中断输出,灌电流(IOL):25mA,输出低电平(VOL):0.4V,输出类型:推挽式,输出高电平(VOH):4.1V,静态电流(Iq):1.5uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C131972.html",
+      "retrieved_at": "2026-11-06T19:36:02.878Z",
+      "rendered_stock": 7419,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 7.45
+        },
+        {
+          "start": 10,
+          "price": 6.26
+        },
+        {
+          "start": 30,
+          "price": 5.6
+        },
+        {
+          "start": 100,
+          "price": 4.86
+        },
+        {
+          "start": 500,
+          "price": 4.53
+        },
+        {
+          "start": 1000,
+          "price": 4.38
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 4.38,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tca9539.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C132554",
+      "componentModel": "TUSB320LAIRWBR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "USB Type-C 配置通道逻辑和端口控制器",
+      "componentSpecification": "X2-QFN-12(1.6x1.6)",
+      "paramTextAll": null,
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C132554.html",
+      "retrieved_at": "2026-11-06T19:35:26.620Z",
+      "rendered_stock": 5138,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 8.17
+        },
+        {
+          "start": 10,
+          "price": 6.83
+        },
+        {
+          "start": 30,
+          "price": 6.1
+        },
+        {
+          "start": 100,
+          "price": 5.27
+        },
+        {
+          "start": 500,
+          "price": 4.21
+        },
+        {
+          "start": 1000,
+          "price": 4.04
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 4.04,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/tusb320lai.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C7843",
+      "componentModel": "SN74LVC1T45DBVR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "单比特双电源总线收发器，带可配置电压转换和三态输出",
+      "componentSpecification": "SOT-23-6",
+      "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+85℃,工作电压(VCCA):1.65V~5.5V,工作电压(VCCB):1.65V~5.5V,拉电流(IOH):-,接口类型:-,数据速率:420Mbps,每个电路通道数:1,灌电流(IOL):-,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:非反相,输出类型:三态,通道类型:双向",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C7843.html",
+      "retrieved_at": "2026-11-06T19:43:48.595Z",
+      "rendered_stock": 230515,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.509
+        },
+        {
+          "start": 50,
+          "price": 0.41
+        },
+        {
+          "start": 150,
+          "price": 0.359
+        },
+        {
+          "start": 500,
+          "price": 0.317
+        },
+        {
+          "start": 3000,
+          "price": 0.266
+        },
+        {
+          "start": 6000,
+          "price": 0.256
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.266,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1t45.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C492404",
+      "componentModel": "PZ254V-11-05P",
+      "componentBrand": "XFCN(兴飞)",
+      "componentName": "1x5P 间距:2.54mm 方针 直插【排针】",
+      "componentSpecification": "插件,P=2.54mm",
+      "paramTextAll": "圆针/方针:方针,塑高:2.5mm,安装方式:直插,安装方式:直插,工作温度:-40℃~+105℃,总PIN位数:5,总PIN位数:5P,排数:单排,插针结构:1x5P,端接针长度:3mm,行距:-,触头材质:黄铜,触头镀层:金,配合针长度:6.1mm,间距:2.54mm,颜色:黑色,额定电压:250V,额定电流:3A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C492404.html",
+      "retrieved_at": "2026-11-06T19:35:46.431Z",
+      "rendered_stock": 226460,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.192
+        },
+        {
+          "start": 200,
+          "price": 0.15
+        },
+        {
+          "start": 1000,
+          "price": 0.12
+        },
+        {
+          "start": 2000,
+          "price": 0.106
+        },
+        {
+          "start": 10000,
+          "price": 0.1
+        },
+        {
+          "start": 20000,
+          "price": 0.0966
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.12,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C8545",
+      "componentModel": "2N7002",
+      "componentBrand": "CJ(江苏长电/长晶)",
+      "componentName": "2N7002",
+      "componentSpecification": "SOT-23",
+      "paramTextAll": "反向传输电容(Crss):5pF,反向传输电容(Crss):5pF,导通电阻(RDS(on)):5Ω@10V,工作温度:-,数量:1个N沟道,栅极电压(Vgs):±20V,栅极电荷量(Qg):-,漏源电压(Vdss):60V,类型:N沟道,耗散功率(Pd):0.225W,输入电容(Ciss):50pF,输入电容(Ciss):50pF,输出电容(Coss):25pF,连续漏极电流(Id):115mA,配置:-,阈值电压(Vgs(th)):2.5V,阈值电压(Vgs(th)):2.5V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C8545.html",
+      "retrieved_at": "2026-11-06T19:42:20.414Z",
+      "rendered_stock": 4182194,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.104
+        },
+        {
+          "start": 500,
+          "price": 0.0811
+        },
+        {
+          "start": 3000,
+          "price": 0.0708
+        },
+        {
+          "start": 6000,
+          "price": 0.0631
+        },
+        {
+          "start": 24000,
+          "price": 0.06
+        },
+        {
+          "start": 51000,
+          "price": 0.0579
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0708,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C1621",
+      "componentModel": "CL10B472KB8NNNC",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "4.7nF ±10% 50V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:4.7nF,温度系数:X7R,精度:±10%,额定电压:50V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C1621.html",
+      "retrieved_at": "2026-11-06T19:42:32.698Z",
+      "rendered_stock": 366687,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0588
+        },
+        {
+          "start": 500,
+          "price": 0.0452
+        },
+        {
+          "start": 1500,
+          "price": 0.0376
+        },
+        {
+          "start": 4000,
+          "price": 0.0331
+        },
+        {
+          "start": 24000,
+          "price": 0.0291
+        },
+        {
+          "start": 48000,
+          "price": 0.027
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0331,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C18221164",
+      "componentModel": "XFL4015-471MEC",
+      "componentBrand": "Coilcraft(线艺)",
+      "componentName": "470nH ±20% 6.6A",
+      "componentSpecification": "SMD,4x4mm",
+      "paramTextAll": "应用等级:车规级,电感值:470nH,直流电阻(DCR):7.6mΩ,精度:±20%,额定电流:11.2A,饱和电流(Isat):6.6A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C18221164.html",
+      "retrieved_at": "2026-11-06T19:35:36.618Z",
+      "rendered_stock": 1768,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 25.85
+        },
+        {
+          "start": 10,
+          "price": 22.65
+        },
+        {
+          "start": 30,
+          "price": 20.74
+        },
+        {
+          "start": 100,
+          "price": 18.82
+        },
+        {
+          "start": 500,
+          "price": 17.93
+        },
+        {
+          "start": 1000,
+          "price": 17.53
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 17.53,
+      "dataBookUrl": "https://www.coilcraft.com/getmedia/84927b8b-f089-421b-a7f4-a0fa23afe908/xfl4015.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C14663",
+      "componentModel": "CC0603KRX7R9BB104",
+      "componentBrand": "YAGEO(国巨)",
+      "componentName": "100nF ±10% 50V",
+      "componentSpecification": "0603",
+      "paramTextAll": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C14663.html",
+      "retrieved_at": "2026-11-06T19:35:53.179Z",
+      "rendered_stock": 34737191,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0577
+        },
+        {
+          "start": 500,
+          "price": 0.0448
+        },
+        {
+          "start": 1500,
+          "price": 0.0377
+        },
+        {
+          "start": 4000,
+          "price": 0.0334
+        },
+        {
+          "start": 24000,
+          "price": 0.0297
+        },
+        {
+          "start": 48000,
+          "price": 0.0277
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0334,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C22843",
+      "componentModel": "0603WAF1501T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 1.5kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1500Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C22843.html",
+      "retrieved_at": "2026-11-06T19:42:45.056Z",
+      "rendered_stock": 3282944,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0117
+        },
+        {
+          "start": 1000,
+          "price": 0.0088
+        },
+        {
+          "start": 5000,
+          "price": 0.0074
+        },
+        {
+          "start": 10000,
+          "price": 0.0065
+        },
+        {
+          "start": 50000,
+          "price": 0.0056
+        },
+        {
+          "start": 50200,
+          "price": 0.0056
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0074,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C42415145",
+      "componentModel": "HFD2/005-S",
+      "componentBrand": "HF(宏发)",
+      "componentName": "HFD2/005-S",
+      "componentSpecification": "插件,10.2x20.2mm",
+      "paramTextAll": "宽度:10.2mm,长度:20.2mm",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C42415145.html",
+      "retrieved_at": "2026-11-06T19:35:20.941Z",
+      "rendered_stock": 109,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 6.06
+        },
+        {
+          "start": 10,
+          "price": 5.93
+        },
+        {
+          "start": 25,
+          "price": 5.83
+        },
+        {
+          "start": 100,
+          "price": 5.74
+        },
+        {
+          "start": 102,
+          "price": 5.74
+        },
+        {
+          "start": 104,
+          "price": 5.74
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 5.83,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C96123",
+      "componentModel": "CL31A476MPHNNNE",
+      "componentBrand": "SAMSUNG(三星)",
+      "componentName": "47uF ±20% 10V",
+      "componentSpecification": "1206",
+      "paramTextAll": "容值:47uF,温度系数:X5R,精度:±20%,额定电压:10V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C96123.html",
+      "retrieved_at": "2026-11-06T19:35:43.158Z",
+      "rendered_stock": 468799,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 1.0442
+        },
+        {
+          "start": 50,
+          "price": 0.822
+        },
+        {
+          "start": 150,
+          "price": 0.713
+        },
+        {
+          "start": 500,
+          "price": 0.617
+        },
+        {
+          "start": 2000,
+          "price": 0.522
+        },
+        {
+          "start": 4000,
+          "price": 0.506
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.522,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C49451864",
+      "componentModel": "HPM5301IEG1",
+      "componentBrand": "HPMICRO(先楫半导体)",
+      "componentName": "基于RISC-V内核的32位高性能微控制器",
+      "componentSpecification": "QFN-48(6x6)",
+      "paramTextAll": "ADC(位数):16bit,CPU位数:32 Bit,CPU内核:RISC-V,CPU最大主频:360MHz,DAC(位数):-,EEPROM容量:-,I/O数量:29,RAM容量:288KB,功能特性:欠压检测(BOR/LVD/LVR/LVI),功能特性:存储加密,功能特性:上电复位(POR),功能特性:真随机数发生器(TRNG),功能特性:看门狗复位,功能特性:内置通用定时器,功能特性:外部管脚复位(NRST),功能特性:软件复位,功能特性:集成LDO,工作温度:-40℃~+105℃,工作电压:3V~3.6V,振荡器类型:内置+外置,程序存储器类型:FLASH,程序存储容量:1MB",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C49451864.html",
+      "retrieved_at": "2026-11-06T19:35:19.456Z",
+      "rendered_stock": 528,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 20.9
+        },
+        {
+          "start": 10,
+          "price": 17.71
+        },
+        {
+          "start": 30,
+          "price": 15.82
+        },
+        {
+          "start": 100,
+          "price": 13.9
+        },
+        {
+          "start": 500,
+          "price": 13.02
+        },
+        {
+          "start": 1000,
+          "price": 12.62
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 13.9,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250717/A0802240126DEF7807A484C4381E2269.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C20917",
+      "componentModel": "AO3400A",
+      "componentBrand": "AOS",
+      "componentName": "AO3400A",
+      "componentSpecification": "SOT-23",
+      "paramTextAll": "反向传输电容(Crss):50pF,反向传输电容(Crss):50pF,导通电阻(RDS(on)):48mΩ@2.5V,工作温度:-55℃~+150℃,数量:1个N沟道,栅极电压(Vgs):±12V,栅极电荷量(Qg):7nC@10V,漏源电压(Vdss):30V,类型:N沟道,耗散功率(Pd):1.4W,输入电容(Ciss):630pF,输入电容(Ciss):630pF,输出电容(Coss):75pF,连续漏极电流(Id):5.7A,配置:-,阈值电压(Vgs(th)):1.45V,阈值电压(Vgs(th)):1.45V",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C20917.html",
+      "retrieved_at": "2026-11-06T19:42:22.158Z",
+      "rendered_stock": 1077313,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.543
+        },
+        {
+          "start": 50,
+          "price": 0.438
+        },
+        {
+          "start": 150,
+          "price": 0.384
+        },
+        {
+          "start": 500,
+          "price": 0.339
+        },
+        {
+          "start": 3000,
+          "price": 0.324
+        },
+        {
+          "start": 6000,
+          "price": 0.313
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.324,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C21189",
+      "componentModel": "0603WAF0000T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 0Ω ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:-,电阻类型:厚膜电阻,精度:±1%,阻值:0Ω",
+      "orderLibraryType": "base",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C21189.html",
+      "retrieved_at": "2026-11-06T19:43:00.428Z",
+      "rendered_stock": 19226181,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.013
+        },
+        {
+          "start": 1000,
+          "price": 0.0103
+        },
+        {
+          "start": 5000,
+          "price": 0.009
+        },
+        {
+          "start": 10000,
+          "price": 0.0075
+        },
+        {
+          "start": 50000,
+          "price": 0.0069
+        },
+        {
+          "start": 50200,
+          "price": 0.0069
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.009,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250704/8E163ECBCBDDE34D37E0A236B2783941.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C2868232",
+      "componentModel": "SN74LXC8T245QPWRQ1",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "具有可配置电平转换和三态输出的汽车8位双电源总线收发器",
+      "componentSpecification": "TSSOP-24",
+      "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+125℃,工作电压(VCCA):1.1V~5.5V,工作电压(VCCB):1.1V~5.5V,拉电流(IOH):-,接口类型:-,数据速率:420Mbps,每个电路通道数:8,灌电流(IOL):-,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:三态,通道类型:双向",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C2868232.html",
+      "retrieved_at": "2026-11-06T19:35:24.891Z",
+      "rendered_stock": 134,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 9.3
+        },
+        {
+          "start": 10,
+          "price": 8.33
+        },
+        {
+          "start": 30,
+          "price": 7.64
+        },
+        {
+          "start": 100,
+          "price": 7.01
+        },
+        {
+          "start": 500,
+          "price": 6.73
+        },
+        {
+          "start": 1000,
+          "price": 6.61
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 6.61,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc8t245-q1.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C465737",
+      "componentModel": "SN74LVC08APWR",
+      "componentBrand": "TI(德州仪器)",
+      "componentName": "四组 2 输入正与门",
+      "componentSpecification": "TSSOP-14",
+      "paramTextAll": "传播延迟(tpd):3.9ns@3.3V,50pF,功能特性:过压容忍输入,工作温度:-40℃~+125℃,工作电压:1.65V~3.6V,拉电流(IOH):24mA,每门输入数量:2,灌电流(IOL):24mA,系列:74LVC系列,输入低电平(VIL):0.7V~0.8V,输入类型:标准CMOS,输入高电平(VIH):1.7V~2V,输出低电平(VOL):0.4V,输出低电平(VOL):0.3V,输出低电平(VOL):0.55V,输出低电平(VOL):0.8V,输出低电平(VOL):0.6V,输出低电平(VOL):0.24V,输出低电平(VOL):0.2V,输出低电平(VOL):0.75V,输出类型:推挽式,输出高电平(VOH):-,逻辑类型:与门,门电路数量:4,静态电流(Iq):1uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C465737.html",
+      "retrieved_at": "2026-11-06T19:42:13.363Z",
+      "rendered_stock": 376,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 2.953
+        },
+        {
+          "start": 50,
+          "price": 2.474
+        },
+        {
+          "start": 150,
+          "price": 2.269
+        },
+        {
+          "start": 500,
+          "price": 2.0131
+        },
+        {
+          "start": 2000,
+          "price": 1.769
+        },
+        {
+          "start": 4000,
+          "price": 1.7
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 1.769,
+      "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C191581",
+      "componentModel": "MCP4726A0T-E/CH",
+      "componentBrand": "MICROCHIP(美国微芯)",
+      "componentName": "8/10/12位带EEPROM和I²C接口的电压输出数模转换器",
+      "componentSpecification": "SOT-23-6",
+      "paramTextAll": "分辨率(位):12,分辨率(位):12位,功能特性:可编程增益,功能特性:掉电模式,功能特性:上电复位,工作温度:-40℃~+125℃,工作电压:2.7V~5.5V,建立时间:6us,接口类型:I2C,更新速率:-,积分非线性:±0.2LSB,积分非线性:14.5LSB,输出类型:电压-缓冲,通道数:1,静态电流:210uA",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C191581.html",
+      "retrieved_at": "2026-11-06T19:35:29.873Z",
+      "rendered_stock": 4812,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 8.29
+        },
+        {
+          "start": 10,
+          "price": 6.87
+        },
+        {
+          "start": 30,
+          "price": 6.1
+        },
+        {
+          "start": 100,
+          "price": 5.22
+        },
+        {
+          "start": 500,
+          "price": 4.83
+        },
+        {
+          "start": 1000,
+          "price": 4.65
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 4.65,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20181222/C191581_14B3AB735356D3E044593D40E6F33AFA.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C370436",
+      "componentModel": "SPH4018H2R2MT",
+      "componentBrand": "Sunlord(顺络)",
+      "componentName": "2.2uH ±20% 3A",
+      "componentSpecification": "SMD,4x4mm",
+      "paramTextAll": "应用等级:消费级,电感值:2.2uH,直流电阻(DCR):42mΩ,类型:-,精度:±20%,额定电流:2.2A,饱和电流(Isat):3A",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C370436.html",
+      "retrieved_at": "2026-11-06T19:35:40.163Z",
+      "rendered_stock": 22557,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.488
+        },
+        {
+          "start": 100,
+          "price": 0.398
+        },
+        {
+          "start": 300,
+          "price": 0.354
+        },
+        {
+          "start": 3000,
+          "price": 0.317
+        },
+        {
+          "start": 6000,
+          "price": 0.29
+        },
+        {
+          "start": 9000,
+          "price": 0.277
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.317,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf",
+      "moq": null,
+      "purchase_increment": null
+    },
+    {
+      "componentCode": "C22834",
+      "componentModel": "0603WAF1151T5E",
+      "componentBrand": "UNI-ROYAL(厚声)",
+      "componentName": "厚膜电阻 1.15kΩ ±1% 100mW",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C22834.html",
+      "retrieved_at": "2026-11-06T19:42:46.786Z",
+      "rendered_stock": 10544,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.0311
+        },
+        {
+          "start": 1000,
+          "price": 0.0246
+        },
+        {
+          "start": 5000,
+          "price": 0.0212
+        },
+        {
+          "start": 10000,
+          "price": 0.0175
+        },
+        {
+          "start": 50000,
+          "price": 0.0155
+        },
+        {
+          "start": 50200,
+          "price": 0.0155
+        }
+      ],
+      "page_shows_book_price": false,
+      "consultPrice": 0.0212,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+      "moq": null,
+      "purchase_increment": null
+    }
+  ]
+}

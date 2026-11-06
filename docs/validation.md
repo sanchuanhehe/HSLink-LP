@@ -17,7 +17,7 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 
 版面修改也必须核对网表。对每个标签，检查文字是否被导线、引脚或符号边框穿过，移动后是否仍有明确接点；电源汇线应避开引脚编号。对自定义符号，核对引脚线内端与边框、脚名位置，并确认脚号、电气类型和外部连接端坐标未被排版操作改动。分别查看默认字体和实际阅读字体的导出图；过滤空白字符后的文本包围盒检测只能作为辅助。
 
-最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
+最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/jlc-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
 
 ## 硬件验收
 
@@ -45,3 +45,5 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 ## 报告字段
 
 样板编号、硬件/固件版本、仪器型号及校准信息、温湿度、电源和信号电平、接线照片、测试步骤、原始数据路径、结果与限制。
+
+本轮电感/CC/VIO 前级换料的资料分析见 [jlc-design-review.md](jlc-design-review.md)；电平转换尚未闭合的最坏时序与实测条件见 [level-translation.md](level-translation.md)。

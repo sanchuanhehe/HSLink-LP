@@ -1,68 +1,59 @@
-references,candidate_mpn_or_spec,value,footprint,qty_per_board,qty_10_boards,unit_budget_cny,board_budget_cny,batch_budget_cny,price_status,source_url,basis,engineering_status,accessed_date
-U1,HPM5301IEG1,HPM5301IEG1,Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm,1,10,11.90,11.90,119.00,网页参考价／未下单,https://www.hqchip.com/gongsi/75936.html,华秋同型号 1+ 档 ¥11.90；10 套按 10 颗计算，非专门 10 件报价；批次、库存、税运待下单复核,候选/未硬件验证,2026-11-07
-Y1,24MHz / CL待配,24MHz / CL待配,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,1,10,3,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C1 C2,15p/C0G,15p/C0G,Capacitor_SMD:C_0603_1608Metric,2,20,0.15,0.30,3.00,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R1 R2,22R,22R,Resistor_SMD:R_0603_1608Metric,2,20,0.1,0.2,2.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R3 R4 R5 R10 R16 R51 R52,10k,10k,Resistor_SMD:R_0603_1608Metric,7,70,0.1,0.7,7.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-SW1,BOOT1,BOOT1,Button_Switch_SMD:SW_SPST_TL3342,1,10,0.8,0.8,8.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-SW2,RESET,RESET,Button_Switch_SMD:SW_SPST_TL3342,1,10,0.8,0.8,8.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J1,服务接口 / ISP,服务接口 / ISP,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1,10,2,2,20,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-TP1,SPARE_GPIO,SPARE_GPIO,TestPoint:TestPoint_Pad_D1.0mm,1,10,0,0,0,预算,,PCB 焊盘，无独立物料,候选/未硬件验证,2026-11-05
-L1,SRN4018-4R7M / 4.7uH,SRN4018-4R7M / 4.7uH,Inductor_SMD:L_Bourns-SRN4018,1,10,3,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C3 C4 C34,22u/6.3V,22u/6.3V,Capacitor_SMD:C_0603_1608Metric,3,30,1,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C5 C36,10u/6.3V,10u/6.3V,Capacitor_SMD:C_0603_1608Metric,2,20,0.6,1.2,12.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C18 C20 C21 C22 C26 C28 C29 C30 C31 C32 C42 C46 C48 C49 C50 C51 C52 C53 C54 C55 C56 C57 C58 C59,100n/16V,100n/16V,Capacitor_SMD:C_0603_1608Metric,35,350,0.15,5.25,52.50,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C17 C19,4.7u/6.3V,4.7u/6.3V,Capacitor_SMD:C_0603_1608Metric,2,20,0.5,1.0,10.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U2,TLV803EA30DBZR,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23,1,10,1.5,1.5,15.0,预算,https://www.ti.com/product/TLV803E,10 件预算，非报价,候选/未硬件验证,2026-11-05
-R6 R7 R8 R13 R15 R23 R24 R25 R26 R27 R28 R29 R30 R31 R32 R33 R34 R35 R36 R37 R44 R45 R46 R47 R48 R49 R50,100k,100k,Resistor_SMD:R_0603_1608Metric,27,270,0.1,2.7,27.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J101,USB4105-GF-A,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,1,10,3,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U101,TUSB320LAIRWBR,TUSB320LAIRWBR,Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,1,10,12.03,12.03,120.30,页面参考价,https://www.digikey.cn/zh/products/detail/texas-instruments/TUSB320LAIRWBR/5722618,10 件档含 13% VAT,候选/未硬件验证,2026-11-05
-R9,900k/1%,900k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U102,TPS259531DSGR,TPS259531DSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,1,10,8,8,80,预算,https://www.ti.com/product/TPS2595,10 件预算，非报价,候选/未硬件验证,2026-11-05
-C23,4.7n,4.7n,Capacitor_SMD:C_0603_1608Metric,1,10,0.15,0.15,1.50,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C24 C35 C47,1u/10V,1u/10V,Capacitor_SMD:C_0603_1608Metric,3,30,0.15,0.45,4.50,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C25,22u/10V,22u/10V,Capacitor_SMD:C_0603_1608Metric,1,10,1,1,10,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R11,4.99k/1%,4.99k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R12,2.21k/1%,2.21k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-Q101 Q102 Q701 Q702,2N7002,2N7002,Package_TO_SOT_SMD:SOT-23,4,40,0.35,1.40,14.00,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R14,1.50k/1%,1.50k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-D101,TPD2E2U06DCKR,TPD2E2U06DCKR / VBUS,Package_TO_SOT_SMD:SOT-323_SC-70,1,10,2,2,20,预算,https://www.ti.com/product/TPD2E2U06,20 件预算，非报价,候选/未硬件验证,2026-11-05
-D102,TPD2E2U06DCKR,TPD2E2U06DCKR / USB HS,Package_TO_SOT_SMD:SOT-323_SC-70,1,10,2,2,20,预算,https://www.ti.com/product/TPD2E2U06,20 件预算，非报价,候选/未硬件验证,2026-11-05
-U201,TCA9539PWR,TCA9539PWR / 0x74,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,10,9,9,90,预算,https://www.ti.com/product/TCA9539,10 件预算，非报价,候选/未硬件验证,2026-11-05
-R17 R18,4.7k,4.7k,Resistor_SMD:R_0603_1608Metric,2,20,0.1,0.2,2.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U301 U302 U303,SN74LVC08APWR,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,3,30,2,6,60,预算,https://www.ti.com/product/SN74LVC08A,30 件预算，非报价,候选/未硬件验证,2026-11-05
-U304 U305,SN74LVC1G04DBVR,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,2,20,0.5,1.0,10.0,预算,https://www.ti.com/product/SN74LVC1G04,20 件预算，非报价,候选/未硬件验证,2026-11-05
-U401,TLV62568DBVR,TLV62568DBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,2,2,20,预算,https://www.ti.com/product/TLV62568,10 件预算，非报价,候选/未硬件验证,2026-11-05
-L2,SRN4018-2R2M / 2.2uH,SRN4018-2R2M / 2.2uH,Inductor_SMD:L_Bourns-SRN4018,1,10,3,3,30,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R38,450k/1%,450k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R39,100k/1%,100k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C33 C39,10u/10V,10u/10V,Capacitor_SMD:C_0603_1608Metric,2,20,0.6,1.2,12.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U402,TLV75536PDBVR,TLV75536PDBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,2.5,2.5,25.0,预算,https://www.ti.com/product/TLV755P,10 件预算，非报价,候选/未硬件验证,2026-11-05
-U501,TPS63811YFFR,TPS63811YFFR,,1,10,17,17,170,美元价换算预算,https://www.digikey.com/en/products/detail/texas-instruments/TPS63811YFFR/11309029,10 件档 US$2.084；预算汇率 7.20，加 13% 税后取整；汇率非实时,候选/未硬件验证,2026-11-05
-L4,XFL4015-471MEC / 470nH,XFL4015-471MEC / 470nH,,1,10,12,12,120,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C40 C41,47u/10V,47u/10V,Capacitor_SMD:C_0805_2012Metric,2,20,3.5,7.0,70.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U503,TPS22950DDCR,TPS22950DDCR,Package_TO_SOT_SMD:SOT-23-6,1,10,4,4,40,预算,https://www.ti.com/product/TPS22950,10 件预算，非报价,候选/未硬件验证,2026-11-05
-R42,1.15k/1%,1.15k/1%,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J601,外部仪器 1.8–5.5V / 2A,外部仪器 1.8–5.5V / 2A,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",1,10,5,5,50,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J602,目标供电 / 2A,目标供电 / 2A,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",1,10,5,5,50,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-U701,SN74LXC8T245QPWRQ1,SN74LXC8T245QPWRQ1,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,10,18,18,180,预算,https://www.digikey.com/en/products/detail/texas-instruments/SN74LXC8T245QPWRQ1/13577747,Q1 版本；按可采购版本预留,候选/未硬件验证,2026-11-05
-U702 U703 U704,SN74LXC2T45DCUR,SN74LXC2T45DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,3,30,5.5,16.5,165.0,美元价换算预算,https://www.ti.com/product/SN74LXC2T45,30 件；参考 25 件档 US$0.641，汇率/税与运费重核,候选/未硬件验证,2026-11-05
-U801 U802 U803 U804,FSA2466UMX,FSA2466UMX,Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm,4,40,4,16,160,缓存价加余量,https://www.digikey.cn/zh/products/detail/onsemi/FSA2466UMX/2509684,25 件档含税 ¥3.2972；缓存较旧，40 件预算按 ¥4,候选/未硬件验证,2026-11-05
-J801,ARM 10-pin SWD,ARM 10-pin SWD,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,1,10,2,2,20,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J802,JTAG nTRST,JTAG nTRST,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,10,2,2,20,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J803,UART_A / TX RX DTR RTS GND,UART_A / TX RX DTR RTS GND,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,1,10,2,2,20,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-J804,UART_B / TX RX DTR RTS GND,UART_B / TX RX DTR RTS GND,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,1,10,2,2,20,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-C61 C62,1n,1n,Capacitor_SMD:C_0603_1608Metric,2,20,0.15,0.30,3.00,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-R57,1k/0.125W,1k/0.125W,Resistor_SMD:R_0603_1608Metric,1,10,0.1,0.1,1.0,预算,,通用器件预算；准确 MPN、温度/容差/降额与供应商待采购核对,候选/未硬件验证,2026-11-05
-SW601,2MD1T1B1M2QES-5,2MD1T1B1M2QES-5,HSLinkLP:SW_Dailywell_2MD1T1B1M2QES_5,1,10,12,12,120,预算／非有效报价,https://www.lcsc.com/product-detail/C908282.html,10 件档 US$1.4083 页面参考；7.20 预算汇率及 13% 余量；BBM 及准确后缀 DC 额定值待供应商确认,候选/未硬件验证,2026-11-07
-K601 K901 K902,HFD2/005-S,HFD2/005-S,HSLinkLP:Relay_Hongfa_HFD2,3,30,8,24,240,预算／非有效报价,https://www.lcsc.com/zh-CN/product-detail/C42415145.html,30 件采购参考 25 件档 US$0.9589；7.20 预算汇率及 13% 余量，向上预留；非当日成交价,候选/未硬件验证,2026-11-07
-U502,TLV75801PDBVR,TLV75801PDBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,1,1,10,预算／非有效报价,https://www.lcsc.com/product-detail/C2877852.html,页面 5 件档 US$0.0908 参考；按 10 件保守预留 ¥1,候选/未硬件验证,2026-11-07
-U504,MCP4726A0T-E/CH,MCP4726A0T-E/CH,Package_TO_SOT_SMD:SOT-23-6,1,10,9,9,90,预算／非有效报价,https://www.lcsc.com/product-detail/C191581.html,LCSC 搜索缓存 10 件档 US$1.1032；7.20 预算汇率与 13% 余量约 ¥8.98，取 ¥9；非当日成交价。原厂 In Production,候选/未硬件验证,2026-11-07
-Q601 Q901 Q902,AO3400A,AO3400A,Package_TO_SOT_SMD:SOT-23,3,30,0.5,1.5,15.0,预算／非有效报价,https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf,MOS 驱动器预算；原厂 Rds(on) 在 2.5 V 有规格，非报价,候选/未硬件验证,2026-11-07
-D601 D901 D902,1N4148W-7-F,1N4148W-7-F,Diode_SMD:D_SOD-123,3,30,0.2,0.6,6.0,预算／非有效报价,https://www.diodes.com/assets/Datasheets/ds30086.pdf,SOD123 续流二极管预算；非报价,候选/未硬件验证,2026-11-07
-C43 C44,4.7u/10V/X7R,4.7u/10V,Capacitor_SMD:C_0603_1608Metric,2,20,0.5,1.0,10.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07
-R58,100k/0.1%,100k,Resistor_SMD:R_0603_1608Metric,1,10,0.5,0.5,5.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07
-R59,21.5k/0.1%,21.5k,Resistor_SMD:R_0603_1608Metric,1,10,0.5,0.5,5.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07
-R60,200k/0.1%,200k,Resistor_SMD:R_0603_1608Metric,1,10,0.5,0.5,5.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07
-R53 R54 R55 R56,68k/0.1%,68k,Resistor_SMD:R_0603_1608Metric,4,40,0.5,2.0,20.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07
-R61 R62 R63,100k,100k,Resistor_SMD:R_0603_1608Metric,3,30,0.1,0.3,3.0,预算／非有效报价,,通用器件预算；准确 MPN、额定值与采购价格待确认,候选/未硬件验证,2026-11-07
+references,mpn,lcsc,specification,footprint,qty_per_board,qty_10_boards,unit_price_cny,board_material_cny,batch_material_cny,price_status,stock_snapshot,library,mounting,spares_scenario_qty,moq,purchase_increment,moq_leftover_qty,source_url,retrieved_at,engineering_status
+U1,HPM5301IEG1,C49451864,HPM5301IEG1,Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm,1,10,17.71,17.71,177.10,现货阶梯含税价,528,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C49451864.html,2026-11-06T19:35:19.456Z,资料选型/价格核对；未硬件验证
+Y1,X322524MOB4SI,C70590,24MHz / CL待配,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,1,10,0.578,0.578,5.780,现货阶梯含税价,194283,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C70590.html,2026-11-06T19:42:57.021Z,采购候选；12pF 负载与现有 15pF 电容及寄生的匹配、起振和频偏待实测
+C1 C2,CL10C150JB8NNNC,C1644,"容值:15pF,温度系数:C0G,精度:±5%,额定电压:50V",Capacitor_SMD:C_0603_1608Metric,2,20,0.0675,0.1350,1.3500,现货阶梯含税价,908352,base,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C1644.html,2026-11-06T19:42:29.081Z,资料选型/价格核对；未硬件验证
+R1 R2,0603WAF220JT5E,C23345,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:22000mΩ",Resistor_SMD:R_0603_1608Metric,2,20,0.0101,0.0202,0.2020,现货阶梯含税价,6065059,base,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C23345.html,2026-11-06T19:42:37.727Z,资料选型/价格核对；未硬件验证
+R3 R4 R5 R10 R16 R51 R52,0603WAF1002T5E,C25804,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω",Resistor_SMD:R_0603_1608Metric,7,70,0.0142,0.0994,0.9940,现货阶梯含税价,42901571,base,SMT,7,,,,https://www.jlc-smt.com/lcsc/detail/C25804.html,2026-11-06T19:35:56.173Z,资料选型/价格核对；未硬件验证
+SW1 SW2,TL3342F260QG,C2886894,BOOT1; RESET,Button_Switch_SMD:SW_SPST_TL3342,2,20,,,,仅预订参考,50,expand,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C2886894.html,2026-11-06T19:42:58.704Z,TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认
+J1,PZ254V-11-06P,C492405,服务接口 / ISP,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1,10,0.25,0.25,2.50,现货阶梯含税价,97077,expand,THT,1,,,,https://www.jlc-smt.com/lcsc/detail/C492405.html,2026-11-06T19:35:48.110Z,资料选型/价格核对；未硬件验证
+TP1,PCB test pad,,SPARE_GPIO,TestPoint:TestPoint_Pad_D1.0mm,1,10,0,0,0,PCB 焊盘无独立采购,,unknown,PCB,0,,,,,,资料选型/价格核对；未硬件验证
+L1,SPH4018H4R7MT,C98400,SPH4018H4R7MT / 4.7uH,HSLinkLP:L_Sunlord_SPH4018,1,10,0.474,0.474,4.740,现货阶梯含税价,6025,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C98400.html,2026-11-06T19:35:38.390Z,资料选型已落实；与原件相同 2A 饱和表值，温升电流较原件低，主控启动/温升待验证
+C3 C4 C34 C25,CL10A226MP8NUNE,C86295,"容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V",Capacitor_SMD:C_0603_1608Metric,4,40,0.199,0.796,7.960,现货阶梯含税价,643687,expand,SMT,4,,,,https://www.jlc-smt.com/lcsc/detail/C86295.html,2026-11-06T19:42:27.249Z,资料选型/价格核对；未硬件验证
+C5 C36 C33 C39,CL10A106KP8NNNC,C19702,"容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V",Capacitor_SMD:C_0603_1608Metric,4,40,0.124,0.496,4.960,现货阶梯含税价,10462071,base,SMT,4,,,,https://www.jlc-smt.com/lcsc/detail/C19702.html,2026-11-06T19:42:25.439Z,资料选型/价格核对；未硬件验证
+C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C18 C20 C21 C22 C26 C28 C29 C30 C31 C32 C42 C46 C48 C49 C50 C51 C52 C53 C54 C55 C56 C57 C58 C59,CC0603KRX7R9BB104,C14663,"容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V",Capacitor_SMD:C_0603_1608Metric,35,350,0.0577,2.0195,20.1950,现货阶梯含税价,34737191,base,SMT,35,,,,https://www.jlc-smt.com/lcsc/detail/C14663.html,2026-11-06T19:35:53.179Z,资料选型/价格核对；未硬件验证
+C17 C19 C43 C44,TCC0603X7R475K100CT,C18185770,"容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V",Capacitor_SMD:C_0603_1608Metric,4,40,0.106,0.424,4.240,现货阶梯含税价,331813,expand,SMT,4,,,,https://www.jlc-smt.com/lcsc/detail/C18185770.html,2026-11-06T19:50:00.191Z,资料选型/价格核对；未硬件验证
+U2,TLV803EA30DBZR,C5218924,TLV803EA30DBZR,Package_TO_SOT_SMD:SOT-23,1,10,1.94,1.94,19.40,现货阶梯含税价,7245,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C5218924.html,2026-11-06T19:42:09.745Z,资料选型/价格核对；未硬件验证
+R6 R7 R8 R13 R15 R23 R24 R25 R26 R27 R28 R29 R30 R31 R32 R33 R34 R35 R36 R37 R44 R45 R46 R47 R48 R49 R50 R39 R61 R62 R63,0603WAF1003T5E,C25803,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω",Resistor_SMD:R_0603_1608Metric,31,310,0.0176,0.5456,5.4560,现货阶梯含税价,16289957,base,SMT,31,,,,https://www.jlc-smt.com/lcsc/detail/C25803.html,2026-11-06T19:35:54.684Z,资料选型/价格核对；未硬件验证
+J101,USB4105-GF-A,C3020560,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,1,10,5.06,5.06,50.60,现货阶梯含税价,19437,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C3020560.html,2026-11-06T19:42:16.893Z,资料选型/价格核对；未硬件验证
+U101,WUSB3801Q-12/TR,C2931342,WUSB3801Q-12/TR,HSLinkLP:WillSemi_QFN1616_12L,1,10,2.0968,2.0968,20.9680,现货阶梯含税价,1760,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C2931342.html,2026-11-06T19:35:41.660Z,硬件资料选型已落实；I2C 地址 0x68，驱动/CC 预算/USB 掛起联调未实现
+R9,0603WAF0000T5E,C21189,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:-,电阻类型:厚膜电阻,精度:±1%,阻值:0Ω",Resistor_SMD:R_0603_1608Metric,1,10,0.013,0.013,0.130,现货阶梯含税价,19226181,base,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C21189.html,2026-11-06T19:43:00.428Z,资料选型/价格核对；未硬件验证
+U102,TPS259531DSGR,C2155674,TPS259531DSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,1,10,4.37,4.37,43.70,现货阶梯含税价,1273,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C2155674.html,2026-11-06T19:42:08.049Z,资料选型/价格核对；未硬件验证
+C23,CL10B472KB8NNNC,C1621,"容值:4.7nF,温度系数:X7R,精度:±10%,额定电压:50V",Capacitor_SMD:C_0603_1608Metric,1,10,0.0588,0.0588,0.5880,现货阶梯含税价,366687,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C1621.html,2026-11-06T19:42:32.698Z,资料选型/价格核对；未硬件验证
+C24 C35 C47,CL10B105KP8NNNC,C95843,"容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V",Capacitor_SMD:C_0603_1608Metric,3,30,0.109,0.327,3.270,现货阶梯含税价,454134,expand,SMT,3,,,,https://www.jlc-smt.com/lcsc/detail/C95843.html,2026-11-06T19:42:30.917Z,资料选型/价格核对；未硬件验证
+R11,0603WAF4991T5E,C23046,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4990Ω",Resistor_SMD:R_0603_1608Metric,1,10,0.0125,0.0125,0.1250,现货阶梯含税价,1640996,base,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C23046.html,2026-11-06T19:42:41.269Z,资料选型/价格核对；未硬件验证
+R12,0603WAF2211T5E,C22903,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:2210Ω",Resistor_SMD:R_0603_1608Metric,1,10,0.0172,0.0172,0.1720,现货阶梯含税价,10826,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C22903.html,2026-11-06T19:42:43.121Z,资料选型/价格核对；未硬件验证
+Q101 Q102 Q701 Q702,2N7002,C8545,2N7002,Package_TO_SOT_SMD:SOT-23,4,40,0.104,0.416,4.160,现货阶梯含税价,4182194,base,SMT,4,,,,https://www.jlc-smt.com/lcsc/detail/C8545.html,2026-11-06T19:42:20.414Z,资料选型/价格核对；未硬件验证
+R14,0603WAF1501T5E,C22843,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1500Ω",Resistor_SMD:R_0603_1608Metric,1,10,0.0117,0.0117,0.1170,现货阶梯含税价,3282944,base,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C22843.html,2026-11-06T19:42:45.056Z,资料选型/价格核对；未硬件验证
+D101 D102,TPD2E2U06DCKR,C1855726,TPD2E2U06DCKR / VBUS; TPD2E2U06DCKR / USB HS,Package_TO_SOT_SMD:SOT-323_SC-70,2,20,,,,仅预订参考,0,expand,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C1855726.html,2026-11-06T19:42:11.463Z,资料选型/价格核对；未硬件验证
+U201,TCA9539PWR,C131972,TCA9539PWR / 0x74,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,10,6.26,6.26,62.60,现货阶梯含税价,7419,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C131972.html,2026-11-06T19:36:02.878Z,资料选型/价格核对；未硬件验证
+R17 R18,0603WAF4701T5E,C23162,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω",Resistor_SMD:R_0603_1608Metric,2,20,0.0169,0.0338,0.3380,现货阶梯含税价,16199126,base,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C23162.html,2026-11-06T19:42:39.452Z,资料选型/价格核对；未硬件验证
+U301 U302 U303,SN74LVC08APWR,C465737,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,3,30,2.953,8.859,88.590,现货阶梯含税价,376,expand,SMT,3,,,,https://www.jlc-smt.com/lcsc/detail/C465737.html,2026-11-06T19:42:13.363Z,资料选型/价格核对；未硬件验证
+U304 U305,SN74LVC1G04DBVR,C7827,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,2,20,0.395,0.790,7.900,现货阶梯含税价,70857,expand,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C7827.html,2026-11-06T19:42:15.112Z,资料选型/价格核对；未硬件验证
+U401,TLV62568DBVR,C163219,TLV62568DBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,0.457,0.457,4.570,现货阶梯含税价,51255,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C163219.html,2026-11-06T19:35:28.375Z,资料选型/价格核对；未硬件验证
+L2,SPH4018H2R2MT,C370436,SPH4018H2R2MT / 2.2uH,HSLinkLP:L_Sunlord_SPH4018,1,10,0.488,0.488,4.880,现货阶梯含税价,22557,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C370436.html,2026-11-06T19:35:40.163Z,资料选型已落实；1A buck 假设下电流余量可用，异常限流与温升待验证
+R38,450k/1%,,450k/1%,Resistor_SMD:R_0603_1608Metric,1,10,,,,准确报价未落实,,unknown,SMT,1,,,,,,450k/1% 准确可采购 MPN 未落实；不得以近似阻值悄然改变反馈
+U402,TPS7A2036PDBVR,C2873626,TPS7A2036PDBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,1.779,1.779,17.790,现货阶梯含税价,2792,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C2873626.html,2026-11-06T19:42:18.662Z,纠正不可确认料号；3.6V/300mA，100mA VIO 预算和热待验证
+U501,TPS63811YFFR,C1852138,TPS63811YFFR,,1,10,,,,仅预订参考,0,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C1852138.html,2026-11-06T19:36:01.067Z,保留；嘉立创缺货，仅预订参考，封装未绑定
+L4,MWSA0603S-R47MT,C408439,MWSA0603S-R47MT / 470nH,Inductor_SMD:L_Sunlord_MWSA0603S,1,10,0.852,0.852,8.520,现货阶梯含税价,2408,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C408439.html,2026-11-06T19:35:17.416Z,资料选型已落实；封装增大，AC 损耗、开关波形与热待实测
+C40 C41,CL31A476MPHNNNE,C96123,"容值:47uF,温度系数:X5R,精度:±20%,额定电压:10V",Capacitor_SMD:C_1206_3216Metric,2,20,1.0442,2.0884,20.8840,现货阶梯含税价,468799,base,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C96123.html,2026-11-06T19:35:43.158Z,1206 已绑定；DC bias 典型曲线初算通过，最小有效容量/纹波/稳定性待验证
+U503,TPS22950DDCR,,TPS22950DDCR,Package_TO_SOT_SMD:SOT-23-6,1,10,,,,准确报价未落实,,unknown,SMT,1,,,,,,保留 TPS22950DDCR；不自动改用故障行为不同的 TPS22950CDDCR
+R42,0603WAF1151T5E,C22834,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω",Resistor_SMD:R_0603_1608Metric,1,10,0.0311,0.0311,0.3110,现货阶梯含税价,10544,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C22834.html,2026-11-06T19:42:46.786Z,资料选型/价格核对；未硬件验证
+J601 J602,KF128-5.08-2P-AA,C474952,EXT 1.8-5.5V; DUT POWER,HSLinkLP:TerminalBlock_KEFA_KF128_5.08_1x02,2,20,1.177,2.354,23.540,现货阶梯含税价,74200,expand,THT,2,,,,https://www.jlc-smt.com/lcsc/detail/C474952.html,2026-11-06T19:35:44.656Z,资料选型/价格核对；未硬件验证
+U701,SN74LXC8T245QPWRQ1,C2868232,SN74LXC8T245QPWRQ1,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,10,8.33,8.33,83.30,现货阶梯含税价,134,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C2868232.html,2026-11-06T19:35:24.891Z,保留；1.8V/40MHz 最坏往返时序未闭合
+U702 U703 U704,SN74LXC2T45DCUR,C5217891,SN74LXC2T45DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,3,30,3.62,10.86,108.60,现货阶梯含税价,9932,expand,SMT,3,,,,https://www.jlc-smt.com/lcsc/detail/C5217891.html,2026-11-06T19:35:59.336Z,保留；SWDIO 动态方向/换向与 40MHz 待验证; 保留；仅 UART 换料在 10 套无券换料费场景下无净节省; 保留；TDO 读回时序待验证
+U801 U802 U803 U804,FSA2466UMX,C457657,FSA2466UMX,Package_DFN_QFN:UQFN-16_1.8x2.6mm_P0.4mm,4,40,2.16,8.64,86.40,现货阶梯含税价,8469,expand,SMT,4,,,,https://www.jlc-smt.com/lcsc/detail/C457657.html,2026-11-06T19:35:23.010Z,资料选型/价格核对；未硬件验证
+J801,ZX-PZ1.27-2-5PZZ,C7501289,ARM 10-pin SWD,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,1,10,0.466,0.466,4.660,现货阶梯含税价,14597,expand,THT,1,,,,https://www.jlc-smt.com/lcsc/detail/C7501289.html,2026-11-06T19:35:51.366Z,资料选型/价格核对；未硬件验证
+J802,B-2100S02P-A110,C124375,JTAG nTRST,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,10,0.17,0.17,1.70,现货阶梯含税价,132053,expand,THT,1,,,,https://www.jlc-smt.com/lcsc/detail/C124375.html,2026-11-06T19:35:49.868Z,资料选型/价格核对；未硬件验证
+J803 J804,PZ254V-11-05P,C492404,UART_A / TX RX DTR RTS GND; UART_B / TX RX DTR RTS GND,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,2,20,0.192,0.384,3.840,现货阶梯含税价,226460,expand,THT,2,,,,https://www.jlc-smt.com/lcsc/detail/C492404.html,2026-11-06T19:35:46.431Z,资料选型/价格核对；未硬件验证
+C61 C62,CL10B102KB8NNNC,C1588,"容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V",Capacitor_SMD:C_0603_1608Metric,2,20,0.05,0.10,1.00,现货阶梯含税价,5404625,base,SMT,2,,,,https://www.jlc-smt.com/lcsc/detail/C1588.html,2026-11-06T19:42:34.525Z,资料选型/价格核对；未硬件验证
+R57,0603WAF1001T5E,C21190,"功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1000Ω",Resistor_SMD:R_0603_1608Metric,1,10,0.0101,0.0101,0.1010,现货阶梯含税价,27639359,base,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C21190.html,2026-11-06T19:42:48.276Z,0.1W 精确料号；5.5V、1%低阻端时放电峰值约30.56mW，额定温度内有余量；热/异常工况待实测
+SW601,2MD1T1B1M2QES-5,C908282,2MD1T1B1M2QES-5,HSLinkLP:SW_Dailywell_2MD1T1B1M2QES_5,1,10,8.72,8.72,87.20,现货阶梯含税价,36,expand,THT,1,,,,https://www.jlc-smt.com/lcsc/detail/C908282.html,2026-11-06T19:35:31.372Z,现有选型保留；精确后缀 DC 额定与 BBM 待厂商确认
+K601 K901 K902,HFD2/005-S,C42415145,HFD2/005-S,HSLinkLP:Relay_Hongfa_HFD2,3,30,5.83,17.49,174.90,现货阶梯含税价,109,expand,THT,3,,,,https://www.jlc-smt.com/lcsc/detail/C42415145.html,2026-11-06T19:35:20.941Z,资料选型/价格核对；未硬件验证
+U502,TLV75801PDBVR,C2877852,TLV75801PDBVR,Package_TO_SOT_SMD:SOT-23-5,1,10,,,,仅预订参考,62,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C2877852.html,2026-11-06T19:36:04.364Z,资料选型/价格核对；未硬件验证
+U504,MCP4726A0T-E/CH,C191581,MCP4726A0T-E/CH,Package_TO_SOT_SMD:SOT-23-6,1,10,6.87,6.87,68.70,现货阶梯含税价,4812,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C191581.html,2026-11-06T19:35:29.873Z,资料选型/价格核对；未硬件验证
+Q601 Q901 Q902,AO3400A,C20917,AO3400A,Package_TO_SOT_SMD:SOT-23,3,30,0.543,1.629,16.290,现货阶梯含税价,1077313,base,SMT,3,,,,https://www.jlc-smt.com/lcsc/detail/C20917.html,2026-11-06T19:42:22.158Z,资料选型/价格核对；未硬件验证
+D601 D901 D902,1N4148W-7-F,C83528,1N4148W-7-F,Diode_SMD:D_SOD-123,3,30,,,,仅预订参考,5337,expand,SMT,3,,,,https://www.jlc-smt.com/lcsc/detail/C83528.html,2026-11-06T19:42:23.945Z,资料选型/价格核对；未硬件验证
+R58,RT0603BRD07100KL,C122538,"功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ",Resistor_SMD:R_0603_1608Metric,1,10,0.167,0.167,1.670,现货阶梯含税价,1948547,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C122538.html,2026-11-06T19:42:50.038Z,资料选型/价格核对；未硬件验证
+R59,RT0603BRD0721K5L,C705747,"功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ",Resistor_SMD:R_0603_1608Metric,1,10,0.112,0.112,1.120,现货阶梯含税价,19,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C705747.html,2026-11-06T19:42:51.778Z,资料选型/价格核对；未硬件验证
+R60,RT0603BRD07200KL,C728585,"功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ",Resistor_SMD:R_0603_1608Metric,1,10,0.342,0.342,3.420,现货阶梯含税价,220735,expand,SMT,1,,,,https://www.jlc-smt.com/lcsc/detail/C728585.html,2026-11-06T19:42:53.581Z,资料选型/价格核对；未硬件验证
+R53 R54 R55 R56,RT0603BRD0768KL,C705793,"功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ",Resistor_SMD:R_0603_1608Metric,4,40,0.213,0.852,8.520,现货阶梯含税价,14830,expand,SMT,4,,,,https://www.jlc-smt.com/lcsc/detail/C705793.html,2026-11-06T19:42:55.303Z,资料选型/价格核对；未硬件验证

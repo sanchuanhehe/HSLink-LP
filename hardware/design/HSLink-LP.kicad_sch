@@ -4750,14 +4750,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 22.86 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 22.86 139.7 0)
@@ -4768,6 +4766,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CL10C150JB8NNNC" (at 22.86 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C1644" (at 22.86 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:15pF,温度系数:C0G,精度:±5%,额定电压:50V" (at 22.86 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 22.86 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c146be72-d178-4696-a19b-5f847168e9ef")
 		)
@@ -4817,14 +4827,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 27.94 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 27.94 64.77 0)
@@ -4835,6 +4843,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF220JT5E" (at 27.94 64.77 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C23345" (at 27.94 64.77 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:22000mΩ" (at 27.94 64.77 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 27.94 64.77 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "4e99bae6-1982-46dd-b849-383cfda6e9f9")
 		)
@@ -4884,14 +4904,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 80.01 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 80.01 129.54 0)
@@ -4902,6 +4920,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF1002T5E" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25804" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 80.01 129.54 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "3ff13cf5-efb2-44b4-9925-320cea5baf17")
 		)
@@ -4951,14 +4981,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 27.94 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 27.94 62.23 0)
@@ -4969,6 +4997,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF220JT5E" (at 27.94 62.23 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C23345" (at 27.94 62.23 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:22000mΩ" (at 27.94 62.23 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 27.94 62.23 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c05966fd-330b-4126-8df3-f2f7037faa94")
 		)
@@ -5018,14 +5058,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 80.01 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 80.01 134.62 0)
@@ -5036,6 +5074,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF1003T5E" (at 80.01 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 80.01 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω" (at 80.01 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 80.01 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e2b4f8f0-be0b-40c3-8ee2-80bbaffcef12")
 		)
@@ -5085,14 +5135,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 105.41 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 105.41 144.78 0)
@@ -5103,6 +5151,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 105.41 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 105.41 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 105.41 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 105.41 144.78 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "0a6b1a4b-7917-45f6-9891-69aef0f0ce4c")
 		)
@@ -5152,14 +5212,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 80.01 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 80.01 127 0)
@@ -5170,6 +5228,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF1002T5E" (at 80.01 127.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25804" (at 80.01 127.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω" (at 80.01 127.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 80.01 127.0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "ef4d47e7-7f15-4ba2-8984-959db0ba56d5")
 		)
@@ -5219,14 +5289,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 38.1 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 38.1 139.7 0)
@@ -5237,6 +5305,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CL10C150JB8NNNC" (at 38.1 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C1644" (at 38.1 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:15pF,温度系数:C0G,精度:±5%,额定电压:50V" (at 38.1 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 38.1 139.7 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c3a85db3-17f9-4314-a5ee-0a814e760b59")
 		)
@@ -5416,14 +5496,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250928/BA09DC4959912CC648B409782DBA9F72.pdf"
 			(at 30.48 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 30.48 133.35 0)
@@ -5434,6 +5512,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "X322524MOB4SI" (at 30.48 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C70590" (at 30.48 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "24MHz / CL待配" (at 30.48 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "采购候选；12pF 负载与现有 15pF 电容及寄生的匹配、起振和频偏待实测" (at 30.48 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a4ab2dd1-276c-4670-9512-a33404211873")
 		)
@@ -5554,14 +5644,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 80.01 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 80.01 132.08 0)
@@ -5572,6 +5660,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF1003T5E" (at 80.01 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 80.01 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω" (at 80.01 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 80.01 132.08 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "197f2822-85c1-4205-9d90-ccb71455639c")
 		)
@@ -5833,14 +5933,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf"
 			(at 73.66 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 73.66 152.4 0)
@@ -5851,6 +5949,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "TL3342F260QG" (at 73.66 152.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C2886894" (at 73.66 152.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "BOOT1" (at 73.66 152.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认" (at 73.66 152.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "622fe9ab-e4c2-4392-ae90-b359c2b56d85")
 		)
@@ -5902,14 +6012,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 105.41 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 105.41 134.62 0)
@@ -5920,6 +6028,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "0603WAF1002T5E" (at 105.41 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25804" (at 105.41 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω" (at 105.41 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 105.41 134.62 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "6aef14fe-c3e5-4302-8985-70b0693384ff")
 		)
@@ -5980,7 +6100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tlv803e.pdf"
 			(at 134.62 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5988,9 +6108,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "3.0 V、开漏复位；标准 DBZ 引脚，非 V/R pinout；按功能重排引脚，物理编号不变"
 			(at 134.62 127 0)
@@ -6008,10 +6126,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "TLV803EA30DBZR" (at 134.62 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C5218924" (at 134.62 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 134.62 137.16 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a804c534-b391-43ce-8b07-ce47619da551")
 		)
@@ -6075,7 +6200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 118.11 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -6083,9 +6208,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 118.11 172.72 0)
@@ -6098,15 +6221,22 @@
 				)
 			)
 		)
-		(property "Specification" "100k"
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
 			(at 118.11 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "0603WAF1003T5E" (at 118.11 172.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 118.11 172.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 118.11 172.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "cc6f4611-b3e1-48c6-b8da-2946f51ffeef")
 		)
@@ -6166,7 +6296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf"
 			(at 142.24 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -6174,9 +6304,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 142.24 160.02 0)
@@ -6194,10 +6322,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "TL3342F260QG" (at 142.24 160.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C2886894" (at 142.24 160.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认" (at 142.24 160.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "15ffe1bd-b392-4d06-be4c-173a542e9731")
 		)
@@ -6256,7 +6391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf"
 			(at 45.72 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -6264,9 +6399,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 45.72 173.99 0)
@@ -6284,10 +6417,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "PZ254V-11-06P" (at 45.72 173.99 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C492405" (at 45.72 173.99 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 45.72 173.99 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "bb562ca6-e1a0-4496-8ce4-55942db9519c")
 		)
@@ -6366,9 +6506,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "test point"
 			(at 163.83 149.86 0)
@@ -6386,10 +6524,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "PCB test pad" (at 163.83 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "" (at 163.83 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 163.83 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "4475402c-37d1-4a54-ab55-40713f710ccb")
 		)

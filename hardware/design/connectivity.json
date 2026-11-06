@@ -56,8 +56,11 @@
       "48": "CC_INTn",
       "49": "GND"
     },
-    "datasheet": "https://www.hpmicro.com/",
-    "display_value": "HPM5301IEG1"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250717/A0802240126DEF7807A484C4381E2269.pdf",
+    "display_value": "HPM5301IEG1",
+    "mpn": "HPM5301IEG1",
+    "lcsc": "C49451864",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "Y1",
@@ -71,8 +74,11 @@
       "3": "XTALO",
       "4": "GND"
     },
-    "datasheet": "",
-    "display_value": "24MHz"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250928/BA09DC4959912CC648B409782DBA9F72.pdf",
+    "display_value": "24MHz",
+    "mpn": "X322524MOB4SI",
+    "lcsc": "C70590",
+    "engineering_status": "采购候选；12pF 负载与现有 15pF 电容及寄生的匹配、起振和频偏待实测"
   },
   {
     "reference": "C1",
@@ -84,8 +90,12 @@
       "1": "XTALI",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "15p"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "15p",
+    "mpn": "CL10C150JB8NNNC",
+    "lcsc": "C1644",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:15pF,温度系数:C0G,精度:±5%,额定电压:50V"
   },
   {
     "reference": "C2",
@@ -97,8 +107,12 @@
       "1": "XTALO",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "15p"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "15p",
+    "mpn": "CL10C150JB8NNNC",
+    "lcsc": "C1644",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:15pF,温度系数:C0G,精度:±5%,额定电压:50V"
   },
   {
     "reference": "R1",
@@ -110,8 +124,12 @@
       "1": "SWD_MCU",
       "2": "SWD_MOSI"
     },
-    "datasheet": "",
-    "display_value": "22R"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "22R",
+    "mpn": "0603WAF220JT5E",
+    "lcsc": "C23345",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:22000mΩ"
   },
   {
     "reference": "R2",
@@ -123,8 +141,12 @@
       "1": "SWD_MCU",
       "2": "SWD_MISO"
     },
-    "datasheet": "",
-    "display_value": "22R"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "22R",
+    "mpn": "0603WAF220JT5E",
+    "lcsc": "C23345",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:22000mΩ"
   },
   {
     "reference": "R3",
@@ -136,8 +158,12 @@
       "1": "BOOT0",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "R4",
@@ -149,8 +175,12 @@
       "1": "BOOT1",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "SW1",
@@ -162,8 +192,11 @@
       "1": "BOOT1",
       "2": "P3V3"
     },
-    "datasheet": "",
-    "display_value": "BOOT1"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf",
+    "display_value": "BOOT1",
+    "mpn": "TL3342F260QG",
+    "lcsc": "C2886894",
+    "engineering_status": "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认"
   },
   {
     "reference": "SW2",
@@ -175,8 +208,11 @@
       "1": "SYS_RESETn",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "RESET"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf",
+    "display_value": "RESET",
+    "mpn": "TL3342F260QG",
+    "lcsc": "C2886894",
+    "engineering_status": "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认"
   },
   {
     "reference": "J1",
@@ -192,8 +228,11 @@
       "5": "BOOT1",
       "6": "SYS_RESETn"
     },
-    "datasheet": "",
-    "display_value": "ISP / SERVICE"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf",
+    "display_value": "ISP / SERVICE",
+    "mpn": "PZ254V-11-06P",
+    "lcsc": "C492405",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "TP1",
@@ -205,59 +244,77 @@
       "1": "SPARE_GPIO"
     },
     "datasheet": "",
-    "display_value": "SPARE_GPIO"
+    "display_value": "SPARE_GPIO",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "L1",
     "symbol": "Device:L",
-    "value": "SRN4018-4R7M / 4.7uH",
-    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "value": "SPH4018H4R7MT / 4.7uH",
+    "footprint": "HSLinkLP:L_Sunlord_SPH4018",
     "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "SOC_SW"
     },
-    "datasheet": "",
-    "display_value": "4.7uH"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf",
+    "display_value": "4.7uH",
+    "mpn": "SPH4018H4R7MT",
+    "lcsc": "C98400",
+    "engineering_status": "资料选型已落实；与原件相同 2A 饱和表值，温升电流较原件低，主控启动/温升待验证"
   },
   {
     "reference": "C3",
     "symbol": "Device:C",
-    "value": "22u/6.3V",
+    "value": "22u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "22u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "22u",
+    "mpn": "CL10A226MP8NUNE",
+    "lcsc": "C86295",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V"
   },
   {
     "reference": "C4",
     "symbol": "Device:C",
-    "value": "22u/6.3V",
+    "value": "22u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "22u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "22u",
+    "mpn": "CL10A226MP8NUNE",
+    "lcsc": "C86295",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V"
   },
   {
     "reference": "C5",
     "symbol": "Device:C",
-    "value": "10u/6.3V",
+    "value": "10u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "10u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "10u",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C6",
@@ -269,8 +326,12 @@
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C7",
@@ -282,8 +343,12 @@
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C8",
@@ -295,8 +360,12 @@
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C9",
@@ -308,8 +377,12 @@
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C10",
@@ -321,8 +394,12 @@
       "1": "VDD_SOC",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C11",
@@ -334,8 +411,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C12",
@@ -347,8 +428,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C13",
@@ -360,8 +445,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C14",
@@ -373,8 +462,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C15",
@@ -386,8 +479,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C16",
@@ -399,21 +496,29 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C17",
     "symbol": "Device:C",
-    "value": "4.7u/6.3V",
+    "value": "4.7u/10V/X7R",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "OTPCAP",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "4.7u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+    "display_value": "4.7u",
+    "mpn": "TCC0603X7R475K100CT",
+    "lcsc": "C18185770",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C18",
@@ -425,21 +530,29 @@
       "1": "OTPCAP",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C19",
     "symbol": "Device:C",
-    "value": "4.7u/6.3V",
+    "value": "4.7u/10V/X7R",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "PMCCAP",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "4.7u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+    "display_value": "4.7u",
+    "mpn": "TCC0603X7R475K100CT",
+    "lcsc": "C18185770",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C20",
@@ -451,8 +564,12 @@
       "1": "PMCCAP",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U2",
@@ -465,8 +582,11 @@
       "2": "SYS_RESETn",
       "3": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
-    "display_value": "TLV803EA30DBZR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tlv803e.pdf",
+    "display_value": "TLV803EA30DBZR",
+    "mpn": "TLV803EA30DBZR",
+    "lcsc": "C5218924",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R5",
@@ -478,8 +598,12 @@
       "1": "P3V3",
       "2": "SYS_RESETn"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "C21",
@@ -491,8 +615,12 @@
       "1": "SYS_RESETn",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "R6",
@@ -504,8 +632,12 @@
       "1": "SIG_ARM_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R7",
@@ -517,8 +649,12 @@
       "1": "POWER_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R8",
@@ -530,8 +666,12 @@
       "1": "VIO_EN",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "J101",
@@ -558,21 +698,24 @@
       "B12": "GND",
       "SH": "GND"
     },
-    "datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
-    "display_value": "USB4105-GF-A"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220520/320CE7E4F2C5E8A05ADD2DAC45B818D3.pdf",
+    "display_value": "USB4105-GF-A",
+    "mpn": "USB4105-GF-A",
+    "lcsc": "C3020560",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U101",
-    "symbol": "HSLinkLP:TUSB320LAIRWBR",
-    "value": "TUSB320LAIRWBR",
-    "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm",
+    "symbol": "HSLinkLP:WUSB3801Q_12_TR",
+    "value": "WUSB3801Q-12/TR",
+    "footprint": "HSLinkLP:WillSemi_QFN1616_12L",
     "sheet": "Interface",
     "nets": {
       "1": "CC1",
       "2": "CC2",
       "3": "GND",
       "4": "VBUS_DET",
-      "5": "GND",
+      "5": "P3V3",
       "6": "CC_INTn",
       "7": "I2C_SDA",
       "8": "I2C_SCL",
@@ -581,21 +724,28 @@
       "11": "GND",
       "12": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
-    "display_value": "TUSB320LAIRWBR"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220218/358FA27FD5CA391EB61300BD5A69029B.pdf",
+    "display_value": "WUSB3801Q-12/TR",
+    "mpn": "WUSB3801Q-12/TR",
+    "lcsc": "C2931342",
+    "engineering_status": "硬件资料选型已落实；I2C 地址 0x68，驱动/CC 预算/USB 掛起联调未实现"
   },
   {
     "reference": "R9",
     "symbol": "Device:R",
-    "value": "900k/1%",
+    "value": "0R",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Interface",
     "nets": {
       "1": "VBUS_RAW",
       "2": "VBUS_DET"
     },
-    "datasheet": "",
-    "display_value": "900k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250704/8E163ECBCBDDE34D37E0A236B2783941.pdf",
+    "display_value": "0R",
+    "mpn": "0603WAF0000T5E",
+    "lcsc": "C21189",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:-,电阻类型:厚膜电阻,精度:±1%,阻值:0Ω"
   },
   {
     "reference": "R10",
@@ -607,8 +757,12 @@
       "1": "CC_INTn",
       "2": "P3V3"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "C22",
@@ -620,8 +774,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U102",
@@ -640,8 +798,11 @@
       "8": "GND",
       "9": "GND"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tps2595.pdf",
-    "display_value": "TPS259531DSGR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tps2595.pdf",
+    "display_value": "TPS259531DSGR",
+    "mpn": "TPS259531DSGR",
+    "lcsc": "C2155674",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C23",
@@ -653,8 +814,12 @@
       "1": "USB_DVDT",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "4.7n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "4.7n",
+    "mpn": "CL10B472KB8NNNC",
+    "lcsc": "C1621",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:4.7nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C24",
@@ -666,8 +831,12 @@
       "1": "VBUS_RAW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "1u",
+    "mpn": "CL10B105KP8NNNC",
+    "lcsc": "C95843",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C25",
@@ -679,8 +848,12 @@
       "1": "USB_5V",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "22u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "22u",
+    "mpn": "CL10A226MP8NUNE",
+    "lcsc": "C86295",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V"
   },
   {
     "reference": "R11",
@@ -692,8 +865,12 @@
       "1": "USB_ILIM",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "4.99k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "4.99k",
+    "mpn": "0603WAF4991T5E",
+    "lcsc": "C23046",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4990Ω"
   },
   {
     "reference": "R12",
@@ -705,8 +882,12 @@
       "1": "USB_ILIM",
       "2": "ILIM_T1_D"
     },
-    "datasheet": "",
-    "display_value": "2.21k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "2.21k",
+    "mpn": "0603WAF2211T5E",
+    "lcsc": "C22903",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:2210Ω"
   },
   {
     "reference": "Q101",
@@ -719,8 +900,11 @@
       "2": "GND",
       "3": "ILIM_T1_D"
     },
-    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
-    "display_value": "2N7002"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf",
+    "display_value": "2N7002",
+    "mpn": "2N7002",
+    "lcsc": "C8545",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R13",
@@ -732,8 +916,12 @@
       "1": "USB_TIER1",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R14",
@@ -745,8 +933,12 @@
       "1": "USB_ILIM",
       "2": "ILIM_T2_D"
     },
-    "datasheet": "",
-    "display_value": "1.50k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "1.50k",
+    "mpn": "0603WAF1501T5E",
+    "lcsc": "C22843",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1500Ω"
   },
   {
     "reference": "Q102",
@@ -759,8 +951,11 @@
       "2": "GND",
       "3": "ILIM_T2_D"
     },
-    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
-    "display_value": "2N7002"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf",
+    "display_value": "2N7002",
+    "mpn": "2N7002",
+    "lcsc": "C8545",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R15",
@@ -772,8 +967,12 @@
       "1": "USB_TIER2",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R16",
@@ -785,8 +984,12 @@
       "1": "FAULTn",
       "2": "P3V3"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "D101",
@@ -799,8 +1002,11 @@
       "2": null,
       "3": "GND"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf",
-    "display_value": "TPD2E2U06DCKR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf",
+    "display_value": "TPD2E2U06DCKR",
+    "mpn": "TPD2E2U06DCKR",
+    "lcsc": "C1855726",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "D102",
@@ -813,8 +1019,11 @@
       "2": "USB_DM",
       "3": "GND"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf",
-    "display_value": "TPD2E2U06DCKR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf",
+    "display_value": "TPD2E2U06DCKR",
+    "mpn": "TPD2E2U06DCKR",
+    "lcsc": "C1855726",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U201",
@@ -848,8 +1057,11 @@
       "23": "I2C_SDA",
       "24": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tca9539.pdf",
-    "display_value": "TCA9539PWR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tca9539.pdf",
+    "display_value": "TCA9539PWR",
+    "mpn": "TCA9539PWR",
+    "lcsc": "C131972",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R17",
@@ -861,8 +1073,12 @@
       "1": "I2C_SCL",
       "2": "P3V3"
     },
-    "datasheet": "",
-    "display_value": "4.7k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "4.7k",
+    "mpn": "0603WAF4701T5E",
+    "lcsc": "C23162",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω"
   },
   {
     "reference": "R18",
@@ -874,8 +1090,12 @@
       "1": "I2C_SDA",
       "2": "P3V3"
     },
-    "datasheet": "",
-    "display_value": "4.7k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "4.7k",
+    "mpn": "0603WAF4701T5E",
+    "lcsc": "C23162",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω"
   },
   {
     "reference": "R23",
@@ -887,8 +1107,12 @@
       "1": "DEBUG_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R24",
@@ -900,8 +1124,12 @@
       "1": "UART_A_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R25",
@@ -913,8 +1141,12 @@
       "1": "UART_B_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R26",
@@ -926,8 +1158,12 @@
       "1": "RESET_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R27",
@@ -939,8 +1175,12 @@
       "1": "SENSE_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R28",
@@ -952,8 +1192,12 @@
       "1": "DISCH_REQ",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R29",
@@ -965,8 +1209,12 @@
       "1": "INT_EN",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "C26",
@@ -978,8 +1226,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U301",
@@ -1003,8 +1255,11 @@
       "13": "SIG_ARM",
       "14": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
-    "display_value": "SN74LVC08APWR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
+    "display_value": "SN74LVC08APWR",
+    "mpn": "SN74LVC08APWR",
+    "lcsc": "C465737",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U302",
@@ -1028,8 +1283,11 @@
       "13": "SIG_ARM",
       "14": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
-    "display_value": "SN74LVC08APWR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
+    "display_value": "SN74LVC08APWR",
+    "mpn": "SN74LVC08APWR",
+    "lcsc": "C465737",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U303",
@@ -1053,8 +1311,11 @@
       "13": "GND",
       "14": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
-    "display_value": "SN74LVC08APWR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
+    "display_value": "SN74LVC08APWR",
+    "mpn": "SN74LVC08APWR",
+    "lcsc": "C465737",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U304",
@@ -1069,8 +1330,11 @@
       "4": "POWER_OFF",
       "5": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
-    "display_value": "SN74LVC1G04DBVR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1g04.pdf",
+    "display_value": "SN74LVC1G04DBVR",
+    "mpn": "SN74LVC1G04DBVR",
+    "lcsc": "C7827",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U305",
@@ -1085,8 +1349,11 @@
       "4": "XLAT_OEn",
       "5": "P3V3"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
-    "display_value": "SN74LVC1G04DBVR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1g04.pdf",
+    "display_value": "SN74LVC1G04DBVR",
+    "mpn": "SN74LVC1G04DBVR",
+    "lcsc": "C7827",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C28",
@@ -1098,8 +1365,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C29",
@@ -1111,8 +1382,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C30",
@@ -1124,8 +1399,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C31",
@@ -1137,8 +1416,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C32",
@@ -1150,8 +1433,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "R30",
@@ -1163,8 +1450,12 @@
       "1": "SIG_ARM",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R31",
@@ -1176,8 +1467,12 @@
       "1": "POWER_SAFE",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R32",
@@ -1189,8 +1484,12 @@
       "1": "DEBUG_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R33",
@@ -1202,8 +1501,12 @@
       "1": "UART_A_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R34",
@@ -1215,8 +1518,12 @@
       "1": "UART_B_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R35",
@@ -1228,8 +1535,12 @@
       "1": "RESET_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R36",
@@ -1241,8 +1552,12 @@
       "1": "SENSE_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R37",
@@ -1254,8 +1569,12 @@
       "1": "DISCH_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "U401",
@@ -1270,21 +1589,27 @@
       "4": "USB_5V",
       "5": "BUCK3_FB"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv62568.pdf",
-    "display_value": "TLV62568DBVR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tlv62568.pdf",
+    "display_value": "TLV62568DBVR",
+    "mpn": "TLV62568DBVR",
+    "lcsc": "C163219",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "L2",
     "symbol": "Device:L",
-    "value": "SRN4018-2R2M / 2.2uH",
-    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "value": "SPH4018H2R2MT / 2.2uH",
+    "footprint": "HSLinkLP:L_Sunlord_SPH4018",
     "sheet": "Power",
     "nets": {
       "1": "BUCK3_SW",
       "2": "P3V3"
     },
-    "datasheet": "",
-    "display_value": "2.2uH"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf",
+    "display_value": "2.2uH",
+    "mpn": "SPH4018H2R2MT",
+    "lcsc": "C370436",
+    "engineering_status": "资料选型已落实；1A buck 假设下电流余量可用，异常限流与温升待验证"
   },
   {
     "reference": "R38",
@@ -1297,7 +1622,10 @@
       "2": "BUCK3_FB"
     },
     "datasheet": "",
-    "display_value": "450k"
+    "display_value": "450k",
+    "mpn": "450k/1%",
+    "lcsc": null,
+    "engineering_status": "450k/1% 准确可采购 MPN 未落实；不得以近似阻值悄然改变反馈"
   },
   {
     "reference": "R39",
@@ -1309,8 +1637,12 @@
       "1": "BUCK3_FB",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "C33",
@@ -1322,26 +1654,34 @@
       "1": "USB_5V",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "10u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "10u",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C34",
     "symbol": "Device:C",
-    "value": "22u/6.3V",
+    "value": "22u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "22u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "22u",
+    "mpn": "CL10A226MP8NUNE",
+    "lcsc": "C86295",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V"
   },
   {
     "reference": "U402",
-    "symbol": "HSLinkLP:TLV75536PDBVR",
-    "value": "TLV75536PDBVR",
+    "symbol": "HSLinkLP:TPS7A2036PDBVR",
+    "value": "TPS7A2036PDBVR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-5",
     "sheet": "Power",
     "nets": {
@@ -1351,8 +1691,11 @@
       "4": null,
       "5": "P3V6_SW"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
-    "display_value": "TLV75536PDBVR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tps7a20.pdf",
+    "display_value": "TPS7A2036PDBVR",
+    "mpn": "TPS7A2036PDBVR",
+    "lcsc": "C2873626",
+    "engineering_status": "纠正不可确认料号；3.6V/300mA，100mA VIO 预算和热待验证"
   },
   {
     "reference": "C35",
@@ -1364,21 +1707,29 @@
       "1": "USB_5V",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "1u",
+    "mpn": "CL10B105KP8NNNC",
+    "lcsc": "C95843",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C36",
     "symbol": "Device:C",
-    "value": "10u/6.3V",
+    "value": "10u/10V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "10u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "10u",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "U501",
@@ -1403,21 +1754,27 @@
       "E2": "INT_RAW",
       "E3": "INT_RAW"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tps63810.pdf",
-    "display_value": "TPS63811YFFR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tps63811.pdf",
+    "display_value": "TPS63811YFFR",
+    "mpn": "TPS63811YFFR",
+    "lcsc": "C1852138",
+    "engineering_status": "保留；嘉立创缺货，仅预订参考，封装未绑定"
   },
   {
     "reference": "L4",
     "symbol": "Device:L",
-    "value": "470nH",
-    "footprint": "",
+    "value": "MWSA0603S-R47MT / 470nH",
+    "footprint": "Inductor_SMD:L_Sunlord_MWSA0603S",
     "sheet": "TargetPower",
     "nets": {
       "1": "INT_LX1",
       "2": "INT_LX2"
     },
-    "datasheet": "",
-    "display_value": "470nH"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/CEE4AE5EC9F7EB97495A767C9ECB8960.pdf",
+    "display_value": "470nH",
+    "mpn": "MWSA0603S-R47MT",
+    "lcsc": "C408439",
+    "engineering_status": "资料选型已落实；封装增大，AC 损耗、开关波形与热待实测"
   },
   {
     "reference": "C39",
@@ -1429,34 +1786,46 @@
       "1": "USB_5V",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "10u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "10u",
+    "mpn": "CL10A106KP8NNNC",
+    "lcsc": "C19702",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C40",
     "symbol": "Device:C",
-    "value": "47u",
-    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "value": "47u/10V/X5R/1206",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "INT_RAW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "47u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "47u",
+    "mpn": "CL31A476MPHNNNE",
+    "lcsc": "C96123",
+    "engineering_status": "1206 已绑定；DC bias 典型曲线初算通过，最小有效容量/纹波/稳定性待验证",
+    "procurement_specification": "容值:47uF,温度系数:X5R,精度:±20%,额定电压:10V"
   },
   {
     "reference": "C41",
     "symbol": "Device:C",
-    "value": "47u",
-    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "value": "47u/10V/X5R/1206",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "INT_RAW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "47u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "47u",
+    "mpn": "CL31A476MPHNNNE",
+    "lcsc": "C96123",
+    "engineering_status": "1206 已绑定；DC bias 典型曲线初算通过，最小有效容量/纹波/稳定性待验证",
+    "procurement_specification": "容值:47uF,温度系数:X5R,精度:±20%,额定电压:10V"
   },
   {
     "reference": "C42",
@@ -1468,8 +1837,12 @@
       "1": "USB_5V",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U502",
@@ -1484,34 +1857,45 @@
       "4": "VIO_FB",
       "5": "VIO_LOCAL"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tlv758p.pdf",
-    "display_value": "TLV75801PDBVR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tlv758p.pdf",
+    "display_value": "TLV75801PDBVR",
+    "mpn": "TLV75801PDBVR",
+    "lcsc": "C2877852",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C43",
     "symbol": "Device:C",
-    "value": "4.7u/10V",
+    "value": "4.7u/10V/X7R",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "P3V6_SW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "4.7u/10V"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+    "display_value": "4.7u/10V",
+    "mpn": "TCC0603X7R475K100CT",
+    "lcsc": "C18185770",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C44",
     "symbol": "Device:C",
-    "value": "4.7u/10V",
+    "value": "4.7u/10V/X7R",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "4.7u/10V"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
+    "display_value": "4.7u/10V",
+    "mpn": "TCC0603X7R475K100CT",
+    "lcsc": "C18185770",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "C46",
@@ -1523,8 +1907,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U503",
@@ -1541,7 +1929,10 @@
       "6": "FAULTn"
     },
     "datasheet": "https://www.ti.com/lit/ds/symlink/tps22950.pdf",
-    "display_value": "TPS22950DDCR"
+    "display_value": "TPS22950DDCR",
+    "mpn": "TPS22950DDCR",
+    "lcsc": null,
+    "engineering_status": "保留 TPS22950DDCR；不自动改用故障行为不同的 TPS22950CDDCR"
   },
   {
     "reference": "R42",
@@ -1553,8 +1944,12 @@
       "1": "INT_ILIM",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1.15k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "1.15k",
+    "mpn": "0603WAF1151T5E",
+    "lcsc": "C22834",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω"
   },
   {
     "reference": "C47",
@@ -1566,21 +1961,28 @@
       "1": "INT_PROTECTED",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1u"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "1u",
+    "mpn": "CL10B105KP8NNNC",
+    "lcsc": "C95843",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V"
   },
   {
     "reference": "J601",
     "symbol": "Connector_Generic:Conn_01x02",
     "value": "EXT 1.8-5.5V",
-    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "footprint": "HSLinkLP:TerminalBlock_KEFA_KF128_5.08_1x02",
     "sheet": "TargetPower",
     "nets": {
       "1": "EXT_INPUT",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "EXT 1.8-5.5V"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20240821/65781D2669BFD48A107CF288CD3FBA7A.pdf",
+    "display_value": "EXT 1.8-5.5V",
+    "mpn": "KF128-5.08-2P-AA",
+    "lcsc": "C474952",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "SW601",
@@ -1596,8 +1998,11 @@
       "5": "SOURCE_EXT",
       "6": "P3V3"
     },
-    "datasheet": "https://www.thonk.co.uk/wp-content/uploads/2017/05/DW3-DPDT-ON-ON-2MD1T1B1M2QES.pdf",
-    "display_value": "2MD1T1B1M2QES-5"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200324/C496170_954A7394085DEA4CF4EC9443DF401EBE.pdf",
+    "display_value": "2MD1T1B1M2QES-5",
+    "mpn": "2MD1T1B1M2QES-5",
+    "lcsc": "C908282",
+    "engineering_status": "现有选型保留；精确后缀 DC 额定与 BBM 待厂商确认"
   },
   {
     "reference": "Q601",
@@ -1610,8 +2015,11 @@
       "2": "GND",
       "3": "POWER_COIL_LO"
     },
-    "datasheet": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
-    "display_value": "AO3400A"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
+    "display_value": "AO3400A",
+    "mpn": "AO3400A",
+    "lcsc": "C20917",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R44",
@@ -1623,8 +2031,12 @@
       "1": "POWER_SAFE",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R45",
@@ -1636,21 +2048,28 @@
       "1": "SOURCE_EXT",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "J602",
     "symbol": "Connector_Generic:Conn_01x02",
     "value": "DUT POWER",
-    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "footprint": "HSLinkLP:TerminalBlock_KEFA_KF128_5.08_1x02",
     "sheet": "TargetPower",
     "nets": {
       "1": "DUT_OUT",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "DUT POWER"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20240821/65781D2669BFD48A107CF288CD3FBA7A.pdf",
+    "display_value": "DUT POWER",
+    "mpn": "KF128-5.08-2P-AA",
+    "lcsc": "C474952",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "U701",
@@ -1684,8 +2103,11 @@
       "10": "UART_B_RTS",
       "14": "F_UART_B_RTS"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc8t245-q1.pdf",
-    "display_value": "SN74LXC8T245QPWRQ1"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc8t245-q1.pdf",
+    "display_value": "SN74LXC8T245QPWRQ1",
+    "mpn": "SN74LXC8T245QPWRQ1",
+    "lcsc": "C2868232",
+    "engineering_status": "保留；1.8V/40MHz 最坏往返时序未闭合"
   },
   {
     "reference": "U702",
@@ -1703,8 +2125,11 @@
       "7": "F_SWDIO",
       "8": "VIO_LOCAL"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf",
-    "display_value": "SN74LXC2T45DCUR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
+    "display_value": "SN74LXC2T45DCUR",
+    "mpn": "SN74LXC2T45DCUR",
+    "lcsc": "C5217891",
+    "engineering_status": "保留；SWDIO 动态方向/换向与 40MHz 待验证"
   },
   {
     "reference": "R46",
@@ -1716,8 +2141,12 @@
       "1": "SWD_UNUSED_A",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R47",
@@ -1729,8 +2158,12 @@
       "1": "SWD_UNUSED_B",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "U703",
@@ -1748,8 +2181,11 @@
       "7": "F_UART_A_RX",
       "8": "VIO_LOCAL"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf",
-    "display_value": "SN74LXC2T45DCUR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
+    "display_value": "SN74LXC2T45DCUR",
+    "mpn": "SN74LXC2T45DCUR",
+    "lcsc": "C5217891",
+    "engineering_status": "保留；仅 UART 换料在 10 套无券换料费场景下无净节省"
   },
   {
     "reference": "U704",
@@ -1767,8 +2203,11 @@
       "7": "F_TDO",
       "8": "VIO_LOCAL"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lxc2t45.pdf",
-    "display_value": "SN74LXC2T45DCUR"
+    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
+    "display_value": "SN74LXC2T45DCUR",
+    "mpn": "SN74LXC2T45DCUR",
+    "lcsc": "C5217891",
+    "engineering_status": "保留；TDO 读回时序待验证"
   },
   {
     "reference": "R48",
@@ -1780,8 +2219,12 @@
       "1": "TDO_UNUSED_B",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "C48",
@@ -1793,8 +2236,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C49",
@@ -1806,8 +2253,12 @@
       "1": "VIO_LOCAL",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C50",
@@ -1819,8 +2270,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C51",
@@ -1832,8 +2287,12 @@
       "1": "VIO_LOCAL",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C52",
@@ -1845,8 +2304,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C53",
@@ -1858,8 +2321,12 @@
       "1": "VIO_LOCAL",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C54",
@@ -1871,8 +2338,12 @@
       "1": "P3V3",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "C55",
@@ -1884,8 +2355,12 @@
       "1": "VIO_LOCAL",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "Q701",
@@ -1898,8 +2373,11 @@
       "2": "GND",
       "3": "F_NRST"
     },
-    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
-    "display_value": "2N7002"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf",
+    "display_value": "2N7002",
+    "mpn": "2N7002",
+    "lcsc": "C8545",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R49",
@@ -1911,8 +2389,12 @@
       "1": "NRST_DRIVE",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "Q702",
@@ -1925,8 +2407,11 @@
       "2": "GND",
       "3": "F_NTRST"
     },
-    "datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
-    "display_value": "2N7002"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20171228/C164913_15144413269051213916.pdf",
+    "display_value": "2N7002",
+    "mpn": "2N7002",
+    "lcsc": "C8545",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R50",
@@ -1938,8 +2423,12 @@
       "1": "NTRST_DRIVE",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "R51",
@@ -1951,8 +2440,12 @@
       "1": "F_NRST",
       "2": "VIO_LOCAL"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "R52",
@@ -1964,8 +2457,12 @@
       "1": "F_NTRST",
       "2": "VIO_LOCAL"
     },
-    "datasheet": "",
-    "display_value": "10k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "10k",
+    "mpn": "0603WAF1002T5E",
+    "lcsc": "C25804",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:10000Ω"
   },
   {
     "reference": "U801",
@@ -1991,8 +2488,11 @@
       "11": "DUT_TDO",
       "13": null
     },
-    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf",
-    "display_value": "FSA2466UMX"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf",
+    "display_value": "FSA2466UMX",
+    "mpn": "FSA2466UMX",
+    "lcsc": "C457657",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C56",
@@ -2004,8 +2504,12 @@
       "1": "P3V6_SW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U802",
@@ -2031,8 +2535,11 @@
       "11": "DUT_UART_A_RTS",
       "13": null
     },
-    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf",
-    "display_value": "FSA2466UMX"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf",
+    "display_value": "FSA2466UMX",
+    "mpn": "FSA2466UMX",
+    "lcsc": "C457657",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C57",
@@ -2044,8 +2551,12 @@
       "1": "P3V6_SW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U803",
@@ -2071,8 +2582,11 @@
       "11": "DUT_UART_B_RTS",
       "13": null
     },
-    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf",
-    "display_value": "FSA2466UMX"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf",
+    "display_value": "FSA2466UMX",
+    "mpn": "FSA2466UMX",
+    "lcsc": "C457657",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C58",
@@ -2084,8 +2598,12 @@
       "1": "P3V6_SW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "U804",
@@ -2111,8 +2629,11 @@
       "11": null,
       "13": null
     },
-    "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/fsa2466-d.pdf",
-    "display_value": "FSA2466UMX"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220915/07E1679E82D3DA29A3889CAEB4FEC484.pdf",
+    "display_value": "FSA2466UMX",
+    "mpn": "FSA2466UMX",
+    "lcsc": "C457657",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "C59",
@@ -2124,8 +2645,12 @@
       "1": "P3V6_SW",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "J801",
@@ -2145,8 +2670,11 @@
       "9": "GND",
       "10": "DUT_NRST"
     },
-    "datasheet": "",
-    "display_value": "ARM 10P"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20231122/F17CBFE608F16BCCADFE6957B6D7BD2D.pdf",
+    "display_value": "ARM 10P",
+    "mpn": "ZX-PZ1.27-2-5PZZ",
+    "lcsc": "C7501289",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "J802",
@@ -2158,8 +2686,11 @@
       "1": "DUT_NTRST",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "nTRST"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20221019/2EE72DAC61CAA62C0A53546E211F9C15.pdf",
+    "display_value": "nTRST",
+    "mpn": "B-2100S02P-A110",
+    "lcsc": "C124375",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "J803",
@@ -2174,8 +2705,11 @@
       "4": "DUT_UART_A_RTS",
       "5": "GND"
     },
-    "datasheet": "",
-    "display_value": "UART A"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf",
+    "display_value": "UART A",
+    "mpn": "PZ254V-11-05P",
+    "lcsc": "C492404",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "J804",
@@ -2190,34 +2724,45 @@
       "4": "DUT_UART_B_RTS",
       "5": "GND"
     },
-    "datasheet": "",
-    "display_value": "UART B"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20260728/FCDE680580DD89D896389311C7AED201.pdf",
+    "display_value": "UART B",
+    "mpn": "PZ254V-11-05P",
+    "lcsc": "C492404",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R53",
     "symbol": "Device:R",
-    "value": "68k",
+    "value": "68k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Sense",
     "nets": {
       "1": "VREF_SENSE_IN",
       "2": "ADC_VREF"
     },
-    "datasheet": "",
-    "display_value": "68k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "68k",
+    "mpn": "RT0603BRD0768KL",
+    "lcsc": "C705793",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ"
   },
   {
     "reference": "R54",
     "symbol": "Device:R",
-    "value": "68k",
+    "value": "68k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Sense",
     "nets": {
       "1": "ADC_VREF",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "68k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "68k",
+    "mpn": "RT0603BRD0768KL",
+    "lcsc": "C705793",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ"
   },
   {
     "reference": "C61",
@@ -2229,34 +2774,46 @@
       "1": "ADC_VREF",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "1n",
+    "mpn": "CL10B102KB8NNNC",
+    "lcsc": "C1588",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "R55",
     "symbol": "Device:R",
-    "value": "68k",
+    "value": "68k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Sense",
     "nets": {
       "1": "VOUT_SENSE_IN",
       "2": "ADC_VOUT"
     },
-    "datasheet": "",
-    "display_value": "68k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "68k",
+    "mpn": "RT0603BRD0768KL",
+    "lcsc": "C705793",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ"
   },
   {
     "reference": "R56",
     "symbol": "Device:R",
-    "value": "68k",
+    "value": "68k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Sense",
     "nets": {
       "1": "ADC_VOUT",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "68k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "68k",
+    "mpn": "RT0603BRD0768KL",
+    "lcsc": "C705793",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ"
   },
   {
     "reference": "C62",
@@ -2268,21 +2825,29 @@
       "1": "ADC_VOUT",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1n"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
+    "display_value": "1n",
+    "mpn": "CL10B102KB8NNNC",
+    "lcsc": "C1588",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "R57",
     "symbol": "Device:R",
-    "value": "1k",
+    "value": "1k/1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Sense",
     "nets": {
       "1": "DISCH_RES",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "1k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "1k",
+    "mpn": "0603WAF1001T5E",
+    "lcsc": "C21190",
+    "engineering_status": "0.1W 精确料号；5.5V、1%低阻端时放电峰值约30.56mW，额定温度内有余量；热/异常工况待实测",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1000Ω"
   },
   {
     "reference": "U504",
@@ -2298,47 +2863,62 @@
       "5": "I2C_SCL",
       "6": "GND"
     },
-    "datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22272C.pdf",
-    "display_value": "MCP4726A0T-E/CH"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20181222/C191581_14B3AB735356D3E044593D40E6F33AFA.pdf",
+    "display_value": "MCP4726A0T-E/CH",
+    "mpn": "MCP4726A0T-E/CH",
+    "lcsc": "C191581",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R58",
     "symbol": "Device:R",
-    "value": "100k",
+    "value": "100k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "VIO_LOCAL",
       "2": "VIO_FB"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "100k",
+    "mpn": "RT0603BRD07100KL",
+    "lcsc": "C122538",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ"
   },
   {
     "reference": "R59",
     "symbol": "Device:R",
-    "value": "21.5k",
+    "value": "21.5k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "VIO_FB",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "21.5k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "21.5k",
+    "mpn": "RT0603BRD0721K5L",
+    "lcsc": "C705747",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ"
   },
   {
     "reference": "R60",
     "symbol": "Device:R",
-    "value": "200k",
+    "value": "200k/0.1%/0.1W",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "VIO_DAC",
       "2": "VIO_FB"
     },
-    "datasheet": "",
-    "display_value": "200k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "200k",
+    "mpn": "RT0603BRD07200KL",
+    "lcsc": "C728585",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ"
   },
   {
     "reference": "R63",
@@ -2350,8 +2930,12 @@
       "1": "VIO_EN",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "K601",
@@ -2369,8 +2953,11 @@
       "11": null,
       "9": null
     },
-    "datasheet": "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf",
-    "display_value": "HFD2/005-S"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
+    "display_value": "HFD2/005-S",
+    "mpn": "HFD2/005-S",
+    "lcsc": "C42415145",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "K901",
@@ -2388,8 +2975,11 @@
       "6": null,
       "11": null
     },
-    "datasheet": "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf",
-    "display_value": "HFD2/005-S"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
+    "display_value": "HFD2/005-S",
+    "mpn": "HFD2/005-S",
+    "lcsc": "C42415145",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "K902",
@@ -2407,8 +2997,11 @@
       "11": null,
       "9": null
     },
-    "datasheet": "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf",
-    "display_value": "HFD2/005-S"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
+    "display_value": "HFD2/005-S",
+    "mpn": "HFD2/005-S",
+    "lcsc": "C42415145",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "D601",
@@ -2420,8 +3013,11 @@
       "1": "USB_5V",
       "2": "POWER_COIL_LO"
     },
-    "datasheet": "https://www.diodes.com/assets/Datasheets/ds30086.pdf",
-    "display_value": "1N4148W-7-F"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
+    "display_value": "1N4148W-7-F",
+    "mpn": "1N4148W-7-F",
+    "lcsc": "C83528",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "Q901",
@@ -2434,8 +3030,11 @@
       "2": "GND",
       "3": "SENSE_COIL_LO"
     },
-    "datasheet": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
-    "display_value": "AO3400A"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
+    "display_value": "AO3400A",
+    "mpn": "AO3400A",
+    "lcsc": "C20917",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "D901",
@@ -2447,8 +3046,11 @@
       "1": "USB_5V",
       "2": "SENSE_COIL_LO"
     },
-    "datasheet": "https://www.diodes.com/assets/Datasheets/ds30086.pdf",
-    "display_value": "1N4148W-7-F"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
+    "display_value": "1N4148W-7-F",
+    "mpn": "1N4148W-7-F",
+    "lcsc": "C83528",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R61",
@@ -2460,8 +3062,12 @@
       "1": "SENSE_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   },
   {
     "reference": "Q902",
@@ -2474,8 +3080,11 @@
       "2": "GND",
       "3": "DISCH_COIL_LO"
     },
-    "datasheet": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf",
-    "display_value": "AO3400A"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
+    "display_value": "AO3400A",
+    "mpn": "AO3400A",
+    "lcsc": "C20917",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "D902",
@@ -2487,8 +3096,11 @@
       "1": "USB_5V",
       "2": "DISCH_COIL_LO"
     },
-    "datasheet": "https://www.diodes.com/assets/Datasheets/ds30086.pdf",
-    "display_value": "1N4148W-7-F"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
+    "display_value": "1N4148W-7-F",
+    "mpn": "1N4148W-7-F",
+    "lcsc": "C83528",
+    "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
     "reference": "R62",
@@ -2500,7 +3112,11 @@
       "1": "DISCH_ON",
       "2": "GND"
     },
-    "datasheet": "",
-    "display_value": "100k"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
   }
 ]

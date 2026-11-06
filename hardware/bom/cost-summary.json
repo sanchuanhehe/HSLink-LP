@@ -1,41 +1,136 @@
 {
   "currency": "CNY",
+  "tax_included": true,
   "prototype_quantity": 10,
   "updated_at": "2026-11-07",
-  "baseline_commit": "277724bc5748ce033238e90398618ac6aadc32d7",
-  "baseline_bom_per_board": 427.233,
-  "bom_per_board": 254.78,
-  "bom_batch": 2547.8,
-  "savings_per_board": 172.453,
-  "savings_batch": 1724.53,
-  "savings_percent": 40.37,
-  "component_contingency_10pct": 254.78,
-  "pcb_batch_range": [
-    200,
-    400
+  "baseline_commit": "4f0ab7775498fb9f26c0f444b25c2bd4eb617726",
+  "status": "完整位号已覆盖，报价未齐；非可下单整板报价",
+  "physical_references": 168,
+  "quoted_references_including_test_pad": 157,
+  "bom_per_board": null,
+  "bom_batch": null,
+  "quoted_material_subtotal_per_board": 127.0051,
+  "quoted_material_subtotal_batch": 1270.051,
+  "unquoted": [
+    {
+      "references": [
+        "SW1",
+        "SW2"
+      ],
+      "mpn": "TL3342F260QG",
+      "lcsc": "C2886894",
+      "qty_per_board": 2,
+      "status": "仅预订参考",
+      "reference_price_only": 3.11
+    },
+    {
+      "references": [
+        "D101",
+        "D102"
+      ],
+      "mpn": "TPD2E2U06DCKR",
+      "lcsc": "C1855726",
+      "qty_per_board": 2,
+      "status": "仅预订参考",
+      "reference_price_only": 0.733
+    },
+    {
+      "references": [
+        "R38"
+      ],
+      "mpn": "450k/1%",
+      "lcsc": null,
+      "qty_per_board": 1,
+      "status": "无准确现货报价",
+      "reference_price_only": null
+    },
+    {
+      "references": [
+        "U501"
+      ],
+      "mpn": "TPS63811YFFR",
+      "lcsc": "C1852138",
+      "qty_per_board": 1,
+      "status": "仅预订参考",
+      "reference_price_only": 22.21
+    },
+    {
+      "references": [
+        "U503"
+      ],
+      "mpn": "TPS22950DDCR",
+      "lcsc": null,
+      "qty_per_board": 1,
+      "status": "无准确现货报价",
+      "reference_price_only": null
+    },
+    {
+      "references": [
+        "U502"
+      ],
+      "mpn": "TLV75801PDBVR",
+      "lcsc": "C2877852",
+      "qty_per_board": 1,
+      "status": "仅预订参考",
+      "reference_price_only": 0.297
+    },
+    {
+      "references": [
+        "D601",
+        "D901",
+        "D902"
+      ],
+      "mpn": "1N4148W-7-F",
+      "lcsc": "C83528",
+      "qty_per_board": 3,
+      "status": "仅预订参考",
+      "reference_price_only": 0.0936
+    }
   ],
-  "assembly_batch_range": [
-    450,
-    1100
-  ],
-  "stencil_shipping_misc_batch_range": [
-    100,
-    300
-  ],
-  "total_batch_budget_range": [
-    3272,
-    5023
-  ],
-  "assumptions": [
-    "4 层约 90×60 mm；三个通孔继电器增加面积，尺寸待 PCB 布局确认",
-    "包含 10% 物料备损；采购波动 -10%/+15% 后再加制造杂费",
-    "贴装含通孔焊接预算；PCB/贴装/运输均未取得正式报价",
-    "美元价格采用预算汇率 7.20 和 13% 余量，不代表实时汇率或税额",
-    "不含仪器、外壳、线缆、研发人工及返版",
-    "主控按华秋网页 1+ 档 ¥11.90 修正；未下单，批次/税运仍需确认"
-  ],
-  "status": "降本工程预算，未下单，非生产 BOM",
-  "previous_bom_per_board": 281.43,
-  "additional_savings_per_board": 26.65,
-  "additional_savings_batch": 266.5
+  "spares": {
+    "policy": "仅情景：每种料十套实用量的 10%，逐种向上取整；不是厂家实际备损要求",
+    "quoted_subset_extra_material": 127.0051,
+    "quoted_subset_purchase_with_spares": 1397.0561,
+    "full_spares_cost": null
+  },
+  "moq_leftovers": null,
+  "pcb": null,
+  "smt_assembly": null,
+  "tht_assembly": null,
+  "shipping": null,
+  "stencil": null,
+  "feeder_fee": {
+    "assumed_per_expanded_smt_sku_per_order": 20,
+    "expanded_smt_skus_with_known_library_type": 33,
+    "base_smt_skus": 15,
+    "known_sku_scenario_cny": 660,
+    "full_order_quote": null,
+    "note": "不含通孔件；不同子型号按不同种类；无优惠券，实际免换料/可贴状态以订单为准"
+  },
+  "same_platform_material_replacements": {
+    "L1_savings": 1.775,
+    "L2_savings": 1.663,
+    "L4_savings": 21.798,
+    "U101_savings": 4.7332,
+    "subtotal_per_board": 29.9692,
+    "added_R9_0R_per_board": 0.013,
+    "difference_after_new_0R_excluding_unknown_old_R9": 29.9562,
+    "full_net_savings": null,
+    "note": "旧 R9 未取得同平台准确报价；制造/备料差额未齐，不能称整板净节省。"
+  },
+  "budget_correction": {
+    "withdrawn_previous_mixed_channel_per_board": 254.78,
+    "note": "旧预算和原 ¥80.50 部分合计均作废为整板报价，不作同比收益。主控按 JLC ¥17.71。"
+  },
+  "translator_chips_per_board": {
+    "retained_LXC": 19.19,
+    "unqualified_LVC_mixed": 4.0769,
+    "unqualified_LVC_all_single": 4.92
+  },
+  "limitations": [
+    "U501 缺货和缺封装；U502/ESD/二极管/按钮仅预订参考；R38 与 U503 准确报价未落实",
+    "Y1/按钮是采购候选，不代表时钟和机械验证",
+    "PCB 未设计，无法给出制造订单总价",
+    "MOQ/备损要求/换料费/贴装服务和运输未下单确认"
+  ]
 }

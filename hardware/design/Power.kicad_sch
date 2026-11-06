@@ -3940,7 +3940,103 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+
+        (symbol "HSLinkLP:TPS7A2036PDBVR"
+        (exclude_from_sim no)
+        (in_bom yes)
+        (on_board yes)
+        (property "Reference" "U"
+          (at 2.54 0 0)
+          (effects
+            (font (size 1.27 1.27))
+          )
+        )
+        (property "Value" "TPS7A2036PDBVR" (at 0 -2.54 0)
+          (effects
+            (font (size 1.27 1.27))
+          )
+        )
+        (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+          (at 0 -5.08 0)
+          (effects
+            (font (size 1.27 1.27))
+          )
+          (hide yes)
+        )
+        (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf" (at 0 -7.62 0)
+          (hide yes)
+          (effects
+            (font (size 1.27 1.27))
+          )
+        )
+        (property "Description" "3.6 V / 300 mA 固定 LDO；DBV 顶视引脚映射已核对，保持上游功能布局" (at 0 -10.16 0)
+          (hide yes)
+          (effects
+            (font (size 1.27 1.27))
+          )
+        )
+        (symbol "TPS7A2036PDBVR_0_1"
+          (rectangle
+            (start -5.08 5.08)
+            (end 6.35 -5.08)
+            (stroke (width 0.254) (type default))
+            (fill (type background))
+          )
+        )
+        (symbol "TPS7A2036PDBVR_1_1"
+          (pin power_in line
+            (at -6.35 1.27 0)
+            (length 1.27)
+            (name "IN"
+              (effects (font (size 1.27 1.27)))
+            )
+            (number "1"
+              (effects (font (size 1.27 1.27)))
+            )
+          )
+          (pin power_in line
+            (at 0 -6.35 90)
+            (length 1.27)
+            (name "GND"
+              (effects (font (size 1.27 1.27)))
+            )
+            (number "2"
+              (effects (font (size 1.27 1.27)))
+            )
+          )
+          (pin input line
+            (at -6.35 -1.27 0)
+            (length 1.27)
+            (name "EN"
+              (effects (font (size 1.27 1.27)))
+            )
+            (number "3"
+              (effects (font (size 1.27 1.27)))
+            )
+          )
+          (pin no_connect line
+            (at 7.62 -1.27 180)
+            (length 1.27)
+            (name "NC"
+              (effects (font (size 1.27 1.27)))
+            )
+            (number "4"
+              (effects (font (size 1.27 1.27)))
+            )
+          )
+          (pin power_out line
+            (at 7.62 1.27 180)
+            (length 1.27)
+            (name "OUT"
+              (effects (font (size 1.27 1.27)))
+            )
+            (number "5"
+              (effects (font (size 1.27 1.27)))
+            )
+          )
+        )
+      )
+  )
 	(junction
 		(at 40.64 64.77)
 		(diameter 0)
@@ -5191,14 +5287,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 33.02 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 33.02 95.25 0)
@@ -5209,6 +5303,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 33.02 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 33.02 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 33.02 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 33.02 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a1aa2c50-48b0-49c3-955e-a1ca1201da70")
 		)
@@ -5264,14 +5370,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 27.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 27.94 50.8 0)
@@ -5282,6 +5386,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CL10A106KP8NNNC" (at 27.94 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C19702" (at 27.94 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V" (at 27.94 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 27.94 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "26547ab2-5002-4689-a809-4a3c5892fc71")
 		)
@@ -5407,14 +5523,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 27.94 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 27.94 95.25 0)
@@ -5425,6 +5539,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 27.94 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 27.94 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 27.94 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 27.94 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "ef4a9547-0fa3-427e-bb55-53dc0b15e803")
 		)
@@ -5619,14 +5745,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hpmicro.com/"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250717/A0802240126DEF7807A484C4381E2269.pdf"
 			(at 22.86 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Hpmicro High Performance Motion Control MCU, QFN48"
 			(at 27.94 -7.62 0)
@@ -5637,6 +5761,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "HPM5301IEG1" (at 68.58 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C49451864" (at 68.58 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "HPM5301IEG1" (at 68.58 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 68.58 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "33"
 			(uuid "20ebceb8-bfbb-4d74-95c1-046d4aa8869f")
 		)
@@ -5833,14 +5969,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 69.85 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 69.85 95.25 0)
@@ -5851,6 +5985,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 69.85 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 69.85 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 69.85 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 69.85 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2b495df7-715f-48cc-b7df-ae8d06bd7418")
 		)
@@ -6046,14 +6192,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 101.6 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 101.6 30.48 0)
@@ -6064,6 +6208,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 101.6 30.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 101.6 30.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 101.6 30.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 101.6 30.48 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "02ca1fe7-3640-44ce-8082-b03ba9dcb39b")
 		)
@@ -6189,14 +6345,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf"
 			(at 101.6 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 101.6 35.56 0)
@@ -6207,6 +6361,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "TCC0603X7R475K100CT" (at 101.6 35.56 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C18185770" (at 101.6 35.56 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V" (at 101.6 35.56 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 101.6 35.56 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "faec3f06-66cf-4299-99cb-b2ed2ba6a354")
 		)
@@ -6324,7 +6490,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns-SRN4018"
+		(property "Footprint" "HSLinkLP:L_Sunlord_SPH4018"
 			(at 39.37 45.72 0)
 			(effects
 				(font
@@ -6333,14 +6499,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf"
 			(at 39.37 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Inductor"
 			(at 39.37 45.72 0)
@@ -6351,6 +6515,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "SPH4018H4R7MT" (at 39.37 45.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C98400" (at 39.37 45.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "SPH4018H4R7MT / 4.7uH" (at 39.37 45.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型已落实；与原件相同 2A 饱和表值，温升电流较原件低，主控启动/温升待验证" (at 39.37 45.72 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "2"
 			(uuid "f221b1eb-d341-43e5-81bb-daed7ca23860")
 		)
@@ -6546,14 +6722,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 49.53 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 49.53 95.25 0)
@@ -6564,6 +6738,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 49.53 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 49.53 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 49.53 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 49.53 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "d4f9497d-2c9f-4fa9-97cc-7a7117f787ae")
 		)
@@ -6619,14 +6805,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 101.6 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 101.6 20.32 0)
@@ -6637,6 +6821,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 101.6 20.32 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 101.6 20.32 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 101.6 20.32 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 101.6 20.32 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "54ef56bd-b6e3-42df-b975-40e12bd15212")
 		)
@@ -6692,14 +6888,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 33.02 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 33.02 33.02 0)
@@ -6710,6 +6904,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 33.02 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 33.02 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 33.02 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 33.02 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a08d2591-3b14-401b-af7a-ec7ce86f63e2")
 		)
@@ -6835,14 +7041,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 59.69 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 59.69 95.25 0)
@@ -6853,6 +7057,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 59.69 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 59.69 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 59.69 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 59.69 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "d06c7c05-9d74-41e4-bda5-69c84756a63a")
 		)
@@ -7048,14 +7264,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 17.78 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 17.78 50.8 0)
@@ -7066,6 +7280,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CL10A226MP8NUNE" (at 17.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C86295" (at 17.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V" (at 17.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 17.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e936454a-6212-4b9a-80ac-84a0148cbbbb")
 		)
@@ -7191,14 +7417,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 54.61 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 54.61 95.25 0)
@@ -7209,6 +7433,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 54.61 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 54.61 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 54.61 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 54.61 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "d0214d25-85dc-4834-bfa2-09bc6245d9d5")
 		)
@@ -7264,14 +7500,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 64.77 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 64.77 95.25 0)
@@ -7282,6 +7516,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 64.77 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 64.77 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 64.77 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 64.77 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "18799b1c-3fe5-4250-af2e-af7b7b7192e0")
 		)
@@ -7407,14 +7653,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 38.1 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 38.1 33.02 0)
@@ -7425,6 +7669,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 38.1 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 38.1 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 38.1 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 38.1 33.02 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "8548ce22-dcd1-4c92-add8-512223c5bc4b")
 		)
@@ -7480,14 +7736,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf"
 			(at 101.6 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 101.6 25.4 0)
@@ -7498,6 +7752,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "TCC0603X7R475K100CT" (at 101.6 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C18185770" (at 101.6 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V" (at 101.6 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 101.6 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "70dff752-ad34-4630-b5e4-0183f5950c44")
 		)
@@ -7553,14 +7819,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 22.86 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 22.86 50.8 0)
@@ -7571,6 +7835,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CL10A226MP8NUNE" (at 22.86 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C86295" (at 22.86 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V" (at 22.86 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 22.86 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e691db6b-a1da-480c-9072-3467b26d33ae")
 		)
@@ -7626,14 +7902,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 38.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 38.1 95.25 0)
@@ -7644,6 +7918,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 38.1 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 38.1 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 38.1 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 38.1 95.25 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "51e5409c-b1b0-4867-89f8-6964cb0fd314")
 		)
@@ -7699,14 +7985,12 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 35.56 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 35.56 59.69 0)
@@ -7717,6 +8001,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 35.56 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 35.56 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 35.56 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 35.56 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e5323071-fcb4-4fbb-a6ce-9866355e4af6")
 		)
@@ -7782,7 +8078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv62568.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tlv62568.pdf"
 			(at 180.34 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7790,9 +8086,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "3.3 V 控制器电源；0.6 V FB，450k/100k；按功能重排引脚，物理编号不变"
 			(at 180.34 27.94 0)
@@ -7810,10 +8104,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "TLV62568DBVR" (at 180.34 38.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C163219" (at 180.34 38.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 180.34 38.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "a70e7575-6af2-4f2a-8c4a-0924a0a936dd")
 		)
@@ -7873,7 +8174,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns-SRN4018"
+		(property "Footprint" "HSLinkLP:L_Sunlord_SPH4018"
 			(at 205.74 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7885,7 +8186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf"
 			(at 205.74 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7893,9 +8194,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Inductor"
 			(at 205.74 36.83 0)
@@ -7908,15 +8207,22 @@
 				)
 			)
 		)
-		(property "Specification" "SRN4018-2R2M / 2.2uH"
+		(property "Specification" "SPH4018H2R2MT / 2.2uH"
 			(at 205.74 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "SPH4018H2R2MT" (at 205.74 36.83 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C370436" (at 205.74 36.83 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型已落实；1A buck 假设下电流余量可用，异常限流与温升待验证" (at 205.74 36.83 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "bb0dbef3-7a91-4ea7-9411-b2f10818f25b")
 		)
@@ -7989,9 +8295,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 243.84 43.18 0)
@@ -8009,10 +8313,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "450k/1%" (at 243.84 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "" (at 243.84 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "450k/1% 准确可采购 MPN 未落实；不得以近似阻值悄然改变反馈" (at 243.84 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "d7e7f2e5-3842-42aa-97d0-4a04a56f7b04")
 		)
@@ -8077,7 +8388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 243.84 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -8085,9 +8396,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 243.84 59.69 0)
@@ -8100,15 +8409,22 @@
 				)
 			)
 		)
-		(property "Specification" "100k/1%"
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
 			(at 243.84 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "0603WAF1003T5E" (at 243.84 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 243.84 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 243.84 59.69 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c05e1591-cff5-414d-981b-e2a53e91009f")
 		)
@@ -8173,7 +8489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 152.4 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8181,9 +8497,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 152.4 43.18 0)
@@ -8196,15 +8510,22 @@
 				)
 			)
 		)
-		(property "Specification" "10u/10V"
+		(property "Specification" "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V"
 			(at 152.4 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CL10A106KP8NNNC" (at 152.4 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C19702" (at 152.4 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 152.4 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "af4a205d-38f0-4b88-bc44-38fb5521c612")
 		)
@@ -8269,7 +8590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 223.52 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8277,9 +8598,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 223.52 43.18 0)
@@ -8292,15 +8611,22 @@
 				)
 			)
 		)
-		(property "Specification" "22u/6.3V"
+		(property "Specification" "容值:22uF,温度系数:X5R,精度:±20%,额定电压:10V"
 			(at 223.52 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CL10A226MP8NUNE" (at 223.52 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C86295" (at 223.52 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 223.52 43.18 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "77188d83-3aee-4dc4-9680-53cfddfa69c2")
 		)
@@ -8315,111 +8641,6 @@
 				)
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/608bc332-6293-4be4-9962-796ee0e8bf2f"
 					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:TLV75536PDBVR")
-		(at 180.34 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5f66aa58-6875-4a32-81e9-10b0c14450e9")
-		(property "Reference" "U402"
-			(at 189.23 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "TLV75536PDBVR"
-			(at 189.23 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 180.34 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv755p.pdf"
-			(at 180.34 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.6 V 固定电源，给 FSA2466 留 3.3 V 信号余量；按功能重排引脚，物理编号不变"
-			(at 180.34 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "TLV75536PDBVR"
-			(at 180.34 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2edfac4-df13-48b3-8298-e51774998413")
-		)
-		(pin "2"
-			(uuid "7bfe62c6-701c-4b5e-bec1-fbbe58da01c0")
-		)
-		(pin "3"
-			(uuid "3f7aa8a2-2b16-49c3-8497-61883ddb5244")
-		)
-		(pin "4"
-			(uuid "d2ae2e1e-b620-4a04-a0a7-06a5ec4b6a6f")
-		)
-		(pin "5"
-			(uuid "efe86b95-9c94-49ad-8f3f-eb3c15eaa159")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/c0b535b8-c89f-4c41-8bb2-db5a8755e55f"
-					(reference "U402")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/608bc332-6293-4be4-9962-796ee0e8bf2f"
-					(reference "U402")
 					(unit 1)
 				)
 			)
@@ -8470,7 +8691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 152.4 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8478,9 +8699,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 152.4 87.63 0)
@@ -8493,15 +8712,22 @@
 				)
 			)
 		)
-		(property "Specification" "1u/10V"
+		(property "Specification" "容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V"
 			(at 152.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CL10B105KP8NNNC" (at 152.4 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C95843" (at 152.4 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 152.4 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c44c9340-788c-4d6f-b568-89ebf6a011c3")
 		)
@@ -8566,7 +8792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 223.52 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8574,9 +8800,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 223.52 87.63 0)
@@ -8589,15 +8813,22 @@
 				)
 			)
 		)
-		(property "Specification" "10u/6.3V"
+		(property "Specification" "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V"
 			(at 223.52 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "MPN" "CL10A106KP8NNNC" (at 223.52 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C19702" (at 223.52 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 223.52 87.63 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "cbef6a4a-acf4-4c0e-b668-b1fb07bdfd02")
 		)
@@ -10175,7 +10406,75 @@
 		)
 		(uuid "3bb057d5-8eaa-476f-bad0-a9cdcd1c5f99")
 	)
-	(sheet_instances
+	  (symbol (lib_id "HSLinkLP:TPS7A2036PDBVR") (at 180.34 86.36 0) (unit 1)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+    (uuid "454fd121-6cdd-4002-a3d5-de4a2cd3aee4")
+    (property "Reference" "U402"
+      (at 189.23 77.47 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+            (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TPS7A2036PDBVR"
+      (at 189.23 80.01 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+            (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 180.34 81.28 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+            (font (size 1.27 1.27))
+          )
+    )
+    (property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tps7a20.pdf"
+      (at 180.34 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+            (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Description" "3.6 V / 300 mA fixed LDO; 100 mA VIO budget is an assumption"
+      (at 180.34 76.2 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+            (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "TPS7A2036PDBVR" (at 180.34 86.36 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "MPN" "TPS7A2036PDBVR" (at 180.34 86.36 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C2873626" (at 180.34 86.36 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "纠正不可确认料号；3.6V/300mA，100mA VIO 预算和热待验证" (at 180.34 86.36 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (pin "1" (uuid "b75080d2-d5a6-4c93-8dcb-59e4871a45cf"))
+    (pin "2" (uuid "ebb7c3c3-5467-4d6d-87bb-0fb80e0b5b80"))
+    (pin "3" (uuid "375d6ba5-5f2a-4105-9593-ee3e9c1355d2"))
+    (pin "4" (uuid "906a94d4-bfd5-4fc7-9424-0ef6cf05a757"))
+    (pin "5" (uuid "36a466d7-ca7f-4a11-86bf-836edda235bb"))
+    (instances
+      (project "HSLink-LP"
+        (path "/5e2c1440-f6a4-4887-af75-aa6afc882006/608bc332-6293-4be4-9962-796ee0e8bf2f"
+          (reference "U402")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (sheet_instances
 		(path "/"
 			(page "1")
 		)

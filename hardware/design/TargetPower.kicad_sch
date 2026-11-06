@@ -2895,7 +2895,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63810.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tps63811.pdf"
 			(at 59.69 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -2903,8 +2903,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "可在 ENABLE=0 时编程；电压步进 25 mV；关闭时自身输出放电；按功能重排引脚，物理编号不变"
 			(at 59.69 41.91 0)
@@ -2917,6 +2916,18 @@
 				)
 			)
 		)
+    (property "MPN" "TPS63811YFFR" (at 59.69 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C1852138" (at 59.69 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "TPS63811YFFR" (at 59.69 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "保留；嘉立创缺货，仅预订参考，封装未绑定" (at 59.69 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "A1"
 			(uuid "51f1a91c-2531-4890-912c-abf955daf346")
 		)
@@ -3004,7 +3015,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA0603S"
 			(at 59.69 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -3015,7 +3026,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250613/CEE4AE5EC9F7EB97495A767C9ECB8960.pdf"
 			(at 59.69 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -3023,8 +3034,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Inductor"
 			(at 59.69 25.4 0)
@@ -3037,6 +3047,18 @@
 				)
 			)
 		)
+    (property "MPN" "MWSA0603S-R47MT" (at 59.69 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C408439" (at 59.69 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "MWSA0603S-R47MT / 470nH" (at 59.69 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型已落实；封装增大，AC 损耗、开关波形与热待实测" (at 59.69 25.4 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "088944a0-5485-4fc5-b5d8-758fbc1f85f4")
 		)
@@ -3098,7 +3120,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 19.05 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3106,8 +3128,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 19.05 48.26 0)
@@ -3120,6 +3141,18 @@
 				)
 			)
 		)
+    (property "MPN" "CL10A106KP8NNNC" (at 19.05 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C19702" (at 19.05 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:10uF,温度系数:X5R,精度:±10%,额定电压:10V" (at 19.05 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 19.05 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1e64892c-1b87-4bb8-ab85-ad701708d600")
 		)
@@ -3170,7 +3203,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 92.405 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3181,7 +3214,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 91.44 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3189,8 +3222,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 91.44 52.07 0)
@@ -3203,6 +3235,18 @@
 				)
 			)
 		)
+    (property "MPN" "CL31A476MPHNNNE" (at 91.44 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C96123" (at 91.44 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:47uF,温度系数:X5R,精度:±20%,额定电压:10V" (at 91.44 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "1206 已绑定；DC bias 典型曲线初算通过，最小有效容量/纹波/稳定性待验证" (at 91.44 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "5acb968d-4616-4cf2-9fbb-9043bc15e784")
 		)
@@ -3253,7 +3297,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 108.915 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3264,7 +3308,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 107.95 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3272,8 +3316,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 107.95 52.07 0)
@@ -3286,6 +3329,18 @@
 				)
 			)
 		)
+    (property "MPN" "CL31A476MPHNNNE" (at 107.95 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C96123" (at 107.95 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:47uF,温度系数:X5R,精度:±20%,额定电压:10V" (at 107.95 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "1206 已绑定；DC bias 典型曲线初算通过，最小有效容量/纹波/稳定性待验证" (at 107.95 52.07 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2018edd3-1a3e-4c0e-b5f6-c71fe004e924")
 		)
@@ -3347,7 +3402,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 33.02 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3355,8 +3410,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 33.02 48.26 0)
@@ -3369,6 +3423,18 @@
 				)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 33.02 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 33.02 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 33.02 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 33.02 48.26 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "de694602-f9e6-43de-8a01-019769aeac9a")
 		)
@@ -3438,8 +3504,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
 			(at 144.78 40.64 0)
@@ -3452,6 +3517,18 @@
 				)
 			)
 		)
+    (property "MPN" "TPS22950DDCR" (at 144.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "" (at 144.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "TPS22950DDCR" (at 144.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "保留 TPS22950DDCR；不自动改用故障行为不同的 TPS22950CDDCR" (at 144.78 50.8 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "e6acb7ad-cad1-4986-a6f4-bd36f190af00")
 		)
@@ -3525,7 +3602,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3533,8 +3610,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 151.13 76.2 0)
@@ -3547,6 +3623,18 @@
 				)
 			)
 		)
+    (property "MPN" "0603WAF1151T5E" (at 151.13 76.2 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C22834" (at 151.13 76.2 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω" (at 151.13 76.2 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 151.13 76.2 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "2511c46e-4565-4ba8-aef9-ec71929822f1")
 		)
@@ -3608,7 +3696,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
 			(at 171.45 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3616,8 +3704,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 171.45 53.34 0)
@@ -3630,6 +3717,18 @@
 				)
 			)
 		)
+    (property "MPN" "CL10B105KP8NNNC" (at 171.45 53.34 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C95843" (at 171.45 53.34 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:1uF,温度系数:X7R,精度:±10%,额定电压:10V" (at 171.45 53.34 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 171.45 53.34 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "950bbb14-9972-4f94-9f3c-7ffcd969fa7a")
 		)
@@ -4236,7 +4335,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv758p.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tlv758p.pdf"
 			(at 63.5 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -4244,9 +4343,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, SOT-23-5"
 			(at 63.5 143.51 0)
@@ -4264,10 +4361,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "LCSC" "C2877852" (at 63.5 143.51 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "TLV75801PDBVR" (at 63.5 143.51 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 63.5 143.51 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "8c8cf189-34cb-4030-8fb5-bde2c08138fc")
 		)
@@ -4338,7 +4442,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf"
 			(at 25.4 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -4346,8 +4450,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 25.4 151.13 0)
@@ -4360,6 +4463,18 @@
 				)
 			)
 		)
+    (property "MPN" "TCC0603X7R475K100CT" (at 25.4 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C18185770" (at 25.4 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V" (at 25.4 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 25.4 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "9438d33c-dec7-4887-969e-68a51d55dbbc")
 		)
@@ -4421,7 +4536,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf"
 			(at 113.03 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -4429,8 +4544,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 113.03 151.13 0)
@@ -4443,6 +4557,18 @@
 				)
 			)
 		)
+    (property "MPN" "TCC0603X7R475K100CT" (at 113.03 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C18185770" (at 113.03 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V" (at 113.03 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 113.03 151.13 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "9c46f796-6d72-4309-89ce-6c8ca2747537")
 		)
@@ -4504,7 +4630,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
 			(at 68.58 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4512,8 +4638,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 68.58 115.57 0)
@@ -4526,6 +4651,18 @@
 				)
 			)
 		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 68.58 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 68.58 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V" (at 68.58 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 68.58 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "edee71b9-c7d6-488b-bded-6b60f596fa1c")
 		)
@@ -4587,7 +4724,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -4595,8 +4732,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 96.52 148.59 0)
@@ -4618,6 +4754,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "RT0603BRD07100KL" (at 96.52 148.59 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C122538" (at 96.52 148.59 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ" (at 96.52 148.59 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 96.52 148.59 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "ee1949d5-d44c-4c83-bfe7-2ee7ae5d853a")
 		)
@@ -4679,7 +4827,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -4687,8 +4835,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 96.52 168.91 0)
@@ -4710,6 +4857,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "RT0603BRD0721K5L" (at 96.52 168.91 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C705747" (at 96.52 168.91 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ" (at 96.52 168.91 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 96.52 168.91 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "75d28ff6-4d5b-4577-96fc-9f6755e02553")
 		)
@@ -4771,7 +4930,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4779,8 +4938,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 90.17 120.65 0)
@@ -4802,6 +4960,18 @@
 				(hide yes)
 			)
 		)
+    (property "MPN" "RT0603BRD07200KL" (at 90.17 120.65 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C728585" (at 90.17 120.65 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ" (at 90.17 120.65 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 90.17 120.65 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c1403f6e-c409-4103-b4f2-f80ee4b009b3")
 		)
@@ -4863,7 +5033,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 41.91 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4871,8 +5041,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 41.91 165.1 0)
@@ -4885,6 +5054,18 @@
 				)
 			)
 		)
+    (property "MPN" "0603WAF1003T5E" (at 41.91 165.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 41.91 165.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω" (at 41.91 165.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 41.91 165.1 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b275fc75-fab1-4228-bc36-839b7dc20e0e")
 		)
@@ -4933,7 +5114,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "HSLinkLP:TerminalBlock_KEFA_KF128_5.08_1x02"
 			(at 171.45 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4944,7 +5125,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20240821/65781D2669BFD48A107CF288CD3FBA7A.pdf"
 			(at 171.45 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -4952,8 +5133,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 171.45 153.67 0)
@@ -4966,6 +5146,18 @@
 				)
 			)
 		)
+    (property "MPN" "KF128-5.08-2P-AA" (at 171.45 153.67 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C474952" (at 171.45 153.67 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "EXT 1.8-5.5V" (at 171.45 153.67 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 171.45 153.67 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "c0806574-c8a8-4bea-9ac4-253da2cfc069")
 		)
@@ -5025,7 +5217,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.thonk.co.uk/wp-content/uploads/2017/05/DW3-DPDT-ON-ON-2MD1T1B1M2QES.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200324/C496170_954A7394085DEA4CF4EC9443DF401EBE.pdf"
 			(at 171.45 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5033,9 +5225,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "DPDT source selector; 2/5 common, 1/4 internal, 3/6 external; BBM pending supplier confirmation"
 			(at 171.45 102.87 0)
@@ -5053,10 +5243,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "LCSC" "C908282" (at 171.45 113.03 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "2MD1T1B1M2QES-5" (at 171.45 113.03 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "现有选型保留；精确后缀 DC 额定与 BBM 待厂商确认" (at 171.45 113.03 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "28a87472-9d7d-4690-9664-d117b302e033")
 		)
@@ -5128,7 +5325,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf"
 			(at 243.84 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5136,9 +5333,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Hongfa HFD2/005-S non-latching DPDT relay; 5V coil; bottom-view mapping verified"
 			(at 243.84 104.14 0)
@@ -5156,10 +5351,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "LCSC" "C42415145" (at 243.84 114.3 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "HFD2/005-S" (at 243.84 114.3 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 243.84 114.3 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "8718f14f-edee-4499-be3f-8bcb28b4e09a")
 		)
@@ -5226,7 +5428,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "HSLinkLP:TerminalBlock_KEFA_KF128_5.08_1x02"
 			(at 279.4 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5237,7 +5439,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20240821/65781D2669BFD48A107CF288CD3FBA7A.pdf"
 			(at 279.4 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5245,8 +5447,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 279.4 104.14 0)
@@ -5259,6 +5460,18 @@
 				)
 			)
 		)
+    (property "MPN" "KF128-5.08-2P-AA" (at 279.4 104.14 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C474952" (at 279.4 104.14 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "DUT POWER" (at 279.4 104.14 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 279.4 104.14 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "1da3ea42-8cc3-4651-aceb-aa421c253e66")
 		)
@@ -5322,7 +5535,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf"
 			(at 229.87 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5331,9 +5544,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
-			)
+				(justify left) (hide yes))
 		)
 		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 			(at 224.79 149.86 0)
@@ -5351,10 +5562,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "LCSC" "C20917" (at 224.79 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "AO3400A" (at 224.79 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 224.79 149.86 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "d7484f89-236d-48cb-9c3a-aaa457bbca24")
 		)
@@ -5417,7 +5635,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30086.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf"
 			(at 215.9 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5425,9 +5643,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Diode"
 			(at 215.9 125.73 0)
@@ -5445,10 +5661,17 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "LCSC" "C83528" (at 215.9 125.73 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "1N4148W-7-F" (at 215.9 125.73 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 215.9 125.73 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "3379b651-c423-4943-9f29-2b84d8dd1d37")
 		)
@@ -5510,7 +5733,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 203.2 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -5518,8 +5741,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 203.2 154.94 0)
@@ -5532,6 +5754,18 @@
 				)
 			)
 		)
+    (property "MPN" "0603WAF1003T5E" (at 203.2 154.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 203.2 154.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω" (at 203.2 154.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 203.2 154.94 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "b6372b53-a017-47a5-b194-5d368413f104")
 		)
@@ -5593,7 +5827,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 193.04 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -5601,8 +5835,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
+				) (hide yes))
 		)
 		(property "Description" "Resistor"
 			(at 193.04 133.35 0)
@@ -5615,6 +5848,18 @@
 				)
 			)
 		)
+    (property "MPN" "0603WAF1003T5E" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C25803" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 193.04 133.35 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f92e3ee9-2cbe-4997-b475-82624c46fe11")
 		)
@@ -8680,7 +8925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22272C.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20181222/C191581_14B3AB735356D3E044593D40E6F33AFA.pdf"
 			(at 45.72 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -8688,9 +8933,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "Description" "12-bit DAC; 0x60; VDD reference; VREF pin tied to GND"
 			(at 45.72 105.41 0)
@@ -8709,19 +8952,21 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
 		(property "LCSC" "C191581"
 			(at 45.72 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+				) (hide yes))
 		)
+    (property "Specification" "MCP4726A0T-E/CH" (at 45.72 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 45.72 115.57 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "ffc64837-e897-4b53-ba45-289f7c0cece4")
 		)
