@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "用户确认单Vref检测：U901 DG2012E替代K901，取消DUT_OUT采样；供电范围/K601放电保持；资料/网表/ERC/图面和嘉立创10套核价，无硬件验收",
-  "checked_at": "2026-11-07T12:53:43.134302+08:00",
+  "scope": "KiCad 10 原生格式统一：9页原理图、2符号库、6封装；保留此前整图审查记录，转换前后完整网表/几何/文字核对；非硬件验收",
+  "checked_at": "2026-11-07T13:24:24.436270+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "8fb837ef3047f51e4700425aceba87a16e056d0b",
   "schematic": {
@@ -9,7 +9,8 @@
     "path": "design/HSLink-LP.kicad_pro",
     "status": "降本电路审阅稿",
     "hardware_validated": false,
-    "validation": "194物理位号、117连接网络、675连接引脚、45NC；独立意图和基线逐项变换一致；ERC0/0；双字体两改动页人工检查；7页未变"
+    "validation": "原生格式转换检查通过；转换前后194物理位号/117连接网/675连接引脚/45NC及元数据不变，ERC0/0；此前电气审查未关闭项保留，未实板验收",
+    "file_format": "KiCad 10 / 20260306"
   },
   "pcb": {
     "version": null,
@@ -23,7 +24,7 @@
     "version": "0.1.0.dev0",
     "status": "本地信息骨架，无真实HID；设计明确无DUT实测回读，设定值/PG/寄存器不能代替测量"
   },
-  "document_checks": "PASS",
+  "document_checks": "NEEDS_ATTENTION: 3 stale schematic annotations; see schematic_review",
   "hardware_readiness": "NOT_READY",
   "erc": {
     "errors": 0,
@@ -36,8 +37,9 @@
       "footprint_filter"
     ],
     "new_ignored_checks": [],
-    "evidence": "design/reports/vref-only-2026-11-07/erc-mcp.json",
-    "mcp_evidence": "design/reports/vref-only-2026-11-07/erc-mcp.json"
+    "evidence": "design/reports/kicad10-format-2026-11-07/after-erc.json",
+    "mcp_evidence": "design/reports/kicad10-format-2026-11-07/after-erc.json",
+    "exclusions": []
   },
   "connectivity": {
     "status": "PASS",
@@ -60,7 +62,7 @@
     "bom_status": "194 physical / 193 purchased / 58 grouped rows + separate cable; metadata, reference, quantity and tier check PASS",
     "quoted_material_subtotal_per_board": "124.5295",
     "unquoted_references": [],
-    "evidence": "design/reports/vref-only-2026-11-07/validation-checks.json"
+    "evidence": "design/reports/schematic-review-2026-11-07/connectivity-check.json"
   },
   "upstream_layout": {
     "status": "PASS",
@@ -283,14 +285,14 @@
     "price_status": "6种本轮重新读取渲染现货价；其余沿用同日本地日期快照；C20917报价显示后再次验证，记录保留，非锁价/订单",
     "source": "bom/jlc-quotes.json",
     "spares_moq_manufacturing_quote_complete": false,
-    "spares_scenario_extra_board_batch_10_cny": 127.5161,
+    "spares_scenario_extra_board_batch_10_cny": 124.5295,
     "spares_scenario_tier_changes": []
   },
   "hardware_tests_executed": false,
   "limitations": [
     "无PCB/DRC/生产文件；YFF与WSON布局、钢网、DFM未完成",
     "40MHz SWD/JTAG含20cm配套排线未实测；时序模型不能替代硬件验收",
-    "FSA14路最大漏电预算140nA，100nA整夹具目标与USB掉电反灌未闭合",
+    "FSA14路25°C上限求和140nA；-40～85°C表值50nA/路覆盖20～30°C，保守求和700nA；100nA预算未闭合，USB掉电模拟端VCC+0.3V额定问题未解决",
     "配套排线仅保证绝缘>=5MΩ；不能保证整夹具100nA，来料/实测失败需换高绝缘短线或定制线束",
     "TPS63810默认3.3V，K601须隔离后编程回读；固件流程未实现",
     "R42=1.15k限流0.75~1.25A不能保证连续1A；保持1A要求待设计验收",
@@ -301,7 +303,9 @@
     "K601转换抖动及D601续流释放、Q902关断泄漏/USB掉电栅极瞬态和放电时间/热待实测；50ms仅切换初值",
     "DG2012E只隔离1.8～3.3V Vref；COM前无分压/保护，但20/25/30°C实际NC浮置漏电与USB中间供电区间待测；整板100nA未闭合",
     "DG2012E V+=0/COM4.5V/IN=0全温最大1µA；不套用正常MEASURE指标，不称零反灌",
-    "取消DUT_OUT回读；输出掉压、实际电压、放电完成须外部仪器，本板设定/寄存器/PG不作为实测值"
+    "取消DUT_OUT回读；输出掉压、实际电压、放电完成须外部仪器，本板设定/寄存器/PG不作为实测值",
+    "VIO调节低端容差示例最低1.821565V（25°C、理想DAC满码），不能保证1.800V；反馈比例/参考裕量需重新设计",
+    "Power/Control/Disconnect仍各有一处旧电路文字说明；本次检查未修改CAD"
   ],
   "mcp": {
     "standard_server_modified": false,
@@ -351,7 +355,7 @@
     "docs/costdown-pinmap.md": "6f379f921feecf0fe709c06297658f91d860b38904945e5f752f1c530dbe5ec0",
     "docs/jlc-design-review.md": "e5611215cb27a4aef742a2653484fe460ede99269e78d522d0edbc9db3389a97",
     "docs/jlc-pinmap.md": "df024fd77e59330bacff20ebb26ebfddf322135aae530d60c6147398bfb096fa",
-    "docs/kicad-integration.md": "4a756a1f1daf51a27b06593c34f6cfe584fea1164dc2e399377f11a77d969154",
+    "docs/kicad-integration.md": "58c2d84105cd2fc8c212f22a1e3013ed5f38f4639b325a7713d2938ac4d2727d",
     "docs/level-translation.md": "48d7b1f2cc33f3e88cd8a3373199e7544158c9f3fa9219152cc6d236b8d29cca",
     "docs/procurement-completion.md": "fa6ff8d8008832293344cb214bcf46cd04ffd4a2b1ea6c804122c94dd5f0670a",
     "docs/procurement-pinmap.md": "2f73f2bf8b312c5f4de2be407515bab4cc1b56088567a497ddd23f86ec327238",
@@ -369,29 +373,29 @@
     "hardware/bom/candidates.csv": "995e39fe1de3af43d5f7992ccd56351df62cd1691618472c54d83e7c351c014b",
     "hardware/bom/cost-summary.json": "c6b9447121124709fb5f425149dd279b89e83a708ebac371208ca5e396a9041b",
     "hardware/bom/jlc-quotes.json": "e5fbc39f92b9b7134e476f4120866bf6827e6b64c66cd29ec5e3d6296380ea97",
-    "hardware/design/Control.kicad_sch": "247bfe18b044b30cca07fa9c3c9405951a1700c3b4cb6ef61bc4e129217ba3d2",
-    "hardware/design/Disconnect.kicad_sch": "b1f84405d200f221d59a75d9aeb2fa1b94bfcebb89365661816777df1f9108f0",
+    "hardware/design/Control.kicad_sch": "9b2bac74e217c3c410f314b2c243ead065628a036aa0b5cd020071e298de271c",
+    "hardware/design/Disconnect.kicad_sch": "492bf70d21099c45dc2a33c03f74acaa570f37a99a2a8d516c14bb661c030512",
     "hardware/design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
-    "hardware/design/HSLink-LP.kicad_sch": "3c36d5c2b374802df8481aec01cb5b083981d207f3d0e9cbb9cef1e18a5d6d17",
-    "hardware/design/Interface.kicad_sch": "2012fb8d2b0bbe3b3c4a41a26472682ae86b92b2d7da8646a78c51551efbd911",
-    "hardware/design/LogicTranslation.kicad_sch": "26d48630c0509e539e30ea0e03b55f745ff4f26ef06f5dd78e57c6f76ba60b28",
-    "hardware/design/Power.kicad_sch": "f1757de2f7e20cb64607669c1edcef118490c78e6ab0698b3a79b8b69c6f8cb4",
-    "hardware/design/README.md": "a6aef050207213d8cecea8006c88ebbb9420f25f9f648f38fa951169730fde6b",
-    "hardware/design/Safety.kicad_sch": "2c24711bced8d186e097e6d78fc35d2a127c691256b3225a89de0f97c67fe82b",
-    "hardware/design/Sense.kicad_sch": "a8dd2390529e9fd56faaf4391a8c1f127fad68d53593edca67f2a0b79bde6714",
-    "hardware/design/TargetPower.kicad_sch": "e2c4854c4c533aa8402b02d34edbd483cce2b891a705539675fcefd7bda39b87",
+    "hardware/design/HSLink-LP.kicad_sch": "5632478428c021f3c39319f599ddffbc752e1c4adc3014035e7a5c708efb4ed1",
+    "hardware/design/Interface.kicad_sch": "d2d262f08dcd02f60693060a0c1b241d68ca9d9100ec4c61d271aceac1daa260",
+    "hardware/design/LogicTranslation.kicad_sch": "6b67946881709161acddc542d91df6324e31bf56b3246c07902171e3a2775d3a",
+    "hardware/design/Power.kicad_sch": "beeb0297fba3adc9716deda13035aacba1f9c580fecf3ac2ce89a5485f5a3a00",
+    "hardware/design/README.md": "ac9b37633e0652396a78c20d7961ea8c62da47b577119f694fd0b73f6c13545a",
+    "hardware/design/Safety.kicad_sch": "0a095b816cdb14482d6605345489c9ca4f2c54d705424657074a621a75fdfeb9",
+    "hardware/design/Sense.kicad_sch": "c3a796cc830fdbc3fa764d53eab2331729191e3486523c18067421c4c7623055",
+    "hardware/design/TargetPower.kicad_sch": "566fd60598ab3d2138e3f98e9e91611ed22810923f4de608312d9bcba6cbfc30",
     "hardware/design/UPSTREAM-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "hardware/design/connectivity.json": "00961821ae22ab91f4d0c1f6a14dfa9abd7b9a2293357823d8a33eea4ba7c8e2",
     "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
     "hardware/design/libraries/HSLink-upstream-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "hardware/design/libraries/HSLinkLP.kicad_sym": "0755034fe94c596289ec3992b68c5d12f9e50395208dff86a35368437e0d6d82",
+    "hardware/design/libraries/HSLinkLP.kicad_sym": "e7f05e8a1381e81717b84bce86247eb527306afb967d5e55e1f96086c9ff31f5",
     "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "525f156b676680940291c35b17167ea361bf71df176b64e736d9e4a3360c2ae9",
-    "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "1a76d9761cd31a71d566c16c48b550f36eacbfe5be1d3814648ba9690c844945",
-    "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "c6c70a123890e5a9a38172714036cc623bcc3c5e3ed3e60ad884bae737a0ae17",
+    "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "c9d0250c5b83f7ad134b05c3c876ae008c0b364748c0c832e6203106274dfb01",
+    "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "e16adf8d79e9c814134f34f0fea345257671e49d5a6eeb08f29dda3aca1da113",
     "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "ee5716dc6d6dc3620e42b26089d274e73a936795650eff3de80ea3ed2b4f3829",
     "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "a20de321a616e033d7fdda63f76d8781381796db836e1553e444c9996de9b634",
     "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "c7777cc9913ce51cc2a6fa2bcbe2b3c34e8cf7d23df1ca5b239c238016ecae19",
-    "hardware/design/libraries/UpstreamCache.kicad_sym": "d6ed4065fd123f2e33a4f17fb8f2de914e8222b302d1418d90f167fba3bc4a38",
+    "hardware/design/libraries/UpstreamCache.kicad_sym": "22241c62c2b41373c6d070942315426b605ce85f0fd0e64695d6e2664d26d192",
     "hardware/design/sym-lib-table": "263d1f47eef04cd35a11a48d192ea5761fa7c8380e1ba633870f372ddf9b7c2b",
     "hardware/design/upstream-layout.json": "e6962e3a65707d2e4724f4d9d631ae3eb26cebda244bd3fb494957db5cd38669",
     "hardware/reference/README.md": "042b6477f21cb4b63ff01b9362523571d7d427b8bc228000e52cf3113145637a",
@@ -626,7 +630,92 @@
     "design/reports/vref-only-2026-11-07/schematic-arial.pdf": "70137bbf4a1e4c1088c04336d8996b8125c52b21958390b844b593a2dc768782",
     "design/reports/vref-only-2026-11-07/C42415145.json": "7145cb6116d2594609f4188ad82b0eda0b44845f48d1f7004f6fc92d7cf2fd3a",
     "design/reports/vref-only-2026-11-07/C20917.json": "b534f630a0b637a3df2d24b7050733745f9551c0fcc7b571963daf9246d926fb",
-    "design/reports/vref-only-2026-11-07/validation-checks.json": "590c044d6394a9722672f2d99faf43994c28f1739bcd49b4cd6de3efd8bdc445"
+    "design/reports/vref-only-2026-11-07/validation-checks.json": "590c044d6394a9722672f2d99faf43994c28f1739bcd49b4cd6de3efd8bdc445",
+    "design/reports/schematic-review-2026-11-07/Control-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/Control-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/Control-list_schematic_components.json": "3fab74e055719b83c2e4717c85700d976fb8da7da9c6565a9b071388366edd48",
+    "design/reports/schematic-review-2026-11-07/Disconnect-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/Disconnect-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/Disconnect-list_schematic_components.json": "b75fac8eafab12a2aa9608eaae8619ea434e7b1bca5bcbdc1ed8c3199081578b",
+    "design/reports/schematic-review-2026-11-07/HSLink-LP-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/HSLink-LP-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/HSLink-LP-list_schematic_components.json": "b71c22191daa72bb1b4d1bcadd48119c63ba01acf8e2ae119590349ddf7e9f75",
+    "design/reports/schematic-review-2026-11-07/Interface-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/Interface-find_wires_crossing_symbols.json": "fa05624bc7b8846f48880dfa2134c2ca108f0e0784b5940d3b2e8268ab33aad5",
+    "design/reports/schematic-review-2026-11-07/Interface-list_schematic_components.json": "060d0acc04cbb46ea3001a1408d9518ff9280168a62daf129c7d65c4c286b0f2",
+    "design/reports/schematic-review-2026-11-07/LogicTranslation-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/LogicTranslation-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/LogicTranslation-list_schematic_components.json": "1257e00c0695be61a3951280332fbc2e6a8a594050348d8faa37f21887dcb4b6",
+    "design/reports/schematic-review-2026-11-07/Power-find_overlapping_elements.json": "2e056f9cf1db3276a9b2e40cc664de995ce54f1c9dfa1089ba7172fa25c34f06",
+    "design/reports/schematic-review-2026-11-07/Power-find_wires_crossing_symbols.json": "3680ddd32483b077bc90a8a45ff684a86426b8b2452d1cee1bd0b3165c052196",
+    "design/reports/schematic-review-2026-11-07/Power-list_schematic_components.json": "ec168be4fcd2d2fdd2ee6b7c9420f403f0bab43a94a73f9870db2ac497867b12",
+    "design/reports/schematic-review-2026-11-07/Safety-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/Safety-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/Safety-list_schematic_components.json": "70b894c6f255f821acacd9518858ca74a64b16779bbd3d54c9d528678f16d0bb",
+    "design/reports/schematic-review-2026-11-07/Sense-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/Sense-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/Sense-list_schematic_components.json": "cbabb78f44a57a0c912bbe0201ec09b6fac6099c1fa6a6f5c4902df12e786e7d",
+    "design/reports/schematic-review-2026-11-07/TargetPower-find_overlapping_elements.json": "dc53742f870f37914f768d0db2b15e0c0a7ab5d420cbc26ac42a1c87898207bd",
+    "design/reports/schematic-review-2026-11-07/TargetPower-find_wires_crossing_symbols.json": "705e16161e1aaf1d9c62f82a8b9437961b0724871360ffc0b19bd0e321445faf",
+    "design/reports/schematic-review-2026-11-07/TargetPower-list_schematic_components.json": "357ba4f7ef356585ca5a78e86806a63b6bb4939229987a82469a5240c3606c76",
+    "design/reports/schematic-review-2026-11-07/actual.xml": "9a23e8d470623ccedb97e58287184e230ba262d523e4ba599b350d73fba16313",
+    "design/reports/schematic-review-2026-11-07/additional-checks.json": "3bf010cbd5ecafcc7f579ff4cf4c86b685ba42ae9bfd9a32b0f6f8c3e8dc4f5e",
+    "design/reports/schematic-review-2026-11-07/arm-note.png": "7d07bc204159cf0192fad81e5754e0ca0590b91d6856dff4da55e50efb3ac2c6",
+    "design/reports/schematic-review-2026-11-07/connectivity-check.json": "823836eac6f7cb82389f6dbc4e7a1971170619f10c8256e9d1b69860cf97c35e",
+    "design/reports/schematic-review-2026-11-07/control-note.png": "5116c742f82f99747cd237e1204417f65a404e71c8aaab41c9ac13229eeeb113",
+    "design/reports/schematic-review-2026-11-07/erc.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+    "design/reports/schematic-review-2026-11-07/netlist-export.json": "298b44179d6fcfcbe08a3c91418ae50182238401f46c1a0eef2d81b106db5b12",
+    "design/reports/schematic-review-2026-11-07/page-1.png": "f9f00ae598b76718610bbfa6cf41afd9f60056c358eed8a07c588656b53bce09",
+    "design/reports/schematic-review-2026-11-07/page-2.png": "80a19df426115c3f6bee1d66b7158cbea1dd2be620ffd429d12d45a8a89e0e3a",
+    "design/reports/schematic-review-2026-11-07/page-3.png": "c1d06bef457e54c64d02d18a533155cbb569dea46f34ba25431f7f4f71da9c1f",
+    "design/reports/schematic-review-2026-11-07/page-4.png": "266f1c87df08874c5eb855079dd3ea387ebeb1beae496cb8639090fb8fe8add8",
+    "design/reports/schematic-review-2026-11-07/page-5.png": "52bfeec0f2715e93e62290e5add1aef2ffec11dc6f6c78a10928b651b6fa2507",
+    "design/reports/schematic-review-2026-11-07/page-6.png": "12618dc183a6989af002e179cf344f9a3b392f2b487466b6262bc9310ae27ea2",
+    "design/reports/schematic-review-2026-11-07/page-7.png": "56ffa32b7d06b40c89e815b708526347da137d3948040fa597d608853b6d01c1",
+    "design/reports/schematic-review-2026-11-07/page-8.png": "b69e9772230ca19d071ed4086297f31e05596e478a14bd0010ee3d1daeda327f",
+    "design/reports/schematic-review-2026-11-07/page-9.png": "618aed0e241d7d4a2ffdd253137494aea74eb8d85e60b9963df8a6ccf9e3cf6d",
+    "design/reports/schematic-review-2026-11-07/pdf-export.json": "c2b7149887b5f6478d044f84c6b07b05d364ad54641a81c896e6d9131be1e456",
+    "design/reports/schematic-review-2026-11-07/power-mcu.png": "5818b625cdb2bb5237f00bb7f782546b82d8c717ba67b2a0b6c022002b8b2e00",
+    "design/reports/schematic-review-2026-11-07/review.md": "70a3661b125ac5051229b2ca7fe76ecc7c229ae98ba2168d542b0dac0218d2c4",
+    "design/reports/schematic-review-2026-11-07/schematic.pdf": "008ff6ce0358f5e852782b34493532249dd285fdef84745e593cf238bce138b6",
+    "design/reports/schematic-review-2026-11-07/stale-notes.json": "4fefa23870f152dac010fc67f871062e7e3a49c4cd4a00332ab17f8b074d45ad",
+    "design/reports/schematic-review-2026-11-07/usb-c25.png": "94284cb9db5f3840ca70bdafbc150c4af96e999ffd7864e1592b93c9743c9b68",
+    "design/reports/schematic-review-2026-11-07/vio-corner.json": "a2c44824648f4a4afb0e4c72d7ff1a6ca6352893ac464c4d19b5bd61312a7a60",
+    "design/reports/kicad10-format-2026-11-07/after-erc.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+    "design/reports/kicad10-format-2026-11-07/after-libraries.json": "5e95bd8f12d5cd8492f1d12f6dfec922428f3a09805065a5044cdc7a02940c5f",
+    "design/reports/kicad10-format-2026-11-07/after-netlist-export.json": "3bfa5fd93ece064596c9efbc5a8bd4eb1fcb4dbbd3ac152b063a0374cd55e9aa",
+    "design/reports/kicad10-format-2026-11-07/after-overview.png": "2864226d94a770a43ff83b7de09e828cd861bfb768172127a2c3d16d8e9c5c02",
+    "design/reports/kicad10-format-2026-11-07/after-page-1.png": "d91a832107f81b0a901263bea29002e00bbf32eb1c2300e65526ea594ea92d0c",
+    "design/reports/kicad10-format-2026-11-07/after-page-2.png": "f4eea0adb5c64e7b3e6c193adf13732c75dd43adda9befc21b39eebc27b4c8fd",
+    "design/reports/kicad10-format-2026-11-07/after-page-3.png": "24781d7c68057f79814d0d0b847d5f5efd28b6a93602f29b41369a1f2704d35f",
+    "design/reports/kicad10-format-2026-11-07/after-page-4.png": "5342dcd67bc772db679730c8564a84417701a20718ef0c889e378b8a2b4aa5ff",
+    "design/reports/kicad10-format-2026-11-07/after-page-5.png": "0d3c4eca66ec7bf41ea32dfb4d72a4643918f2c67a7e0afa233b3b192d92b045",
+    "design/reports/kicad10-format-2026-11-07/after-page-6.png": "6a44d31c06578d108c327ea148868e88bf69ebe6c30e3af0e54bdfb7d682342f",
+    "design/reports/kicad10-format-2026-11-07/after-page-7.png": "84285110eacae0ca916a4697bb458a204e07130ab3591311212148d719e7840f",
+    "design/reports/kicad10-format-2026-11-07/after-page-8.png": "d993f5ef1e807e757c1ac1fdaea85afce4e4e80f598f7da253bf9dcf7762c157",
+    "design/reports/kicad10-format-2026-11-07/after-page-9.png": "1d236cdb50c775761b32635365c486b7ec5f4d49f73116466292e66e7513553b",
+    "design/reports/kicad10-format-2026-11-07/after-pdf-export.json": "48a38749e7392c5ebc9629ad256d622bf54bec1cd106db5df6af328996f4e3ef",
+    "design/reports/kicad10-format-2026-11-07/after.pdf": "169f80ee922c20a2480d1c1ecd831c43e56ad2b0e48580e67a38f2f7f66629df",
+    "design/reports/kicad10-format-2026-11-07/after.xml": "e03c5a34eac8dc5595d3f21a1dec644a2cfd5cea0a666f5300bdc8668effb8c2",
+    "design/reports/kicad10-format-2026-11-07/before-erc.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+    "design/reports/kicad10-format-2026-11-07/before-libraries.json": "587396d08f755f7bd4f18386d23477868603060ee9d22e8034eb278cf93c1b17",
+    "design/reports/kicad10-format-2026-11-07/before-netlist-export.json": "b0d8e280bbd6aa4e1aaff0fe3c7379fcd120a95fa4c362b03a3f00e5acd3126d",
+    "design/reports/kicad10-format-2026-11-07/before-page-1.png": "11b2c853e12b6a8a77f407a1476703b698a7566fe559a9672044590d821e2c85",
+    "design/reports/kicad10-format-2026-11-07/before-page-2.png": "4fbc176372c97b897cb52857b3808f9aa04d0408ec496d51d53cf777600b86c4",
+    "design/reports/kicad10-format-2026-11-07/before-page-3.png": "4a49f7a21bdb0edf7571a7fe3952d79487bd987402b73f3af300fd96170e12e8",
+    "design/reports/kicad10-format-2026-11-07/before-page-4.png": "f25af13b3559bf86cdd5da1eea622d3eb54df6704cb88e239bff4aa95f1dcb02",
+    "design/reports/kicad10-format-2026-11-07/before-page-5.png": "aff785d573d42f4b3c59cc2cddeb6be069fab59eb40dc42dc3a18f915593fea4",
+    "design/reports/kicad10-format-2026-11-07/before-page-7.png": "55b9bbcd87279a0d595a23a0edd99bae73f670bea902c776ab1ae0352cd237bc",
+    "design/reports/kicad10-format-2026-11-07/before-page-8.png": "f9938aed50f45ae3bce0ca17677c18384b5f96a6852d1c0003578324f16c55dc",
+    "design/reports/kicad10-format-2026-11-07/before-page-9.png": "685658ec2b30d5627a62477dc9f39cdc916ef4fee1d41eefc9aae1acf1d1b601",
+    "design/reports/kicad10-format-2026-11-07/before-pdf-export.json": "658f0efc6c7bab777df72d7e2747dbdd3db31b0a91324de8fc813dbc71539b2f",
+    "design/reports/kicad10-format-2026-11-07/before.pdf": "564e3415c35f7c4c22577e68730bb90c5e22e86466f57e4ae412500b5bc9bb83",
+    "design/reports/kicad10-format-2026-11-07/before.xml": "1248ce83e625d5f8f5aea6046496ba0f96c3fb955685ff38e97dd81237007d89",
+    "design/reports/kicad10-format-2026-11-07/comparison.json": "5a046c70639373172482f194c9d7971dcf5fa31e5066140b6946d8223a937857",
+    "design/reports/kicad10-format-2026-11-07/symbol-semantic-diff.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "design/reports/kicad10-format-2026-11-07/upgrade-log.json": "f1bd5e624c72f95cd6c19b810aeeac0db5e57e6fb1ca87281d464ef652fc8764",
+    "design/reports/kicad10-format-2026-11-07/upgrade-mcp.json": "0e1483345560e3235e87aa223ea9e7250c74d049a754505211b577a7e1eceffa",
+    "design/reports/kicad10-format-2026-11-07/review.md": "8d604150ed1b09b38490a98fa39f1c0bb0fac88ac0a4f048491928eac9648dc4"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -769,5 +858,328 @@
     "full_material_savings_batch_10_cny": 31.766,
     "material_plus_feeder_scenario_savings_batch_10_cny": 11.766,
     "full_manufactured_net_savings_cny": null
+  },
+  "checked_commit": "e1c21160cddf4f834cc591037b3883a5461645af",
+  "schematic_review": {
+    "checked_at": "2026-11-07T13:04:20.019248+08:00",
+    "baseline_commit": "e1c21160cddf4f834cc591037b3883a5461645af",
+    "verdict": "INCOMPLETE — review could not evaluate the full design",
+    "hardware_readiness": "NOT_READY",
+    "saved_schematic_file_coverage": {
+      "status": "complete",
+      "sheet_count": 9,
+      "sheets": [
+        "HSLink-LP",
+        "Power",
+        "Interface",
+        "LogicTranslation",
+        "Control",
+        "Safety",
+        "TargetPower",
+        "Disconnect",
+        "Sense"
+      ]
+    },
+    "electrical_qualification_coverage": "partial: limits, timing, leakage, transient/thermal and exact source-switch qualification remain open",
+    "pcb_drc": "not applicable; PCB not designed",
+    "whole_footprint_dimensions_revalidated": false,
+    "cad_modified": false,
+    "bom_modified": false,
+    "upstream_modified": false,
+    "source_hashes_match_previous_validation": true,
+    "source_hash_count": 65,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "new_erc_ignores": [],
+    "stable_logic_combinations": 512,
+    "stable_logic_failures": 0,
+    "hardware_tests_executed": false,
+    "quote_refresh_performed": false,
+    "findings": [
+      {
+        "id": "R1",
+        "priority": 1,
+        "classification": "conditional_absolute_maximum_violation",
+        "status": "OPEN",
+        "references": [
+          "U801",
+          "U802",
+          "U803",
+          "U804"
+        ],
+        "summary": "USB掉电而目标仍驱动时FSA模拟端可能超过VCC+0.3V；控制断开不能解决，需硬件方案"
+      },
+      {
+        "id": "R2",
+        "priority": 1,
+        "classification": "requirement_budget_not_closed",
+        "status": "OPEN",
+        "references": [
+          "U801",
+          "U802",
+          "U803",
+          "U804",
+          "U901",
+          "J801"
+        ],
+        "summary": "25°C14路FSA上限求和140nA；覆盖20～30°C的全温表值保守求和700nA，另有检测/线束/PCB；不是实测值"
+      },
+      {
+        "id": "R3",
+        "priority": 1,
+        "classification": "load_current_margin",
+        "status": "OPEN",
+        "references": [
+          "U503",
+          "R42"
+        ],
+        "summary": "1.15k限流表值0.75～1.25A，不能保证持续1A负载"
+      },
+      {
+        "id": "R4",
+        "priority": 2,
+        "classification": "new_voltage_adjustment_margin",
+        "status": "OPEN",
+        "references": [
+          "U401",
+          "R38",
+          "R401",
+          "R39",
+          "U502",
+          "U504",
+          "R58",
+          "R59",
+          "R60"
+        ],
+        "summary": "25°C允许容差组合、理想DAC满码仍最低约1.821565V；不能保证调到1.800V，非整板最坏上界或实测"
+      },
+      {
+        "id": "R5",
+        "priority": 1,
+        "classification": "procurement_electrical_evidence_gap",
+        "status": "OPEN",
+        "references": [
+          "SW601"
+        ],
+        "summary": "准确型号BBM/DC尚未签核；MBB若存在会短接来源电源，第二极还可能短接P3V3/GND；未断言器件实际MBB"
+      },
+      {
+        "id": "R6",
+        "priority": 2,
+        "classification": "stale_schematic_annotations",
+        "status": "OPEN",
+        "sheets": [
+          "Power",
+          "Control",
+          "Disconnect"
+        ],
+        "summary": "检测继电器、TPS63811、VTref经K901三处旧说明与当前电路不符"
+      },
+      {
+        "id": "R7",
+        "priority": 3,
+        "classification": "stale_validation_metadata",
+        "status": "FIXED_RECORD_ONLY",
+        "summary": "验证摘要的板上10%备损情景127.5161同步到成本源124.5295，未改BOM/报价"
+      }
+    ],
+    "report": "design/reports/schematic-review-2026-11-07/review.md",
+    "visual_review": {
+      "pdf": "design/reports/schematic-review-2026-11-07/schematic.pdf",
+      "font": "Arial Unicode MS",
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "zoom_regions": [
+        "Power MCU unit and bypass capacitors",
+        "Interface C25 wire crossing"
+      ],
+      "overlap_heuristics": {
+        "Power_symbol_overlap_candidates": 32,
+        "Power_wire_crossing_candidates": 91,
+        "Interface_wire_crossing_candidates": 2,
+        "other_seven_sheets": 0,
+        "confirmed_electrical_short_or_symbol_body_overlap": 0,
+        "notes": "Power U1 multi-unit bounding-box false positives; Interface FAULT/C25 stem crossing has no junction and independent nets; visual/manual corroboration"
+      },
+      "stale_notes": 3
+    },
+    "mcp": {
+      "installed_server": "mixelpixx/KiCAD-MCP-Server 2.8.3",
+      "standard_server_modified": false,
+      "tools": [
+        "run_erc",
+        "export_netlist",
+        "export_sch_pdf",
+        "list_schematic_components",
+        "find_overlapping_elements",
+        "find_wires_crossing_symbols",
+        "get_schematic_pin_locations",
+        "list_schematic_texts"
+      ],
+      "limitations": [
+        "Konnect aggregate/short-tool names not exposed; used complete exported net partitions and ERC/manual audit",
+        "file-only backend; no proof of unsaved editor contents"
+      ],
+      "temporary_tools_removed": true,
+      "cleanup": "本轮一次性MCP客户端、uv Python检查脚本及临时图像缓存已删除；PDF/XML/JSON/PNG/报告只保留在忽略的reports目录"
+    },
+    "retained_acceptance_targets": [
+      "40MHz SWD/JTAG",
+      "25±5°C fixture additional current <=0.1uA",
+      "internal 1.8–5V up to 1A / external 1.8–5.5V up to 2A"
+    ],
+    "historical_sections_note": "Existing visual_review and design-change sections retain their original timestamps; this section is the current all-nine-page review."
+  },
+  "format_upgrade": {
+    "checked_at": "2026-11-07T13:24:24.436270+08:00",
+    "status": "PASS_FORMAT_AND_CONNECTIVITY_ONLY",
+    "baseline_commit": "e1c21160cddf4f834cc591037b3883a5461645af",
+    "kicad_version": "10.0.7",
+    "scope": "hardware/design only; hardware/reference untouched; no PCB exists",
+    "in_place": true,
+    "version_copy_created": false,
+    "method": "临时stdio MCP调用KiCad原生sch/sym/fp upgrade；标准已安装MCP导出与ERC；未手改格式头",
+    "schematic_sheets": 9,
+    "symbol_libraries": 2,
+    "library_symbols": 27,
+    "footprints_checked": 6,
+    "footprints_rewritten": 2,
+    "footprints_already_current": 4,
+    "formats": {
+      "schematic": "20260306",
+      "symbol_library": "20251024",
+      "footprint": "20260206",
+      "generator_version": "10.0"
+    },
+    "project_and_library_tables_unchanged": true,
+    "bom_and_connectivity_intent_unchanged": true,
+    "erc_before": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "erc_after": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "new_ignored_checks": [],
+    "netlist": {
+      "physical_components": 194,
+      "connected_nets": 117,
+      "connected_pins": 675,
+      "isolated_nc_pins": 45,
+      "xml_sections_identical": {
+        "components": true,
+        "libparts": true,
+        "libraries": true,
+        "nets": true
+      },
+      "intent_pin_partitions_match": true,
+      "intent_nc_match": true,
+      "intentional_electrical_changes": [],
+      "existing_intent_metadata_note": "J801 datasheet URL //upload vs /upload: both pre/post exported netlists identical; intent file unchanged"
+    },
+    "symbols": {
+      "all_27_semantics_identical_after_native_defaults": true,
+      "normalizations": [
+        "in_pos_files=yes",
+        "duplicate_pin_numbers_are_jumpers=no",
+        "show_name=no",
+        "do_not_autoplace=no",
+        "property effects.hide moved to property.hide",
+        "legacy empty ~ property converted to empty string",
+        "order of named child attributes except polyline pts",
+        "embedded_fonts=no"
+      ]
+    },
+    "footprints": {
+      "all_6_pad_and_graphics_snapshots_identical": true,
+      "dimensions_requalified_against_datasheets": false
+    },
+    "pdf": {
+      "pages": 9,
+      "all_vector_geometry_identical_ignoring_draw_order": true,
+      "all_text_content_position_style_identical": true,
+      "all_pixels_identical": false,
+      "pixel_differences": "native object ordering changes overdraw/antialiasing at overlapping primitives; vector and text comparisons pass",
+      "manual_overview_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "manual_full_page_inspections": [
+        1,
+        7,
+        9
+      ]
+    },
+    "prior_schematic_review_preserved": true,
+    "electrical_findings_closed": false,
+    "hardware_tests_executed": false,
+    "temporary_helpers_removed": true,
+    "installed_mcp_modified": false,
+    "reports_directory": "design/reports/kicad10-format-2026-11-07",
+    "before_source_sha256": {
+      "hardware/bom/candidates.csv": "995e39fe1de3af43d5f7992ccd56351df62cd1691618472c54d83e7c351c014b",
+      "hardware/design/Control.kicad_sch": "247bfe18b044b30cca07fa9c3c9405951a1700c3b4cb6ef61bc4e129217ba3d2",
+      "hardware/design/Disconnect.kicad_sch": "b1f84405d200f221d59a75d9aeb2fa1b94bfcebb89365661816777df1f9108f0",
+      "hardware/design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
+      "hardware/design/HSLink-LP.kicad_sch": "3c36d5c2b374802df8481aec01cb5b083981d207f3d0e9cbb9cef1e18a5d6d17",
+      "hardware/design/Interface.kicad_sch": "2012fb8d2b0bbe3b3c4a41a26472682ae86b92b2d7da8646a78c51551efbd911",
+      "hardware/design/LogicTranslation.kicad_sch": "26d48630c0509e539e30ea0e03b55f745ff4f26ef06f5dd78e57c6f76ba60b28",
+      "hardware/design/Power.kicad_sch": "f1757de2f7e20cb64607669c1edcef118490c78e6ab0698b3a79b8b69c6f8cb4",
+      "hardware/design/Safety.kicad_sch": "2c24711bced8d186e097e6d78fc35d2a127c691256b3225a89de0f97c67fe82b",
+      "hardware/design/Sense.kicad_sch": "a8dd2390529e9fd56faaf4391a8c1f127fad68d53593edca67f2a0b79bde6714",
+      "hardware/design/TargetPower.kicad_sch": "e2c4854c4c533aa8402b02d34edbd483cce2b891a705539675fcefd7bda39b87",
+      "hardware/design/connectivity.json": "00961821ae22ab91f4d0c1f6a14dfa9abd7b9a2293357823d8a33eea4ba7c8e2",
+      "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
+      "hardware/design/libraries/HSLinkLP.kicad_sym": "0755034fe94c596289ec3992b68c5d12f9e50395208dff86a35368437e0d6d82",
+      "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "525f156b676680940291c35b17167ea361bf71df176b64e736d9e4a3360c2ae9",
+      "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "1a76d9761cd31a71d566c16c48b550f36eacbfe5be1d3814648ba9690c844945",
+      "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "c6c70a123890e5a9a38172714036cc623bcc3c5e3ed3e60ad884bae737a0ae17",
+      "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "ee5716dc6d6dc3620e42b26089d274e73a936795650eff3de80ea3ed2b4f3829",
+      "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "a20de321a616e033d7fdda63f76d8781381796db836e1553e444c9996de9b634",
+      "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "c7777cc9913ce51cc2a6fa2bcbe2b3c34e8cf7d23df1ca5b239c238016ecae19",
+      "hardware/design/libraries/UpstreamCache.kicad_sym": "d6ed4065fd123f2e33a4f17fb8f2de914e8222b302d1418d90f167fba3bc4a38",
+      "hardware/design/sym-lib-table": "263d1f47eef04cd35a11a48d192ea5761fa7c8380e1ba633870f372ddf9b7c2b"
+    },
+    "after_cad_source_sha256": {
+      "hardware/bom/candidates.csv": "995e39fe1de3af43d5f7992ccd56351df62cd1691618472c54d83e7c351c014b",
+      "hardware/design/Control.kicad_sch": "9b2bac74e217c3c410f314b2c243ead065628a036aa0b5cd020071e298de271c",
+      "hardware/design/Disconnect.kicad_sch": "492bf70d21099c45dc2a33c03f74acaa570f37a99a2a8d516c14bb661c030512",
+      "hardware/design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
+      "hardware/design/HSLink-LP.kicad_sch": "5632478428c021f3c39319f599ddffbc752e1c4adc3014035e7a5c708efb4ed1",
+      "hardware/design/Interface.kicad_sch": "d2d262f08dcd02f60693060a0c1b241d68ca9d9100ec4c61d271aceac1daa260",
+      "hardware/design/LogicTranslation.kicad_sch": "6b67946881709161acddc542d91df6324e31bf56b3246c07902171e3a2775d3a",
+      "hardware/design/Power.kicad_sch": "beeb0297fba3adc9716deda13035aacba1f9c580fecf3ac2ce89a5485f5a3a00",
+      "hardware/design/Safety.kicad_sch": "0a095b816cdb14482d6605345489c9ca4f2c54d705424657074a621a75fdfeb9",
+      "hardware/design/Sense.kicad_sch": "c3a796cc830fdbc3fa764d53eab2331729191e3486523c18067421c4c7623055",
+      "hardware/design/TargetPower.kicad_sch": "566fd60598ab3d2138e3f98e9e91611ed22810923f4de608312d9bcba6cbfc30",
+      "hardware/design/connectivity.json": "00961821ae22ab91f4d0c1f6a14dfa9abd7b9a2293357823d8a33eea4ba7c8e2",
+      "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
+      "hardware/design/libraries/HSLinkLP.kicad_sym": "e7f05e8a1381e81717b84bce86247eb527306afb967d5e55e1f96086c9ff31f5",
+      "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "525f156b676680940291c35b17167ea361bf71df176b64e736d9e4a3360c2ae9",
+      "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "c9d0250c5b83f7ad134b05c3c876ae008c0b364748c0c832e6203106274dfb01",
+      "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "e16adf8d79e9c814134f34f0fea345257671e49d5a6eeb08f29dda3aca1da113",
+      "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "ee5716dc6d6dc3620e42b26089d274e73a936795650eff3de80ea3ed2b4f3829",
+      "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "a20de321a616e033d7fdda63f76d8781381796db836e1553e444c9996de9b634",
+      "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "c7777cc9913ce51cc2a6fa2bcbe2b3c34e8cf7d23df1ca5b239c238016ecae19",
+      "hardware/design/libraries/UpstreamCache.kicad_sym": "22241c62c2b41373c6d070942315426b605ce85f0fd0e64695d6e2664d26d192",
+      "hardware/design/sym-lib-table": "263d1f47eef04cd35a11a48d192ea5761fa7c8380e1ba633870f372ddf9b7c2b"
+    }
   }
 }

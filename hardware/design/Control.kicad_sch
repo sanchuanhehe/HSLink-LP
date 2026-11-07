@@ -1,16 +1,321 @@
 (kicad_sch
-	(version 20260101)
+	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 602ddf24-bb95-4b44-978c-fbae7f8dd418)
+	(uuid "602ddf24-bb95-4b44-978c-fbae7f8dd418")
 	(paper "A4")
+	(title_block
+		(title "I2C 扩展与电源配置")
+		(date "2026-11-05")
+		(rev "0.2 DRAFT")
+		(company "HSLink-LP / based on HSLink Pro 1.2.0")
+	)
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "HSLinkLP:TCA9539PWR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -19,6 +324,8 @@
 			)
 			(property "Value" "TCA9539PWR"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -27,30 +334,36 @@
 			)
 			(property "Footprint" "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
-				(hide yes)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9539.pdf"
 				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
-				(hide yes)
 			)
 			(property "Description" "I2C 0x74；上电全输入；控制输出须先写 0 再配置方向；按功能重排引脚，物理编号不变"
 				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
-				(hide yes)
 			)
 			(symbol "TCA9539PWR_0_1"
 				(rectangle
@@ -499,13 +812,18 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "HSLinkLP:TCA9543APWR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -514,6 +832,8 @@
 			)
 			(property "Value" "TCA9543APWR"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -522,30 +842,36 @@
 			)
 			(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
-				(hide yes)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9543a.pdf"
 				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
-				(hide yes)
 			)
 			(property "Description" "I2C 0x70；两个 TPS63811 均为 0x75，通道必须互斥；按功能重排引脚，物理编号不变"
 				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
-				(hide yes)
 			)
 			(symbol "TCA9543APWR_0_1"
 				(rectangle
@@ -814,300 +1140,6 @@
 					)
 				)
 			)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
@@ -1365,6 +1397,3263 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "MEASURE 锁定后，CDC、DTR/RTS 与 DAP 均不得隐式重连。"
+		(exclude_from_sim no)
+		(at 21.59 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49aee1ec-77b9-451c-b7db-eba9090616f7")
+	)
+	(text "共享 I2C 总线（3.3 V）"
+		(exclude_from_sim no)
+		(at 157.48 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5786675a-c9b1-48f4-9312-a91b5d3a7c28")
+	)
+	(text "GPIO 默认输入：先写输出寄存器 0，再配置方向。"
+		(exclude_from_sim no)
+		(at 21.59 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66e392ba-87d8-43e6-ae4e-975977849719")
+	)
+	(text "TCA9539 / 0x74"
+		(exclude_from_sim no)
+		(at 21.59 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "903c6dfc-ac5e-47af-ab5b-ff95a5da9348")
+	)
+	(text "分组请求默认下拉"
+		(exclude_from_sim no)
+		(at 21.59 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8e05a07-8a48-48b1-a2ab-aeb6ff72e24a")
+	)
+	(text "I2C_SCL / I2C_SDA：共用 4.7k 上拉。\n0x68  WUSB3801（USB-C）\n0x60  MCP4726A0（VIO DAC）\n0x74  TCA9539（GPIO）\n0x75  TPS63811（目标供电）\n100 kHz 起步，400 kHz 须验证上升时间。\nDAC 使用 VDD 参考，初始化后再使能 VIO。"
+		(exclude_from_sim no)
+		(at 153.67 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f08637fc-085a-4c47-85f7-6f2fb30bee28")
+	)
+	(junction
+		(at 73.66 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04f23395-ad8e-475e-8fa3-df8912771c3b")
+	)
+	(junction
+		(at 50.8 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e9d42e7-aa77-4434-b3d4-ba2da6dbc9aa")
+	)
+	(junction
+		(at 38.1 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76255565-f0da-4da1-8829-f232e5692b03")
+	)
+	(no_connect
+		(at 53.34 73.66)
+		(uuid "3a582920-c995-4d65-a525-2e511d0d04ab")
+	)
+	(no_connect
+		(at 53.34 71.12)
+		(uuid "db9839c4-3aa7-4b0f-b2c7-437e93c04be9")
+	)
+	(wire
+		(pts
+			(xy 73.66 63.5) (xy 77.47 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c4b3744-9966-4df8-bea9-73a780a12904")
+	)
+	(wire
+		(pts
+			(xy 111.76 137.16) (xy 111.76 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f08ffcc-f81a-4efc-842e-ea577f20c812")
+	)
+	(wire
+		(pts
+			(xy 73.66 25.4) (xy 73.66 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14ca5d92-585f-46b2-95f0-449376d01ec1")
+	)
+	(wire
+		(pts
+			(xy 73.66 73.66) (xy 77.47 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7f9a21-02a7-48fe-a03e-e090d89d4b57")
+	)
+	(wire
+		(pts
+			(xy 83.82 129.54) (xy 83.82 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a590780-fc4e-4cd4-bb8c-e1f595584082")
+	)
+	(wire
+		(pts
+			(xy 53.34 68.58) (xy 49.53 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bfbc540-f96e-4071-9598-57166482285c")
+	)
+	(wire
+		(pts
+			(xy 73.66 48.26) (xy 77.47 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4729ebee-8c30-46f8-abb4-728fb61a2ac9")
+	)
+	(wire
+		(pts
+			(xy 27.94 137.16) (xy 27.94 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4941ef5b-2667-4656-ae4a-fd1bdf316b87")
+	)
+	(wire
+		(pts
+			(xy 44.45 41.91) (xy 44.45 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "539402e9-fb14-4e18-8043-025320698343")
+	)
+	(wire
+		(pts
+			(xy 73.66 60.96) (xy 77.47 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55cc2aec-589f-472f-bd4c-160d263c682b")
+	)
+	(wire
+		(pts
+			(xy 53.34 66.04) (xy 49.53 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ad96fb2-81d5-4f23-b1b0-7817f1463af3")
+	)
+	(wire
+		(pts
+			(xy 85.09 34.29) (xy 85.09 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf8eca1-3470-45a1-b383-3ec0918cbcec")
+	)
+	(wire
+		(pts
+			(xy 38.1 34.29) (xy 44.45 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "615bd8dd-03c3-4daf-bedb-cdd31d7ca50a")
+	)
+	(wire
+		(pts
+			(xy 111.76 129.54) (xy 111.76 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d14f13-cef4-4451-b6f9-107a13400915")
+	)
+	(wire
+		(pts
+			(xy 195.58 129.54) (xy 195.58 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6afea5c7-bf74-4a09-b279-6170d336a754")
+	)
+	(wire
+		(pts
+			(xy 85.09 25.4) (xy 85.09 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eefbcfc-7b55-4019-92c9-db3522156d04")
+	)
+	(wire
+		(pts
+			(xy 195.58 137.16) (xy 195.58 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f305628-c81d-4b89-8641-132c0c1dd686")
+	)
+	(wire
+		(pts
+			(xy 167.64 137.16) (xy 167.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8723da39-c96d-43f1-98c9-deb52892868e")
+	)
+	(wire
+		(pts
+			(xy 50.8 60.96) (xy 50.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3dd65ad-a5c8-4db5-a5ad-f82de9628b51")
+	)
+	(wire
+		(pts
+			(xy 53.34 63.5) (xy 50.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a87931c7-5936-4c20-8528-db175e91a085")
+	)
+	(wire
+		(pts
+			(xy 73.66 71.12) (xy 77.47 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa8c0c78-57b6-4876-ad16-c724cd131359")
+	)
+	(wire
+		(pts
+			(xy 63.5 44.45) (xy 63.5 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab58d889-fb46-462e-864c-7ddd30dc501f")
+	)
+	(wire
+		(pts
+			(xy 73.66 50.8) (xy 77.47 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b347e8c6-3c8f-4822-891e-e950b07c2df4")
+	)
+	(wire
+		(pts
+			(xy 53.34 53.34) (xy 49.53 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b550882f-291b-4026-8634-7c95e4fc18ca")
+	)
+	(wire
+		(pts
+			(xy 53.34 58.42) (xy 49.53 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba8677e2-fd5e-46ba-a41f-bd1719c4578d")
+	)
+	(wire
+		(pts
+			(xy 53.34 60.96) (xy 50.8 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc5ab42c-415e-475c-9cbc-7e241d476cbe")
+	)
+	(wire
+		(pts
+			(xy 167.64 129.54) (xy 167.64 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf48fd3b-9021-4b4c-ba10-bdd4ca31a6ae")
+	)
+	(wire
+		(pts
+			(xy 63.5 25.4) (xy 73.66 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bff21a7d-653f-427a-925f-b2ee930e6a23")
+	)
+	(wire
+		(pts
+			(xy 139.7 129.54) (xy 139.7 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d015db-9c9e-410b-86cc-d6c319bee3b9")
+	)
+	(wire
+		(pts
+			(xy 139.7 137.16) (xy 139.7 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2f7ef11-68bd-415f-a12e-cf87f9edaf3b")
+	)
+	(wire
+		(pts
+			(xy 38.1 34.29) (xy 38.1 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c42a4d3b-64f8-414e-ad4f-c12313855172")
+	)
+	(wire
+		(pts
+			(xy 83.82 137.16) (xy 83.82 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61ab999-57cd-43ee-a628-a80724a6034e")
+	)
+	(wire
+		(pts
+			(xy 63.5 82.55) (xy 63.5 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e8a925-2680-460e-86f9-d531d12cd8de")
+	)
+	(wire
+		(pts
+			(xy 73.66 58.42) (xy 77.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c988b31f-1d6b-4904-818d-2674840de52c")
+	)
+	(wire
+		(pts
+			(xy 73.66 25.4) (xy 85.09 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca07e8c4-8cd9-459c-b8d5-481e968debf7")
+	)
+	(wire
+		(pts
+			(xy 30.48 34.29) (xy 38.1 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb190f56-793b-4920-9572-04f04a37b1e3")
+	)
+	(wire
+		(pts
+			(xy 73.66 53.34) (xy 77.47 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd831300-d207-41f1-8f02-0500ca1ab672")
+	)
+	(wire
+		(pts
+			(xy 30.48 41.91) (xy 30.48 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce0cd08c-0d3c-4408-873b-8de195c2fe42")
+	)
+	(wire
+		(pts
+			(xy 53.34 55.88) (xy 49.53 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1fcfa9b-1db2-4a82-9736-93a9f0efe2ee")
+	)
+	(wire
+		(pts
+			(xy 55.88 129.54) (xy 55.88 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d66a24db-f68b-4e23-b120-ce8f8808bfda")
+	)
+	(wire
+		(pts
+			(xy 73.66 55.88) (xy 77.47 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e263d8f0-e6c6-4f84-b77b-6050e5cc7cb7")
+	)
+	(wire
+		(pts
+			(xy 27.94 129.54) (xy 27.94 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7016cc9-77d2-4c14-ab13-8a08f0eb07ae")
+	)
+	(wire
+		(pts
+			(xy 73.66 78.74) (xy 77.47 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9d36866-afcc-4b90-adc4-80eefaed5229")
+	)
+	(wire
+		(pts
+			(xy 55.88 137.16) (xy 55.88 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4b2ed22-fe40-4bb7-88d9-bf67dab633a6")
+	)
+	(wire
+		(pts
+			(xy 73.66 76.2) (xy 77.47 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf9aef3-bb61-46a0-b361-661e5082673f")
+	)
+	(wire
+		(pts
+			(xy 73.66 68.58) (xy 77.47 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff14a1b8-56a3-4eee-a6d2-803f90e35950")
+	)
+	(wire
+		(pts
+			(xy 73.66 66.04) (xy 77.47 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff64e340-5162-43a1-9817-c640794e65bd")
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 49.53 53.34 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "102ce686-6796-4308-96b6-53f766aab9e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "INT_EN"
+		(shape input)
+		(at 77.47 73.66 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "2076c288-9751-4c45-a4d9-9701adeabe14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_TIER2"
+		(shape input)
+		(at 77.47 78.74 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "280c58d6-3da0-494c-9211-38b8ca91d61b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "FAULTn"
+		(shape input)
+		(at 49.53 66.04 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "3dcd0c95-a44d-44e0-9c1e-7bf282192b43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 44.45 45.72 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "426d8f81-78d5-4a32-940d-7f4277e5ecaf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.45 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "DISCH_REQ"
+		(shape input)
+		(at 77.47 71.12 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "42a4c571-167d-49e0-bdf5-81c1e6e6fee3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_A_REQ"
+		(shape input)
+		(at 77.47 60.96 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "457973f6-a65a-472b-a56a-b236a19294dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "DISCH_REQ"
+		(shape input)
+		(at 167.64 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "468cfed5-e41e-465a-ba52-d5410b895c03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_B_DTR"
+		(shape input)
+		(at 77.47 53.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "641a1bb2-a44b-45b4-a1a4-ef5829f01c44")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_A_REQ"
+		(shape input)
+		(at 55.88 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "663f2464-17bc-4a0c-a286-51504d1ee5a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 30.48 45.72 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "6b067bdd-e245-45b2-a689-90e10a9c1d62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "USB_TIER1"
+		(shape input)
+		(at 77.47 76.2 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "6dc23507-8eb6-448a-907a-aee6179082a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "SYS_RESETn"
+		(shape input)
+		(at 49.53 58.42 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "8dac6fe5-4ae1-4efc-85ae-c3882cfa2462")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "P3V3"
+		(shape input)
+		(at 73.66 22.86 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "96ce0e62-be08-4b28-83a0-76be1cd59e8a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.66 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "INT_EN"
+		(shape input)
+		(at 195.58 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "9abfe3be-4ebb-4640-87e2-22d5f0fb873a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "DEBUG_REQ"
+		(shape input)
+		(at 27.94 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "9cd00215-7de3-4c34-9a42-3d76a39f241c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.94 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_A_RTS"
+		(shape input)
+		(at 77.47 50.8 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "a03634d7-3042-4027-804f-24d7ee43d94b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_A_DTR"
+		(shape input)
+		(at 77.47 48.26 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "a586c8e8-c9d6-456d-9830-4e80419ff0b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_B_RTS"
+		(shape input)
+		(at 77.47 55.88 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b97e22cd-9f53-4415-afad-702ad12daf19")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "SENSE_REQ"
+		(shape input)
+		(at 77.47 68.58 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "bbba8376-4abc-42a9-8886-ee42e5417837")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_B_REQ"
+		(shape input)
+		(at 77.47 63.5 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "bda93cc9-74b0-4720-b3c1-27e4750b92c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "SENSE_REQ"
+		(shape input)
+		(at 139.7 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "cc2723c5-14bf-4801-9920-bb8ed07b6c6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.7 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RESET_REQ"
+		(shape input)
+		(at 111.76 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ccf4bfee-8502-445b-9175-3c7f0a2d3f8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "UART_B_REQ"
+		(shape input)
+		(at 83.82 125.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "d44810c9-5c22-4eed-b080-fe93462b4309")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.82 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RESET_REQ"
+		(shape input)
+		(at 77.47 66.04 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "da167ca5-8952-49f1-85d2-9e12cb4405bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "DEBUG_REQ"
+		(shape input)
+		(at 77.47 58.42 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "ed643d43-e140-4651-8e6f-07e916acfb13")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.47 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "SOURCE_EXT"
+		(shape input)
+		(at 49.53 68.58 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "ef178cb8-fd75-47de-a36e-bd887a846939")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 49.53 55.88 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "f0cf46d0-30b6-4495-bd72-1f20c212257e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "P3V3"
+		(shape input)
+		(at 38.1 31.75 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "fffb51b9-9a2d-4474-922d-6231b5721a8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1bcd7375-edaa-4115-8ccc-1dc0d2812217")
+		(property "Reference" "#PWR24014"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.58 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e110ff1d-970c-4f02-897f-3643b25856a9")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24014")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c5dc647-ca3a-4502-b51c-d0fd941e50b6")
+		(property "Reference" "C26"
+			(at 87.63 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 87.63 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 86.055 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d492277c-0719-4d59-8225-60498ea766eb")
+		)
+		(pin "2"
+			(uuid "f91f6ff3-ad16-48a6-9add-b89a638b15e7")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 167.64 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3490226d-084d-43a6-9cce-34d8e1f0fd63")
+		(property "Reference" "#PWR24013"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48c838f7-b06f-485e-b934-d2bf8282c702")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24013")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 30.48 38.1 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "36e0f8a5-68e8-4e3e-a15a-5407c7d6b3db")
+		(property "Reference" "R17"
+			(at 33.02 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 33.02 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 32.258 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 30.48 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 30.48 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω"
+			(at 30.48 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF4701T5E"
+			(at 30.48 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 30.48 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 30.48 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "604172f8-1e86-49a5-af4a-e960dd9e009a")
+		)
+		(pin "2"
+			(uuid "616df33a-c43e-4383-aa43-4f666e30f14c")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55.88 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d0c2058-5185-4ce4-8a7d-f3ad3b39e250")
+		(property "Reference" "#PWR24009"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.88 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.88 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c13d0bb1-4c92-48a6-99c3-a026a6a14f0d")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24009")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 195.58 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78128060-e1e0-4bd2-8974-bb27931cb420")
+		(property "Reference" "R29"
+			(at 198.12 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 198.12 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 193.802 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 195.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97a7dc32-0a0e-4bf6-b0c7-1a726cbbee57")
+		)
+		(pin "2"
+			(uuid "8f096308-f72e-4b5c-8ba3-326955aec5e9")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "813a8f03-848c-41ae-978c-18744930780d")
+		(property "Reference" "R26"
+			(at 114.3 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 114.3 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 109.982 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79f24e51-203f-424b-8d33-19e22b4476d3")
+		)
+		(pin "2"
+			(uuid "671dcb95-0e81-468d-9147-c32cb3c60795")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 167.64 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92bbace8-7eae-4c13-819f-9cafed167a0b")
+		(property "Reference" "R28"
+			(at 170.18 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 170.18 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 165.862 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 167.64 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec80622c-ad44-45b3-8e51-2a1e86e7a324")
+		)
+		(pin "2"
+			(uuid "f5438ffd-4d77-4ead-94f5-c25bee7f1679")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9811c154-ac11-48c5-a46b-b58b0d12d022")
+		(property "Reference" "#PWR24011"
+			(at 111.76 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11b89f4c-ea11-47fc-901a-808d65b01d6b")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24011")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a662de79-5210-4655-b915-8edba738174f")
+		(property "Reference" "R24"
+			(at 58.42 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 58.42 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 54.102 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "966e9314-c01c-45cc-96de-61c69ac484e8")
+		)
+		(pin "2"
+			(uuid "fa2166f9-86d9-4fda-8df2-d1907963f4c3")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 44.45 38.1 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6ae2d05-23a3-4d5a-89ae-b445095dfd62")
+		(property "Reference" "R18"
+			(at 46.99 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 46.99 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 46.228 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF4701T5E"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 44.45 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a950cc2-a6c3-4a0d-8879-1d0c6cb4c050")
+		)
+		(pin "2"
+			(uuid "0fd9d78c-293f-4d22-9edd-6aadc6843e9e")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad8698a1-27ec-44a4-855b-6a6271e7deca")
+		(property "Reference" "R27"
+			(at 142.24 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 142.24 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 137.922 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2794f8cd-d159-4eef-bd61-eff3e937a468")
+		)
+		(pin "2"
+			(uuid "cd7822c1-0d33-4477-82f6-e5f3f40f146b")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4522eba-fde1-488d-a2cb-375dc070b024")
+		(property "Reference" "#PWR24010"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b15f4781-65ab-453f-9457-89ce3d2c9cc0")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24010")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 83.82 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b66df925-7af5-4b1f-83c2-47a9a8f5bd91")
+		(property "Reference" "R25"
+			(at 86.36 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 86.36 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 82.042 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "712611cb-fe0b-447c-8a3e-b3ea8fc0add0")
+		)
+		(pin "2"
+			(uuid "ed4af54b-c1ae-48c5-aa76-8fbaf9e576e6")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c776c163-f404-42fc-8959-b58d8cbf2888")
+		(property "Reference" "#PWR24006"
+			(at 85.09 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 40.005 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41efb7bb-efbc-4df9-80b0-fa6769a22907")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24006")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cf0c391b-24e6-463b-827c-f77a3691520d")
+		(property "Reference" "#PWR24008"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d4d18be-8ba4-4c36-8c37-0cfd428bf906")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24008")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d75af89b-a153-40ef-b58e-95b720dbeb06")
+		(property "Reference" "#PWR24002"
+			(at 63.5 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 88.265 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d088742-2aa7-437b-b815-d890d660eebf")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24002")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 27.94 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d8ccf142-d394-4500-9b38-be862d97fec7")
+		(property "Reference" "R23"
+			(at 30.48 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 30.48 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 26.162 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 27.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbfbb51f-ae98-4e4c-bf29-cdac6361a5c0")
+		)
+		(pin "2"
+			(uuid "c0a5d0a0-342a-49b9-a6a7-2abfcf1c54de")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc94072b-117a-4eb4-8538-ea886e348f3a")
+		(property "Reference" "#PWR24012"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 142.875 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e119c735-f84f-4f43-9fec-0e85a1d25267")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
+					(reference "#PWR24012")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
+					(reference "#PWR24012")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "HSLinkLP:TCA9539PWR")
 		(at 63.5 63.5 0)
@@ -1384,7 +4673,6 @@
 				(font
 					(size 1 1)
 				)
-				(hide no)
 				(justify left)
 			)
 		)
@@ -1396,7 +4684,6 @@
 				(font
 					(size 1 1)
 				)
-				(hide no)
 				(justify left)
 			)
 		)
@@ -1409,7 +4696,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tca9539.pdf"
@@ -1420,7 +4706,8 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+			)
 		)
 		(property "Description" "I2C 0x74；上电全输入；控制输出须先写 0 再配置方向；按功能重排引脚，物理编号不变"
 			(at 63.5 53.34 0)
@@ -1435,20 +4722,48 @@
 		)
 		(property "Specification" "TCA9539PWR / 0x74"
 			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+			)
 		)
-    (property "MPN" "TCA9539PWR" (at 63.5 63.5 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C131972" (at 63.5 63.5 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 63.5 63.5 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "TCA9539PWR"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C131972"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "770d4b55-56d2-4555-b555-1fdb29c44409")
 		)
@@ -1523,1891 +4838,19 @@
 		)
 		(instances
 			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "U201")
-					(unit 1)
-				)
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
 					(reference "U201")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 30.48 38.1 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "36e0f8a5-68e8-4e3e-a15a-5407c7d6b3db")
-		(property "Reference" "R17"
-			(at 33.02 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 33.02 39.370000000000005 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 32.258 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 30.48 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 30.48 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω"
-			(at 30.48 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF4701T5E" (at 30.48 38.1 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C23162" (at 30.48 38.1 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 30.48 38.1 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "604172f8-1e86-49a5-af4a-e960dd9e009a")
-		)
-		(pin "2"
-			(uuid "616df33a-c43e-4383-aa43-4f666e30f14c")
-		)
-		(instances
-			(project "HSLink-LP"
+			(project ""
 				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R17")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R17")
+					(reference "U201")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R")
-		(at 44.45 38.1 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a6ae2d05-23a3-4d5a-89ae-b445095dfd62")
-		(property "Reference" "R18"
-			(at 46.99 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 46.99 39.370000000000005 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 46.228 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 44.45 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 44.45 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:4700Ω"
-			(at 44.45 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF4701T5E" (at 44.45 38.1 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C23162" (at 44.45 38.1 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 44.45 38.1 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "5a950cc2-a6c3-4a0d-8879-1d0c6cb4c050")
-		)
-		(pin "2"
-			(uuid "0fd9d78c-293f-4d22-9edd-6aadc6843e9e")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R18")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 85.09 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2c5dc647-ca3a-4502-b51c-d0fd941e50b6")
-		(property "Reference" "C26"
-			(at 87.63000000000001 29.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 87.63000000000001 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 86.055 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
-			(at 85.09 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 85.09 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-			(at 85.09 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "CC0603KRX7R9BB104" (at 85.09 30.48 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C14663" (at 85.09 30.48 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 85.09 30.48 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "d492277c-0719-4d59-8225-60498ea766eb")
-		)
-		(pin "2"
-			(uuid "f91f6ff3-ad16-48a6-9add-b89a638b15e7")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "C26")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 27.94 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d8ccf142-d394-4500-9b38-be862d97fec7")
-		(property "Reference" "R23"
-			(at 30.48 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 30.48 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 26.162 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 27.94 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 27.94 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 27.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 27.94 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 27.94 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 27.94 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "dbfbb51f-ae98-4e4c-bf29-cdac6361a5c0")
-		)
-		(pin "2"
-			(uuid "c0a5d0a0-342a-49b9-a6a7-2abfcf1c54de")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R23")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a662de79-5210-4655-b915-8edba738174f")
-		(property "Reference" "R24"
-			(at 58.42 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 58.42 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 54.102 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 55.88 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 55.88 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 55.88 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 55.88 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 55.88 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 55.88 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "966e9314-c01c-45cc-96de-61c69ac484e8")
-		)
-		(pin "2"
-			(uuid "fa2166f9-86d9-4fda-8df2-d1907963f4c3")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R24")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 83.82 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b66df925-7af5-4b1f-83c2-47a9a8f5bd91")
-		(property "Reference" "R25"
-			(at 86.36 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 86.36 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 82.042 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 83.82 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 83.82 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 83.82 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 83.82 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 83.82 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 83.82 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "712611cb-fe0b-447c-8a3e-b3ea8fc0add0")
-		)
-		(pin "2"
-			(uuid "ed4af54b-c1ae-48c5-aa76-8fbaf9e576e6")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R25")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "813a8f03-848c-41ae-978c-18744930780d")
-		(property "Reference" "R26"
-			(at 114.30000000000001 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 114.30000000000001 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.982 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 111.76 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 111.76 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 111.76 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 111.76 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 111.76 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 111.76 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "79f24e51-203f-424b-8d33-19e22b4476d3")
-		)
-		(pin "2"
-			(uuid "671dcb95-0e81-468d-9147-c32cb3c60795")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R26")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 139.7 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad8698a1-27ec-44a4-855b-6a6271e7deca")
-		(property "Reference" "R27"
-			(at 142.23999999999998 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 142.23999999999998 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 137.922 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 139.7 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 139.7 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 139.7 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 139.7 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 139.7 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 139.7 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "2794f8cd-d159-4eef-bd61-eff3e937a468")
-		)
-		(pin "2"
-			(uuid "cd7822c1-0d33-4477-82f6-e5f3f40f146b")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R27")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "92bbace8-7eae-4c13-819f-9cafed167a0b")
-		(property "Reference" "R28"
-			(at 170.17999999999998 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 170.17999999999998 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 165.862 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 167.64 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 167.64 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 167.64 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 167.64 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 167.64 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 167.64 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "ec80622c-ad44-45b3-8e51-2a1e86e7a324")
-		)
-		(pin "2"
-			(uuid "f5438ffd-4d77-4ead-94f5-c25bee7f1679")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R28")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 195.58 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "78128060-e1e0-4bd2-8974-bb27931cb420")
-		(property "Reference" "R29"
-			(at 198.12 132.07999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 198.12 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 193.802 133.35 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
-			(at 195.58 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 195.58 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-			(at 195.58 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "0603WAF1003T5E" (at 195.58 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 195.58 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 195.58 133.35 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "97a7dc32-0a0e-4bf6-b0c7-1a726cbbee57")
-		)
-		(pin "2"
-			(uuid "8f096308-f72e-4b5c-8ba3-326955aec5e9")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R29")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "TCA9539 / 0x74"
-		(exclude_from_sim no)
-		(at 21.59 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "903c6dfc-ac5e-47af-ab5b-ff95a5da9348")
-	)
-	(text "共享 I2C 总线（3.3 V）"
-		(exclude_from_sim no)
-		(at 157.48 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5786675a-c9b1-48f4-9312-a91b5d3a7c28")
-	)
-	(text "I2C_SCL / I2C_SDA：共用 4.7k 上拉。\n0x68  WUSB3801（USB-C）\n0x60  MCP4726A0（VIO DAC）\n0x74  TCA9539（GPIO）\n0x75  TPS63811（目标供电）\n100 kHz 起步，400 kHz 须验证上升时间。\nDAC 使用 VDD 参考，初始化后再使能 VIO。"
-		(exclude_from_sim no)
-		(at 153.67 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f08637fc-085a-4c47-85f7-6f2fb30bee28")
-	)
-	(text "GPIO 默认输入：先写输出寄存器 0，再配置方向。"
-		(exclude_from_sim no)
-		(at 21.59 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "66e392ba-87d8-43e6-ae4e-975977849719")
-	)
-	(text "分组请求默认下拉"
-		(exclude_from_sim no)
-		(at 21.59 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8e05a07-8a48-48b1-a2ab-aeb6ff72e24a")
-	)
-	(text "MEASURE 锁定后，CDC、DTR/RTS 与 DAP 均不得隐式重连。"
-		(exclude_from_sim no)
-		(at 21.59 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49aee1ec-77b9-451c-b7db-eba9090616f7")
-	)
-	(wire
-		(pts
-			(xy 30.48 34.29) (xy 38.1 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb190f56-793b-4920-9572-04f04a37b1e3")
-	)
-	(wire
-		(pts
-			(xy 38.1 34.29) (xy 44.45 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "615bd8dd-03c3-4daf-bedb-cdd31d7ca50a")
-	)
-	(wire
-		(pts
-			(xy 63.5 44.45) (xy 63.5 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab58d889-fb46-462e-864c-7ddd30dc501f")
-	)
-	(wire
-		(pts
-			(xy 63.5 25.4) (xy 73.66 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bff21a7d-653f-427a-925f-b2ee930e6a23")
-	)
-	(wire
-		(pts
-			(xy 73.66 25.4) (xy 85.09 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca07e8c4-8cd9-459c-b8d5-481e968debf7")
-	)
-	(wire
-		(pts
-			(xy 85.09 25.4) (xy 85.09 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eefbcfc-7b55-4019-92c9-db3522156d04")
-	)
-	(global_label "P3V3"
-		(at 38.1 31.75 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "fffb51b9-9a2d-4474-922d-6231b5721a8f")
-		(shape input)
-	)
-	(global_label "P3V3"
-		(at 73.66 22.86 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "96ce0e62-be08-4b28-83a0-76be1cd59e8a")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 53.34 60.96) (xy 50.8 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc5ab42c-415e-475c-9cbc-7e241d476cbe")
-	)
-	(wire
-		(pts
-			(xy 53.34 63.5) (xy 50.8 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a87931c7-5936-4c20-8528-db175e91a085")
-	)
-	(wire
-		(pts
-			(xy 50.8 60.96) (xy 50.8 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3dd65ad-a5c8-4db5-a5ad-f82de9628b51")
-	)
-	(wire
-		(pts
-			(xy 53.34 58.42) (xy 49.53 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba8677e2-fd5e-46ba-a41f-bd1719c4578d")
-	)
-	(global_label "SYS_RESETn"
-		(at 49.53 58.42 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "8dac6fe5-4ae1-4efc-85ae-c3882cfa2462")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 48.26) (xy 77.47 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4729ebee-8c30-46f8-abb4-728fb61a2ac9")
-	)
-	(global_label "UART_A_DTR"
-		(at 77.47 48.26 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "a586c8e8-c9d6-456d-9830-4e80419ff0b5")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 50.8) (xy 77.47 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b347e8c6-3c8f-4822-891e-e950b07c2df4")
-	)
-	(global_label "UART_A_RTS"
-		(at 77.47 50.8 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "a03634d7-3042-4027-804f-24d7ee43d94b")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 53.34) (xy 77.47 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd831300-d207-41f1-8f02-0500ca1ab672")
-	)
-	(global_label "UART_B_DTR"
-		(at 77.47 53.34 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "641a1bb2-a44b-45b4-a1a4-ef5829f01c44")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 55.88) (xy 77.47 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e263d8f0-e6c6-4f84-b77b-6050e5cc7cb7")
-	)
-	(global_label "UART_B_RTS"
-		(at 77.47 55.88 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "b97e22cd-9f53-4415-afad-702ad12daf19")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 58.42) (xy 77.47 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c988b31f-1d6b-4904-818d-2674840de52c")
-	)
-	(global_label "DEBUG_REQ"
-		(at 77.47 58.42 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "ed643d43-e140-4651-8e6f-07e916acfb13")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 60.96) (xy 77.47 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55cc2aec-589f-472f-bd4c-160d263c682b")
-	)
-	(global_label "UART_A_REQ"
-		(at 77.47 60.96 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "457973f6-a65a-472b-a56a-b236a19294dc")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 63.5) (xy 77.47 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c4b3744-9966-4df8-bea9-73a780a12904")
-	)
-	(global_label "UART_B_REQ"
-		(at 77.47 63.5 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "bda93cc9-74b0-4720-b3c1-27e4750b92c8")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 66.04) (xy 77.47 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff64e340-5162-43a1-9817-c640794e65bd")
-	)
-	(global_label "RESET_REQ"
-		(at 77.47 66.04 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "da167ca5-8952-49f1-85d2-9e12cb4405bf")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 63.5 82.55) (xy 63.5 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6e8a925-2680-460e-86f9-d531d12cd8de")
-	)
-	(wire
-		(pts
-			(xy 73.66 68.58) (xy 77.47 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff14a1b8-56a3-4eee-a6d2-803f90e35950")
-	)
-	(global_label "SENSE_REQ"
-		(at 77.47 68.58 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "bbba8376-4abc-42a9-8886-ee42e5417837")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 71.12) (xy 77.47 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa8c0c78-57b6-4876-ad16-c724cd131359")
-	)
-	(global_label "DISCH_REQ"
-		(at 77.47 71.12 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "42a4c571-167d-49e0-bdf5-81c1e6e6fee3")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 73.66) (xy 77.47 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f7f9a21-02a7-48fe-a03e-e090d89d4b57")
-	)
-	(global_label "INT_EN"
-		(at 77.47 73.66 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "2076c288-9751-4c45-a4d9-9701adeabe14")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 76.2) (xy 77.47 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcf9aef3-bb61-46a0-b361-661e5082673f")
-	)
-	(global_label "USB_TIER1"
-		(at 77.47 76.2 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "6dc23507-8eb6-448a-907a-aee6179082a0")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 73.66 78.74) (xy 77.47 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9d36866-afcc-4b90-adc4-80eefaed5229")
-	)
-	(global_label "USB_TIER2"
-		(at 77.47 78.74 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "280c58d6-3da0-494c-9211-38b8ca91d61b")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 53.34 66.04) (xy 49.53 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ad96fb2-81d5-4f23-b1b0-7817f1463af3")
-	)
-	(global_label "FAULTn"
-		(at 49.53 66.04 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "3dcd0c95-a44d-44e0-9c1e-7bf282192b43")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 53.34 68.58) (xy 49.53 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bfbc540-f96e-4071-9598-57166482285c")
-	)
-	(global_label "SOURCE_EXT"
-		(at 49.53 68.58 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "ef178cb8-fd75-47de-a36e-bd887a846939")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 53.34 53.34) (xy 49.53 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b550882f-291b-4026-8634-7c95e4fc18ca")
-	)
-	(global_label "I2C_SCL"
-		(at 49.53 53.34 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "102ce686-6796-4308-96b6-53f766aab9e8")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 53.34 55.88) (xy 49.53 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1fcfa9b-1db2-4a82-9736-93a9f0efe2ee")
-	)
-	(global_label "I2C_SDA"
-		(at 49.53 55.88 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "f0cf46d0-30b6-4495-bd72-1f20c212257e")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 30.48 41.91) (xy 30.48 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce0cd08c-0d3c-4408-873b-8de195c2fe42")
-	)
-	(global_label "I2C_SCL"
-		(at 30.48 45.72 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "6b067bdd-e245-45b2-a689-90e10a9c1d62")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 44.45 41.91) (xy 44.45 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "539402e9-fb14-4e18-8043-025320698343")
-	)
-	(global_label "I2C_SDA"
-		(at 44.45 45.72 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "426d8f81-78d5-4a32-940d-7f4277e5ecaf")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 85.09 34.29) (xy 85.09 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bf8eca1-3470-45a1-b383-3ec0918cbcec")
-	)
-	(wire
-		(pts
-			(xy 27.94 129.54) (xy 27.94 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7016cc9-77d2-4c14-ab13-8a08f0eb07ae")
-	)
-	(global_label "DEBUG_REQ"
-		(at 27.94 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "9cd00215-7de3-4c34-9a42-3d76a39f241c")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 27.94 137.16) (xy 27.94 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4941ef5b-2667-4656-ae4a-fd1bdf316b87")
-	)
-	(wire
-		(pts
-			(xy 55.88 129.54) (xy 55.88 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d66a24db-f68b-4e23-b120-ce8f8808bfda")
-	)
-	(global_label "UART_A_REQ"
-		(at 55.88 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "663f2464-17bc-4a0c-a286-51504d1ee5a9")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 55.88 137.16) (xy 55.88 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4b2ed22-fe40-4bb7-88d9-bf67dab633a6")
-	)
-	(wire
-		(pts
-			(xy 83.82 129.54) (xy 83.82 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a590780-fc4e-4cd4-bb8c-e1f595584082")
-	)
-	(global_label "UART_B_REQ"
-		(at 83.82 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "d44810c9-5c22-4eed-b080-fe93462b4309")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 83.82 137.16) (xy 83.82 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c61ab999-57cd-43ee-a628-a80724a6034e")
-	)
-	(wire
-		(pts
-			(xy 111.76 129.54) (xy 111.76 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63d14f13-cef4-4451-b6f9-107a13400915")
-	)
-	(global_label "RESET_REQ"
-		(at 111.76 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "ccf4bfee-8502-445b-9175-3c7f0a2d3f8f")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 111.76 137.16) (xy 111.76 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f08ffcc-f81a-4efc-842e-ea577f20c812")
-	)
-	(wire
-		(pts
-			(xy 139.7 129.54) (xy 139.7 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0d015db-9c9e-410b-86cc-d6c319bee3b9")
-	)
-	(global_label "SENSE_REQ"
-		(at 139.7 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "cc2723c5-14bf-4801-9920-bb8ed07b6c6b")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 139.7 137.16) (xy 139.7 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2f7ef11-68bd-415f-a12e-cf87f9edaf3b")
-	)
-	(wire
-		(pts
-			(xy 167.64 129.54) (xy 167.64 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf48fd3b-9021-4b4c-ba10-bdd4ca31a6ae")
-	)
-	(global_label "DISCH_REQ"
-		(at 167.64 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "468cfed5-e41e-465a-ba52-d5410b895c03")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 167.64 137.16) (xy 167.64 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8723da39-c96d-43f1-98c9-deb52892868e")
-	)
-	(wire
-		(pts
-			(xy 195.58 129.54) (xy 195.58 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6afea5c7-bf74-4a09-b279-6170d336a754")
-	)
-	(global_label "INT_EN"
-		(at 195.58 125.73 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "9abfe3be-4ebb-4640-87e2-22d5f0fb873a")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 195.58 137.16) (xy 195.58 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f305628-c81d-4b89-8641-132c0c1dd686")
-	)
-	(no_connect
-		(at 53.34 71.12)
-		(uuid "db9839c4-3aa7-4b0f-b2c7-437e93c04be9")
-	)
-	(no_connect
-		(at 53.34 73.66)
-		(uuid "3a582920-c995-4d65-a525-2e511d0d04ab")
-	)
-
 	(symbol
 		(lib_id "power:GND")
 		(at 50.8 63.5 270)
@@ -3428,19 +4871,17 @@
 				(font
 					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 44.45 61.595 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(justify)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -3481,811 +4922,22 @@
 		)
 		(instances
 			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24001")
-					(unit 1)
-				)
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
 					(reference "#PWR24001")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d75af89b-a153-40ef-b58e-95b720dbeb06")
-		(property "Reference" "#PWR24002"
-			(at 63.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 88.265 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d088742-2aa7-437b-b815-d890d660eebf")
-		)
-		(instances
-			(project "HSLink-LP"
+			(project ""
 				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24002")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24002")
+					(reference "#PWR24001")
 					(unit 1)
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 85.09 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c776c163-f404-42fc-8959-b58d8cbf2888")
-		(property "Reference" "#PWR24006"
-			(at 85.09 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 85.09 40.004999999999995 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "41efb7bb-efbc-4df9-80b0-fa6769a22907")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24006")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 27.94 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cf0c391b-24e6-463b-827c-f77a3691520d")
-		(property "Reference" "#PWR24008"
-			(at 27.94 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 27.94 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8d4d18be-8ba4-4c36-8c37-0cfd428bf906")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24008")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24008")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 55.88 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4d0c2058-5185-4ce4-8a7d-f3ad3b39e250")
-		(property "Reference" "#PWR24009"
-			(at 55.88 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 55.88 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c13d0bb1-4c92-48a6-99c3-a026a6a14f0d")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24009")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24009")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 83.82 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b4522eba-fde1-488d-a2cb-375dc070b024")
-		(property "Reference" "#PWR24010"
-			(at 83.82 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 83.82 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b15f4781-65ab-453f-9457-89ce3d2c9cc0")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24010")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 111.76 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9811c154-ac11-48c5-a46b-b58b0d12d022")
-		(property "Reference" "#PWR24011"
-			(at 111.76 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "11b89f4c-ea11-47fc-901a-808d65b01d6b")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24011")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 139.7 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dc94072b-117a-4eb4-8538-ea886e348f3a")
-		(property "Reference" "#PWR24012"
-			(at 139.7 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 139.7 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e119c735-f84f-4f43-9fec-0e85a1d25267")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24012")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 167.64 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3490226d-084d-43a6-9cce-34d8e1f0fd63")
-		(property "Reference" "#PWR24013"
-			(at 167.64 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.64 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "48c838f7-b06f-485e-b934-d2bf8282c702")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24013")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 195.58 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1bcd7375-edaa-4115-8ccc-1dc0d2812217")
-		(property "Reference" "#PWR24014"
-			(at 195.58 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 195.58 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 195.58 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e110ff1d-970c-4f02-897f-3643b25856a9")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24014")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(junction
-		(at 50.8 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e9d42e7-aa77-4434-b3d4-ba2da6dbc9aa")
-	)
-	(wire
-		(pts
-			(xy 38.1 34.29) (xy 38.1 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c42a4d3b-64f8-414e-ad4f-c12313855172")
-	)
-	(junction
-		(at 38.1 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "76255565-f0da-4da1-8829-f232e5692b03")
-	)
-	(wire
-		(pts
-			(xy 73.66 25.4) (xy 73.66 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14ca5d92-585f-46b2-95f0-449376d01ec1")
-	)
-	(junction
-		(at 73.66 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04f23395-ad8e-475e-8fa3-df8912771c3b")
 	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
-	)
-	(title_block
-		(title "I2C 扩展与电源配置")
-		(date "2026-11-05")
-		(rev "0.2 DRAFT")
-		(company "HSLink-LP / based on HSLink Pro 1.2.0")
 	)
 )
