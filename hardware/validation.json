@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "scope": "KiCad 10 原生格式统一：9页原理图、2符号库、6封装；保留此前整图审查记录，转换前后完整网表/几何/文字核对；非硬件验收",
-  "checked_at": "2026-11-07T13:24:24.436270+08:00",
+  "scope": "确认的140nA/USB支持边界同步；MCP修正3页4条自由文字，完整网表/ERC复核；漏电/限流/VIO条件分析，未选定新器件、非硬件验收",
+  "checked_at": "2026-11-07T13:48:23.043601+08:00",
   "kicad_version": "10.0.7",
-  "baseline_commit": "8fb837ef3047f51e4700425aceba87a16e056d0b",
+  "baseline_commit": "2f51e2b5c056fd8ea8b4667e0c549c604367dfb1",
   "schematic": {
     "version": "Git working tree + sha256",
     "path": "design/HSLink-LP.kicad_pro",
     "status": "降本电路审阅稿",
     "hardware_validated": false,
-    "validation": "原生格式转换检查通过；转换前后194物理位号/117连接网/675连接引脚/45NC及元数据不变，ERC0/0；此前电气审查未关闭项保留，未实板验收",
+    "validation": "KiCad10保持；MCP说明文字修改后完整网表194物理位号/117连接网/675连接引脚/45NC及元件元数据不变，ERC0/0；硬件验收未执行",
     "file_format": "KiCad 10 / 20260306"
   },
   "pcb": {
@@ -24,7 +24,7 @@
     "version": "0.1.0.dev0",
     "status": "本地信息骨架，无真实HID；设计明确无DUT实测回读，设定值/PG/寄存器不能代替测量"
   },
-  "document_checks": "NEEDS_ATTENTION: 3 stale schematic annotations; see schematic_review",
+  "document_checks": "PASS: current 140nA/support boundary synchronized; three stale schematic notes corrected; unresolved design issues retained",
   "hardware_readiness": "NOT_READY",
   "erc": {
     "errors": 0,
@@ -37,8 +37,8 @@
       "footprint_filter"
     ],
     "new_ignored_checks": [],
-    "evidence": "design/reports/kicad10-format-2026-11-07/after-erc.json",
-    "mcp_evidence": "design/reports/kicad10-format-2026-11-07/after-erc.json",
+    "evidence": "design/reports/decisions-2026-11-07/after-erc.json",
+    "mcp_evidence": "design/reports/decisions-2026-11-07/after-erc.json",
     "exclusions": []
   },
   "connectivity": {
@@ -62,7 +62,10 @@
     "bom_status": "194 physical / 193 purchased / 58 grouped rows + separate cable; metadata, reference, quantity and tier check PASS",
     "quoted_material_subtotal_per_board": "124.5295",
     "unquoted_references": [],
-    "evidence": "design/reports/schematic-review-2026-11-07/connectivity-check.json"
+    "evidence": "design/reports/decisions-2026-11-07/checks.json",
+    "latest_intentional_electrical_changes": [],
+    "latest_metadata_change": "U901 engineering_status requirement wording only; electrical intent unchanged",
+    "intentional_changes_scope": "Historical vref-only circuit changes from 8fb837e; latest decision-sync changes no electrical nets"
   },
   "upstream_layout": {
     "status": "PASS",
@@ -290,22 +293,22 @@
   },
   "hardware_tests_executed": false,
   "limitations": [
-    "无PCB/DRC/生产文件；YFF与WSON布局、钢网、DFM未完成",
+    "无PCB/DRC/生产文件；YFF/WSON布局、钢网、DFM未完成",
     "40MHz SWD/JTAG含20cm配套排线未实测；时序模型不能替代硬件验收",
-    "FSA14路25°C上限求和140nA；-40～85°C表值50nA/路覆盖20～30°C，保守求和700nA；100nA预算未闭合，USB掉电模拟端VCC+0.3V额定问题未解决",
-    "配套排线仅保证绝缘>=5MΩ；不能保证整夹具100nA，来料/实测失败需换高绝缘短线或定制线束",
+    "整夹具140nA目标（20～30°C）仍开放：FSA14路25°C上限和140nA，全温表值保守和700nA，另有U901/线束/PCB；筛选值非实测",
+    "USB掉电而目标仍供电的FSA保护不在首版支持范围；连接目标信号期间须保持USB供电；这是用户接受限制而非硬件保护已实现",
+    "配套排线最低绝缘5MΩ不足以保证整夹具140nA；来料/实测失败需重新选线束并核价",
     "TPS63810默认3.3V，K601须隔离后编程回读；固件流程未实现",
-    "R42=1.15k限流0.75~1.25A不能保证连续1A；保持1A要求待设计验收",
-    "源开关BBM/DC、继电器接触释放、1A/2A热/浪涌、VIO精度/热、电感损耗、电容降额未验收",
-    "独立板型、WUSB3801/预算、双CDC、测量锁及真实HID未实现",
-    "MOQ/实际备损、PCB/SMT/THT/换料/运输未形成正式订单报价",
-    "晶体负载起振、按键机构与ARM20跨厂家键槽实物配合待测",
-    "K601转换抖动及D601续流释放、Q902关断泄漏/USB掉电栅极瞬态和放电时间/热待实测；50ms仅切换初值",
-    "DG2012E只隔离1.8～3.3V Vref；COM前无分压/保护，但20/25/30°C实际NC浮置漏电与USB中间供电区间待测；整板100nA未闭合",
-    "DG2012E V+=0/COM4.5V/IN=0全温最大1µA；不套用正常MEASURE指标，不称零反灌",
-    "取消DUT_OUT回读；输出掉压、实际电压、放电完成须外部仪器，本板设定/寄存器/PG不作为实测值",
-    "VIO调节低端容差示例最低1.821565V（25°C、理想DAC满码），不能保证1.800V；反馈比例/参考裕量需重新设计",
-    "Power/Control/Disconnect仍各有一处旧电路文字说明；本次检查未修改CAD"
+    "R42=1.15k表列0.75～1.25A不能保证持续1A；825Ω/610Ω为未选候选，保证阈值/USB/故障电流/接点/热尚未闭合",
+    "SW601官方FAQ支持BBM、系列DC额定覆盖；准确-5时序与样品双极转换/浪涌仍待确认；P2和识别支路改线仅建议，未采用",
+    "独立板型、WUSB3801/预算、双CDC、MEASURE锁及真实HID未实现",
+    "MOQ/实际备损、PCB/SMT/THT/换料/运输未形成正式订单报价；本轮没有刷新报价",
+    "晶体负载/起振、按钮机构与ARM20键槽实物配合待测",
+    "K601转换抖动/续流释放、Q902默认关断与OFF泄漏、放电时间/热待测；50ms仅初值，USB范围变更不取消禁止主动放电约束",
+    "U901实际COM/浮置NC及20～30°C漏电未签核；40nA仅暂留预算，USB=0单器件1µA不是整板掉电隔离保证",
+    "DUT_OUT回读已取消；实际电压、掉压和放电完成依赖外部仪器，不以设定/寄存器/PG替代",
+    "VIO当前反馈低端调节余量不足；候选100k/21k/169k仅条件筛选，LDO压差/精度与DAC参考电压下的INL覆盖有缺项；精度/校准要求未确定，未换阻值",
+    "VIO启动/动态负载/热、电感损耗、电容降额、1A/2A路径温升/浪涌及整机电气性能均未实测"
   ],
   "mcp": {
     "standard_server_modified": false,
@@ -321,8 +324,8 @@
     "temporary_tools_removed": true,
     "new_project_symbol_library": "HSLinkLP:DG2012EDL-T1-GE3; existing project sym-lib-table",
     "task_pricing_browser_closed": true,
-    "cleanup_note": "已删除本轮及沿用前轮的临时MCP适配器/客户端、一次性Python脚本和专用Chrome缓存；常驻MCP安装保留。",
-    "temporary_tools_cleanup": "本轮专用Chrome9344、/private/tmp/hslink-vref脚本/适配器/缓存/临时验证工程已删除；报告仅留在忽略目录"
+    "cleanup_note": "本轮一次性MCP客户端/自由文字适配器、UV脚本与提取缓存已删除；证据仅在忽略reports，常驻MCP和上游未改",
+    "temporary_tools_cleanup": "本轮一次性MCP客户端/自由文字适配器、UV脚本与提取缓存已删除；证据仅在忽略reports，常驻MCP和上游未改"
   },
   "level_translation_review": {
     "decision": "用户确认：12 x SN74LVC1T45DBVR 已落地，40 MHz 保留待实测",
@@ -346,46 +349,46 @@
     ".vscode/extensions.json": "4fff4e87cf75e019f555ac5b7cd303dd5250fc9280a733249bf0c7d555f47ed3",
     "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
     "HSLink-LP.code-workspace": "ce138222cb6ad122838d00b117f3869a22439c92f372e65d42883081a0b38535",
-    "README.md": "5f38237df582d617cda080a28f1f7e35d326dd78eea512dbfbe1afaa5482400a",
-    "docs/architecture.md": "044e5878cc0f29ee9e1ca29920744be2c101a2e2831decddeaf386fd85fbd63e",
-    "docs/arm20-interface.md": "035c850b9b7fa9ea85ca3eae7cef7d7d7e5b4450e3c1bbe69f71bbcef89af38a",
-    "docs/control-interface.md": "8103b254c1b0e78f4d5f95ab30f140b3f7894c89e673e017e0640e12e9e991f1",
-    "docs/cost-down.md": "6f3649f8e8f6d18ac3d8ae64e7c2e782ed0a614e52716316f34a97ba65c1b50f",
-    "docs/cost.md": "e53f428e57d72c9148e6411c50ccd7cd7de4f4652ada7d286cd040a4cc255a21",
-    "docs/costdown-pinmap.md": "6f379f921feecf0fe709c06297658f91d860b38904945e5f752f1c530dbe5ec0",
-    "docs/jlc-design-review.md": "e5611215cb27a4aef742a2653484fe460ede99269e78d522d0edbc9db3389a97",
+    "README.md": "3fab2baa03e7d98eae5742166f3c199ff9859545a986ccca8e661a8236d59987",
+    "docs/architecture.md": "66b7f2524c6d5371cad999c1ab2b8facd1d6ab579adf15b2a76c42bb35d77fc9",
+    "docs/arm20-interface.md": "38d1f8ab67fbaa3f9aa597b79defee8ed3bebf7a14fd1ee7b7721c35353a7163",
+    "docs/control-interface.md": "04237021de2c1a820fd1595394d91e3ec7862df8248fea5163bf44142de974f8",
+    "docs/cost-down.md": "855f1c954b423ac0197f641c26b0ac45c3ea4fd1ea7a3c3d2aae71901bd87ad7",
+    "docs/cost.md": "f30dbb9568a542a918f15e9345db2d6f3a554822e539f385437211becc42523c",
+    "docs/costdown-pinmap.md": "407af5cd2e0839d693a95466c87aae7c2c55783cadbe869bcbdcf9187deeae9e",
+    "docs/jlc-design-review.md": "a085bb25708abc32f65f8204c36bd73812cb13977163053274a3f543c4a11b28",
     "docs/jlc-pinmap.md": "df024fd77e59330bacff20ebb26ebfddf322135aae530d60c6147398bfb096fa",
     "docs/kicad-integration.md": "58c2d84105cd2fc8c212f22a1e3013ed5f38f4639b325a7713d2938ac4d2727d",
-    "docs/level-translation.md": "48d7b1f2cc33f3e88cd8a3373199e7544158c9f3fa9219152cc6d236b8d29cca",
-    "docs/procurement-completion.md": "fa6ff8d8008832293344cb214bcf46cd04ffd4a2b1ea6c804122c94dd5f0670a",
+    "docs/level-translation.md": "0db9fad6fcdd96191a6a21c804d6620c91bbb2a0f73165bae430bf89c5d9099b",
+    "docs/procurement-completion.md": "6177164a97799e0d21669cc7d35d55d71dc50cd07da2b5beea4bac9f36ed96f1",
     "docs/procurement-pinmap.md": "2f73f2bf8b312c5f4de2be407515bab4cc1b56088567a497ddd23f86ec327238",
-    "docs/references.md": "1441bc8df9b623322bbc0d8750b9f4564ed52279ae3f3641c55ed1965663dfcf",
-    "docs/requirements.md": "9196fe5660179a998d52f8af7b757f466f1fdb563ae61d6380e1aa956a281fd8",
+    "docs/references.md": "268339d923de77c3b452f4defebfbbf83808c5ac4f7f5ea8f79e1aa0044e5fc3",
+    "docs/requirements.md": "23ea8e01922ae43058f93e350f9d79f53bcb8d6777d8ba3f3584fd2006859d02",
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
-    "docs/sense-discharge.md": "8abe82dbe31cdb516109e1385ab7bded4db68caf7feb6088876b46f774a1e445",
+    "docs/sense-discharge.md": "60bd16b721f775669695d5ee562e0e1a2f511928ec93718b8d328cc32d34dd01",
     "docs/upstream-swd-timing.md": "01a31d841718c829a9d58eb85b6f30ca7a856279238446736841e30200316d57",
     "docs/upstream.md": "7337084ef16707a9c9ba5812d329700b4bbdb225278c40a2f9f34f314f0ac12d",
-    "docs/validation.md": "312f7ffa94e8bfede63ac5b07c9183690e9e8b730d1cd6bd904027af196fa02b",
+    "docs/validation.md": "ce743c55bc74472c9701985a8e29d0bcf36198c734cb48ee0c0ed752068fea53",
     "docs/vref-pinmap.md": "2bb0b080d2400335029d65b7e1ef6611754acdc30f963c0e43eb314a1f52d8fe",
     "firmware/README.md": "763cbb49c35eda023e61f45f0bb7d523d635dfbf18ba8d977f7da5f4eca20f36",
     "hardware/README.md": "b8a1e1ad5b5e363b4130f53607661fe356976729d235a5d7f58b38118b36b817",
-    "hardware/bom/accessories.csv": "d9e5d1a692275e7474684bbff775538eaaa6197e0e25673e7d3b08649b14a509",
-    "hardware/bom/candidates.csv": "995e39fe1de3af43d5f7992ccd56351df62cd1691618472c54d83e7c351c014b",
-    "hardware/bom/cost-summary.json": "c6b9447121124709fb5f425149dd279b89e83a708ebac371208ca5e396a9041b",
+    "hardware/bom/accessories.csv": "8c201804416ad92fb68601198ad86894307bb8dfaf822cb746e0632d9d3f9da9",
+    "hardware/bom/candidates.csv": "269e8adf531206262e190d7be3e96d86fff1fc1157ec1fed8c0a244fea0d575d",
+    "hardware/bom/cost-summary.json": "3abf03e6f6bf0df7d5e56cc29484bfae750f07ee42a12a0eed465c29f48590f4",
     "hardware/bom/jlc-quotes.json": "e5fbc39f92b9b7134e476f4120866bf6827e6b64c66cd29ec5e3d6296380ea97",
-    "hardware/design/Control.kicad_sch": "9b2bac74e217c3c410f314b2c243ead065628a036aa0b5cd020071e298de271c",
-    "hardware/design/Disconnect.kicad_sch": "492bf70d21099c45dc2a33c03f74acaa570f37a99a2a8d516c14bb661c030512",
+    "hardware/design/Control.kicad_sch": "d068dbe2406fe30e03ca11b8a7f533f890725e0eb7eb44da1c9404ce026a9f99",
+    "hardware/design/Disconnect.kicad_sch": "b7acb2419692089010644cf5d23f179998ecc360104e0c26bfd8ee767795d9ea",
     "hardware/design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
     "hardware/design/HSLink-LP.kicad_sch": "5632478428c021f3c39319f599ddffbc752e1c4adc3014035e7a5c708efb4ed1",
     "hardware/design/Interface.kicad_sch": "d2d262f08dcd02f60693060a0c1b241d68ca9d9100ec4c61d271aceac1daa260",
     "hardware/design/LogicTranslation.kicad_sch": "6b67946881709161acddc542d91df6324e31bf56b3246c07902171e3a2775d3a",
-    "hardware/design/Power.kicad_sch": "beeb0297fba3adc9716deda13035aacba1f9c580fecf3ac2ce89a5485f5a3a00",
-    "hardware/design/README.md": "ac9b37633e0652396a78c20d7961ea8c62da47b577119f694fd0b73f6c13545a",
+    "hardware/design/Power.kicad_sch": "f275365ad8a8d54780170eda78b3a84b32d467bce57da42d31ea0e3f4b520c20",
+    "hardware/design/README.md": "06e8d0f321da2346f6e2459354c19e04055c89e2ad29fb9388dd585df2ddffc1",
     "hardware/design/Safety.kicad_sch": "0a095b816cdb14482d6605345489c9ca4f2c54d705424657074a621a75fdfeb9",
     "hardware/design/Sense.kicad_sch": "c3a796cc830fdbc3fa764d53eab2331729191e3486523c18067421c4c7623055",
     "hardware/design/TargetPower.kicad_sch": "566fd60598ab3d2138e3f98e9e91611ed22810923f4de608312d9bcba6cbfc30",
     "hardware/design/UPSTREAM-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "hardware/design/connectivity.json": "00961821ae22ab91f4d0c1f6a14dfa9abd7b9a2293357823d8a33eea4ba7c8e2",
+    "hardware/design/connectivity.json": "b785107204b3181a43cb00c248694775341f72d7dd43c81002cfbab00dd4f951",
     "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
     "hardware/design/libraries/HSLink-upstream-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "hardware/design/libraries/HSLinkLP.kicad_sym": "e7f05e8a1381e81717b84bce86247eb527306afb967d5e55e1f96086c9ff31f5",
@@ -405,7 +408,8 @@
     "host/src/hslink_lp/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
     "host/src/hslink_lp/cli.py": "e4263371ead085566a0bbdd931fce4eefd23137d923f707ef05bc81c2d9d638d",
     "tools/fetch_upstream.py": "506962188f1e536fb1025cfc26dd5c1016d37fc9952b4ad920f4e4025237b85a",
-    "upstream.lock.json": "1325caffec12a6067fcd36cfbdd4ee9c63488ebd2b74e9b17cc9f2fba73c79a9"
+    "upstream.lock.json": "1325caffec12a6067fcd36cfbdd4ee9c63488ebd2b74e9b17cc9f2fba73c79a9",
+    "docs/electrical-margins.md": "d8d3b06d8dfc500d7671241b9515ba903da4d98f7447fd5107a132c990c92385"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -715,7 +719,32 @@
     "design/reports/kicad10-format-2026-11-07/symbol-semantic-diff.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "design/reports/kicad10-format-2026-11-07/upgrade-log.json": "f1bd5e624c72f95cd6c19b810aeeac0db5e57e6fb1ca87281d464ef652fc8764",
     "design/reports/kicad10-format-2026-11-07/upgrade-mcp.json": "0e1483345560e3235e87aa223ea9e7250c74d049a754505211b577a7e1eceffa",
-    "design/reports/kicad10-format-2026-11-07/review.md": "8d604150ed1b09b38490a98fa39f1c0bb0fac88ac0a4f048491928eac9648dc4"
+    "design/reports/kicad10-format-2026-11-07/review.md": "8d604150ed1b09b38490a98fa39f1c0bb0fac88ac0a4f048491928eac9648dc4",
+    "design/reports/decisions-2026-11-07/MCP4726-22272C.pdf": "f89f3345410b50130f5b83b90aa2e63fd58c5ffbbb8ad8b9dca0c3cdbfe6ccd2",
+    "design/reports/decisions-2026-11-07/after-erc.json": "68677dddf5c7154a18b520cc4bf41a3b2f226994c621190092d1f71c5068bedc",
+    "design/reports/decisions-2026-11-07/after-native-mcp.json": "1db112a09a68f18805af73ceb78714fd23a01d2504f2c09ee9aa453ef87305e3",
+    "design/reports/decisions-2026-11-07/after-native.pdf": "82a3258054a583c96e6a57267dc3e3dc3b8489d190bec5d04d47f264b1bc58ea",
+    "design/reports/decisions-2026-11-07/after-netlist-mcp.json": "58cefae918fa01975176eeb82ae2ecb09e76a567690e947098a8bc94dc207fdc",
+    "design/reports/decisions-2026-11-07/after-pdf-mcp.json": "5b812e86bf6455cf0f9998db223995d8b7bcefedd5cd0f1c5a0467d0e26a63a5",
+    "design/reports/decisions-2026-11-07/after.pdf": "1e3b159fc860bb929bb2886c8c10b3760c7b5856a93a04733cba812df62dfb77",
+    "design/reports/decisions-2026-11-07/after.xml": "0bef315feb560099b8c1668aa08948ce0c3a61711016a5e23c35ea8d0dd042fe",
+    "design/reports/decisions-2026-11-07/annotation-edits.json": "794e498230866ef291b63988b924ef5f2a29d14d5e51889c2612bd6f34806cbc",
+    "design/reports/decisions-2026-11-07/before-erc.json": "68677dddf5c7154a18b520cc4bf41a3b2f226994c621190092d1f71c5068bedc",
+    "design/reports/decisions-2026-11-07/before-netlist-mcp.json": "6c6be9049a7b5d2f5bdd6bfdfb6dee9b139c47d82c89728b7610349277323c73",
+    "design/reports/decisions-2026-11-07/before-pdf-mcp.json": "928a846461c0c00730e8cd4579e64e892fc91dd31969c28bae9c7108c81972f0",
+    "design/reports/decisions-2026-11-07/before.pdf": "ccf5db40980bf17c1c08833f78a131bf6049fcbe02e6582d3a2d06d068dfb20e",
+    "design/reports/decisions-2026-11-07/before.xml": "4b9496074514e9e258ee20ae2a53de8adb858b9fbb5de6b56f37c2f52e126296",
+    "design/reports/decisions-2026-11-07/calculations.json": "068136d9a2f2216f10cb927a24d84dbacff7a4e26ba678fdf07d61391fb92110",
+    "design/reports/decisions-2026-11-07/checks.json": "25b599bec359a51030930eef997595a96d4c8e025c786c1403f6c99e6727d3c0",
+    "design/reports/decisions-2026-11-07/native-2-142.png": "2cb66e12daa25d13568aa68ad719364dcc78581d1d1230ff097728377a47cffe",
+    "design/reports/decisions-2026-11-07/native-5-148.png": "d6953da1c60039927fbf47dd0dd03c54da5fcc19b44d4a9e8b8c5382984f2240",
+    "design/reports/decisions-2026-11-07/native-8-17.png": "bd76f550dae901fce7c177ce86f3ae395d081c5fc48d36473f629d45f2e86c81",
+    "design/reports/decisions-2026-11-07/native-8-86.png": "5443844ee35638cc9da4de74da366b865168405279c12628763bc6d53c283fb2",
+    "design/reports/decisions-2026-11-07/page-2.png": "ee93107ef425b2787d6ae59a50cec5d013ae13ce5b4257869798c8ad8eb2a298",
+    "design/reports/decisions-2026-11-07/page-5.png": "0defedd2ed55f8f4f04a102080c953974f84322e9757717966540b147dfe526f",
+    "design/reports/decisions-2026-11-07/page-8.png": "3c187807b594efd5cf6604c3aed94b0a98862f60dfa5cbc38fe1d1e2de8ed91a",
+    "design/reports/decisions-2026-11-07/prior-review.json": "a359b0a131f672537797361dc99b2f089472a49fc83cdc037b6a248479b968c6",
+    "design/reports/decisions-2026-11-07/review.md": "5cede8d12087aa1b1ef28c4c91a17a7fc7075fdc3ae01db497d7425c71a91f5c"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -861,9 +890,9 @@
   },
   "checked_commit": "e1c21160cddf4f834cc591037b3883a5461645af",
   "schematic_review": {
-    "checked_at": "2026-11-07T13:04:20.019248+08:00",
-    "baseline_commit": "e1c21160cddf4f834cc591037b3883a5461645af",
-    "verdict": "INCOMPLETE — review could not evaluate the full design",
+    "checked_at": "2026-11-07T13:48:23.043601+08:00",
+    "baseline_commit": "2f51e2b5c056fd8ea8b4667e0c549c604367dfb1",
+    "verdict": "INCOMPLETE — electrical margins and hardware qualification remain open; text/connectivity checks pass",
     "hardware_readiness": "NOT_READY",
     "saved_schematic_file_coverage": {
       "status": "complete",
@@ -883,11 +912,11 @@
     "electrical_qualification_coverage": "partial: limits, timing, leakage, transient/thermal and exact source-switch qualification remain open",
     "pcb_drc": "not applicable; PCB not designed",
     "whole_footprint_dimensions_revalidated": false,
-    "cad_modified": false,
-    "bom_modified": false,
+    "cad_modified": true,
+    "bom_modified": true,
     "upstream_modified": false,
-    "source_hashes_match_previous_validation": true,
-    "source_hash_count": 65,
+    "source_hashes_match_previous_validation": false,
+    "source_hash_count": 66,
     "erc_errors": 0,
     "erc_warnings": 0,
     "new_erc_ignores": [],
@@ -898,16 +927,17 @@
     "findings": [
       {
         "id": "R1",
-        "priority": 1,
-        "classification": "conditional_absolute_maximum_violation",
-        "status": "OPEN",
+        "priority": null,
+        "classification": "accepted_support_scope_limitation",
+        "status": "ACCEPTED_SCOPE_LIMITATION",
         "references": [
           "U801",
           "U802",
           "U803",
           "U804"
         ],
-        "summary": "USB掉电而目标仍驱动时FSA模拟端可能超过VCC+0.3V；控制断开不能解决，需硬件方案"
+        "summary": "用户确认首版不支持USB掉电而目标仍供电的FSA保护；目标信号连接期间保持USB供电，不单为此加保护/换FSA；并非电路已具备掉电保护",
+        "hardware_fixed": false
       },
       {
         "id": "R2",
@@ -922,7 +952,8 @@
           "U901",
           "J801"
         ],
-        "summary": "25°C14路FSA上限求和140nA；覆盖20～30°C的全温表值保守求和700nA，另有检测/线束/PCB；不是实测值"
+        "summary": "整夹具目标改140nA，20～30°C与测量定义不变。14路FSA的25°C上限和已140nA，全温表值保守和700nA；U901暂留40nA及线束/PCB未闭合。不是实测或700nA获准",
+        "actual_port_state_checked": true
       },
       {
         "id": "R3",
@@ -933,7 +964,8 @@
           "U503",
           "R42"
         ],
-        "summary": "1.15k限流表值0.75～1.25A，不能保证持续1A负载"
+        "summary": "R42仍1.15k，0.75～1.25A不能保证持续1A；825Ω筛选1.076～1.832A未获该档保证，610Ω表值上限2.46A需重核USB/电源/触点故障预算；未选定阈值或改器件",
+        "candidate_values_adopted": false
       },
       {
         "id": "R4",
@@ -951,29 +983,34 @@
           "R59",
           "R60"
         ],
-        "summary": "25°C允许容差组合、理想DAC满码仍最低约1.821565V；不能保证调到1.800V，非整板最坏上界或实测"
+        "summary": "当前100k/21.5k/200k低端余量不足；100k/21k/169k条件筛选双端余量为35.5/70.4mV，但LDO实际压差下精度与DAC3.3V INL条件缺口未闭合；允许精度未定，未改阻值",
+        "candidate_values_adopted": false,
+        "full_worst_case_closed": false
       },
       {
         "id": "R5",
         "priority": 1,
-        "classification": "procurement_electrical_evidence_gap",
+        "classification": "exact_part_and_sample_confirmation",
         "status": "OPEN",
         "references": [
           "SW601"
         ],
-        "summary": "准确型号BBM/DC尚未签核；MBB若存在会短接来源电源，第二极还可能短接P3V3/GND；未断言器件实际MBB"
+        "summary": "官方FAQ支持SPDT BBM/DPDT两组SPDT，2M Q触点3A/28VDC覆盖额定；准确-5料号未专列转换保证。不能因缺项认定会短接；保留型号接线，首板测两极转换/浪涌",
+        "recommended_priority": 2,
+        "recommendation_status": "ASSISTANT_PROPOSAL_NOT_USER_CONFIRMED_NOT_APPLIED",
+        "source_id_rewire_adopted": false
       },
       {
         "id": "R6",
         "priority": 2,
         "classification": "stale_schematic_annotations",
-        "status": "OPEN",
+        "status": "FIXED_TEXT_ONLY",
         "sheets": [
           "Power",
           "Control",
           "Disconnect"
         ],
-        "summary": "检测继电器、TPS63811、VTref经K901三处旧说明与当前电路不符"
+        "summary": "Power改U901检测/K601NC+Q902放电、Disconnect改U901隔离采样、Control改TPS63810；另补USB供电边界。无电气改动，无硬件性能签核"
       },
       {
         "id": "R7",
@@ -983,7 +1020,7 @@
         "summary": "验证摘要的板上10%备损情景127.5161同步到成本源124.5295，未改BOM/报价"
       }
     ],
-    "report": "design/reports/schematic-review-2026-11-07/review.md",
+    "report": "design/reports/decisions-2026-11-07/review.md",
     "visual_review": {
       "pdf": "design/reports/schematic-review-2026-11-07/schematic.pdf",
       "font": "Arial Unicode MS",
@@ -1010,7 +1047,25 @@
         "confirmed_electrical_short_or_symbol_body_overlap": 0,
         "notes": "Power U1 multi-unit bounding-box false positives; Interface FAULT/C25 stem crossing has no junction and independent nets; visual/manual corroboration"
       },
-      "stale_notes": 3
+      "stale_notes": 0,
+      "current_update": {
+        "pdf": "design/reports/decisions-2026-11-07/after.pdf",
+        "pages_inspected": [
+          2,
+          5,
+          8
+        ],
+        "unchanged_pages_pixels_identical": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          9
+        ],
+        "native_font_review": "PASS: all four updated free-text regions inspected; no new overlap",
+        "changes": "4 free-text strings only; native KiCad10 format retained"
+      }
     },
     "mcp": {
       "installed_server": "mixelpixx/KiCAD-MCP-Server 2.8.3",
@@ -1030,14 +1085,25 @@
         "file-only backend; no proof of unsaved editor contents"
       ],
       "temporary_tools_removed": true,
-      "cleanup": "本轮一次性MCP客户端、uv Python检查脚本及临时图像缓存已删除；PDF/XML/JSON/PNG/报告只保留在忽略的reports目录"
+      "cleanup": "本轮一次性MCP客户端/自由文字适配器、UV脚本与提取缓存已删除；证据仅在忽略reports，常驻MCP和上游未改",
+      "current_tools": [
+        "get_schematic_component",
+        "list_schematic_texts",
+        "run_erc",
+        "export_netlist",
+        "export_sch_pdf",
+        "temporary.sync_confirmed_annotations"
+      ]
     },
     "retained_acceptance_targets": [
       "40MHz SWD/JTAG",
-      "25±5°C fixture additional current <=0.1uA",
+      "20–30°C fixture additional current <=140nA; original powered/disconnected measurement definition",
       "internal 1.8–5V up to 1A / external 1.8–5.5V up to 2A"
     ],
-    "historical_sections_note": "Existing visual_review and design-change sections retain their original timestamps; this section is the current all-nine-page review."
+    "historical_sections_note": "此前九页审查和512组稳定逻辑记录作为历史证据保留；本轮重新执行完整网表/ERC和两种字体的修改页图面检查，未重做实板或瞬态检查。",
+    "bom_modification_scope": "engineering_status wording only; MPN, quantity, package, price unchanged",
+    "previous_review_evidence": "design/reports/decisions-2026-11-07/prior-review.json",
+    "stable_logic_evidence_scope": "此前512组稳定逻辑检查；本轮连接未变，不是新硬件或瞬态测试"
   },
   "format_upgrade": {
     "checked_at": "2026-11-07T13:24:24.436270+08:00",
@@ -1181,5 +1247,236 @@
       "hardware/design/libraries/UpstreamCache.kicad_sym": "22241c62c2b41373c6d070942315426b605ce85f0fd0e64695d6e2664d26d192",
       "hardware/design/sym-lib-table": "263d1f47eef04cd35a11a48d192ea5761fa7c8380e1ba633870f372ddf9b7c2b"
     }
+  },
+  "decision_sync": {
+    "checked_at": "2026-11-07T13:48:23.043601+08:00",
+    "baseline_commit": "2f51e2b5c056fd8ea8b4667e0c549c604367dfb1",
+    "record": "docs/electrical-margins.md",
+    "report": "design/reports/decisions-2026-11-07/review.md",
+    "confirmed_user_decisions": {
+      "fixture_additional_current_target_na": 140,
+      "temperature_c": [
+        20,
+        30
+      ],
+      "measurement_definition_unchanged": true,
+      "fsa_usb_off_target_powered_protection": "outside first-revision support scope; debugger USB must remain powered during target signal connection"
+    },
+    "not_user_confirmed": [
+      "700nA target",
+      "25C-only temperature",
+      "SW601 P1-to-P2 reprioritization",
+      "source-ID pole pull-up/single-ground rewire",
+      "new R42 limit/value",
+      "new VIO feedback values",
+      "relaxed VIO accuracy"
+    ],
+    "actual_changes": [
+      "4 schematic free-text strings on Power/Control/Disconnect",
+      "requirements/design/test-plan wording and review findings",
+      "BOM/accessory/cost/connectivity descriptive status only"
+    ],
+    "electrical_changes": [],
+    "component_or_footprint_changes": [],
+    "calculation_results": "design/reports/decisions-2026-11-07/calculations.json",
+    "calculation_status": "CONDITIONAL_SCREENING_NOT_SELECTION_OR_HARDWARE_QUALIFICATION",
+    "current_limit_selected": false,
+    "vio_candidate_selected": false,
+    "leakage_closed": false,
+    "price_refresh_performed": false,
+    "material_delta_per_board_cny": "0.0000",
+    "material_delta_batch_10_cny": "0.0000",
+    "checks": {
+      "netlist_sections_unchanged": {
+        "components": true,
+        "libparts": true,
+        "libraries": true,
+        "nets": true
+      },
+      "components": 194,
+      "connected_nets": 117,
+      "connected_pins": 675,
+      "isolated_nc_pins": 45,
+      "intent_connectivity_match": true,
+      "dut_vref_only": [
+        "J801.1",
+        "U901.5"
+      ],
+      "dut_out_only": [
+        "J602.1",
+        "K601.4"
+      ],
+      "K901_absent": true,
+      "ADC_VOUT_absent": true,
+      "unchanged_pages_pixels_identical": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "changed_pages": [
+        2,
+        5,
+        8
+      ],
+      "all_electrical_connections_unchanged": true,
+      "fsa_actual_net_pins": {
+        "U801": {
+          "DEBUG_ON": [
+            "10",
+            "2"
+          ],
+          "DUT_SWDIO": [
+            "15"
+          ],
+          "DUT_TCK": [
+            "3"
+          ],
+          "DUT_TDI": [
+            "7"
+          ],
+          "DUT_TDO": [
+            "11"
+          ],
+          "F_SWDIO": [
+            "16"
+          ],
+          "F_TCK": [
+            "4"
+          ],
+          "F_TDI": [
+            "8"
+          ],
+          "F_TDO": [
+            "12"
+          ],
+          "GND": [
+            "6"
+          ],
+          "P3V6_SW": [
+            "14"
+          ]
+        },
+        "U802": {
+          "F_UART_A_DTR": [
+            "8"
+          ],
+          "F_UART_A_RTS": [
+            "12"
+          ],
+          "F_UART_A_RX": [
+            "4"
+          ],
+          "F_UART_A_TX": [
+            "16"
+          ],
+          "GND": [
+            "6"
+          ],
+          "Net-(J803-Pin_1)": [
+            "15"
+          ],
+          "Net-(J803-Pin_2)": [
+            "3"
+          ],
+          "Net-(J803-Pin_3)": [
+            "7"
+          ],
+          "Net-(J803-Pin_4)": [
+            "11"
+          ],
+          "P3V6_SW": [
+            "14"
+          ],
+          "UART_A_ON": [
+            "10",
+            "2"
+          ]
+        },
+        "U803": {
+          "F_UART_B_DTR": [
+            "8"
+          ],
+          "F_UART_B_RTS": [
+            "12"
+          ],
+          "F_UART_B_RX": [
+            "4"
+          ],
+          "F_UART_B_TX": [
+            "16"
+          ],
+          "GND": [
+            "6"
+          ],
+          "Net-(J804-Pin_1)": [
+            "15"
+          ],
+          "Net-(J804-Pin_2)": [
+            "3"
+          ],
+          "Net-(J804-Pin_3)": [
+            "7"
+          ],
+          "Net-(J804-Pin_4)": [
+            "11"
+          ],
+          "P3V6_SW": [
+            "14"
+          ],
+          "UART_B_ON": [
+            "10",
+            "2"
+          ]
+        },
+        "U804": {
+          "DUT_NRST": [
+            "15"
+          ],
+          "DUT_NTRST": [
+            "3"
+          ],
+          "F_NRST": [
+            "16"
+          ],
+          "F_NTRST": [
+            "4"
+          ],
+          "GND": [
+            "10",
+            "6"
+          ],
+          "P3V6_SW": [
+            "14"
+          ],
+          "RESET_ON": [
+            "2"
+          ]
+        }
+      },
+      "upstream_modified": false,
+      "bom_material_fields_and_prices_unchanged": true,
+      "connectivity_intent_only_engineering_status_changed": true,
+      "components_and_footprints_unchanged": true,
+      "hardware_tests_executed": false,
+      "native_font_changed_regions_inspected": true,
+      "arial_changed_pages_inspected": [
+        2,
+        5,
+        8
+      ],
+      "new_visual_overlap_found": false,
+      "material_price_numeric_fields_unchanged": true,
+      "only_expected_three_cad_files_changed": true,
+      "old_formatted_sources_preserved_except_four_text_strings": true
+    },
+    "schematic_format_preserved": "KiCad10 / 20260306",
+    "hardware_tests_executed": false,
+    "temporary_tools_removed": true,
+    "installed_mcp_modified": false,
+    "mcp_method": "installed server exports/ERC/component reads; temporary fixed-text-only adapter used because installed server has no general free-text edit tool",
+    "cleanup": "Removed /private/tmp/hslink-decisions clients/adapters/UV helper scripts/extracted text; reports remain ignored; no global MCP or upstream changes"
   }
 }

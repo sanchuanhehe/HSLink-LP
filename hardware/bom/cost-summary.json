@@ -59,9 +59,9 @@
     "TPS63810启动3.3V需固件隔离与编程时序；R42典型1A限流不能保证1A负载",
     "PCB未设计，YFF 0.4mm逃线/钢网/DFM、贴装和通孔制造价未知",
     "实际MOQ/备损/换料优惠/运费未下单确认；当前是裸材料完整快照",
-    "配套排线C7496759绝缘≥5MΩ不足以保证0.1µA；打样配套未通过低漏电和20cm/40MHz验收",
+    "配套排线C7496759绝缘≥5MΩ不足以保证0.14µA；打样配套未通过低漏电和20cm/40MHz验收",
     "K601 NC+Q902放电为资料/连接审查；转换抖动、续流释放、复位/掉电栅极状态和OFF泄漏待实测；50ms非保证值",
-    "U901只保护Vref COM；USB掉电最大1µA表值、供电跌落中间区及全板100nA待验证；无DUT实测电压，无法内部确认掉压/放电完成。"
+    "U901只保护Vref COM；USB掉电最大1µA是U901单器件表值，整夹具140nA未验收；带电目标下USB掉电的FSA保护属首版使用限制；无DUT实测电压，无法内部确认掉压/放电完成。"
   ],
   "translator_review": {
     "source": "../../docs/level-translation.md",
@@ -149,7 +149,7 @@
     "cable_length_mm": 200,
     "cable_minimum_insulation_ohm": 5000000,
     "cable_leakage_at_3v3_over_5M_example_ua": 0.66,
-    "qualification": "资料/软件检查；防反插实物配合、20cm 40MHz与整夹具0.1µA未实测"
+    "qualification": "资料/软件检查；防反插实物配合、20cm 40MHz与整夹具0.14µA未实测"
   },
   "sense_discharge_optimization": {
     "record": "../../docs/sense-discharge.md",

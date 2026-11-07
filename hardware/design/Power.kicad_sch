@@ -4402,7 +4402,7 @@
 		)
 		(uuid "23723c3b-8d7b-4970-9755-54e8e1dae278")
 	)
-	(text "检测 / 放电改为 5 V 机械继电器，已删除本分区升压电路。\n3.6 V 辅助电源同时供给 FSA2466 与 VIO LDO。"
+	(text "Vref 检测由 U901 隔离；放电复用 K601 NC + Q902。\n3.6 V 辅助电源供给 FSA2466 与 VIO LDO。"
 		(exclude_from_sim no)
 		(at 149.86 118.11 0)
 		(effects

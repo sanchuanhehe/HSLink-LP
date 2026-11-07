@@ -3561,7 +3561,7 @@
     "display_value": "DG2012EDL-T1-GE3",
     "mpn": "DG2012EDL-T1-GE3",
     "lcsc": "C2673178",
-    "engineering_status": "资料/引脚核对；25±5°C整夹具100nA、掉电瞬态和ADC误差待实测",
+    "engineering_status": "资料/引脚核对；20～30°C整夹具140nA及ADC误差待实测；FSA带电目标下USB掉电保护不在首版支持范围",
     "procurement_specification": "单SPDT/SC-70-6；COM掉电保护；NC不接；USB_5V供电；Vref仅1.8～3.3V"
   },
   {

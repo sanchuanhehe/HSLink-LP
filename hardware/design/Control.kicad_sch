@@ -1452,7 +1452,7 @@
 		)
 		(uuid "a8e05a07-8a48-48b1-a2ab-aeb6ff72e24a")
 	)
-	(text "I2C_SCL / I2C_SDA：共用 4.7k 上拉。\n0x68  WUSB3801（USB-C）\n0x60  MCP4726A0（VIO DAC）\n0x74  TCA9539（GPIO）\n0x75  TPS63811（目标供电）\n100 kHz 起步，400 kHz 须验证上升时间。\nDAC 使用 VDD 参考，初始化后再使能 VIO。"
+	(text "I2C_SCL / I2C_SDA：共用 4.7k 上拉。\n0x68  WUSB3801（USB-C）\n0x60  MCP4726A0（VIO DAC）\n0x74  TCA9539（GPIO）\n0x75  TPS63810（目标供电）\n100 kHz 起步，400 kHz 须验证上升时间。\nDAC 使用 VDD 参考，初始化后再使能 VIO。"
 		(exclude_from_sim no)
 		(at 153.67 40.64 0)
 		(effects

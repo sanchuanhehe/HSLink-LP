@@ -2269,7 +2269,7 @@
 		)
 		(uuid "0b0eb96d-dbf3-4b0c-904f-4c8e95bbb239")
 	)
-	(text "FSA2466：A → B1 为连接，B0 悬空。控制 0 = 断开。\n信号仅 1.8～3.3 V；USB 掉电隔离不保证。"
+	(text "FSA2466：A → B1 连接，B0 悬空；控制 0 = 断开。\n信号 1.8～3.3 V；连接目标信号期间须保持 USB 供电。"
 		(exclude_from_sim no)
 		(at 19.05 181.61 0)
 		(effects
@@ -2280,7 +2280,7 @@
 		)
 		(uuid "31b403cd-4269-4d18-8d0d-484423d73448")
 	)
-	(text "ARM20 / 2.54 mm / 带键\nNC：2、11、17、19；接口不供电\nVTref 经 K901 检测断开；目标供电用 J602"
+	(text "ARM20 / 2.54 mm / 带键\nNC：2、11、17、19；接口不供电\nVTref 经 U901 隔离采样；目标供电用 J602"
 		(exclude_from_sim no)
 		(at 88.9 80.01 0)
 		(effects
