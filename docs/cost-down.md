@@ -74,6 +74,6 @@ FSA2466 14 个使用通道的 25°C 最大漏电预算已达 140 nA，未计 PCB
 
 电平转换后续按用户确认采用 12 颗 SN74LVC1T45DBVR，原 U305/C32 及 XLAT_OEn 已删除；默认偏置、独立 VIO 与 FSA 测量锁流程见 [电平转换实施](level-translation.md)。40 MHz 保持待实测。
 
-当前采购后缀和补齐检查以 [procurement-completion.md](procurement-completion.md) 为准：U502已从DBVR改DRVR并接地EP；U503料号纠正，1.15k仅典型1A限流，完整1A验收仍待关闭。
+当前采购后缀和补齐检查以 [procurement-completion.md](procurement-completion.md) 为准：U502已从DBVR改DRVR并接地EP；U503料号已纠正；R42随后改为用户接受的806Ω±0.1%打样方案，典型限流约1.487A，无该档厂家上下限保证。投用前逐板持续1A/过载/短路/温升门槛见[余量说明](electrical-margins.md)，尚未实测验收。
 
 上述VIO公式仍对应现行阻值，不能据此宣称双端容差已闭合；本轮候选筛选与未采用理由见[余量说明](electrical-margins.md)。

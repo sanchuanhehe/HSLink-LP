@@ -4960,11 +4960,10 @@
 				)
 			)
 		)
-		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
-			(at 0 -10.16 0)
+		(property "Description" "仅内置电源支路；1.8V可用；限流阈值由外部电阻设定，非精密恒流；按功能重排引脚，物理编号不变" (at 0 -10.16 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)

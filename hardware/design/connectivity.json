@@ -1926,25 +1926,25 @@
     "display_value": "TPS22950CDDCR",
     "mpn": "TPS22950CDDCR",
     "lcsc": "C7587833",
-    "engineering_status": "纠正无效DDCR型号；R42=1.15k对应典型1A、手册0.75-1.25A，不能保证1A输出；限流/热待闭合",
+    "engineering_status": "R42=806Ω±0.1%打样方案；无该档厂家限流窗口保证；逐板持续1A/过载/短路/温升投用前必验；外部2A支路不经过U503",
     "procurement_specification": "SOT23-6限流开关; 自动重试/反向阻断"
   },
   {
     "reference": "R42",
     "symbol": "Device:R",
-    "value": "1.15k",
+    "value": "806R",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
       "1": "INT_ILIM",
       "2": "GND"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
-    "display_value": "1.15k",
-    "mpn": "0603WAF1151T5E",
-    "lcsc": "C22834",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω"
+    "datasheet": "https://atta.szlcsc.com/upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
+    "display_value": "806R",
+    "mpn": "RT0603BRD07806RL",
+    "lcsc": "C861567",
+    "engineering_status": "用户接受低成本打样；典型限流约1.487A；806Ω档无厂家保证上下限；逐板持续1A/过载/短路/温升投用前必验",
+    "procurement_specification": "806Ω;±0.1%;±25ppm/°C;100mW;75V;薄膜;0603"
   },
   {
     "reference": "C47",

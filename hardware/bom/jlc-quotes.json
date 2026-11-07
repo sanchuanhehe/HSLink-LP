@@ -4006,8 +4006,8 @@
       "page_shows_book_price": false,
       "moq": null,
       "purchase_increment": null,
-      "adopted": false,
-      "note": "R42 candidate, pending user decision; excluded from current BOM",
+      "adopted": true,
+      "note": "用户接受R42低成本打样方案；已纳入当前BOM，逐板持续1A/过载/短路/温升投用前必验；非硬件验收。价格/库存沿用所列同日本轮读取时间，未重新锁价或预留。",
       "evidence": "hardware/design/reports/margins-2026-11-07/C861567.json"
     }
   ],

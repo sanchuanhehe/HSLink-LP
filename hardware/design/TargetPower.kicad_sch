@@ -1672,11 +1672,11 @@
 					)
 				)
 			)
-			(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+			(property "Description" "仅内置电源支路；1.8V可用；限流阈值由外部电阻设定，非精密恒流；按功能重排引脚，物理编号不变"
 				(at 0 -10.16 0)
+				(hide yes)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6104,7 +6104,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.15k"
+		(property "Value" "806R"
 			(at 153.67 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6126,7 +6126,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6148,7 +6148,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1151T5E"
+		(property "MPN" "RT0603BRD07806RL"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6159,7 +6159,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22834"
+		(property "LCSC" "C861567"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6170,7 +6170,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω"
+		(property "Specification" "806Ω;±0.1%;±25ppm/°C;100mW;75V;薄膜;0603"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6181,7 +6181,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "用户接受低成本打样；典型限流约1.487A；806Ω档无厂家保证上下限；逐板持续1A/过载/短路/温升投用前必验"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6853,7 +6853,7 @@
 				)
 			)
 		)
-		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+		(property "Description" "仅内置电源支路；1.8V可用；806Ω对应典型限流约1.487A，非精密恒流；物理编号不变"
 			(at 144.78 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6897,7 +6897,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "纠正无效DDCR型号；R42=1.15k对应典型1A、手册0.75-1.25A，不能保证1A输出；限流/热待闭合"
+		(property "EngineeringStatus" "R42=806Ω±0.1%打样方案；无该档厂家限流窗口保证；逐板持续1A/过载/短路/温升投用前必验；外部2A支路不经过U503"
 			(at 144.78 50.8 0)
 			(hide yes)
 			(show_name no)
