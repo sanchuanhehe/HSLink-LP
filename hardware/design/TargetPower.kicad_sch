@@ -4766,16 +4766,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 120.65) (xy 123.19 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b308a4d5-0780-41ef-b6fe-b9f30e7e9d80")
-	)
-	(wire
-		(pts
 			(xy 227.33 154.94) (xy 227.33 157.48)
 		)
 		(stroke
@@ -5026,16 +5016,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 120.65) (xy 123.19 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3fe42f7-0a0c-4693-b7cb-ae7211821872")
-	)
-	(wire
-		(pts
 			(xy 58.42 30.48) (xy 55.88 30.48)
 		)
 		(stroke
@@ -5113,16 +5093,6 @@
 			(type default)
 		)
 		(uuid "f35a9769-e4d1-424c-8d4f-845c22799456")
-	)
-	(wire
-		(pts
-			(xy 123.19 158.75) (xy 96.52 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f940995a-7dbc-4aa9-b522-1c6cc3d443fe")
 	)
 	(wire
 		(pts
@@ -6743,7 +6713,7 @@
 				)
 			)
 		)
-		(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, SOT-23-5"
+		(property "Description" "500mA adjustable LDO, WSON-6 with exposed ground pad"
 			(at 63.5 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6787,7 +6757,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "同系列DRV换封装；功能映射及EP接地核对；VIO反馈/调压功能保留；实测待办"
+		(property "EngineeringStatus" "VIN改接USB_5V提高3.3V端压差；反馈10k/2.15k/15.4k；校准、纹波、启动、热待实测"
 			(at 63.5 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6987,7 +6957,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "21.5k"
+		(property "Value" "2.15k"
 			(at 99.06 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7042,7 +7012,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD0721K5L"
+		(property "MPN" "RT0603BRD072K15L"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7053,7 +7023,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C705747"
+		(property "LCSC" "C861292"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7064,7 +7034,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ"
+		(property "Specification" "2.15kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7075,7 +7045,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -8804,7 +8774,7 @@
 		(dnp no)
 		(uuid "b49f6d5d-f555-42c3-9fff-e5ff9e6c3077")
 		(property "Reference" "R60"
-			(at 87.63 115.57 90)
+			(at 86.36 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8814,8 +8784,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 92.71 115.57 90)
+		(property "Value" "15.4k"
+			(at 95.25 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8869,7 +8839,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD07200KL"
+		(property "MPN" "RT0603BRD0715K4L"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8880,7 +8850,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C728585"
+		(property "LCSC" "C861142"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8891,7 +8861,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ"
+		(property "Specification" "15.4kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8902,7 +8872,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9844,7 +9814,7 @@
 				)
 			)
 		)
-		(property "Value" "P3V6_SW"
+		(property "Value" "USB_5V"
 			(at 25.4 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10666,7 +10636,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "10k"
 			(at 99.06 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10721,7 +10691,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD07100KL"
+		(property "MPN" "RT0603BRD0710KL"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10732,7 +10702,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C122538"
+		(property "LCSC" "C95204"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10743,7 +10713,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ"
+		(property "Specification" "10kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10754,7 +10724,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10933,6 +10903,47 @@
 				)
 			)
 		)
+	)
+	(text "VIO：逐板外部校准；精度目标 ±1%，实板待验收。"
+		(exclude_from_sim no)
+		(at 17.78 187.96 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f40b5b74-9181-48fa-a1d0-23d393194cdd")
+	)
+	(label "VIO_FB"
+		(at 101.6 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e35f33af-2458-4800-abf8-c66d44963988")
+	)
+	(wire
+		(pts
+			(xy 93.98 120.65) (xy 101.6 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5226e8f2-1b8d-443b-a84b-34d688ab3b9d")
+	)
+	(wire
+		(pts
+			(xy 96.52 158.75) (xy 105.41 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc48ec60-a423-4d89-ae3d-5d035b704621")
 	)
 	(sheet_instances
 		(path "/"

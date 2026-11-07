@@ -1842,7 +1842,7 @@
     "footprint": "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm",
     "sheet": "TargetPower",
     "nets": {
-      "6": "P3V6_SW",
+      "6": "USB_5V",
       "3": "GND",
       "4": "VIO_EN",
       "2": "VIO_FB",
@@ -1864,7 +1864,7 @@
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
-      "1": "P3V6_SW",
+      "1": "USB_5V",
       "2": "GND"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf",
@@ -2519,7 +2519,7 @@
   {
     "reference": "R58",
     "symbol": "Device:R",
-    "value": "100k/0.1%/0.1W",
+    "value": "10k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
@@ -2536,7 +2536,7 @@
   {
     "reference": "R59",
     "symbol": "Device:R",
-    "value": "21.5k/0.1%/0.1W",
+    "value": "2.15k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {
@@ -2553,7 +2553,7 @@
   {
     "reference": "R60",
     "symbol": "Device:R",
-    "value": "200k/0.1%/0.1W",
+    "value": "15.4k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "TargetPower",
     "nets": {

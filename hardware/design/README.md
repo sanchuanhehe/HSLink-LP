@@ -60,3 +60,5 @@ MEASURE 保持目标供电，同时断开调试、复位、双 UART 握手、Vre
 上游 HPM5301 及晶体缓存符号保留在 `libraries/UpstreamCache.kicad_sym`，原 Apache-2.0 许可保留为 `libraries/HSLink-upstream-LICENSE`。未修改 `hardware/reference/`。
 
 2026-11-07边界同步：修正Power/Control/Disconnect三处旧说明，并补充连接目标信号时保持USB供电。重新导出网表/ERC及图面，电气连接未变；140nA、R42和VIO余量仍未验收。见[设计说明](../../docs/electrical-margins.md)。
+
+VIO当前使用USB_5V→TLV75801，反馈10k/2.15k/15.4k；保持DAC和封装，逐板外部校准、±1%目标待验收。见[余量说明](../../docs/electrical-margins.md)。

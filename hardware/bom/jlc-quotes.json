@@ -3,7 +3,7 @@
   "currency": "CNY",
   "tax_included": true,
   "snapshot_date_local": "2026-11-07",
-  "note": "库存/价格取渲染商品详情；2026-11-07六种本轮复核，C20917显示报价后再次出现验证，记录如实保留；C81598等其余料沿用同日本地日期快照。不锁库；预订/SSR参考价不充当现货报价。",
+  "note": "库存/价格取渲染商品详情；2026-11-07六种本轮复核，C20917显示报价后再次出现验证，记录如实保留；C81598等其余料沿用同日本地日期快照。不锁库；预订/SSR参考价不充当现货报价。 本轮VIO新三种电阻详情复核；旧R58/R59重读，旧R60刷新触发访问验证，保持旧同日快照。",
   "quotes": [
     {
       "componentCode": "C83528",
@@ -3843,6 +3843,172 @@
       "purchase_increment": null,
       "evidence": "hardware/design/reports/vref-only-2026-11-07/C2673178.json",
       "verification_overlay_after_render": false
+    },
+    {
+      "componentCode": "C95204",
+      "componentModel": "RT0603BRD0710KL",
+      "componentBrand": "YAGEO(国巨)",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:10kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C95204.html",
+      "retrieved_at": "2026-11-07T06:01:44.241Z",
+      "rendered_stock": 1947210,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.184
+        },
+        {
+          "start": 200,
+          "price": 0.154
+        },
+        {
+          "start": 600,
+          "price": 0.141
+        },
+        {
+          "start": 5000,
+          "price": 0.129
+        },
+        {
+          "start": 10000,
+          "price": 0.125
+        },
+        {
+          "start": 20000,
+          "price": 0.122
+        }
+      ],
+      "page_shows_book_price": false,
+      "moq": null,
+      "purchase_increment": null,
+      "evidence": "hardware/design/reports/margins-2026-11-07/C95204.json"
+    },
+    {
+      "componentCode": "C861292",
+      "componentModel": "RT0603BRD072K15L",
+      "componentBrand": "YAGEO(国巨)",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:2.15kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C861292.html",
+      "retrieved_at": "2026-11-07T06:01:46.214Z",
+      "rendered_stock": 6301,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.359
+        },
+        {
+          "start": 100,
+          "price": 0.31
+        },
+        {
+          "start": 300,
+          "price": 0.286
+        },
+        {
+          "start": 1000,
+          "price": 0.267
+        },
+        {
+          "start": 5000,
+          "price": 0.252
+        },
+        {
+          "start": 10000,
+          "price": 0.245
+        }
+      ],
+      "page_shows_book_price": false,
+      "moq": null,
+      "purchase_increment": null,
+      "evidence": "hardware/design/reports/margins-2026-11-07/C861292.json"
+    },
+    {
+      "componentCode": "C861142",
+      "componentModel": "RT0603BRD0715K4L",
+      "componentBrand": "YAGEO(国巨)",
+      "componentSpecification": "0603",
+      "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:15.4kΩ",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C861142.html",
+      "retrieved_at": "2026-11-07T06:01:48.214Z",
+      "rendered_stock": 1464,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.359
+        },
+        {
+          "start": 100,
+          "price": 0.31
+        },
+        {
+          "start": 300,
+          "price": 0.286
+        },
+        {
+          "start": 1000,
+          "price": 0.267
+        },
+        {
+          "start": 5000,
+          "price": 0.253
+        },
+        {
+          "start": 10000,
+          "price": 0.245
+        }
+      ],
+      "page_shows_book_price": false,
+      "moq": null,
+      "purchase_increment": null,
+      "evidence": "hardware/design/reports/margins-2026-11-07/C861142.json"
+    },
+    {
+      "componentCode": "C861567",
+      "componentModel": "RT0603BRD07806RL",
+      "componentBrand": "YAGEO(国巨)",
+      "componentSpecification": "0603",
+      "paramTextAll": "806Ω;0.1%;25ppm/°C;100mW;75V",
+      "orderLibraryType": "expand",
+      "source_url": "https://www.jlc-smt.com/lcsc/detail/C861567.html",
+      "retrieved_at": "2026-11-07T06:01:50.207Z",
+      "rendered_stock": 1731,
+      "rendered_price_rows": [
+        {
+          "start": 1,
+          "price": 0.213
+        },
+        {
+          "start": 200,
+          "price": 0.183
+        },
+        {
+          "start": 600,
+          "price": 0.166
+        },
+        {
+          "start": 5000,
+          "price": 0.155
+        },
+        {
+          "start": 10000,
+          "price": 0.147
+        },
+        {
+          "start": 20000,
+          "price": 0.142
+        }
+      ],
+      "page_shows_book_price": false,
+      "moq": null,
+      "purchase_increment": null,
+      "adopted": false,
+      "note": "R42 candidate, pending user decision; excluded from current BOM",
+      "evidence": "hardware/design/reports/margins-2026-11-07/C861567.json"
     }
   ],
   "updated_at": "2026-11-07"
