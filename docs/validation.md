@@ -47,3 +47,5 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 样板编号、硬件/固件版本、仪器型号及校准信息、温湿度、电源和信号电平、接线照片、测试步骤、原始数据路径、结果与限制。
 
 本轮电感/CC/VIO 前级换料的资料分析见 [jlc-design-review.md](jlc-design-review.md)；电平转换尚未闭合的最坏时序与实测条件见 [level-translation.md](level-translation.md)。
+
+上游采样/换向的源码依据与前置测试测点见 [upstream-swd-timing.md](upstream-swd-timing.md)。SWD 按整周期、JTAG TDO 按半周期分别检查；包含 HPM SPI 输入建立/保持时间。不得用段间等待、下载成功或 CPU 读 DATA 的时刻代替段内输入采样裕量。

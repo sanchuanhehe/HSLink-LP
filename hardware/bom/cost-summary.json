@@ -132,5 +132,16 @@
     "Y1/按钮是采购候选，不代表时钟和机械验证",
     "PCB 未设计，无法给出制造订单总价",
     "MOQ/备损要求/换料费/贴装服务和运输未下单确认"
-  ]
+  ],
+  "translator_review": {
+    "source": "../../docs/upstream-swd-timing.md",
+    "swd_read_window": "one clock period; previous half-period model withdrawn",
+    "preferred_validation_candidate": "12 x SN74LVC1T45DBVR",
+    "adopted": false,
+    "realized_savings_cny": 0,
+    "candidate_items_only_saving_batch_10_cny": 153.468,
+    "candidate_cost_scope": "仅芯片、去耦、转换芯片换料费情景；不含额外偏置、焊点、面积、备损、MOQ",
+    "quote_rechecked_this_review": false,
+    "qualification": "1.8V SWD and JTAG 40MHz timing not closed; current LXC not qualified either"
+  }
 }
