@@ -5924,7 +5924,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 			(at 73.66 147.32 0)
 			(effects
 				(font
@@ -5933,12 +5933,14 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200227/C318890_053E50208A88A7BA1965D8746000774E.pdf"
 			(at 73.66 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 73.66 152.4 0)
@@ -5949,18 +5951,42 @@
 				(hide yes)
 			)
 		)
-    (property "MPN" "TL3342F260QG" (at 73.66 152.4 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C2886894" (at 73.66 152.4 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "BOOT1" (at 73.66 152.4 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认" (at 73.66 152.4 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "TS-1187A-B-A-B"
+			(at 73.66 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C318884"
+			(at 73.66 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specification" "12V/50mA SPST-NO; H=1.5mm; 160gf"
+			(at 73.66 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "功能及四端子/两电气节点映射已核对；操作力/整机机构待实测"
+			(at 73.66 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "622fe9ab-e4c2-4392-ae90-b359c2b56d85")
 		)
@@ -6284,7 +6310,7 @@
 				(hide no)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
 			(at 142.24 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -6296,7 +6322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200227/C318890_053E50208A88A7BA1965D8746000774E.pdf"
 			(at 142.24 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -6304,7 +6330,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
 			(at 142.24 160.02 0)
@@ -6317,22 +6345,42 @@
 				)
 			)
 		)
-		(property "Specification" "RESET"
+		(property "Specification" "12V/50mA SPST-NO; H=1.5mm; 160gf"
 			(at 142.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "TL3342F260QG" (at 142.24 160.02 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C2886894" (at 142.24 160.02 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认" (at 142.24 160.02 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "TS-1187A-B-A-B"
+			(at 142.24 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C318884"
+			(at 142.24 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "功能及四端子/两电气节点映射已核对；操作力/整机机构待实测"
+			(at 142.24 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "15ffe1bd-b392-4d06-be4c-173a542e9731")
 		)

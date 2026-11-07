@@ -3,95 +3,21 @@
   "tax_included": true,
   "prototype_quantity": 10,
   "updated_at": "2026-11-07",
-  "baseline_commit": "996f6b8",
-  "status": "完整位号已覆盖，报价未齐；非可下单整板报价",
+  "baseline_commit": "a75267e9c664a8c5521df49eb9d99e4ea88dc895",
+  "status": "全部采购位号已取得同日嘉立创现货含税阶梯价；非订单锁价，非硬件验收",
   "physical_references": 200,
-  "quoted_references_including_test_pad": 189,
-  "bom_per_board": null,
-  "bom_batch": null,
-  "quoted_material_subtotal_per_board": 112.6726,
-  "quoted_material_subtotal_batch": 1126.726,
-  "unquoted": [
-    {
-      "references": [
-        "SW1",
-        "SW2"
-      ],
-      "mpn": "TL3342F260QG",
-      "lcsc": "C2886894",
-      "qty_per_board": 2,
-      "status": "仅预订参考",
-      "reference_price_only": 3.11
-    },
-    {
-      "references": [
-        "D101",
-        "D102"
-      ],
-      "mpn": "TPD2E2U06DCKR",
-      "lcsc": "C1855726",
-      "qty_per_board": 2,
-      "status": "仅预订参考",
-      "reference_price_only": 0.733
-    },
-    {
-      "references": [
-        "R38"
-      ],
-      "mpn": "450k/1%",
-      "lcsc": null,
-      "qty_per_board": 1,
-      "status": "无准确现货报价",
-      "reference_price_only": null
-    },
-    {
-      "references": [
-        "U501"
-      ],
-      "mpn": "TPS63811YFFR",
-      "lcsc": "C1852138",
-      "qty_per_board": 1,
-      "status": "仅预订参考",
-      "reference_price_only": 22.21
-    },
-    {
-      "references": [
-        "U503"
-      ],
-      "mpn": "TPS22950DDCR",
-      "lcsc": null,
-      "qty_per_board": 1,
-      "status": "无准确现货报价",
-      "reference_price_only": null
-    },
-    {
-      "references": [
-        "U502"
-      ],
-      "mpn": "TLV75801PDBVR",
-      "lcsc": "C2877852",
-      "qty_per_board": 1,
-      "status": "仅预订参考",
-      "reference_price_only": 0.297
-    },
-    {
-      "references": [
-        "D601",
-        "D901",
-        "D902"
-      ],
-      "mpn": "1N4148W-7-F",
-      "lcsc": "C83528",
-      "qty_per_board": 3,
-      "status": "仅预订参考",
-      "reference_price_only": 0.0936
-    }
-  ],
+  "quoted_references_including_test_pad": 200,
+  "bom_per_board": 133.2215,
+  "bom_batch": 1332.215,
+  "quoted_material_subtotal_per_board": 133.2215,
+  "quoted_material_subtotal_batch": 1332.215,
+  "unquoted": [],
   "spares": {
     "policy": "仅情景：每种料十套实用量的 10%，逐种向上取整；不是厂家实际备损要求",
-    "quoted_subset_extra_material": 112.6726,
-    "quoted_subset_purchase_with_spares": 1239.3986,
-    "full_spares_cost": null
+    "quoted_subset_extra_material": 133.2215,
+    "quoted_subset_purchase_with_spares": 1465.4365,
+    "full_spares_cost": 133.2215,
+    "scope": "全部199个板上采购位号，10%示例；配套排线备损另列，实际JLC备损/MOQ未确认"
   },
   "moq_leftovers": null,
   "pcb": null,
@@ -101,9 +27,9 @@
   "stencil": null,
   "feeder_fee": {
     "assumed_per_expanded_smt_sku_per_order": 20,
-    "expanded_smt_skus_with_known_library_type": 32,
-    "base_smt_skus": 15,
-    "known_sku_scenario_cny": 640,
+    "expanded_smt_skus_with_known_library_type": 31,
+    "base_smt_skus": 19,
+    "known_sku_scenario_cny": 620,
     "full_order_quote": null,
     "note": "不含通孔件；不同子型号按不同种类；无优惠券，实际免换料/可贴状态以订单为准"
   },
@@ -129,10 +55,11 @@
     "previous_candidate_snapshot_all_single": 4.92
   },
   "limitations": [
-    "U501 缺货和缺封装；U502/ESD/二极管/按钮仅预订参考；R38 与 U503 准确报价未落实",
-    "Y1/按钮是采购候选，不代表时钟和机械验证",
-    "PCB 未设计，无法给出制造订单总价",
-    "MOQ/备损要求/换料费/贴装服务和运输未下单确认"
+    "晶体负载/起振、按钮机构、BBM/DC额定及全部实板性能未验收",
+    "TPS63810启动3.3V需固件隔离与编程时序；R42典型1A限流不能保证1A负载",
+    "PCB未设计，YFF 0.4mm逃线/钢网/DFM、贴装和通孔制造价未知",
+    "实际MOQ/备损/换料优惠/运费未下单确认；当前是裸材料完整快照",
+    "配套排线C7496759绝缘≥5MΩ不足以保证0.1µA；打样配套未通过低漏电和20cm/40MHz验收"
   ],
   "translator_review": {
     "source": "../../docs/level-translation.md",
@@ -174,5 +101,52 @@
       "actual order feeder discounts",
       "unquoted materials"
     ]
+  },
+  "procurement_completion": {
+    "baseline_commit": "a75267e9c664a8c5521df49eb9d99e4ea88dc895",
+    "resolved_original_references": 11,
+    "added_references": [
+      "R401"
+    ],
+    "previous_partial_subtotal": 112.6726,
+    "added_material_per_board": 20.2919,
+    "net_savings_vs_previous_complete_bom": null,
+    "reason": "此前11位号缺价，无法计算本轮完整同口径净节省；补齐成本不是涨价比较",
+    "quote_policy": "新选8种MPN复核2026-11-07；其他现用物料沿用同日本地日期已记录有效现货快照；库存未预留"
+  },
+  "accessories": {
+    "source": "accessories.csv",
+    "per_kit_cny": 3.843,
+    "batch_10_cny": 38.43,
+    "spares_10_percent_scenario_cny": 3.843,
+    "low_leakage_qualified": false
+  },
+  "kit_material_per_unit_cny": 137.0645,
+  "kit_material_batch_10_cny": 1370.645,
+  "kit_material_with_spares_batch_10_cny": 1507.7095,
+  "kit_material_spares_feeder_scenario_batch_10_cny": 2127.7095,
+  "arm20_interface": {
+    "record": "../../docs/arm20-interface.md",
+    "j801_mpn": "2.54-2*10P简牛",
+    "j801_lcsc": "C3405",
+    "deleted": [
+      "J802"
+    ],
+    "cable_lcsc": "C7496759",
+    "connector_and_cable_per_kit_cny": 4.736,
+    "board_material_delta_cny": 0.257,
+    "kit_material_delta_vs_previous_no_cable_cny": 4.1,
+    "previous_complete_board_snapshot_cny": 132.9645,
+    "unused_pins": [
+      2,
+      11,
+      17,
+      19
+    ],
+    "target_supply_on_debug_connector": false,
+    "cable_length_mm": 200,
+    "cable_minimum_insulation_ohm": 5000000,
+    "cable_leakage_at_3v3_over_5M_example_ua": 0.66,
+    "qualification": "资料/软件检查；防反插实物配合、20cm 40MHz与整夹具0.1µA未实测"
   }
 }

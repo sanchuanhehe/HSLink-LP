@@ -17,7 +17,7 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 
 版面修改也必须核对网表。对每个标签，检查文字是否被导线、引脚或符号边框穿过，移动后是否仍有明确接点；电源汇线应避开引脚编号。对自定义符号，核对引脚线内端与边框、脚名位置，并确认脚号、电气类型和外部连接端坐标未被排版操作改动。分别查看默认字体和实际阅读字体的导出图；过滤空白字符后的文本包围盒检测只能作为辅助。
 
-最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/lvc12-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
+最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/bom-completion-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
 
 ## 硬件验收
 
@@ -51,3 +51,7 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 上游采样/换向的源码依据与前置测试测点见 [upstream-swd-timing.md](upstream-swd-timing.md)。SWD 按整周期、JTAG TDO 按半周期分别检查；包含 HPM SPI 输入建立/保持时间。不得用段间等待、下载成功或 CPU 读 DATA 的时刻代替段内输入采样裕量。
 
 本次 12 颗单路方案已加入 R713 默认接收及夹具侧偏置。重点新增实测：FSA 断开后返回输入稳定、MCU 启动与 SWD_DIR 默认状态无争用、无 OE 条件下 VIO 斜坡及恢复顺序。40 MHz 保持原验收目标，未实测项不得记作 PASS。
+
+采购补齐后重点增加：TPS63810默认3.3V在K601断开期间的编程/欠压恢复、DRV散热EP、R38+R401反馈稳定性、替代续流二极管的释放时间。R42=1.15k的0.75～1.25A限流范围尚不能保证1A连续负载，须作为设计门槛处理。详见 [采购补齐设计说明](procurement-completion.md)。
+
+ARM20新增来料与实板项目：逐根1↔1至20↔20导通/无异针短路，公母键槽与1脚方向实际插合；确认2/11/17/19不与任何供电或负载相连。检查第1针VTref及3/15复位在MEASURE中的断开。用20cm配套排线分别测试SWD/JTAG 40MHz和1.8/3.3V，包括换向读回、过冲/串扰；≤10cm短线仅作基准。排线手册绝缘≥5MΩ不满足整夹具100nA的保证条件，须覆盖目标高电平/VTref到地芯和其他芯线的泄漏；若实测失败，换高绝缘短线/定制线并重核价，不降低指标。

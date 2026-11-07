@@ -5049,6 +5049,159 @@
 				)
 			)
 		)
+		(symbol "HSLinkLP:TPD2E2U06DRLR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPD2E2U06DRLR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-553"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(property "Description" "DRL five-pin exact mapping: NC1/NC2/IO1=3/GND4/IO2=5; existing drawing endpoints retained"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(symbol "TPD2E2U06DRLR_0_1"
+				(rectangle
+					(start -6.35 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPD2E2U06DRLR_1_1"
+				(pin passive line
+					(at -7.62 1.27 0)
+					(length 1.27)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -1.27 0)
+					(length 1.27)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 6.35 1.27 180)
+					(length 1.27)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 6.35 -1.27 180)
+					(length 1.27)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(title_block
 		(title "USB-C、输入保护与功率预算")
@@ -7044,258 +7197,6 @@
 				)
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:TPD2E2U06DCKR")
-		(at 234.95 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "84775c7c-56a1-40a8-89f6-17b64149dc24")
-		(property "Reference" "D101"
-			(at 242.57 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "TPD2E2U06DCKR"
-			(at 242.57 33.019999999999996 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 234.95 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf"
-			(at 234.95 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB 侧保护；DCK：1=IO1、2=IO2、3=GND；1.5pF 典型，5.5V VRWM；按功能重排引脚，物理编号不变"
-			(at 234.95 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "TPD2E2U06DCKR / VBUS"
-			(at 234.95 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TPD2E2U06DCKR"
-			(at 234.95 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1855726"
-			(at 234.95 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
-			(at 234.95 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85250f93-a2a9-4fe2-bd55-f73e2c1d9474")
-		)
-		(pin "2"
-			(uuid "0df3b2ed-9ffc-4a43-86a7-c8910cc39ea1")
-		)
-		(pin "3"
-			(uuid "be0aaf77-c4ee-47f5-93f6-6719409d9a12")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "D101")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "D101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:TPD2E2U06DCKR")
-		(at 234.95 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "72a69c5b-4522-42c7-a5f5-df69af309c96")
-		(property "Reference" "D102"
-			(at 242.57 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "TPD2E2U06DCKR"
-			(at 242.57 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 234.95 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf"
-			(at 234.95 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB 侧保护；DCK：1=IO1、2=IO2、3=GND；1.5pF 典型，5.5V VRWM；按功能重排引脚，物理编号不变"
-			(at 234.95 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "TPD2E2U06DCKR / USB HS"
-			(at 234.95 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TPD2E2U06DCKR"
-			(at 234.95 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1855726"
-			(at 234.95 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
-			(at 234.95 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "561d7251-a9a4-4cfc-bb21-c781954f379c")
-		)
-		(pin "2"
-			(uuid "14fc9529-a735-44ad-8fd3-2a7378019d28")
-		)
-		(pin "3"
-			(uuid "5c9f225c-d38e-4a79-9067-1f3189351b63")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "D102")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -10113,6 +10014,256 @@
 			(justify right)
 		)
 		(uuid "37bc1455-14fd-47ca-ae1d-76346acd1a0e")
+	)
+	(symbol
+		(lib_id "HSLinkLP:TPD2E2U06DRLR")
+		(at 234.95 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3744d0b0-f8b5-4b55-91a2-f1beb9a947a4")
+		(property "Reference" "D101"
+			(at 242.57 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPD2E2U06DRLR"
+			(at 242.57 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-553"
+			(at 234.95 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf"
+			(at 234.95 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 侧保护；DCK：1=IO1、2=IO2、3=GND；1.5pF 典型，5.5V VRWM；按功能重排引脚，物理编号不变"
+			(at 234.95 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "双路ESD; 5.5V VRWM; 1.5pF典型"
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPD2E2U06DRLR"
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1972959"
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "同系列DRL封装替换；3=IO1/5=IO2/4=GND/1,2=NC；USB眼图与ESD待实测"
+			(at 234.95 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57cf757d-18e8-40d9-917d-1c2d36f41f2f")
+		)
+		(pin "2"
+			(uuid "df5935aa-dd5a-40e0-9800-11b5358429eb")
+		)
+		(pin "3"
+			(uuid "b35a3a2d-0784-4632-be70-0cba75dd5d91")
+		)
+		(pin "4"
+			(uuid "f226eb31-c98d-409a-92b5-95f51dc33d76")
+		)
+		(pin "5"
+			(uuid "8fa8fb84-a42a-417b-b318-b60ac4295463")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
+					(reference "D101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HSLinkLP:TPD2E2U06DRLR")
+		(at 234.95 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7efbdbc3-72bc-4368-b1b2-58740f7ae58c")
+		(property "Reference" "D102"
+			(at 242.57 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPD2E2U06DRLR"
+			(at 242.57 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-553"
+			(at 234.95 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf"
+			(at 234.95 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 侧保护；DCK：1=IO1、2=IO2、3=GND；1.5pF 典型，5.5V VRWM；按功能重排引脚，物理编号不变"
+			(at 234.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Specification" "双路ESD; 5.5V VRWM; 1.5pF典型"
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPD2E2U06DRLR"
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1972959"
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "同系列DRL封装替换；3=IO1/5=IO2/4=GND/1,2=NC；USB眼图与ESD待实测"
+			(at 234.95 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d9d3326-6e8e-4e99-9ba8-973f6cb47250")
+		)
+		(pin "2"
+			(uuid "089b1c92-4b54-49a4-89e6-6d300471f29f")
+		)
+		(pin "3"
+			(uuid "0045bbce-d1c8-402d-8c9c-588cf79f8ccf")
+		)
+		(pin "4"
+			(uuid "90461eb6-d05b-445d-9bc0-c36312b26a79")
+		)
+		(pin "5"
+			(uuid "9975d7eb-a594-474f-888a-f05f2e936be2")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
+					(reference "D102")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"

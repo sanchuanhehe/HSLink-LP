@@ -2848,136 +2848,753 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:TPS63811YFFR")
-		(at 59.69 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "74c250e6-105f-48d5-9bd3-3abcd4b0b84d")
-		(property "Reference" "U501"
-			(at 69.85000000000001 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide no)
-			)
-		)
-		(property "Value" "TPS63811YFFR"
-			(at 69.85000000000001 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+		(symbol "HSLinkLP:TPS63810YFFR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tps63811.pdf"
-			(at 59.69 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "可在 ENABLE=0 时编程；电压步进 25 mV；关闭时自身输出放电；按功能重排引脚，物理编号不变"
-			(at 59.69 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Value" "TPS63810YFFR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "HSLinkLP:Texas_YFF0015_1.344x2.255mm_P0.4mm"
+				(at 0 -5.08 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63810.pdf"
+				(at 0 -7.62 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "可在 ENABLE=0 时编程；电压步进 25 mV；关闭时自身输出放电；按功能重排引脚，物理编号不变"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(property "MPN" "TPS63810YFFR"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS63810YFFR_0_1"
+				(rectangle
+					(start -7.62 11.43)
+					(end 7.62 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS63810YFFR_1_1"
+				(pin input line
+					(at -8.89 1.27 0)
+					(length 1.27)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -8.89 6.35 0)
+					(length 1.27)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -8.89 3.81 0)
+					(length 1.27)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -1.27 0)
+					(length 1.27)
+					(name "VSEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 12.7 270)
+					(length 1.27)
+					(name "LX1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 12.7 270)
+					(length 1.27)
+					(name "LX1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 1.27)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 1.27)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -10.16 90)
+					(length 1.27)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -3.81 0)
+					(length 1.27)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 12.7 270)
+					(length 1.27)
+					(name "LX2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 12.7 270)
+					(length 1.27)
+					(name "LX2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 -6.35 0)
+					(length 1.27)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "E1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 8.89 1.27 180)
+					(length 1.27)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "E2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -1.27 180)
+					(length 1.27)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "E3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 			)
 		)
-    (property "MPN" "TPS63811YFFR" (at 59.69 52.07 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C1852138" (at 59.69 52.07 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "TPS63811YFFR" (at 59.69 52.07 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "保留；嘉立创缺货，仅预订参考，封装未绑定" (at 59.69 52.07 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "A1"
-			(uuid "51f1a91c-2531-4890-912c-abf955daf346")
+		(symbol "Regulator_Linear:TLV75801PDRV"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.81 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLV75801PDRV"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+				(at 0 8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv758p.pdf"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, WSON-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ldo positive"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TLV75801PDRV_0_1"
+				(rectangle
+					(start 5.08 -5.08)
+					(end -5.08 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV75801PDRV_1_1"
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "DNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
-		(pin "A2"
-			(uuid "0e2ad05e-cbbb-4e5a-9c78-c13e99735b75")
-		)
-		(pin "A3"
-			(uuid "10bc77e6-990e-4fd3-8c42-3d956cbef625")
-		)
-		(pin "B1"
-			(uuid "67c819f5-9795-4e7e-8123-a79059e770dc")
-		)
-		(pin "B2"
-			(uuid "1369888e-6850-469d-a2cf-8b6882eee182")
-		)
-		(pin "B3"
-			(uuid "f710aa3b-d1a9-4d78-a7f1-d3d1c31b10e0")
-		)
-		(pin "C1"
-			(uuid "841e9896-b4bb-4a53-b8b9-fcb20729b975")
-		)
-		(pin "C2"
-			(uuid "dce2b439-0b67-455e-90b2-b076462e450c")
-		)
-		(pin "C3"
-			(uuid "12a73c94-1840-4ceb-bf30-e1942bbceb41")
-		)
-		(pin "D1"
-			(uuid "1ce2e5a5-34c7-4ed6-a0e3-0683cc03b059")
-		)
-		(pin "D2"
-			(uuid "c1e6a393-9e19-4529-8a8e-97d7e3c55d64")
-		)
-		(pin "D3"
-			(uuid "46a8a1c2-0bf4-43de-841f-42fe61efee6e")
-		)
-		(pin "E1"
-			(uuid "e13a26b4-5cf7-45b8-82d4-411eb69ce557")
-		)
-		(pin "E2"
-			(uuid "9dd65259-4f27-4025-b0fe-d5e65764f4a4")
-		)
-		(pin "E3"
-			(uuid "56acac76-f7d7-4a6c-a589-90dfd86da806")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
-					(reference "U501")
-					(unit 1)
+		(symbol "HSLinkLP:TPS22950CDDCR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPS22950CDDCR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 -5.08 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps22950.pdf"
+				(at 0 -7.62 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(property "MPN" "TPS22950CDDCR"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS22950CDDCR_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS22950CDDCR_1_1"
+				(pin input line
+					(at -7.62 -1.27 0)
+					(length 1.27)
+					(name "ON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 1.27 0)
+					(length 1.27)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -8.89 90)
+					(length 1.27)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -8.89 90)
+					(length 1.27)
+					(name "ILIM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 1.27 180)
+					(length 1.27)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 -1.27 180)
+					(length 1.27)
+					(name "FLTn"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 			)
 		)
@@ -3445,112 +4062,6 @@
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
 					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:TPS22950DDCR")
-		(at 144.78 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "21618658-2719-4916-8268-b16e7cc2f5a6")
-		(property "Reference" "U503"
-			(at 153.67 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide no)
-			)
-		)
-		(property "Value" "TPS22950DDCR"
-			(at 153.67 44.449999999999996 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide no)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 144.78 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps22950.pdf"
-			(at 144.78 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
-			(at 144.78 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-    (property "MPN" "TPS22950DDCR" (at 144.78 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "" (at 144.78 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "TPS22950DDCR" (at 144.78 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "保留 TPS22950DDCR；不自动改用故障行为不同的 TPS22950CDDCR" (at 144.78 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "e6acb7ad-cad1-4986-a6f4-bd36f190af00")
-		)
-		(pin "2"
-			(uuid "eaddc106-cd1b-480e-a5d5-264c27a1b138")
-		)
-		(pin "3"
-			(uuid "f03392e8-1173-4dc3-8f52-1cd7277dc9d8")
-		)
-		(pin "4"
-			(uuid "04dbabd1-3d29-45d0-a8c6-66a171218d9e")
-		)
-		(pin "5"
-			(uuid "82942983-0fe0-4bc4-a88c-892adb75ca73")
-		)
-		(pin "6"
-			(uuid "956f0945-df92-46fc-91c3-034b76809a8f")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
-					(reference "U503")
 					(unit 1)
 				)
 			)
@@ -4285,112 +4796,6 @@
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
 					(reference "#PWR26014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:TLV75801PDBV")
-		(at 63.5 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cffc567c-1a0a-46d3-9607-25530e2b6d5e")
-		(property "Reference" "U502"
-			(at 63.5 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide no)
-			)
-		)
-		(property "Value" "TLV75801PDBVR"
-			(at 63.5 135.89000000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 63.5 151.765 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tlv758p.pdf"
-			(at 63.5 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, SOT-23-5"
-			(at 63.5 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TLV75801PDBVR"
-			(at 63.5 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "LCSC" "C2877852" (at 63.5 143.51 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "TLV75801PDBVR" (at 63.5 143.51 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 63.5 143.51 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "8c8cf189-34cb-4030-8fb5-bde2c08138fc")
-		)
-		(pin "2"
-			(uuid "30fdcc57-d5bd-4623-9614-1c9260e110fc")
-		)
-		(pin "3"
-			(uuid "a979f96f-90a4-429f-851f-75ff52af25c2")
-		)
-		(pin "4"
-			(uuid "111cc308-1f89-400c-b451-69fb27082cae")
-		)
-		(pin "5"
-			(uuid "c4cd66b1-8f8d-4e2e-aad6-589629349228")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
-					(reference "U502")
 					(unit 1)
 				)
 			)
@@ -5613,7 +6018,7 @@
 				(hide no)
 			)
 		)
-		(property "Value" "1N4148W-7-F"
+		(property "Value" "1N4148W"
 			(at 204.47 127 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5635,7 +6040,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf"
 			(at 215.9 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5656,22 +6061,34 @@
 				)
 			)
 		)
-		(property "MPN" "1N4148W-7-F"
+		(property "MPN" "1N4148W"
 			(at 215.9 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				) (hide yes))
 		)
-    (property "LCSC" "C83528" (at 215.9 125.73 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "1N4148W-7-F" (at 215.9 125.73 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 215.9 125.73 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "LCSC" "C81598"
+			(at 215.9 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Specification" "先科/ST; SOD123; 75V/150mA"
+			(at 215.9 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "EngineeringStatus" "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测"
+			(at 215.9 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
 		(pin "1"
 			(uuid "3379b651-c423-4943-9f29-2b84d8dd1d37")
 		)
@@ -9033,6 +9450,395 @@
 			(justify right)
 		)
 		(uuid "b5a88bd3-ba60-40f5-8ac0-b4e76cb81b2d")
+	)
+	(symbol
+		(lib_id "HSLinkLP:TPS63810YFFR")
+		(at 59.69 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "999d701e-57de-44fa-928a-657810aa8039")
+		(property "Reference" "U501"
+			(at 69.85 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS63810YFFR"
+			(at 69.85 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "HSLinkLP:Texas_YFF0015_1.344x2.255mm_P0.4mm"
+			(at 59.69 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tps63811.pdf"
+			(at 59.69 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Description" "可在 ENABLE=0 时编程；电压步进 25 mV；关闭时自身输出放电；按功能重排引脚，物理编号不变"
+			(at 59.69 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPS63810YFFR"
+			(at 59.69 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "LCSC" "C1852139"
+			(at 59.69 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Specification" "I2C升降压; 1.8-5.2V器件范围，工程限制1.8-5.0V"
+			(at 59.69 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "EngineeringStatus" "启动默认3.3V；INT_EN下拉和K601常开保持；先隔离/编程/回读/稳定再闭合；固件及实板待验证"
+			(at 59.69 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(pin "A1"
+			(uuid "411007e9-fb66-4db6-9fca-216a34f6b7db")
+		)
+		(pin "A2"
+			(uuid "143a3ecc-201e-46b2-b34c-8ecce99a287d")
+		)
+		(pin "A3"
+			(uuid "7c418a40-b6e5-4e7f-823d-bd8005e7bd38")
+		)
+		(pin "B1"
+			(uuid "2e615879-f9b1-4efc-8de9-b06372f53507")
+		)
+		(pin "B2"
+			(uuid "94371490-3253-4219-8dce-8b6b440a52ab")
+		)
+		(pin "B3"
+			(uuid "017f499d-52ba-4191-a0a5-b7e53dec5acc")
+		)
+		(pin "C1"
+			(uuid "7e4c0152-9385-4c6f-946c-6fcea450b8ea")
+		)
+		(pin "C2"
+			(uuid "1187d73b-c915-4bbb-bf6e-e8469b7f22d4")
+		)
+		(pin "C3"
+			(uuid "f2134b97-da9d-4d78-a8f8-bac1cd1abd3a")
+		)
+		(pin "D1"
+			(uuid "c5626d4e-d095-4eb2-9a19-bc43f08a7c20")
+		)
+		(pin "D2"
+			(uuid "ec97cafe-1e35-49df-a55b-8a17933f51ec")
+		)
+		(pin "D3"
+			(uuid "fb5a4f5c-04ba-4333-b193-5fc8a6fcfe73")
+		)
+		(pin "E1"
+			(uuid "f87cbe1d-2142-486c-bdba-373212dcfdeb")
+		)
+		(pin "E2"
+			(uuid "8e1a0ea1-49ea-4578-8712-a2c2d4511364")
+		)
+		(pin "E3"
+			(uuid "8643eb71-04ea-4af9-a78d-1db0303e0f79")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
+					(reference "U501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV75801PDRV")
+		(at 63.5 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "405a3ae0-00f9-4578-b118-d71ff89a4085")
+		(property "Reference" "U502"
+			(at 63.5 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV75801PDRVR"
+			(at 63.5 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+			(at 63.5 151.765 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tlv758p.pdf"
+			(at 63.5 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, SOT-23-5"
+			(at 63.5 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TLV75801PDRVR"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "LCSC" "C2876308"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Specification" "可调LDO 0.55V参考; WSON-6+EP"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "EngineeringStatus" "同系列DRV换封装；功能映射及EP接地核对；VIO反馈/调压功能保留；实测待办"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(pin "1"
+			(uuid "99ff8180-05d9-4a0d-bdb9-3418a64d5ebc")
+		)
+		(pin "2"
+			(uuid "f89c2d0b-7d2c-4b1e-b62f-0c7ff386109f")
+		)
+		(pin "3"
+			(uuid "a3392bd9-9ddc-4b57-afe9-f1a8442b0ff9")
+		)
+		(pin "4"
+			(uuid "cd9e7d6b-1330-4612-bbba-134fe639ea38")
+		)
+		(pin "5"
+			(uuid "4a8f4ddf-3178-4e5d-a476-9aa5a0b0109b")
+		)
+		(pin "6"
+			(uuid "18fdf434-5210-4827-9e68-a55fe2e14559")
+		)
+		(pin "7"
+			(uuid "9e16b265-3105-447e-87d9-f3fce7250ce2")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
+					(reference "U502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HSLinkLP:TPS22950CDDCR")
+		(at 144.78 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46eabef8-7caa-4a29-b701-f6382c64199a")
+		(property "Reference" "U503"
+			(at 153.67 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS22950CDDCR"
+			(at 153.67 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 144.78 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20240112/1A8075912A175C65410C3082C2376C03.pdf"
+			(at 144.78 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+			(at 144.78 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPS22950CDDCR"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "LCSC" "C7587833"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Specification" "SOT23-6限流开关; 自动重试/反向阻断"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "EngineeringStatus" "纠正无效DDCR型号；R42=1.15k对应典型1A、手册0.75-1.25A，不能保证1A输出；限流/热待闭合"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(pin "1"
+			(uuid "26c21280-4b44-462a-8d49-b90480f1c547")
+		)
+		(pin "2"
+			(uuid "ba59f769-632c-47af-b243-298fe0a91bba")
+		)
+		(pin "3"
+			(uuid "7ee8c3a6-83c9-4804-8f93-ca4953f6d216")
+		)
+		(pin "4"
+			(uuid "ee57e218-4a3d-4c89-b3e5-f151692a2b1d")
+		)
+		(pin "5"
+			(uuid "71c2b4f5-3ae9-4581-b2e1-7b166827ee25")
+		)
+		(pin "6"
+			(uuid "4a59999d-54a7-434f-b9a0-26218b6e7cdf")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/47a44e8e-b4e0-4878-8a4a-85acca995fdc"
+					(reference "U503")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"

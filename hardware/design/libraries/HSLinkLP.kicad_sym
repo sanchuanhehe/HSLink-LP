@@ -1,7 +1,7 @@
-(kicad_symbol_lib 
-  (version 20241209) 
-  (generator "kicad_symbol_editor") 
-  (symbol "HPM5301IEG1"
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "kicad_symbol_editor")
+	(symbol "HPM5301IEG1"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -539,7 +539,7 @@
       )
     )
   )
-  (symbol "TLV62568DBVR"
+	(symbol "TLV62568DBVR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -637,7 +637,7 @@
       )
     )
   )
-  (symbol "TLV75536PDBVR"
+	(symbol "TLV75536PDBVR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -735,7 +735,7 @@
       )
     )
   )
-  (symbol "TUSB320LAIRWBR"
+	(symbol "TUSB320LAIRWBR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -903,7 +903,7 @@
       )
     )
   )
-  (symbol "SN74LXC2T45DCUR"
+	(symbol "SN74LXC2T45DCUR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1031,7 +1031,7 @@
       )
     )
   )
-  (symbol "SN74LXC8T245QPWRQ1"
+	(symbol "SN74LXC8T245QPWRQ1"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1319,7 +1319,7 @@
       )
     )
   )
-  (symbol "TCA9543APWR"
+	(symbol "TCA9543APWR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1507,7 +1507,7 @@
       )
     )
   )
-  (symbol "TLV803EA30DBZR"
+	(symbol "TLV803EA30DBZR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1585,7 +1585,7 @@
       )
     )
   )
-  (symbol "FSA2466UMX"
+	(symbol "FSA2466UMX"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1793,7 +1793,7 @@
       )
     )
   )
-  (symbol "TPS63811YFFR"
+	(symbol "TPS63811YFFR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1991,7 +1991,7 @@
       )
     )
   )
-  (symbol "TPS22950DDCR"
+	(symbol "TPS22950DDCR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -2099,7 +2099,7 @@
       )
     )
   )
-  (symbol "SN74LVC1G04DBVR"
+	(symbol "SN74LVC1G04DBVR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -2197,7 +2197,7 @@
       )
     )
   )
-  (symbol "TPD2E2U06DCKR"
+	(symbol "TPD2E2U06DCKR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -2275,7 +2275,7 @@
       )
     )
   )
-  (symbol "TPS259531DSGR"
+	(symbol "TPS259531DSGR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -2413,7 +2413,7 @@
       )
     )
   )
-  (symbol "TCA9539PWR"
+	(symbol "TCA9539PWR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -2701,7 +2701,7 @@
       )
     )
   )
-  (symbol "SN74LVC08APWR"
+	(symbol "SN74LVC08APWR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -2889,7 +2889,7 @@
       )
     )
   )
-  (symbol "HFD2_005_S"
+	(symbol "HFD2_005_S"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -3017,7 +3017,7 @@
       )
     )
   )
-  (symbol "Dailywell_2MD1T1B1M2QES_5"
+	(symbol "Dailywell_2MD1T1B1M2QES_5"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -3125,7 +3125,7 @@
       )
     )
   )
-  (symbol "MCP4726A0T_E_CH"
+	(symbol "MCP4726A0T_E_CH"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -3231,7 +3231,7 @@
       )
     )
   )
-(symbol "TPS7A2036PDBVR"
+	(symbol "TPS7A2036PDBVR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -3326,7 +3326,7 @@
       )
     )
   )
-  (symbol "WUSB3801Q_12_TR"
+	(symbol "WUSB3801Q_12_TR"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -3494,4 +3494,422 @@
       )
     )
   )
+	(symbol "TPS63810YFFR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+		(property "Value" "TPS63810YFFR"
+			(at 0 -2.54 0)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Footprint" "HSLinkLP:Texas_YFF0015_1.344x2.255mm_P0.4mm"
+			(at 0 -5.08 0)
+			(hide yes)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63810.pdf"
+			(at 0 -7.62 0)
+			(hide yes)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Description" "可在 ENABLE=0 时编程；电压步进 25 mV；关闭时自身输出放电；按功能重排引脚，物理编号不变"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+		(property "MPN" "TPS63810YFFR"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(symbol "TPS63810YFFR_0_1"
+			(rectangle
+        (start -7.62 11.43)
+        (end 7.62 -8.89)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+		)
+		(symbol "TPS63810YFFR_1_1"
+			(pin input line
+        (at -8.89 1.27 0)
+        (length 1.27)
+        (name "EN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "A1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at -8.89 6.35 0)
+        (length 1.27)
+        (name "VIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "A2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at -8.89 3.81 0)
+        (length 1.27)
+        (name "VIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "A3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin input line
+        (at -8.89 -1.27 0)
+        (length 1.27)
+        (name "VSEL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "B1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin passive line
+        (at -3.81 12.7 270)
+        (length 1.27)
+        (name "LX1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "B2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin passive line
+        (at -1.27 12.7 270)
+        (length 1.27)
+        (name "LX1"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "B3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at -2.54 -10.16 90)
+        (length 1.27)
+        (name "AGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "C1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at 0 -10.16 90)
+        (length 1.27)
+        (name "PGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "C2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at 2.54 -10.16 90)
+        (length 1.27)
+        (name "PGND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "C3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin input line
+        (at -8.89 -3.81 0)
+        (length 1.27)
+        (name "SCL"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "D1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin passive line
+        (at 1.27 12.7 270)
+        (length 1.27)
+        (name "LX2"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "D2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin passive line
+        (at 3.81 12.7 270)
+        (length 1.27)
+        (name "LX2"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "D3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin bidirectional line
+        (at -8.89 -6.35 0)
+        (length 1.27)
+        (name "SDA"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "E1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_out line
+        (at 8.89 1.27 180)
+        (length 1.27)
+        (name "VOUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "E2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin passive line
+        (at 8.89 -1.27 180)
+        (length 1.27)
+        (name "VOUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "E3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+		)
+	)
+	(symbol "TPS22950CDDCR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+      (at 2.54 0 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+    )
+		(property "Value" "TPS22950CDDCR"
+			(at 0 -2.54 0)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 0 -5.08 0)
+			(hide yes)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps22950.pdf"
+			(at 0 -7.62 0)
+			(hide yes)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+      (at 0 -10.16 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+		(property "MPN" "TPS22950CDDCR"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(symbol "TPS22950CDDCR_0_1"
+			(rectangle
+        (start -6.35 5.08)
+        (end 6.35 -7.62)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+		)
+		(symbol "TPS22950CDDCR_1_1"
+			(pin input line
+        (at -7.62 -1.27 0)
+        (length 1.27)
+        (name "ON"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at -7.62 1.27 0)
+        (length 1.27)
+        (name "VIN"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_in line
+        (at -1.27 -8.89 90)
+        (length 1.27)
+        (name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin passive line
+        (at 1.27 -8.89 90)
+        (length 1.27)
+        (name "ILIM"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin power_out line
+        (at 7.62 1.27 180)
+        (length 1.27)
+        (name "VOUT"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+			(pin open_collector line
+        (at 7.62 -1.27 180)
+        (length 1.27)
+        (name "FLTn"
+          (effects (font (size 1.27 1.27)))
+        )
+        (number "6"
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+		)
+	)
+	(symbol "TPD2E2U06DRLR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 2.54 0 0)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Value" "TPD2E2U06DRLR"
+			(at 0 -2.54 0)
+			(effects
+        (font (size 1.27 1.27))
+      )
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-553"
+			(at 0 -5.08 0)
+			(effects
+        (font (size 1.27 1.27))
+      )
+			(hide yes)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+      (at 0 -7.62 0)
+      (effects
+        (font (size 1.27 1.27))
+      )
+      (hide yes)
+    )
+		(property "Description" "DRL five-pin exact mapping: NC1/NC2/IO1=3/GND4/IO2=5; existing drawing endpoints retained"
+			(at 0 -10.16 0)
+			(effects
+        (font (size 1.27 1.27))
+      )
+			(hide yes)
+		)
+		(symbol "TPD2E2U06DRLR_0_1"
+			(rectangle
+        (start -6.35 3.81)
+        (end 5.08 -3.81)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+		)
+		(symbol "TPD2E2U06DRLR_1_1"
+			(pin passive line
+				(at -7.62 1.27 0)
+				(length 1.27)
+				(name "IO1"
+          (effects (font (size 1.27 1.27)))
+        )
+				(number "3"
+          (effects (font (size 1.27 1.27)))
+        )
+			)
+			(pin passive line
+				(at -7.62 -1.27 0)
+				(length 1.27)
+				(name "IO2"
+          (effects (font (size 1.27 1.27)))
+        )
+				(number "5"
+          (effects (font (size 1.27 1.27)))
+        )
+			)
+			(pin power_in line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(name "GND"
+          (effects (font (size 1.27 1.27)))
+        )
+				(number "4"
+          (effects (font (size 1.27 1.27)))
+        )
+			)
+			(pin no_connect line
+				(at 6.35 1.27 180)
+				(length 1.27)
+				(name "NC"
+          (effects (font (size 1.27 1.27)))
+        )
+				(number "1"
+          (effects (font (size 1.27 1.27)))
+        )
+			)
+			(pin no_connect line
+				(at 6.35 -1.27 180)
+				(length 1.27)
+				(name "NC"
+          (effects (font (size 1.27 1.27)))
+        )
+				(number "2"
+          (effects (font (size 1.27 1.27)))
+        )
+			)
+		)
+	)
 )

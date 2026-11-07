@@ -185,34 +185,36 @@
   {
     "reference": "SW1",
     "symbol": "Switch:SW_Push",
-    "value": "BOOT1",
-    "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+    "value": "12V/50mA SPST-NO; H=1.5mm; 160gf",
+    "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
     "sheet": "HSLink-LP",
     "nets": {
       "1": "BOOT1",
       "2": "P3V3"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf",
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200227/C318890_053E50208A88A7BA1965D8746000774E.pdf",
     "display_value": "BOOT1",
-    "mpn": "TL3342F260QG",
-    "lcsc": "C2886894",
-    "engineering_status": "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认"
+    "mpn": "TS-1187A-B-A-B",
+    "lcsc": "C318884",
+    "engineering_status": "功能及四端子/两电气节点映射已核对；操作力/整机机构待实测",
+    "procurement_specification": "12V/50mA SPST-NO; H=1.5mm; 160gf"
   },
   {
     "reference": "SW2",
     "symbol": "Switch:SW_Push",
-    "value": "RESET",
-    "footprint": "Button_Switch_SMD:SW_SPST_TL3342",
+    "value": "12V/50mA SPST-NO; H=1.5mm; 160gf",
+    "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
     "sheet": "HSLink-LP",
     "nets": {
       "1": "SYS_RESETn",
       "2": "GND"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20210906/11280193174E7DA876DC76C90FC72D93.pdf",
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200227/C318890_053E50208A88A7BA1965D8746000774E.pdf",
     "display_value": "RESET",
-    "mpn": "TL3342F260QG",
-    "lcsc": "C2886894",
-    "engineering_status": "TL3342F260QG 候选，保留原功能名；精确按钮高度/力及制造封装待最终确认"
+    "mpn": "TS-1187A-B-A-B",
+    "lcsc": "C318884",
+    "engineering_status": "功能及四端子/两电气节点映射已核对；操作力/整机机构待实测",
+    "procurement_specification": "12V/50mA SPST-NO; H=1.5mm; 160gf"
   },
   {
     "reference": "J1",
@@ -993,37 +995,43 @@
   },
   {
     "reference": "D101",
-    "symbol": "HSLinkLP:TPD2E2U06DCKR",
-    "value": "TPD2E2U06DCKR / VBUS",
-    "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+    "symbol": "HSLinkLP:TPD2E2U06DRLR",
+    "value": "TPD2E2U06DRLR",
+    "footprint": "Package_TO_SOT_SMD:SOT-553",
     "sheet": "Interface",
     "nets": {
-      "1": "VBUS_RAW",
-      "2": null,
-      "3": "GND"
+      "3": "VBUS_RAW",
+      "5": null,
+      "4": "GND",
+      "1": null,
+      "2": null
     },
     "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf",
-    "display_value": "TPD2E2U06DCKR",
-    "mpn": "TPD2E2U06DCKR",
-    "lcsc": "C1855726",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "display_value": "TPD2E2U06DRLR",
+    "mpn": "TPD2E2U06DRLR",
+    "lcsc": "C1972959",
+    "engineering_status": "同系列DRL封装替换；3=IO1/5=IO2/4=GND/1,2=NC；USB眼图与ESD待实测",
+    "procurement_specification": "双路ESD; 5.5V VRWM; 1.5pF典型"
   },
   {
     "reference": "D102",
-    "symbol": "HSLinkLP:TPD2E2U06DCKR",
-    "value": "TPD2E2U06DCKR / USB HS",
-    "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+    "symbol": "HSLinkLP:TPD2E2U06DRLR",
+    "value": "TPD2E2U06DRLR",
+    "footprint": "Package_TO_SOT_SMD:SOT-553",
     "sheet": "Interface",
     "nets": {
-      "1": "USB_DP",
-      "2": "USB_DM",
-      "3": "GND"
+      "3": "USB_DP",
+      "5": "USB_DM",
+      "4": "GND",
+      "1": null,
+      "2": null
     },
     "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tpd2e2u06.pdf",
-    "display_value": "TPD2E2U06DCKR",
-    "mpn": "TPD2E2U06DCKR",
-    "lcsc": "C1855726",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "display_value": "TPD2E2U06DRLR",
+    "mpn": "TPD2E2U06DRLR",
+    "lcsc": "C1972959",
+    "engineering_status": "同系列DRL封装替换；3=IO1/5=IO2/4=GND/1,2=NC；USB眼图与ESD待实测",
+    "procurement_specification": "双路ESD; 5.5V VRWM; 1.5pF典型"
   },
   {
     "reference": "U201",
@@ -1578,18 +1586,36 @@
   {
     "reference": "R38",
     "symbol": "Device:R",
-    "value": "450k/1%",
+    "value": "300k/1%/100mW; 与R401串联构成450k",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Power",
     "nets": {
       "1": "P3V3",
+      "2": "BUCK3_RTOP_MID"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "300k",
+    "mpn": "0603WAF3003T5E",
+    "lcsc": "C23024",
+    "engineering_status": "串联300k+150k维持450k标称值及1%最坏容差；电源精度/稳定性待实测",
+    "procurement_specification": "300k/1%/100mW; 与R401串联构成450k"
+  },
+  {
+    "reference": "R401",
+    "symbol": "Device:R",
+    "value": "150k/1%/100mW; 与R38串联构成450k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "Power",
+    "nets": {
+      "1": "BUCK3_RTOP_MID",
       "2": "BUCK3_FB"
     },
-    "datasheet": "",
-    "display_value": "450k",
-    "mpn": "450k/1%",
-    "lcsc": null,
-    "engineering_status": "450k/1% 准确可采购 MPN 未落实；不得以近似阻值悄然改变反馈"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "150k",
+    "mpn": "0603WAF1503T5E",
+    "lcsc": "C22807",
+    "engineering_status": "串联反馈新增；同R38技术边界",
+    "procurement_specification": "150k/1%/100mW; 与R38串联构成450k"
   },
   {
     "reference": "R39",
@@ -1697,9 +1723,9 @@
   },
   {
     "reference": "U501",
-    "symbol": "HSLinkLP:TPS63811YFFR",
-    "value": "TPS63811YFFR",
-    "footprint": "",
+    "symbol": "HSLinkLP:TPS63810YFFR",
+    "value": "TPS63810YFFR",
+    "footprint": "HSLinkLP:Texas_YFF0015_1.344x2.255mm_P0.4mm",
     "sheet": "TargetPower",
     "nets": {
       "A1": "INT_EN",
@@ -1719,10 +1745,11 @@
       "E3": "INT_RAW"
     },
     "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tps63811.pdf",
-    "display_value": "TPS63811YFFR",
-    "mpn": "TPS63811YFFR",
-    "lcsc": "C1852138",
-    "engineering_status": "保留；嘉立创缺货，仅预订参考，封装未绑定"
+    "display_value": "TPS63810YFFR",
+    "mpn": "TPS63810YFFR",
+    "lcsc": "C1852139",
+    "engineering_status": "启动默认3.3V；INT_EN下拉和K601常开保持；先隔离/编程/回读/稳定再闭合；固件及实板待验证",
+    "procurement_specification": "I2C升降压; 1.8-5.2V器件范围，工程限制1.8-5.0V"
   },
   {
     "reference": "L4",
@@ -1810,22 +1837,25 @@
   },
   {
     "reference": "U502",
-    "symbol": "Regulator_Linear:TLV75801PDBV",
-    "value": "TLV75801PDBVR",
-    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "symbol": "Regulator_Linear:TLV75801PDRV",
+    "value": "TLV75801PDRVR",
+    "footprint": "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm",
     "sheet": "TargetPower",
     "nets": {
-      "1": "P3V6_SW",
-      "2": "GND",
-      "3": "VIO_EN",
-      "4": "VIO_FB",
-      "5": "VIO_LOCAL"
+      "6": "P3V6_SW",
+      "3": "GND",
+      "4": "VIO_EN",
+      "2": "VIO_FB",
+      "1": "VIO_LOCAL",
+      "7": "GND",
+      "5": null
     },
     "datasheet": "https://www.ti.com/cn/lit/ds/symlink/tlv758p.pdf",
-    "display_value": "TLV75801PDBVR",
-    "mpn": "TLV75801PDBVR",
-    "lcsc": "C2877852",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "display_value": "TLV75801PDRVR",
+    "mpn": "TLV75801PDRVR",
+    "lcsc": "C2876308",
+    "engineering_status": "同系列DRV换封装；功能映射及EP接地核对；VIO反馈/调压功能保留；实测待办",
+    "procurement_specification": "可调LDO 0.55V参考; WSON-6+EP"
   },
   {
     "reference": "C43",
@@ -1880,8 +1910,8 @@
   },
   {
     "reference": "U503",
-    "symbol": "HSLinkLP:TPS22950DDCR",
-    "value": "TPS22950DDCR",
+    "symbol": "HSLinkLP:TPS22950CDDCR",
+    "value": "TPS22950CDDCR",
     "footprint": "Package_TO_SOT_SMD:SOT-23-6",
     "sheet": "TargetPower",
     "nets": {
@@ -1892,11 +1922,12 @@
       "5": "INT_PROTECTED",
       "6": "FAULTn"
     },
-    "datasheet": "https://www.ti.com/lit/ds/symlink/tps22950.pdf",
-    "display_value": "TPS22950DDCR",
-    "mpn": "TPS22950DDCR",
-    "lcsc": null,
-    "engineering_status": "保留 TPS22950DDCR；不自动改用故障行为不同的 TPS22950CDDCR"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20240112/1A8075912A175C65410C3082C2376C03.pdf",
+    "display_value": "TPS22950CDDCR",
+    "mpn": "TPS22950CDDCR",
+    "lcsc": "C7587833",
+    "engineering_status": "纠正无效DDCR型号；R42=1.15k对应典型1A、手册0.75-1.25A，不能保证1A输出；限流/热待闭合",
+    "procurement_specification": "SOT23-6限流开关; 自动重试/反向阻断"
   },
   {
     "reference": "R42",
@@ -2327,43 +2358,37 @@
   },
   {
     "reference": "J801",
-    "symbol": "Connector_Generic:Conn_02x05_Odd_Even",
-    "value": "ARM 10-pin SWD",
-    "footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical",
+    "symbol": "Connector_Generic:Conn_02x10_Odd_Even",
+    "value": "ARM20 / 2.54mm / keyed / no target supply",
+    "footprint": "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical",
     "sheet": "Disconnect",
     "nets": {
       "1": "DUT_VREF",
-      "2": "DUT_SWDIO",
-      "3": "GND",
-      "4": "DUT_TCK",
-      "5": "GND",
-      "6": "DUT_TDO",
-      "7": null,
-      "8": "DUT_TDI",
-      "9": "GND",
-      "10": "DUT_NRST"
+      "2": null,
+      "3": "DUT_NTRST",
+      "4": "GND",
+      "5": "DUT_TDI",
+      "6": "GND",
+      "7": "DUT_SWDIO",
+      "8": "GND",
+      "9": "DUT_TCK",
+      "10": "GND",
+      "11": null,
+      "12": "GND",
+      "13": "DUT_TDO",
+      "14": "GND",
+      "15": "DUT_NRST",
+      "16": "GND",
+      "17": null,
+      "18": "GND",
+      "19": null,
+      "20": "GND"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20231122/F17CBFE608F16BCCADFE6957B6D7BD2D.pdf",
-    "display_value": "ARM 10P",
-    "mpn": "ZX-PZ1.27-2-5PZZ",
-    "lcsc": "C7501289",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
-    "reference": "J802",
-    "symbol": "Connector_Generic:Conn_01x02",
-    "value": "JTAG nTRST",
-    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
-    "sheet": "Disconnect",
-    "nets": {
-      "1": "DUT_NTRST",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20221019/2EE72DAC61CAA62C0A53546E211F9C15.pdf",
-    "display_value": "nTRST",
-    "mpn": "B-2100S02P-A110",
-    "lcsc": "C124375",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20220902/F4C4645E59EE38C0F12B225613E1076A.pdf",
+    "display_value": "ARM 20P KEYED",
+    "mpn": "2.54-2*10P简牛",
+    "lcsc": "C3405",
+    "engineering_status": "逐脚/隔离映射核对；40MHz与配套排线漏电待实测"
   },
   {
     "reference": "J803",
@@ -2679,18 +2704,19 @@
   {
     "reference": "D601",
     "symbol": "Device:D",
-    "value": "1N4148W-7-F",
+    "value": "1N4148W",
     "footprint": "Diode_SMD:D_SOD-123",
     "sheet": "TargetPower",
     "nets": {
       "1": "USB_5V",
       "2": "POWER_COIL_LO"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
-    "display_value": "1N4148W-7-F",
-    "mpn": "1N4148W-7-F",
-    "lcsc": "C83528",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
+    "display_value": "1N4148W",
+    "mpn": "1N4148W",
+    "lcsc": "C81598",
+    "engineering_status": "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测",
+    "procurement_specification": "先科/ST; SOD123; 75V/150mA"
   },
   {
     "reference": "Q901",
@@ -2712,18 +2738,19 @@
   {
     "reference": "D901",
     "symbol": "Device:D",
-    "value": "1N4148W-7-F",
+    "value": "1N4148W",
     "footprint": "Diode_SMD:D_SOD-123",
     "sheet": "Sense",
     "nets": {
       "1": "USB_5V",
       "2": "SENSE_COIL_LO"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
-    "display_value": "1N4148W-7-F",
-    "mpn": "1N4148W-7-F",
-    "lcsc": "C83528",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
+    "display_value": "1N4148W",
+    "mpn": "1N4148W",
+    "lcsc": "C81598",
+    "engineering_status": "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测",
+    "procurement_specification": "先科/ST; SOD123; 75V/150mA"
   },
   {
     "reference": "R61",
@@ -2762,18 +2789,19 @@
   {
     "reference": "D902",
     "symbol": "Device:D",
-    "value": "1N4148W-7-F",
+    "value": "1N4148W",
     "footprint": "Diode_SMD:D_SOD-123",
     "sheet": "Sense",
     "nets": {
       "1": "USB_5V",
       "2": "DISCH_COIL_LO"
     },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf",
-    "display_value": "1N4148W-7-F",
-    "mpn": "1N4148W-7-F",
-    "lcsc": "C83528",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
+    "display_value": "1N4148W",
+    "mpn": "1N4148W",
+    "lcsc": "C81598",
+    "engineering_status": "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测",
+    "procurement_specification": "先科/ST; SOD123; 75V/150mA"
   },
   {
     "reference": "R62",

@@ -2,12 +2,13 @@
 
 基于 HSLink Pro 1.2.0 / HPM5301 的双串口调试与低功耗测试工程。
 
-**当前状态：上游布局的降本原理图审阅稿、嘉立创 BOM 核价记录（尚未齐价）。** 已安装 KiCad MCP 和三项社区 skills，原理图由上游原文件复制后，通过 MCP 增改电路和整理文字。上游源码通过 Git 子模块管理。尚无 PCB、新板固件或真实设备通信；器件清单不是生产 BOM。
+**当前状态：上游布局的降本原理图审阅稿、完整嘉立创 BOM 核价记录及 ARM20 接口。** 已安装 KiCad MCP 和三项社区 skills，原理图由上游原文件复制后，通过 MCP 增改电路和整理文字。上游源码通过 Git 子模块管理。尚无 PCB、新板固件或真实设备通信；器件清单不是生产 BOM。
 
 ## 已确定的目标
 
 - 新整板，单 USB-C，保留 CMSIS-DAP / SWD / JTAG。
 - 两路 USB CDC 串口，各带 TX/RX、DTR/RTS；首版信号电平 1.8～3.3 V。
+- 目标接口为带键 ARM 20 针，nTRST 第3针、nRESET 第15针；目标供电走独立接口。
 - 40 MHz 调试链路验收目标，实际速率受目标芯片及连接条件限制。
 - 内置可调供电 1.8～5.0 V / 最高 1 A；外部供电 1.8～5.5 V / 最高 2 A。
 - 外部供电测量仪负责电流测量；测量状态保持目标供电、断开信号及检测支路。
@@ -16,7 +17,7 @@
 
 电源来源按用户选择采用板上手动切换。电脑控制目标板电源通断，与来源选择分开。
 
-打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，已核价物料小计 ¥112.6726/板（非整板总价），见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
+打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，板上材料 ¥133.2215/板，加配套排线 ¥137.0645/套（10 套材料 ¥1,370.6450，不含制造、运输与采购余料），见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
 
 工作区只保留一份当前设计，历史通过 Git 提交回溯，不再使用版本号目录副本。原理图、符号库、候选 BOM 和验证摘要纳入 Git；KiCad 本机设置、备份、锁文件、导出报告和缓存由 `.gitignore` 排除。临时生成、排版脚本已删除；已安装的 MCP 服务放在用户工具目录。
 
@@ -74,3 +75,5 @@ SDK 和固件子模块下载可能较大。辅助工具会核对锁文件与 Git
 - FSA2466 同款方案显著降低开关成本，但数据表最大漏电预算尚不能满足整板 100 nA 目标；USB 掉电隔离也未保证。
 - 不使用原版固件自动识别逻辑驱动改版电源电路。
 - 新板需要独立板型、硬件身份和启动时默认关闭的输出控制。
+
+ARM20 针脚、封装和线束见 [接口说明](docs/arm20-interface.md)，[板上 BOM](hardware/bom/candidates.csv)与[配件 BOM](hardware/bom/accessories.csv)分列。现货 20 cm 排线仅作为打样配套，手册绝缘下限不足以保证 0.1 µA，必须通过整夹具漏电及 40 MHz 实测后放行。

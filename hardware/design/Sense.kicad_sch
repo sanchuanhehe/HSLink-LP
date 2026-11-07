@@ -4,7 +4,7 @@
 	(generator_version "10.0")
 	(uuid a48724e5-e52f-4637-a2e4-223a9073438e)
 	(paper "A4")
-(title_block (title "可断开电压检测与受控放电") (date "2026-11-07") (rev "DRAFT / Git") (company "HSLink-LP / based on HSLink Pro 1.2.0"))
+	(title_block (title "可断开电压检测与受控放电") (date "2026-11-07") (rev "DRAFT / Git") (company "HSLink-LP / based on HSLink Pro 1.2.0"))
 	(lib_symbols
 		(symbol "HSLinkLP:HFD2_005_S"
 			(exclude_from_sim no)
@@ -1592,7 +1592,7 @@
 					(size 1.27 1.27)
 				) (hide no))
 		)
-		(property "Value" "1N4148W-7-F"
+		(property "Value" "1N4148W"
 			(at 22.86 73.66 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1612,7 +1612,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf"
 			(at 34.29 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1633,18 +1633,34 @@
 				)
 			)
 		)
-    (property "MPN" "1N4148W-7-F" (at 34.29 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C83528" (at 34.29 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "1N4148W-7-F" (at 34.29 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 34.29 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "1N4148W"
+			(at 34.29 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "LCSC" "C81598"
+			(at 34.29 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Specification" "先科/ST; SOD123; 75V/150mA"
+			(at 34.29 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "EngineeringStatus" "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测"
+			(at 34.29 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
 		(pin "1"
 			(uuid "8f17cd58-0bd3-41f1-8b68-35104cdf157c")
 		)
@@ -1862,7 +1878,7 @@
 					(size 1.27 1.27)
 				) (hide no))
 		)
-		(property "Value" "1N4148W-7-F"
+		(property "Value" "1N4148W"
 			(at 173.99 73.66 270)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1882,7 +1898,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20241225/8E807DD9A435F4E5E0AA047150612727.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf"
 			(at 185.42 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1903,18 +1919,34 @@
 				)
 			)
 		)
-    (property "MPN" "1N4148W-7-F" (at 185.42 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C83528" (at 185.42 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "1N4148W-7-F" (at 185.42 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 185.42 72.39 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "1N4148W"
+			(at 185.42 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "LCSC" "C81598"
+			(at 185.42 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "Specification" "先科/ST; SOD123; 75V/150mA"
+			(at 185.42 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
+		(property "EngineeringStatus" "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测"
+			(at 185.42 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (hide yes))
+		)
 		(pin "1"
 			(uuid "5ff28b84-2e9a-462e-a0d9-d439d02f994e")
 		)
@@ -4098,7 +4130,7 @@
 		)
 		(uuid "ccddc66c-4f29-4cb2-a6f9-530a7a7a91bc")
 	)
-	  (symbol (lib_id "power:GND") (at 254 67.31 0) (unit 1)
+	(symbol (lib_id "power:GND") (at 254 67.31 0) (unit 1)
     (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no)
     (uuid "4280dfde-59f1-485c-8fee-6547651b5022")
     (property "Reference" "#PWR29029"
@@ -4218,7 +4250,7 @@
 		)
 		(uuid "a14aa733-dbad-4985-a30f-10dd815da1d5")
 	)
-  (sheet_instances
+	(sheet_instances
 		(path "/"
 			(page "1")
 		)
