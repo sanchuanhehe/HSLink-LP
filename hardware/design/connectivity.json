@@ -1337,25 +1337,6 @@
     "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
-    "reference": "U305",
-    "symbol": "HSLinkLP:SN74LVC1G04DBVR",
-    "value": "SN74LVC1G04DBVR",
-    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
-    "sheet": "Safety",
-    "nets": {
-      "1": null,
-      "2": "SIG_ARM",
-      "3": "GND",
-      "4": "XLAT_OEn",
-      "5": "P3V3"
-    },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1g04.pdf",
-    "display_value": "SN74LVC1G04DBVR",
-    "mpn": "SN74LVC1G04DBVR",
-    "lcsc": "C7827",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
     "reference": "C28",
     "symbol": "Device:C",
     "value": "100n/16V",
@@ -1408,23 +1389,6 @@
   },
   {
     "reference": "C31",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "Safety",
-    "nets": {
-      "1": "P3V3",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C32",
     "symbol": "Device:C",
     "value": "100n/16V",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
@@ -2070,297 +2034,6 @@
     "mpn": "KF128-5.08-2P-AA",
     "lcsc": "C474952",
     "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
-    "reference": "U701",
-    "symbol": "HSLinkLP:SN74LXC8T245QPWRQ1",
-    "value": "SN74LXC8T245QPWRQ1",
-    "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "P3V3",
-      "11": "GND",
-      "12": "GND",
-      "13": "GND",
-      "22": "XLAT_OEn",
-      "23": "VIO_LOCAL",
-      "24": "VIO_LOCAL",
-      "3": "TCK_MCU",
-      "21": "F_TCK",
-      "4": "TDI_MCU",
-      "20": "F_TDI",
-      "5": "UART_A_TX",
-      "19": "F_UART_A_TX",
-      "6": "UART_A_DTR",
-      "18": "F_UART_A_DTR",
-      "7": "UART_A_RTS",
-      "17": "F_UART_A_RTS",
-      "8": "UART_B_TX",
-      "16": "F_UART_B_TX",
-      "9": "UART_B_DTR",
-      "15": "F_UART_B_DTR",
-      "10": "UART_B_RTS",
-      "14": "F_UART_B_RTS"
-    },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc8t245-q1.pdf",
-    "display_value": "SN74LXC8T245QPWRQ1",
-    "mpn": "SN74LXC8T245QPWRQ1",
-    "lcsc": "C2868232",
-    "engineering_status": "保留；1.8V/40MHz 最坏往返时序未闭合"
-  },
-  {
-    "reference": "U702",
-    "symbol": "HSLinkLP:SN74LXC2T45DCUR",
-    "value": "SN74LXC2T45DCUR",
-    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "SWD_MCU",
-      "3": "SWD_UNUSED_A",
-      "4": "GND",
-      "5": "SWD_DIR",
-      "6": "SWD_UNUSED_B",
-      "7": "F_SWDIO",
-      "8": "VIO_LOCAL"
-    },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
-    "display_value": "SN74LXC2T45DCUR",
-    "mpn": "SN74LXC2T45DCUR",
-    "lcsc": "C5217891",
-    "engineering_status": "保留；SWDIO 动态方向/换向与 40MHz 待验证"
-  },
-  {
-    "reference": "R46",
-    "symbol": "Device:R",
-    "value": "100k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "SWD_UNUSED_A",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
-    "display_value": "100k",
-    "mpn": "0603WAF1003T5E",
-    "lcsc": "C25803",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-  },
-  {
-    "reference": "R47",
-    "symbol": "Device:R",
-    "value": "100k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "SWD_UNUSED_B",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
-    "display_value": "100k",
-    "mpn": "0603WAF1003T5E",
-    "lcsc": "C25803",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-  },
-  {
-    "reference": "U703",
-    "symbol": "HSLinkLP:SN74LXC2T45DCUR",
-    "value": "SN74LXC2T45DCUR",
-    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "UART_A_RX",
-      "3": "UART_B_RX",
-      "4": "GND",
-      "5": "GND",
-      "6": "F_UART_B_RX",
-      "7": "F_UART_A_RX",
-      "8": "VIO_LOCAL"
-    },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
-    "display_value": "SN74LXC2T45DCUR",
-    "mpn": "SN74LXC2T45DCUR",
-    "lcsc": "C5217891",
-    "engineering_status": "保留；仅 UART 换料在 10 套无券换料费场景下无净节省"
-  },
-  {
-    "reference": "U704",
-    "symbol": "HSLinkLP:SN74LXC2T45DCUR",
-    "value": "SN74LXC2T45DCUR",
-    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "TDO_MCU",
-      "3": null,
-      "4": "GND",
-      "5": "GND",
-      "6": "TDO_UNUSED_B",
-      "7": "F_TDO",
-      "8": "VIO_LOCAL"
-    },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
-    "display_value": "SN74LXC2T45DCUR",
-    "mpn": "SN74LXC2T45DCUR",
-    "lcsc": "C5217891",
-    "engineering_status": "保留；TDO 读回时序待验证"
-  },
-  {
-    "reference": "R48",
-    "symbol": "Device:R",
-    "value": "100k",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "TDO_UNUSED_B",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
-    "display_value": "100k",
-    "mpn": "0603WAF1003T5E",
-    "lcsc": "C25803",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
-  },
-  {
-    "reference": "C48",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C49",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "VIO_LOCAL",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C50",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C51",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "VIO_LOCAL",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C52",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C53",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "VIO_LOCAL",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C54",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "P3V3",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
-    "reference": "C55",
-    "symbol": "Device:C",
-    "value": "100n/16V",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "LogicTranslation",
-    "nets": {
-      "1": "VIO_LOCAL",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
-    "display_value": "100n",
-    "mpn": "CC0603KRX7R9BB104",
-    "lcsc": "C14663",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
     "reference": "Q701",
@@ -3110,6 +2783,875 @@
     "sheet": "Sense",
     "nets": {
       "1": "DISCH_ON",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U701",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "TCK_MCU",
+      "4": "F_TCK",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C48",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C49",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R701",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "TCK_MCU",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U702",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "SWD_MCU",
+      "4": "F_SWDIO",
+      "5": "SWD_DIR",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C50",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C51",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R702",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "F_SWDIO",
+      "2": "VIO_LOCAL"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U703",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "TDI_MCU",
+      "4": "F_TDI",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C52",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C53",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R703",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "TDI_MCU",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U704",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "TDO_MCU",
+      "4": "F_TDO",
+      "5": "GND",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C54",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C55",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R704",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "F_TDO",
+      "2": "VIO_LOCAL"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U705",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_A_TX",
+      "4": "F_UART_A_TX",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C701",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C702",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R705",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_A_TX"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U706",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_A_RX",
+      "4": "F_UART_A_RX",
+      "5": "GND",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C703",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C704",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R706",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "F_UART_A_RX",
+      "2": "VIO_LOCAL"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U707",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_A_DTR",
+      "4": "F_UART_A_DTR",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C705",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C706",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R707",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_A_DTR"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U708",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_A_RTS",
+      "4": "F_UART_A_RTS",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C707",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C708",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R708",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_A_RTS"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U709",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_B_TX",
+      "4": "F_UART_B_TX",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C709",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C710",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R709",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_B_TX"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U710",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_B_RX",
+      "4": "F_UART_B_RX",
+      "5": "GND",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C711",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C712",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R710",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "F_UART_B_RX",
+      "2": "VIO_LOCAL"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U711",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_B_DTR",
+      "4": "F_UART_B_DTR",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C713",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C714",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R711",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_B_DTR"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U712",
+    "symbol": "Logic_LevelTranslator:SN74LVC1T45DBV",
+    "value": "SN74LVC1T45DBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND",
+      "3": "UART_B_RTS",
+      "4": "F_UART_B_RTS",
+      "5": "P3V3",
+      "6": "VIO_LOCAL"
+    },
+    "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+    "display_value": "SN74LVC1T45DBVR",
+    "mpn": "SN74LVC1T45DBVR",
+    "lcsc": "C7843",
+    "engineering_status": "用户选定打样；脚号/封装资料核对；40MHz、换向及漏电待实测"
+  },
+  {
+    "reference": "C715",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "C716",
+    "symbol": "Device:C",
+    "value": "100n/16V",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "VIO_LOCAL",
+      "2": "GND"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "display_value": "100n",
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "R712",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "P3V3",
+      "2": "UART_B_RTS"
+    },
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
+    "display_value": "100k",
+    "mpn": "0603WAF1003T5E",
+    "lcsc": "C25803",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "R713",
+    "symbol": "Device:R",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "sheet": "LogicTranslation",
+    "nets": {
+      "1": "SWD_DIR",
       "2": "GND"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",

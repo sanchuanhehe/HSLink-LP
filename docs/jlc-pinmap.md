@@ -175,3 +175,22 @@
 - Y1 与 SW1/SW2 仅落实采购候选；按钮力/高度和晶体负载匹配尚待签核，未计为本文件的已接受替换。
 
 回读和临时放置证据存放于忽略目录 `hardware/design/reports/jlc-2026-11-07/`，总摘要和文件哈希见 `hardware/validation.json`。
+
+## U701～U712：SN74LVC1T45DBVR（本次新增接受）
+
+来源：[TI SCES515N，June 2024](https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf)，p2 Figure 4-1 DBV SOT-23-6 **Top View**，附录 DBV0006A 外形及推荐 land（本地快照 PDF 第 31、32 页）。完整采购后缀 DBVR，嘉立创 C7843；不能套用 DCK/SC70 或 YZP 底视图。下列映射在正式放置前用临时工程放置/回读及渲染确认，后续正式导出网表再次逐脚匹配。
+
+标准符号 `Logic_LevelTranslator:SN74LVC1T45DBV`；标准封装 `Package_TO_SOT_SMD:SOT-23-6`。6 个物理端子、6 个符号电气脚、6 个唯一电气焊盘，无 EP、机械脚或重复焊盘。器件顶视：1 左上、2 左中、3 左下、4 右下、5 右中、6 右上；无需镜像。
+
+|物理脚 / 焊盘号|功能 / 符号电气类型|局部 X / Y (mm)|尺寸 mm|旋转 / 钻孔|层|
+|---|---|---|---|---|---|
+|1|VCCA / power_in|-1.1375 / -0.95|1.325 × 0.6|0° / 无|F.Cu/F.Mask/F.Paste|
+|2|GND / power_in|-1.1375 / 0|1.325 × 0.6|0° / 无|F.Cu/F.Mask/F.Paste|
+|3|A / bidirectional|-1.1375 / 0.95|1.325 × 0.6|0° / 无|F.Cu/F.Mask/F.Paste|
+|4|B / bidirectional|1.1375 / 0.95|1.325 × 0.6|0° / 无|F.Cu/F.Mask/F.Paste|
+|5|DIR / input|1.1375 / 0|1.325 × 0.6|0° / 无|F.Cu/F.Mask/F.Paste|
+|6|VCCB / power_in|1.1375 / -0.95|1.325 × 0.6|0° / 无|F.Cu/F.Mask/F.Paste|
+
+MCP 暂放器件原点为 (50,50)，上表已减去原点；均为 SMD roundrect，courtyard 4.1×3.4 mm。标准库按 JEDEC MO-178 AB 定义；与 TI 示例 1.1×0.6 mm、横向中心距 2.6 mm 的 land 并非逐尺寸相同。本库横向中心距 2.275 mm、外沿跨度 3.6 mm，覆盖 DBV 2.6～3.0 mm 引脚跨度及 0.95 mm 节距；焊盘更向内延伸。接受作为当前 SOT-23-6 分配，钢网、焊膏与最终工艺仍须 PCB/DFM 签核，未把示例 land 当成唯一合法焊盘。
+
+证据：`hardware/design/reports/lvc12-2026-11-07/` 下的 DBV 顶视页图、封装几何图、符号图、MCP pin/pad 回读及标准库文件哈希。正式项目没有 PCB，本次没有虚构 12 个 PCB 实例或 DRC 结果。

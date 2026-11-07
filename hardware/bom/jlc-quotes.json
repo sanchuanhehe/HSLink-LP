@@ -136,8 +136,8 @@
       "paramTextAll": "传播延迟(tpd):3.7ns@5V,50pF,功能特性:电源关断保护,工作温度:-40℃~+125℃,工作电压:1.65V~5.5V,拉电流(IOH):32mA,灌电流(IOL):32mA,系列:74LVC,输入低电平(VIL):0.7V~0.8V,输入类型:标准CMOS,输入高电平(VIH):1.7V~2V,输出低电平(VOL):0.4V,输出类型:推挽式,输出高电平(VOH):2.4V,通道数:1,静态电流(Iq):10uA",
       "orderLibraryType": "expand",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C7827.html",
-      "retrieved_at": "2026-11-06T19:42:15.112Z",
-      "rendered_stock": 70857,
+      "retrieved_at": "2026-11-07T03:23:45.826020+00:00",
+      "rendered_stock": 70043,
       "rendered_price_rows": [
         {
           "start": 1,
@@ -168,7 +168,38 @@
       "consultPrice": 0.232,
       "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1g04.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "previous_snapshot": {
+        "rendered_stock": 70857,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 0.395
+          },
+          {
+            "start": 100,
+            "price": 0.311
+          },
+          {
+            "start": 300,
+            "price": 0.268
+          },
+          {
+            "start": 3000,
+            "price": 0.232
+          },
+          {
+            "start": 6000,
+            "price": 0.22
+          },
+          {
+            "start": 9000,
+            "price": 0.212
+          }
+        ],
+        "retrieved_at": "2026-11-06T19:42:15.112Z"
+      },
+      "snapshot_evidence": "../design/reports/lvc12-2026-11-07/C7827.txt"
     },
     {
       "componentCode": "C705793",
@@ -835,8 +866,8 @@
       "paramTextAll": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω",
       "orderLibraryType": "base",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C25803.html",
-      "retrieved_at": "2026-11-06T19:35:54.684Z",
-      "rendered_stock": 16289957,
+      "retrieved_at": "2026-11-07T03:23:06.690979+00:00",
+      "rendered_stock": 16259040,
       "rendered_price_rows": [
         {
           "start": 1,
@@ -867,7 +898,38 @@
       "consultPrice": 0.0117,
       "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "previous_snapshot": {
+        "rendered_stock": 16289957,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 0.0176
+          },
+          {
+            "start": 1000,
+            "price": 0.0136
+          },
+          {
+            "start": 5000,
+            "price": 0.0117
+          },
+          {
+            "start": 10000,
+            "price": 0.0096
+          },
+          {
+            "start": 50000,
+            "price": 0.0088
+          },
+          {
+            "start": 50200,
+            "price": 0.0088
+          }
+        ],
+        "retrieved_at": "2026-11-06T19:35:54.684Z"
+      },
+      "snapshot_evidence": "../design/reports/lvc12-2026-11-07/C25803.txt"
     },
     {
       "componentCode": "C18185770",
@@ -1007,7 +1069,7 @@
       "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+125℃,工作电压(VCCA):1.1V~5.5V,工作电压(VCCB):1.1V~5.5V,拉电流(IOH):32mA,接口类型:-,数据速率:420Mbps,每个电路通道数:2,灌电流(IOL):32mA,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:推挽式,通道类型:双向",
       "orderLibraryType": "expand",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C5217891.html",
-      "retrieved_at": "2026-11-06T19:35:59.336Z",
+      "retrieved_at": "2026-11-07T03:23:40.763721+00:00",
       "rendered_stock": 9932,
       "rendered_price_rows": [
         {
@@ -1039,7 +1101,38 @@
       "consultPrice": 2.95,
       "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc2t45.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "previous_snapshot": {
+        "rendered_stock": 9932,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 4.91
+          },
+          {
+            "start": 10,
+            "price": 4.15
+          },
+          {
+            "start": 30,
+            "price": 3.62
+          },
+          {
+            "start": 100,
+            "price": 3.18
+          },
+          {
+            "start": 500,
+            "price": 3.04
+          },
+          {
+            "start": 1000,
+            "price": 2.95
+          }
+        ],
+        "retrieved_at": "2026-11-06T19:35:59.336Z"
+      },
+      "snapshot_evidence": "../design/reports/lvc12-2026-11-07/C5217891.txt"
     },
     {
       "componentCode": "C5218924",
@@ -1936,39 +2029,70 @@
       "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+85℃,工作电压(VCCA):1.65V~5.5V,工作电压(VCCB):1.65V~5.5V,拉电流(IOH):-,接口类型:-,数据速率:420Mbps,每个电路通道数:1,灌电流(IOL):-,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:非反相,输出类型:三态,通道类型:双向",
       "orderLibraryType": "expand",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C7843.html",
-      "retrieved_at": "2026-11-06T19:43:48.595Z",
-      "rendered_stock": 230515,
+      "retrieved_at": "2026-11-07T03:22:56.006846+00:00",
+      "rendered_stock": 254502,
       "rendered_price_rows": [
         {
           "start": 1,
-          "price": 0.509
+          "price": 0.507
         },
         {
           "start": 50,
-          "price": 0.41
+          "price": 0.408
         },
         {
           "start": 150,
-          "price": 0.359
+          "price": 0.358
         },
         {
           "start": 500,
-          "price": 0.317
+          "price": 0.316
         },
         {
           "start": 3000,
-          "price": 0.266
+          "price": 0.265
         },
         {
           "start": 6000,
-          "price": 0.256
+          "price": 0.255
         }
       ],
       "page_shows_book_price": false,
       "consultPrice": 0.266,
       "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1t45.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "previous_snapshot": {
+        "rendered_stock": 230515,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 0.509
+          },
+          {
+            "start": 50,
+            "price": 0.41
+          },
+          {
+            "start": 150,
+            "price": 0.359
+          },
+          {
+            "start": 500,
+            "price": 0.317
+          },
+          {
+            "start": 3000,
+            "price": 0.266
+          },
+          {
+            "start": 6000,
+            "price": 0.256
+          }
+        ],
+        "retrieved_at": "2026-11-06T19:43:48.595Z"
+      },
+      "snapshot_evidence": "../design/reports/lvc12-2026-11-07/C7843.txt"
     },
     {
       "componentCode": "C492404",
@@ -2151,39 +2275,70 @@
       "paramTextAll": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V",
       "orderLibraryType": "base",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C14663.html",
-      "retrieved_at": "2026-11-06T19:35:53.179Z",
-      "rendered_stock": 34737191,
+      "retrieved_at": "2026-11-07T03:23:01.347614+00:00",
+      "rendered_stock": 34590839,
       "rendered_price_rows": [
         {
           "start": 1,
-          "price": 0.0577
+          "price": 0.0566
         },
         {
           "start": 500,
-          "price": 0.0448
+          "price": 0.044
         },
         {
           "start": 1500,
-          "price": 0.0377
+          "price": 0.037
         },
         {
           "start": 4000,
-          "price": 0.0334
+          "price": 0.0328
         },
         {
           "start": 24000,
-          "price": 0.0297
+          "price": 0.0291
         },
         {
           "start": 48000,
-          "price": 0.0277
+          "price": 0.0272
         }
       ],
       "page_shows_book_price": false,
       "consultPrice": 0.0334,
       "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "previous_snapshot": {
+        "rendered_stock": 34737191,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 0.0577
+          },
+          {
+            "start": 500,
+            "price": 0.0448
+          },
+          {
+            "start": 1500,
+            "price": 0.0377
+          },
+          {
+            "start": 4000,
+            "price": 0.0334
+          },
+          {
+            "start": 24000,
+            "price": 0.0297
+          },
+          {
+            "start": 48000,
+            "price": 0.0277
+          }
+        ],
+        "retrieved_at": "2026-11-06T19:35:53.179Z"
+      },
+      "snapshot_evidence": "../design/reports/lvc12-2026-11-07/C14663.txt"
     },
     {
       "componentCode": "C22843",
@@ -2452,7 +2607,7 @@
       "paramTextAll": "元件数:1,功能特性:断电保护,功能特性:输出使能高阻,工作温度:-40℃~+125℃,工作电压(VCCA):1.1V~5.5V,工作电压(VCCB):1.1V~5.5V,拉电流(IOH):-,接口类型:-,数据速率:420Mbps,每个电路通道数:8,灌电流(IOL):-,芯片类型:电平转换器,输入信号:-,输出信号:-,输出类型:三态,通道类型:双向",
       "orderLibraryType": "expand",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C2868232.html",
-      "retrieved_at": "2026-11-06T19:35:24.891Z",
+      "retrieved_at": "2026-11-07T03:23:35.706649+00:00",
       "rendered_stock": 134,
       "rendered_price_rows": [
         {
@@ -2484,7 +2639,38 @@
       "consultPrice": 6.61,
       "dataBookUrl": "https://www.ti.com/cn/lit/ds/symlink/sn74lxc8t245-q1.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "previous_snapshot": {
+        "rendered_stock": 134,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 9.3
+          },
+          {
+            "start": 10,
+            "price": 8.33
+          },
+          {
+            "start": 30,
+            "price": 7.64
+          },
+          {
+            "start": 100,
+            "price": 7.01
+          },
+          {
+            "start": 500,
+            "price": 6.73
+          },
+          {
+            "start": 1000,
+            "price": 6.61
+          }
+        ],
+        "retrieved_at": "2026-11-06T19:35:24.891Z"
+      },
+      "snapshot_evidence": "../design/reports/lvc12-2026-11-07/C2868232.txt"
     },
     {
       "componentCode": "C465737",

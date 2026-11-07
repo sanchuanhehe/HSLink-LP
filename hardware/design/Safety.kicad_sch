@@ -1078,7 +1078,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "四路与门；安全使能与组请求进行硬件门控；按功能重排引脚，物理编号不变"
 			(at 50.8 43.18 0)
@@ -1096,17 +1098,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "SN74LVC08APWR" (at 50.8 53.34 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C465737" (at 50.8 53.34 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 50.8 53.34 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "SN74LVC08APWR"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C465737"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 50.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f3196a8f-4bde-4ad5-96d5-f7acccaeda4a")
 		)
@@ -1217,7 +1239,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "四路与门；安全使能与组请求进行硬件门控；按功能重排引脚，物理编号不变"
 			(at 173.99 43.18 0)
@@ -1235,17 +1259,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "SN74LVC08APWR" (at 173.99 53.34 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C465737" (at 173.99 53.34 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 173.99 53.34 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "SN74LVC08APWR"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C465737"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "875b3627-203f-45e7-942f-7f18f990924c")
 		)
@@ -1356,7 +1400,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "四路与门；安全使能与组请求进行硬件门控；按功能重排引脚，物理编号不变"
 			(at 173.99 120.65 0)
@@ -1374,17 +1420,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "SN74LVC08APWR" (at 173.99 130.81 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C465737" (at 173.99 130.81 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 173.99 130.81 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "SN74LVC08APWR"
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C465737"
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "447ad5bd-ed8f-42b7-adf6-a8cef7fb81a8")
 		)
@@ -1495,7 +1561,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "输出关断互锁；按功能重排引脚，物理编号不变"
 			(at 110.49 113.03 0)
@@ -1513,17 +1581,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "SN74LVC1G04DBVR" (at 110.49 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C7827" (at 110.49 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 110.49 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "SN74LVC1G04DBVR"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7827"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecada1e7-5056-4864-924d-3c9624bdfc12")
 		)
@@ -1547,118 +1635,6 @@
 				)
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
 					(reference "U304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:SN74LVC1G04DBVR")
-		(at 50.8 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0b4ed4c0-e186-4c9a-8d6e-8d02e45ee329")
-		(property "Reference" "U305"
-			(at 66.04 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "SN74LVC1G04DBVR"
-			(at 66.04 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 50.8 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74lvc1g04.pdf"
-			(at 50.8 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "输出关断互锁；按功能重排引脚，物理编号不变"
-			(at 50.8 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "SN74LVC1G04DBVR"
-			(at 50.8 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "SN74LVC1G04DBVR" (at 50.8 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C7827" (at 50.8 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 50.8 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "aed9a92c-e27f-40ed-a1b3-c833dc45ef82")
-		)
-		(pin "2"
-			(uuid "45411967-aa42-40bd-a451-9dcd51bf43ed")
-		)
-		(pin "3"
-			(uuid "c98e541e-6df3-4369-954f-b767ac42883f")
-		)
-		(pin "4"
-			(uuid "9db0fc62-ffce-4446-8d39-a248e8ff2d60")
-		)
-		(pin "5"
-			(uuid "0232a3e8-23be-4125-a618-cb8bcda26bd1")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/194d604d-e8d3-465e-9ee9-9184753f8f18"
-					(reference "U305")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
-					(reference "U305")
 					(unit 1)
 				)
 			)
@@ -1719,7 +1695,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 27.94 27.94 0)
@@ -1737,17 +1715,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "CC0603KRX7R9BB104" (at 27.94 27.94 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C14663" (at 27.94 27.94 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 27.94 27.94 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 27.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 27.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 27.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8c897160-d5b5-4237-abc7-f90cab20b437")
 		)
@@ -1822,7 +1820,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 151.13 27.94 0)
@@ -1840,17 +1840,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "CC0603KRX7R9BB104" (at 151.13 27.94 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C14663" (at 151.13 27.94 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 151.13 27.94 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 151.13 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 151.13 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 151.13 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aea6b4e8-0ee6-4f30-bad1-b051eda64c63")
 		)
@@ -1925,7 +1945,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 151.13 104.14 0)
@@ -1943,17 +1965,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "CC0603KRX7R9BB104" (at 151.13 104.14 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C14663" (at 151.13 104.14 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 151.13 104.14 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 151.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 151.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 151.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f5d6d367-f8e6-443b-b075-896e9d11ea65")
 		)
@@ -2028,7 +2070,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 120.65 105.41 0)
@@ -2046,17 +2090,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "CC0603KRX7R9BB104" (at 120.65 105.41 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C14663" (at 120.65 105.41 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 120.65 105.41 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 120.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 120.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 120.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bb033364-3f81-4ca7-9b06-6f031b75b40b")
 		)
@@ -2071,109 +2135,6 @@
 				)
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
 					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 60.96 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "929cc5b6-d26b-429b-80b2-fd6ac1f414ac")
-		(property "Reference" "C32"
-			(at 63.5 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 63.5 106.67999999999999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 61.925 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
-			(at 60.96 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 60.96 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Specification" "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
-			(at 60.96 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-    (property "MPN" "CC0603KRX7R9BB104" (at 60.96 105.41 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C14663" (at 60.96 105.41 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 60.96 105.41 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "64f851e8-1466-477d-8278-9e782e36edf3")
-		)
-		(pin "2"
-			(uuid "de29f6e0-d651-485c-811e-61c4121034cf")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/194d604d-e8d3-465e-9ee9-9184753f8f18"
-					(reference "C32")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
-					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -2234,7 +2195,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 83.82 45.72 0)
@@ -2252,17 +2215,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 83.82 45.72 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 83.82 45.72 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 83.82 45.72 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 83.82 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 83.82 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 83.82 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4244735e-cd7a-4d97-9e9e-e57ba03a475f")
 		)
@@ -2337,7 +2320,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 83.82 50.8 0)
@@ -2355,17 +2340,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 83.82 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 83.82 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 83.82 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 83.82 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 83.82 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 83.82 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a2c80ee6-688a-4b16-aed6-d93ca964ec16")
 		)
@@ -2440,7 +2445,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 83.82 55.88 0)
@@ -2458,17 +2465,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 83.82 55.88 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 83.82 55.88 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 83.82 55.88 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 83.82 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 83.82 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 83.82 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5189e790-dd68-49d8-b426-59127430496e")
 		)
@@ -2543,7 +2570,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 83.82 60.96 0)
@@ -2561,17 +2590,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 83.82 60.96 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 83.82 60.96 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 83.82 60.96 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "79133b27-c736-4822-bf68-7af40c9eb7b2")
 		)
@@ -2646,7 +2695,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 207.01 45.72 0)
@@ -2664,17 +2715,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 207.01 45.72 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 207.01 45.72 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 207.01 45.72 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 207.01 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 207.01 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 207.01 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8950175f-db25-4e83-a5d9-7a9930364429")
 		)
@@ -2749,7 +2820,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 207.01 50.8 0)
@@ -2767,17 +2840,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 207.01 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 207.01 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 207.01 50.8 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 207.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 207.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 207.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "830dd88f-37b6-4fa0-8bc3-2a91971b65b3")
 		)
@@ -2852,7 +2945,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 207.01 55.88 0)
@@ -2870,17 +2965,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 207.01 55.88 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 207.01 55.88 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 207.01 55.88 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 207.01 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 207.01 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 207.01 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0f875650-e882-4bbc-88bd-c8c00098ce66")
 		)
@@ -2953,7 +3068,9 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
 		(property "Description" "Resistor"
 			(at 207.01 123.19 0)
@@ -2971,17 +3088,37 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				) (hide yes))
+				)
+				(hide yes)
+			)
 		)
-    (property "MPN" "0603WAF1003T5E" (at 207.01 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C25803" (at 207.01 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 207.01 123.19 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
+		(property "MPN" "0603WAF1003T5E"
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6bbb2ec4-c67f-41ce-afb9-a64a551ea9f3")
 		)
@@ -3022,17 +3159,6 @@
 			(justify left bottom)
 		)
 		(uuid "38540e15-2819-48f1-8df5-e321630e9cfd")
-	)
-	(text "XLAT 禁能"
-		(exclude_from_sim no)
-		(at 22.86 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e54ae76-ba7d-4a6b-86d2-2ff1fd2ee6ad")
 	)
 	(text "放电互锁：输出供电开启时禁止放电"
 		(exclude_from_sim no)
@@ -3985,68 +4111,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 121.92) (xy 39.37 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d58cb8d9-d400-4451-87e9-1265f21aff50")
-	)
-	(global_label "SIG_ARM"
-		(at 39.37 121.92 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "66eeac3f-8471-493e-a639-a2739c6f7cbc")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 50.8 128.27) (xy 50.8 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04c6b707-a12d-4285-b624-82803c8f6eac")
-	)
-	(wire
-		(pts
-			(xy 57.15 123.19) (xy 60.96 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b197aa89-ae78-42e7-b466-286467ca561c")
-	)
-	(global_label "XLAT_OEn"
-		(at 60.96 123.19 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "4c15ab04-5197-416d-98d4-1b0eb19d568d")
-		(shape input)
-	)
-	(wire
-		(pts
-			(xy 50.8 116.84) (xy 50.8 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "313f80ee-bda3-44a4-a65e-3d922db49488")
-	)
-	(wire
-		(pts
 			(xy 27.94 24.13) (xy 27.94 21.59)
 		)
 		(stroke
@@ -4127,26 +4191,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 101.6) (xy 60.96 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "261b47db-ad55-4fe6-b975-5e3c33b90ee2")
-	)
-	(wire
-		(pts
-			(xy 60.96 109.22) (xy 60.96 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21af6a99-e61f-42f0-a6d7-39ff6713ce36")
-	)
-	(wire
-		(pts
 			(xy 210.82 123.19) (xy 213.36 123.19)
 		)
 		(stroke
@@ -4170,10 +4214,6 @@
 	(no_connect
 		(at 102.87 124.46)
 		(uuid "5f77b2a4-eee0-4f5e-a363-740593025f5a")
-	)
-	(no_connect
-		(at 43.18 124.46)
-		(uuid "5419a81d-1ae2-4163-9ec0-551098342fe9")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -5090,172 +5130,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 50.8 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "02f4a72f-cba2-467e-941e-bab8d02a4655")
-		(property "Reference" "#PWR25012"
-			(at 50.8 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 50.8 133.985 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fc0e67f6-d924-428e-8f15-d7b026b14ac8")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/194d604d-e8d3-465e-9ee9-9184753f8f18"
-					(reference "#PWR25012")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
-					(reference "#PWR25012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 50.8 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "33525c52-f54a-4a9c-b679-a9b8f4e7ff6f")
-		(property "Reference" "#PWR25013"
-			(at 50.8 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "P3V3"
-			(at 50.8 111.125 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 50.8 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be1e5f62-c75c-4a48-b0a9-f65f8abd23e6")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/194d604d-e8d3-465e-9ee9-9184753f8f18"
-					(reference "#PWR25013")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
-					(reference "#PWR25013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 27.94 21.59 0)
 		(unit 1)
@@ -5920,172 +5794,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 60.96 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "da8c0a55-85c4-41c9-bd53-2a2d861a5e96")
-		(property "Reference" "#PWR25022"
-			(at 60.96 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "P3V3"
-			(at 60.96 95.88499999999999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 60.96 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d598dd31-4107-4885-aa5b-ca60b52f4c25")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/194d604d-e8d3-465e-9ee9-9184753f8f18"
-					(reference "#PWR25022")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
-					(reference "#PWR25022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4430b100-4c5a-4fa1-a633-24b8a197b2a8")
-		(property "Reference" "#PWR25023"
-			(at 60.96 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 114.935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide no)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dc036634-2a03-40f5-ba34-d681de590471")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/194d604d-e8d3-465e-9ee9-9184753f8f18"
-					(reference "#PWR25023")
-					(unit 1)
-				)
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/e0eeb1b6-02a4-4ca5-988e-8c741680d68b"
-					(reference "#PWR25023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 213.36 123.19 90)
 		(unit 1)
@@ -6334,8 +6042,8 @@
 	)
 	(title_block
 		(title "硬件禁能与放电互锁")
-		(date "2026-11-05")
-		(rev "0.2 DRAFT")
+		(date "2026-11-07")
+		(rev "Git / DRAFT")
 		(company "HSLink-LP / based on HSLink Pro 1.2.0")
 	)
 	(wire

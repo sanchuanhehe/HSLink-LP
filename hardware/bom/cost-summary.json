@@ -3,14 +3,14 @@
   "tax_included": true,
   "prototype_quantity": 10,
   "updated_at": "2026-11-07",
-  "baseline_commit": "4f0ab7775498fb9f26c0f444b25c2bd4eb617726",
+  "baseline_commit": "996f6b8",
   "status": "完整位号已覆盖，报价未齐；非可下单整板报价",
-  "physical_references": 168,
-  "quoted_references_including_test_pad": 157,
+  "physical_references": 200,
+  "quoted_references_including_test_pad": 189,
   "bom_per_board": null,
   "bom_batch": null,
-  "quoted_material_subtotal_per_board": 127.0051,
-  "quoted_material_subtotal_batch": 1270.051,
+  "quoted_material_subtotal_per_board": 112.6726,
+  "quoted_material_subtotal_batch": 1126.726,
   "unquoted": [
     {
       "references": [
@@ -89,8 +89,8 @@
   ],
   "spares": {
     "policy": "仅情景：每种料十套实用量的 10%，逐种向上取整；不是厂家实际备损要求",
-    "quoted_subset_extra_material": 127.0051,
-    "quoted_subset_purchase_with_spares": 1397.0561,
+    "quoted_subset_extra_material": 112.6726,
+    "quoted_subset_purchase_with_spares": 1239.3986,
     "full_spares_cost": null
   },
   "moq_leftovers": null,
@@ -101,9 +101,9 @@
   "stencil": null,
   "feeder_fee": {
     "assumed_per_expanded_smt_sku_per_order": 20,
-    "expanded_smt_skus_with_known_library_type": 33,
+    "expanded_smt_skus_with_known_library_type": 32,
     "base_smt_skus": 15,
-    "known_sku_scenario_cny": 660,
+    "known_sku_scenario_cny": 640,
     "full_order_quote": null,
     "note": "不含通孔件；不同子型号按不同种类；无优惠券，实际免换料/可贴状态以订单为准"
   },
@@ -116,16 +116,17 @@
     "added_R9_0R_per_board": 0.013,
     "difference_after_new_0R_excluding_unknown_old_R9": 29.9562,
     "full_net_savings": null,
-    "note": "旧 R9 未取得同平台准确报价；制造/备料差额未齐，不能称整板净节省。"
+    "note": "旧 R9 未取得同平台准确报价；制造/备料差额未齐，不能称整板净节省。",
+    "baseline_commit": "4f0ab7775498fb9f26c0f444b25c2bd4eb617726"
   },
   "budget_correction": {
     "withdrawn_previous_mixed_channel_per_board": 254.78,
     "note": "旧预算和原 ¥80.50 部分合计均作废为整板报价，不作同比收益。主控按 JLC ¥17.71。"
   },
   "translator_chips_per_board": {
-    "retained_LXC": 19.19,
-    "unqualified_LVC_mixed": 4.0769,
-    "unqualified_LVC_all_single": 4.92
+    "baseline_LXC": 19.19,
+    "adopted_12_LVC1_DBVR": 4.896,
+    "previous_candidate_snapshot_all_single": 4.92
   },
   "limitations": [
     "U501 缺货和缺封装；U502/ESD/二极管/按钮仅预订参考；R38 与 U503 准确报价未落实",
@@ -134,14 +135,44 @@
     "MOQ/备损要求/换料费/贴装服务和运输未下单确认"
   ],
   "translator_review": {
-    "source": "../../docs/upstream-swd-timing.md",
+    "source": "../../docs/level-translation.md",
     "swd_read_window": "one clock period; previous half-period model withdrawn",
-    "preferred_validation_candidate": "12 x SN74LVC1T45DBVR",
-    "adopted": false,
-    "realized_savings_cny": 0,
-    "candidate_items_only_saving_batch_10_cny": 153.468,
-    "candidate_cost_scope": "仅芯片、去耦、转换芯片换料费情景；不含额外偏置、焊点、面积、备损、MOQ",
-    "quote_rechecked_this_review": false,
-    "qualification": "1.8V SWD and JTAG 40MHz timing not closed; current LXC not qualified either"
+    "adopted": true,
+    "adoption": "user-approved prototype schematic; not hardware qualified",
+    "adopted_mpn": "SN74LVC1T45DBVR",
+    "quantity_per_board": 12,
+    "baseline_commit": "996f6b8",
+    "previous_quoted_subset_per_board": 127.0051,
+    "repriced_baseline_subset_per_board": 126.9666,
+    "price_refresh_adjustment_per_board": -0.0385,
+    "known_material_saving_per_board": 14.294,
+    "known_material_saving_batch_10": 142.94,
+    "feeder_fee_scenario_saving_per_order": 20,
+    "known_material_plus_feeder_scenario_saving_batch": 162.94,
+    "with_10_percent_spares_plus_feeder_scenario_saving_batch": 177.234,
+    "full_net_savings": null,
+    "included_changes": [
+      "12 converters replace LXC8 + 3 LXC2",
+      "24 decouplers replace 8; remove OE decoupler C32",
+      "13 bias resistors replace 3 unused-channel pulls",
+      "remove U305; U304 inverter type retained",
+      "all-board 100nF crosses 500 tier: 35 -> 50 per board"
+    ],
+    "quote_rechecked_this_review": [
+      "C7843",
+      "C14663",
+      "C25803",
+      "C2868232",
+      "C5217891",
+      "C7827"
+    ],
+    "qualification": "40MHz SWD/JTAG, direction turnaround, leakage, power sequencing and PCB layout pending hardware tests",
+    "excluded_from_savings": [
+      "PCB area/routing",
+      "SMT additional joints",
+      "actual spares and MOQ leftovers",
+      "actual order feeder discounts",
+      "unquoted materials"
+    ]
   }
 }

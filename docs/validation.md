@@ -17,7 +17,7 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 
 版面修改也必须核对网表。对每个标签，检查文字是否被导线、引脚或符号边框穿过，移动后是否仍有明确接点；电源汇线应避开引脚编号。对自定义符号，核对引脚线内端与边框、脚名位置，并确认脚号、电气类型和外部连接端坐标未被排版操作改动。分别查看默认字体和实际阅读字体的导出图；过滤空白字符后的文本包围盒检测只能作为辅助。
 
-最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/jlc-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
+最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/lvc12-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
 
 ## 硬件验收
 
@@ -49,3 +49,5 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 本轮电感/CC/VIO 前级换料的资料分析见 [jlc-design-review.md](jlc-design-review.md)；电平转换尚未闭合的最坏时序与实测条件见 [level-translation.md](level-translation.md)。
 
 上游采样/换向的源码依据与前置测试测点见 [upstream-swd-timing.md](upstream-swd-timing.md)。SWD 按整周期、JTAG TDO 按半周期分别检查；包含 HPM SPI 输入建立/保持时间。不得用段间等待、下载成功或 CPU 读 DATA 的时刻代替段内输入采样裕量。
+
+本次 12 颗单路方案已加入 R713 默认接收及夹具侧偏置。重点新增实测：FSA 断开后返回输入稳定、MCU 启动与 SWD_DIR 默认状态无争用、无 OE 条件下 VIO 斜坡及恢复顺序。40 MHz 保持原验收目标，未实测项不得记作 PASS。

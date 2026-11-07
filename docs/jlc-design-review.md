@@ -80,7 +80,7 @@ Vinject ≈ (200k×VPWM_avg + 20k×0.55)/(220k)
 
 ## 未采用与未关闭
 
-- 电平转换：已纠正 SWD 半周期模型，全单路 DBVR 改为优先验证候选；计入 HPM 10 ns 建立时间后仍未闭合 1.8 V／JTAG 40 MHz 预算（见 [上游时序复核](upstream-swd-timing.md)）；只替 UART 在十套无券换料费下没有净节省，详见 [电平转换评估](level-translation.md)。现用 LXC 也未达成最坏时序证明。
+- 电平转换：按用户确认落实 12 颗 SN74LVC1T45DBVR、24 颗去耦和 13 颗偏置；删除 U305/C32 与旧未用通道。40 MHz 保持待实测目标，详见 [实施说明](level-translation.md)与[上游时序依据](upstream-swd-timing.md)。
 - 更廉价来源开关：无通过 DC 电流、接触电阻和 BBM 校核的准确型号，不计收益。
 - FSA 四颗合计 ¥8.64、继电器三颗 ¥17.49，原高预算修正后不再盲换。
 - TCA9543A 已在基线删除，本轮没有重复计算删除收益。
