@@ -11,13 +11,14 @@
 - 目标接口为带键 ARM 20 针，nTRST 第3针、nRESET 第15针；目标供电走独立接口。
 - 40 MHz 调试链路验收目标，实际速率受目标芯片及连接条件限制。
 - 内置可调供电 1.8～5.0 V / 最高 1 A；外部供电 1.8～5.5 V / 最高 2 A。
+- 保留隔离Vref检测；取消DUT_OUT实测电压回读，供电范围不变。
 - 外部供电测量仪负责电流测量；测量状态保持目标供电、断开信号及检测支路。
 - 25±5°C 条件下，夹具附加电流目标 ≤0.1 µA，必须以整板实测确认。
 - Mac 命令行工具和 Python 库；暂不包含图形界面。
 
 电源来源按用户选择采用板上手动切换。电脑控制目标板电源通断，与来源选择分开。
 
-打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，板上材料 ¥127.5161/板，加配套排线 ¥131.3591/套（10 套材料 ¥1,313.5910，不含制造、运输与采购余料），见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
+打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，板上材料 ¥124.5295/板，加配套排线 ¥128.3725/套（10 套材料 ¥1,283.7250，不含制造、运输与采购余料），见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
 
 工作区只保留一份当前设计，历史通过 Git 提交回溯，不再使用版本号目录副本。原理图、符号库、候选 BOM 和验证摘要纳入 Git；KiCad 本机设置、备份、锁文件、导出报告和缓存由 `.gitignore` 排除。临时生成、排版脚本已删除；已安装的 MCP 服务放在用户工具目录。
 

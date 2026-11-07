@@ -17,3 +17,5 @@ uv run --project host hslink-lp info
 ```
 
 后续加入真实传输层前先冻结固件 HID 协议。未来 power_on、power_off、isolate、reconnect、power_cycle 等方法不得返回模拟的“成功”。
+
+本板已取消DUT_OUT电压回读，U1.26留NC；仅保留U1.27的隔离Vref ADC。不得上报设定值作为实测电压，也不能在板内完成输出掉压或放电完成的电压判断。读Vref不得解除MEASURE锁。能力/状态字段与控制时序是待实现约束，见[接口语义](../docs/control-interface.md)；当前没有新增真实HID或仪器功能。

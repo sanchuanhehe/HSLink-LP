@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "scope": "检测/放电优化：K601转换触点+低边Q902，删除K902/D902、保留K901；资料/网表/ERC/图面及JLC成本复核；无硬件验收",
-  "checked_at": "2026-11-07T12:27:53.318365+08:00",
+  "scope": "用户确认单Vref检测：U901 DG2012E替代K901，取消DUT_OUT采样；供电范围/K601放电保持；资料/网表/ERC/图面和嘉立创10套核价，无硬件验收",
+  "checked_at": "2026-11-07T12:53:43.134302+08:00",
   "kicad_version": "10.0.7",
-  "baseline_commit": "0f89de34c049de7e0f7a16abbde8d62ec5d1f6e1",
+  "baseline_commit": "8fb837ef3047f51e4700425aceba87a16e056d0b",
   "schematic": {
     "version": "Git working tree + sha256",
     "path": "design/HSLink-LP.kicad_pro",
     "status": "降本电路审阅稿",
     "hardware_validated": false,
-    "validation": "198位号意图网表/采购字段/基线连接变换一致；ERC0/0；16组稳态逻辑与6种理想触点状态；两页双字体图面，七页源文件不变"
+    "validation": "194物理位号、117连接网络、675连接引脚、45NC；独立意图和基线逐项变换一致；ERC0/0；双字体两改动页人工检查；7页未变"
   },
   "pcb": {
     "version": null,
@@ -17,11 +17,11 @@
   },
   "firmware": {
     "version": null,
-    "status": "仅上游参考；独立板型、双 CDC、WUSB3801、DAC、继电器时序及测量锁未实现"
+    "status": "仅上游参考；独立板型、双CDC、时序、测量锁未实现；设计已取消DUT_OUT ADC/输出确认与放电完成回读承诺"
   },
   "host": {
     "version": "0.1.0.dev0",
-    "status": "信息命令骨架，无真实 HID 或设备控制"
+    "status": "本地信息骨架，无真实HID；设计明确无DUT实测回读，设定值/PG/寄存器不能代替测量"
   },
   "document_checks": "PASS",
   "hardware_readiness": "NOT_READY",
@@ -36,76 +36,77 @@
       "footprint_filter"
     ],
     "new_ignored_checks": [],
-    "evidence": "design/reports/sense-discharge-2026-11-07/erc-mcp.json",
-    "mcp_evidence": "design/reports/sense-discharge-2026-11-07/erc-mcp.json"
+    "evidence": "design/reports/vref-only-2026-11-07/erc-mcp.json",
+    "mcp_evidence": "design/reports/vref-only-2026-11-07/erc-mcp.json"
   },
   "connectivity": {
     "status": "PASS",
-    "physical_components": 198,
-    "expected_nets": 120,
-    "actual_connected_nets": 120,
-    "connected_pins": 686,
+    "physical_components": 194,
+    "expected_nets": 117,
+    "actual_connected_nets": 117,
+    "connected_pins": 675,
     "isolated_no_connect_pins": 45,
     "missing_expected_connections": [],
     "unexpected_actual_connections": [],
     "metadata_differences": [],
     "intentional_changes": [
-      "Remove K902/D902",
-      "K601.4=DUT_OUT, .8=SOURCE_POWER, .6=DISCH_FEED",
-      "DISCH_FEED->R57(1k)->DISCH_DRAIN->Q902.D; Q902.S=GND, G=DISCH_ON; R62 retained",
-      "Existing sense/FSA/ARM20 and hardware logic unchanged"
+      "Delete K901 Q901 D901 R55 R56 C62",
+      "U1.26 NC; remove ADC_VOUT VOUT_SENSE_IN SENSE_COIL_LO",
+      "U901 COM5=DUT_VREF; NO6=VREF_SENSE_IN; NC4 isolated; IN1=SENSE_ON; V+2=USB_5V; GND3=GND",
+      "C901 USB_5V to GND; R61 retained default pull-down",
+      "DUT_OUT only K601.4/J602.1; all other pin partitions unchanged"
     ],
     "all_other_pin_partition_unchanged": true,
-    "bom_status": "198 physical references / 197 purchased / 57 grouped rows + 1 accessory; exact metadata/tier checks passed",
-    "quoted_material_subtotal_per_board": "127.5161",
+    "bom_status": "194 physical / 193 purchased / 58 grouped rows + separate cable; metadata, reference, quantity and tier check PASS",
+    "quoted_material_subtotal_per_board": "124.5295",
     "unquoted_references": [],
-    "evidence": "design/reports/sense-discharge-2026-11-07/validation-checks.json"
+    "evidence": "design/reports/vref-only-2026-11-07/validation-checks.json"
   },
   "upstream_layout": {
     "status": "PASS",
     "source_commit": "c315927df32c9de4cd2d5447a6e171fc19618024",
     "retained_symbol_units": 34,
     "physical_references": 33,
-    "scope": "沿用既有上游布局检查；本轮仅TargetPower/Sense改动，其他七张原图字节不变，上游参考仓库未改",
+    "scope": "沿用上游符号布局；本轮根页仅删除ADC_VOUT线/标签并标NC，Sense重新局部接线；另外7张源图逐字节等于8fb837e，上游未改",
     "differences": []
   },
   "visual_review": {
-    "checked_at": "2026-11-07T12:27:53.318365+08:00",
+    "checked_at": "2026-11-07T12:53:43.134302+08:00",
     "pages_exported_per_font": 9,
     "pages_inspected_native": [
-      "TargetPower",
+      "HSLink-LP",
       "Sense"
     ],
     "pages_inspected_arial": [
-      "TargetPower",
+      "HSLink-LP",
       "Sense"
     ],
     "modified_regions_inspected_both_fonts": [
-      "K601 COM/NO/NC routing and J602",
-      "R57/Q902 discharge branch and deleted K902/D902"
+      "U1.26 removed ADC_VOUT stub and new NC",
+      "U901 COM/NO/NC, supply, C901 and preserved divider; removed VOUT branch"
     ],
     "fonts": [
       "KiCadStroke",
       "Arial Unicode MS (embedded verified)"
     ],
     "findings_resolved": [
-      "No overlap found in changed regions after final rendering"
+      "New power-symbol Value labels moved off vertical wires; inspected final two fonts"
     ],
     "unmodified_pages_source_hash_equal": [
       "hardware/design/Control.kicad_sch",
       "hardware/design/Disconnect.kicad_sch",
-      "hardware/design/HSLink-LP.kicad_sch",
       "hardware/design/Interface.kicad_sch",
       "hardware/design/LogicTranslation.kicad_sch",
       "hardware/design/Power.kicad_sch",
-      "hardware/design/Safety.kicad_sch"
+      "hardware/design/Safety.kicad_sch",
+      "hardware/design/TargetPower.kicad_sch"
     ],
-    "scope": "本轮两改动页实际图面，另七页字节不变；前轮图面结果见基线0f89de3；非硬件验收"
+    "scope": "两张改动页实际图面；7页源文件不变；最终仅行末空白变更，解析对象和顺序相同；非硬件验收"
   },
   "missing_footprints": [],
   "physical_pinmap": {
-    "scope": "历史检查保留；本轮重新核HFD2底视COM/NO/NC与AO3400A顶视G/S/D，并由MCP回读改动脚位；库及封装字节不变，无PCB/DFM验收",
-    "record": "../docs/costdown-pinmap.md",
+    "scope": "本轮Vishay DG2012EDL-T1-GE3 DL SC-70-6顶视逐脚与标准封装、临时及正式实例核对；旧记录为历史检查。无正式PCB/DFM验收",
+    "record": "../docs/vref-pinmap.md",
     "accepted_parts": [
       "HFD2/005-S",
       "2MD1T1B1M2QES-5",
@@ -128,7 +129,8 @@
       "TS-1187A-B-A-B",
       "1N4148W (SEMTECH)",
       "2.54-2*10P简牛",
-      "CL2542320200BC10E (prototype accessory, leakage not qualified)"
+      "CL2542320200BC10E (prototype accessory, leakage not qualified)",
+      "DG2012EDL-T1-GE3"
     ],
     "manufacturing_validation": false,
     "datasheet_sha256": {
@@ -176,7 +178,9 @@
       "sense-discharge/TMUX1112.pdf": "ac06680eff34444d6882076810db8e1b6f0dc834dcc849a1054c00c53e8fb193",
       "sense-discharge/HFD2.pdf": "b285fda260fdc26f6a5f79644565745e75635c4c41391d65a12bd6495eadcd42",
       "sense-discharge/TMUX7412F.pdf": "7396d8a34f80b178a8b5c72272b5bb0eb7da7ad3182e7d3cd80d294fc32f26e5",
-      "sense-discharge/ADG4612.pdf": "da7e5b537396e1b53eb5e8b1cd45fcb3076b3991978a98ecf381bdaee038ba9d"
+      "sense-discharge/ADG4612.pdf": "da7e5b537396e1b53eb5e8b1cd45fcb3076b3991978a98ecf381bdaee038ba9d",
+      "DG2012E.pdf": "7e9a8d43e081b9f08fce6945562beb84a8d621e6322942c8818c071095f3cde9",
+      "TS5A3166-rejected.pdf": "1f2ead12bd7ceb7135bd017cb7554008d71ae2dcfdddb6eb6e2189fbdbd7a2ad"
     },
     "mcp4726_land_pattern": "KiCad 通用 SOT-23-6 与原厂 p.77 推荐焊盘尺寸不同，见物理引脚表；DFM 未完成；标准 MCP 未单独返回每个焊盘的旋转及层集",
     "additional_record": "../docs/jlc-pinmap.md",
@@ -259,21 +263,24 @@
       "../docs/arm20-interface.md"
     ],
     "new_footprint": "HSLinkLP:Texas_YFF0015_1.344x2.255mm_P0.4mm",
-    "sense_discharge_record": "../docs/sense-discharge.md"
+    "sense_discharge_record": "../docs/sense-discharge.md",
+    "selected_standard_footprint_sha256": {
+      "Package_TO_SOT_SMD:SOT-363_SC-70-6": "0659d885e00b786968c3ba29152b808777240a91c1fb49ab8d814eb03530115c"
+    }
   },
   "bom": {
     "status": "REFERENCE_COVERAGE_AND_TIER_CHECK_PASS_COMPLETE_MATERIAL_QUOTE",
-    "physical_references": 198,
-    "procurement_references": 197,
-    "quoted_references_including_test_pad": 198,
+    "physical_references": 194,
+    "procurement_references": 193,
+    "quoted_references_including_test_pad": 194,
     "unquoted_references": [],
-    "per_board_cny": 127.5161,
-    "batch_10_cny": 1275.161,
+    "per_board_cny": 124.5295,
+    "batch_10_cny": 1245.295,
     "accessory_per_kit_cny": 3.843,
     "accessory_batch_10_cny": 38.43,
-    "kit_material_per_unit_cny": 131.3591,
-    "kit_material_batch_10_cny": 1313.591,
-    "price_status": "本轮重核HFD2/AO3400A/1N4148W现货阶梯及候选；其余沿用同日本地日期快照，非锁价/订单",
+    "kit_material_per_unit_cny": 128.3725,
+    "kit_material_batch_10_cny": 1283.725,
+    "price_status": "6种本轮重新读取渲染现货价；其余沿用同日本地日期快照；C20917报价显示后再次验证，记录保留，非锁价/订单",
     "source": "bom/jlc-quotes.json",
     "spares_moq_manufacturing_quote_complete": false,
     "spares_scenario_extra_board_batch_10_cny": 127.5161,
@@ -291,22 +298,27 @@
     "独立板型、WUSB3801/预算、双CDC、测量锁及真实HID未实现",
     "MOQ/实际备损、PCB/SMT/THT/换料/运输未形成正式订单报价",
     "晶体负载起振、按键机构与ARM20跨厂家键槽实物配合待测",
-    "K901未完成半导体替换，当前两颗继电器；一颗目标未达成",
-    "K601转换抖动及D601续流释放、Q902关断泄漏/USB掉电栅极瞬态和放电时间/热待实测；50ms仅切换初值"
+    "K601转换抖动及D601续流释放、Q902关断泄漏/USB掉电栅极瞬态和放电时间/热待实测；50ms仅切换初值",
+    "DG2012E只隔离1.8～3.3V Vref；COM前无分压/保护，但20/25/30°C实际NC浮置漏电与USB中间供电区间待测；整板100nA未闭合",
+    "DG2012E V+=0/COM4.5V/IN=0全温最大1µA；不套用正常MEASURE指标，不称零反灌",
+    "取消DUT_OUT回读；输出掉压、实际电压、放电完成须外部仪器，本板设定/寄存器/PG不作为实测值"
   ],
   "mcp": {
     "standard_server_modified": false,
     "new_global_library_registered": false,
-    "temporary_adapter": "installed skip/pcbnew via uv: project library readback, scratch footprint, exact entity removal, whitespace preservation",
+    "temporary_adapter": "一次性stdio MCP: pcbnew临时封装回读、精确旧NC UUID/自由文字、新NC、语义相同格式恢复和行尾空白清理",
     "cad_mutations_via_mcp": true,
     "native_limitations": [
-      "large batch timeout recovered by readback and smaller batches",
-      "page size / exact-object deletion / group move / whitespace formatting via temporary MCP adapter"
+      "get_active_toolsets/save_project/find_shorted_nets unavailable or no PCB; used installed tool list, saved file export/ERC and complete pin partitions",
+      "list_symbol_pins project library lookup failed; recovered coverage using scratch/placed get_schematic_pin_locations and exported XML six physical pins",
+      "standard exact wire removal prunes obsolete junctions; UUID adapter removed only two remaining old NC",
+      "coordinate heuristic bulk cleanup and later object reorder were auto-review rejected and not executed; used exact standard MCP removals and whitespace-only cleanup"
     ],
     "temporary_tools_removed": true,
-    "new_project_symbol_library": "Logic_LevelTranslator via ${KICAD10_SYMBOL_DIR}",
+    "new_project_symbol_library": "HSLinkLP:DG2012EDL-T1-GE3; existing project sym-lib-table",
     "task_pricing_browser_closed": true,
-    "cleanup_note": "已删除本轮及沿用前轮的临时MCP适配器/客户端、一次性Python脚本和专用Chrome缓存；常驻MCP安装保留。"
+    "cleanup_note": "已删除本轮及沿用前轮的临时MCP适配器/客户端、一次性Python脚本和专用Chrome缓存；常驻MCP安装保留。",
+    "temporary_tools_cleanup": "本轮专用Chrome9344、/private/tmp/hslink-vref脚本/适配器/缓存/临时验证工程已删除；报告仅留在忽略目录"
   },
   "level_translation_review": {
     "decision": "用户确认：12 x SN74LVC1T45DBVR 已落地，40 MHz 保留待实测",
@@ -325,43 +337,54 @@
     "firmware_protocol_implemented": false
   },
   "sha256_project_relative": {
-    "README.md": "49653092c8b29d43ac7eee7b208ffc87220d2c48ad2eddcdde866af6b5d80139",
-    "docs/architecture.md": "8dd6205389d3024c719e3b66c5c71f5b1314a618b3c501a09f24e6ca8a4a5a06",
-    "docs/arm20-interface.md": "13602e908e28fabe5b6bcad882dc09a6dcb0efbb8866584deade32db29bcc028",
-    "docs/cost-down.md": "f68abdf7af5e7b2672ef391aa7062b10ab180c097337182c3fefd1e812f69f93",
-    "docs/cost.md": "0a733dd7f5f2c031f5e06cfd9b06d1aeb12270937c485d8591c532aae900d060",
+    ".gitignore": "398f9d2500d69a91a4f8ae0401fdf4ca99ae4b59642826abfa2bc8ecf3073837",
+    ".gitmodules": "8e52c7e4837c9425fa7c73f377c205db78dd72545010a62b4c69db37651d40d5",
+    ".vscode/extensions.json": "4fff4e87cf75e019f555ac5b7cd303dd5250fc9280a733249bf0c7d555f47ed3",
+    "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
+    "HSLink-LP.code-workspace": "ce138222cb6ad122838d00b117f3869a22439c92f372e65d42883081a0b38535",
+    "README.md": "5f38237df582d617cda080a28f1f7e35d326dd78eea512dbfbe1afaa5482400a",
+    "docs/architecture.md": "044e5878cc0f29ee9e1ca29920744be2c101a2e2831decddeaf386fd85fbd63e",
+    "docs/arm20-interface.md": "035c850b9b7fa9ea85ca3eae7cef7d7d7e5b4450e3c1bbe69f71bbcef89af38a",
+    "docs/control-interface.md": "8103b254c1b0e78f4d5f95ab30f140b3f7894c89e673e017e0640e12e9e991f1",
+    "docs/cost-down.md": "6f3649f8e8f6d18ac3d8ae64e7c2e782ed0a614e52716316f34a97ba65c1b50f",
+    "docs/cost.md": "e53f428e57d72c9148e6411c50ccd7cd7de4f4652ada7d286cd040a4cc255a21",
     "docs/costdown-pinmap.md": "6f379f921feecf0fe709c06297658f91d860b38904945e5f752f1c530dbe5ec0",
-    "docs/jlc-design-review.md": "e20379d69fe809d8c496af470bdb0404cdc3ad37aa80caf3c1bce4707d86405d",
+    "docs/jlc-design-review.md": "e5611215cb27a4aef742a2653484fe460ede99269e78d522d0edbc9db3389a97",
     "docs/jlc-pinmap.md": "df024fd77e59330bacff20ebb26ebfddf322135aae530d60c6147398bfb096fa",
-    "docs/kicad-integration.md": "9251fd5755daa1c3d9412839df4209d05c860a482fd1e03ec796314d5ab72513",
-    "docs/level-translation.md": "f52b7c199150cc5c6012b653fc534d135ba501937c119bd2861bb1380fe126c1",
-    "docs/procurement-completion.md": "098c1708b8f57ad28c94aad4d90d406968e49bdf44e244ba7fc0b560de1476d3",
+    "docs/kicad-integration.md": "4a756a1f1daf51a27b06593c34f6cfe584fea1164dc2e399377f11a77d969154",
+    "docs/level-translation.md": "48d7b1f2cc33f3e88cd8a3373199e7544158c9f3fa9219152cc6d236b8d29cca",
+    "docs/procurement-completion.md": "fa6ff8d8008832293344cb214bcf46cd04ffd4a2b1ea6c804122c94dd5f0670a",
     "docs/procurement-pinmap.md": "2f73f2bf8b312c5f4de2be407515bab4cc1b56088567a497ddd23f86ec327238",
     "docs/references.md": "1441bc8df9b623322bbc0d8750b9f4564ed52279ae3f3641c55ed1965663dfcf",
-    "docs/requirements.md": "e8df540b6415f7f6d162711b83d4f5ee27c704c820c7206ce22ead31bceeb9cb",
+    "docs/requirements.md": "9196fe5660179a998d52f8af7b757f466f1fdb563ae61d6380e1aa956a281fd8",
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
-    "docs/sense-discharge.md": "bdd6fa197aefd3c635c2725f8262d911919ff3d6a1f927f8bb939400bef0e2c3",
+    "docs/sense-discharge.md": "8abe82dbe31cdb516109e1385ab7bded4db68caf7feb6088876b46f774a1e445",
     "docs/upstream-swd-timing.md": "01a31d841718c829a9d58eb85b6f30ca7a856279238446736841e30200316d57",
     "docs/upstream.md": "7337084ef16707a9c9ba5812d329700b4bbdb225278c40a2f9f34f314f0ac12d",
-    "docs/validation.md": "d9dbbb7c1d047a039c9a424ca81612bd4dd6ed77834b924a27f777e81c91a26e",
+    "docs/validation.md": "312f7ffa94e8bfede63ac5b07c9183690e9e8b730d1cd6bd904027af196fa02b",
+    "docs/vref-pinmap.md": "2bb0b080d2400335029d65b7e1ef6611754acdc30f963c0e43eb314a1f52d8fe",
+    "firmware/README.md": "763cbb49c35eda023e61f45f0bb7d523d635dfbf18ba8d977f7da5f4eca20f36",
+    "hardware/README.md": "b8a1e1ad5b5e363b4130f53607661fe356976729d235a5d7f58b38118b36b817",
     "hardware/bom/accessories.csv": "d9e5d1a692275e7474684bbff775538eaaa6197e0e25673e7d3b08649b14a509",
-    "hardware/bom/candidates.csv": "6f413cfd44bbf3c7cc7643ce443c941108939be63d1d01cf3653082b3438f43d",
-    "hardware/bom/cost-summary.json": "7269a5c2cf4d9154e475712995c7b6a0110f56fbdc513f6b897f7b8fb52f4d5d",
-    "hardware/bom/jlc-quotes.json": "e3e8fce6518f732d591e5af4150800b81f87e96d334e50a534fd092ade7b1d9e",
+    "hardware/bom/candidates.csv": "995e39fe1de3af43d5f7992ccd56351df62cd1691618472c54d83e7c351c014b",
+    "hardware/bom/cost-summary.json": "c6b9447121124709fb5f425149dd279b89e83a708ebac371208ca5e396a9041b",
+    "hardware/bom/jlc-quotes.json": "e5fbc39f92b9b7134e476f4120866bf6827e6b64c66cd29ec5e3d6296380ea97",
     "hardware/design/Control.kicad_sch": "247bfe18b044b30cca07fa9c3c9405951a1700c3b4cb6ef61bc4e129217ba3d2",
     "hardware/design/Disconnect.kicad_sch": "b1f84405d200f221d59a75d9aeb2fa1b94bfcebb89365661816777df1f9108f0",
     "hardware/design/HSLink-LP.kicad_pro": "a74ead24792cc7f6e79cd710178eee90ac45548b0ab3404a860965b941975dc3",
-    "hardware/design/HSLink-LP.kicad_sch": "4f36e8ee10781c9343b49859f933c50e3e9913d1a2bb52119cb1ce1427a78439",
+    "hardware/design/HSLink-LP.kicad_sch": "3c36d5c2b374802df8481aec01cb5b083981d207f3d0e9cbb9cef1e18a5d6d17",
     "hardware/design/Interface.kicad_sch": "2012fb8d2b0bbe3b3c4a41a26472682ae86b92b2d7da8646a78c51551efbd911",
     "hardware/design/LogicTranslation.kicad_sch": "26d48630c0509e539e30ea0e03b55f745ff4f26ef06f5dd78e57c6f76ba60b28",
     "hardware/design/Power.kicad_sch": "f1757de2f7e20cb64607669c1edcef118490c78e6ab0698b3a79b8b69c6f8cb4",
-    "hardware/design/README.md": "88b19700e5d5056267ac6b4dc779be60eaa08507b3b6b59d02cae3771833d7a7",
+    "hardware/design/README.md": "a6aef050207213d8cecea8006c88ebbb9420f25f9f648f38fa951169730fde6b",
     "hardware/design/Safety.kicad_sch": "2c24711bced8d186e097e6d78fc35d2a127c691256b3225a89de0f97c67fe82b",
-    "hardware/design/Sense.kicad_sch": "b69f7ed9450adb716beb39e1a3cd82b55aa83ae20a06a7e2175e47da5c1b704a",
+    "hardware/design/Sense.kicad_sch": "a8dd2390529e9fd56faaf4391a8c1f127fad68d53593edca67f2a0b79bde6714",
     "hardware/design/TargetPower.kicad_sch": "e2c4854c4c533aa8402b02d34edbd483cce2b891a705539675fcefd7bda39b87",
-    "hardware/design/connectivity.json": "9eede2e6ec584854ea23544f7e92152c36041dfdd41cb41547799c5182732b9c",
+    "hardware/design/UPSTREAM-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "hardware/design/connectivity.json": "00961821ae22ab91f4d0c1f6a14dfa9abd7b9a2293357823d8a33eea4ba7c8e2",
     "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
-    "hardware/design/libraries/HSLinkLP.kicad_sym": "89d59b2ae10f17f659a871f7b19498306548a22220d558589ea594cf2a1fc6b7",
+    "hardware/design/libraries/HSLink-upstream-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "hardware/design/libraries/HSLinkLP.kicad_sym": "0755034fe94c596289ec3992b68c5d12f9e50395208dff86a35368437e0d6d82",
     "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "525f156b676680940291c35b17167ea361bf71df176b64e736d9e4a3360c2ae9",
     "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "1a76d9761cd31a71d566c16c48b550f36eacbfe5be1d3814648ba9690c844945",
     "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "c6c70a123890e5a9a38172714036cc623bcc3c5e3ed3e60ad884bae737a0ae17",
@@ -370,7 +393,15 @@
     "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "c7777cc9913ce51cc2a6fa2bcbe2b3c34e8cf7d23df1ca5b239c238016ecae19",
     "hardware/design/libraries/UpstreamCache.kicad_sym": "d6ed4065fd123f2e33a4f17fb8f2de914e8222b302d1418d90f167fba3bc4a38",
     "hardware/design/sym-lib-table": "263d1f47eef04cd35a11a48d192ea5761fa7c8380e1ba633870f372ddf9b7c2b",
-    "hardware/design/upstream-layout.json": "e6962e3a65707d2e4724f4d9d631ae3eb26cebda244bd3fb494957db5cd38669"
+    "hardware/design/upstream-layout.json": "e6962e3a65707d2e4724f4d9d631ae3eb26cebda244bd3fb494957db5cd38669",
+    "hardware/reference/README.md": "042b6477f21cb4b63ff01b9362523571d7d427b8bc228000e52cf3113145637a",
+    "host/README.md": "8f32dfc26653c5724fa8bb85c95f3af340adcb4aea05df90f445c81baddc1b13",
+    "host/pyproject.toml": "30a00f99840adc051b8bbb1a10f0c05779b7ac26eba07d6d7efc41eb11207f89",
+    "host/src/hslink_lp/__init__.py": "775644f05307b9e96bb48e13a0159ae74985b8d0e0393a2263d3c652b03e5d80",
+    "host/src/hslink_lp/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "host/src/hslink_lp/cli.py": "e4263371ead085566a0bbdd931fce4eefd23137d923f707ef05bc81c2d9d638d",
+    "tools/fetch_upstream.py": "506962188f1e536fb1025cfc26dd5c1016d37fc9952b4ad920f4e4025237b85a",
+    "upstream.lock.json": "1325caffec12a6067fcd36cfbdd4ee9c63488ebd2b74e9b17cc9f2fba73c79a9"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -564,7 +595,38 @@
     "design/reports/sense-discharge-2026-11-07/netlist.json": "11904108d876486d5f081d6c4169f69a98890af84d87461a6f06f1a4be0944c9",
     "design/reports/sense-discharge-2026-11-07/schematic-arial.pdf": "6d0e403511f7d851c74ea1ce6e7605777422ef2e6ffdfe66d23d5eb3236582d4",
     "design/reports/sense-discharge-2026-11-07/schematic-native.pdf": "00607832beaa6b53082ca25d8eadf3cf3075ed68ddda0f79416919f33c505e7f",
-    "design/reports/sense-discharge-2026-11-07/validation-checks.json": "2ee44dc2ff2f3a0fa48db332e147979c5f2c678729d9da154700ffbb4747b989"
+    "design/reports/sense-discharge-2026-11-07/validation-checks.json": "2ee44dc2ff2f3a0fa48db332e147979c5f2c678729d9da154700ffbb4747b989",
+    "design/reports/vref-only-2026-11-07/C1588.json": "3b93111a960c280d61a7ec207fa59adc553b20d172d29a373c034c725221168d",
+    "design/reports/vref-only-2026-11-07/before.xml": "302e91008b00516adfaffee9cfd60b602dc31a57f1bd9ae3b94eb1ee4151d648",
+    "design/reports/vref-only-2026-11-07/erc-mcp.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+    "design/reports/vref-only-2026-11-07/C705793.json": "5676534bcbcd6e36b95d0caaeb90b4329133dd7534e29159f70b147ce9e1f4ea",
+    "design/reports/vref-only-2026-11-07/placed-symbol.json": "0a55112fc0395aea3e41d1cfc2beda16133d8926a480b19ec6e292a5e91aec44",
+    "design/reports/vref-only-2026-11-07/footprint.png": "4f98a850b6f8f78a6a6423bf56297ffa3d0a22aca299ebc3cf4f0e80b26591b6",
+    "design/reports/vref-only-2026-11-07/package.png": "e17df235d8131c169a6e54179bac83bcf982aeb75eb91edb450e026ed1d726e7",
+    "design/reports/vref-only-2026-11-07/after.xml": "f94d05d37605f7dc87a7bdadf3abf2585ed90f9c290233aac9ca187d3ea0c22a",
+    "design/reports/vref-only-2026-11-07/footprint.pdf": "716ea7a2510f4cc476c5d848105b70477e132c50ff9a26664d9e9958f4af666b",
+    "design/reports/vref-only-2026-11-07/page-1.png": "f9ea9e61788e16b947b36e1baf4b8f15e0769ce274107d97b74a45bf65519b56",
+    "design/reports/vref-only-2026-11-07/vref-close.png": "37953300fb947d90d4242b840157da5132fd72e2a9dc423d4dd6db57c2f48be4",
+    "design/reports/vref-only-2026-11-07/vref-close-arial.png": "9c07904266c45f6439d66b9f749cbb72274d937791dd6fbabd33a973c94b45d8",
+    "design/reports/vref-only-2026-11-07/pads.json": "37c8c9ac2f22dd25c0a3eba700b759ed339616c8b3ca1e9f69135b5ee7798fb7",
+    "design/reports/vref-only-2026-11-07/instance-readback.json": "6e86ea447b9107ceb2b25bf0b627f4b4419f7a3de5bd04e239d2828c34af210f",
+    "design/reports/vref-only-2026-11-07/symbol-pins.json": "dca2297fb4b82f3754806b6209e2372a4e8c16211ebf03427c262bf8d57dfaa0",
+    "design/reports/vref-only-2026-11-07/pincheck.pdf": "add014c4b1f2a1b367773dbc14a29fd520f4e8896c01ede1477688595d31f095",
+    "design/reports/vref-only-2026-11-07/page-1-arial.png": "72f2f311ce21eb3ce6387a0b309192ceac0eff50acb0a32c1395768709f244e6",
+    "design/reports/vref-only-2026-11-07/pincheck.png": "57614e1a539218cd825f9617c37385155e47eef47eddc01fd80914bcc53fb3ae",
+    "design/reports/vref-only-2026-11-07/placed-pins.json": "6478d00a86bc1ef5abf7938f1b42c2b286d2cc94ba34e170963ef501cc8c037b",
+    "design/reports/vref-only-2026-11-07/C2673178.json": "a7dfb3b6a7dde4a9768bd878f4c9333150f01fb2b375ab53f57f00b35b58fc74",
+    "design/reports/vref-only-2026-11-07/page-9.png": "32e39e62bb541e18c6243ce64c2aca99204281eb69c8094fb7a0d3b6fd91c7a9",
+    "design/reports/vref-only-2026-11-07/page-9-arial.png": "743def923f42cb2161ff519984b7e5753356c39cad40c5a0d30b48a4df61e5ea",
+    "design/reports/vref-only-2026-11-07/TS5A3166.pdf": "1f2ead12bd7ceb7135bd017cb7554008d71ae2dcfdddb6eb6e2189fbdbd7a2ad",
+    "design/reports/vref-only-2026-11-07/DG2012E.pdf": "7e9a8d43e081b9f08fce6945562beb84a8d621e6322942c8818c071095f3cde9",
+    "design/reports/vref-only-2026-11-07/C14663.json": "305977363a58dbe0d008ba4647fc8f3f2d66531eb63035ad159b0279a8682041",
+    "design/reports/vref-only-2026-11-07/symbol-readback.json": "69c2d935af96589deb19b73d5146bbdc5c2484bccd6f5cfeeddfc0c6ef241a54",
+    "design/reports/vref-only-2026-11-07/schematic.pdf": "9d1327bb0769edf6f7c2d1d49aaf14aad3982b6cdab85acbb49a856fc6ffdce7",
+    "design/reports/vref-only-2026-11-07/schematic-arial.pdf": "70137bbf4a1e4c1088c04336d8996b8125c52b21958390b844b593a2dc768782",
+    "design/reports/vref-only-2026-11-07/C42415145.json": "7145cb6116d2594609f4188ad82b0eda0b44845f48d1f7004f6fc92d7cf2fd3a",
+    "design/reports/vref-only-2026-11-07/C20917.json": "b534f630a0b637a3df2d24b7050733745f9551c0fcc7b571963daf9246d926fb",
+    "design/reports/vref-only-2026-11-07/validation-checks.json": "590c044d6394a9722672f2d99faf43994c28f1739bcd49b4cd6de3efd8bdc445"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -672,33 +734,40 @@
   "sense_discharge": {
     "status": "DATASHEET_AND_CONNECTIVITY_CHECKED_NOT_HARDWARE_QUALIFIED",
     "record": "../docs/sense-discharge.md",
-    "removed": [
+    "relay_count": 1,
+    "K901_retained": false,
+    "K901_semiconductor_replacement_qualified": false,
+    "K901_semiconductor_replacement_implemented": true,
+    "selected_mpn": "DG2012EDL-T1-GE3",
+    "lcsc": "C2673178",
+    "dut_out_voltage_readback": false,
+    "removed_this_change": [
+      "K901",
+      "Q901",
+      "D901",
+      "R55",
+      "R56",
+      "C62"
+    ],
+    "previously_removed": [
       "K902",
       "D902"
     ],
-    "relay_count": 2,
-    "K901_retained": true,
-    "K901_semiconductor_replacement_qualified": false,
-    "new_symbols_or_footprints": [],
-    "library_files_unchanged": [
-      "hardware/design/libraries/HSLink-upstream-LICENSE",
-      "hardware/design/libraries/HSLinkLP.kicad_sym",
-      "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod",
-      "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod",
-      "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod",
-      "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod",
-      "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod",
-      "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod",
-      "hardware/design/libraries/UpstreamCache.kicad_sym"
+    "K601_and_discharge_connections_unchanged": true,
+    "steady_interlock_combinations_checked": 16,
+    "steady_sense_enable_combinations_checked": 32,
+    "transient_or_hardware_tests_executed": false,
+    "temperature_requirement_c": [
+      20,
+      30
     ],
-    "control_logic_unchanged": true,
-    "logic_combinations_checked": 16,
-    "ideal_stable_contact_states_checked": 6,
-    "hardware_timing_or_leakage_tested": false,
-    "price_refresh_delta_cny": 0,
-    "material_savings_cny_per_board": 5.7054,
-    "material_savings_cny_batch_10": 57.054,
-    "manufactured_savings_cny": null,
-    "post_USB_off_MOS_leakage_zero_claim": false
+    "whole_fixture_leakage_goal_closed": false,
+    "measurement_lock_firmware_implemented": false,
+    "switch_off_leakage_full_temperature_per_table_terminal_na": 20,
+    "powered_off_table_max_ua": 1,
+    "full_material_savings_board_cny": 3.1766,
+    "full_material_savings_batch_10_cny": 31.766,
+    "material_plus_feeder_scenario_savings_batch_10_cny": 11.766,
+    "full_manufactured_net_savings_cny": null
   }
 }

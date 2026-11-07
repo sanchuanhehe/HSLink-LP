@@ -31,7 +31,7 @@
       "23": "TDO_MCU",
       "24": "TCK_MCU",
       "25": "SPI_CS",
-      "26": "ADC_VOUT",
+      "26": null,
       "27": "ADC_VREF",
       "28": "VDD_SOC",
       "29": "P3V3",
@@ -2480,57 +2480,6 @@
     "procurement_specification": "容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V"
   },
   {
-    "reference": "R55",
-    "symbol": "Device:R",
-    "value": "68k/0.1%/0.1W",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "Sense",
-    "nets": {
-      "1": "VOUT_SENSE_IN",
-      "2": "ADC_VOUT"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
-    "display_value": "68k",
-    "mpn": "RT0603BRD0768KL",
-    "lcsc": "C705793",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ"
-  },
-  {
-    "reference": "R56",
-    "symbol": "Device:R",
-    "value": "68k/0.1%/0.1W",
-    "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "sheet": "Sense",
-    "nets": {
-      "1": "ADC_VOUT",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
-    "display_value": "68k",
-    "mpn": "RT0603BRD0768KL",
-    "lcsc": "C705793",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ"
-  },
-  {
-    "reference": "C62",
-    "symbol": "Device:C",
-    "value": "1n",
-    "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "sheet": "Sense",
-    "nets": {
-      "1": "ADC_VOUT",
-      "2": "GND"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf",
-    "display_value": "1n",
-    "mpn": "CL10B102KB8NNNC",
-    "lcsc": "C1588",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V"
-  },
-  {
     "reference": "R57",
     "symbol": "Device:R",
     "value": "1k/1%/0.1W",
@@ -2658,28 +2607,6 @@
     "engineering_status": "资料选型/价格核对；未硬件验证"
   },
   {
-    "reference": "K901",
-    "symbol": "HSLinkLP:HFD2_005_S",
-    "value": "HFD2/005-S",
-    "footprint": "HSLinkLP:Relay_Hongfa_HFD2",
-    "sheet": "Sense",
-    "nets": {
-      "1": "USB_5V",
-      "16": "SENSE_COIL_LO",
-      "4": "DUT_VREF",
-      "8": "VREF_SENSE_IN",
-      "13": "DUT_OUT",
-      "9": "VOUT_SENSE_IN",
-      "6": null,
-      "11": null
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
-    "display_value": "HFD2/005-S",
-    "mpn": "HFD2/005-S",
-    "lcsc": "C42415145",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
     "reference": "D601",
     "symbol": "Device:D",
     "value": "1N4148W",
@@ -2688,40 +2615,6 @@
     "nets": {
       "1": "USB_5V",
       "2": "POWER_COIL_LO"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
-    "display_value": "1N4148W",
-    "mpn": "1N4148W",
-    "lcsc": "C81598",
-    "engineering_status": "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测",
-    "procurement_specification": "先科/ST; SOD123; 75V/150mA"
-  },
-  {
-    "reference": "Q901",
-    "symbol": "Transistor_FET:AO3400A",
-    "value": "AO3400A",
-    "footprint": "Package_TO_SOT_SMD:SOT-23",
-    "sheet": "Sense",
-    "nets": {
-      "1": "SENSE_ON",
-      "2": "GND",
-      "3": "SENSE_COIL_LO"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
-    "display_value": "AO3400A",
-    "mpn": "AO3400A",
-    "lcsc": "C20917",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
-    "reference": "D901",
-    "symbol": "Device:D",
-    "value": "1N4148W",
-    "footprint": "Diode_SMD:D_SOD-123",
-    "sheet": "Sense",
-    "nets": {
-      "1": "USB_5V",
-      "2": "SENSE_COIL_LO"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
     "display_value": "1N4148W",
@@ -3649,5 +3542,43 @@
     "lcsc": "C25803",
     "engineering_status": "资料选型/价格核对；未硬件验证",
     "procurement_specification": "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:100000Ω"
+  },
+  {
+    "reference": "U901",
+    "symbol": "HSLinkLP:DG2012EDL-T1-GE3",
+    "value": "DG2012EDL-T1-GE3",
+    "footprint": "Package_TO_SOT_SMD:SOT-363_SC-70-6",
+    "sheet": "Sense",
+    "nets": {
+      "1": "SENSE_ON",
+      "2": "USB_5V",
+      "3": "GND",
+      "4": null,
+      "5": "DUT_VREF",
+      "6": "VREF_SENSE_IN"
+    },
+    "datasheet": "https://www.vishay.com/docs/75834/dg2012e.pdf",
+    "display_value": "DG2012EDL-T1-GE3",
+    "mpn": "DG2012EDL-T1-GE3",
+    "lcsc": "C2673178",
+    "engineering_status": "资料/引脚核对；25±5°C整夹具100nA、掉电瞬态和ADC误差待实测",
+    "procurement_specification": "单SPDT/SC-70-6；COM掉电保护；NC不接；USB_5V供电；Vref仅1.8～3.3V"
+  },
+  {
+    "reference": "C901",
+    "symbol": "Device:C",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "sheet": "Sense",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "mpn": "CC0603KRX7R9BB104",
+    "lcsc": "C14663",
+    "display_value": "100n",
+    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
+    "engineering_status": "资料选型/价格核对；未硬件验证",
+    "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
   }
 ]

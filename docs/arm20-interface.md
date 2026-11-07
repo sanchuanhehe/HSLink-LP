@@ -6,7 +6,7 @@
 
 采用 **2×10、2.54 mm** 的传统 ARM JTAG20 接口，不是 1.27 mm Cortex Debug+ETM20。标准定义参考 [Arm CoreSight IHI0029D D3.2](https://documentation-service.arm.com/static/5f9009d5f86e16515cdc0417)，探针侧供电/保留脚兼容边界参考 [SEGGER 20-pin 接口](https://www.segger.com/products/debug-probes/j-link/technology/interface-description/)。本工程没有实现 RTCK 自适应时钟、DBGRQ/DBGACK。
 
-- 1脚 VTref → DUT_VREF → K901常开触点 → VREF_SENSE_IN → 原分压/ADC。不接 P3V3、VIO_LOCAL、DUT_OUT 或任何供电输出；检测仍由 SENSE_ON 控制，在 MEASURE 状态断开。VTref 是目标逻辑电压参考，1.8～3.3 V；独立DUT电源可能更高，不能将5V板端电源误当3.3V逻辑参考。
+- 1脚 VTref → DUT_VREF → U901.COM(5)→NO(6) → VREF_SENSE_IN → 原分压/ADC。不接 P3V3、VIO_LOCAL、DUT_OUT 或任何供电输出；NC(4)悬空，开关前没有分压/保护支路；检测仍由 SENSE_ON 控制，在 MEASURE 状态断开。VTref 是目标逻辑电压参考，1.8～3.3 V；独立DUT电源可能更高，不能将5V板端电源误当3.3V逻辑参考。
 - 3脚 nTRST → DUT_NTRST → U804的3/4脚开关通道 → F_NTRST → Q702开漏；15脚 nRESET → DUT_NRST → U804的15/1脚 → F_NRST → Q701开漏。两个复位不短接，不新增目标侧上拉；低电平由开漏拉低，高电平由目标侧形成。RESET_ON断开覆盖保留。
 - 5/7/9/13脚分别为TDI、TMS/SWDIO、TCK/SWCLK、TDO/SWO，仍通过U801的原FSA通道；DEBUG_ON断开覆盖保留。
 - 2脚NC，不与1脚短接，也不接USB/VIO/目标电源。11脚RTCK未实现，保持NC而非接地，避免对目标输出形成负载。17脚DBGRQ与19脚DBGACK/厂商可选供电脚均NC，无下拉、ESD或供电支路。

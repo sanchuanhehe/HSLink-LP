@@ -3,21 +3,21 @@
   "tax_included": true,
   "prototype_quantity": 10,
   "updated_at": "2026-11-07",
-  "baseline_commit": "0f89de3",
+  "baseline_commit": "8fb837ef3047f51e4700425aceba87a16e056d0b",
   "status": "全部采购位号已取得同日嘉立创现货含税阶梯价；非订单锁价，非硬件验收",
-  "physical_references": 198,
-  "quoted_references_including_test_pad": 198,
-  "bom_per_board": 127.5161,
-  "bom_batch": 1275.161,
-  "quoted_material_subtotal_per_board": 127.5161,
-  "quoted_material_subtotal_batch": 1275.161,
+  "physical_references": 194,
+  "quoted_references_including_test_pad": 194,
+  "bom_per_board": 124.5295,
+  "bom_batch": 1245.295,
+  "quoted_material_subtotal_per_board": 124.5295,
+  "quoted_material_subtotal_batch": 1245.295,
   "unquoted": [],
   "spares": {
     "policy": "仅情景：每种料十套实用量的 10%，逐种向上取整；不是厂家实际备损要求",
-    "quoted_subset_extra_material": 127.5161,
-    "quoted_subset_purchase_with_spares": 1402.6771,
-    "full_spares_cost": 127.5161,
-    "scope": "全部197个板上采购位号的10%示例；配件另列，实际备损/MOQ未确认"
+    "quoted_subset_extra_material": 124.5295,
+    "quoted_subset_purchase_with_spares": 1369.8245,
+    "full_spares_cost": 124.5295,
+    "scope": "193个板上采购位号的10%示例；配件另列，实际备损/MOQ未确认"
   },
   "moq_leftovers": null,
   "pcb": null,
@@ -27,9 +27,9 @@
   "stencil": null,
   "feeder_fee": {
     "assumed_per_expanded_smt_sku_per_order": 20,
-    "expanded_smt_skus_with_known_library_type": 31,
+    "expanded_smt_skus_with_known_library_type": 32,
     "base_smt_skus": 19,
-    "known_sku_scenario_cny": 620,
+    "known_sku_scenario_cny": 640,
     "full_order_quote": null,
     "note": "不含通孔件；不同子型号按不同种类；无优惠券，实际免换料/可贴状态以订单为准"
   },
@@ -60,7 +60,8 @@
     "PCB未设计，YFF 0.4mm逃线/钢网/DFM、贴装和通孔制造价未知",
     "实际MOQ/备损/换料优惠/运费未下单确认；当前是裸材料完整快照",
     "配套排线C7496759绝缘≥5MΩ不足以保证0.1µA；打样配套未通过低漏电和20cm/40MHz验收",
-    "K601 NC+Q902放电为资料/连接审查；转换抖动、续流释放、复位/掉电栅极状态和OFF泄漏待实测；50ms非保证值"
+    "K601 NC+Q902放电为资料/连接审查；转换抖动、续流释放、复位/掉电栅极状态和OFF泄漏待实测；50ms非保证值",
+    "U901只保护Vref COM；USB掉电最大1µA表值、供电跌落中间区及全板100nA待验证；无DUT实测电压，无法内部确认掉压/放电完成。"
   ],
   "translator_review": {
     "source": "../../docs/level-translation.md",
@@ -122,10 +123,10 @@
     "spares_10_percent_scenario_cny": 3.843,
     "low_leakage_qualified": false
   },
-  "kit_material_per_unit_cny": 131.3591,
-  "kit_material_batch_10_cny": 1313.591,
-  "kit_material_with_spares_batch_10_cny": 1444.9501,
-  "kit_material_spares_feeder_scenario_batch_10_cny": 2064.9501,
+  "kit_material_per_unit_cny": 128.3725,
+  "kit_material_batch_10_cny": 1283.725,
+  "kit_material_with_spares_batch_10_cny": 1412.0975,
+  "kit_material_spares_feeder_scenario_batch_10_cny": 2052.0975,
   "arm20_interface": {
     "record": "../../docs/arm20-interface.md",
     "j801_mpn": "2.54-2*10P简牛",
@@ -177,6 +178,43 @@
     "full_manufactured_net_savings_cny": null,
     "K901_semiconductor_replacement_adopted": false,
     "reason": "TMUX1101/1112电压和掉电缺项；ADG4612缺货；TMUX7412F需高压供电且成本明显高于继电器",
+    "hardware_qualified": false,
+    "status": "历史0f89de3→8fb837e阶段；当前K901已删除，继电器仅K601"
+  },
+  "vref_only_optimization": {
+    "record": "../../docs/sense-discharge.md",
+    "baseline_commit": "8fb837e",
+    "adopted_mpn": "DG2012EDL-T1-GE3",
+    "lcsc": "C2673178",
+    "price_cny": 3.8,
+    "relay_count": 1,
+    "removed": [
+      "K901",
+      "Q901",
+      "D901",
+      "R55",
+      "R56",
+      "C62"
+    ],
+    "added": [
+      "U901",
+      "C901"
+    ],
+    "dut_out_voltage_readback": false,
+    "old_snapshot_per_board_cny": 127.5161,
+    "price_refresh_adjustment_per_board_cny": 0.19,
+    "repriced_same_platform_baseline_cny": 127.7061,
+    "old_complete_sense_branch_cny": 7.518,
+    "new_complete_sense_branch_cny": 4.3414,
+    "material_saving_per_board_cny": 3.1766,
+    "material_saving_batch_10_cny": 31.766,
+    "net_vs_old_price_snapshot_cny": 2.9866,
+    "feeder_fee_delta_order_cny": 20,
+    "material_plus_feeder_scenario_saving_batch_10_cny": 11.766,
+    "with_spares_and_feeder_scenario_saving_batch_10_cny": 14.9426,
+    "smt_joint_delta_per_board": -3,
+    "tht_joint_delta_per_board": -8,
+    "full_manufactured_net_savings_cny": null,
     "hardware_qualified": false
   }
 }

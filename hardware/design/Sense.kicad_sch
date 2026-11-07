@@ -4,7 +4,12 @@
 	(generator_version "10.0")
 	(uuid a48724e5-e52f-4637-a2e4-223a9073438e)
 	(paper "A4")
-	(title_block (title "可断开电压检测与受控放电") (date "2026-11-07") (rev "DRAFT / Git") (company "HSLink-LP / based on HSLink Pro 1.2.0"))
+	(title_block
+		(title "Vref 检测与受控放电")
+		(date "2026-11-07")
+		(rev "DRAFT / Git")
+		(company "HSLink-LP / based on HSLink Pro 1.2.0")
+	)
 	(lib_symbols
 		(symbol "HSLinkLP:HFD2_005_S"
 			(exclude_from_sim no)
@@ -1265,307 +1270,174 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(symbol
-		(lib_id "HSLinkLP:HFD2_005_S")
-		(at 69.85 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fda66167-2263-4503-a4b0-0eeb9bde7072")
-		(property "Reference" "K901"
-			(at 69.85 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Value" "HFD2/005-S"
-			(at 69.85 38.099999999999994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Footprint" "HSLinkLP:Relay_Hongfa_HFD2"
-			(at 69.85 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+		(symbol "HSLinkLP:DG2012EDL-T1-GE3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf"
-			(at 69.85 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Hongfa HFD2/005-S non-latching DPDT relay; 5V coil; bottom-view mapping verified"
-			(at 69.85 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Value" "DG2012EDL-T1-GE3"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-    (property "MPN" "HFD2/005-S" (at 69.85 59.69 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C42415145" (at 69.85 59.69 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "HFD2/005-S" (at 69.85 59.69 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 69.85 59.69 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "d3d14cab-da39-4cdb-a191-3b6810797ba1")
-		)
-		(pin "11"
-			(uuid "8b9465e7-70fc-4ba2-87c8-f1c826a87bb5")
-		)
-		(pin "13"
-			(uuid "5b147af0-2a83-4f6f-b235-778e974f4e8d")
-		)
-		(pin "16"
-			(uuid "b8a4baa4-9c79-4f15-8631-67ad06d741f6")
-		)
-		(pin "4"
-			(uuid "00431a96-cd3e-4579-a5e9-fef36883fc48")
-		)
-		(pin "6"
-			(uuid "09507e85-64a2-4119-8fc3-60e4e86cfbe9")
-		)
-		(pin "8"
-			(uuid "3641b357-9741-46f8-8cbc-f85a5e799430")
-		)
-		(pin "9"
-			(uuid "fb53badd-e1d5-4123-9e79-139697404e9f")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "K901")
-					(unit 1)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/75834/dg2012e.pdf"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(property "Description" "Vishay DG2012E SC-70-6 SPDT; powered-off protection at COM; top-view physical pin map doc75834 RevB p1."
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+				(hide yes)
+			)
+			(symbol "DG2012EDL-T1-GE3_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:AO3400A")
-		(at 50.8 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0f68979-37b6-435b-a402-a80b5339c0da")
-		(property "Reference" "Q901"
-			(at 58.419999999999995 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Value" "AO3400A"
-			(at 58.419999999999995 97.78999999999999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 55.88 94.615 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
+			(symbol "DG2012EDL-T1-GE3_1_1"
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf"
-			(at 55.88 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "NO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
-				(justify left) (hide yes))
-		)
-		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
-			(at 50.8 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
-			)
-		)
-    (property "MPN" "AO3400A" (at 50.8 96.52 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C20917" (at 50.8 96.52 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "AO3400A" (at 50.8 96.52 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 50.8 96.52 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "d210702b-d601-43da-9585-17538c0de216")
-		)
-		(pin "2"
-			(uuid "cfe6a488-e746-4f34-a977-810c7c226187")
-		)
-		(pin "3"
-			(uuid "ef5cd6b8-c088-48f7-8678-21ec14872456")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "Q901")
-					(unit 1)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 34.29 72.39 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "04f84870-a74e-48bd-a8ad-0dc13b311818")
-		(property "Reference" "D901"
-			(at 22.86 71.12 270)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Value" "1N4148W"
-			(at 22.86 73.66 270)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 34.29 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf"
-			(at 34.29 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Diode"
-			(at 34.29 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "1N4148W"
-			(at 34.29 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "LCSC" "C81598"
-			(at 34.29 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Specification" "先科/ST; SOD123; 75V/150mA"
-			(at 34.29 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "EngineeringStatus" "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测"
-			(at 34.29 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(pin "1"
-			(uuid "8f17cd58-0bd3-41f1-8b68-35104cdf157c")
-		)
-		(pin "2"
-			(uuid "5fe36645-cbae-410b-8f29-e710821044f9")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "D901")
-					(unit 1)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 				)
 			)
 		)
@@ -2024,188 +1896,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 106.68 95.25 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "50d025b9-48df-4ae9-ac9a-13c26b20ab50")
-		(property "Reference" "R55"
-			(at 104.14 90.17 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Value" "68k"
-			(at 109.22000000000001 90.17 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 106.68 97.028 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
-			(at 106.68 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 106.68 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-    (property "Tolerance" "0.1%" (at 106.68 95.25 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "MPN" "RT0603BRD0768KL" (at 106.68 95.25 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C705793" (at 106.68 95.25 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ" (at 106.68 95.25 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 106.68 95.25 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "14184395-7a80-4997-91d3-2e0e99dbcbe5")
-		)
-		(pin "2"
-			(uuid "dd2d1d1b-8a71-4e50-bcf5-89fac3e8c113")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 139.7 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "38d87327-43fc-4e7f-b36e-340844a96a46")
-		(property "Reference" "R56"
-			(at 142.23999999999998 105.41000000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Value" "68k"
-			(at 142.23999999999998 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 137.922 106.68 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
-			(at 139.7 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Resistor"
-			(at 139.7 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-    (property "Tolerance" "0.1%" (at 139.7 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "MPN" "RT0603BRD0768KL" (at 139.7 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C705793" (at 139.7 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:68kΩ" (at 139.7 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 139.7 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "fdccac77-df59-48b7-8d89-d001fa7cd87a")
-		)
-		(pin "2"
-			(uuid "10360ac3-90c5-4a99-bc49-a63a93a4ea9b")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "R56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 204.47 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -2396,124 +2086,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:C")
-		(at 165.1 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "66ef3c9c-bef0-47a9-9165-48cdfaa5bb9d")
-		(property "Reference" "C62"
-			(at 167.64 105.41000000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Value" "1n"
-			(at 167.64 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (justify left) (hide no))
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 166.065 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20160218/1457707763339.pdf"
-			(at 165.1 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 165.1 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-    (property "MPN" "CL10B102KB8NNNC" (at 165.1 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "LCSC" "C1588" (at 165.1 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "Specification" "容值:1nF,工作温度:-55℃~+125℃,温度系数:X7R,精度:±10%,额定电压:50V" (at 165.1 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-    (property "EngineeringStatus" "资料选型/价格核对；未硬件验证" (at 165.1 106.68 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-		(pin "1"
-			(uuid "69c23bad-1552-49d1-a493-9849748e7b59")
-		)
-		(pin "2"
-			(uuid "b363a47f-94ed-480d-9f8f-64d0c460fcc7")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "C62")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 57.15 69.85) (xy 49.53 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "220562a7-8975-448b-96f6-791ef1163c86")
-	)
-	(wire
-		(pts
-			(xy 49.53 69.85) (xy 49.53 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8bcdc15-af42-446a-bf3a-d15446f5f367")
-	)
-	(wire
-		(pts
-			(xy 49.53 64.77) (xy 34.29 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eec45a6b-ab92-49d3-8581-4124615b8bfd")
-	)
 	(wire
 		(pts
 			(xy 34.29 64.77) (xy 34.29 68.58)
@@ -2533,12 +2105,6 @@
 			(type default)
 		)
 		(uuid "afdc6a31-98ed-445d-83ec-f26705de2d38")
-	)
-	(junction
-		(at 34.29 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1fba08b8-c6ea-40cc-b173-001d56dfcce7")
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -2617,36 +2183,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 74.93) (xy 53.34 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e26bce5a-5d87-48b6-928a-4fdf64e38695")
-	)
-	(wire
-		(pts
-			(xy 53.34 74.93) (xy 53.34 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb01fb4f-e972-4c6d-8cb2-33432b9c8072")
-	)
-	(wire
-		(pts
-			(xy 53.34 82.55) (xy 53.34 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea7d9a21-0ad0-4530-8b13-73faff7c5c7d")
-	)
-	(wire
-		(pts
 			(xy 34.29 76.2) (xy 34.29 82.55)
 		)
 		(stroke
@@ -2654,32 +2190,6 @@
 			(type default)
 		)
 		(uuid "feafbf8e-32c2-4d39-9aa5-1ac6a2ec702d")
-	)
-	(wire
-		(pts
-			(xy 34.29 82.55) (xy 53.34 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "524c5243-e253-4f84-86d6-b521f8dbc84f")
-	)
-	(junction
-		(at 53.34 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "714e75e1-fe15-4fea-b636-59df13b58367")
-	)
-	(wire
-		(pts
-			(xy 45.72 96.52) (xy 40.64 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2fecd96-284b-4471-b1e0-809e3a2dd4dd")
 	)
 	(wire
 		(pts
@@ -2701,12 +2211,6 @@
 		)
 		(uuid "0d2fa944-93ef-4b32-a3c9-c867a9ef3229")
 	)
-	(junction
-		(at 40.64 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73fb41e8-62e7-4ebb-9f66-79ba92438294")
-	)
 	(global_label "SENSE_ON"
 		(at 35.56 96.52 180)
 		(effects
@@ -2716,91 +2220,6 @@
 			(justify right)
 		)
 		(uuid "3d9b929b-532d-4c31-b29c-c5a0668434dc")
-	)
-	(wire
-		(pts
-			(xy 53.34 101.6) (xy 53.34 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b57ee531-dc9f-4d03-b4bc-13d116e14d03")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 53.34 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4a7a5a15-b110-4f17-a893-8e7975d08035")
-		(property "Reference" "#PWR29020"
-			(at 53.34 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Value" "GND"
-			(at 53.34 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Footprint" ""
-			(at 53.34 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3336c72c-01d0-4e1b-a7c9-07ff62ccba87")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "#PWR29020")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(wire
 		(pts
@@ -2886,14 +2305,6 @@
 				)
 			)
 		)
-	)
-	(no_connect
-		(at 82.55 44.449999999999996)
-		(uuid "51c36312-04c4-47ec-955e-b3b8eb20c365")
-	)
-	(no_connect
-		(at 82.55 54.61)
-		(uuid "870813e7-7725-4149-853f-363d3abe2d13")
 	)
 	(wire
 		(pts
@@ -3111,16 +2522,6 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 57.15 49.53) (xy 49.53 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65c9f343-87d4-4a9b-8416-45dd63025327")
-	)
 	(global_label "DUT_VREF"
 		(at 49.53 49.53 180)
 		(effects
@@ -3131,36 +2532,6 @@
 		)
 		(uuid "74dbfcf8-8881-4dc2-ab97-f3d09566e000")
 	)
-	(wire
-		(pts
-			(xy 57.15 59.69) (xy 49.53 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6903a8c7-b2f4-42e1-b158-4957799e094c")
-	)
-	(global_label "DUT_OUT"
-		(at 49.53 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d5b6d6b0-9a07-4f45-9f81-c197b7b508b6")
-	)
-	(wire
-		(pts
-			(xy 82.55 49.53) (xy 102.87 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2354c02e-dbe4-4d19-9325-e4092438f3c7")
-	)
 	(label "VREF_SENSE_IN"
 		(at 85.09 49.53 0)
 		(effects
@@ -3170,46 +2541,6 @@
 			(justify left bottom)
 		)
 		(uuid "e5cc6c3e-26f9-4d5c-bf4b-48f1cd3b2173")
-	)
-	(wire
-		(pts
-			(xy 82.55 59.69) (xy 92.71 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccdb2ade-aa68-4333-8388-80f5a8c87688")
-	)
-	(wire
-		(pts
-			(xy 92.71 59.69) (xy 92.71 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf26087a-f580-4a72-828e-49e732b41b28")
-	)
-	(wire
-		(pts
-			(xy 92.71 95.25) (xy 102.87 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29dcc4dc-369a-480a-9b43-8ed90dcade2f")
-	)
-	(label "VOUT_SENSE_IN"
-		(at 92.71 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eba8aaf3-726a-4646-aca5-f3f8af8296dc")
 	)
 	(wire
 		(pts
@@ -3447,243 +2778,7 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 110.49 95.25) (xy 139.7 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff86a062-5289-408b-a140-63ac98605c32")
-	)
-	(wire
-		(pts
-			(xy 139.7 95.25) (xy 165.1 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d15078c2-c713-4a95-8e38-16ad854b77b6")
-	)
-	(wire
-		(pts
-			(xy 165.1 95.25) (xy 165.1 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4af0ae4a-441e-462e-a597-355bbc817892")
-	)
-	(wire
-		(pts
-			(xy 139.7 95.25) (xy 139.7 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75cf1da3-a3cf-4b48-a746-154f1d6a736c")
-	)
-	(junction
-		(at 139.7 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2877855a-61e4-4580-9208-ad02c9a95b2d")
-	)
-	(wire
-		(pts
-			(xy 139.7 95.25) (xy 139.7 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "911380e5-e2ab-4728-82e5-e8528dff31b0")
-	)
-	(global_label "ADC_VOUT"
-		(at 139.7 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f9125eab-2db2-40b5-bd52-03230af13231")
-	)
-	(wire
-		(pts
-			(xy 139.7 110.49) (xy 139.7 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5f90933-1094-4daf-94cf-8b3ee825dd28")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 139.7 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "50385a4e-0559-4424-b148-fef099d09cbf")
-		(property "Reference" "#PWR29027"
-			(at 139.7 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Value" "GND"
-			(at 139.7 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Footprint" ""
-			(at 139.7 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "164a57a4-f47c-4472-b4e2-629774baf6ee")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "#PWR29027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 165.1 110.49) (xy 165.1 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29046e21-1589-4802-9a49-dbcbd2319245")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 165.1 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ac662e97-e02c-46f6-ae41-7c3dc1f7d868")
-		(property "Reference" "#PWR29028"
-			(at 165.1 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide yes))
-		)
-		(property "Value" "GND"
-			(at 165.1 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				) (hide no))
-		)
-		(property "Footprint" ""
-			(at 165.1 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7009e95c-6a30-45d4-b388-f88fe28b6d48")
-		)
-		(instances
-			(project "HSLink-LP"
-				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
-					(reference "#PWR29028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "双路电压检测：机械触点断开 Vref / DUT_OUT"
+	(text "Vref 检测：单通道模拟开关隔离完整采样支路"
 		(exclude_from_sim no)
 		(at 17.78 17.78 0)
 		(effects
@@ -3705,7 +2800,7 @@
 		)
 		(uuid "d9f4dd58-6ff1-4413-aa07-f64f1b7df736")
 	)
-	(text "K901 仅在检测时闭合；MEASURE 状态断开。\n68k / 68k 分压，1.8 V 时支路约 13.2 μA。\nADC 采样时间、误差与触点可靠性需样机验证。"
+	(text "U901 默认断开；仅显式允许检测时接通 NO。\nVref：1.8～3.3 V；68k / 68k，1n 滤波。\nDUT_OUT 电压回读已取消；设定值不是实测值。"
 		(exclude_from_sim no)
 		(at 17.78 137.16 0)
 		(effects
@@ -3727,7 +2822,7 @@
 		)
 		(uuid "e5065014-d0bf-4d5a-be51-4b1cd9ad5dc4")
 	)
-	(text "线圈电流来自 USB，不经过目标电流测量路径。地线保持共地。"
+	(text "开关与继电器由 USB 侧供电；地线保持共地。USB 掉电与整板漏电均待实测。"
 		(exclude_from_sim no)
 		(at 17.78 163.83 0)
 		(effects
@@ -3778,9 +2873,501 @@
 		)
 		(uuid "052bd025-cf6d-4588-bc32-74f189237b84")
 	)
+	(symbol
+		(lib_id "HSLinkLP:DG2012EDL-T1-GE3")
+		(at 69.85 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9083b60c-8fd1-42cd-937e-9296eea522a7")
+		(property "Reference" "U901"
+			(at 83.82 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left))
+		)
+		(property "Value" "DG2012EDL-T1-GE3"
+			(at 83.82 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left))
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 69.85 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/75834/dg2012e.pdf"
+			(at 69.85 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Vishay DG2012E SC-70-6 SPDT; powered-off protection at COM; top-view physical pin map doc75834 RevB p1."
+			(at 69.85 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+    (property "MPN" "DG2012EDL-T1-GE3" (at 69.85 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C2673178" (at 69.85 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "Manufacturer" "Vishay" (at 69.85 49.53 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+		(pin "1"
+			(uuid "042f5378-d781-4077-af57-99fdf3368912")
+		)
+		(pin "2"
+			(uuid "e39ebc20-812d-4e31-8b28-0a94ec6180c8")
+		)
+		(pin "3"
+			(uuid "f32865e3-98cf-4915-a978-5a1e0492eedb")
+		)
+		(pin "4"
+			(uuid "7c675ef0-3abc-4d08-a0e3-8f0f1011a260")
+		)
+		(pin "5"
+			(uuid "1dda50a4-2580-4eb1-bd6a-400ef039141a")
+		)
+		(pin "6"
+			(uuid "f852061e-1e2b-481a-a28c-5278afcc0e88")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
+					(reference "U901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 34.29 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ae755a1-b653-4d3b-99d6-f41df4a386fb")
+		(property "Reference" "C901"
+			(at 38.1 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left))
+		)
+		(property "Value" "100n"
+			(at 38.1 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 35.255 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf"
+			(at 34.29 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 34.29 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+    (property "MPN" "CC0603KRX7R9BB104" (at 34.29 72.39 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (property "LCSC" "C14663" (at 34.29 72.39 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+		(pin "1"
+			(uuid "cce44d3b-911f-4540-8815-8cd5eea6e618")
+		)
+		(pin "2"
+			(uuid "125651ba-27ef-4450-8a80-852f2a02b57b")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
+					(reference "C901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 69.85 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "667a64a9-84aa-463a-8db5-10d0ae621fc1")
+		(property "Reference" "#PWR29030"
+			(at 69.85 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_5V"
+			(at 69.85 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 69.85 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92e51f30-dcd7-4552-b622-0563985da11f")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
+					(reference "#PWR29030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "28332f4d-4fbd-4809-a689-d4bb06ab6059")
+		(property "Reference" "#PWR29031"
+			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6f284bb-e5df-47a8-8acf-a8e8367bd086")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
+					(reference "#PWR29031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f6ff9260-1bda-4e0d-bad1-df9c5de95f6a")
+		(property "Reference" "#PWR29032"
+			(at 34.29 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "868b063e-7dec-4da8-9e64-5118a4f4c3f6")
+		)
+		(instances
+			(project "HSLink-LP"
+				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/7635a2d6-18fc-48d1-af1a-5638c2275fb8"
+					(reference "#PWR29032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 49.53 49.53) (xy 59.69 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61ca363-40f9-48fe-adff-1ebcff5a176d")
+	)
+	(wire
+		(pts
+			(xy 80.00999999999999 49.53) (xy 102.87 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c968c36-aa02-49bb-8275-c8869d213eba")
+	)
+	(wire
+		(pts
+			(xy 59.69 54.61) (xy 53.34 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97d084c7-f707-4e51-a5ac-93343b42be3e")
+	)
+	(wire
+		(pts
+			(xy 53.34 54.61) (xy 53.34 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1deabc0-1f0a-4d15-9fbe-b2b5906c8596")
+	)
+	(wire
+		(pts
+			(xy 53.34 96.52) (xy 40.64 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac1a66e4-1cde-492a-bd0f-09f77ad6a0c0")
+	)
+	(junction
+		(at 40.64 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a2e93d2-3bdb-459b-beb0-0177b7902fbc")
+	)
+	(wire
+		(pts
+			(xy 69.85 39.370000000000005) (xy 69.85 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ea49b49-2386-4d88-9c2f-5eba49b9c690")
+	)
+	(wire
+		(pts
+			(xy 69.85 59.69) (xy 69.85 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f6dc7e-668a-4fd1-94ff-edbfe831e91a")
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
+	)
+	(no_connect
+		(at 80.01 54.61)
+		(uuid "da28999a-d666-464c-a4dc-3fab26ce67b0")
 	)
 )
