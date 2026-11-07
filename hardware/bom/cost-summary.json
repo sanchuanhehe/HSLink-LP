@@ -3,21 +3,21 @@
   "tax_included": true,
   "prototype_quantity": 10,
   "updated_at": "2026-11-07",
-  "baseline_commit": "a75267e9c664a8c5521df49eb9d99e4ea88dc895",
+  "baseline_commit": "0f89de3",
   "status": "全部采购位号已取得同日嘉立创现货含税阶梯价；非订单锁价，非硬件验收",
-  "physical_references": 200,
-  "quoted_references_including_test_pad": 200,
-  "bom_per_board": 133.2215,
-  "bom_batch": 1332.215,
-  "quoted_material_subtotal_per_board": 133.2215,
-  "quoted_material_subtotal_batch": 1332.215,
+  "physical_references": 198,
+  "quoted_references_including_test_pad": 198,
+  "bom_per_board": 127.5161,
+  "bom_batch": 1275.161,
+  "quoted_material_subtotal_per_board": 127.5161,
+  "quoted_material_subtotal_batch": 1275.161,
   "unquoted": [],
   "spares": {
     "policy": "仅情景：每种料十套实用量的 10%，逐种向上取整；不是厂家实际备损要求",
-    "quoted_subset_extra_material": 133.2215,
-    "quoted_subset_purchase_with_spares": 1465.4365,
-    "full_spares_cost": 133.2215,
-    "scope": "全部199个板上采购位号，10%示例；配套排线备损另列，实际JLC备损/MOQ未确认"
+    "quoted_subset_extra_material": 127.5161,
+    "quoted_subset_purchase_with_spares": 1402.6771,
+    "full_spares_cost": 127.5161,
+    "scope": "全部197个板上采购位号的10%示例；配件另列，实际备损/MOQ未确认"
   },
   "moq_leftovers": null,
   "pcb": null,
@@ -59,7 +59,8 @@
     "TPS63810启动3.3V需固件隔离与编程时序；R42典型1A限流不能保证1A负载",
     "PCB未设计，YFF 0.4mm逃线/钢网/DFM、贴装和通孔制造价未知",
     "实际MOQ/备损/换料优惠/运费未下单确认；当前是裸材料完整快照",
-    "配套排线C7496759绝缘≥5MΩ不足以保证0.1µA；打样配套未通过低漏电和20cm/40MHz验收"
+    "配套排线C7496759绝缘≥5MΩ不足以保证0.1µA；打样配套未通过低漏电和20cm/40MHz验收",
+    "K601 NC+Q902放电为资料/连接审查；转换抖动、续流释放、复位/掉电栅极状态和OFF泄漏待实测；50ms非保证值"
   ],
   "translator_review": {
     "source": "../../docs/level-translation.md",
@@ -121,10 +122,10 @@
     "spares_10_percent_scenario_cny": 3.843,
     "low_leakage_qualified": false
   },
-  "kit_material_per_unit_cny": 137.0645,
-  "kit_material_batch_10_cny": 1370.645,
-  "kit_material_with_spares_batch_10_cny": 1507.7095,
-  "kit_material_spares_feeder_scenario_batch_10_cny": 2127.7095,
+  "kit_material_per_unit_cny": 131.3591,
+  "kit_material_batch_10_cny": 1313.591,
+  "kit_material_with_spares_batch_10_cny": 1444.9501,
+  "kit_material_spares_feeder_scenario_batch_10_cny": 2064.9501,
   "arm20_interface": {
     "record": "../../docs/arm20-interface.md",
     "j801_mpn": "2.54-2*10P简牛",
@@ -148,5 +149,34 @@
     "cable_minimum_insulation_ohm": 5000000,
     "cable_leakage_at_3v3_over_5M_example_ua": 0.66,
     "qualification": "资料/软件检查；防反插实物配合、20cm 40MHz与整夹具0.1µA未实测"
+  },
+  "sense_discharge_optimization": {
+    "record": "../../docs/sense-discharge.md",
+    "baseline_commit": "0f89de3",
+    "adopted": "K601 COM->DUT_OUT, NO->SOURCE_POWER, NC->1k->Q902 NMOS->GND; retain K901",
+    "removed": [
+      "K902",
+      "D902"
+    ],
+    "relay_count": 2,
+    "previous_material_per_board_cny": 133.2215,
+    "material_saving_per_board_cny": 5.7054,
+    "material_saving_batch_10_cny": 57.054,
+    "relay_tier_change": {
+      "before_quantity": 30,
+      "before_unit_cny": 5.83,
+      "after_quantity": 20,
+      "after_unit_cny": 5.93
+    },
+    "price_refresh_adjustment_cny": 0,
+    "feeder_sku_delta": 0,
+    "smt_joint_delta_per_board": -2,
+    "tht_joint_delta_per_board": -8,
+    "freed_relay_body_area_mm2": 206.04,
+    "pcb_area_reduction_guaranteed": false,
+    "full_manufactured_net_savings_cny": null,
+    "K901_semiconductor_replacement_adopted": false,
+    "reason": "TMUX1101/1112电压和掉电缺项；ADG4612缺货；TMUX7412F需高压供电且成本明显高于继电器",
+    "hardware_qualified": false
   }
 }

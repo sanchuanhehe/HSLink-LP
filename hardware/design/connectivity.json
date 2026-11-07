@@ -2537,8 +2537,8 @@
     "footprint": "Resistor_SMD:R_0603_1608Metric",
     "sheet": "Sense",
     "nets": {
-      "1": "DISCH_RES",
-      "2": "GND"
+      "1": "DISCH_FEED",
+      "2": "DISCH_DRAIN"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf",
     "display_value": "1k",
@@ -2644,9 +2644,9 @@
     "nets": {
       "1": "USB_5V",
       "16": "POWER_COIL_LO",
-      "4": "SOURCE_POWER",
-      "8": "DUT_OUT",
-      "6": null,
+      "4": "DUT_OUT",
+      "8": "SOURCE_POWER",
+      "6": "DISCH_FEED",
       "13": null,
       "11": null,
       "9": null
@@ -2672,28 +2672,6 @@
       "9": "VOUT_SENSE_IN",
       "6": null,
       "11": null
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
-    "display_value": "HFD2/005-S",
-    "mpn": "HFD2/005-S",
-    "lcsc": "C42415145",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
-    "reference": "K902",
-    "symbol": "HSLinkLP:HFD2_005_S",
-    "value": "HFD2/005-S",
-    "footprint": "HSLinkLP:Relay_Hongfa_HFD2",
-    "sheet": "Sense",
-    "nets": {
-      "1": "USB_5V",
-      "16": "DISCH_COIL_LO",
-      "4": "DUT_OUT",
-      "8": "DISCH_RES",
-      "6": null,
-      "13": null,
-      "11": null,
-      "9": null
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
     "display_value": "HFD2/005-S",
@@ -2778,30 +2756,13 @@
     "nets": {
       "1": "DISCH_ON",
       "2": "GND",
-      "3": "DISCH_COIL_LO"
+      "3": "DISCH_DRAIN"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
     "display_value": "AO3400A",
     "mpn": "AO3400A",
     "lcsc": "C20917",
     "engineering_status": "资料选型/价格核对；未硬件验证"
-  },
-  {
-    "reference": "D902",
-    "symbol": "Device:D",
-    "value": "1N4148W",
-    "footprint": "Diode_SMD:D_SOD-123",
-    "sheet": "Sense",
-    "nets": {
-      "1": "USB_5V",
-      "2": "DISCH_COIL_LO"
-    },
-    "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
-    "display_value": "1N4148W",
-    "mpn": "1N4148W",
-    "lcsc": "C81598",
-    "engineering_status": "K=1/A=2，USB侧继电器续流；线圈电流余量核对，释放/抖动时间待实测",
-    "procurement_specification": "先科/ST; SOD123; 75V/150mA"
   },
   {
     "reference": "R62",

@@ -96,7 +96,9 @@
 |C → 2|2: C/D公共节点|-3.0|1.875|1.0×0.75|0.0|F.Cu,F.Mask,F.Paste；无钻孔|
 |D → 2|2: C/D公共节点|3.0|1.875|1.0×0.75|0.0|F.Cu,F.Mask,F.Paste；无钻孔|
 
-## D601：先科/ST (SEMTECH ELECTRONICS LTD.) 1N4148W；D901/D902同件
+## D601：先科/ST (SEMTECH ELECTRONICS LTD.) 1N4148W；D901同件
+
+原D902也用此映射，随后检测/放电优化已删除，见 [优化说明](sense-discharge.md)。
 
 资料：[1N4148W Rev05 2016-09-20 p1、p3](https://atta.szlcsc.com/upload/public/pdf/source/20161024/1477288446905.pdf)。符号 `Device:D`；封装 `D_SOD-123`。
 

@@ -17,7 +17,7 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 
 版面修改也必须核对网表。对每个标签，检查文字是否被导线、引脚或符号边框穿过，移动后是否仍有明确接点；电源汇线应避开引脚编号。对自定义符号，核对引脚线内端与边框、脚名位置，并确认脚号、电气类型和外部连接端坐标未被排版操作改动。分别查看默认字体和实际阅读字体的导出图；过滤空白字符后的文本包围盒检测只能作为辅助。
 
-最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/bom-completion-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
+最新降本检查通过标准 MCP 执行；服务调用 KiCad CLI 运行 ERC，原始 MCP 响应保存在 `reports/sense-discharge-2026-11-07/erc-mcp.json`，其余证据见 `hardware/validation.json`。上面的命令可重新生成完整 CLI ERC JSON。
 
 ## 硬件验收
 
@@ -55,3 +55,5 @@ kicad-cli sch export pdf -o hardware/design/reports/HSLink-LP.pdf hardware/desig
 采购补齐后重点增加：TPS63810默认3.3V在K601断开期间的编程/欠压恢复、DRV散热EP、R38+R401反馈稳定性、替代续流二极管的释放时间。R42=1.15k的0.75～1.25A限流范围尚不能保证1A连续负载，须作为设计门槛处理。详见 [采购补齐设计说明](procurement-completion.md)。
 
 ARM20新增来料与实板项目：逐根1↔1至20↔20导通/无异针短路，公母键槽与1脚方向实际插合；确认2/11/17/19不与任何供电或负载相连。检查第1针VTref及3/15复位在MEASURE中的断开。用20cm配套排线分别测试SWD/JTAG 40MHz和1.8/3.3V，包括换向读回、过冲/串扰；≤10cm短线仅作基准。排线手册绝缘≥5MΩ不满足整夹具100nA的保证条件，须覆盖目标高电平/VTref到地芯和其他芯线的泄漏；若实测失败，换高绝缘短线/定制线并重核价，不降低指标。
+
+检测/放电优化新增验收：K601 COM/NO/NC实物导通核对；含D601的释放/转换抖动及Q902栅极波形，覆盖USB缓升缓降、拔电、复位和未初始化；未经请求不得主动放电。分别测MEASURE的NC隔离漏电、OFF时Q902关断漏电、负载电容放电时间/1k温升及外部持续供电情形。显式放电先断供电再等待、恢复先关MOS，核定等待值后替换50ms初值；不能拿继电器裸件3.5ms或理想逻辑真值表代替。K901未替换，Vref/DUT完整分压在断开状态均不应加载目标；FSA140nA与线缆/PCB漏电预算问题仍保留。文件层面本轮16组稳定逻辑输入与6种理想接点状态已查，均非瞬态/硬件PASS。见[优化说明](sense-discharge.md)。

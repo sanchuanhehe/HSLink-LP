@@ -2486,8 +2486,10 @@
       "componentSpecification": "插件,10.2x20.2mm",
       "paramTextAll": "宽度:10.2mm,长度:20.2mm",
       "orderLibraryType": "expand",
+      "consultPrice": 5.83,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C42415145.html",
-      "retrieved_at": "2026-11-06T19:35:20.941Z",
+      "retrieved_at": "2026-11-07T04:15:58.532Z",
       "rendered_stock": 109,
       "rendered_price_rows": [
         {
@@ -2516,10 +2518,52 @@
         }
       ],
       "page_shows_book_price": false,
-      "consultPrice": 5.83,
-      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "evidence": "hardware/design/reports/sense-discharge-2026-11-07/C42415145.json",
+      "previous_snapshot": {
+        "componentCode": "C42415145",
+        "componentModel": "HFD2/005-S",
+        "componentBrand": "HF(宏发)",
+        "componentName": "HFD2/005-S",
+        "componentSpecification": "插件,10.2x20.2mm",
+        "paramTextAll": "宽度:10.2mm,长度:20.2mm",
+        "orderLibraryType": "expand",
+        "source_url": "https://www.jlc-smt.com/lcsc/detail/C42415145.html",
+        "retrieved_at": "2026-11-06T19:35:20.941Z",
+        "rendered_stock": 109,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 6.06
+          },
+          {
+            "start": 10,
+            "price": 5.93
+          },
+          {
+            "start": 25,
+            "price": 5.83
+          },
+          {
+            "start": 100,
+            "price": 5.74
+          },
+          {
+            "start": 102,
+            "price": 5.74
+          },
+          {
+            "start": 104,
+            "price": 5.74
+          }
+        ],
+        "page_shows_book_price": false,
+        "consultPrice": 5.83,
+        "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20250107/07ECC129271AA82BC3826A3778E47D3F.pdf",
+        "moq": null,
+        "purchase_increment": null
+      }
     },
     {
       "componentCode": "C96123",
@@ -2615,9 +2659,11 @@
       "componentSpecification": "SOT-23",
       "paramTextAll": "反向传输电容(Crss):50pF,反向传输电容(Crss):50pF,导通电阻(RDS(on)):48mΩ@2.5V,工作温度:-55℃~+150℃,数量:1个N沟道,栅极电压(Vgs):±12V,栅极电荷量(Qg):7nC@10V,漏源电压(Vdss):30V,类型:N沟道,耗散功率(Pd):1.4W,输入电容(Ciss):630pF,输入电容(Ciss):630pF,输出电容(Coss):75pF,连续漏极电流(Id):5.7A,配置:-,阈值电压(Vgs(th)):1.45V,阈值电压(Vgs(th)):1.45V",
       "orderLibraryType": "base",
+      "consultPrice": 0.324,
+      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C20917.html",
-      "retrieved_at": "2026-11-06T19:42:22.158Z",
-      "rendered_stock": 1077313,
+      "retrieved_at": "2026-11-07T04:16:13.112Z",
+      "rendered_stock": 1074196,
       "rendered_price_rows": [
         {
           "start": 1,
@@ -2645,10 +2691,52 @@
         }
       ],
       "page_shows_book_price": false,
-      "consultPrice": 0.324,
-      "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
       "moq": null,
-      "purchase_increment": null
+      "purchase_increment": null,
+      "evidence": "hardware/design/reports/sense-discharge-2026-11-07/C20917.json",
+      "previous_snapshot": {
+        "componentCode": "C20917",
+        "componentModel": "AO3400A",
+        "componentBrand": "AOS",
+        "componentName": "AO3400A",
+        "componentSpecification": "SOT-23",
+        "paramTextAll": "反向传输电容(Crss):50pF,反向传输电容(Crss):50pF,导通电阻(RDS(on)):48mΩ@2.5V,工作温度:-55℃~+150℃,数量:1个N沟道,栅极电压(Vgs):±12V,栅极电荷量(Qg):7nC@10V,漏源电压(Vdss):30V,类型:N沟道,耗散功率(Pd):1.4W,输入电容(Ciss):630pF,输入电容(Ciss):630pF,输出电容(Coss):75pF,连续漏极电流(Id):5.7A,配置:-,阈值电压(Vgs(th)):1.45V,阈值电压(Vgs(th)):1.45V",
+        "orderLibraryType": "base",
+        "source_url": "https://www.jlc-smt.com/lcsc/detail/C20917.html",
+        "retrieved_at": "2026-11-06T19:42:22.158Z",
+        "rendered_stock": 1077313,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 0.543
+          },
+          {
+            "start": 50,
+            "price": 0.438
+          },
+          {
+            "start": 150,
+            "price": 0.384
+          },
+          {
+            "start": 500,
+            "price": 0.339
+          },
+          {
+            "start": 3000,
+            "price": 0.324
+          },
+          {
+            "start": 6000,
+            "price": 0.313
+          }
+        ],
+        "page_shows_book_price": false,
+        "consultPrice": 0.324,
+        "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20140107/1457706668533.pdf",
+        "moq": null,
+        "purchase_increment": null
+      }
     },
     {
       "componentCode": "C21189",
@@ -3277,8 +3365,8 @@
       "consultPrice": 0.0455,
       "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
       "source_url": "https://www.jlc-smt.com/lcsc/detail/C81598.html",
-      "retrieved_at": "2026-11-07T03:43:14.167Z",
-      "rendered_stock": 3564092,
+      "retrieved_at": "2026-11-07T04:16:05.783Z",
+      "rendered_stock": 3562382,
       "rendered_price_rows": [
         {
           "start": 1,
@@ -3308,7 +3396,51 @@
       "page_shows_book_price": false,
       "moq": null,
       "purchase_increment": null,
-      "evidence": "hardware/design/reports/bom-completion-2026-11-07/C81598.json"
+      "evidence": "hardware/design/reports/sense-discharge-2026-11-07/C81598.json",
+      "previous_snapshot": {
+        "componentCode": "C81598",
+        "componentModel": "1N4148W",
+        "componentBrand": "ST(先科)",
+        "componentName": "1N4148W",
+        "componentSpecification": "SOD-123",
+        "paramTextAll": "二极管配置:独立式,反向恢复时间(Trr):4ns,反向电流(Ir):1uA@75V,工作结温范围:-,整流电流:150mA,正向压降(Vf):1V@50mA,直流反向耐压(Vr):75V,耗散功率(Pd):400mW,非重复峰值浪涌电流 (Ifsm):1A",
+        "orderLibraryType": "base",
+        "consultPrice": 0.0455,
+        "dataBookUrl": "https://atta.szlcsc.com//upload/public/pdf/source/20161024/1477288446905.pdf",
+        "source_url": "https://www.jlc-smt.com/lcsc/detail/C81598.html",
+        "retrieved_at": "2026-11-07T03:43:14.167Z",
+        "rendered_stock": 3564092,
+        "rendered_price_rows": [
+          {
+            "start": 1,
+            "price": 0.0754
+          },
+          {
+            "start": 500,
+            "price": 0.0593
+          },
+          {
+            "start": 3000,
+            "price": 0.0455
+          },
+          {
+            "start": 6000,
+            "price": 0.0381
+          },
+          {
+            "start": 24000,
+            "price": 0.0361
+          },
+          {
+            "start": 51000,
+            "price": 0.0347
+          }
+        ],
+        "page_shows_book_price": false,
+        "moq": null,
+        "purchase_increment": null,
+        "evidence": "hardware/design/reports/bom-completion-2026-11-07/C81598.json"
+      }
     },
     {
       "componentCode": "C23024",
