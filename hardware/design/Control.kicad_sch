@@ -1452,7 +1452,7 @@
 		)
 		(uuid "a8e05a07-8a48-48b1-a2ab-aeb6ff72e24a")
 	)
-	(text "I2C_SCL / I2C_SDA：共用 4.7k 上拉。\n0x68  WUSB3801（USB-C）\n0x60  MCP4726A0（VIO DAC）\n0x74  TCA9539（GPIO）\n0x75  TPS63810（目标供电）\n100 kHz 起步，400 kHz 须验证上升时间。\nDAC 使用 VDD 参考，初始化后再使能 VIO。"
+	(text "I2C_SCL / I2C_SDA：共用 4.7k 上拉。\n0x68  WUSB3801（USB-C）\n0x60  MCP4726A0（VIO DAC）\n0x74  TCA9539（GPIO）\n0x75  TPS63811（目标供电）\n100 kHz 起步，400 kHz 须验证上升时间。\nDAC 使用 VDD 参考，初始化后再使能 VIO。"
 		(exclude_from_sim no)
 		(at 153.67 40.64 0)
 		(effects
@@ -2672,12 +2672,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24014")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -2803,12 +2797,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "C26")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -2882,12 +2870,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24013")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24013")
 					(unit 1)
 				)
@@ -3017,12 +2999,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R17")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -3096,12 +3072,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24009")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24009")
 					(unit 1)
 				)
@@ -3231,12 +3201,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R29")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -3358,12 +3322,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "R26")
 					(unit 1)
 				)
@@ -3493,12 +3451,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R28")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -3572,12 +3524,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24011")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24011")
 					(unit 1)
 				)
@@ -3707,12 +3653,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R24")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -3834,12 +3774,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "R18")
 					(unit 1)
 				)
@@ -3969,12 +3903,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R27")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4048,12 +3976,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24010")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24010")
 					(unit 1)
 				)
@@ -4183,12 +4105,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R25")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4262,12 +4178,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24006")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24006")
 					(unit 1)
 				)
@@ -4349,12 +4259,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "#PWR24008")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4428,12 +4332,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24002")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24002")
 					(unit 1)
 				)
@@ -4563,12 +4461,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "R23")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4642,12 +4534,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24012")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24012")
 					(unit 1)
 				)
@@ -4843,12 +4729,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
-					(reference "U201")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4923,12 +4803,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/287221dd-41fe-4341-a63d-0755294a9c37"
-					(reference "#PWR24001")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/602ddf24-bb95-4b44-978c-fbae7f8dd418"
 					(reference "#PWR24001")
 					(unit 1)
 				)

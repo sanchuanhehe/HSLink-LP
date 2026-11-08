@@ -246,17 +246,28 @@
       "zones_allow_external_fillets": true
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": "DRAFT / Git"
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -447,11 +458,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -469,13 +483,16 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "warning",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -486,7 +503,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "HSLinkPro.kicad_pro",
+    "filename": "HSLink-LP.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -505,16 +522,17 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1016,
+        "tuning_profile": "",
         "via_diameter": 0.4572,
         "via_drill": 0.254,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -533,6 +551,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -592,6 +614,7 @@
       "sort_asc": true,
       "sort_field": "位号"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -599,6 +622,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -622,6 +646,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -630,25 +655,60 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "HSLink-LP.kicad_sch",
+        "name": "HSLink-LP",
+        "uuid": "5e2c1440-f6a4-4887-af75-aa6afc882006"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
       "5e2c1440-f6a4-4887-af75-aa6afc882006",
-      "Root"
+      "HSLink-LP"
     ],
     [
-      "730f2898-4f63-4d81-8a12-972da09fb379",
-      "Interface "
+      "608bc332-6293-4be4-9962-796ee0e8bf2f",
+      "主控电源与 USB 辅助电源"
     ],
     [
-      "abca0319-9393-450d-b9c4-cdce6b44cd17",
-      "Logic Translation"
+      "fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a",
+      "USB-C、输入保护与功率预算"
     ],
     [
-      "d31437bf-2808-4f02-aab9-6400267805be",
-      "Power"
+      "a1e7bb41-e486-44dc-a56e-c4a2864f5734",
+      "电平转换与开漏复位"
+    ],
+    [
+      "287221dd-41fe-4341-a63d-0755294a9c37",
+      "I2C 扩展与电源配置"
+    ],
+    [
+      "e0eeb1b6-02a4-4ca5-988e-8c741680d68b",
+      "硬件禁能与放电互锁"
+    ],
+    [
+      "47a44e8e-b4e0-4878-8a4a-85acca995fdc",
+      "内置电源、VIO 与输出来源选择"
+    ],
+    [
+      "a9f40ae4-afdd-4904-91e3-b25ef3af69e0",
+      "调试与双串口信号断开"
+    ],
+    [
+      "7635a2d6-18fc-48d1-af1a-5638c2275fb8",
+      "可断开检测与目标放电"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }

@@ -5517,18 +5517,6 @@
 		(uuid "f154663b-81bb-4a4b-b45d-0f4448fab0c2")
 	)
 	(junction
-		(at 27.94 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "073622de-135e-4bef-a2b7-31b5278940a2")
-	)
-	(junction
-		(at 43.18 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0791d4f8-0226-46ba-96d2-3d0220038215")
-	)
-	(junction
 		(at 175.26 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5674,7 +5662,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 38.1) (xy 167.64 38.1)
+			(xy 167.64 38.1) (xy 198.12 38.1)
 		)
 		(stroke
 			(width 0)
@@ -6241,16 +6229,6 @@
 			(type default)
 		)
 		(uuid "d0383dbd-b97b-4e54-9968-59aea1a4ede7")
-	)
-	(wire
-		(pts
-			(xy 198.12 38.1) (xy 184.15 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d467039f-1188-419e-b6d7-9659c06e01a8")
 	)
 	(wire
 		(pts
@@ -6911,12 +6889,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22009")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -7038,12 +7010,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "R11")
 					(unit 1)
 				)
@@ -7173,12 +7139,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "C22")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -7300,12 +7260,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "R12")
 					(unit 1)
 				)
@@ -7569,12 +7523,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "R10")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -7700,12 +7648,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "R16")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -7783,12 +7725,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22012")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -7862,12 +7798,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22023")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22023")
 					(unit 1)
 				)
@@ -8042,12 +7972,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "J101")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -8121,12 +8045,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22015")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22015")
 					(unit 1)
 				)
@@ -8208,12 +8126,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22008")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -8287,12 +8199,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22005")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22005")
 					(unit 1)
 				)
@@ -8374,12 +8280,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22021")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -8453,12 +8353,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22013")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22013")
 					(unit 1)
 				)
@@ -8586,12 +8480,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "R9")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -8665,12 +8553,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22019")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22019")
 					(unit 1)
 				)
@@ -8806,12 +8688,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "Q101")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -8889,12 +8765,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22007")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -8968,12 +8838,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22014")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22014")
 					(unit 1)
 				)
@@ -9099,12 +8963,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "C23")
 					(unit 1)
 				)
@@ -9374,12 +9232,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "Q102")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -9526,12 +9378,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "U102")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -9657,12 +9503,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "C24")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -9740,12 +9580,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22017")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -9819,12 +9653,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22016")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22016")
 					(unit 1)
 				)
@@ -10061,12 +9889,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22022")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10144,12 +9966,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22002")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10223,12 +10039,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22010")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22010")
 					(unit 1)
 				)
@@ -10358,12 +10168,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "R14")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10489,12 +10293,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "R15")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10572,12 +10370,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "#PWR22003")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10651,12 +10443,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22011")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22011")
 					(unit 1)
 				)
@@ -10786,12 +10572,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "R13")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10917,12 +10697,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
-					(reference "C25")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10996,12 +10770,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/fb0fdd2b-fc14-4de0-b5d8-7b3bb3dc8a5a"
-					(reference "#PWR22018")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/9e356a56-45fd-4a6a-bf2c-3f40792528a1"
 					(reference "#PWR22018")
 					(unit 1)
 				)

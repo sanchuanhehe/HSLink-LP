@@ -2269,7 +2269,7 @@
 		)
 		(uuid "0b0eb96d-dbf3-4b0c-904f-4c8e95bbb239")
 	)
-	(text "FSA2466：A → B1 连接，B0 悬空；控制 0 = 断开。\n信号 1.8～3.3 V；连接目标信号期间须保持 USB 供电。"
+	(text "FSA2466：A → B1 为连接，B0 悬空。控制 0 = 断开。\n信号仅 1.8～3.3 V；USB 掉电隔离不保证。"
 		(exclude_from_sim no)
 		(at 19.05 181.61 0)
 		(effects
@@ -2280,7 +2280,7 @@
 		)
 		(uuid "31b403cd-4269-4d18-8d0d-484423d73448")
 	)
-	(text "ARM20 / 2.54 mm / 带键\nNC：2、11、17、19；接口不供电\nVTref 经 U901 隔离采样；目标供电用 J602"
+	(text "ARM20 / 2.54 mm / 带键\nNC：2、11、17、19；接口不供电\nVTref 经 K901 检测断开；目标供电用 J602"
 		(exclude_from_sim no)
 		(at 88.9 80.01 0)
 		(effects
@@ -2735,16 +2735,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 139.7) (xy 111.76 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39b5b503-4213-4f08-9151-aa7cb33636e7")
-	)
-	(wire
-		(pts
 			(xy 233.68 40.64) (xy 233.68 44.45)
 		)
 		(stroke
@@ -2795,7 +2785,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 52.07) (xy 218.44 52.07)
+			(xy 195.58 52.07) (xy 246.38 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3012,16 +3002,6 @@
 			(type default)
 		)
 		(uuid "825e7a46-8a5f-462b-9ffe-f0ae2510907c")
-	)
-	(wire
-		(pts
-			(xy 218.44 52.07) (xy 246.38 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84472349-a742-4b95-9785-6e5b6c72be5c")
 	)
 	(wire
 		(pts
@@ -3495,7 +3475,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 139.7) (xy 83.82 139.7)
+			(xy 67.31 139.7) (xy 111.76 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4424,12 +4404,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "#PWR27007")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4562,12 +4536,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "J803")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4642,12 +4610,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "#PWR27013")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "#PWR27013")
 					(unit 1)
 				)
@@ -4819,12 +4781,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "U803")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -4950,12 +4906,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "C58")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -5033,12 +4983,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "#PWR27001")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -5112,12 +5056,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "#PWR27008")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "#PWR27008")
 					(unit 1)
 				)
@@ -5254,12 +5192,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "J804")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -5385,12 +5317,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "C59")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -5465,12 +5391,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "#PWR27005")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "#PWR27005")
 					(unit 1)
 				)
@@ -5729,12 +5649,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "#PWR27006")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -5812,12 +5726,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "#PWR27002")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -5891,12 +5799,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "#PWR27003")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "#PWR27003")
 					(unit 1)
 				)
@@ -6145,12 +6047,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "U802")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -6272,12 +6168,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "C56")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "C56")
 					(unit 1)
 				)
@@ -6407,12 +6297,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "C57")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -6487,12 +6371,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "#PWR27014")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "#PWR27014")
 					(unit 1)
 				)
@@ -6664,12 +6542,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "U801")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -6747,12 +6619,6 @@
 					(unit 1)
 				)
 			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
-					(reference "#PWR27009")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -6826,12 +6692,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "#PWR27004")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "#PWR27004")
 					(unit 1)
 				)
@@ -6999,12 +6859,6 @@
 		(instances
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a9f40ae4-afdd-4904-91e3-b25ef3af69e0"
-					(reference "U804")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e7575047-7ea6-4780-bfeb-5efec018c857"
 					(reference "U804")
 					(unit 1)
 				)

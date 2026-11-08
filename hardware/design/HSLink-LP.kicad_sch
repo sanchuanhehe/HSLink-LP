@@ -4432,7 +4432,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 63.5) (xy 21.59 62.23)
+			(xy 21.59 62.23) (xy 21.59 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4589,16 +4589,6 @@
 			(type default)
 		)
 		(uuid "e448336a-266b-46ae-93ab-3c07b8a16d9b")
-	)
-	(wire
-		(pts
-			(xy 21.59 64.77) (xy 21.59 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4e29d5c-08d8-4f1f-b064-b4412872528a")
 	)
 	(wire
 		(pts
@@ -9242,4 +9232,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

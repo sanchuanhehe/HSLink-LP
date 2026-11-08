@@ -1672,11 +1672,11 @@
 					)
 				)
 			)
-			(property "Description" "仅内置电源支路；1.8V可用；限流阈值由外部电阻设定，非精密恒流；按功能重排引脚，物理编号不变"
+			(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
 				(at 0 -10.16 0)
-				(hide yes)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3773,12 +3773,6 @@
 		(uuid "08fcbe0a-0fc4-45e9-a2c0-72d0360126ae")
 	)
 	(junction
-		(at 63.5 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12045567-cda9-4ebf-bf72-1de1ea79dab4")
-	)
-	(junction
 		(at 68.58 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4096,7 +4090,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 50.8) (xy 77.47 50.8)
+			(xy 68.58 50.8) (xy 85.09 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4476,16 +4470,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 154.94) (xy 113.03 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "700af963-8d87-402c-a279-697f551800d0")
-	)
-	(wire
-		(pts
 			(xy 45.72 123.19) (xy 45.72 125.73)
 		)
 		(stroke
@@ -4513,16 +4497,6 @@
 			(type default)
 		)
 		(uuid "73613d0b-0d92-4140-a119-61d011800b8d")
-	)
-	(wire
-		(pts
-			(xy 77.47 50.8) (xy 85.09 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "794832d7-d5a8-4505-b9a9-ec7603d7857f")
 	)
 	(wire
 		(pts
@@ -4766,6 +4740,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 120.65) (xy 127 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b308a4d5-0780-41ef-b6fe-b9f30e7e9d80")
+	)
+	(wire
+		(pts
 			(xy 227.33 154.94) (xy 227.33 157.48)
 		)
 		(stroke
@@ -4916,7 +4900,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 63.5) (xy 151.13 72.39)
+			(xy 151.13 59.69) (xy 151.13 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4996,16 +4980,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 59.69) (xy 151.13 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2b8fcf9-0f89-4ea9-a187-334bcd31cbf7")
-	)
-	(wire
-		(pts
 			(xy 184.15 107.95) (xy 194.31 107.95)
 		)
 		(stroke
@@ -5013,6 +4987,16 @@
 			(type default)
 		)
 		(uuid "e2eb5a51-001b-4ff5-8a7a-6cd8b60490bc")
+	)
+	(wire
+		(pts
+			(xy 127 120.65) (xy 127 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3fe42f7-0a0c-4693-b7cb-ae7211821872")
 	)
 	(wire
 		(pts
@@ -5096,7 +5080,17 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 140.97) (xy 113.03 147.32)
+			(xy 127 158.75) (xy 96.52 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f940995a-7dbc-4aa9-b522-1c6cc3d443fe")
+	)
+	(wire
+		(pts
+			(xy 113.03 140.97) (xy 113.03 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5930,7 +5924,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 157.48 0)
+		(at 113.03 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5940,7 +5934,7 @@
 		(dnp no)
 		(uuid "0c9a9d0b-e61b-4249-8fd9-5815e6ebef7e")
 		(property "Reference" "#PWR29007"
-			(at 113.03 151.13 0)
+			(at 113.03 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5951,7 +5945,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 162.56 0)
+			(at 116.586 152.908 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5961,7 +5955,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 157.48 0)
+			(at 113.03 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5972,7 +5966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 157.48 0)
+			(at 113.03 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5983,7 +5977,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 157.48 0)
+			(at 113.03 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6104,7 +6098,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "806R"
+		(property "Value" "1.15k"
 			(at 153.67 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6126,7 +6120,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6148,7 +6142,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD07806RL"
+		(property "MPN" "0603WAF1151T5E"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6159,7 +6153,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C861567"
+		(property "LCSC" "C22834"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6170,7 +6164,7 @@
 				)
 			)
 		)
-		(property "Specification" "806Ω;±0.1%;±25ppm/°C;100mW;75V;薄膜;0603"
+		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6181,7 +6175,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "用户接受低成本打样；典型限流约1.487A；806Ω档无厂家保证上下限；逐板持续1A/过载/短路/温升投用前必验"
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6713,7 +6707,7 @@
 				)
 			)
 		)
-		(property "Description" "500mA adjustable LDO, WSON-6 with exposed ground pad"
+		(property "Description" "500mA Low-Dropout Linear Regulator, Adjustable Output, SOT-23-5"
 			(at 63.5 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6757,7 +6751,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "VIN改接USB_5V提高3.3V端压差；反馈10k/2.15k/15.4k；校准、纹波、启动、热待实测"
+		(property "EngineeringStatus" "同系列DRV换封装；功能映射及EP接地核对；VIO反馈/调压功能保留；实测待办"
 			(at 63.5 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6853,7 +6847,7 @@
 				)
 			)
 		)
-		(property "Description" "仅内置电源支路；1.8V可用；806Ω对应典型限流约1.487A，非精密恒流；物理编号不变"
+		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
 			(at 144.78 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6897,7 +6891,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "R42=806Ω±0.1%打样方案；无该档厂家限流窗口保证；逐板持续1A/过载/短路/温升投用前必验；外部2A支路不经过U503"
+		(property "EngineeringStatus" "纠正无效DDCR型号；R42=1.15k对应典型1A、手册0.75-1.25A，不能保证1A输出；限流/热待闭合"
 			(at 144.78 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6957,7 +6951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.15k"
+		(property "Value" "21.5k"
 			(at 99.06 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7012,7 +7006,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD072K15L"
+		(property "MPN" "RT0603BRD0721K5L"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7023,7 +7017,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C861292"
+		(property "LCSC" "C705747"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7034,7 +7028,7 @@
 				)
 			)
 		)
-		(property "Specification" "2.15kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
+		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7045,7 +7039,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7353,7 +7347,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 151.13 0)
+		(at 113.03 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7363,7 +7357,7 @@
 		(dnp no)
 		(uuid "57b3b8a7-6901-4283-9e1c-7ab81b943158")
 		(property "Reference" "C44"
-			(at 115.57 149.86 0)
+			(at 115.57 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7374,7 +7368,7 @@
 			)
 		)
 		(property "Value" "4.7u/10V"
-			(at 115.57 152.4 0)
+			(at 115.57 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7385,7 +7379,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 113.995 147.32 0)
+			(at 113.995 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7396,7 +7390,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20250930/B0241BFA3407E11297D5699815C0E3D0.pdf"
-			(at 113.03 151.13 0)
+			(at 113.03 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7407,7 +7401,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 151.13 0)
+			(at 113.03 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7418,7 +7412,7 @@
 			)
 		)
 		(property "MPN" "TCC0603X7R475K100CT"
-			(at 113.03 151.13 0)
+			(at 113.03 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7429,7 +7423,7 @@
 			)
 		)
 		(property "LCSC" "C18185770"
-			(at 113.03 151.13 0)
+			(at 113.03 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7440,7 +7434,7 @@
 			)
 		)
 		(property "Specification" "容值:4.7uF,温度系数:X7R,精度:±10%,额定电压:10V"
-			(at 113.03 151.13 0)
+			(at 113.03 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7451,7 +7445,7 @@
 			)
 		)
 		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
-			(at 113.03 151.13 0)
+			(at 113.03 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8774,7 +8768,7 @@
 		(dnp no)
 		(uuid "b49f6d5d-f555-42c3-9fff-e5ff9e6c3077")
 		(property "Reference" "R60"
-			(at 86.36 115.57 90)
+			(at 87.63 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8784,8 +8778,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15.4k"
-			(at 95.25 115.57 90)
+		(property "Value" "200k"
+			(at 92.71 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8839,7 +8833,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD0715K4L"
+		(property "MPN" "RT0603BRD07200KL"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8850,7 +8844,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C861142"
+		(property "LCSC" "C728585"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8861,7 +8855,7 @@
 				)
 			)
 		)
-		(property "Specification" "15.4kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
+		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8872,7 +8866,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9814,7 +9808,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_5V"
+		(property "Value" "P3V6_SW"
 			(at 25.4 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10636,7 +10630,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "100k"
 			(at 99.06 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10691,7 +10685,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD0710KL"
+		(property "MPN" "RT0603BRD07100KL"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10702,7 +10696,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C95204"
+		(property "LCSC" "C122538"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10713,7 +10707,7 @@
 				)
 			)
 		)
-		(property "Specification" "10kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
+		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10724,7 +10718,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
+		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10903,47 +10897,6 @@
 				)
 			)
 		)
-	)
-	(text "VIO：逐板外部校准；精度目标 ±1%，实板待验收。"
-		(exclude_from_sim no)
-		(at 17.78 187.96 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "f40b5b74-9181-48fa-a1d0-23d393194cdd")
-	)
-	(label "VIO_FB"
-		(at 101.6 120.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e35f33af-2458-4800-abf8-c66d44963988")
-	)
-	(wire
-		(pts
-			(xy 93.98 120.65) (xy 101.6 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5226e8f2-1b8d-443b-a84b-34d688ab3b9d")
-	)
-	(wire
-		(pts
-			(xy 96.52 158.75) (xy 105.41 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc48ec60-a423-4d89-ae3d-5d035b704621")
 	)
 	(sheet_instances
 		(path "/"

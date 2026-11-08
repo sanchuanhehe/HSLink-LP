@@ -3025,7 +3025,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 187.96) (xy 375.92 187.96)
+			(xy 373.38 187.96) (xy 378.46 187.96)
 		)
 		(stroke
 			(width 0)
@@ -3085,7 +3085,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 55.88) (xy 335.28 55.88)
+			(xy 332.74 55.88) (xy 353.06 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3155,16 +3155,6 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 121.92) (xy 378.46 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bafb495-9f92-400b-b6ac-93c6e63535e4")
-	)
-	(wire
-		(pts
 			(xy 246.38 162.56) (xy 246.38 160.02)
 		)
 		(stroke
@@ -3215,7 +3205,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 187.96) (xy 137.16 187.96)
+			(xy 134.62 187.96) (xy 154.94 187.96)
 		)
 		(stroke
 			(width 0)
@@ -3365,7 +3355,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 55.88) (xy 137.16 55.88)
+			(xy 134.62 55.88) (xy 154.94 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3475,16 +3465,6 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 187.96) (xy 378.46 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c75adc7-e41d-41be-9c03-74bfd9d8b81e")
-	)
-	(wire
-		(pts
 			(xy 266.7 93.98) (xy 266.7 111.76)
 		)
 		(stroke
@@ -3492,16 +3472,6 @@
 			(type default)
 		)
 		(uuid "2e1e43ba-a072-4c1a-bd9e-08458883f274")
-	)
-	(wire
-		(pts
-			(xy 276.86 187.96) (xy 279.4 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e4885e1-8425-47e5-890c-f632713df7c5")
 	)
 	(wire
 		(pts
@@ -3595,7 +3565,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 55.88) (xy 78.74 55.88)
+			(xy 76.2 55.88) (xy 81.28 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3682,16 +3652,6 @@
 			(type default)
 		)
 		(uuid "470bd61e-5006-4c72-bb50-e02e16f96dbe")
-	)
-	(wire
-		(pts
-			(xy 78.74 55.88) (xy 81.28 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4896b9ac-aff6-4232-9991-f923ae87efde")
 	)
 	(wire
 		(pts
@@ -3855,7 +3815,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 121.92) (xy 276.86 121.92)
+			(xy 274.32 121.92) (xy 279.4 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4065,7 +4025,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 55.88) (xy 276.86 55.88)
+			(xy 274.32 55.88) (xy 279.4 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4125,16 +4085,6 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 55.88) (xy 353.06 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75895881-812d-45d8-b449-e437c6c997ac")
-	)
-	(wire
-		(pts
 			(xy 284.48 96.52) (xy 284.48 93.98)
 		)
 		(stroke
@@ -4152,16 +4102,6 @@
 			(type default)
 		)
 		(uuid "77f81898-d626-479a-9241-7344473bddc0")
-	)
-	(wire
-		(pts
-			(xy 78.74 121.92) (xy 81.28 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7819dcce-bf7b-4130-b9f9-f7085052744f")
 	)
 	(wire
 		(pts
@@ -4205,7 +4145,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 121.92) (xy 137.16 121.92)
+			(xy 134.62 121.92) (xy 154.94 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4292,16 +4232,6 @@
 			(type default)
 		)
 		(uuid "839c5d11-ff9f-4450-beb1-03f53485a97e")
-	)
-	(wire
-		(pts
-			(xy 78.74 187.96) (xy 81.28 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "844b2f5e-b1c3-4602-987f-947532fc323e")
 	)
 	(wire
 		(pts
@@ -4585,16 +4515,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 121.92) (xy 279.4 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2eaf720-2792-433a-8c45-6f92768775df")
-	)
-	(wire
-		(pts
 			(xy 373.38 55.88) (xy 375.92 55.88)
 		)
 		(stroke
@@ -4685,7 +4605,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 187.96) (xy 78.74 187.96)
+			(xy 76.2 187.96) (xy 81.28 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4875,7 +4795,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 187.96) (xy 276.86 187.96)
+			(xy 274.32 187.96) (xy 279.4 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4915,16 +4835,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 121.92) (xy 154.94 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caed5e41-f7c6-44ee-b9d7-a706b8acd3cb")
-	)
-	(wire
-		(pts
 			(xy 147.32 96.52) (xy 147.32 93.98)
 		)
 		(stroke
@@ -4932,16 +4842,6 @@
 			(type default)
 		)
 		(uuid "cd43005c-e3af-4be7-954c-083da63f1c88")
-	)
-	(wire
-		(pts
-			(xy 137.16 187.96) (xy 154.94 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdc8a4f4-0e12-437d-877d-9bad607aaf7b")
 	)
 	(wire
 		(pts
@@ -5075,7 +4975,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 121.92) (xy 78.74 121.92)
+			(xy 76.2 121.92) (xy 81.28 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5092,16 +4992,6 @@
 			(type default)
 		)
 		(uuid "df99a276-b180-4620-9095-e7943aebb81b")
-	)
-	(wire
-		(pts
-			(xy 137.16 55.88) (xy 154.94 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfcb9299-464a-420a-a74e-f13489bab30b")
 	)
 	(wire
 		(pts
@@ -5135,7 +5025,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 121.92) (xy 375.92 121.92)
+			(xy 373.38 121.92) (xy 378.46 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5232,16 +5122,6 @@
 			(type default)
 		)
 		(uuid "f03c98a6-9ae1-4e9c-bc3a-41db493e0f49")
-	)
-	(wire
-		(pts
-			(xy 276.86 55.88) (xy 279.4 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f08fabc9-f063-4213-a58b-20da6f956a0e")
 	)
 	(wire
 		(pts
@@ -6748,12 +6628,6 @@
 			(uuid "989c2ba4-9135-494c-89de-238e257e2dbe")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "R50")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "R50")
@@ -6879,12 +6753,6 @@
 			(uuid "87a6fdd3-fb9d-4c65-ad14-b7223fbd2c08")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "R51")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "R51")
@@ -7861,12 +7729,6 @@
 			(uuid "a864dd16-4648-4b9c-8a08-8df96e02ea3c")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "#PWR23034")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "#PWR23034")
@@ -10854,12 +10716,6 @@
 			(uuid "9e6b8388-a99b-4417-96bf-b96eab27e666")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "Q701")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "Q701")
@@ -10937,12 +10793,6 @@
 			(uuid "2ec7b90e-0f0a-4195-9947-06e35b495f3a")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "#PWR23039")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "#PWR23039")
@@ -11123,12 +10973,6 @@
 			(uuid "9aaa43ae-e02f-4c27-b815-0246384b9214")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "#PWR23036")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "#PWR23036")
@@ -11594,12 +11438,6 @@
 			(uuid "b7e264a1-8303-4e88-baa0-5ee963e687df")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "#PWR23035")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "#PWR23035")
@@ -11983,12 +11821,6 @@
 			(uuid "1bf06c7f-610e-44ea-9930-dac534a1809b")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "R49")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "R49")
@@ -14505,12 +14337,6 @@
 			(uuid "398d772f-a726-40da-b64f-808a3f33719f")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "#PWR23038")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "#PWR23038")
@@ -15154,12 +14980,6 @@
 			(uuid "b059ec0e-9ff9-4f55-9da9-d2e71449f95f")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "Q702")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "Q702")
@@ -17214,12 +17034,6 @@
 			(uuid "d29689fa-ec5e-4073-9988-2b8b41e86dd0")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "R52")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "R52")
@@ -18846,12 +18660,6 @@
 			(uuid "f3880f33-b51e-4c72-ae1c-35a030fcc657")
 		)
 		(instances
-			(project ""
-				(path "/125d8416-0cd0-4c62-aab2-da788e9c430e"
-					(reference "#PWR23037")
-					(unit 1)
-				)
-			)
 			(project "HSLink-LP"
 				(path "/5e2c1440-f6a4-4887-af75-aa6afc882006/a1e7bb41-e486-44dc-a56e-c4a2864f5734"
 					(reference "#PWR23037")
