@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-11",
+  "engine": "KiCad 10.0.7 bundled ngspice-45.2",
+  "models": [
+    {
+      "file": "../reports/spice-models/TLV75801P_TRANS.lib",
+      "url": "https://www.ti.com/lit/zip/SBVM926",
+      "sha256": "06b74dad4d1cf528dadd8fa22f13068dd0287b52c75f095e25078e6a24355c3b",
+      "version": "Final 1.00 / 2018-10-24",
+      "modified": false,
+      "ports": [
+        "EN",
+        "FB",
+        "GND",
+        "VIN",
+        "VOUT"
+      ],
+      "U502_physical_pins": [
+        "4",
+        "2",
+        "3+7",
+        "6",
+        "1"
+      ],
+      "limits": "No quiescent current, noise or temperature effects; ideal DAC; nominal device only"
+    },
+    {
+      "file": "../reports/spice-models/TPS22950_TRANS.lib",
+      "url": "https://www.ti.com/lit/zip/SLVMDI3",
+      "sha256": "d821da6eaa928be12fad9c71c6804fdd9ae11725b8ef8bd2ca244a2cb686485c",
+      "used": false,
+      "reason": "2020 model identifies TPS22950 / YBH, not confirmed TPS22950C; ILIM lookup differs; no temperature effects. Not used to verify R42."
+    }
+  ],
+  "source_xml_sha256": "ec55ac445fc16d788339022fc54da47b6eee76e9e0d5fd667ae84fdd663b5ab2",
+  "scope": "Partial functional simulation; no board-level hardware qualification",
+  "data_dir": "../reports/spice-2026-11-11",
+  "unmodeled": [
+    "TPS63810 switching/1A/power budget",
+    "TPS22950C guaranteed current limit/thermal",
+    "MCP4726 errors/I2C/startup",
+    "40MHz SWD/JTAG signal integrity",
+    "140nA board leakage",
+    "firmware measurement lock",
+    "relay real delay/bounce"
+  ],
+  "source_netlist": "../reports/spice-2026-11-11/final.xml",
+  "aliases": {
+    "POWER_OFF": "Net-(U303-1B)"
+  }
+}

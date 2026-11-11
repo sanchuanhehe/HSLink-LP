@@ -1,0 +1,29 @@
+HSLink-LP K601 NC discharge and hardware interlock functional model
+* Actual K601: COM4=DUT_OUT, NO8=SOURCE_POWER, NC6=DISCH_FEED.
+* Q902 G1=DISCH_ON S2=GND D3=DISCH_DRAIN. R57=1k.
+* Behavioral conductance ramps use ASSUMED 0.1ohm contacts, 1us transitions, delays/BBM. No coil, bounce, thermal or welding model.
+.param SOURCE_V=5.5 DUT_C=100u
+VSOURCE SOURCE_POWER 0 {SOURCE_V}
+VPOWER POWER_SAFE 0 PWL(0 0 1m 0 1.001m 3.3 20m 3.3 20.001m 0 180m 0 180.001m 3.3)
+* Wrong discharge request while powered is deliberately injected (10..15 ms).
+* Correct discharge request follows 50ms from power-off (70..170 ms).
+VDISCH DISCH_ARM 0 PWL(0 0 10m 0 10.001m 3.3 15m 3.3 15.001m 0 70m 0 70.001m 3.3 170m 3.3 170.001m 0)
+BU304 POWER_OFF 0 V=V(POWER_SAFE)>1.65 ? 0 : 3.3
+BU303 DISCH_ON 0 V=(V(DISCH_ARM)>1.65 && V(POWER_OFF)>1.65) ? 3.3 : 0
+VNO NO_CTL 0 PWL(0 0 6m 0 6.001m 3.3 25m 3.3 25.001m 0 186m 0 186.001m 3.3)
+VNC NC_CTL 0 PWL(0 3.3 5m 3.3 5.001m 0 27m 0 27.001m 3.3 185m 3.3 185.001m 0)
+BK601NO SOURCE_POWER DUT_OUT I=V(SOURCE_POWER,DUT_OUT)*(1e-15+V(NO_CTL)/3.3/0.1)
+BK601NC DUT_OUT DISCH_FEED I=V(DUT_OUT,DISCH_FEED)*(1e-15+V(NC_CTL)/3.3/0.1)
+R57 DISCH_FEED DISCH_DRAIN 1k
+* Q902 approximation: on resistance + correctly directed body diode; NOT AO3400A model.
+BQ902 DISCH_DRAIN 0 I=V(DISCH_DRAIN)*(1e-15+V(DISCH_ON)/3.3/0.05)
+DBODY 0 DISCH_DRAIN GENERIC_BODY
+R62 DISCH_ON 0 100k
+CDUT DUT_OUT 0 {DUT_C}
+RNUM DUT_OUT 0 1e12
+.model GENERIC_BODY D(Is=1e-15 N=1)
+.options reltol=1e-5 abstol=1e-12 method=gear
+.save V(DUT_OUT) V(DISCH_ON) V(POWER_SAFE) V(NO_CTL) V(NC_CTL) V(DISCH_DRAIN) V(DISCH_FEED) I(VSOURCE)
+.ic V(DUT_OUT)=0
+.tran 5u 200m 0 5u
+.end

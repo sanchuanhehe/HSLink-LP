@@ -1672,11 +1672,11 @@
 					)
 				)
 			)
-			(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+			(property "Description" "仅内置电源支路；1.8V可用；限流阈值由外部电阻设定，非精密恒流；按功能重排引脚，物理编号不变"
 				(at 0 -10.16 0)
+				(hide yes)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6098,7 +6098,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.15k"
+		(property "Value" "806R"
 			(at 153.67 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6120,7 +6120,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com//upload/public/pdf/source/20200306/C422600_1E6D84923E4A46A82E41ADD87F860B5C.pdf"
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6142,7 +6142,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603WAF1151T5E"
+		(property "MPN" "RT0603BRD07806RL"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6153,7 +6153,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22834"
+		(property "LCSC" "C861567"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6164,7 +6164,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:0.1W,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±100ppm/℃,电阻类型:厚膜电阻,精度:±1%,阻值:1150Ω"
+		(property "Specification" "806Ω;±0.1%;±25ppm/°C;100mW;75V;薄膜;0603"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6175,7 +6175,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "用户接受低成本打样；典型限流约1.487A；806Ω档无厂家保证上下限；逐板持续1A/过载/短路/温升投用前必验"
 			(at 151.13 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6847,7 +6847,7 @@
 				)
 			)
 		)
-		(property "Description" "仅内置电源支路；1.8 V 可用；1 A 名义限流非精密恒流；按功能重排引脚，物理编号不变"
+		(property "Description" "仅内置电源支路；1.8V可用；806Ω对应典型限流约1.487A，非精密恒流；物理编号不变"
 			(at 144.78 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6891,7 +6891,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "纠正无效DDCR型号；R42=1.15k对应典型1A、手册0.75-1.25A，不能保证1A输出；限流/热待闭合"
+		(property "EngineeringStatus" "R42=806Ω±0.1%打样方案；无该档厂家限流窗口保证；逐板持续1A/过载/短路/温升投用前必验；外部2A支路不经过U503"
 			(at 144.78 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6951,7 +6951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "21.5k"
+		(property "Value" "2.15k"
 			(at 99.06 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7006,7 +7006,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD0721K5L"
+		(property "MPN" "RT0603BRD072K15L"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7017,7 +7017,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C705747"
+		(property "LCSC" "C861292"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7028,7 +7028,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ"
+		(property "Specification" "2.15kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7039,7 +7039,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
 			(at 96.52 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -8768,25 +8768,23 @@
 		(dnp no)
 		(uuid "b49f6d5d-f555-42c3-9fff-e5ff9e6c3077")
 		(property "Reference" "R60"
-			(at 87.63 115.57 90)
+			(at 90.17 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 92.71 115.57 90)
+		(property "Value" "15.4k"
+			(at 90.17 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -8833,7 +8831,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD07200KL"
+		(property "MPN" "RT0603BRD0715K4L"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8844,7 +8842,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C728585"
+		(property "LCSC" "C861142"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8855,7 +8853,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ"
+		(property "Specification" "15.4kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8866,7 +8864,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
 			(at 90.17 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9808,7 +9806,7 @@
 				)
 			)
 		)
-		(property "Value" "P3V6_SW"
+		(property "Value" "USB_5V"
 			(at 25.4 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10630,7 +10628,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "10k"
 			(at 99.06 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10685,7 +10683,7 @@
 				)
 			)
 		)
-		(property "MPN" "RT0603BRD07100KL"
+		(property "MPN" "RT0603BRD0710KL"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10696,7 +10694,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C122538"
+		(property "LCSC" "C95204"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10707,7 +10705,7 @@
 				)
 			)
 		)
-		(property "Specification" "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ"
+		(property "Specification" "10kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10718,7 +10716,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "VIO反馈余量调整；逐板外部校准，±1%目标待实测"
 			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)

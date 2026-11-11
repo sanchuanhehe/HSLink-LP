@@ -1,0 +1,22 @@
+HSLink-LP Vref divider isolation functional model
+* Actual pins: U901 COM5=DUT_VREF, NO6=VREF_SENSE_IN, NC4=floating.
+* Generic switch Ron=5 ohm, Roff=1e15 ohm: assumed, NOT DG2012E leakage proof.
+* I_OFF is an explicit injected scenario, not device model or whole-board guarantee.
+.param TARGET_V=3.3 I_OFF=0
+VTARGET DUT_VREF 0 {TARGET_V}
+VEN SENSE_ON 0 PWL(0 0 1m 0 1.001m 3.3 3m 3.3 3.001m 0)
+BU901NC NC_CTL 0 V=3.3-V(SENSE_ON)
+SU901NO DUT_VREF VREF_SENSE_IN SENSE_ON 0 SNS
+SU901NC DUT_VREF U901_NC NC_CTL 0 SNS
+* Numerical anchor on unused pin only, not a physical added resistor.
+RNUM U901_NC 0 1e15
+BOFF DUT_VREF VREF_SENSE_IN I=V(SENSE_ON)<1.5 ? I_OFF : 0
+R53 VREF_SENSE_IN ADC_VREF 68k
+R54 ADC_VREF 0 68k
+C61 ADC_VREF 0 1n
+R61 SENSE_ON 0 100k
+.model SNS SW(Ron=5 Roff=1e15 Vt=1.65 Vh=0)
+.options reltol=1e-5 abstol=1e-14
+.save V(DUT_VREF) V(ADC_VREF) V(SENSE_ON) I(VTARGET)
+.tran 0.5u 5m 0 0.5u
+.end

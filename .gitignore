@@ -30,3 +30,6 @@ dist/
 /hardware/production/
 /hardware/design/reports/
 /measurements/raw/
+
+# Local editor history; preserve locally, use Git for project history.
+/hardware/design/.history/

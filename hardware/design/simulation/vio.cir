@@ -1,0 +1,23 @@
+HSLink-LP VIO nominal TI transient model
+* Exported physical mapping: U502 EN4 FB2 GND3/7 IN6 OUT1; DNC5 omitted.
+* TI model port order EN FB GND VIN VOUT. Model file is unmodified SBVM926.
+* Ideal DAC represents code voltage only, not MCP4726 error, I2C or power-up state.
+.include ../reports/spice-models/TLV75801P_TRANS.lib
+.param VIN_LEVEL=5 DAC_CODE=3183 R_TOP=10k R_BOTTOM=2.15k R_INJECT=15.4k C_OUT=4.7u
+VUSB USB_5V 0 {VIN_LEVEL}
+VEN VIO_EN 0 PWL(0 0 1m 0 1.001m 3.3 8m 3.3 8.001m 0)
+VDAC VIO_DAC 0 {3.3*DAC_CODE/4096}
+R58 VIO_LOCAL VIO_FB {R_TOP}
+R59 VIO_FB 0 {R_BOTTOM}
+R60 VIO_DAC VIO_FB {R_INJECT}
+R63 VIO_EN 0 100k
+C43 USB_5V 0 4.7u
+C44 VIO_LOCAL 0 {C_OUT}
+* Loads disconnect when EN falls so a current sink does not force negative VIO.
+* Load has a 0.5V compliance ramp; it cannot force a negative output during startup.
+BLOAD VIO_LOCAL 0 I=(V(VIO_EN)>1.5 ? (time<5m ? 0.01 : 0.1) : 0)*min(1,max(0,V(VIO_LOCAL)/0.5))
+XU502 VIO_EN VIO_FB 0 USB_5V VIO_LOCAL TLV75801P_TRANS
+.options reltol=1e-3 abstol=1e-9 method=gear
+.save V(VIO_LOCAL) V(VIO_FB) V(VIO_EN) V(VIO_DAC) I(VUSB) I(VDAC)
+.tran 1u 12m 0 0.5u
+.end

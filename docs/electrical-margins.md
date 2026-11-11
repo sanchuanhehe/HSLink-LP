@@ -1,5 +1,7 @@
 # 使用边界与电气余量
 
+2026-11-11补充：发现当前图中四颗电阻和VIO输入回退后，已恢复下文已采用方案；完成首轮分模块SPICE，新增瞬态与模型限制见[仿真记录](spice-validation.md)。下文2026-11-07结果保留历史日期，不等同新硬件验收。
+
 2026-11-07。VIO修改基线Git `cad895d`，R42落地基线Git `4a619c1`，以[需求基线](requirements.md)为准。VIO反馈电阻及LDO输入已修改，用户已确认低成本、逐板外部校准与±1%目标。资料分析、文件检查和实板验收分开记录；计算不构成硬件保证。VIO证据位于已忽略的 `hardware/design/reports/margins-2026-11-07/`，R42落地检查位于 `hardware/design/reports/r42-2026-11-07/`，摘要和源文件哈希见[validation.json](../hardware/validation.json)。
 
 ## 已确认的边界

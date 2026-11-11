@@ -4392,16 +4392,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 64.77) (xy 21.59 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a73127cd-c550-4b5d-8bfd-4d80690402a7")
-	)
-	(wire
-		(pts
 			(xy 22.86 46.99) (xy 34.29 46.99)
 		)
 		(stroke
@@ -4432,7 +4422,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 62.23) (xy 21.59 64.77)
+			(xy 24.13 62.23) (xy 24.13 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4499,16 +4489,6 @@
 			(type default)
 		)
 		(uuid "c6006cb7-cfbf-480a-86dc-d2b232288d51")
-	)
-	(wire
-		(pts
-			(xy 21.59 62.23) (xy 24.13 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c85257d1-db8a-42a4-bac6-91849c34208d")
 	)
 	(wire
 		(pts
@@ -9226,6 +9206,22 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 24.13 64.77) (xy 22.86 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22567815-fd6b-4805-8425-f1b4d35bb82a")
+	)
+	(junction
+		(at 24.13 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e97e545f-e737-44b1-9d4d-f51a0df2411a")
 	)
 	(sheet_instances
 		(path "/"

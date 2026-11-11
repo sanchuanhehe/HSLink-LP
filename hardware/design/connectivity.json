@@ -2527,11 +2527,11 @@
       "2": "VIO_FB"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
-    "display_value": "100k",
-    "mpn": "RT0603BRD07100KL",
-    "lcsc": "C122538",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:100kΩ"
+    "display_value": "10k",
+    "mpn": "RT0603BRD0710KL",
+    "lcsc": "C95204",
+    "engineering_status": "VIO反馈余量调整；逐板外部校准，±1%目标待实测",
+    "procurement_specification": "10kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
   },
   {
     "reference": "R59",
@@ -2544,11 +2544,11 @@
       "2": "GND"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
-    "display_value": "21.5k",
-    "mpn": "RT0603BRD0721K5L",
-    "lcsc": "C705747",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:21.5kΩ"
+    "display_value": "2.15k",
+    "mpn": "RT0603BRD072K15L",
+    "lcsc": "C861292",
+    "engineering_status": "VIO反馈余量调整；逐板外部校准，±1%目标待实测",
+    "procurement_specification": "2.15kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
   },
   {
     "reference": "R60",
@@ -2561,11 +2561,11 @@
       "2": "VIO_FB"
     },
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250609/0E6D5617EADA80FA3B707391883DF2D5.pdf",
-    "display_value": "200k",
-    "mpn": "RT0603BRD07200KL",
-    "lcsc": "C728585",
-    "engineering_status": "资料选型/价格核对；未硬件验证",
-    "procurement_specification": "功率:100mW,工作温度:-55℃~+155℃,工作电压:75V,温度系数:±25ppm/℃,电阻类型:薄膜电阻,精度:±0.1%,阻值:200kΩ"
+    "display_value": "15.4k",
+    "mpn": "RT0603BRD0715K4L",
+    "lcsc": "C861142",
+    "engineering_status": "VIO反馈余量调整；逐板外部校准，±1%目标待实测",
+    "procurement_specification": "15.4kΩ; ±0.1%; ±25ppm/°C; 100mW; 75V; 0603"
   },
   {
     "reference": "R63",
