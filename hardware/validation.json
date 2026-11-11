@@ -350,7 +350,7 @@
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
     "docs/sense-discharge.md": "60bd16b721f775669695d5ee562e0e1a2f511928ec93718b8d328cc32d34dd01",
     "docs/spice-validation.md": "21190f8c523c75b27635aa63c77fb5c2daa90a78d2b69fd90e877210e12293ce",
-    "docs/structure-and-pcb.md": "76ccc6c7847958bdf3b89f9c1a19d65ce0ca91569028580888b3b7d76397ad91",
+    "docs/structure-and-pcb.md": "a8bb65fe38732e2501c3a62519cf1853cf6cc9fc8ef5c0b232117d15539eb504",
     "docs/upstream-swd-timing.md": "01a31d841718c829a9d58eb85b6f30ca7a856279238446736841e30200316d57",
     "docs/upstream.md": "7337084ef16707a9c9ba5812d329700b4bbdb225278c40a2f9f34f314f0ac12d",
     "docs/validation.md": "371a0a3f8a955e48fb73955d1be211369266f22c890a9db97d4f1d80b2eef31e",
@@ -399,7 +399,8 @@
     "host/src/hslink_lp/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
     "host/src/hslink_lp/cli.py": "e4263371ead085566a0bbdd931fce4eefd23137d923f707ef05bc81c2d9d638d",
     "tools/fetch_upstream.py": "506962188f1e536fb1025cfc26dd5c1016d37fc9952b4ad920f4e4025237b85a",
-    "upstream.lock.json": "1325caffec12a6067fcd36cfbdd4ee9c63488ebd2b74e9b17cc9f2fba73c79a9"
+    "upstream.lock.json": "1325caffec12a6067fcd36cfbdd4ee9c63488ebd2b74e9b17cc9f2fba73c79a9",
+    "docs/cadquery-integration.md": "923ac402a90edcc19f28e1b5f7f1b260bd5ebf6571160a4c6238504433550221"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -906,7 +907,8 @@
     "hardware/design/reports/spice-2026-11-11/discharge_1e-06/runner-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "hardware/design/reports/spice-2026-11-11/discharge_1e-06/runner.json": "4b41584fe531c1abfefd635da29c874a42854237fffb632a37a6e67acbfb116f",
     "hardware/design/reports/spice-2026-11-11/discharge_1e-06/ngspice.log": "65cfdad580a9d60a68e1a323c6fabcd7db8f8af76dab48279595b45fbe17e699",
-    "hardware/design/reports/spice-2026-11-11/discharge_1e-06/result.raw": "84300d1cbdd9e7c9b8b604e5cd6855426bf92bb252d037bcd3c8e80d56e7a691"
+    "hardware/design/reports/spice-2026-11-11/discharge_1e-06/result.raw": "84300d1cbdd9e7c9b8b604e5cd6855426bf92bb252d037bcd3c8e80d56e7a691",
+    "hardware/design/reports/tool-check-2026-11-11/cadquery.json": "7b2cf8ff07a2c04acf0f4563215c9fd16a285c54cd484a9611db864f6890101c"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -2198,7 +2200,48 @@
     "material_confirmed": false,
     "new_controls_confirmed": false,
     "cad_created": false,
-    "tools": "KiCad/MCP available; CadQuery and FreeCAD proposed, not installed"
+    "tools": "KiCad/MCP available; CadQuery 2.8.0 installed with uv/Python 3.12.14 and smoke-tested; FreeCAD proposed, not installed"
   },
-  "historical_sections_note": "margin_update/r42_update/decision_sync/physical_pinmap及其他旧阶段记录保留历史日期。最新原理图/ERC/仿真证据为2026-11-11；此前PASS不作为本轮未覆盖项目的验收。"
+  "historical_sections_note": "margin_update/r42_update/decision_sync/physical_pinmap及其他旧阶段记录保留历史日期。最新原理图/ERC/仿真证据为2026-11-11；此前PASS不作为本轮未覆盖项目的验收。",
+  "tooling": {
+    "cadquery": {
+      "checked_at": "2026-11-11T22:57:24.607150+08:00",
+      "status": "PASS",
+      "scope": "CadQuery installation smoke test; not HSLink mechanical validation",
+      "python": "3.12.14",
+      "interpreter": "/Users/sanchuanhehe/.local/share/cadquery/.venv/bin/python3",
+      "machine": "arm64",
+      "cadquery": "2.8.0",
+      "cadquery_ocp": "7.9.3.1.1",
+      "solid_valid": true,
+      "solids": 1,
+      "volume_mm3": 2283.4690350851256,
+      "analytic_volume_mm3": 2283.4690350851265,
+      "step_roundtrip_volume_mm3": 2283.469035085129,
+      "exports": {
+        "step": {
+          "bytes": 50719,
+          "sha256": "e5874cac32a546d2cffa8b3b2876b35fd8c8cd12e507066bf0c91403d85ba29c"
+        },
+        "stl": {
+          "bytes": 127884,
+          "sha256": "8b72318d9eb6ecad4633dee4936b9793457a8886c5ca0b523bbae30b69cdab47"
+        },
+        "svg": {
+          "bytes": 46447,
+          "sha256": "75c082c3b0f527c8cff68cdc796bf4397a97e87aca78a5c5d876043d4d08c555"
+        }
+      },
+      "temporary_geometry_removed": true,
+      "environment_sha256": {
+        "pyproject.toml": "1c9f49e931413c96ffeeb6c6136af20936a73503fb13f2c0168b7c1913721d37",
+        "uv.lock": "1837531a739386499e1decc4ead2516cb4d6de56578f7c2bae370956e67d19f7",
+        ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d"
+      },
+      "dependency_check": "uv pip check: 44 packages, all compatible",
+      "environment_path": "/Users/sanchuanhehe/.local/share/cadquery",
+      "evidence": "design/reports/tool-check-2026-11-11/cadquery.json",
+      "documentation": "../docs/cadquery-integration.md"
+    }
+  }
 }

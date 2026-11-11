@@ -30,7 +30,7 @@ PCB 板框先服从接口、安装孔和插拔空间。原90×60mm只是布局�
 | --- | --- | --- |
 | KiCad 10.0.7＋现有KiCad MCP | 唯一原理图、封装、板框、布局布线、ERC/DRC、STEP与生产文件 | 已可用；新板PCB尚未建立 |
 | KiCad自带ngspice 45.2 | 电源与模拟支路功能测试 | 本轮已实际运行；MCP负责网表/ERC，求解器经uv临时适配调用，未宣称MCP自带仿真控制 |
-| CadQuery | 参数化底座、螺柱、盖板开孔；输出STEP/STL/DXF，源参数用Git管理 | 建议采用，尚未安装；Python统一uv |
+| CadQuery | 参数化底座、螺柱、盖板开孔；输出STEP/STL/DXF，源参数用Git管理 | 已用uv安装CadQuery 2.8.0、Python 3.12.14；建模与STEP/STL/SVG导出检查通过，见[接入记录](cadquery-integration.md) |
 | FreeCAD | 查看装配、尺寸、干涉、工程图；对接PCB STEP | 建议安装，当前未安装 |
 | 厂家STEP/封装图、PCB叠层资料 | 验证插接空间、板厚、阻抗及装配公差 | 后续逐件核对，不能用通用3D外形替代精确连接器模型 |
 | 40MHz专项IBIS/互连模型及示波器 | 排线/走线/串阻/FSA的时序和信号完整性验证 | 模型与实测待补；本轮SPICE未覆盖 |
