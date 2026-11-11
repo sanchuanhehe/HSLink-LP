@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "183个器件布局重整、关键手工布线、USB及结构C工程样件检查；PCB未布完，非制造放行或硬件验证",
-  "checked_at": "2026-11-11T18:01:23.221Z",
+  "scope": "本轮测试点原理图、采购分类、网表与图面检查；PCB布局工作独立保留，未完成全板布线与可达性验证",
+  "checked_at": "2026-11-11T18:46:03.532442+00:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -9,13 +9,13 @@
     "path": "design/HSLink-LP.kicad_pro",
     "status": "降本电路审阅稿",
     "hardware_validated": false,
-    "validation": "MCP ERC0错误0告警；完整网表连接、器件值和封装与e719e1b已采用方案相同；局部图面人工查看；非硬件验收",
+    "validation": "测试点本轮MCP ERC 0错误/0告警；原有194个器件引脚分组和值/封装/符号保持，仅增加10个测试点引脚；图面检查通过，非硬件验收",
     "file_format": "KiCad 10 / 20260306"
   },
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "一般DRC违规列表0，原理图parity 0，但399条未连接报告项；未完成叠层/阻抗和全布线，不可投板",
+    "validation": "历史layout_review记录仅对应其源哈希；当前布局仍在修改，新增10个TP尚待同步PCB和可达性检查。PCB未完成全布线，不可投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -44,16 +44,16 @@
       "footprint_filter"
     ],
     "new_ignored_checks": [],
-    "evidence": "design/reports/spice-2026-11-11/final-1-run_erc.json",
-    "mcp_evidence": "design/reports/spice-2026-11-11/final-1-run_erc.json",
+    "evidence": "design/reports/testpoints-2026-11-12/erc.json",
+    "mcp_evidence": "design/reports/testpoints-2026-11-12/erc.json",
     "exclusions": []
   },
   "connectivity": {
     "status": "PASS",
-    "physical_components": 194,
+    "physical_components": 204,
     "expected_nets": 117,
     "actual_connected_nets": 117,
-    "connected_pins": 675,
+    "connected_pins": 685,
     "isolated_no_connect_pins": 45,
     "missing_expected_connections": [],
     "unexpected_actual_connections": [],
@@ -66,17 +66,24 @@
       "DUT_OUT only K601.4/J602.1; all other pin partitions unchanged"
     ],
     "all_other_pin_partition_unchanged": true,
-    "bom_status": "194 physical / 193 purchased / 58 grouped rows + separate cable; metadata, reference, quantity and tier check PASS",
+    "bom_status": "204 electrical references / 193 purchased / 11 bare pads; 57 procurement rows; unchanged historical material quote",
     "quoted_material_subtotal_per_board": "124.9924",
     "unquoted_references": [],
-    "evidence": "design/reports/spice-2026-11-11/connectivity-check.json",
+    "evidence": "design/reports/testpoints-2026-11-12/netlist-comparison.json",
     "latest_intentional_electrical_changes": [
-      "Restore SWD_MCU label to R1.1/R2.1",
-      "Restore U502.6 and C43.1 from P3V6_SW to USB_5V",
-      "Restore R42=806R R58=10k R59=2.15k R60=15.4k"
+      "TP2.1 -> VIO_LOCAL",
+      "TP3.1 -> GND",
+      "TP4.1 -> P3V6_SW",
+      "TP5.1 -> POWER_SAFE",
+      "TP6.1 -> DISCH_ON",
+      "TP7.1 -> SENSE_ON",
+      "TP8.1 -> SIG_ARM",
+      "TP9.1 -> FAULTn",
+      "TP10.1 -> VIO_EN",
+      "TP11.1 -> GND"
     ],
-    "latest_metadata_change": "Restore matching sourcing fields; refresh U503 embedded library symbol; repair stale connectivity metadata",
-    "intentional_changes_scope": "Relative to turn-start working tree; final complete pin partitions and value/footprint map equal accepted e719e1b"
+    "latest_metadata_change": "11 bare pads excluded from BOM and placement files; TP1 moved from procurement CSV to PCB feature inventory",
+    "intentional_changes_scope": "Testpoint update relative to 4122da6; all existing pin partitions and values/footprints preserved"
   },
   "upstream_layout": {
     "status": "PASS",
@@ -87,16 +94,15 @@
     "differences": []
   },
   "visual_review": {
-    "checked_at": "2026-11-11T22:39:00.208918+08:00",
-    "pdf": "design/reports/spice-2026-11-11/final.pdf",
+    "checked_at": "2026-11-11T18:46:03.532442+00:00",
+    "pdf": "design/reports/testpoints-2026-11-12/schematic.pdf",
     "pages_exported": 9,
     "regions_inspected": [
-      "Root SWD_MCU/R1/R2",
-      "TargetPower R42/U503",
-      "TargetPower U502/U504/R58/R59/R60"
+      "Safety all new testpoints and page",
+      "TargetPower all new testpoints and page"
     ],
-    "result": "No text/wire overlap observed in modified regions; R60 horizontal stacked fields corrected",
-    "scope": "Other seven sheets source unchanged this turn; not a fresh full-page visual audit"
+    "result": "Labels face away from short wires; moved testpoints clear of relay and connector notes; no new overlaps observed",
+    "scope": "Only changed pages manually reviewed; root metadata/native ordering changes do not move graphics"
   },
   "missing_footprints": [],
   "physical_pinmap": {
@@ -265,9 +271,8 @@
   },
   "bom": {
     "status": "REFERENCE_COVERAGE_AND_TIER_CHECK_PASS_COMPLETE_MATERIAL_QUOTE",
-    "physical_references": 194,
+    "physical_references": 204,
     "procurement_references": 193,
-    "quoted_references_including_test_pad": 194,
     "unquoted_references": [],
     "per_board_cny": 124.9924,
     "batch_10_cny": 1249.924,
@@ -275,11 +280,13 @@
     "accessory_batch_10_cny": 38.43,
     "kit_material_per_unit_cny": 128.8354,
     "kit_material_batch_10_cny": 1288.354,
-    "price_status": "No new quote 2026-11-11; existing 2026-11-07 snapshots retained. Restored CAD to adopted BOM, incremental material cost zero.",
+    "price_status": "No new quote 2026-11-12; existing 2026-11-07 snapshots retained. Ten bare pads add zero procurement/SMT/feeder material cost.",
     "source": "bom/jlc-quotes.json",
     "spares_moq_manufacturing_quote_complete": false,
     "spares_scenario_extra_board_batch_10_cny": 124.9924,
-    "spares_scenario_tier_changes": []
+    "spares_scenario_tier_changes": [],
+    "pcb_feature_references": 11,
+    "quoted_purchase_references": 193
   },
   "hardware_tests_executed": false,
   "limitations": [
@@ -343,9 +350,9 @@
     "docs/arm20-interface.md": "38d1f8ab67fbaa3f9aa597b79defee8ed3bebf7a14fd1ee7b7721c35353a7163",
     "docs/control-interface.md": "879e2c7de64f79f40e5250b9fdd1078bf999c49988af7f356c527b58230d3e5b",
     "docs/cost-down.md": "74f2dc3f95b969bb383d873155b86d7a53eb0d545d8d92e1126085bb4fee2bd0",
-    "docs/cost.md": "5a80afb43bb72482e916c94cbda01ce36b79851e4dcfb21d8908436df30318e5",
+    "docs/cost.md": "0d369fd775ed53ea27c11ab4f98becf5b6bcbda06596fb837d9632ba6b7dbc5e",
     "docs/costdown-pinmap.md": "407af5cd2e0839d693a95466c87aae7c2c55783cadbe869bcbdcf9187deeae9e",
-    "docs/electrical-margins.md": "52684c821a9b365de9ac696e2afea31508c4ae1fd7bad8d31e0615b816be9b2b",
+    "docs/electrical-margins.md": "61eda792217ca90e3b66b37ad36b3ac05858f762479ba5a3f48a8620b951ec71",
     "docs/jlc-design-review.md": "2f3b3aa4c8105647c67e04784bba27166bee58efae9b80786001b51b784e4af6",
     "docs/jlc-pinmap.md": "df024fd77e59330bacff20ebb26ebfddf322135aae530d60c6147398bfb096fa",
     "docs/kicad-integration.md": "52a0f0eedfcb9531fae7c3dc51435262ede00fffb78368d31376dbb6accfdeb7",
@@ -365,22 +372,22 @@
     "firmware/README.md": "763cbb49c35eda023e61f45f0bb7d523d635dfbf18ba8d977f7da5f4eca20f36",
     "hardware/README.md": "d289c6b0cf178d1eafd7c98769b0e2166eee5cf38418a2a18fe8d7934769d976",
     "hardware/bom/accessories.csv": "8c201804416ad92fb68601198ad86894307bb8dfaf822cb746e0632d9d3f9da9",
-    "hardware/bom/candidates.csv": "3ac06a148f3940f95be1c316694103c86ff4dba6286bb42f76f25fc8237c2c87",
-    "hardware/bom/cost-summary.json": "400afce36482d35439a7e8ef41d090fde67897a3e3d19bb62b99cccc6ce4fae5",
+    "hardware/bom/candidates.csv": "0c0c9fb90cf794260a325251736acb01db283fbea887f2945cbca24158913a81",
+    "hardware/bom/cost-summary.json": "170d20f8dae88ae21c45134503c67ae6255d2c79daeabf9d796d98793cf8e89d",
     "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
     "hardware/design/Control.kicad_sch": "0e7f71461fca33fcbcf75f0a4fab188cf4ee874a227f7a0ff4352603adae18dc",
     "hardware/design/Disconnect.kicad_sch": "0226386ae30328d96c3bf7fadbc8ccb45b1c229876c7ed7c57908acaefe7523d",
     "hardware/design/HSLink-LP.kicad_pro": "ebfb397fc25b6f43ce760e907999fb6428ef72b2d9cbeaf2d3b7f1c90419128e",
-    "hardware/design/HSLink-LP.kicad_sch": "39436a15504001251d0b99469c29314d0a05fa1c2a7d00e5bda8f2b6ab5518fb",
+    "hardware/design/HSLink-LP.kicad_sch": "bd0c9b6032643fde59b51d51a0b9a4d83bbdd3fd380803e5aebec6cb9a269c9b",
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
     "hardware/design/Power.kicad_sch": "42d844005782c6a1169872a362a22b5157f59761ea8c7265e38709a470daa12c",
-    "hardware/design/README.md": "8333a03879c52390b41cde266e2fe5ade5eb3510f36a9fb244409407cb9e6448",
-    "hardware/design/Safety.kicad_sch": "4b41f51b522af984bbfd9f4096161fbffdd877c98dae4fc8db6c81e044387771",
+    "hardware/design/README.md": "9ae750450380316434488a3932092a68a5118beda654de806151cecde26715d6",
+    "hardware/design/Safety.kicad_sch": "d66231bf2b4111e3bdd97e05307fdf64f229fe52489c1c4ffd181985d83c806b",
     "hardware/design/Sense.kicad_sch": "a6a3e2d0e3c0813062db8f3e525dcc2cc61b402d4710a5328b0ca5f58d74a945",
-    "hardware/design/TargetPower.kicad_sch": "202ac7c2c156ec48bfd8765fa950c3fc3a0e6fdbf7045801c248ba40b05a62d6",
+    "hardware/design/TargetPower.kicad_sch": "76e3fcd14b206e109261777d451d90b90c7a87f5242a9f1bda739ac97b59365f",
     "hardware/design/UPSTREAM-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "hardware/design/connectivity.json": "8bdf76700f714582c1c391ab10d02ff8f619e30463ee0fd20177ab83b6203025",
+    "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
     "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
     "hardware/design/libraries/HSLink-upstream-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "hardware/design/libraries/HSLinkLP.kicad_sym": "17304532854245d0c8f49d82578dfb518ad32a665aec7c47b242145c190930bc",
@@ -436,7 +443,9 @@
     "hardware/design/libraries/models/SPH4018_envelope.step": "39c8e928109d81cedaab33fa3a0a3c4923ee4f67e9f82c06482f78ec5e688784",
     "hardware/design/libraries/models/TPS63810_YFF_envelope.step": "5456a84d2c417e2989ff6b8ce2e7817135d9d8fb1317e18a7b75d86890286570",
     "hardware/design/libraries/models/WUSB3801_envelope.step": "f989c588b8fd1e67f032a2626c2ecce2d6f29cf8a6f3d41acb138529ac5bcef3",
-    ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc"
+    ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc",
+    "docs/test-points.md": "0510f4ad4e4546a7ee1ad806fc605ebb4c696a335a024a58c39e1aefeee55946",
+    "hardware/bom/pcb-features.csv": "12457e55c49210f97087d9aafb0dfc5277f3fa4f962d564df3f36002f2f5b909"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -2076,7 +2085,7 @@
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 0.8999669129811452,
-        "target_on_a": 0.00001323480754473899,
+        "target_on_a": 1.323480754473899e-05,
         "adc_off_v": 1.252719511237477e-10,
         "target_off_a": 3.566036355096003e-15,
         "first_1pct_settle_s": 0.00015665223045438015
@@ -2086,16 +2095,16 @@
         "name": "vref_1.8_4e-08",
         "params": {
           "TARGET_V": 1.8,
-          "I_OFF": 4e-8
+          "I_OFF": 4e-08
         },
         "target_v": 1.8,
-        "injected_off_current": 4e-8,
+        "injected_off_current": 4e-08,
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 0.8999669129811453,
-        "target_on_a": 0.00001323480754473899,
+        "target_on_a": 1.323480754473899e-05,
         "adc_off_v": 0.002720000124893355,
-        "target_off_a": 4.000000360049327e-8,
+        "target_off_a": 4.000000360049327e-08,
         "first_1pct_settle_s": 0.00015650912995818396
       },
       {
@@ -2110,7 +2119,7 @@
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 1.649939340465423,
-        "target_on_a": 0.00002426381383202704,
+        "target_on_a": 2.426381383202704e-05,
         "adc_off_v": 2.296652437268766e-10,
         "target_off_a": 6.469269564490788e-15,
         "first_1pct_settle_s": 0.00015646971548948906
@@ -2120,25 +2129,25 @@
         "name": "vref_3.3_4e-08",
         "params": {
           "TARGET_V": 3.3,
-          "I_OFF": 4e-8
+          "I_OFF": 4e-08
         },
         "target_v": 3.3,
-        "injected_off_current": 4e-8,
+        "injected_off_current": 4e-08,
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 1.649939340465423,
-        "target_on_a": 0.00002426381383202704,
+        "target_on_a": 2.426381383202704e-05,
         "adc_off_v": 0.002720000229286679,
-        "target_off_a": 4.000000644821533e-8,
+        "target_off_a": 4.000000644821533e-08,
         "first_1pct_settle_s": 0.00015629368728937
       },
       {
         "kind": "discharge",
         "name": "discharge_1e-06",
         "params": {
-          "DUT_C": 0.000001
+          "DUT_C": 1e-06
         },
-        "dut_c": 0.000001,
+        "dut_c": 1e-06,
         "source_v": 5.5,
         "solver_success": true,
         "final_time_s": 0.2,
@@ -2897,5 +2906,111 @@
       "40MHz、140nA/20～30°C、1A、VIO±1%均未实板验收",
       "结构插头、拨杆行程、打印与紧固件公差、温升和绝缘污染待样件验证"
     ]
+  },
+  "testpoint_review": {
+    "baseline_commit": "4122da6adf74437e6a1ee2dd237bafcdc1c7ba5f",
+    "original_components": 194,
+    "final_components": 204,
+    "all_original_pin_partitions_identical": true,
+    "original_value_footprint_symbol_identifiers_unchanged": true,
+    "new_testpoints": {
+      "TP2": "VIO_LOCAL",
+      "TP3": "GND",
+      "TP4": "P3V6_SW",
+      "TP5": "POWER_SAFE",
+      "TP6": "DISCH_ON",
+      "TP7": "SENSE_ON",
+      "TP8": "SIG_ARM",
+      "TP9": "FAULTn",
+      "TP10": "VIO_EN",
+      "TP11": "GND"
+    },
+    "total_xml_nets_including_nc": 162,
+    "connected_nets": 117,
+    "connected_pins": 685,
+    "isolated_nc": 45,
+    "only_added_pins": 10,
+    "reused_pad_net_query": {
+      "J1.1": "P3V3",
+      "J1.2": "GND",
+      "C34.1": "P3V3",
+      "C34.2": "GND",
+      "C24.1": "VBUS_RAW",
+      "C24.2": "GND",
+      "C25.1": "USB_5V",
+      "C25.2": "GND",
+      "C40.1": "INT_RAW",
+      "C40.2": "GND",
+      "C41.1": "INT_RAW",
+      "C47.1": "INT_PROTECTED",
+      "C47.2": "GND",
+      "SW601.1": "INT_PROTECTED",
+      "SW601.2": "SOURCE_POWER",
+      "K601.8": "SOURCE_POWER",
+      "J602.1": "DUT_OUT",
+      "J602.2": "GND",
+      "J1.6": "SYS_RESETn",
+      "C61.1": "ADC_VREF",
+      "C61.2": "GND",
+      "R1.1": "SWD_MCU",
+      "R2.1": "SWD_MCU",
+      "J801.7": "DUT_SWDIO",
+      "J801.9": "DUT_TCK",
+      "J801.13": "DUT_TDO",
+      "J801.8": "GND",
+      "J801.10": "GND",
+      "J801.14": "GND"
+    },
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "new_erc_ignores": [],
+    "pcb_accessibility_verified": false,
+    "hardware_validated": false,
+    "checked_at": "2026-11-11T18:46:03.532442+00:00",
+    "status": "SCHEMATIC_CHECKS_PASS_PCB_AND_HARDWARE_PENDING",
+    "plan": "../docs/test-points.md",
+    "bare_pad_geometry": "D1.5mm copper/mask; no drill/paste; passive pin1; all eleven pads excluded BOM/CPL",
+    "cost_delta_cny_per_board": 0,
+    "cost_delta_cny_batch_10": 0,
+    "source_documents": [
+      "https://www.tek.com/en/documents/application-note/how-oscilloscope-probes-affect-your-measurement",
+      "https://www.keysight.com/gb/content/lib/resources/selection-guides/oscilloscope-probes.html"
+    ],
+    "assumptions": [
+      "TP pair spacing 3.81mm and >=2.54mm centers are engineering initial values, not factory approved fixture specs",
+      "ADC load calculation Rth=34kohm, C=1nF; no complete ADC dynamic guarantee",
+      "Low capacitance probe <=1pF is an equipment selection target, not verified availability"
+    ],
+    "pending": [
+      "PCB placement/routing and local ground contact",
+      "Probe/fixture and lid/connector accessibility",
+      "140nA 20-30C leakage incl cleaning; disconnect instruments before acceptance",
+      "40MHz timing/probe loading and VIO calibrated +/-1% hardware acceptance"
+    ],
+    "source_sha256": {
+      "docs/test-points.md": "0510f4ad4e4546a7ee1ad806fc605ebb4c696a335a024a58c39e1aefeee55946",
+      "docs/electrical-margins.md": "61eda792217ca90e3b66b37ad36b3ac05858f762479ba5a3f48a8620b951ec71",
+      "docs/cost.md": "0d369fd775ed53ea27c11ab4f98becf5b6bcbda06596fb837d9632ba6b7dbc5e",
+      "hardware/design/README.md": "9ae750450380316434488a3932092a68a5118beda654de806151cecde26715d6",
+      "hardware/bom/candidates.csv": "0c0c9fb90cf794260a325251736acb01db283fbea887f2945cbca24158913a81",
+      "hardware/bom/pcb-features.csv": "12457e55c49210f97087d9aafb0dfc5277f3fa4f962d564df3f36002f2f5b909",
+      "hardware/bom/cost-summary.json": "170d20f8dae88ae21c45134503c67ae6255d2c79daeabf9d796d98793cf8e89d",
+      "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
+      "hardware/design/HSLink-LP.kicad_sch": "bd0c9b6032643fde59b51d51a0b9a4d83bbdd3fd380803e5aebec6cb9a269c9b",
+      "hardware/design/Safety.kicad_sch": "d66231bf2b4111e3bdd97e05307fdf64f229fe52489c1c4ffd181985d83c806b",
+      "hardware/design/TargetPower.kicad_sch": "76e3fcd14b206e109261777d451d90b90c7a87f5242a9f1bda739ac97b59365f"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/testpoints-2026-11-12/erc.json": "5c35ff36f25c5f87966041eecbccbc72380ff4bce4fa54f904d4acba8cd39dbc",
+      "hardware/design/reports/testpoints-2026-11-12/after.xml": "5c069b2badd963547e0d46465118546fe20b936942c579149e1fcd954b4ed8dc",
+      "hardware/design/reports/testpoints-2026-11-12/page-6.png": "fb94df5b244d8bbfacbbdc7fbf1df54b9ecc01d07352260e0bf0700a84301410",
+      "hardware/design/reports/testpoints-2026-11-12/page-7.png": "d92034ec6cfb7da659534e679b599c4b4058ea937c90ed900a437e050e7605fa",
+      "hardware/design/reports/testpoints-2026-11-12/after-normalized.xml": "4b76d5c654e2f2e280325c0ebdf7607def4f35f2b4a0d420b94a58e37b1c3d6d",
+      "hardware/design/reports/testpoints-2026-11-12/netlist-comparison.json": "92d30eee20d60d2ec80ac68a287c3c91b92343d9e663e397a0911d027917de47",
+      "hardware/design/reports/testpoints-2026-11-12/schematic.pdf": "6617d4d0fd73d82fdb52f40ac0356a8f024168d2816081d64853dfc3b0cc03e0",
+      "hardware/design/reports/testpoints-2026-11-12/flags-and-footprint.json": "c5c18adbca0a0b1a3dcf85c38421a8241f1f343110f3536116b331cc3baa1b5b",
+      "hardware/design/reports/layout-ux-2026-11-12/testpoints-before.xml": "596cc11c875e6de6d039029be574b85784222273ec15954eb1def542335d2861"
+    },
+    "native_save_connectivity_unchanged": true
   }
 }

@@ -3826,6 +3826,12 @@
 		(color 0 0 0 0)
 		(uuid "d912d166-09f6-4ff7-af80-ff97eef2bc46")
 	)
+	(junction
+		(at 24.13 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e97e545f-e737-44b1-9d4d-f51a0df2411a")
+	)
 	(no_connect
 		(at 34.29 77.47)
 		(uuid "8462d923-54b4-4661-836e-681f33dbe048")
@@ -3929,6 +3935,16 @@
 			(type default)
 		)
 		(uuid "21a1a19c-0337-4c08-97e7-eb1f1accfac8")
+	)
+	(wire
+		(pts
+			(xy 24.13 64.77) (xy 22.86 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22567815-fd6b-4805-8425-f1b4d35bb82a")
 	)
 	(wire
 		(pts
@@ -8725,9 +8741,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "ffb40c7f-6272-4d87-8e70-a4b1217277bf")
 		(property "Reference" "TP1"
@@ -9207,26 +9223,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 24.13 64.77) (xy 22.86 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22567815-fd6b-4805-8425-f1b4d35bb82a")
-	)
-	(junction
-		(at 24.13 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e97e545f-e737-44b1-9d4d-f51a0df2411a")
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )

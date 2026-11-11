@@ -5,8 +5,7 @@
   "updated_at": "2026-11-07",
   "baseline_commit": "4a619c1",
   "status": "完整裸材料快照；R42采用本轮同日嘉立创现货记录，其他报价时间保持；未锁价/锁库，非硬件验收",
-  "physical_references": 194,
-  "quoted_references_including_test_pad": 194,
+  "physical_references": 204,
   "bom_per_board": 124.9924,
   "bom_batch": 1249.924,
   "quoted_material_subtotal_per_board": 124.9924,
@@ -292,5 +291,20 @@
     ],
     "electronic_bom_delta_this_layout_cny": 0,
     "price_snapshot_unchanged": "2026-11-07"
+  },
+  "quoted_purchase_references": 193,
+  "pcb_feature_references": 11,
+  "testpoint_update": {
+    "date": "2026-11-12",
+    "new_bare_pads": 10,
+    "retained_bare_pads": 1,
+    "purchased_parts_delta": 0,
+    "material_delta_per_board_cny": 0,
+    "material_delta_batch_10_cny": 0,
+    "feeder_sku_delta": 0,
+    "smt_placement_delta": 0,
+    "new_quote": false,
+    "pcb_fixture_calibration_cost": null,
+    "note": "报价仍为2026-11-07快照；PCB焊盘不作为供应商现货报价或采购元件；PCB面积/治具/人工未报价。"
   }
 }

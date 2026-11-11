@@ -1,0 +1,12 @@
+reference,net,symbol,footprint,qty_per_board,qty_10_boards,procurement,smt_placement,pcb_status
+TP1,SPARE_GPIO,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.0mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,已有焊盘，位置待复核
+TP2,VIO_LOCAL,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP3,GND,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP4,P3V6_SW,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP5,POWER_SAFE,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP6,DISCH_ON,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP7,SENSE_ON,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP8,SIG_ARM,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP9,FAULTn,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP10,VIO_EN,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验
+TP11,GND,Connector:TestPoint,TestPoint:TestPoint_Pad_D1.5mm,1,10,PCB裸铜焊盘，无独立采购,排除贴装坐标,原理图已添加，PCB同步及可达性待核验

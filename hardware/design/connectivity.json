@@ -249,7 +249,10 @@
     "display_value": "SPARE_GPIO",
     "mpn": "PCB test pad",
     "lcsc": null,
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "engineering_status": "保留裸铜焊盘；PCB可达性及固件时序标记功能待验证",
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false
   },
   {
     "reference": "L1",
@@ -3580,5 +3583,185 @@
     "datasheet": "https://atta.szlcsc.com//upload/public/pdf/source/20250214/096C4C206003071F5D32E5F0D8E7F8DF.pdf",
     "engineering_status": "资料选型/价格核对；未硬件验证",
     "procurement_specification": "容值:100nF,温度系数:X7R,精度:±10%,额定电压:50V"
+  },
+  {
+    "reference": "TP2",
+    "symbol": "Connector:TestPoint",
+    "value": "VIO_LOCAL",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "TargetPower",
+    "nets": {
+      "1": "VIO_LOCAL"
+    },
+    "datasheet": "",
+    "display_value": "VIO_LOCAL",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP3",
+    "symbol": "Connector:TestPoint",
+    "value": "GND",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "TargetPower",
+    "nets": {
+      "1": "GND"
+    },
+    "datasheet": "",
+    "display_value": "GND",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP4",
+    "symbol": "Connector:TestPoint",
+    "value": "P3V6_SW",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "TargetPower",
+    "nets": {
+      "1": "P3V6_SW"
+    },
+    "datasheet": "",
+    "display_value": "P3V6_SW",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP5",
+    "symbol": "Connector:TestPoint",
+    "value": "POWER_SAFE",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "Safety",
+    "nets": {
+      "1": "POWER_SAFE"
+    },
+    "datasheet": "",
+    "display_value": "POWER_SAFE",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP6",
+    "symbol": "Connector:TestPoint",
+    "value": "DISCH_ON",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "Safety",
+    "nets": {
+      "1": "DISCH_ON"
+    },
+    "datasheet": "",
+    "display_value": "DISCH_ON",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP7",
+    "symbol": "Connector:TestPoint",
+    "value": "SENSE_ON",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "Safety",
+    "nets": {
+      "1": "SENSE_ON"
+    },
+    "datasheet": "",
+    "display_value": "SENSE_ON",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP8",
+    "symbol": "Connector:TestPoint",
+    "value": "SIG_ARM",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "Safety",
+    "nets": {
+      "1": "SIG_ARM"
+    },
+    "datasheet": "",
+    "display_value": "SIG_ARM",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP9",
+    "symbol": "Connector:TestPoint",
+    "value": "FAULTn",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "TargetPower",
+    "nets": {
+      "1": "FAULTn"
+    },
+    "datasheet": "",
+    "display_value": "FAULTn",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP10",
+    "symbol": "Connector:TestPoint",
+    "value": "VIO_EN",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "TargetPower",
+    "nets": {
+      "1": "VIO_EN"
+    },
+    "datasheet": "",
+    "display_value": "VIO_EN",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
+  },
+  {
+    "reference": "TP11",
+    "symbol": "Connector:TestPoint",
+    "value": "GND",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "sheet": "Safety",
+    "nets": {
+      "1": "GND"
+    },
+    "datasheet": "",
+    "display_value": "GND",
+    "mpn": "PCB test pad",
+    "lcsc": null,
+    "procurement": "PCB_FEATURE_NO_PURCHASE",
+    "in_bom": false,
+    "in_pos_files": false,
+    "engineering_status": "原理图已连接；PCB位置、可达性及实板探测待验证"
   }
 ]
