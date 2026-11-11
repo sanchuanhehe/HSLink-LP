@@ -28,7 +28,7 @@ def cut_window(part, rectangle, height):
     return part.cut(tool)
 
 
-def build(pcb_step=None, reports=None):
+def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
     cx, cy = P['pcb_width']/2, -P['pcb_depth']/2
     base = block(P['base_width'], P['base_depth'], P['floor_thickness'], cx, cy,
                  radius=P['base_radius'])
@@ -90,10 +90,11 @@ def build(pcb_step=None, reports=None):
                                   '未验证温升、跌落、拔插力、绝缘污染及140nA漏电']}
     assert result['base_valid'] and result['lid_valid']
     assert result['base_solids']==1 and result['lid_solids']==1
-    for name,shape in [('hslink_lp_base',base),('hslink_lp_lid',lid)]:
-        cq.exporters.export(shape,str(HERE/(name+'.step')))
-        cq.exporters.export(shape,str(HERE/(name+'.stl')),tolerance=.03,angularTolerance=.1)
-    cq.exporters.exportDXF(lid.faces('<Z').wires(),str(HERE/'hslink_lp_lid.dxf'))
+    if export_parts:
+        for name,shape in [('hslink_lp_base',base),('hslink_lp_lid',lid)]:
+            cq.exporters.export(shape,str(HERE/(name+'.step')))
+            cq.exporters.export(shape,str(HERE/(name+'.stl')),tolerance=.03,angularTolerance=.1)
+        cq.exporters.exportDXF(lid.faces('<Z').wires(),str(HERE/'hslink_lp_lid.dxf'))
     if pcb_step:
         raw=cq.importers.importStep(str(pcb_step)).val()
         board=max((s for s in raw.Solids() if s.BoundingBox().xlen>100 and s.BoundingBox().ylen>70),
@@ -125,6 +126,18 @@ def build(pcb_step=None, reports=None):
                 volume=s.intersect(shape).Volume()
                 if volume>1e-5:collisions.append({'solid_index':i,'volume_mm3':volume})
             result['checks'].append({'test':'pcb_components_vs_'+name,'collisions':collisions})
+    if pcb_step and probe_map:
+        result['probe_access']={'assumption':'直径2mm竖直接近包络；未指定实际探头，不代表实物可达性验收','lid_removal_required':True,'points':[]}
+        for point in json.loads(Path(probe_map).read_text()):
+            x,y=point['position_mm']
+            probe=cylinder(2,35,x,-y,pcb_top+.05).val()
+            collisions=[]
+            for i,solid in enumerate(pcb.Solids()):
+                a,bbp=solid.BoundingBox(),probe.BoundingBox()
+                if a.xmax<bbp.xmin or a.xmin>bbp.xmax or a.ymax<bbp.ymin or a.ymin>bbp.ymax or a.zmax<bbp.zmin:continue
+                volume=solid.intersect(probe).Volume()
+                if volume>1e-5:collisions.append({'solid_index':i,'volume_mm3':volume})
+            result['probe_access']['points'].append({'ref':point['ref'],'xy_mm':[x,y],'component_collisions':collisions,'lid_intersection_mm3':lid.val().translate((0,0,lid_z)).intersect(probe).Volume()})
     if reports:
         reports.mkdir(parents=True,exist_ok=True)
         assembly.export(str(reports/'HSLink-LP-assembly.step'))
@@ -137,5 +150,7 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--pcb-step',type=Path)
     parser.add_argument('--reports',type=Path,default=HERE.parent/'reports/pcb-structure-2026-11-12')
+    parser.add_argument('--assembly-only',action='store_true',help='只更新装配与检查，不重写未变的结构单件')
+    parser.add_argument('--probe-map',type=Path,help='KiCad导出的测试点位置JSON；仅检查假定接近包络')
     args=parser.parse_args()
-    build(args.pcb_step,args.reports)
+    build(args.pcb_step,args.reports,not args.assembly_only,args.probe_map)

@@ -28,3 +28,19 @@ uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline py
 底座和盖板各为一个有效实体；导入PCB器件与底座/盖板/四组螺柱、垫圈、螺钉未发现超过1e-5mm³的体积干涉。板体STEP厚度不完全包含铜/阻焊，安装高度仍按名义1.6mm，必须计入板厚和模型公差。没有用无干涉结果替代实物插拔和装配验证。
 
 ARM20排线资料未给出准确插头外包络；当前开口不是经实测确认的插头模型。还需检查排线出线/弯曲、端子螺丝刀可达、拨杆全行程、USB插头、打印收缩、螺柱/螺母采购公差、透明盖挠曲、通风与温升。6个简化外形不是厂家原始STEP。整夹具140nA漏电仍需包括线束、PCB污染和结构材料进行实测。
+
+## 接口重排与测试点检查（2026-11-12）
+
+当前前沿顺序为ARM20、UART A、UART B、DUT电源。板框、安装孔及结构开口未改变，继续使用本目录唯一单件STEP/STL/DXF；按新PCB重新导出的装配位于忽略目录`../reports/layout-ux-2026-11-12`，未发现当前简化器件与底座/盖板/紧固件体积干涉。
+
+TP2～TP11均需要拆下透明盖板后使用。按直径2mm、竖直向上35mm的探针包络检查，未与PCB器件模型相交；这个假设不能代替实际探头外形/公差/手持角度和试针行程检查。盖板不为这些点增加孔；保持可拆即可进行首板调试和外部校准。
+
+只更新装配而不重写未变单件，可增加`--assembly-only`。使用KiCad原生位置JSON（列表，每项含`ref`和`position_mm:[x,y]`）可增加`--probe-map PATH`进行上述包络检查，例：
+
+```bash
+uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline python \
+  hardware/design/mechanical/hslink_lp.py --assembly-only \
+  --pcb-step hardware/design/reports/layout-ux-2026-11-12/pcb.step \
+  --probe-map hardware/design/reports/layout-ux-2026-11-12/testpoint-connectivity.json \
+  --reports hardware/design/reports/layout-ux-2026-11-12
+```
