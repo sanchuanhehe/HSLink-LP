@@ -22,7 +22,12 @@
         "6",
         "1"
       ],
-      "limits": "No quiescent current, noise or temperature effects; ideal DAC; nominal device only"
+      "limits": "No quiescent current, noise or temperature effects; ideal DAC; nominal device only",
+      "dynamic_feedback_review": {
+        "date": "2026-11-12",
+        "accepted_as_dynamic_bound": false,
+        "reason": "Large reverse/source currents and numerically sensitive zero-code startup under external DAC feedback injection; no reliable VIO over/undershoot/settling/phase-margin qualification."
+      }
     },
     {
       "file": "../reports/spice-models/TPS22950_TRANS.lib",
@@ -47,5 +52,62 @@
   "source_netlist": "../reports/spice-2026-11-11/final.xml",
   "aliases": {
     "POWER_OFF": "Net-(U303-1B)"
+  },
+  "prefab_analysis": {
+    "record": "../../../docs/prefab-analysis.md",
+    "data_dir": "../reports/prefab-2026-11-11",
+    "finished_date": "2026-11-12",
+    "source_xml_sha256": "6e4c1c9ecd53c2248e8e45574d485ea58cdf6d9b378a8ec4d8d4189a21c4260d",
+    "new_waveform_cases": 27,
+    "limits": [
+      "ADC Cs/Ron typical only; scan extrema are not guaranteed bounds",
+      "Generic relay/contact/gate/logic models exclude real brownout output behavior",
+      "No exact TPS63810 or TPS22950C switching/protection macro-model used",
+      "No final routed PCB/cable/IBIS extraction",
+      "Reference software state machine is not firmware or HID transport"
+    ],
+    "aliases": {
+      "DISCH_DRAIN": "Net-(Q902-D)",
+      "VREF_SENSE_IN": "/可断开检测与目标放电/VREF_SENSE_IN"
+    },
+    "sources": [
+      {
+        "role": "HPM ADC Cs/Ron and timing",
+        "url": "https://www.hpmicro.com/Public/Uploads/uploadfile/files/20250205/HPM5300DSV011.pdf",
+        "file": "../reports/upstream-timing-2026-11-07/HPM5300DSV011.pdf",
+        "page": 58,
+        "sha256": "29953612b50ba8eb173705e6c6b1045e3765d4ab841a8d93fb47c8a0f9c7f8d4"
+      },
+      {
+        "role": "HPM source impedance / acquisition guide",
+        "url": "https://www.hpmicro.com/Public/Uploads/uploadfile/files/20240620/HPMxilieMCUgaojingduADCzhiwuchafenxiheshejizhinan.pdf",
+        "file": "../reports/prefab-2026-11-11/hpm-adc-guide.pdf",
+        "sha256": "40f12d8fc81ccd920b3e69164228d9cd6dbd62ca52bb205762ef2e4b456b3b42"
+      },
+      {
+        "role": "MCP4726 EEPROM / POR / PD",
+        "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22272C.pdf",
+        "file": "../reports/decisions-2026-11-07/MCP4726-22272C.pdf",
+        "sha256": "f89f3345410b50130f5b83b90aa2e63fd58c5ffbbb8ad8b9dca0c3cdbfe6ccd2"
+      },
+      {
+        "role": "TPS63810 exact variant",
+        "url": "https://www.ti.com/lit/ds/symlink/tps63810.pdf",
+        "file": "../reports/bom-completion-2026-11-07/tps63810.pdf",
+        "sha256": "0f96fceae24087f6c6c696aeab27876c0479d3bf968b813d998d6a8ab5271559"
+      },
+      {
+        "role": "TPS259531 USB budget / faults",
+        "url": "https://www.ti.com/lit/ds/symlink/tps2595.pdf",
+        "file": "../reports/prefab-2026-11-11/tps2595.pdf",
+        "sha256": "53968dbb14ef48a79fddf24bd473a34344dbc3d0f4ce141bac440f2d95f6a525"
+      },
+      {
+        "role": "HFD2 timing / coil",
+        "url": "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf",
+        "file": "../reports/sense-discharge-2026-11-07/HFD2.pdf",
+        "sha256": "b285fda260fdc26f6a5f79644565745e75635c4c41391d65a12bd6495eadcd42"
+      }
+    ]
   }
 }

@@ -1,0 +1,24 @@
+HSLink-LP ADC acquisition / no manufacturer ADC macro-model
+* U901 COM5 target; NO6 precedes ALL of R53/R54/C61; NC4 floating when disabled.
+* HPM5300 DS Rev0.11 table35: Cs=4pF and Ron=300ohm TYPICAL ONLY.
+* Reinitializing Cs to PREV_V each cycle is a pessimistic channel-switch / SAR-kick scenario.
+.param TARGET_V=3.3 CSAMPLE=4p RADC=300 CFILTER=1n TACQ=400u PERIOD=1m PREV_V=0
+VTARGET DUT_VREF 0 {TARGET_V}
+VEN SENSE_ON 0 PWL(0 0 100u 0 100.01u 3.3)
+SU901 DUT_VREF VREF_SENSE_IN SENSE_ON 0 SNS
+R53 VREF_SENSE_IN ADC_VREF 68k
+R54 ADC_VREF 0 68k
+C61 ADC_VREF 0 {CFILTER}
+VACQ ACQ 0 PULSE(0 3.3 1.1m 1n 1n {TACQ} {PERIOD})
+BRESET RESET 0 V=3.3-V(ACQ)
+VPREV PREVIOUS 0 {PREV_V}
+SADC ADC_VREF HOLD ACQ 0 ADC_SW
+SRESET PREVIOUS HOLD RESET 0 RESET_SW
+CS HOLD 0 {CSAMPLE}
+.model SNS SW(Ron=5 Roff=1e15 Vt=1.65 Vh=0)
+.model ADC_SW SW(Ron={RADC} Roff=1e15 Vt=1.65 Vh=0)
+.model RESET_SW SW(Ron=10 Roff=1e15 Vt=1.65 Vh=0)
+.options reltol=1e-6 abstol=1e-14 method=gear
+.save V(ADC_VREF) V(HOLD) V(ACQ) I(VTARGET)
+.tran 0.1u 5.6m 0 0.5u
+.end

@@ -1,0 +1,28 @@
+HSLink-LP VIO sequencing nominal macro-model / parameter screening only
+* TLV75801P_TRANS ports EN FB GND VIN VOUT: U502 4,2,3+7,6,1; pin5 DNC.
+* Ideal DAC waveform is NOT an MCP4726 startup / I2C / error model.
+* Independent parameters below are scenario assumptions, not capacitor qualification.
+.include ../reports/spice-models/TLV75801P_TRANS.lib
+.param COUT_EFF=2.2u COUT_ESR=0.02 LOAD_A=0.01 RT=10k RB=2.15k RI=15.4k
+VUSB USB_5V 0 5
+VEN VIO_EN 0 PWL(0 0 1m 0 1.001m 3.3 19m 3.3 19.001m 0)
+VDAC DAC_IDEAL 0 PWL(0 2.56443 5m 2.56443 5.006m 0.25459 12m 0.25459 12.006m 2.56443)
+* 1ohm ideal-driver series resistance; open-circuit fault uses 1e15, not a DAC PD mode.
+RDAC DAC_IDEAL VIO_DAC 1
+R58 VIO_LOCAL VIO_FB {RT}
+R59 VIO_FB 0 {RB}
+R60 VIO_DAC VIO_FB {RI}
+R63 VIO_EN 0 100k
+C43 USB_5V 0 4.7u
+RESR VIO_LOCAL C44_TOP {COUT_ESR}
+C44 C44_TOP 0 {COUT_EFF}
+* C49/51/53/55 and C702/704/706/708/710/712/714/716: 12 x 100n nominal.
+* Lumped only for low-frequency settling; real ESR/ESL/trace layout not represented.
+CDECOUP VIO_LOCAL 0 1.2u
+* Compliance prevents a fictitious negative rail when the LDO is disabled.
+BLOAD VIO_LOCAL 0 I=(V(VIO_EN)>1.5 ? LOAD_A : 0)*min(1,max(0,V(VIO_LOCAL)/0.5))
+XU502 VIO_EN VIO_FB 0 USB_5V VIO_LOCAL TLV75801P_TRANS
+.options reltol=1e-4 abstol=1e-10 method=gear
+.save V(VIO_LOCAL) V(VIO_DAC) V(VIO_EN) V(USB_5V) I(VUSB)
+.tran 1u 22m 0 0.5u
+.end
