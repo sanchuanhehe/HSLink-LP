@@ -208,4 +208,9 @@
 		(uuid "dcb70f2b-48d0-45c2-8908-283b48ba8b73")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/models/TPS63810_YFF_envelope.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

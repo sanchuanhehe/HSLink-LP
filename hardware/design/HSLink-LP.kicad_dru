@@ -1,0 +1,20 @@
+(version 1)
+# USB geometry is provisional until the fabrication stackup is confirmed.
+(rule "USB no signal vias"
+  (condition "A.NetName == 'USB_DP' || A.NetName == 'USB_DM'")
+  (constraint disallow via))
+(rule "USB top layer only"
+  (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Layer != 'F.Cu'")
+  (constraint disallow track))
+(rule "In1 uninterrupted ground reference"
+  (layer In1.Cu)
+  (constraint disallow track))
+(rule "In2 ground reference"
+  (layer In2.Cu)
+  (constraint disallow track))
+(rule "External and target power trunks"
+  (condition "A.NetName == 'EXT_INPUT' || A.NetName == 'SOURCE_POWER' || A.NetName == 'DUT_OUT'")
+  (constraint track_width (min 1.2mm)))
+(rule "Top side components"
+  (layer B.Cu)
+  (constraint disallow footprint))

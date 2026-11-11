@@ -89,4 +89,9 @@
 		(uuid "58ed9557-417d-477a-b86e-d3534547684e")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/models/KF128_2P_envelope.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

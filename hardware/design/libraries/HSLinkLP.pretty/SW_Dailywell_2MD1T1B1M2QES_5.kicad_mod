@@ -131,4 +131,9 @@
 		(uuid "68253a3a-d70a-4d94-83c7-7d4a62b04fb3")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/models/Dailywell_2MD_envelope.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2032
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.2032,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -77,6 +95,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -95,6 +114,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -108,14 +128,18 @@
         "solder_mask_bridge": "warning",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -123,7 +147,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0889,
+        "min_clearance": 0.127,
         "min_connection": 0.0762,
         "min_copper_edge_clearance": 0.25,
         "min_groove_width": 0.0,
@@ -135,10 +159,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.254,
-        "min_track_width": 0.0889,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -155,6 +179,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -166,6 +191,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -177,6 +203,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -519,9 +546,9 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
+        "priority": 100,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
+        "track_width": 0.15,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -538,9 +565,9 @@
         "microvia_drill": 0.1,
         "name": "LocalPower",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.3,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -559,7 +586,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
+        "track_width": 1,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -583,6 +610,139 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Control",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Ground",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Debug",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "UART",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Analog",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SwitchPower",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Crystal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -592,32 +752,172 @@
     "netclass_assignments": {},
     "netclass_patterns": [
       {
-        "netclass": "LocalPower",
-        "pattern": "P3V3"
+        "netclass": "Control",
+        "pattern": "/内置电源、VIO 与输出来源选择/POWER_COIL_LO"
       },
       {
-        "netclass": "LocalPower",
-        "pattern": "VDD_SOC"
+        "netclass": "Analog",
+        "pattern": "/内置电源、VIO 与输出来源选择/VIO_DAC"
       },
       {
-        "netclass": "LocalPower",
-        "pattern": "P3V6_SW"
+        "netclass": "Analog",
+        "pattern": "/内置电源、VIO 与输出来源选择/VIO_FB"
       },
       {
-        "netclass": "LocalPower",
-        "pattern": "VIO_LOCAL"
+        "netclass": "Analog",
+        "pattern": "/可断开检测与目标放电/VREF_SENSE_IN"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "ADC_VREF"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "BOOT0"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "BOOT1"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "CC_INTn"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "DEBUG_ON"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "DEBUG_REQ"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "DISCH_ARM"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "DISCH_FEED"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "DISCH_ON"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "DISCH_REQ"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "DUT_NRST"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "DUT_NTRST"
       },
       {
         "netclass": "MainPower",
-        "pattern": "VBUS_RAW"
+        "pattern": "DUT_OUT"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "DUT_SWDIO"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "DUT_TCK"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "DUT_TDI"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "DUT_TDO"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "DUT_VREF"
       },
       {
         "netclass": "MainPower",
-        "pattern": "USB_5V"
+        "pattern": "EXT_INPUT"
       },
       {
-        "netclass": "MainPower",
-        "pattern": "INT_RAW"
+        "netclass": "Control",
+        "pattern": "FAULTn"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "F_NRST"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "F_NTRST"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "F_SWDIO"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "F_TCK"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "F_TDI"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "F_TDO"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_A_DTR"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_A_RTS"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_A_RX"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_A_TX"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_B_DTR"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_B_RTS"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_B_RX"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "F_UART_B_TX"
+      },
+      {
+        "netclass": "Ground",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "I2C_SCL"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "I2C_SDA"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "INT_EN"
       },
       {
         "netclass": "MainPower",
@@ -625,23 +925,299 @@
       },
       {
         "netclass": "MainPower",
+        "pattern": "INT_RAW"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "NRST_DRIVE"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "NTRST_DRIVE"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(J101-CC1)"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(J101-CC2)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J803-Pin_1)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J803-Pin_2)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J803-Pin_3)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J803-Pin_4)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J804-Pin_1)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J804-Pin_2)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J804-Pin_3)"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "Net-(J804-Pin_4)"
+      },
+      {
+        "netclass": "SwitchPower",
+        "pattern": "Net-(L4-Pad1)"
+      },
+      {
+        "netclass": "SwitchPower",
+        "pattern": "Net-(L4-Pad2)"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(Q101-D)"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(Q102-D)"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(Q902-D)"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "Net-(R38-Pad2)"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(U101-VBUSD)"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "Net-(U102-dVdt)"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "Net-(U1A-VDD_OTPCAP)"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "Net-(U1A-VDD_PMCCAP)"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "Net-(U1B-PA28{slash}I2C3.SDA{slash}SPI1.MISO{slash}XPI0.CA_D0{slash}TRGM0.P04)"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "Net-(U1B-PA29{slash}I2C3.SCL{slash}SPI1.MOSI{slash}XPI0.CA_D2{slash}TRGM0.P05{slash}USB0.OC)"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "Net-(U303-1B)"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "Net-(U401-FB)"
+      },
+      {
+        "netclass": "SwitchPower",
+        "pattern": "Net-(U401-SW)"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "Net-(U503-ILIM)"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "P3V3"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "P3V6_SW"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "POWER_REQ"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "POWER_SAFE"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "RESET_ON"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "RESET_REQ"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SENSE_ON"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SENSE_REQ"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SIG_ARM"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SIG_ARM_REQ"
+      },
+      {
+        "netclass": "SwitchPower",
+        "pattern": "SOC_SW"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SOURCE_EXT"
+      },
+      {
+        "netclass": "MainPower",
         "pattern": "SOURCE_POWER"
       },
       {
-        "netclass": "MainPower",
-        "pattern": "DUT_OUT"
+        "netclass": "Control",
+        "pattern": "SPARE_GPIO"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SPI_CS"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "SWD_DIR"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "SWD_MCU"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "SYS_RESETn"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "TCK_MCU"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "TDI_MCU"
+      },
+      {
+        "netclass": "Debug",
+        "pattern": "TDO_MCU"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_A_DTR"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_A_ON"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_A_REQ"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_A_RTS"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_A_RX"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_A_TX"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_B_DTR"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_B_ON"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_B_REQ"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_B_RTS"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_B_RX"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "UART_B_TX"
       },
       {
         "netclass": "MainPower",
-        "pattern": "EXT_INPUT"
+        "pattern": "USB_5V"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB_DM"
       },
       {
         "netclass": "USB",
         "pattern": "USB_DP"
       },
       {
-        "netclass": "USB",
-        "pattern": "USB_DM"
+        "netclass": "Analog",
+        "pattern": "USB_ILIM"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "USB_TIER1"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "USB_TIER2"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "VBUS_RAW"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "VDD_SOC"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "VIO_EN"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "VIO_LOCAL"
+      },
+      {
+        "netclass": "Crystal",
+        "pattern": "XTALI"
+      },
+      {
+        "netclass": "Crystal",
+        "pattern": "XTALO"
       }
     ]
   },

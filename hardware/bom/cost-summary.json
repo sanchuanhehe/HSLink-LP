@@ -280,5 +280,17 @@
     "full_manufacturing_delta_cny": null,
     "combined_vio_r42_increase_vs_cad895d_per_board_cny": 0.4629,
     "combined_vio_r42_increase_vs_cad895d_batch_10_cny": 4.629
+  },
+  "mechanical": {
+    "status": "未报价；不包含于既有板上/排线材料合计",
+    "quantity_file": "hardware/bom/mechanical.csv",
+    "per_unit_cny": null,
+    "batch_10_cny": null,
+    "pcb_working_dimensions_mm": [
+      110,
+      80
+    ],
+    "electronic_bom_delta_this_layout_cny": 0,
+    "price_snapshot_unchanged": "2026-11-07"
   }
 }

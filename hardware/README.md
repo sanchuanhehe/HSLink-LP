@@ -1,6 +1,7 @@
 # 硬件工作区
 
-- `design/HSLink-LP.kicad_pro`：唯一的当前 KiCad 工程；基于上游原文件修改的原理图审阅稿，尚无 PCB。
+- `design/HSLink-LP.kicad_pro`：唯一的当前 KiCad 工程；基于上游原文件修改的原理图审阅稿及未完成布线的PCB。
+- `design/mechanical/`：结构C参数化源及STEP/STL/DXF工程样件，未实物验证。
 - `design/reports/`：本机生成的 PDF、网表和 ERC 报告，Git 忽略。
 - `validation.json`：检查摘要和源文件哈希，并分别记录原理图、PCB、固件和主机软件状态。
 - `reference/`：上游 HSLink Pro 1.2.0 参考源码。

@@ -1,0 +1,5 @@
+# Generated CAD deliverables: review parametric Python/JSON and native visual exports.
+# Preserve the CAD exporter's bytes; do not text-merge or normalize STEP/STL files.
+hardware/design/libraries/models/*.step binary
+hardware/design/mechanical/*.step binary
+hardware/design/mechanical/*.stl binary

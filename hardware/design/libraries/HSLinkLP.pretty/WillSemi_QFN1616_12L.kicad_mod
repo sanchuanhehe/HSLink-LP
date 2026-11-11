@@ -156,4 +156,9 @@
 		(uuid "35a96d36-b454-404f-a95f-211bf56b4d10")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/models/WUSB3801_envelope.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

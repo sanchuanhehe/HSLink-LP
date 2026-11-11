@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "恢复已确认R42/VIO余量方案和SWD标签连接；结构C决策；20例SPICE功能分析（部分覆盖），非硬件验证",
-  "checked_at": "2026-11-11T16:21:20.489766+00:00",
+  "scope": "183个器件布局重整、关键手工布线、USB及结构C工程样件检查；PCB未布完，非制造放行或硬件验证",
+  "checked_at": "2026-11-11T18:01:23.221Z",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -13,9 +13,15 @@
     "file_format": "KiCad 10 / 20260306"
   },
   "pcb": {
-    "version": "uncommitted working layout preserved",
-    "status": "110x80mm/4-layer provisional layout, partial routing, DRC errors/unrouted remain; not fabrication-ready",
-    "validation": "No DRC requalification in functional-analysis scope; earlier WIP evidence in reports/pcb-structure-2026-11-11"
+    "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
+    "status": "INCOMPLETE",
+    "validation": "一般DRC违规列表0，原理图parity 0，但399条未连接报告项；未完成叠层/阻抗和全布线，不可投板",
+    "working_dimensions_mm": [
+      110,
+      80,
+      1.6
+    ],
+    "copper_layers": 4
   },
   "firmware": {
     "version": null,
@@ -332,12 +338,12 @@
     ".vscode/extensions.json": "4fff4e87cf75e019f555ac5b7cd303dd5250fc9280a733249bf0c7d555f47ed3",
     "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
     "HSLink-LP.code-workspace": "ce138222cb6ad122838d00b117f3869a22439c92f372e65d42883081a0b38535",
-    "README.md": "ded9575fcf582a66bd200667674d836c1790347dd6dc8f4abdc53e653de4966a",
+    "README.md": "62c9dbed9bcc8a3d3333023ae983e613a6ea2fcb70545a15ce6106275c2b12e1",
     "docs/architecture.md": "2d6533569b2ad10e4573c479380226fdf01ce8ad9269250382180fc07c2c5d5e",
     "docs/arm20-interface.md": "38d1f8ab67fbaa3f9aa597b79defee8ed3bebf7a14fd1ee7b7721c35353a7163",
     "docs/control-interface.md": "879e2c7de64f79f40e5250b9fdd1078bf999c49988af7f356c527b58230d3e5b",
     "docs/cost-down.md": "74f2dc3f95b969bb383d873155b86d7a53eb0d545d8d92e1126085bb4fee2bd0",
-    "docs/cost.md": "797ea87a2607f9baa88b676a46b3e959ded2c30dd162d6cfe9701f5e51f800a2",
+    "docs/cost.md": "5a80afb43bb72482e916c94cbda01ce36b79851e4dcfb21d8908436df30318e5",
     "docs/costdown-pinmap.md": "407af5cd2e0839d693a95466c87aae7c2c55783cadbe869bcbdcf9187deeae9e",
     "docs/electrical-margins.md": "52684c821a9b365de9ac696e2afea31508c4ae1fd7bad8d31e0615b816be9b2b",
     "docs/jlc-design-review.md": "2f3b3aa4c8105647c67e04784bba27166bee58efae9b80786001b51b784e4af6",
@@ -347,29 +353,29 @@
     "docs/procurement-completion.md": "193ddcf43f8e16de60af2741dc9c5b273af02584489bf82c11724673d8f3f155",
     "docs/procurement-pinmap.md": "2f73f2bf8b312c5f4de2be407515bab4cc1b56088567a497ddd23f86ec327238",
     "docs/references.md": "268339d923de77c3b452f4defebfbbf83808c5ac4f7f5ea8f79e1aa0044e5fc3",
-    "docs/requirements.md": "1299afb7594d3e5f129aafc4ac004cfb33da87b823419018326d41f5ed8315a7",
+    "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
     "docs/sense-discharge.md": "60bd16b721f775669695d5ee562e0e1a2f511928ec93718b8d328cc32d34dd01",
     "docs/spice-validation.md": "38c895ae10be4f2e519b2faa0c52988dbcd7845c98eb58a68e828ca60f498e4c",
-    "docs/structure-and-pcb.md": "8ede2e37d92c29cb31d9c4b655ada4c28ff317c371475f5f68ab790d98b4a3e3",
+    "docs/structure-and-pcb.md": "68806dc31438ff40ecec73d8a3e36789e117c72ed96d8b67728a2bdf17cf3c89",
     "docs/upstream-swd-timing.md": "01a31d841718c829a9d58eb85b6f30ca7a856279238446736841e30200316d57",
     "docs/upstream.md": "7337084ef16707a9c9ba5812d329700b4bbdb225278c40a2f9f34f314f0ac12d",
     "docs/validation.md": "371a0a3f8a955e48fb73955d1be211369266f22c890a9db97d4f1d80b2eef31e",
     "docs/vref-pinmap.md": "2bb0b080d2400335029d65b7e1ef6611754acdc30f963c0e43eb314a1f52d8fe",
     "firmware/README.md": "763cbb49c35eda023e61f45f0bb7d523d635dfbf18ba8d977f7da5f4eca20f36",
-    "hardware/README.md": "b8a1e1ad5b5e363b4130f53607661fe356976729d235a5d7f58b38118b36b817",
+    "hardware/README.md": "d289c6b0cf178d1eafd7c98769b0e2166eee5cf38418a2a18fe8d7934769d976",
     "hardware/bom/accessories.csv": "8c201804416ad92fb68601198ad86894307bb8dfaf822cb746e0632d9d3f9da9",
     "hardware/bom/candidates.csv": "3ac06a148f3940f95be1c316694103c86ff4dba6286bb42f76f25fc8237c2c87",
-    "hardware/bom/cost-summary.json": "a2f7eed98c2069d70d941cb41265c9b1e04ca6a73b916ccee24543aac83fc933",
+    "hardware/bom/cost-summary.json": "400afce36482d35439a7e8ef41d090fde67897a3e3d19bb62b99cccc6ce4fae5",
     "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
     "hardware/design/Control.kicad_sch": "0e7f71461fca33fcbcf75f0a4fab188cf4ee874a227f7a0ff4352603adae18dc",
     "hardware/design/Disconnect.kicad_sch": "0226386ae30328d96c3bf7fadbc8ccb45b1c229876c7ed7c57908acaefe7523d",
-    "hardware/design/HSLink-LP.kicad_pro": "67ca94380c0a4b9cace06f209305179fb75581306d9218dc706737a557c273b7",
+    "hardware/design/HSLink-LP.kicad_pro": "ebfb397fc25b6f43ce760e907999fb6428ef72b2d9cbeaf2d3b7f1c90419128e",
     "hardware/design/HSLink-LP.kicad_sch": "39436a15504001251d0b99469c29314d0a05fa1c2a7d00e5bda8f2b6ab5518fb",
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
     "hardware/design/Power.kicad_sch": "42d844005782c6a1169872a362a22b5157f59761ea8c7265e38709a470daa12c",
-    "hardware/design/README.md": "1c40b509b039fbc5d464e41b88eb585cecab54d7865cd859a84220b5991a89fe",
+    "hardware/design/README.md": "8333a03879c52390b41cde266e2fe5ade5eb3510f36a9fb244409407cb9e6448",
     "hardware/design/Safety.kicad_sch": "4b41f51b522af984bbfd9f4096161fbffdd877c98dae4fc8db6c81e044387771",
     "hardware/design/Sense.kicad_sch": "a6a3e2d0e3c0813062db8f3e525dcc2cc61b402d4710a5328b0ca5f58d74a945",
     "hardware/design/TargetPower.kicad_sch": "202ac7c2c156ec48bfd8765fa950c3fc3a0e6fdbf7045801c248ba40b05a62d6",
@@ -378,12 +384,12 @@
     "hardware/design/fp-lib-table": "92568fbb62271f558a7dc8f0e4afc8fbd506163ed3cb6f757e71d2d5d543298f",
     "hardware/design/libraries/HSLink-upstream-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "hardware/design/libraries/HSLinkLP.kicad_sym": "17304532854245d0c8f49d82578dfb518ad32a665aec7c47b242145c190930bc",
-    "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "525f156b676680940291c35b17167ea361bf71df176b64e736d9e4a3360c2ae9",
-    "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "c9d0250c5b83f7ad134b05c3c876ae008c0b364748c0c832e6203106274dfb01",
-    "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "e16adf8d79e9c814134f34f0fea345257671e49d5a6eeb08f29dda3aca1da113",
-    "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "ee5716dc6d6dc3620e42b26089d274e73a936795650eff3de80ea3ed2b4f3829",
-    "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "a20de321a616e033d7fdda63f76d8781381796db836e1553e444c9996de9b634",
-    "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "c7777cc9913ce51cc2a6fa2bcbe2b3c34e8cf7d23df1ca5b239c238016ecae19",
+    "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "1de80d0ae779a9e236a7d13f31e40220669db94ede0159afcb3cad11a7c41f1a",
+    "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "d7da2c846e3a7bb59374e409ce8c87876b3a46510e9fb71ca43397347a7e51d0",
+    "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "f3ddf73666c385e0dbf7ab2e5e88b063b08e4017c4da88cc6e4e3fd61a27d2db",
+    "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "cfd5cd80c90ead24b12a435d9aa729b7d10f00b2862ebd0e6edab4b6a4004e92",
+    "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "fdf0b2e073f230870aa3235815699926f312f7067461b04ce6dff2c4f8f90a15",
+    "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "603f6cfcc427e66b9a1b733cc31b1f4b7f5487785e541c0f05f9854fb2a322f5",
     "hardware/design/libraries/UpstreamCache.kicad_sym": "22241c62c2b41373c6d070942315426b605ce85f0fd0e64695d6e2664d26d192",
     "hardware/design/simulation/.spiceinit": "757189d0faa3efa41e2b3ac83cc1bbbae5e4ccfa5b2f96489748b56a411b4225",
     "hardware/design/simulation/README.md": "f61a6c472e80dd31faacdb2b7b365745bee6109e00831f94c520a73f313a63ac",
@@ -410,7 +416,27 @@
     "hardware/design/simulation/discharge-faults.cir": "fbafeb76879abf36a34f34d84698df280cb4be181a8d2415e318edd29aa5927d",
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
-    "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc"
+    "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
+    "docs/pcb-layout.md": "33fbb8939bfe004da157211d9f419a8ac33e3d498ba02a4390e06633df67f756",
+    "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
+    "hardware/design/HSLink-LP.kicad_pcb": "cb6e33f0ac4809f357c8b0bafafc29527da74dcfff44e193b16b9e20f51ce67b",
+    "hardware/design/HSLink-LP.kicad_dru": "70b65e9171f43fcd7ccde5413329579453c633914bdc07dd1a72da9029f7386f",
+    "hardware/design/mechanical/README.md": "f7b52fcd436a94c28d30b4e0e3c481e2febbea9232dae6ab2632de47d7917fb0",
+    "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
+    "hardware/design/mechanical/hslink_lp.py": "4e0c0a97e86e483423572e5314fc9ed5a89a1f448ec366de855aaca073774ce6",
+    "hardware/design/mechanical/hslink_lp_base.step": "d7db3eb6fc32f5ded2518fde6f60ef8fa5aed6c063cab2473b54280179b281b3",
+    "hardware/design/mechanical/hslink_lp_base.stl": "6420d6401f1481cc908de39adeab5eec6f0eaffd2e9480271355ccace47de824",
+    "hardware/design/mechanical/hslink_lp_lid.dxf": "2307889efc1d29bab1f9fc97adf25df0411120d973c0b1f312721e952f39cf41",
+    "hardware/design/mechanical/hslink_lp_lid.step": "5f2ab3c7cbb28c40d4d361c593b4a5d4d630aab4cd4478388bacf2babc959c24",
+    "hardware/design/mechanical/hslink_lp_lid.stl": "564d0ee83ddf760ed1ff50f71af762c698894bf350a17101d78ea4bb3145a224",
+    "hardware/design/mechanical/parameters.json": "31744395431309feceb9e0e5b4b2d27d8047935bddeaea041fe4545bbb1737c6",
+    "hardware/design/libraries/models/Dailywell_2MD_envelope.step": "07c7d9eb9634ab81335bbf16ac1ba1e7e21df1e4144c482c92fe3a73033ecce2",
+    "hardware/design/libraries/models/HFD2_envelope.step": "217aa694cbd84841db78d75f587f0c6422fb5d1ce54d3117108ed3650f340134",
+    "hardware/design/libraries/models/KF128_2P_envelope.step": "344200d57ef795d4fbae84b17350b12d8be0e3f981014c673285e75ad6fde95b",
+    "hardware/design/libraries/models/SPH4018_envelope.step": "39c8e928109d81cedaab33fa3a0a3c4923ee4f67e9f82c06482f78ec5e688784",
+    "hardware/design/libraries/models/TPS63810_YFF_envelope.step": "5456a84d2c417e2989ff6b8ce2e7817135d9d8fb1317e18a7b75d86890286570",
+    "hardware/design/libraries/models/WUSB3801_envelope.step": "f989c588b8fd1e67f032a2626c2ecce2d6f29cf8a6f3d41acb138529ac5bcef3",
+    ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -918,7 +944,21 @@
     "hardware/design/reports/spice-2026-11-11/discharge_1e-06/runner.json": "4b41584fe531c1abfefd635da29c874a42854237fffb632a37a6e67acbfb116f",
     "hardware/design/reports/spice-2026-11-11/discharge_1e-06/ngspice.log": "65cfdad580a9d60a68e1a323c6fabcd7db8f8af76dab48279595b45fbe17e699",
     "hardware/design/reports/spice-2026-11-11/discharge_1e-06/result.raw": "84300d1cbdd9e7c9b8b604e5cd6855426bf92bb252d037bcd3c8e80d56e7a691",
-    "hardware/design/reports/tool-check-2026-11-11/cadquery.json": "7b2cf8ff07a2c04acf0f4563215c9fd16a285c54cd484a9611db864f6890101c"
+    "hardware/design/reports/tool-check-2026-11-11/cadquery.json": "7b2cf8ff07a2c04acf0f4563215c9fd16a285c54cd484a9611db864f6890101c",
+    "hardware/design/reports/pcb-structure-2026-11-12/layout-source.xml": "d2e262956fada974bc15f42ecdeff72f300ca3f419a094c7ed205697e2a21590",
+    "hardware/design/reports/pcb-structure-2026-11-12/erc.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+    "hardware/design/reports/pcb-structure-2026-11-12/drc-layout.json": "2b0e89c43017f7abd94784c6c9ea116528d3bee9c04039360bbd1fc6e742594f",
+    "hardware/design/reports/pcb-structure-2026-11-12/board-inspection.json": "a07204c16c575ab89b602acf304dbb6e5fdad1be0d9f023d0590cea132fcbb11",
+    "hardware/design/reports/pcb-structure-2026-11-12/layout-diff.json": "a8aecbd4327d63fa7b167569ba3ffd0fc642e3cc9ee63cb3170711fed61957ef",
+    "hardware/design/reports/pcb-structure-2026-11-12/usb-lengths.json": "9ddd8f5dc54aa29a6207226320056ff000f4ddf12f2ae6a1f66e15b24a8aaec8",
+    "hardware/design/reports/pcb-structure-2026-11-12/usb-reference.json": "87271a96eb1f961374a738242c332ac2fbc6b3076e0ebbd1549fe94aaf8f57c6",
+    "hardware/design/reports/pcb-structure-2026-11-12/mechanical-checks.json": "770886c1703368df0c0da502cf1eb4008a2666bd985b8b036dcdfc3defff0f12",
+    "hardware/design/reports/pcb-structure-2026-11-12/placement-current.svg": "f6db6e72959030e2d2d48e5754441ef08f002ec51c8a75bf05f1d13cdcf8b7ec",
+    "hardware/design/reports/pcb-structure-2026-11-12/placement-current.png": "f2f1ab1d4eef9d6024c45626393b0b0ccbf1d93c734caea43ca62f8a2fc13553",
+    "hardware/design/reports/pcb-structure-2026-11-12/assembly.png": "89b292d05ad4ccdf61a16c34731b5d50eb3b87a76a04f88c5ce668b425c2d23f",
+    "hardware/design/reports/pcb-structure-2026-11-12/pcb.step": "b31a31d724518c85fc0b5595410e5c536a79cf685f64d4308855cbd799302183",
+    "hardware/design/reports/pcb-structure-2026-11-12/HSLink-LP-assembly.step": "c6a04199cc16d0064f61669655f420a575d532afccae9a157ae36be5e0dabae1",
+    "hardware/design/reports/pcb-structure-2026-11-12/HSLink-LP-assembly.glb": "d4f9d142f610bd6503ca1e4ca5971fb35d3e34995fdf3f0e1a02446a81e0c902"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -1659,7 +1699,7 @@
     "cleanup": "Removed /private/tmp/hslink-decisions clients/adapters/UV helper scripts/extracted text; reports remain ignored; no global MCP or upstream changes",
     "historical_scope": "cad895d决策/文字同步阶段历史快照；后续VIO见margin_update，当前R42已采用见r42_update。"
   },
-  "checked_commit_note": "当前工作树由sha256定位；baseline_commit为修改前提交，Git提交后可由本记录文件所在提交定位。",
+  "checked_commit_note": "本轮Git提交号在提交后汇报；源文件SHA256标识受检查内容，不在本文件写入自引用提交号。",
   "margin_update": {
     "checked_at": "2026-11-07T14:15:48.356923+08:00",
     "baseline_commit": "cad895d4517febd9ee71b11cc219f6e0e866e5e7",
@@ -1890,12 +1930,12 @@
         "kind": "vio",
         "name": "vio_5.0_1.8",
         "params": {
-          "VIN_LEVEL": 5.0,
+          "VIN_LEVEL": 5,
           "DAC_CODE": 3183
         },
         "target": 1.8,
         "code": 3183,
-        "vin": 5.0,
+        "vin": 5,
         "solver_success": true,
         "final_time_s": 0.012,
         "v_10ma": 1.798842332501084,
@@ -1910,12 +1950,12 @@
         "kind": "vio",
         "name": "vio_5.0_2.5",
         "params": {
-          "VIN_LEVEL": 5.0,
+          "VIN_LEVEL": 5,
           "DAC_CODE": 1845
         },
         "target": 2.5,
         "code": 1845,
-        "vin": 5.0,
+        "vin": 5,
         "solver_success": true,
         "final_time_s": 0.012,
         "v_10ma": 2.498040069245642,
@@ -1930,12 +1970,12 @@
         "kind": "vio",
         "name": "vio_5.0_3.3",
         "params": {
-          "VIN_LEVEL": 5.0,
+          "VIN_LEVEL": 5,
           "DAC_CODE": 316
         },
         "target": 3.3,
         "code": 316,
-        "vin": 5.0,
+        "vin": 5,
         "solver_success": true,
         "final_time_s": 0.012,
         "v_10ma": 3.297457886447582,
@@ -2036,7 +2076,7 @@
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 0.8999669129811452,
-        "target_on_a": 1.323480754473899e-05,
+        "target_on_a": 0.00001323480754473899,
         "adc_off_v": 1.252719511237477e-10,
         "target_off_a": 3.566036355096003e-15,
         "first_1pct_settle_s": 0.00015665223045438015
@@ -2046,16 +2086,16 @@
         "name": "vref_1.8_4e-08",
         "params": {
           "TARGET_V": 1.8,
-          "I_OFF": 4e-08
+          "I_OFF": 4e-8
         },
         "target_v": 1.8,
-        "injected_off_current": 4e-08,
+        "injected_off_current": 4e-8,
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 0.8999669129811453,
-        "target_on_a": 1.323480754473899e-05,
+        "target_on_a": 0.00001323480754473899,
         "adc_off_v": 0.002720000124893355,
-        "target_off_a": 4.000000360049327e-08,
+        "target_off_a": 4.000000360049327e-8,
         "first_1pct_settle_s": 0.00015650912995818396
       },
       {
@@ -2070,7 +2110,7 @@
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 1.649939340465423,
-        "target_on_a": 2.426381383202704e-05,
+        "target_on_a": 0.00002426381383202704,
         "adc_off_v": 2.296652437268766e-10,
         "target_off_a": 6.469269564490788e-15,
         "first_1pct_settle_s": 0.00015646971548948906
@@ -2080,32 +2120,32 @@
         "name": "vref_3.3_4e-08",
         "params": {
           "TARGET_V": 3.3,
-          "I_OFF": 4e-08
+          "I_OFF": 4e-8
         },
         "target_v": 3.3,
-        "injected_off_current": 4e-08,
+        "injected_off_current": 4e-8,
         "solver_success": true,
         "final_time_s": 0.005,
         "adc_on_v": 1.649939340465423,
-        "target_on_a": 2.426381383202704e-05,
+        "target_on_a": 0.00002426381383202704,
         "adc_off_v": 0.002720000229286679,
-        "target_off_a": 4.000000644821533e-08,
+        "target_off_a": 4.000000644821533e-8,
         "first_1pct_settle_s": 0.00015629368728937
       },
       {
         "kind": "discharge",
         "name": "discharge_1e-06",
         "params": {
-          "DUT_C": 1e-06
+          "DUT_C": 0.000001
         },
-        "dut_c": 1e-06,
+        "dut_c": 0.000001,
         "source_v": 5.5,
         "solver_success": true,
         "final_time_s": 0.2,
         "powered_v": 5.499999999999448,
         "off_no_discharge_v": 5.499999555021326,
         "after_100ms_discharge_v": 5.500824994485764e-12,
-        "erroneous_powered_discharge_gate_v": 0.0,
+        "erroneous_powered_discharge_gate_v": 0,
         "peak_r57_w": 0.024763094087986638
       },
       {
@@ -2121,7 +2161,7 @@
         "powered_v": 5.499999999999448,
         "off_no_discharge_v": 5.499999995464576,
         "after_100ms_discharge_v": 2.023831734587626,
-        "erroneous_powered_discharge_gate_v": 0.0,
+        "erroneous_powered_discharge_gate_v": 0,
         "peak_r57_w": 0.03018018631805192
       },
       {
@@ -2137,7 +2177,7 @@
         "powered_v": 5.49999999999943,
         "off_no_discharge_v": 5.499999999467577,
         "after_100ms_discharge_v": 4.976727489294753,
-        "erroneous_powered_discharge_gate_v": 0.0,
+        "erroneous_powered_discharge_gate_v": 0,
         "peak_r57_w": 0.03023484747117047
       },
       {
@@ -2210,10 +2250,76 @@
     "dimensions_confirmed": false,
     "material_confirmed": false,
     "new_controls_confirmed": false,
-    "cad_created": false,
-    "tools": "KiCad/MCP and uv CadQuery available; FreeCAD 1.1.4 verified; no enclosure/assembly created"
+    "cad_created": true,
+    "tools": "uv CadQuery 2.8.0建模/干涉/STEP-STL-DXF；FreeCAD 1.1.4已安装，可打开STEP",
+    "physical_tested": false,
+    "status": "有效单件及简化装配体积干涉检查通过；未实物装配",
+    "source": "hardware/design/mechanical/hslink_lp.py",
+    "parameters": "hardware/design/mechanical/parameters.json",
+    "base_dimensions_mm": [
+      118,
+      88
+    ],
+    "fit_checks": [
+      {
+        "test": "pcb_components_vs_base",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_lid",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Standoff_1",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Washer_1",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Screw_1",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Standoff_2",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Washer_2",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Screw_2",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Standoff_3",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Washer_3",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Screw_3",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Standoff_4",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Washer_4",
+        "collisions": []
+      },
+      {
+        "test": "pcb_components_vs_Screw_4",
+        "collisions": []
+      }
+    ]
   },
-  "historical_sections_note": "Earlier review/model/PCB status entries retain their historical scope; latest functional-analysis status is prefab_analysis. Uncommitted PCB work is explicitly recorded and not part of its Git commit.",
+  "historical_sections_note": "各旧审查/仿真章节保留其时点；最新布局与结构状态以layout_review及pcb/mechanical为准。prefab_analysis中的旧工作PCB记录仅属当时功能分析范围。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -2522,5 +2628,274 @@
       "project_sha256": "6e5e3cb1bd0904e1b9d092805a029243b40291e091b48e6d34a1b91a8e7b879c",
       "status": "194 circuit footprints plus mounting holes/fiducials; partial routing; DRC errors and unrouted remain; no manufacturing release"
     }
+  },
+  "layout_review": {
+    "checked_at": "2026-11-11T18:01:23.221Z",
+    "baseline_commit": "971701aa202047386b9cbba2006c91dd89b128b5",
+    "verdict": "INCOMPLETE",
+    "coverage": "布局、已布线几何、原理图parity、逻辑焊盘网络及简化机械模型；未覆盖全布线/最终叠层/互连场/实物",
+    "parts": {
+      "circuit": 194,
+      "mounting": 4,
+      "fiducials": 3,
+      "moved_or_rotated": 183
+    },
+    "unchanged_logical_pad_nets": true,
+    "schematic_files_modified": false,
+    "erc": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "drc": {
+      "violation_list_count": 0,
+      "unconnected_items": 399,
+      "schematic_parity_issues": 0,
+      "flags": [
+        "all-track-errors",
+        "schematic-parity",
+        "refill-zones"
+      ],
+      "not_a_full_pass": true
+    },
+    "routing": {
+      "tracks": 247,
+      "vias": 80,
+      "source": "manual explicit geometry via KiCad native MCP adapter; no broad autorouter result imported",
+      "usb_signal_vias": 0,
+      "usb_lengths": [
+        {
+          "connector_pads": [
+            "A6",
+            "A7"
+          ],
+          "lengths_mm": [
+            29.423718433538223,
+            29.224541107568207
+          ],
+          "skew_mm": 0.19917732597001603
+        },
+        {
+          "connector_pads": [
+            "B6",
+            "B7"
+          ],
+          "lengths_mm": [
+            26.713718433538222,
+            26.514543648263004
+          ],
+          "skew_mm": 0.19917478527521837
+        }
+      ],
+      "usb_reference": {
+        "sample_pitch_max_mm": 0.1,
+        "sample_count": 626,
+        "missing_ground_points": [],
+        "limit": "只查走线中心线下方铜面；不是回流场或阻抗求解"
+      },
+      "remaining": "399 unrouted report items; full power distribution/clock/debug/UART/low-speed controls unfinished"
+    },
+    "rules": {
+      "min_track_mm": 0.127,
+      "min_clearance_mm": 0.127,
+      "via_diameter_mm": 0.6,
+      "via_drill_mm": 0.3,
+      "copper_edge_mm": 0.25,
+      "custom": "hardware/design/HSLink-LP.kicad_dru",
+      "mount_keepout_radius_mm": 3.75,
+      "stackup": "未通过GUI核定；MCP缺少可用写入接口，Mac锁屏；USB90Ω未确认"
+    },
+    "silkscreen": {
+      "hidden_dense_references": [
+        "C18",
+        "C7",
+        "R53",
+        "C30",
+        "R62",
+        "R59",
+        "C48",
+        "R401",
+        "C53",
+        "R28",
+        "R11",
+        "C16",
+        "R16",
+        "R52",
+        "C9",
+        "R17",
+        "R709",
+        "R702",
+        "R23",
+        "R13",
+        "C56",
+        "R713",
+        "R15",
+        "R29",
+        "R54",
+        "R12",
+        "R26",
+        "C8"
+      ],
+      "fab_references_preserved": true,
+      "interface_pinout_and_polarity": true
+    },
+    "mechanical": {
+      "source_valid": true,
+      "checks": [
+        {
+          "test": "pcb_components_vs_base",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_lid",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Standoff_1",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Washer_1",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Screw_1",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Standoff_2",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Washer_2",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Screw_2",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Standoff_3",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Washer_3",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Screw_3",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Standoff_4",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Washer_4",
+          "collisions": []
+        },
+        {
+          "test": "pcb_components_vs_Screw_4",
+          "collisions": []
+        }
+      ],
+      "hardware_tested": false,
+      "missing_exact_mating_plug_model": true
+    },
+    "model_sources": [
+      {
+        "model": "HFD2_envelope.step",
+        "source": "https://source.hongfa.com/Uploads/Product/PDF/HFD2_en.pdf",
+        "note": "单稳态尺寸外形，非厂家STEP"
+      },
+      {
+        "model": "KF128_2P_envelope.step",
+        "source": "docs/jlc-pinmap.md; reports/jlc-2026-11-07/C474952.pdf",
+        "note": "C474952尺寸图；非厂家STEP"
+      },
+      {
+        "model": "Dailywell_2MD_envelope.step",
+        "source": "https://www.thonk.co.uk/wp-content/uploads/2017/05/DW3-DPDT-ON-ON-2MD1T1B1M2QES.pdf",
+        "note": "2MDP0428 Rev A；未建拨杆全行程/螺纹"
+      },
+      {
+        "model": "SPH4018_envelope.step",
+        "source": "https://atta.szlcsc.com//upload/public/pdf/source/20250613/ACB2314ED53D2527A89366A49163B0F0.pdf",
+        "note": "保守体积包络"
+      },
+      {
+        "model": "WUSB3801_envelope.step",
+        "source": "https://atta.szlcsc.com//upload/public/pdf/source/20220218/358FA27FD5CA391EB61300BD5A69029B.pdf",
+        "note": "保守体积包络"
+      },
+      {
+        "model": "TPS63810_YFF_envelope.step",
+        "source": "https://www.ti.com/lit/ds/symlink/tps63810.pdf",
+        "note": "YFF0015外形包络，不是电气/热模型"
+      }
+    ],
+    "cost": {
+      "electronic_bom_delta_cny": 0,
+      "quotes_refreshed": false,
+      "mechanical_total_cny": null,
+      "pcb_total_cny": null
+    },
+    "source_sha256": {
+      "README.md": "62c9dbed9bcc8a3d3333023ae983e613a6ea2fcb70545a15ce6106275c2b12e1",
+      "docs/cost.md": "5a80afb43bb72482e916c94cbda01ce36b79851e4dcfb21d8908436df30318e5",
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
+      "docs/structure-and-pcb.md": "68806dc31438ff40ecec73d8a3e36789e117c72ed96d8b67728a2bdf17cf3c89",
+      "docs/pcb-layout.md": "33fbb8939bfe004da157211d9f419a8ac33e3d498ba02a4390e06633df67f756",
+      "hardware/README.md": "d289c6b0cf178d1eafd7c98769b0e2166eee5cf38418a2a18fe8d7934769d976",
+      "hardware/design/README.md": "8333a03879c52390b41cde266e2fe5ade5eb3510f36a9fb244409407cb9e6448",
+      "hardware/bom/cost-summary.json": "400afce36482d35439a7e8ef41d090fde67897a3e3d19bb62b99cccc6ce4fae5",
+      "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
+      "hardware/design/HSLink-LP.kicad_pcb": "cb6e33f0ac4809f357c8b0bafafc29527da74dcfff44e193b16b9e20f51ce67b",
+      "hardware/design/HSLink-LP.kicad_pro": "ebfb397fc25b6f43ce760e907999fb6428ef72b2d9cbeaf2d3b7f1c90419128e",
+      "hardware/design/HSLink-LP.kicad_dru": "70b65e9171f43fcd7ccde5413329579453c633914bdc07dd1a72da9029f7386f",
+      "hardware/design/mechanical/README.md": "f7b52fcd436a94c28d30b4e0e3c481e2febbea9232dae6ab2632de47d7917fb0",
+      "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
+      "hardware/design/mechanical/hslink_lp.py": "4e0c0a97e86e483423572e5314fc9ed5a89a1f448ec366de855aaca073774ce6",
+      "hardware/design/mechanical/hslink_lp_base.step": "d7db3eb6fc32f5ded2518fde6f60ef8fa5aed6c063cab2473b54280179b281b3",
+      "hardware/design/mechanical/hslink_lp_base.stl": "6420d6401f1481cc908de39adeab5eec6f0eaffd2e9480271355ccace47de824",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "2307889efc1d29bab1f9fc97adf25df0411120d973c0b1f312721e952f39cf41",
+      "hardware/design/mechanical/hslink_lp_lid.step": "5f2ab3c7cbb28c40d4d361c593b4a5d4d630aab4cd4478388bacf2babc959c24",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "564d0ee83ddf760ed1ff50f71af762c698894bf350a17101d78ea4bb3145a224",
+      "hardware/design/mechanical/parameters.json": "31744395431309feceb9e0e5b4b2d27d8047935bddeaea041fe4545bbb1737c6",
+      "hardware/design/libraries/models/Dailywell_2MD_envelope.step": "07c7d9eb9634ab81335bbf16ac1ba1e7e21df1e4144c482c92fe3a73033ecce2",
+      "hardware/design/libraries/models/HFD2_envelope.step": "217aa694cbd84841db78d75f587f0c6422fb5d1ce54d3117108ed3650f340134",
+      "hardware/design/libraries/models/KF128_2P_envelope.step": "344200d57ef795d4fbae84b17350b12d8be0e3f981014c673285e75ad6fde95b",
+      "hardware/design/libraries/models/SPH4018_envelope.step": "39c8e928109d81cedaab33fa3a0a3c4923ee4f67e9f82c06482f78ec5e688784",
+      "hardware/design/libraries/models/TPS63810_YFF_envelope.step": "5456a84d2c417e2989ff6b8ce2e7817135d9d8fb1317e18a7b75d86890286570",
+      "hardware/design/libraries/models/WUSB3801_envelope.step": "f989c588b8fd1e67f032a2626c2ecce2d6f29cf8a6f3d41acb138529ac5bcef3",
+      "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "1de80d0ae779a9e236a7d13f31e40220669db94ede0159afcb3cad11a7c41f1a",
+      "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "d7da2c846e3a7bb59374e409ce8c87876b3a46510e9fb71ca43397347a7e51d0",
+      "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "f3ddf73666c385e0dbf7ab2e5e88b063b08e4017c4da88cc6e4e3fd61a27d2db",
+      "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "cfd5cd80c90ead24b12a435d9aa729b7d10f00b2862ebd0e6edab4b6a4004e92",
+      "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "fdf0b2e073f230870aa3235815699926f312f7067461b04ce6dff2c4f8f90a15",
+      "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "603f6cfcc427e66b9a1b733cc31b1f4b7f5487785e541c0f05f9854fb2a322f5",
+      ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/pcb-structure-2026-11-12/layout-source.xml": "d2e262956fada974bc15f42ecdeff72f300ca3f419a094c7ed205697e2a21590",
+      "hardware/design/reports/pcb-structure-2026-11-12/erc.json": "ea104e8e8f948149a1672f8e0f220e30ce8121192d97c87ab0b7e67964cd2793",
+      "hardware/design/reports/pcb-structure-2026-11-12/drc-layout.json": "2b0e89c43017f7abd94784c6c9ea116528d3bee9c04039360bbd1fc6e742594f",
+      "hardware/design/reports/pcb-structure-2026-11-12/board-inspection.json": "a07204c16c575ab89b602acf304dbb6e5fdad1be0d9f023d0590cea132fcbb11",
+      "hardware/design/reports/pcb-structure-2026-11-12/layout-diff.json": "a8aecbd4327d63fa7b167569ba3ffd0fc642e3cc9ee63cb3170711fed61957ef",
+      "hardware/design/reports/pcb-structure-2026-11-12/usb-lengths.json": "9ddd8f5dc54aa29a6207226320056ff000f4ddf12f2ae6a1f66e15b24a8aaec8",
+      "hardware/design/reports/pcb-structure-2026-11-12/usb-reference.json": "87271a96eb1f961374a738242c332ac2fbc6b3076e0ebbd1549fe94aaf8f57c6",
+      "hardware/design/reports/pcb-structure-2026-11-12/mechanical-checks.json": "770886c1703368df0c0da502cf1eb4008a2666bd985b8b036dcdfc3defff0f12",
+      "hardware/design/reports/pcb-structure-2026-11-12/placement-current.svg": "f6db6e72959030e2d2d48e5754441ef08f002ec51c8a75bf05f1d13cdcf8b7ec",
+      "hardware/design/reports/pcb-structure-2026-11-12/placement-current.png": "f2f1ab1d4eef9d6024c45626393b0b0ccbf1d93c734caea43ca62f8a2fc13553",
+      "hardware/design/reports/pcb-structure-2026-11-12/assembly.png": "89b292d05ad4ccdf61a16c34731b5d50eb3b87a76a04f88c5ce668b425c2d23f",
+      "hardware/design/reports/pcb-structure-2026-11-12/pcb.step": "b31a31d724518c85fc0b5595410e5c536a79cf685f64d4308855cbd799302183",
+      "hardware/design/reports/pcb-structure-2026-11-12/HSLink-LP-assembly.step": "c6a04199cc16d0064f61669655f420a575d532afccae9a157ae36be5e0dabae1",
+      "hardware/design/reports/pcb-structure-2026-11-12/HSLink-LP-assembly.glb": "d4f9d142f610bd6503ca1e4ca5971fb35d3e34995fdf3f0e1a02446a81e0c902"
+    },
+    "limits": [
+      "所有399条未连接必须完成并重新全板检查",
+      "Mac解锁后核定实际叠层，重新计算USB阻抗和参考面",
+      "40MHz、140nA/20～30°C、1A、VIO±1%均未实板验收",
+      "结构插头、拨杆行程、打印与紧固件公差、温升和绝缘污染待样件验证"
+    ]
   }
 }

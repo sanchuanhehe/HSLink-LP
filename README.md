@@ -2,7 +2,7 @@
 
 基于 HSLink Pro 1.2.0 / HPM5301 的双串口调试与低功耗测试工程。
 
-**当前状态：上游布局的降本原理图审阅稿、完整嘉立创 BOM 核价记录及 ARM20 接口。** 已安装 KiCad MCP 和三项社区 skills，原理图由上游原文件复制后，通过 MCP 增改电路和整理文字。上游源码通过 Git 子模块管理。尚无 PCB、新板固件或真实设备通信；器件清单不是生产 BOM。
+**当前状态：上游布局的降本原理图审阅稿、完整嘉立创 BOM 核价记录及 ARM20 接口。** 已安装 KiCad MCP 和三项社区 skills，原理图由上游原文件复制后，通过 MCP 增改电路和整理文字。上游源码通过 Git 子模块管理。已有110×80mm PCB布局、关键手工布线及结构C参数化样件；PCB尚有399条未连接项，没有新板固件或真实设备通信，不可投板。
 
 ## 已确定的目标
 
@@ -18,7 +18,7 @@
 
 电源来源按用户选择采用板上手动切换。电脑控制目标板电源通断，与来源选择分开。
 
-打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，板上材料 ¥124.5295/板，加配套排线 ¥128.3725/套（10 套材料 ¥1,283.7250，不含制造、运输与采购余料），见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
+打开 [HSLink-LP.kicad_pro](hardware/design/HSLink-LP.kicad_pro)。接入方式见 [KiCad MCP 与 skills](docs/kicad-integration.md)，降本方案见 [设计说明](docs/cost-down.md)，板上材料 ¥124.9924/板，加配套排线 ¥128.8354/套（10 套材料 ¥1,288.3540，不含制造、运输与采购余料），见 [成本评估](docs/cost.md)，未关闭的设计问题见 [设计审查](hardware/design/README.md)。Python 环境、依赖与执行统一使用 uv。
 
 工作区只保留一份当前设计，历史通过 Git 提交回溯，不再使用版本号目录副本。原理图、符号库、候选 BOM 和验证摘要纳入 Git；KiCad 本机设置、备份、锁文件、导出报告和缓存由 `.gitignore` 排除。临时生成、排版脚本已删除；已安装的 MCP 服务放在用户工具目录。
 
@@ -80,3 +80,5 @@ SDK 和固件子模块下载可能较大。辅助工具会核对锁文件与 Git
 ARM20 针脚、封装和线束见 [接口说明](docs/arm20-interface.md)，[板上 BOM](hardware/bom/candidates.csv)与[配件 BOM](hardware/bom/accessories.csv)分列。现货 20 cm 排线仅作为打样配套，手册绝缘下限不足以保证 0.14 µA，必须通过整夹具漏电及 40 MHz 实测后放行。
 
 2026-11-07侧线程结论已同步：[边界、漏电与电源余量](docs/electrical-margins.md)。VIO反馈及USB侧输入余量已修改，接受逐板校准、±1%目标待实测；R42已按用户接受的806Ω±0.1%低成本打样方案落实，逐板持续1A/过载/短路/温升为投用前必验项，不宣称硬件通过。
+
+当前PCB布局与未完成项见[布局检查](docs/pcb-layout.md)，结构源与STEP/STL见[结构件](hardware/design/mechanical/README.md)。结构费用尚未包含在材料快照中。

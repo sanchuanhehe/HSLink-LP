@@ -85,4 +85,9 @@
 		(uuid "e54d4cf7-3636-4924-ac35-3d911a909bd4")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/models/SPH4018_envelope.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )
