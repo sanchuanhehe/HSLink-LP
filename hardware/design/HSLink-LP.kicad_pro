@@ -125,7 +125,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0889,
         "min_connection": 0.0762,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.25,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.1016,
         "min_hole_to_hole": 0.254,
@@ -510,7 +510,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1016,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -521,10 +521,67 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1016,
+        "track_width": 0.127,
         "tuning_profile": "",
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "LocalPower",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "MainPower",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.6,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.173,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.127,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.127,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -533,7 +590,60 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "LocalPower",
+        "pattern": "P3V3"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "VDD_SOC"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "P3V6_SW"
+      },
+      {
+        "netclass": "LocalPower",
+        "pattern": "VIO_LOCAL"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "VBUS_RAW"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "USB_5V"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "INT_RAW"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "INT_PROTECTED"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "SOURCE_POWER"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "DUT_OUT"
+      },
+      {
+        "netclass": "MainPower",
+        "pattern": "EXT_INPUT"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB_DM"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
