@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118mm" height="88mm" viewBox="-4 -4 118 88">
+<title>HSLink-LP panel print / 1:1 mm / top side</title>
+<defs><clipPath id="lid"><path d="M1 -4 H65.5 V11 Q65.5 13 67.5 13 H79.5 Q81.5 13 81.5 11 V-4 H109 Q114 -4 114 1 V79 Q114 84 109 84 H101 V67 Q101 65 99 65 H10 Q8 65 8 67 V84 H1 Q-4 84 -4 79 V1 Q-4 -4 1 -4 Z M2.3 4 a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z M104.3 4 a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z M2.3 76 a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z M104.3 76 a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z M92.75 12 a3.25 3.25 0 1 0 6.5 0 a3.25 3.25 0 1 0 -6.5 0 Z" clip-rule="evenodd"/></clipPath></defs><g clip-path="url(#lid)">
+<path fill="#f0e8da" fill-rule="evenodd" d="M-4 -4 H114 V84 H-4 Z M22 28 H104 Q114 28 114 38 V78 Q114 88 104 88 H22 Q12 88 12 78 V38 Q12 28 22 28 Z"/>
+<path fill="#ef380f" d="M57 21 L57.45 21 L60.45 10 L60 10 Z"/>
+<text x="30" y="12" font-family="Arial,sans-serif" font-size="5.2" text-anchor="middle" dominant-baseline="central" fill="#1f2929">HSLP</text>
+<text x="33" y="19" font-family="Arial,sans-serif" font-size="1.8" text-anchor="middle" dominant-baseline="central" fill="#1f2929">DEBUG INSTRUMENT</text>
+<text x="96" y="5.6" font-family="Arial,sans-serif" font-size="1.8" text-anchor="middle" dominant-baseline="central" fill="#1f2929">INT</text>
+<text x="96" y="18.3" font-family="Arial,sans-serif" font-size="1.8" text-anchor="middle" dominant-baseline="central" fill="#1f2929">EXT</text>
+<text x="96" y="24" font-family="Arial,sans-serif" font-size="2" text-anchor="middle" dominant-baseline="central" fill="#1f2929">SOURCE</text>
+<text x="73.5" y="17.5" font-family="Arial,sans-serif" font-size="1.65" text-anchor="middle" dominant-baseline="central" fill="#1f2929">EXT IN</text>
+<text x="28" y="59" font-family="Arial,sans-serif" font-size="2.5" text-anchor="middle" dominant-baseline="central" fill="#ffffff">DEBUG</text>
+<text x="28" y="62.5" font-family="Arial,sans-serif" font-size="1.3" text-anchor="middle" dominant-baseline="central" fill="#ffffff">ARM20 / JTAG / SWD</text>
+<text x="56" y="59" font-family="Arial,sans-serif" font-size="2.8" text-anchor="middle" dominant-baseline="central" fill="#ffffff">A</text>
+<text x="56" y="62.5" font-family="Arial,sans-serif" font-size="1.4" text-anchor="middle" dominant-baseline="central" fill="#ffffff">UART A</text>
+<text x="76" y="59" font-family="Arial,sans-serif" font-size="2.8" text-anchor="middle" dominant-baseline="central" fill="#ffffff">B</text>
+<text x="76" y="62.5" font-family="Arial,sans-serif" font-size="1.4" text-anchor="middle" dominant-baseline="central" fill="#ffffff">UART B</text>
+<text x="93" y="59" font-family="Arial,sans-serif" font-size="2.4" text-anchor="middle" dominant-baseline="central" fill="#ffffff">POWER</text>
+<text x="93" y="62.5" font-family="Arial,sans-serif" font-size="1.4" text-anchor="middle" dominant-baseline="central" fill="#ffffff">DUT OUT</text>
+</g></svg>

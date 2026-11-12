@@ -3551,6 +3551,109 @@
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested"
   },
+  "structure_compact_side_thread": {
+    "date": "2026-11-12",
+    "scope": "仅结构件与机械BOM；未写PCB、原理图或库模型",
+    "pcb_snapshot_sha256": "808fdf66f4091422c61bbeba046ccf62d3133507593f97ad004cd7ed1b025990",
+    "report": "hardware/design/reports/structure-compact-2026-11-12/mechanical-checks.json",
+    "valid_solids": true,
+    "collision_count": 0,
+    "source_sha256": {
+      "hardware/design/mechanical/hslink_lp_lid.stl": "be9d29fe06b945dd6a00c774b2bcf0091daa7dcb7096729ecf64db0eee9218ac",
+      "hardware/design/mechanical/hslink_lp_lid.step": "ce9c6bf5215fb01c8f854247f194c5401df88d851692fb62025e61d970155dea",
+      "hardware/design/mechanical/parameters.json": "09f97e2b93a294e5d355fa98d67783c1af0cd65b17864c25efb01a6271c92a76",
+      "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
+      "hardware/design/mechanical/hslink_lp_base.step": "62c1af7d05a6fe11a9a0848c2d7afc45970f69cb87966f798fb1e5b20daee158",
+      "hardware/design/mechanical/README.md": "d8c5f9c6dbb1db82b9279d15b735b2a5b818a06a327cde5bdb3876b8d842e6ab",
+      "hardware/design/mechanical/hslink_lp.py": "c12cb47b123fa9dd054d3216b5ec3000ac32c2293fe68d4882b49b8cf25f913b",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "0ede8d84bec6cde53a78b656cef11e777ef354a46d213e62b5a3c642add80d67",
+      "hardware/design/mechanical/hslink_lp_base.stl": "9af819b4ae23b0f5c2084ada06dfab80b8504aec3ec0467b1191fc1cdd6da572"
+    },
+    "pending": [
+      "当前主线程PCB布局变化后重新装配核对",
+      "拨杆全行程与孔公差",
+      "螺柱采购及实际装配",
+      "透明板材质保持PC建议，非PMMA确认",
+      "未实测140nA和温升"
+    ]
+  },
+  "structure_panel_artwork": {
+    "scope": "结构围边、SVG与装配显示；未改PCB和原理图",
+    "source_sha256": {
+      "hardware/design/mechanical/hslink_lp_lid.stl": "be9d29fe06b945dd6a00c774b2bcf0091daa7dcb7096729ecf64db0eee9218ac",
+      "hardware/design/mechanical/hslink_lp_lid.step": "394c37337379cab39069b7ac818e70323ae46dd7c175687c80ce651b6617dbdb",
+      "hardware/design/mechanical/parameters.json": "f336763d249d095786d15ca0e117d6fa235f6771d6d52de6023e0ffbb32f1333",
+      "hardware/design/mechanical/panel_artwork.py": "ed7f3033c709b3b3d22a848a6740c82c4519f79b05cac9a2eef63d0396dab239",
+      "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
+      "hardware/design/mechanical/hslink_lp_base.step": "e4ad587bbbb4d6bedd65fb9154022fed5469410485fb958c7cd1003ffabfbb5b",
+      "hardware/design/mechanical/README.md": "73f6374e1a38aaa1b4406a7d65a85158d19286c526cc1f10d78f6dc39819e739",
+      "hardware/design/mechanical/hslink_lp.py": "c2cff6d4575080233bbb62fda6d5af026b0a585798f355c90a117210e405ba2d",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "dafa21cda5c3f0c457da4b6a8232a28677c71a44598e796f6c619f4a1681bdc2",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "2f3b53689e34f13fb23ca2cbde3a4e84d5e3291d77ef134d123edd7ce107a1e7",
+      "hardware/design/mechanical/hslink_lp_base.stl": "56917e249d5c04af1fd6dd17f3b1079f6da1b52f9c66d203c6929de66de2882e"
+    },
+    "report": "hardware/design/reports/structure-compact-2026-11-12/mechanical-checks.json",
+    "pcb_snapshot_sha256": "808fdf66f4091422c61bbeba046ccf62d3133507593f97ad004cd7ed1b025990",
+    "collision_count": 0,
+    "artwork_supported_by_lid": true,
+    "pending": [
+      "实际USB插头护套",
+      "主线程最新布局装配复查",
+      "印刷字体转曲、白墨和1:1对位",
+      "精细器件模型材质未恢复"
+    ]
+  },
+  "usb_mechanical_relief": {
+    "report": "hardware/design/reports/structure-compact-2026-11-12/mechanical-checks.json",
+    "source_sha256": {
+      "hardware/design/mechanical/hslink_lp_lid.stl": "be9d29fe06b945dd6a00c774b2bcf0091daa7dcb7096729ecf64db0eee9218ac",
+      "hardware/design/mechanical/hslink_lp_lid.step": "67a4e5b67fcda262dc12841e08007bbff57b7bdddc47243568d9e71966503483",
+      "hardware/design/mechanical/parameters.json": "8a212c75d3ba0d2888efc2cb2ead19e34c273afd3e78670a71b4307db5f5cdf2",
+      "hardware/design/mechanical/panel_artwork.py": "ed7f3033c709b3b3d22a848a6740c82c4519f79b05cac9a2eef63d0396dab239",
+      "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
+      "hardware/design/mechanical/hslink_lp_base.step": "9c6b792835f9d8d02fa6c31fe7eb159dafe07d2acdfed8c945e7065693910d73",
+      "hardware/design/mechanical/README.md": "d463183bda2291126088a5b8cb39f4559c7727cb0452f9aafec0ed50cf5d90e5",
+      "hardware/design/mechanical/hslink_lp.py": "07ca856cb2ae6c2ceec368066174a5eb4ef442b34f66d7241a47518bc2afdecf",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "a792557204df5ccc3c346d19061e196c655f4cb6306aa7d1f0827b490df5594e",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "2f3b53689e34f13fb23ca2cbde3a4e84d5e3291d77ef134d123edd7ce107a1e7",
+      "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416"
+    },
+    "envelope": {
+      "status": "假设包络检查，未指定实际线缆",
+      "width_mm": 14,
+      "height_mm": 8,
+      "z_center_mm": 12.5,
+      "y_sweep_mm": [
+        -0.5,
+        25
+      ],
+      "base_collision_mm3": 0.0,
+      "lid_collision_mm3": 0.0,
+      "limits": "仅直线插入与结构件；不覆盖弯头、加厚护套、倾斜及实际连接器配合"
+    },
+    "component_collision_count": 0,
+    "scope": "仅结构；实际线缆和最新PCB布局待复核；PCB与原理图未改"
+  },
+  "lid_left_notch_removal": {
+    "date": "2026-11-13",
+    "scope": "仅删除左侧盖板大U形槽；PCB原理图不变；服务操作需拆盖",
+    "collision_count": 0,
+    "report": "hardware/design/reports/structure-compact-2026-11-12/mechanical-checks.json",
+    "pcb_snapshot_sha256": "808fdf66f4091422c61bbeba046ccf62d3133507593f97ad004cd7ed1b025990",
+    "source_sha256": {
+      "hardware/design/mechanical/hslink_lp_lid.stl": "6b6c7870974a2f99eb69d29a263f34ebcc763ff2604586f26256b853bc451693",
+      "hardware/design/mechanical/hslink_lp_lid.step": "461c354327dd3d36940704c5ebc829eab038b4cf4fe14020f612593907af84d6",
+      "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
+      "hardware/design/mechanical/panel_artwork.py": "ed7f3033c709b3b3d22a848a6740c82c4519f79b05cac9a2eef63d0396dab239",
+      "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
+      "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
+      "hardware/design/mechanical/README.md": "fd5461a8e527b358b280df7fab1fc01ef496cef7cd8602f53d62469faa12d1e4",
+      "hardware/design/mechanical/hslink_lp.py": "9f72973b773874c84e016b055ab58de85e59ece400456f14639c5c861d19ee24",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "ce3cb5641bcd264600c69e23d7940c6879c3d9415a4ff66452033e84bdcac8cf",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "2f3b53689e34f13fb23ca2cbde3a4e84d5e3291d77ef134d123edd7ce107a1e7",
+      "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416"
+    }
+  },
   "constraint_recovery": {
     "date": "2026-11-13",
     "baseline": "8c146c4",
@@ -3607,6 +3710,29 @@
     "procurement_bom_delta_cny": 0,
     "new_drc_ignores": 0,
     "report_directory": "hardware/design/reports/constraint-restore-2026-11-13"
+  },
+  "panel_c_artwork": {
+    "date": "2026-11-13",
+    "status": "svg_and_assembly_visual_review_not_manufacturing_release",
+    "changes": [
+      "C风格印刷层与橙红斜线",
+      "SOURCE INT/EXT与接口用途标识"
+    ],
+    "source_direction": "依据2MDP0428 Rev.A与引脚网络推导，前沿接口朝向使用者时后INT前EXT；待样件导通复核",
+    "pcb_schematic_modified": false,
+    "limitations": [
+      "使用既有PCB STEP快照",
+      "SVG文字未转曲；裁切轮廓不替代机械DXF",
+      "样件方向、印刷套准与白墨工艺未验证",
+      "FreeCAD导入STEP的印刷区颜色显示异常待修复；GLB预览不能代替FreeCAD检查"
+    ],
+    "sha256": {
+      "hardware/design/mechanical/panel_artwork.py": "540755c14584e5dd8397c84420a45b201f69191529852f4b77f7824b738e8769",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "e836f862e274549ff3241e5b4bea640111df32b0ecc387b2ab91b9a67493ac98",
+      "hardware/design/mechanical/README.md": "0ed3f42083c619a91d82d93b30368e8e934518ec6d6dd125c28e6939c6f6e871",
+      "hardware/design/reports/structure-compact-2026-11-12/HSLink-LP-assembly.step": "c2ede15c38395f79193b163d0f601c787a76fa8891b9a0c2d3829fc4040e3da0",
+      "hardware/design/reports/structure-compact-2026-11-12/assembly-labelled.png": "ac64442ddff4548161f5aa06ab923103bf0ed91c5db5afe05dd380d16724cecb"
+    }
   },
   "mechanical_geometry_commit": {
     "date": "2026-11-13",

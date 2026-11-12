@@ -5,6 +5,7 @@ import json
 import math
 import hashlib
 import cadquery as cq
+from panel_artwork import add_artwork, export_svg
 
 HERE = Path(__file__).resolve().parent
 P = json.loads((HERE / 'parameters.json').read_text())
@@ -73,6 +74,8 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
     assembly.add(base, name='Base_warm_ivory_PETG_prototype', color=cq.Color(.86,.81,.71))
     assembly.add(lid, name='Lid_PC_2mm_prototype', loc=cq.Location((0,0,lid_z)),
                  color=cq.Color(.94,.96,.97,.22))
+    add_artwork(assembly,lid,lid_z+P['lid_thickness']+.01)
+    export_svg()
     fastener_shapes=[]
     for i,(x,y) in enumerate(P['holes'],1):
         # Functional envelopes only: no helical threads/knurl. Fit requires a coupon.
