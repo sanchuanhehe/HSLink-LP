@@ -377,7 +377,7 @@
     "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
     "hardware/design/Control.kicad_sch": "0e7f71461fca33fcbcf75f0a4fab188cf4ee874a227f7a0ff4352603adae18dc",
     "hardware/design/Disconnect.kicad_sch": "0226386ae30328d96c3bf7fadbc8ccb45b1c229876c7ed7c57908acaefe7523d",
-    "hardware/design/HSLink-LP.kicad_pro": "ebfb397fc25b6f43ce760e907999fb6428ef72b2d9cbeaf2d3b7f1c90419128e",
+    "hardware/design/HSLink-LP.kicad_pro": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
     "hardware/design/HSLink-LP.kicad_sch": "bd0c9b6032643fde59b51d51a0b9a4d83bbdd3fd380803e5aebec6cb9a269c9b",
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
@@ -424,10 +424,10 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "b3646529eb699ed88b5e793157b2d0d30e4d32664012936c138290d3c903e71d",
+    "docs/pcb-layout.md": "5337f094e28b03ba88a0ce97720cede9dcdcaf7a14d0f95016241cf94bdb1056",
     "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
-    "hardware/design/HSLink-LP.kicad_pcb": "21fc4d197a9b95a78400ae31f508c6226d809fb742acc33db0d73324b741c6ca",
-    "hardware/design/HSLink-LP.kicad_dru": "70b65e9171f43fcd7ccde5413329579453c633914bdc07dd1a72da9029f7386f",
+    "hardware/design/HSLink-LP.kicad_pcb": "70c4cec14f7418aef9f059448ff499f0f07097c43ca5f258e60883f608e7810e",
+    "hardware/design/HSLink-LP.kicad_dru": "89dc42bb4fc0ff2762c430e41b8e507f8fe275cba82c032696288b083eed7620",
     "hardware/design/mechanical/README.md": "e025ab3784c73a571abfacc2d7a75b57a8c290a5f126fb37c969abd5a527f0fc",
     "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
     "hardware/design/mechanical/hslink_lp.py": "7aaaaadc6b4bbc97ba0848ed059a8ad4dc71ee248dcbf346984ba372c6e39e29",
@@ -3426,5 +3426,53 @@
       "hardware/design/reports/layout-ux-2026-11-12/testpoint-candidate-check.json": "09d753db704cc55865f74065c7e75c7eebbf9aed8590fe206e9ffcc1bc9c3fd0",
       "hardware/design/reports/layout-ux-2026-11-12/sync-repair-plan.json": "bfcf1ea79281edb0d5865842f547cbc638e58a3b66c1c61344cf56efb3e2fcb2"
     }
+  },
+  "pcb_completion": {
+    "date": "2026-11-12",
+    "stage": "stackup_constraints_ground_fanout",
+    "verdict": "INCOMPLETE",
+    "design_target_not_hardware_verified": true,
+    "stackup": "JLC04161H-7628",
+    "sources": [
+      "https://jlcpcb.com/impedance",
+      "https://jlcpcb.com/pcb-impedance-calculator"
+    ],
+    "usb_calculator": {
+      "target_ohm": 90,
+      "width_mm": 0.2474,
+      "gap_mm": 0.1524,
+      "signal": "F.Cu",
+      "reference": "In1.Cu",
+      "fabricator_order_confirmation": false
+    },
+    "drc": {
+      "violations": 0,
+      "unconnected_items": 293,
+      "schematic_parity": 0,
+      "added_ignores": 0
+    },
+    "pad_net_groups_unchanged": true,
+    "ground_short_fanouts": 104,
+    "mcu_thermal_vias": 4,
+    "layout_translation_mm": [
+      88,
+      61
+    ],
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "70c4cec14f7418aef9f059448ff499f0f07097c43ca5f258e60883f608e7810e",
+      "hardware/design/HSLink-LP.kicad_pro": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
+      "hardware/design/HSLink-LP.kicad_dru": "89dc42bb4fc0ff2762c430e41b8e507f8fe275cba82c032696288b083eed7620",
+      "docs/pcb-layout.md": "5337f094e28b03ba88a0ce97720cede9dcdcaf7a14d0f95016241cf94bdb1056"
+    },
+    "report_directory": "hardware/design/reports/full-board-2026-11-12",
+    "remaining": [
+      "USB trunk geometry",
+      "power distribution",
+      "crystal",
+      "40MHz debug",
+      "VIO/sense/interlock and UART/control completion",
+      "reference planes neck/return review",
+      "final mechanical fit and manufacturing outputs"
+    ]
   }
 }

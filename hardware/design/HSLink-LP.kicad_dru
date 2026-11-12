@@ -1,20 +1,41 @@
 (version 1)
-# USB geometry is provisional until the fabrication stackup is confirmed.
-(rule "USB no signal vias"
-  (condition "A.NetName == 'USB_DP' || A.NetName == 'USB_DM'")
-  (constraint disallow via))
-(rule "USB top layer only"
-  (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Layer != 'F.Cu'")
-  (constraint disallow track))
-(rule "In1 uninterrupted ground reference"
-  (layer In1.Cu)
-  (constraint disallow track))
-(rule "In2 ground reference"
-  (layer In2.Cu)
-  (constraint disallow track))
-(rule "External and target power trunks"
-  (condition "A.NetName == 'EXT_INPUT' || A.NetName == 'SOURCE_POWER' || A.NetName == 'DUT_OUT'")
-  (constraint track_width (min 1.2mm)))
-(rule "Top side components"
-  (layer B.Cu)
-  (constraint disallow footprint))
+# JLC04161H-7628; F/B signals+power, In1/In2 GND; nominal 1.6 mm.
+# 90 ohm USB calculator result: W=9.74 mil, S=6 mil. Fabrication tolerance pending DFM.
+(rule "Copper clearance" (constraint clearance (min 0.127mm)))
+(rule "Board edge" (constraint edge_clearance (min 0.25mm)))
+(rule "Ordinary traces" (constraint track_width (min 0.127mm) (opt 0.15mm)))
+(rule "Through vias" (condition "A.Type == 'Via'")
+ (constraint via_diameter (min 0.6mm) (opt 0.6mm)) (constraint hole_size (min 0.3mm) (opt 0.3mm)))
+(rule "Drill separation" (constraint hole_to_hole (min 0.254mm)))
+(rule "Ground zone connections" (condition "A.NetName == 'GND'")
+ (constraint connection_width (min 0.2mm)) (constraint thermal_spoke_width (min 0.25mm)))
+(rule "In1 GND reference only" (layer In1.Cu) (constraint disallow track))
+(rule "In2 GND reference only" (layer In2.Cu) (constraint disallow track))
+(rule "Reference layer zones" (condition "A.Type == 'Zone' && (A.Layer == 'In1.Cu' || A.Layer == 'In2.Cu') && A.NetName != 'GND'") (constraint disallow zone))
+(rule "Local supplies" (condition "A.hasNetclass('LocalPower')") (constraint track_width (min 0.15mm) (opt 0.3mm)))
+(rule "Main supplies" (condition "A.hasNetclass('MainPower')")
+ (constraint track_width (min 0.15mm) (opt 1mm)) )
+(rule "External and target 2A trunks"
+ (condition "A.NetName == 'EXT_INPUT' || A.NetName == 'SOURCE_POWER' || A.NetName == 'DUT_OUT'")
+ (constraint track_width (min 1.2mm) (opt 1.5mm)) )
+(rule "USB pair"
+ (condition "A.NetName == 'USB_DP' || A.NetName == 'USB_DM'")
+ (constraint disallow via)
+ (constraint track_width (min 0.127mm) (opt 0.2474mm) (max 0.2474mm))
+ (constraint diff_pair_gap (min 0.127mm) (opt 0.1524mm) (max 0.17mm))
+ (constraint diff_pair_uncoupled (max 7mm)))
+(rule "USB top only" (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Layer != 'F.Cu'") (constraint disallow track))
+(rule "USB controlled trunk"
+ (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Type == 'Track' && A.Start_Y > 13mm && A.End_Y > 13mm && A.Start_Y < 27mm && A.End_Y < 27mm")
+ (constraint track_width (min 0.2474mm) (max 0.2474mm)))
+(rule "40MHz debug" (condition "A.hasNetclass('Debug')")
+ (constraint track_width (min 0.15mm) (opt 0.15mm)) (constraint via_count (max 2)))
+(rule "Crystal local loop" (condition "A.NetName == 'XTALI' || A.NetName == 'XTALO'")
+ (constraint disallow via) (constraint track_width (min 0.15mm) (opt 0.15mm)) (constraint length (max 8mm)))
+(rule "Crystal top only" (condition "(A.NetName == 'XTALI' || A.NetName == 'XTALO') && A.Layer != 'F.Cu'") (constraint disallow track))
+(rule "Analog local traces" (condition "A.hasNetclass('Analog')") (constraint track_width (min 0.15mm) (opt 0.15mm)))
+(rule "Top side assembly" (layer B.Cu) (constraint disallow footprint))
+# Screw/standoff clearances are native all-layer keepouts, radius 3.75 mm.
+# IC pin necks and USB breakout lengths additionally require geometric review.
+
+(rule "Power zone necks" (condition "A.Type == 'Zone' && A.hasNetclass('MainPower')") (constraint connection_width (min 1.2mm)))
