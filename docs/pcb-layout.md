@@ -114,3 +114,7 @@ U1→转换器→U801→ARM20的SWD/JTAG数据和时钟铜连接、SWD_DIR及NRS
 ## 主控控制源端检查点（2026-11-13）
 
 POWER_REQ、SPI_CS、VIO_EN 完整连接，ADC 顶层短连整理；新增地回流及一颗位置限定的 VIO_EN 小信号孔规则。完整 DRC 一般违规0、未连接47、parity0，759个焊盘网络和关键高速路径保持。详细规则反例、几何检查与剩余工作见[控制布线记录](control-analog-routing.md)。当前不是投板完成稿。
+
+## UART A 源端检查点（2026-11-13）
+
+完成 U1 到 UART A 转换器的 TX/RX，保留关键高速铜形状，整理 C17/C18 及局部地返回。新增 UARTSource 精确网类和 5 个标准回流孔；一般 DRC 0、未连接 45、parity 0，连接尚未清零。详见[UART 源端记录](uart-source-routing.md)。

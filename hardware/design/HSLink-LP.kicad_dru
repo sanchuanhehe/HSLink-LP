@@ -60,3 +60,10 @@
  (condition "A.Type == 'Via' && A.hasNetclass('U1Signal') && A.NetName == 'VIO_EN' && A.Position_X >= 142.8525mm && A.Position_X <= 142.8725mm && A.Position_Y >= 105.89mm && A.Position_Y <= 105.91mm")
  (constraint via_diameter (min 0.5mm) (opt 0.5mm) (max 0.5mm))
  (constraint hole_size (min 0.25mm) (opt 0.25mm) (max 0.25mm)))
+
+# Four MCU-side UART source nets only. New vias prefer 0.50/0.25;
+# retain already-reviewed 0.60/0.30 vias. No target-side/power/GND exception.
+(rule "MCU UART source signal vias"
+ (condition "A.Type == 'Via' && A.hasNetclass('UARTSource')")
+ (constraint via_diameter (min 0.5mm) (opt 0.5mm) (max 0.6mm))
+ (constraint hole_size (min 0.25mm) (opt 0.25mm) (max 0.3mm)))
