@@ -39,3 +39,11 @@
 # IC pin necks and USB breakout lengths additionally require geometric review.
 
 (rule "Power zone necks" (condition "A.Type == 'Zone' && A.hasNetclass('MainPower')") (constraint connection_width (min 1.2mm)))
+
+# U1-only I/O fanout, local X=35..50 / Y=27..41 mm (aux origin 88,61).
+# Signal vias may be 0.50/0.25 here; global/power/ground/thermal remain 0.60/0.30.
+# 0.45/0.20 is not enabled until a specific congested location is reviewed.
+(rule "U1 IO staggered fanout vias"
+ (condition "A.Type == 'Via' && A.hasNetclass('U1Signal') && A.Position_X >= 123mm && A.Position_X <= 138mm && A.Position_Y >= 88mm && A.Position_Y <= 102mm")
+ (constraint via_diameter (min 0.5mm) (opt 0.5mm) (max 0.5mm))
+ (constraint hole_size (min 0.25mm) (opt 0.25mm) (max 0.25mm)))

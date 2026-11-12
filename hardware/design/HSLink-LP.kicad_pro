@@ -743,6 +743,25 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "U1Signal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -1218,6 +1237,106 @@
       {
         "netclass": "Crystal",
         "pattern": "XTALO"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "ADC_VREF"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "BOOT0"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "BOOT1"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "CC_INTn"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "FAULTn"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "I2C_SCL"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "I2C_SDA"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "NRST_DRIVE"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "NTRST_DRIVE"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "Net-(U1B-PA28{slash}I2C3.SDA{slash}SPI1.MISO{slash}XPI0.CA_D0{slash}TRGM0.P04)"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "Net-(U1B-PA29{slash}I2C3.SCL{slash}SPI1.MOSI{slash}XPI0.CA_D2{slash}TRGM0.P05{slash}USB0.OC)"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "POWER_REQ"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "SIG_ARM_REQ"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "SPARE_GPIO"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "SPI_CS"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "SWD_DIR"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "SYS_RESETn"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "TCK_MCU"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "TDI_MCU"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "TDO_MCU"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "UART_A_RX"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "UART_A_TX"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "UART_B_RX"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "UART_B_TX"
+      },
+      {
+        "netclass": "U1Signal",
+        "pattern": "VIO_EN"
       }
     ]
   },

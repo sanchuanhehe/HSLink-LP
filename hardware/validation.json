@@ -3429,7 +3429,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-13",
-    "stage": "core_auxiliary_power_usb_crystal",
+    "stage": "u1_staggered_fanout_and_peripheral_power",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3447,9 +3447,9 @@
     },
     "drc": {
       "general_violations": 0,
-      "unconnected_items": 209,
+      "unconnected_items": 164,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/full-board-2026-11-12/power-stage-drc.json"
+      "report": "hardware/design/reports/u1-fanout-2026-11-13/swd-branches-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3459,18 +3459,19 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "cac62cd361aa066f155b9e2ced334046ad8d5082be0057c14e20a26ff4b90a26",
-      "hardware/design/HSLink-LP.kicad_pro": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
-      "hardware/design/HSLink-LP.kicad_dru": "42d15db28f00cd6fe9821b5d99579bf0cfa440cae11776b800d25e9aadd5337c",
-      "docs/pcb-layout.md": "bfb852835c97c87f4170d1efd3026271bb26b0a7674d0740ca3ee962d651a2bc"
+      "hardware/design/HSLink-LP.kicad_pcb": "33dbd307be00b8beeb327bad0a6e2d29b49fdf19976a7c3ddbe97c81590fd3e8",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "49d293db1695622175f3ce68adeeb7c543291b4f80c866f172d1a328273b57d0",
+      "docs/u1-fanout.md": "6203b317c82d76aefddd5b6d41c1bda0fd8b979353731d5b445b026ff40f9b5a",
+      "docs/pcb-layout.md": "0e7464d93c0e51fb2679a77efa064f0a3f3d39ccd5b8aaac0aedf0ceb52f296f",
+      "docs/kicad-integration.md": "e70c3ff2265409644cdee490a54097fee4b1dedf09677f63e7d43c6df40920c2"
     },
-    "report_directory": "hardware/design/reports/full-board-2026-11-12",
+    "report_directory": "hardware/design/reports/u1-fanout-2026-11-13",
     "remaining": [
-      "peripheral 3.3V and U402 input",
-      "40MHz debug and direction control",
-      "dual UART and low-speed controls",
-      "VIO/ADC/interlock cross-block routes",
-      "final copper return/neck, assembly and manufacturing review"
+      "complete cross-block debug/DIR/UART/control/analog routes",
+      "review decoupling return loops after local cap relocation",
+      "final plane/DRC/netlist/assembly checks after zero unrouted",
+      "40MHz,1A,140nA and calibrated VIO hardware acceptance"
     ],
     "status": "INCOMPLETE",
     "geometry": {
@@ -3549,7 +3550,8 @@
     },
     "visual_review": "正反面铜与丝印已查看；最终3D装配仍待当前PCB全部布线结束后复查",
     "procurement_bom_delta_cny": 0,
-    "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested"
+    "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
+    "geometry_previous_stage_note": "geometry 字段保留 8c146c4 的 USB/晶振历史检查，当前 U1 检查见 u1_fanout；不能把历史 PCB 哈希当作当前整板验证。"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -3810,5 +3812,808 @@
       "hardware/design/reports/structure-compact-2026-11-12/freecad-appearance.json": "6e727e80d1ad1a482aaa64667d039160ad8adda50675d30aa246c25fbec4e64d",
       "hardware/design/reports/structure-compact-2026-11-12/freecad-appearance.png": "d38223f5dc2344693ebd570a751c62a6f24d5f7bd0bf85a91d5bcd248c80a87e"
     }
+  },
+  "u1_fanout": {
+    "date": "2026-11-13",
+    "status": "LOCAL_FANOUT_CHECKED_BOARD_INCOMPLETE",
+    "hardware_performance_verified": false,
+    "comparison_baseline": "8c146c4",
+    "used_io_pads": 27,
+    "distinct_io_nets": 25,
+    "all_used_io_have_F_copper_to_via": true,
+    "intentional_NC": [
+      26
+    ],
+    "USB_crystal_signal_vias": 0,
+    "via_sizes": {
+      "0.60/0.30": 294,
+      "0.50/0.25": 30
+    },
+    "smallest_used_signal_via_mm": [
+      0.5,
+      0.25
+    ],
+    "045_020_used": false,
+    "global_manufacturing_floor_unchanged": true,
+    "classes": 12,
+    "netclass_patterns": 142,
+    "production_rule_positive_negative_checks_passed": true,
+    "composite_Debug_Analog_preserved": true,
+    "all_pad_net_groups_unchanged": true,
+    "planes": {
+      "In1.Cu": {
+        "zones": 1,
+        "filled_outlines": 1,
+        "tracks": 0,
+        "non_GND_zones": 0
+      },
+      "In2.Cu": {
+        "zones": 1,
+        "filled_outlines": 1,
+        "tracks": 0,
+        "non_GND_zones": 0
+      }
+    },
+    "local_reference_coverage": {
+      "F.Cu": {
+        "reference": "In1.Cu",
+        "count": 637,
+        "via_transition_excluded": 178,
+        "unsupported": []
+      },
+      "B.Cu": {
+        "reference": "In2.Cu",
+        "count": 174,
+        "via_transition_excluded": 125,
+        "unsupported": []
+      }
+    },
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 164,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/u1-fanout-2026-11-13/swd-branches-drc.json"
+    },
+    "io_exit_details": [
+      {
+        "pin": 1,
+        "net": "SIG_ARM_REQ",
+        "position": [
+          40.05,
+          32.8
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              37.7,
+              31.4
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            31.2
+          ],
+          "distance_mm": 1.7117
+        }
+      },
+      {
+        "pin": 2,
+        "net": "UART_A_TX",
+        "position": [
+          40.05,
+          33.2
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              36.9,
+              32.05
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            31.2
+          ],
+          "distance_mm": 1.2379
+        }
+      },
+      {
+        "pin": 3,
+        "net": "UART_A_RX",
+        "position": [
+          40.05,
+          33.6
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              37.7,
+              32.7
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            31.2
+          ],
+          "distance_mm": 2.2672
+        }
+      },
+      {
+        "pin": 4,
+        "net": "VIO_EN",
+        "position": [
+          40.05,
+          34.0
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              36.9,
+              33.35
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            31.2
+          ],
+          "distance_mm": 2.3308
+        }
+      },
+      {
+        "pin": 7,
+        "net": "BOOT1",
+        "position": [
+          40.05,
+          35.2
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              37.7,
+              35.3
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            35.65
+          ],
+          "distance_mm": 1.7357
+        }
+      },
+      {
+        "pin": 8,
+        "net": "BOOT0",
+        "position": [
+          40.05,
+          35.6
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              36.9,
+              35.95
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            35.65
+          ],
+          "distance_mm": 0.9487
+        }
+      },
+      {
+        "pin": 11,
+        "net": "UART_B_RX",
+        "position": [
+          40.05,
+          36.8
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              37.7,
+              37.9
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            38.3,
+            39.2
+          ],
+          "distance_mm": 1.4318
+        }
+      },
+      {
+        "pin": 12,
+        "net": "UART_B_TX",
+        "position": [
+          40.05,
+          37.2
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              36.9,
+              38.55
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            36.0,
+            39.5
+          ],
+          "distance_mm": 1.3086
+        }
+      },
+      {
+        "pin": 13,
+        "net": "SYS_RESETn",
+        "position": [
+          40.8,
+          37.95
+        ],
+        "direct_tracks": 2,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              39.2,
+              38.2
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            38.3,
+            39.2
+          ],
+          "distance_mm": 1.3454
+        }
+      },
+      {
+        "pin": 18,
+        "net": "FAULTn",
+        "position": [
+          42.8,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              42.8,
+              39.65
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.8,
+            41.1
+          ],
+          "distance_mm": 2.4703
+        }
+      },
+      {
+        "pin": 19,
+        "net": "SPARE_GPIO",
+        "position": [
+          43.2,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              43.3,
+              40.6
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.8,
+            41.1
+          ],
+          "distance_mm": 1.5811
+        }
+      },
+      {
+        "pin": 20,
+        "net": "NRST_DRIVE",
+        "position": [
+          43.6,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              43.8,
+              39.65
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.8,
+            41.1
+          ],
+          "distance_mm": 1.7614
+        }
+      },
+      {
+        "pin": 21,
+        "net": "NTRST_DRIVE",
+        "position": [
+          44.0,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              44.3,
+              40.6
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.8,
+            41.1
+          ],
+          "distance_mm": 0.7071
+        }
+      },
+      {
+        "pin": 22,
+        "net": "TDI_MCU",
+        "position": [
+          44.4,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              44.8,
+              39.65
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.8,
+            41.1
+          ],
+          "distance_mm": 1.45
+        }
+      },
+      {
+        "pin": 23,
+        "net": "TDO_MCU",
+        "position": [
+          44.8,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              45.3,
+              40.6
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            46.0,
+            40.6
+          ],
+          "distance_mm": 0.7
+        }
+      },
+      {
+        "pin": 24,
+        "net": "TCK_MCU",
+        "position": [
+          45.2,
+          37.95
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              45.8,
+              39.65
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            46.0,
+            40.6
+          ],
+          "distance_mm": 0.9708
+        }
+      },
+      {
+        "pin": 25,
+        "net": "SPI_CS",
+        "position": [
+          45.95,
+          37.2
+        ],
+        "direct_tracks": 2,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              46.8,
+              38.6
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            48.5,
+            37.6
+          ],
+          "distance_mm": 1.9723
+        }
+      },
+      {
+        "pin": 27,
+        "net": "ADC_VREF",
+        "position": [
+          45.95,
+          36.4
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              46.79,
+              36.92
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            48.5,
+            37.6
+          ],
+          "distance_mm": 1.8402
+        }
+      },
+      {
+        "pin": 37,
+        "net": "POWER_REQ",
+        "position": [
+          45.2,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              45.9,
+              30.5
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            47.4,
+            30.8
+          ],
+          "distance_mm": 1.5297
+        }
+      },
+      {
+        "pin": 38,
+        "net": "SWD_DIR",
+        "position": [
+          44.8,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              45.4,
+              29.4
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            46.3,
+            28.8
+          ],
+          "distance_mm": 1.0817
+        }
+      },
+      {
+        "pin": 39,
+        "net": "Net-(U1B-PA29{slash}I2C3.SCL{slash}SPI1.MOSI{slash}XPI0.CA_D2{slash}TRGM0.P05{slash}USB0.OC)",
+        "position": [
+          44.4,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              44.9,
+              30.5
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.4,
+            28.4
+          ],
+          "distance_mm": 2.1587
+        }
+      },
+      {
+        "pin": 40,
+        "net": "Net-(U1B-PA28{slash}I2C3.SDA{slash}SPI1.MISO{slash}XPI0.CA_D0{slash}TRGM0.P04)",
+        "position": [
+          44.0,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              44.4,
+              29.4
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.4,
+            28.4
+          ],
+          "distance_mm": 1.0
+        }
+      },
+      {
+        "pin": 41,
+        "net": "TCK_MCU",
+        "position": [
+          43.6,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              43.9,
+              30.5
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.4,
+            28.4
+          ],
+          "distance_mm": 2.1587
+        }
+      },
+      {
+        "pin": 42,
+        "net": "SPI_CS",
+        "position": [
+          43.2,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              43.4,
+              29.4
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            44.4,
+            28.4
+          ],
+          "distance_mm": 1.4142
+        }
+      },
+      {
+        "pin": 46,
+        "net": "I2C_SCL",
+        "position": [
+          41.6,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              41.199999,
+              29.9
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            39.5,
+            31.0
+          ],
+          "distance_mm": 2.0248
+        }
+      },
+      {
+        "pin": 47,
+        "net": "I2C_SDA",
+        "position": [
+          41.2,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              40.65,
+              30.7
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            39.5,
+            31.0
+          ],
+          "distance_mm": 1.1885
+        }
+      },
+      {
+        "pin": 48,
+        "net": "CC_INTn",
+        "position": [
+          40.8,
+          32.05
+        ],
+        "direct_tracks": 1,
+        "local_F_connected_vias": [
+          {
+            "position": [
+              40.1,
+              29.9
+            ],
+            "diameter": 0.5,
+            "drill": 0.25
+          }
+        ],
+        "nearest_GND_via": {
+          "position": [
+            39.5,
+            31.0
+          ],
+          "distance_mm": 1.253
+        }
+      }
+    ],
+    "visual_review": [
+      "top-u1.png",
+      "bottom-u1.png",
+      "in1-u1.png",
+      "in2-u1.png"
+    ],
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "33dbd307be00b8beeb327bad0a6e2d29b49fdf19976a7c3ddbe97c81590fd3e8",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "49d293db1695622175f3ce68adeeb7c543291b4f80c866f172d1a328273b57d0",
+      "docs/u1-fanout.md": "6203b317c82d76aefddd5b6d41c1bda0fd8b979353731d5b445b026ff40f9b5a",
+      "docs/pcb-layout.md": "0e7464d93c0e51fb2679a77efa064f0a3f3d39ccd5b8aaac0aedf0ceb52f296f",
+      "docs/kicad-integration.md": "e70c3ff2265409644cdee490a54097fee4b1dedf09677f63e7d43c6df40920c2"
+    },
+    "report_directory": "hardware/design/reports/u1-fanout-2026-11-13",
+    "reports_sha256": {
+      "hardware/design/reports/u1-fanout-2026-11-13/bottom-u1.png": "eb5f3f4de5cda1668b0ec5ce46167b8e2062825703a1bfe8256b9892f34f70f0",
+      "hardware/design/reports/u1-fanout-2026-11-13/repeated-constraint-regression.json": "13e53e1277d0e413b679053cef1d295f2a1009fbcde8aa5e68643f8be6ff7861",
+      "hardware/design/reports/u1-fanout-2026-11-13/in2-u1.png": "44ba15675ef929a7f625b517aed7dccde5fb32c5924b09a0dac60cb8660ec434",
+      "hardware/design/reports/u1-fanout-2026-11-13/top-u1.png": "3a205998bc07eb62e98bb0bff2191bf833c8f891d29f323d5bcdb18e48cbab63",
+      "hardware/design/reports/u1-fanout-2026-11-13/in1-u1.png": "a91364d3ace78b51a9b31902ac3cf60ff2f17cf9b5fbad2dbea333a6d7f5cfb3",
+      "hardware/design/reports/u1-fanout-2026-11-13/production-via-rule-summary.json": "f120aee73e9ecfab1c009e4c08a1551abcc3c596285fb80c36aaed5ace2877d3",
+      "hardware/design/reports/u1-fanout-2026-11-13/fanout-audit.json": "eb5f3c3b1a79b531c405cb93516311f423d1afc9dacce56740b55e71acb45414",
+      "hardware/design/reports/u1-fanout-2026-11-13/swd-branches-drc.json": "8c7b60c7dfacfa01b97ed87d06c50cbf8660a1f95401dbada3a0ed20391e378d"
+    },
+    "cost_delta_CNY_per_board": 0,
+    "cost_delta_CNY_ten_boards": 0,
+    "fabrication_requote_pending": true,
+    "remaining": [
+      "complete cross-block debug/DIR/UART/control/analog routes",
+      "review decoupling return loops after local cap relocation",
+      "final plane/DRC/netlist/assembly checks after zero unrouted",
+      "40MHz,1A,140nA and calibrated VIO hardware acceptance"
+    ],
+    "settings_regression_recovered_again": true,
+    "regression_writer_identified": false,
+    "temporary_tools_committed": false
   }
 }
