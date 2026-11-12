@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前211封装，0一般DRC违规、0原理图parity、113未连接项；759个原焊盘网络保持。以reset_uart_routing源哈希为准，尚不能投板。",
+    "validation": "当前211封装，0一般DRC违规、0原理图parity、90未连接项；759个原焊盘网络保持。以usb_control_routing源哈希为准，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -2442,7 +2442,7 @@
       ]
     }
   },
-  "historical_sections_note": "旧审查、仿真及各阶段布局记录保留其时点与哈希；最新PCB见pcb_completion/reset_uart_routing，结构各阶段按自身源哈希记录，最终PCB装配待更新；历史摘要不是当前整板验收。",
+  "historical_sections_note": "旧审查、仿真及各阶段布局记录保留其时点与哈希；最新PCB见pcb_completion/reset_uart_routing，结构各阶段按自身源哈希记录，最终PCB装配待更新；历史摘要不是当前整板验收。 最新PCB进度以usb_control_routing源哈希和pcb_completion为准；旧阶段检查仅对应各自快照。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -3429,7 +3429,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-13",
-    "stage": "reset_and_uart_target_paths",
+    "stage": "usb_control_and_i2c_partial",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3447,9 +3447,9 @@
     },
     "drc": {
       "general_violations": 0,
-      "unconnected_items": 113,
+      "unconnected_items": 90,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/reset-uart-routing-2026-11-13/final-drc.json"
+      "report": "hardware/design/reports/usb-control-routing-2026-11-13/final-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3459,20 +3459,19 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "c0ab8320178335a3e2317b5284d4a1511e4384cc35606e4b8d933f1bd8f0247a",
+      "hardware/design/HSLink-LP.kicad_pcb": "2cc56819428cfdc3aece277ac86a3518d3f1a3387b13906dc425a5ba73c81764",
       "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
       "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
-      "docs/reset-uart-routing.md": "c6dcf902d2b335609cb8fabcca633d0f2451dbea92f5165b4ef5722a3fe82fc7",
-      "docs/debug-routing.md": "0900b13602756b053ffcac2a0034166ac4fb7d7595e68223f93faf0c00c2201e",
-      "docs/pcb-layout.md": "2de77120ba213689d26cac602194e06551e2246b58ffea7165693804c1607432",
-      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055"
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
+      "docs/pcb-layout.md": "07c334111107d8f8628690a3067a69cc2af17b02470db5137ec0862ad56ca975",
+      "docs/usb-control-routing.md": "c126dfcb4b8c9890ae0ba840a23775590b9579fa215067ba4b042ffff01e5f61"
     },
-    "report_directory": "hardware/design/reports/reset-uart-routing-2026-11-13",
+    "report_directory": "hardware/design/reports/usb-control-routing-2026-11-13",
     "remaining": [
-      "UART source/controller routes, FSA enables, NTRST drive",
-      "ADC/VIO, interlock, I2C, FAULTn and other control routes",
-      "final PDN/plane/SI/DFM and latest PCB assembly after zero unrouted",
-      "40MHz,1A,140nA at20-30C and calibrated VIO±1% hardware acceptance"
+      "TPS63810 I2C支路、USB_TIER源端及FAULTn跨模块",
+      "UART源端、启动/控制、VIO/ADC和互锁",
+      "最终SI/PDN/DFM与最新PCB结构装配",
+      "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
     ],
     "status": "INCOMPLETE",
     "geometry": {
@@ -3549,10 +3548,10 @@
       "tracks": 633,
       "vias": 258
     },
-    "visual_review": "实际顶/底局部、顶层整板及两内层铜图已查看；未完成最终制造/装配验收",
+    "visual_review": "已查看USB、I2C、U1正反面局部及两内层、整板正反面导出图；未完成最终制造/结构装配验收",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
-    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见reset_uart_routing，旧快照不能作为当前整板验收。"
+    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见usb_control_routing，旧快照不能作为当前整板验收。"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -6065,5 +6064,961 @@
     "completed": "复位驱动级至目标侧，双串口转换器至FSA/接口，输入偏置与FSA局部使能短接",
     "remaining": "NTRST驱动、跨模块UART/使能/互锁/VIO/ADC/I2C/启动/故障等；最终装配与性能验收",
     "visual_review": "实际顶/底局部、顶层整板及两内层铜图已查看；未完成最终制造/装配验收"
+  },
+  "usb_control_routing": {
+    "date": "2026-11-13",
+    "baseline": "7437510",
+    "status": "INCOMPLETE",
+    "method": "明确坐标的pcbnew原生路径、原生间距预检查、KiCad CLI重新加载/填铜/完整DRC",
+    "pad_net_groups_unchanged": true,
+    "pad_objects": 759,
+    "footprints": 211,
+    "tracks": 1357,
+    "vias": 456,
+    "via_sizes": {
+      "(0.6, 0.3)": 420,
+      "(0.5, 0.25)": 36
+    },
+    "moved_footprints": [
+      {
+        "ref": "C25",
+        "old": [
+          56.0,
+          7.3
+        ],
+        "new": [
+          56.2,
+          7.3
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "protected_signal_geometry_unchanged": [
+      "USB_DP",
+      "USB_DM",
+      "XTALI",
+      "XTALO",
+      "SWD_MCU",
+      "TCK_MCU",
+      "SWD_DIR",
+      "TDI_MCU",
+      "TDO_MCU",
+      "F_SWDIO",
+      "F_TCK",
+      "F_TDI",
+      "F_TDO",
+      "DUT_SWDIO",
+      "DUT_TCK",
+      "DUT_TDI",
+      "DUT_TDO"
+    ],
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 90,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/usb-control-routing-2026-11-13/final-drc.json"
+    },
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "inner_signal_tracks": 0,
+    "added_ground_return_vias": 13,
+    "new_signal_power_via_returns": [
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          27.175,
+          15.5
+        ],
+        "ground_xy": [
+          25.8625,
+          18.375
+        ],
+        "distance_mm": 3.1604,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          41.199999,
+          29.2
+        ],
+        "ground_xy": [
+          39.5,
+          31.0
+        ],
+        "distance_mm": 2.4759,
+        "size_drill_mm": [
+          0.5,
+          0.25
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          54.2,
+          20.4
+        ],
+        "ground_xy": [
+          54.6,
+          22.8
+        ],
+        "distance_mm": 2.4331,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          52.4,
+          20.4
+        ],
+        "ground_xy": [
+          52.19,
+          22.6
+        ],
+        "distance_mm": 2.21,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "FAULTn",
+        "xy": [
+          54.55,
+          8.1
+        ],
+        "ground_xy": [
+          53.0,
+          9.4
+        ],
+        "distance_mm": 2.023,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "USB_5V",
+        "xy": [
+          56.0,
+          8.95
+        ],
+        "ground_xy": [
+          57.8,
+          8.2
+        ],
+        "distance_mm": 1.95,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          62.05,
+          20.95
+        ],
+        "ground_xy": [
+          63.8,
+          21.8
+        ],
+        "distance_mm": 1.9455,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          29.8,
+          15.5
+        ],
+        "ground_xy": [
+          30.0,
+          13.6
+        ],
+        "distance_mm": 1.9105,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          62.05,
+          20.0
+        ],
+        "ground_xy": [
+          63.75,
+          19.225
+        ],
+        "distance_mm": 1.8683,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "CC_INTn",
+        "xy": [
+          29.0,
+          10.0
+        ],
+        "ground_xy": [
+          30.8,
+          9.55
+        ],
+        "distance_mm": 1.8554,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          40.65,
+          29.55
+        ],
+        "ground_xy": [
+          39.5,
+          31.0
+        ],
+        "distance_mm": 1.8507,
+        "size_drill_mm": [
+          0.5,
+          0.25
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J101-CC1)",
+        "xy": [
+          30.2,
+          7.8
+        ],
+        "ground_xy": [
+          30.8,
+          9.55
+        ],
+        "distance_mm": 1.85,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "CC_INTn",
+        "xy": [
+          37.0,
+          18.5
+        ],
+        "ground_xy": [
+          35.7,
+          19.7
+        ],
+        "distance_mm": 1.7692,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          55.6,
+          21.3
+        ],
+        "ground_xy": [
+          56.8,
+          20.0
+        ],
+        "distance_mm": 1.7692,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "USB_ILIM",
+        "xy": [
+          54.47,
+          6.099999
+        ],
+        "ground_xy": [
+          53.8,
+          4.5
+        ],
+        "distance_mm": 1.7346,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "FAULTn",
+        "xy": [
+          55.175,
+          5.55
+        ],
+        "ground_xy": [
+          53.8,
+          4.5
+        ],
+        "distance_mm": 1.7301,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          36.3,
+          18.2
+        ],
+        "ground_xy": [
+          35.7,
+          19.7
+        ],
+        "distance_mm": 1.6155,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "CC_INTn",
+        "xy": [
+          39.55,
+          29.5
+        ],
+        "ground_xy": [
+          39.5,
+          31.0
+        ],
+        "distance_mm": 1.5008,
+        "size_drill_mm": [
+          0.5,
+          0.25
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "CC_INTn",
+        "xy": [
+          33.5,
+          9.5
+        ],
+        "ground_xy": [
+          34.8,
+          8.8
+        ],
+        "distance_mm": 1.4765,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          51.5,
+          21.3
+        ],
+        "ground_xy": [
+          52.19,
+          22.6
+        ],
+        "distance_mm": 1.4718,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(U102-dVdt)",
+        "xy": [
+          51.4,
+          11.2
+        ],
+        "ground_xy": [
+          50.75,
+          9.925
+        ],
+        "distance_mm": 1.4311,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          38.2,
+          21.8
+        ],
+        "ground_xy": [
+          36.9,
+          21.4
+        ],
+        "distance_mm": 1.3601,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J101-CC2)",
+        "xy": [
+          41.25,
+          5.0
+        ],
+        "ground_xy": [
+          40.3,
+          4.099999
+        ],
+        "distance_mm": 1.3086,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(U102-dVdt)",
+        "xy": [
+          51.4,
+          6.099999
+        ],
+        "ground_xy": [
+          52.1,
+          5.0
+        ],
+        "distance_mm": 1.3038,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "CC_INTn",
+        "xy": [
+          37.5,
+          22.5
+        ],
+        "ground_xy": [
+          36.9,
+          21.4
+        ],
+        "distance_mm": 1.253,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          35.0,
+          10.0
+        ],
+        "ground_xy": [
+          34.8,
+          8.8
+        ],
+        "distance_mm": 1.2166,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          33.6,
+          8.6
+        ],
+        "ground_xy": [
+          34.8,
+          8.8
+        ],
+        "distance_mm": 1.2166,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "USB_ILIM",
+        "xy": [
+          57.2,
+          9.25
+        ],
+        "ground_xy": [
+          57.8,
+          8.2
+        ],
+        "distance_mm": 1.2093,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          34.2,
+          16.98
+        ],
+        "ground_xy": [
+          33.0,
+          16.98
+        ],
+        "distance_mm": 1.2,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "VBUS_RAW",
+        "xy": [
+          31.55,
+          5.5
+        ],
+        "ground_xy": [
+          32.2,
+          6.45
+        ],
+        "distance_mm": 1.1511,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J101-CC2)",
+        "xy": [
+          30.2,
+          8.7
+        ],
+        "ground_xy": [
+          30.8,
+          9.55
+        ],
+        "distance_mm": 1.0404,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          23.5,
+          15.5
+        ],
+        "ground_xy": [
+          23.525,
+          14.5
+        ],
+        "distance_mm": 1.0003,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "CC_INTn",
+        "xy": [
+          37.0,
+          10.8
+        ],
+        "ground_xy": [
+          38.0,
+          10.8
+        ],
+        "distance_mm": 1.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J101-CC1)",
+        "xy": [
+          44.25,
+          5.0
+        ],
+        "ground_xy": [
+          45.0,
+          4.5
+        ],
+        "distance_mm": 0.9014,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(U101-VBUSD)",
+        "xy": [
+          32.825,
+          5.95
+        ],
+        "ground_xy": [
+          32.2,
+          6.45
+        ],
+        "distance_mm": 0.8004,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(U101-VBUSD)",
+        "xy": [
+          31.5,
+          9.8
+        ],
+        "ground_xy": [
+          30.8,
+          9.55
+        ],
+        "distance_mm": 0.7433,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      }
+    ],
+    "reference_sampling": {
+      "step_mm": 0.2,
+      "not_si_validation": true,
+      "nets": {
+        "GND": {
+          "samples": 16,
+          "in_reference": 16,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "CC_INTn": {
+          "samples": 187,
+          "in_reference": 148,
+          "own_via_void": 39,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "USB_5V": {
+          "samples": 38,
+          "in_reference": 22,
+          "own_via_void": 16,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "FAULTn": {
+          "samples": 38,
+          "in_reference": 25,
+          "own_via_void": 13,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "I2C_SCL": {
+          "samples": 405,
+          "in_reference": 340,
+          "own_via_void": 65,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "I2C_SDA": {
+          "samples": 345,
+          "in_reference": 300,
+          "own_via_void": 45,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(U102-dVdt)": {
+          "samples": 47,
+          "in_reference": 35,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "VBUS_RAW": {
+          "samples": 78,
+          "in_reference": 68,
+          "own_via_void": 10,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(J101-CC1)": {
+          "samples": 121,
+          "in_reference": 109,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(J101-CC2)": {
+          "samples": 108,
+          "in_reference": 96,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "USB_ILIM": {
+          "samples": 112,
+          "in_reference": 98,
+          "own_via_void": 14,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(U101-VBUSD)": {
+          "samples": 46,
+          "in_reference": 33,
+          "own_via_void": 13,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "USB_TIER1": {
+          "samples": 14,
+          "in_reference": 14,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "USB_TIER2": {
+          "samples": 14,
+          "in_reference": 14,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(Q102-D)": {
+          "samples": 23,
+          "in_reference": 23,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(Q101-D)": {
+          "samples": 21,
+          "in_reference": 21,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        }
+      }
+    },
+    "rules_and_assignments_unchanged": true,
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "2cc56819428cfdc3aece277ac86a3518d3f1a3387b13906dc425a5ba73c81764",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
+      "docs/pcb-layout.md": "07c334111107d8f8628690a3067a69cc2af17b02470db5137ec0862ad56ca975",
+      "docs/usb-control-routing.md": "c126dfcb4b8c9890ae0ba840a23775590b9579fa215067ba4b042ffff01e5f61"
+    },
+    "reports_sha256": {
+      "hardware/design/reports/usb-control-routing-2026-11-13/bottom-i2c.png": "c57ea19ddba225bc2b0a08315549f7a5d88f001782fa36c4f9709e331d593a60",
+      "hardware/design/reports/usb-control-routing-2026-11-13/bottom-u1.png": "a982d0e0ea60b29303f22b693df7d83d537491a15f8c0d7f473d7dc95709e260",
+      "hardware/design/reports/usb-control-routing-2026-11-13/bottom-usb.png": "a03df9e6b2600f5f8bf5394bfc897cda971f889915d1904427f6cc3ff071d98d",
+      "hardware/design/reports/usb-control-routing-2026-11-13/bottom-whole.png": "a947eeb4816918ae5e3116053b3f570f74b38fbd099aaa1d51c959c5291ef64a",
+      "hardware/design/reports/usb-control-routing-2026-11-13/bottom.svg": "7589981c100ec6fe938b54e531c44d8310c68fa47fb39809d6a7f6496a84b32e",
+      "hardware/design/reports/usb-control-routing-2026-11-13/cc-drc.json": "83f0859f17207f2f32d3f439185a7bbd0fd78d5d928e9d98a856055f5266c0c8",
+      "hardware/design/reports/usb-control-routing-2026-11-13/final-drc.json": "39ff39bd5df80758fc55f79f635eff07ecc4bb7220c5ddce5c197304e77e9326",
+      "hardware/design/reports/usb-control-routing-2026-11-13/i2c-dac-drc.json": "bbc1cf68866dd5e88f8d6544293e298ef892621c2b6322f596e7cf377479e485",
+      "hardware/design/reports/usb-control-routing-2026-11-13/i2c-local-drc.json": "3682cd79c1eb93445cfa4f739bacb9e05065d4d232a8915038a8dbabd00cfd37",
+      "hardware/design/reports/usb-control-routing-2026-11-13/i2c-mcu-drc.json": "7f8e29b24bb8deda2635c9ff99492d33a65e4aa71900872fea1d92b007d99a48",
+      "hardware/design/reports/usb-control-routing-2026-11-13/in1-i2c.png": "fa72f97655af8c5dd09508cf7227454a737ec9ebb9fd5dada9d1f37b19b8891d",
+      "hardware/design/reports/usb-control-routing-2026-11-13/in1-u1.png": "27a1d9dcdae1adc821010a0639fe78b33411b25e7b181a1ac36a969220dc32af",
+      "hardware/design/reports/usb-control-routing-2026-11-13/in1.svg": "ef4377d20843c5ba2f0cb26def28de9b93f9bdbdd0d8ee8bfc12b2970b626ce0",
+      "hardware/design/reports/usb-control-routing-2026-11-13/in2-i2c.png": "4cf242dd0191609af5f5233ce8666cf864f21c8c57523f132980bed058197d6c",
+      "hardware/design/reports/usb-control-routing-2026-11-13/in2-u1.png": "5aa9cef818a4c4ea83d8138e4acdb8ab62439be30225838e1be49268049fffa7",
+      "hardware/design/reports/usb-control-routing-2026-11-13/in2.svg": "245c041395f781139a33ed1719f305867635f91050a06d767a60aa8ef4082b78",
+      "hardware/design/reports/usb-control-routing-2026-11-13/local-drc.json": "44ddfa62cc6c35dbac0219c782167e57588f9654c026a3cf5ace2f53d75e7d61",
+      "hardware/design/reports/usb-control-routing-2026-11-13/neck-fix-drc.json": "1dac56fb42b7d2886a973b4a759edd3cc22e7b35fc4f61bfd8ec2b886798f2e5",
+      "hardware/design/reports/usb-control-routing-2026-11-13/routing-audit.json": "9c57cc6a1ce2f30cbf925edeb7c2c853c8e73b0fa1f71127ad7bfa2957ff7b30",
+      "hardware/design/reports/usb-control-routing-2026-11-13/top-i2c.png": "50eaf538fb133d83dca8ff375b6c0d6cd61a4350582fca88d6e6285056730340",
+      "hardware/design/reports/usb-control-routing-2026-11-13/top-u1.png": "f9a51445c56d246d248c7fe02782f2b23ef58a41eb82c26c39c632207b64bfd1",
+      "hardware/design/reports/usb-control-routing-2026-11-13/top-usb.png": "181677e3dc680d7199c70cf28398569669376c951867df16d203ba80d2806397",
+      "hardware/design/reports/usb-control-routing-2026-11-13/top-whole.png": "153bb8e43ab43a562ccd71b1bc7e450512f36844ddb8fcc3f2e33bfc2304a7b2",
+      "hardware/design/reports/usb-control-routing-2026-11-13/top.svg": "c7bce85f8504160ef745fd088504c5da3be6330f6f1b4100c5c2e581a7e74d6b"
+    },
+    "visual_review": "已查看USB、I2C、U1正反面局部及两内层、整板正反面导出图；未完成最终制造/结构装配验收",
+    "procurement_bom_delta_cny_per_board": 0,
+    "procurement_bom_delta_cny_10_boards": 0,
+    "fabrication_quote_updated": false,
+    "remaining": [
+      "TPS63810 I2C支路、USB_TIER源端及FAULTn跨模块",
+      "UART源端、启动/控制、VIO/ADC和互锁",
+      "最终SI/PDN/DFM与最新PCB结构装配",
+      "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
+    ]
   }
 }
