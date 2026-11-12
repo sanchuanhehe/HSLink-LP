@@ -3607,5 +3607,25 @@
     "procurement_bom_delta_cny": 0,
     "new_drc_ignores": 0,
     "report_directory": "hardware/design/reports/constraint-restore-2026-11-13"
+  },
+  "mechanical_geometry_commit": {
+    "date": "2026-11-13",
+    "scope": "降低铜柱、连续围边、USB圆滑避让、盖板开口与结构配色；PCB及原理图不变",
+    "status": "geometry_checked_not_physical_fit_tested",
+    "report": "hardware/design/reports/structure-compact-2026-11-12/mechanical-checks.json",
+    "limits": [
+      "使用旧PCB快照，最新布局需复核",
+      "实际USB线缆、拨杆全行程和制造公差待验证"
+    ],
+    "source_sha256": {
+      "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
+      "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
+      "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
+      "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416",
+      "hardware/design/mechanical/hslink_lp_lid.step": "461c354327dd3d36940704c5ebc829eab038b4cf4fe14020f612593907af84d6",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "6b6c7870974a2f99eb69d29a263f34ebcc763ff2604586f26256b853bc451693",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "ce3cb5641bcd264600c69e23d7940c6879c3d9415a4ff66452033e84bdcac8cf",
+      "hardware/design/mechanical/hslink_lp.py": "3e3faecc09ca6f9c7990987f649b16f05049bbbbe5681b03660784e3da5e53dd"
+    }
   }
 }

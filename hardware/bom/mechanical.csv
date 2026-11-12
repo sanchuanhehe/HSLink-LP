@@ -1,7 +1,7 @@
 item,description,quantity_per_unit,quantity_for_10,unit_price_cny,status
 BASE,参数化底座 118x88mm 建议PETG,1,10,,工程样件；未核价
 LID,参数化透明盖 118x88x2mm 建议PC,1,10,,工程样件；未核价
-STANDOFF,M3公母螺柱 柱长16mm 公端6mm 对边5.5mm,4,40,,尺寸方案；待完整型号及样件确认
+STANDOFF,M3黄铜公母螺柱 柱长12mm 公端6mm 对边5.5mm,4,40,,尺寸方案；待完整型号及样件确认
 SCREW,M3x6上盖螺钉 建模头径5.5mm,4,40,,尺寸方案；待完整型号及核价
 WASHER,M3垫圈 外径7mm 内径3.2mm 厚0.5mm,4,40,,尺寸方案；待核价
 INSERT,M3热熔螺母 名义外径4.6mm 长4mm,4,40,,待完整型号及热熔试片；未核价
