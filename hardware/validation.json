@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "scope": "测试点原理图任务完成后，继续接口与器件布局整理、测试点PCB局部手工连接及结构探测包络检查；整板布线未完成",
-  "checked_at": "2026-11-11T19:23:19.425707+00:00",
+  "checked_at": "2026-11-13T04:45:26.330193+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -377,7 +377,7 @@
     "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
     "hardware/design/Control.kicad_sch": "0e7f71461fca33fcbcf75f0a4fab188cf4ee874a227f7a0ff4352603adae18dc",
     "hardware/design/Disconnect.kicad_sch": "0226386ae30328d96c3bf7fadbc8ccb45b1c229876c7ed7c57908acaefe7523d",
-    "hardware/design/HSLink-LP.kicad_pro": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
+    "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
     "hardware/design/HSLink-LP.kicad_sch": "bd0c9b6032643fde59b51d51a0b9a4d83bbdd3fd380803e5aebec6cb9a269c9b",
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
@@ -424,10 +424,10 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "bfb852835c97c87f4170d1efd3026271bb26b0a7674d0740ca3ee962d651a2bc",
+    "docs/pcb-layout.md": "dcc6d078ba4a3ec267f488a9fb09db3f40e765faa7862b5aeed5cb49de68fb9d",
     "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
-    "hardware/design/HSLink-LP.kicad_pcb": "cac62cd361aa066f155b9e2ced334046ad8d5082be0057c14e20a26ff4b90a26",
-    "hardware/design/HSLink-LP.kicad_dru": "42d15db28f00cd6fe9821b5d99579bf0cfa440cae11776b800d25e9aadd5337c",
+    "hardware/design/HSLink-LP.kicad_pcb": "e513fb4d3e3b5360875b3ac86dc3595c1a6e2381238410f15d3b048570ce3ebf",
+    "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
     "hardware/design/mechanical/README.md": "e025ab3784c73a571abfacc2d7a75b57a8c290a5f126fb37c969abd5a527f0fc",
     "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
     "hardware/design/mechanical/hslink_lp.py": "7aaaaadc6b4bbc97ba0848ed059a8ad4dc71ee248dcbf346984ba372c6e39e29",
@@ -445,7 +445,9 @@
     "hardware/design/libraries/models/WUSB3801_envelope.step": "f989c588b8fd1e67f032a2626c2ecce2d6f29cf8a6f3d41acb138529ac5bcef3",
     ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc",
     "docs/test-points.md": "9e8486ebaa13406c79f8e624a7dff5764890aba07b85e362c57daf1dadc963bc",
-    "hardware/bom/pcb-features.csv": "c9fbbd210c968560a271024fec36da17edac478db327d0ce86880d5ded2c52ba"
+    "hardware/bom/pcb-features.csv": "c9fbbd210c968560a271024fec36da17edac478db327d0ce86880d5ded2c52ba",
+    "docs/u1-fanout.md": "68f3b5744e08a38c40f9fe9557c8552a17a99442f3c4efe7e338a092d1699ad9",
+    "docs/control-analog-routing.md": "4d709e1d73240a3d4e209820fe3704951b0f122f5083ac45b73179ee9885cbb9"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -3429,7 +3431,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-13",
-    "stage": "usb_control_and_i2c_partial",
+    "stage": "control_analog_and_reset_partial",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3447,9 +3449,9 @@
     },
     "drc": {
       "general_violations": 0,
-      "unconnected_items": 90,
+      "unconnected_items": 70,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/usb-control-routing-2026-11-13/final-drc.json"
+      "report": "hardware/design/reports/control-analog-routing-2026-11-13/final-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3459,18 +3461,19 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "2cc56819428cfdc3aece277ac86a3518d3f1a3387b13906dc425a5ba73c81764",
+      "hardware/design/HSLink-LP.kicad_pcb": "e513fb4d3e3b5360875b3ac86dc3595c1a6e2381238410f15d3b048570ce3ebf",
       "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
       "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
       "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
-      "docs/pcb-layout.md": "07c334111107d8f8628690a3067a69cc2af17b02470db5137ec0862ad56ca975",
-      "docs/usb-control-routing.md": "c126dfcb4b8c9890ae0ba840a23775590b9579fa215067ba4b042ffff01e5f61"
+      "docs/pcb-layout.md": "dcc6d078ba4a3ec267f488a9fb09db3f40e765faa7862b5aeed5cb49de68fb9d",
+      "docs/u1-fanout.md": "68f3b5744e08a38c40f9fe9557c8552a17a99442f3c4efe7e338a092d1699ad9",
+      "docs/control-analog-routing.md": "4d709e1d73240a3d4e209820fe3704951b0f122f5083ac45b73179ee9885cbb9"
     },
-    "report_directory": "hardware/design/reports/usb-control-routing-2026-11-13",
+    "report_directory": "hardware/design/reports/control-analog-routing-2026-11-13",
     "remaining": [
-      "TPS63810 I2C支路、USB_TIER源端及FAULTn跨模块",
-      "UART源端、启动/控制、VIO/ADC和互锁",
-      "最终SI/PDN/DFM与最新PCB结构装配",
+      "U1相关UART/VIO_EN/SIG_ARM_REQ/FAULTn/POWER_REQ/NTRST_DRIVE/SPI_CS跨模块",
+      "VREF_SENSE_IN、使能/互锁、继电器线圈及其余低速控制",
+      "最终SI/PDN/DFM与最新PCB结构C装配",
       "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
     ],
     "status": "INCOMPLETE",
@@ -3548,10 +3551,10 @@
       "tracks": 633,
       "vias": 258
     },
-    "visual_review": "已查看USB、I2C、U1正反面局部及两内层、整板正反面导出图；未完成最终制造/结构装配验收",
+    "visual_review": "已人工查看U1正反面、启动/复位、模拟局部、整板正反面及两内层实际导出；最终STEP装配未检查",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
-    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见usb_control_routing，旧快照不能作为当前整板验收。"
+    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见control_analog_routing，旧快照不能作为当前整板验收。"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -7018,6 +7021,592 @@
       "TPS63810 I2C支路、USB_TIER源端及FAULTn跨模块",
       "UART源端、启动/控制、VIO/ADC和互锁",
       "最终SI/PDN/DFM与最新PCB结构装配",
+      "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
+    ]
+  },
+  "control_analog_routing": {
+    "baseline": "9239ef0",
+    "pad_objects": 759,
+    "pad_net_groups_unchanged": true,
+    "protected_signal_geometry_unchanged": [
+      "USB_DP",
+      "USB_DM",
+      "XTALI",
+      "XTALO",
+      "SWD_MCU",
+      "TCK_MCU",
+      "SWD_DIR",
+      "TDI_MCU",
+      "TDO_MCU",
+      "F_SWDIO",
+      "F_TCK",
+      "F_TDI",
+      "F_TDO",
+      "DUT_SWDIO",
+      "DUT_TCK",
+      "DUT_TDI",
+      "DUT_TDO"
+    ],
+    "footprints": 211,
+    "moved_footprints": [
+      {
+        "ref": "C18",
+        "old": [
+          34.5,
+          38.5
+        ],
+        "new": [
+          32.25,
+          37.725
+        ],
+        "angle_old_new": [
+          180.0,
+          90.0
+        ]
+      },
+      {
+        "ref": "C20",
+        "old": [
+          45.0,
+          43.3
+        ],
+        "new": [
+          43.1,
+          43.3
+        ],
+        "angle_old_new": [
+          -90.0,
+          -90.0
+        ]
+      },
+      {
+        "ref": "C19",
+        "old": [
+          43.1,
+          43.3
+        ],
+        "new": [
+          41.3,
+          44.4
+        ],
+        "angle_old_new": [
+          -90.0,
+          -90.0
+        ]
+      },
+      {
+        "ref": "C17",
+        "old": [
+          31.3,
+          38.5
+        ],
+        "new": [
+          30.6,
+          37.725
+        ],
+        "angle_old_new": [
+          180.0,
+          90.0
+        ]
+      },
+      {
+        "ref": "R4",
+        "old": [
+          31.5,
+          35.0
+        ],
+        "new": [
+          31.5,
+          34.5
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "tracks": 1510,
+    "vias": 471,
+    "via_sizes": {
+      "(0.6, 0.3)": 436,
+      "(0.5, 0.25)": 35
+    },
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "new_signal_power_via_returns": [
+      {
+        "net": "SYS_RESETn",
+        "xy": [
+          38.8,
+          38.6
+        ],
+        "ground_xy": [
+          40.199999,
+          41.075
+        ],
+        "distance_mm": 2.8435,
+        "size_drill_mm": [
+          0.5,
+          0.25
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SYS_RESETn",
+        "xy": [
+          49.7,
+          45.2
+        ],
+        "ground_xy": [
+          51.0,
+          46.5
+        ],
+        "distance_mm": 1.8385,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          65.5,
+          14.4
+        ],
+        "ground_xy": [
+          67.2,
+          14.3
+        ],
+        "distance_mm": 1.7029,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SYS_RESETn",
+        "xy": [
+          29.3,
+          44.2
+        ],
+        "ground_xy": [
+          29.1,
+          42.6
+        ],
+        "distance_mm": 1.6125,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "ADC_VREF",
+        "xy": [
+          46.9,
+          37.6
+        ],
+        "ground_xy": [
+          48.5,
+          37.6
+        ],
+        "distance_mm": 1.6,
+        "size_drill_mm": [
+          0.5,
+          0.25
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SDA",
+        "xy": [
+          65.3,
+          21.7
+        ],
+        "ground_xy": [
+          64.1,
+          22.725
+        ],
+        "distance_mm": 1.5782,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SPARE_GPIO",
+        "xy": [
+          44.3,
+          45.35
+        ],
+        "ground_xy": [
+          45.75,
+          44.8
+        ],
+        "distance_mm": 1.5508,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SYS_RESETn",
+        "xy": [
+          29.8,
+          40.9
+        ],
+        "ground_xy": [
+          31.025,
+          41.75
+        ],
+        "distance_mm": 1.491,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          62.8,
+          18.3
+        ],
+        "ground_xy": [
+          63.75,
+          19.225
+        ],
+        "distance_mm": 1.3259,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "BOOT1",
+        "xy": [
+          9.5,
+          10.125
+        ],
+        "ground_xy": [
+          10.3,
+          9.325
+        ],
+        "distance_mm": 1.1314,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "/内置电源、VIO 与输出来源选择/VIO_DAC",
+        "xy": [
+          61.475,
+          27.2
+        ],
+        "ground_xy": [
+          62.0,
+          26.2
+        ],
+        "distance_mm": 1.1294,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SYS_RESETn",
+        "xy": [
+          29.8,
+          39.7
+        ],
+        "ground_xy": [
+          28.9,
+          39.7
+        ],
+        "distance_mm": 0.9,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SPARE_GPIO",
+        "xy": [
+          44.8,
+          47.7
+        ],
+        "ground_xy": [
+          44.0,
+          48.0
+        ],
+        "distance_mm": 0.8544,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SYS_RESETn",
+        "xy": [
+          5.5,
+          20.125
+        ],
+        "ground_xy": [
+          4.7,
+          20.125
+        ],
+        "distance_mm": 0.8,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "I2C_SCL",
+        "xy": [
+          67.2,
+          15.1
+        ],
+        "ground_xy": [
+          67.2,
+          14.3
+        ],
+        "distance_mm": 0.8,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "/内置电源、VIO 与输出来源选择/VIO_DAC",
+        "xy": [
+          57.4,
+          22.65
+        ],
+        "ground_xy": [
+          57.5,
+          23.425
+        ],
+        "distance_mm": 0.7814,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      }
+    ],
+    "date": "2026-11-13",
+    "status": "INCOMPLETE",
+    "method": "关键模拟/去耦/出口手工指定路径；低速控制局部搜索后人工整理；pcbnew原生碰撞预查、KiCad CLI重载/填铜/完整DRC",
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 70,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/control-analog-routing-2026-11-13/final-drc.json"
+    },
+    "inner_signal_tracks": 0,
+    "reference_sampling": {
+      "step_mm": 0.2,
+      "not_si_validation": true,
+      "nets": {
+        "GND": {
+          "samples": 46,
+          "in_reference": 46,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(U1A-VDD_OTPCAP)": {
+          "samples": 29,
+          "in_reference": 26,
+          "own_via_void": 3,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "DUT_VREF": {
+          "samples": 81,
+          "in_reference": 74,
+          "own_via_void": 0,
+          "own_pth_void": 7,
+          "unexplained": []
+        },
+        "BOOT0": {
+          "samples": 63,
+          "in_reference": 63,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "SYS_RESETn": {
+          "samples": 838,
+          "in_reference": 795,
+          "own_via_void": 37,
+          "own_pth_void": 6,
+          "unexplained": []
+        },
+        "ADC_VREF": {
+          "samples": 48,
+          "in_reference": 41,
+          "own_via_void": 7,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "BOOT1": {
+          "samples": 447,
+          "in_reference": 435,
+          "own_via_void": 7,
+          "own_pth_void": 5,
+          "unexplained": []
+        },
+        "Net-(U1A-VDD_PMCCAP)": {
+          "samples": 18,
+          "in_reference": 18,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "SPARE_GPIO": {
+          "samples": 53,
+          "in_reference": 41,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "I2C_SCL": {
+          "samples": 212,
+          "in_reference": 188,
+          "own_via_void": 24,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "I2C_SDA": {
+          "samples": 174,
+          "in_reference": 165,
+          "own_via_void": 9,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "/内置电源、VIO 与输出来源选择/VIO_DAC": {
+          "samples": 86,
+          "in_reference": 73,
+          "own_via_void": 13,
+          "own_pth_void": 0,
+          "unexplained": []
+        }
+      }
+    },
+    "rules_and_assignments_unchanged": true,
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "e513fb4d3e3b5360875b3ac86dc3595c1a6e2381238410f15d3b048570ce3ebf",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
+      "docs/pcb-layout.md": "dcc6d078ba4a3ec267f488a9fb09db3f40e765faa7862b5aeed5cb49de68fb9d",
+      "docs/u1-fanout.md": "68f3b5744e08a38c40f9fe9557c8552a17a99442f3c4efe7e338a092d1699ad9",
+      "docs/control-analog-routing.md": "4d709e1d73240a3d4e209820fe3704951b0f122f5083ac45b73179ee9885cbb9"
+    },
+    "reports_sha256": {
+      "hardware/design/reports/control-analog-routing-2026-11-13/current-drc.json": "07fdc037e5bd4f8310096d41295b4b07fcc9511f99f86ebe31743c29905eff45",
+      "hardware/design/reports/control-analog-routing-2026-11-13/routing-audit.json": "67fbd6dd08bb7d5d56507588a58aebae4631c97845dc7e905e4e739a7b05a3bf",
+      "hardware/design/reports/control-analog-routing-2026-11-13/boot-drc.json": "c08b7f2737a550076fca852d816c2833b9e3302d0f25da10e9d9c41138b3d72f",
+      "hardware/design/reports/control-analog-routing-2026-11-13/bottom.png": "a0f878dd7afa8b18e4556d448724187780104c774737259ce5a95051aba7f6ba",
+      "hardware/design/reports/control-analog-routing-2026-11-13/final-drc.json": "90ce1c597500b52e73320cb5ed5969eea0624f67ec9817cf03600cf0e56a42b8",
+      "hardware/design/reports/control-analog-routing-2026-11-13/analog-local-drc.json": "59a4e9235e206170bb008921b5d941d2369081ee807a0e55376b2dc94ba71515",
+      "hardware/design/reports/control-analog-routing-2026-11-13/u1-front.png": "72e24f25eb68015bce666fb4bc9aa778f14b071a6245d99708e7d23d64e583e4",
+      "hardware/design/reports/control-analog-routing-2026-11-13/in2.png": "60a242a8866fab339d682d34cb804e472f84d326f2a62efe074234542dfdde1e",
+      "hardware/design/reports/control-analog-routing-2026-11-13/top.png": "6f0ace52197e90d6cedcd7a8a739c4e9a5ccf9e84daf516d26dd4055983fa57e",
+      "hardware/design/reports/control-analog-routing-2026-11-13/in1.png": "220046b38bbe228e04730671b69897c4af8677591d0cc1f4c6522c505702d1dd",
+      "hardware/design/reports/control-analog-routing-2026-11-13/south-drc.json": "caa333063376f3f25309d11db951623dbc9b056f0a08a271ae1a341be615e4b9",
+      "hardware/design/reports/control-analog-routing-2026-11-13/i2c-power-drc.json": "8ca8854ee5352c77baf196a41e9da099abbc2d12cf36682172bc25068b0a65a2",
+      "hardware/design/reports/control-analog-routing-2026-11-13/reset-complete-drc.json": "b8cd86c90782139b9370d38e9991853ebef0be89039fdd583914dfb44d186e80",
+      "hardware/design/reports/control-analog-routing-2026-11-13/analog-front.png": "ac1c8150388f1cb98f7846757edd59b86723b59451415a67a124954ec847b611",
+      "hardware/design/reports/control-analog-routing-2026-11-13/control-front.png": "69a4d79e0c541d2593912a23337f636cac49f68e86c25f8b4b82bbcca3a3cfb7",
+      "hardware/design/reports/control-analog-routing-2026-11-13/analog-back.png": "33ba6f92cd5583e4f1660de6a0c36cc1026cb1c339144d73c0ec1479a5cc821e",
+      "hardware/design/reports/control-analog-routing-2026-11-13/reset-escape-drc.json": "d1199a25c4ce0ff55e96d8236391ff4d41e2acfad546b874006b71b79f25487c",
+      "hardware/design/reports/control-analog-routing-2026-11-13/u1-back.png": "e478107b75b8b01719b67e011b8a2012f163cffe52c058975dcb9e90a18cf242",
+      "hardware/design/reports/control-analog-routing-2026-11-13/layers/HSLink-LP-B_Cu.svg": "873c84210063f4a0d96c019558acc0350f51248a5d7076f6d2f84549ed07fc96",
+      "hardware/design/reports/control-analog-routing-2026-11-13/layers/HSLink-LP-In2_Cu.svg": "838a3ad92575128cf852383f4539983cfb5e70288b325f4bef1876b563a11f69",
+      "hardware/design/reports/control-analog-routing-2026-11-13/layers/HSLink-LP-F_Cu.svg": "2d4d19961d733044aae6c723077662031d370ea9aebb7f4f280a71ff11a0d280",
+      "hardware/design/reports/control-analog-routing-2026-11-13/layers/HSLink-LP-In1_Cu.svg": "948ea7f74bb5e7e68de682d31b7f0cb5e6f7085e9c192ffc5b83106e534548f2"
+    },
+    "visual_review": "已人工查看U1正反面、启动/复位、模拟局部、整板正反面及两内层实际导出；最终STEP装配未检查",
+    "procurement_bom_delta_cny_per_board": 0,
+    "procurement_bom_delta_cny_10_boards": 0,
+    "fabrication_quote_updated": false,
+    "remaining": [
+      "U1相关UART/VIO_EN/SIG_ARM_REQ/FAULTn/POWER_REQ/NTRST_DRIVE/SPI_CS跨模块",
+      "VREF_SENSE_IN、使能/互锁、继电器线圈及其余低速控制",
+      "最终SI/PDN/DFM与最新PCB结构C装配",
       "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
     ]
   }
