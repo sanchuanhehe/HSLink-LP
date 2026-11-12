@@ -47,3 +47,9 @@
  (condition "A.Type == 'Via' && A.hasNetclass('U1Signal') && A.Position_X >= 123mm && A.Position_X <= 138mm && A.Position_Y >= 88mm && A.Position_Y <= 102mm")
  (constraint via_diameter (min 0.5mm) (opt 0.5mm) (max 0.5mm))
  (constraint hole_size (min 0.25mm) (opt 0.25mm) (max 0.25mm)))
+
+# NRST_DRIVE is the low-speed gate drive of the open-drain reset stage, not a
+# 40 MHz data/clock path. Two local crossings avoid the PDN and debug routes.
+# Keep Debug width and all manufacturing minima; all other Debug nets stay at 2.
+(rule "Reset driver control crossing" (condition "A.NetName == 'NRST_DRIVE'")
+ (constraint via_count (max 4)))
