@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前204电气位号+4孔+3基准点；0一般几何违规、0原理图parity问题、399未连接项。新增10点局部端点连通，不能投板。以layout_testpoint_continuation源哈希为准。",
+    "validation": "当前211封装，0一般DRC违规、0原理图parity、113未连接项；759个原焊盘网络保持。以reset_uart_routing源哈希为准，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -2442,7 +2442,7 @@
       ]
     }
   },
-  "historical_sections_note": "旧审查/仿真/layout_review/testpoint_review保留其检查时点与哈希；最新PCB/结构状态以layout_testpoint_continuation及pcb/mechanical为准，不能把历史摘要当作当前整板验收。",
+  "historical_sections_note": "旧审查、仿真及各阶段布局记录保留其时点与哈希；最新PCB见pcb_completion/reset_uart_routing，结构各阶段按自身源哈希记录，最终PCB装配待更新；历史摘要不是当前整板验收。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -3429,7 +3429,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-13",
-    "stage": "debug_data_clock_dir_and_reset_driver_routing",
+    "stage": "reset_and_uart_target_paths",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3447,9 +3447,9 @@
     },
     "drc": {
       "general_violations": 0,
-      "unconnected_items": 146,
+      "unconnected_items": 113,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/debug-routing-2026-11-13/final-drc.json"
+      "report": "hardware/design/reports/reset-uart-routing-2026-11-13/final-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3459,18 +3459,18 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "48b34440965706242ee22f08abcfe258a262472907e4be8fbdf25f771c384ffa",
+      "hardware/design/HSLink-LP.kicad_pcb": "c0ab8320178335a3e2317b5284d4a1511e4384cc35606e4b8d933f1bd8f0247a",
       "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
       "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
-      "docs/debug-routing.md": "f8a51831feea06399afba086e2efca7711330859967b5cd4c2d88a5711edb446",
-      "docs/u1-fanout.md": "20036ce5d0878b9499dd6d17b61e828be48972b52ff9085833c6d302d6b5357b",
-      "docs/pcb-layout.md": "5b3420d217679dda4dbd38c0608824a463236ea5d3cd4a6807545c59580a7629",
-      "docs/test-points.md": "6ac5a5b92305bd688fb44e737f65b3f9f71d245a527898bb8636c80a80ae15d5"
+      "docs/reset-uart-routing.md": "c6dcf902d2b335609cb8fabcca633d0f2451dbea92f5165b4ef5722a3fe82fc7",
+      "docs/debug-routing.md": "0900b13602756b053ffcac2a0034166ac4fb7d7595e68223f93faf0c00c2201e",
+      "docs/pcb-layout.md": "2de77120ba213689d26cac602194e06551e2246b58ffea7165693804c1607432",
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055"
     },
-    "report_directory": "hardware/design/reports/debug-routing-2026-11-13",
+    "report_directory": "hardware/design/reports/reset-uart-routing-2026-11-13",
     "remaining": [
-      "FSA enables and target-side reset disconnect routes",
-      "UART, ADC/VIO, interlock, remaining FAULTn groups and other control routes",
+      "UART source/controller routes, FSA enables, NTRST drive",
+      "ADC/VIO, interlock, I2C, FAULTn and other control routes",
       "final PDN/plane/SI/DFM and latest PCB assembly after zero unrouted",
       "40MHz,1A,140nA at20-30C and calibrated VIO±1% hardware acceptance"
     ],
@@ -3549,10 +3549,10 @@
       "tracks": 633,
       "vias": 258
     },
-    "visual_review": "本阶段顶层/底层、FSA/ARM20局部及两内层实际导出图已查看；最终3D装配仍待整板连接完成后复查",
+    "visual_review": "实际顶/底局部、顶层整板及两内层铜图已查看；未完成最终制造/装配验收",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
-    "geometry_previous_stage_note": "geometry保留8c146c4的USB/晶振历史检查；当前检查见debug_routing，历史PCB哈希不是当前整板验证。"
+    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见reset_uart_routing，旧快照不能作为当前整板验收。"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -5039,5 +5039,1031 @@
     },
     "report_directory": "hardware/design/reports/debug-routing-2026-11-13",
     "temporary_tools_committed": false
+  },
+  "reset_uart_routing": {
+    "date": "2026-11-13",
+    "baseline": "6670e83",
+    "status": "INCOMPLETE",
+    "method": "明确坐标的pcbnew原生路径；原生间距预检查及CLI完整DRC，未使用普通自动布线器",
+    "pad_net_groups_unchanged": true,
+    "pad_objects": 759,
+    "footprints": 211,
+    "tracks": 1218,
+    "vias": 408,
+    "via_sizes": {
+      "(0.6, 0.3)": 375,
+      "(0.5, 0.25)": 33
+    },
+    "moved_footprints": [
+      {
+        "ref": "C59",
+        "old": [
+          35.5,
+          64.8
+        ],
+        "new": [
+          43.0,
+          64.8
+        ],
+        "angle_old_new": [
+          180.0,
+          0.0
+        ]
+      }
+    ],
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 113,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/reset-uart-routing-2026-11-13/final-drc.json"
+    },
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "inner_signal_tracks": 0,
+    "added_ground_return_vias": 19,
+    "new_signal_power_via_returns": [
+      {
+        "net": "P3V6_SW",
+        "xy": [
+          38.8,
+          65.0
+        ],
+        "ground_xy": [
+          39.2,
+          62.85
+        ],
+        "distance_mm": 2.1869,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "P3V3",
+        "xy": [
+          51.0,
+          55.05
+        ],
+        "ground_xy": [
+          53.15,
+          55.425
+        ],
+        "distance_mm": 2.1825,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_B_TX",
+        "xy": [
+          75.6,
+          69.8
+        ],
+        "ground_xy": [
+          73.6,
+          69.1
+        ],
+        "distance_mm": 2.119,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J803-Pin_4)",
+        "xy": [
+          55.8,
+          65.9
+        ],
+        "ground_xy": [
+          54.2,
+          64.7
+        ],
+        "distance_mm": 2.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_B_RX",
+        "xy": [
+          77.9,
+          70.0
+        ],
+        "ground_xy": [
+          79.5,
+          68.9
+        ],
+        "distance_mm": 1.9416,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_RX",
+        "xy": [
+          56.9,
+          70.0
+        ],
+        "ground_xy": [
+          58.5,
+          68.9
+        ],
+        "distance_mm": 1.9416,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_NRST",
+        "xy": [
+          36.9,
+          64.3
+        ],
+        "ground_xy": [
+          36.0,
+          62.8
+        ],
+        "distance_mm": 1.7493,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_TX",
+        "xy": [
+          54.6,
+          69.8
+        ],
+        "ground_xy": [
+          53.2,
+          69.0
+        ],
+        "distance_mm": 1.6125,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_TX",
+        "xy": [
+          49.8,
+          56.5
+        ],
+        "ground_xy": [
+          51.0,
+          57.5
+        ],
+        "distance_mm": 1.562,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_NRST",
+        "xy": [
+          37.5,
+          65.85
+        ],
+        "ground_xy": [
+          37.6,
+          67.4
+        ],
+        "distance_mm": 1.5532,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_A_TX",
+        "xy": [
+          47.5,
+          48.8
+        ],
+        "ground_xy": [
+          48.0,
+          50.2
+        ],
+        "distance_mm": 1.4866,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J803-Pin_4)",
+        "xy": [
+          59.5,
+          65.9
+        ],
+        "ground_xy": [
+          59.2,
+          64.5
+        ],
+        "distance_mm": 1.4318,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J804-Pin_4)",
+        "xy": [
+          76.8,
+          65.9
+        ],
+        "ground_xy": [
+          77.15,
+          64.575
+        ],
+        "distance_mm": 1.3704,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "P3V6_SW",
+        "xy": [
+          42.225,
+          65.8
+        ],
+        "ground_xy": [
+          41.0,
+          65.2
+        ],
+        "distance_mm": 1.364,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "P3V3",
+        "xy": [
+          48.5,
+          55.05
+        ],
+        "ground_xy": [
+          47.3,
+          55.4
+        ],
+        "distance_mm": 1.25,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "DUT_NTRST",
+        "xy": [
+          39.2,
+          67.699999
+        ],
+        "ground_xy": [
+          38.0,
+          68.0
+        ],
+        "distance_mm": 1.2369,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_B_RTS",
+        "xy": [
+          75.4,
+          65.87
+        ],
+        "ground_xy": [
+          75.0,
+          64.7
+        ],
+        "distance_mm": 1.2365,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_TX",
+        "xy": [
+          49.8,
+          53.7
+        ],
+        "ground_xy": [
+          48.6,
+          53.7
+        ],
+        "distance_mm": 1.2,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_B_RTS",
+        "xy": [
+          82.05,
+          64.4
+        ],
+        "ground_xy": [
+          81.6,
+          65.5
+        ],
+        "distance_mm": 1.1885,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_RTS",
+        "xy": [
+          54.4,
+          65.87
+        ],
+        "ground_xy": [
+          54.2,
+          64.7
+        ],
+        "distance_mm": 1.187,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "Net-(J804-Pin_4)",
+        "xy": [
+          80.5,
+          65.9
+        ],
+        "ground_xy": [
+          81.6,
+          65.5
+        ],
+        "distance_mm": 1.1705,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_RTS",
+        "xy": [
+          58.05,
+          64.4
+        ],
+        "ground_xy": [
+          59.2,
+          64.5
+        ],
+        "distance_mm": 1.1543,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_TX",
+        "xy": [
+          49.2,
+          67.4
+        ],
+        "ground_xy": [
+          48.2,
+          67.4
+        ],
+        "distance_mm": 1.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_B_RX",
+        "xy": [
+          86.6,
+          70.5
+        ],
+        "ground_xy": [
+          87.6,
+          70.5
+        ],
+        "distance_mm": 1.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_A_RTS",
+        "xy": [
+          56.2,
+          59.8
+        ],
+        "ground_xy": [
+          56.2,
+          60.8
+        ],
+        "distance_mm": 1.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_A_RX",
+        "xy": [
+          62.6,
+          70.5
+        ],
+        "ground_xy": [
+          63.6,
+          70.5
+        ],
+        "distance_mm": 1.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_A_TX",
+        "xy": [
+          50.05,
+          46.75
+        ],
+        "ground_xy": [
+          51.0,
+          46.5
+        ],
+        "distance_mm": 0.9823,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_B_DTR",
+        "xy": [
+          70.675,
+          59.8
+        ],
+        "ground_xy": [
+          69.7,
+          59.8
+        ],
+        "distance_mm": 0.975,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_B_RTS",
+        "xy": [
+          78.675,
+          59.8
+        ],
+        "ground_xy": [
+          77.7,
+          59.8
+        ],
+        "distance_mm": 0.975,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_A_DTR",
+        "xy": [
+          46.675,
+          59.8
+        ],
+        "ground_xy": [
+          45.699999,
+          59.8
+        ],
+        "distance_mm": 0.975,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_B_DTR",
+        "xy": [
+          74.05,
+          57.55
+        ],
+        "ground_xy": [
+          75.0,
+          57.5
+        ],
+        "distance_mm": 0.9513,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_B_RTS",
+        "xy": [
+          82.05,
+          57.55
+        ],
+        "ground_xy": [
+          83.0,
+          57.5
+        ],
+        "distance_mm": 0.9513,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_A_DTR",
+        "xy": [
+          50.05,
+          57.55
+        ],
+        "ground_xy": [
+          51.0,
+          57.5
+        ],
+        "distance_mm": 0.9513,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "UART_A_RTS",
+        "xy": [
+          58.05,
+          57.55
+        ],
+        "ground_xy": [
+          59.0,
+          57.5
+        ],
+        "distance_mm": 0.9513,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "F_UART_B_TX",
+        "xy": [
+          71.3,
+          67.4
+        ],
+        "ground_xy": [
+          71.975,
+          68.0
+        ],
+        "distance_mm": 0.9031,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      }
+    ],
+    "reference_sampling": {
+      "step_mm": 0.2,
+      "limits": "只检查线中心的地铜覆盖；同网过孔半径0.61mm及同网PTH包围盒+0.2mm的反焊盘单独列出，不代表阻抗或回流电感验证。",
+      "nets": {
+        "GND": {
+          "samples": 39,
+          "in_reference": 39,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "P3V3": {
+          "samples": 347,
+          "in_reference": 331,
+          "own_via_void": 16,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "P3V6_SW": {
+          "samples": 65,
+          "in_reference": 50,
+          "own_via_void": 15,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_B_TX": {
+          "samples": 32,
+          "in_reference": 32,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_B_TX": {
+          "samples": 144,
+          "in_reference": 131,
+          "own_via_void": 13,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_B_DTR": {
+          "samples": 39,
+          "in_reference": 27,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_B_DTR": {
+          "samples": 57,
+          "in_reference": 57,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "DUT_NTRST": {
+          "samples": 176,
+          "in_reference": 165,
+          "own_via_void": 6,
+          "own_pth_void": 5,
+          "unexplained": []
+        },
+        "DUT_NRST": {
+          "samples": 62,
+          "in_reference": 57,
+          "own_via_void": 0,
+          "own_pth_void": 5,
+          "unexplained": []
+        },
+        "UART_A_TX": {
+          "samples": 45,
+          "in_reference": 33,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_A_ON": {
+          "samples": 14,
+          "in_reference": 14,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_A_TX": {
+          "samples": 147,
+          "in_reference": 122,
+          "own_via_void": 25,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_B_RX": {
+          "samples": 207,
+          "in_reference": 193,
+          "own_via_void": 14,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_B_RTS": {
+          "samples": 39,
+          "in_reference": 27,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_A_DTR": {
+          "samples": 39,
+          "in_reference": 27,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_A_DTR": {
+          "samples": 72,
+          "in_reference": 72,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_NTRST": {
+          "samples": 126,
+          "in_reference": 126,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_NRST": {
+          "samples": 87,
+          "in_reference": 75,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_B_ON": {
+          "samples": 14,
+          "in_reference": 14,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "DEBUG_ON": {
+          "samples": 16,
+          "in_reference": 16,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "Net-(J803-Pin_1)": {
+          "samples": 39,
+          "in_reference": 32,
+          "own_via_void": 0,
+          "own_pth_void": 7,
+          "unexplained": []
+        },
+        "Net-(J803-Pin_2)": {
+          "samples": 31,
+          "in_reference": 23,
+          "own_via_void": 0,
+          "own_pth_void": 8,
+          "unexplained": []
+        },
+        "Net-(J803-Pin_3)": {
+          "samples": 45,
+          "in_reference": 40,
+          "own_via_void": 0,
+          "own_pth_void": 5,
+          "unexplained": []
+        },
+        "Net-(J803-Pin_4)": {
+          "samples": 74,
+          "in_reference": 55,
+          "own_via_void": 12,
+          "own_pth_void": 7,
+          "unexplained": []
+        },
+        "Net-(J804-Pin_1)": {
+          "samples": 45,
+          "in_reference": 38,
+          "own_via_void": 0,
+          "own_pth_void": 7,
+          "unexplained": []
+        },
+        "Net-(J804-Pin_2)": {
+          "samples": 37,
+          "in_reference": 29,
+          "own_via_void": 0,
+          "own_pth_void": 8,
+          "unexplained": []
+        },
+        "Net-(J804-Pin_3)": {
+          "samples": 51,
+          "in_reference": 46,
+          "own_via_void": 0,
+          "own_pth_void": 5,
+          "unexplained": []
+        },
+        "Net-(J804-Pin_4)": {
+          "samples": 80,
+          "in_reference": 60,
+          "own_via_void": 12,
+          "own_pth_void": 8,
+          "unexplained": []
+        },
+        "F_UART_B_RTS": {
+          "samples": 76,
+          "in_reference": 62,
+          "own_via_void": 14,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_A_RTS": {
+          "samples": 42,
+          "in_reference": 29,
+          "own_via_void": 13,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_A_RTS": {
+          "samples": 58,
+          "in_reference": 44,
+          "own_via_void": 14,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "F_UART_A_RX": {
+          "samples": 192,
+          "in_reference": 178,
+          "own_via_void": 14,
+          "own_pth_void": 0,
+          "unexplained": []
+        }
+      }
+    },
+    "rules_and_assignments_unchanged": true,
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "c0ab8320178335a3e2317b5284d4a1511e4384cc35606e4b8d933f1bd8f0247a",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
+      "docs/reset-uart-routing.md": "c6dcf902d2b335609cb8fabcca633d0f2451dbea92f5165b4ef5722a3fe82fc7",
+      "docs/debug-routing.md": "0900b13602756b053ffcac2a0034166ac4fb7d7595e68223f93faf0c00c2201e",
+      "docs/pcb-layout.md": "2de77120ba213689d26cac602194e06551e2246b58ffea7165693804c1607432",
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055"
+    },
+    "reports_sha256": {
+      "hardware/design/reports/reset-uart-routing-2026-11-13/routing-audit.json": "bc5350deca986557b6a8e3826d64ea154c5c3fe44161a363e5d0b180f8acae0b",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/in1-local.png": "eba2227c224669bd7b2cc337b52405da15a7b57a8d17e6ab2c6a2ba5bde1fef7",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/reset-drc.json": "210c74e726988e6d883bfbc5142d26ee862e1df36b8d68d8927016054f6011a7",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/bottom.svg": "671ed1b6ce5171dbddcaab08c7a68192253b595a250bfdb635ff533f770523d5",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/in1-whole.png": "34f82eee675055fb704ee645a541c0f202e707b23dbf9e5392c0966b2b3a94f6",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/uart-txrx-drc.json": "b1c8333df245d9b0eb309cfff9e92965ce4c6bd32215d5ef74432a8a435dc0ed",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/final-drc.json": "5b62a10cae4224bd3b2f1ac93072011cc69df5f2b169d280ec6d37250450afc0",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/in2-whole.png": "98b22259349bde072ee77fb856656f5d784c23b089986a5cc0e576b53fe8d111",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/uart-input-drc.json": "b6aac0778a30fad94ed56fead78f3f4bd87bb5aa78bdcae78f385f557c4cee5a",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/top-local.png": "3d6fe0b227e9d051f6b742be01967ef390bbb3f3ccf35bc632d79675888bcd09",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/top-whole.png": "aaa9ab02f8a4286c249da2ba6316fcf7aff75d7fd777af3fc44575ea201573d8",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/bottom-local.png": "374d92908f36493d77717c64808a6a516be99f1467887d6cdf20626b5ad43dcb",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/in2-local.png": "bfb2003e355fb6b867014948ba5edeb4f91ee8d6c20375b6beec3b273ad01e34",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/enables-local-drc.json": "627eea5d776bbad949f90292eb494ed2c51f1e5ee84696de6fa7b8f932571d83",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/uart-local-drc.json": "7d2faf05e65f29ce788c14765977702d4b994e36442e7b60753e609ffa601462",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/in1.svg": "34b4d6d21e5f9901b6b2250c51219a03b4deb185e879d14881b6e7bf243c61a2",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/top.svg": "f39d576140cd5625b01a39df2429629cadccca2290639d606b5230822917fbd5",
+      "hardware/design/reports/reset-uart-routing-2026-11-13/in2.svg": "0be90791f2a5e4f5f784470aab62f8fc2b13a3331e0853be05031e737a491f02"
+    },
+    "report_directory": "hardware/design/reports/reset-uart-routing-2026-11-13",
+    "fixed_interfaces_testpoints_unchanged": true,
+    "mechanical_C_preserved": true,
+    "assembly_pending_final_pcb": true,
+    "procurement_delta_cny_per_board": 0,
+    "procurement_delta_cny_ten_boards": 0,
+    "fabrication_requote_pending": true,
+    "hardware_performance_verified": false,
+    "temporary_tools_committed": false,
+    "completed": "复位驱动级至目标侧，双串口转换器至FSA/接口，输入偏置与FSA局部使能短接",
+    "remaining": "NTRST驱动、跨模块UART/使能/互锁/VIO/ADC/I2C/启动/故障等；最终装配与性能验收",
+    "visual_review": "实际顶/底局部、顶层整板及两内层铜图已查看；未完成最终制造/装配验收"
   }
 }
