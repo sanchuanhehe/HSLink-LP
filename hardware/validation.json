@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "scope": "测试点原理图任务完成后，继续接口与器件布局整理、测试点PCB局部手工连接及结构探测包络检查；整板布线未完成",
-  "checked_at": "2026-11-13T06:41:45.711859+08:00",
+  "checked_at": "2026-11-13T07:37:32.299183+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前211封装，0一般DRC违规、0原理图parity、45未连接项；759个原焊盘网络保持。以uart_a_source源哈希为准，尚不能投板。",
+    "validation": "当前211封装，0一般DRC违规、0原理图parity、43未连接项；759个原焊盘网络保持，U1 31个已用信号脚铜连通检查通过。以uart_b_source源哈希为准，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -8471,6 +8471,136 @@
       "docs/uart-source-routing.md": "82c73e2a3b356dbdeffba873ebff115399b826097cc38de4d2ac3a42c664d4ff",
       "docs/u1-fanout.md": "373b27c21f8c63393a15edda76f5a0d57aa75c5810533dc1de754e54a60e0f44",
       "docs/pcb-layout.md": "3aa3cfaae2a83b5a34b2aa0ed352f28590106d20c3e6278704a319b16ee71440"
+    }
+  },
+  "uart_b_source": {
+    "baseline": "dcccf66",
+    "pcb_sha256": "76c89f4ecf9f50d05adcf3eaee31ec00407eb69f0ecaea616f4bc6fd412a4f59",
+    "pad_objects": 759,
+    "pad_net_groups_unchanged": true,
+    "protected_signal_geometry_unchanged": [
+      "USB_DP",
+      "USB_DM",
+      "XTALI",
+      "XTALO",
+      "SWD_MCU",
+      "TCK_MCU",
+      "SWD_DIR",
+      "TDI_MCU",
+      "TDO_MCU",
+      "F_SWDIO",
+      "F_TCK",
+      "F_TDI",
+      "F_TDO",
+      "DUT_SWDIO",
+      "DUT_TCK",
+      "DUT_TDI",
+      "DUT_TDO"
+    ],
+    "footprints": 211,
+    "moved_footprints": [
+      {
+        "ref": "C18",
+        "old": [
+          31.9,
+          37.725
+        ],
+        "new": [
+          30.05,
+          37.725
+        ],
+        "angle_old_new": [
+          90.0,
+          90.0
+        ]
+      },
+      {
+        "ref": "C17",
+        "old": [
+          30.25,
+          37.725
+        ],
+        "new": [
+          28.4,
+          37.725
+        ],
+        "angle_old_new": [
+          90.0,
+          90.0
+        ]
+      }
+    ],
+    "tracks": 1856,
+    "vias": 552,
+    "via_sizes": {
+      "(0.6, 0.3)": 487,
+      "(0.5, 0.25)": 65
+    },
+    "inner_signal_tracks": [],
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "status": "INCOMPLETE",
+    "completed_nets_scope": [
+      "UART_B_TX U1 to R709/U709, J1 branch pending",
+      "UART_B_RX U1 to U710, J1 branch pending"
+    ],
+    "drc": {
+      "violations": 0,
+      "unconnected": 43,
+      "schematic_parity": 0
+    },
+    "netclasses": 13,
+    "netclass_assignments": 146,
+    "new_signal_via_nearest_ground_range_mm": [
+      0.7159,
+      2.125
+    ],
+    "new_signal_power_via_max_nearest_ground_mm": 2.6073,
+    "u1_copper_check": {
+      "pins_checked": 31,
+      "all_reached_planned_terminal": true,
+      "spi_cs_same_chip": "U1.25-U1.42",
+      "not_all_branches_complete": true,
+      "evidence": "design/reports/u1-uart-source-2026-11-13/b-u1-copper.json"
+    },
+    "reference_centerline_sampling": {
+      "step_mm": 0.2,
+      "unexplained": 0,
+      "not_si_validation": true
+    },
+    "visual_review": [
+      "UART/U1 F/B copper",
+      "UART/U1 In1/In2 ground",
+      "local F silkscreen"
+    ],
+    "remaining": [
+      "J1 UART B maintenance branches",
+      "FAULTn remaining branches and other control routes",
+      "VREF_SENSE_IN analog route",
+      "final silk and assembly",
+      "PDN/OTP decoupling review and hardware acceptance"
+    ],
+    "hardware_validated": false,
+    "latest_assembly_validated": false,
+    "procurement_bom_delta_cny_per_board": 0,
+    "evidence": "design/reports/u1-uart-source-2026-11-13",
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "76c89f4ecf9f50d05adcf3eaee31ec00407eb69f0ecaea616f4bc6fd412a4f59",
+      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "docs/uart-source-routing.md": "9de47dd1a9291c119bbc4b14eb82f236601cb29c231836ca9ae020eaf09882fb",
+      "docs/u1-fanout.md": "81618cc32eefef62ce481d155b635afccf8e8857ea10f70b0d40fcfa5f4d36e0",
+      "docs/pcb-layout.md": "368096371cfe105c31088c5c11d9c9eb6443e4882534ca7d7fe663427867e344"
     }
   }
 }

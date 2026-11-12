@@ -118,3 +118,7 @@ POWER_REQ、SPI_CS、VIO_EN 完整连接，ADC 顶层短连整理；新增地回
 ## UART A 源端检查点（2026-11-13）
 
 完成 U1 到 UART A 转换器的 TX/RX，保留关键高速铜形状，整理 C17/C18 及局部地返回。新增 UARTSource 精确网类和 5 个标准回流孔；一般 DRC 0、未连接 45、parity 0，连接尚未清零。详见[UART 源端记录](uart-source-routing.md)。
+
+## UART B 源端检查点（2026-11-13）
+
+完成 U1 到 UART B 转换器的 TX/RX，整理西侧 C17/C18、OTP 连接和局部回流，消除两处实际地铜窄颈，未放宽规则。U1 31 个已用信号引脚均有连续铜到后续端点；维护口及其他多分支网络仍待接通。当前一般 DRC 0、未连接 43、parity 0；PCB/结构尚未完成验收。详情见[UART 源端记录](uart-source-routing.md)。
