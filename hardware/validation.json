@@ -3550,5 +3550,62 @@
     "visual_review": "正反面铜与丝印已查看；最终3D装配仍待当前PCB全部布线结束后复查",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested"
+  },
+  "constraint_recovery": {
+    "date": "2026-11-13",
+    "baseline": "8c146c4",
+    "restored_fields": [
+      "net_settings.classes",
+      "net_settings.netclass_patterns",
+      "board.design_settings.rules.min_clearance",
+      "board.design_settings.rules.min_copper_edge_clearance",
+      "board.design_settings.rules.min_through_hole_diameter",
+      "board.design_settings.rules.min_track_width",
+      "board.design_settings.rules.min_via_diameter"
+    ],
+    "class_count": 11,
+    "pattern_count": 117,
+    "before_sha256": "a79836207c358493755c1769505dada82a9b9c92954838b798bd105a7606d4e0",
+    "after_sha256": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
+    "other_project_differences_from_baseline": false,
+    "pcb_sha256": "c3595a0df1edd2cbdddb7c9b33792905abbc58253887b4a4bc7a4c0f9ed3f785",
+    "cause": "未定位写入进程；内容形态为默认网类和制造约束重写，不属于本轮计划变更",
+    "status": "CONSTRAINTS_RESTORED_BOARD_INCOMPLETE",
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 190,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/constraint-restore-2026-11-13/current-drc.json"
+    },
+    "functional_rule_checks": {
+      "representative_membership_11_classes": true,
+      "cleared_assignments_all_default": true,
+      "production_class_rules_trigger": true,
+      "not_full_layout_or_hardware_validation": true
+    },
+    "coverage": "11 representative class assignments, production-rule positive and missing-assignment negative control; not every routed net",
+    "reload": "standard MCP disk reload and fresh KiCad 10 CLI; desktop automation timed out, GUI reopen not confirmed",
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pro": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
+      "hardware/design/HSLink-LP.kicad_dru": "42d15db28f00cd6fe9821b5d99579bf0cfa440cae11776b800d25e9aadd5337c",
+      "hardware/design/HSLink-LP.kicad_pcb": "c3595a0df1edd2cbdddb7c9b33792905abbc58253887b4a4bc7a4c0f9ed3f785",
+      "docs/kicad-integration.md": "562ffb8ceb030caf02034758591ae3a612f40614008d2372c0701ed9476e1704"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/constraint-restore-2026-11-13/class_membership.json": "eb4d8d0439055e424a3c854d03049c86a5e0bf287d8db56fee7008ca132594ed",
+      "hardware/design/reports/constraint-restore-2026-11-13/current-drc.json": "07e5a3c1ae20fbe4e27d3a0cd1de4ff81ca8cba9f4fb9b743576846e8a37bcc9",
+      "hardware/design/reports/constraint-restore-2026-11-13/negative_control.json": "b1925dc27aaae59f9a2d6e064f22f7fd858420c9b9afbc069df4d73217a67a49",
+      "hardware/design/reports/constraint-restore-2026-11-13/production_rules.json": "172f51497bd98a5e82df15272650d3364e0cf4c07cafe4e4a6ebdf044e2f9b43",
+      "hardware/design/reports/constraint-restore-2026-11-13/restore.json": "ef8657598f12bc9dc4992996d42a420d6018ad9e2ab4bc904b668be0fce66779",
+      "hardware/design/reports/constraint-restore-2026-11-13/rule-functional-summary.json": "2003b46d82d17d018f0179183012e654f7a47c424ec9ca1d3bae4d86b3b0a0e4"
+    },
+    "worktree_pcb_note": "PCB hash includes valid pending peripheral power routing after 8c146c4; not part of this documentation-only recovery commit",
+    "preserved_changes": [
+      "pending PCB routes",
+      "other-thread mechanical design and validation entries"
+    ],
+    "procurement_bom_delta_cny": 0,
+    "new_drc_ignores": 0,
+    "report_directory": "hardware/design/reports/constraint-restore-2026-11-13"
   }
 }
