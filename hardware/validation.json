@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "scope": "测试点原理图任务完成后，继续接口与器件布局整理、测试点PCB局部手工连接及结构探测包络检查；整板布线未完成",
-  "checked_at": "2026-11-13T05:28:19.342446+08:00",
+  "checked_at": "2026-11-13T06:01:56.178764+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前211封装，0一般DRC违规、0原理图parity、50未连接项；759个原焊盘网络保持。以u1_control_routing源哈希为准，尚不能投板。",
+    "validation": "当前211封装，0一般DRC违规、0原理图parity、47未连接项；759个原焊盘网络保持。以u1_final_exits源哈希为准，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -8231,5 +8231,107 @@
     "procurement_delta_cny_per_board": 0,
     "procurement_delta_cny_10_sets": 0,
     "hardware_acceptance_passed": false
+  },
+  "u1_final_exits": {
+    "baseline": "429eeef",
+    "pcb_sha256": "904387ac31a434e71f70f1928f0ba3ce9ec4da62259f92d2970831e0caac8141",
+    "pad_objects": 759,
+    "pad_net_groups_unchanged": true,
+    "protected_signal_geometry_unchanged": [
+      "USB_DP",
+      "USB_DM",
+      "XTALI",
+      "XTALO",
+      "SWD_MCU",
+      "TCK_MCU",
+      "SWD_DIR",
+      "TDI_MCU",
+      "TDO_MCU",
+      "F_SWDIO",
+      "F_TCK",
+      "F_TDI",
+      "F_TDO",
+      "DUT_SWDIO",
+      "DUT_TCK",
+      "DUT_TDI",
+      "DUT_TDO"
+    ],
+    "footprints": 211,
+    "moved_footprints": [],
+    "tracks": 1686,
+    "vias": 510,
+    "via_sizes": {
+      "(0.6, 0.3)": 474,
+      "(0.5, 0.25)": 36
+    },
+    "inner_signal_tracks": [],
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "status": "INCOMPLETE",
+    "completed_nets": [
+      "POWER_REQ",
+      "SPI_CS",
+      "VIO_EN"
+    ],
+    "drc": {
+      "violations": 0,
+      "unconnected": 47,
+      "schematic_parity": 0
+    },
+    "reference_centerline_sampling": {
+      "step_mm": 0.2,
+      "unexplained_points": 0,
+      "not_si_validation": true
+    },
+    "new_via_nearest_ground_range_mm": [
+      0.781,
+      2.2361
+    ],
+    "rule_proof": {
+      "valid": [],
+      "wrong_net": [
+        "drill_out_of_range",
+        "via_dangling",
+        "via_diameter"
+      ],
+      "outside_location": [
+        "clearance",
+        "drill_out_of_range",
+        "via_diameter"
+      ],
+      "too_small": [
+        "drill_out_of_range",
+        "via_diameter"
+      ]
+    },
+    "visual_review": [
+      "U1 F/B",
+      "full F/B copper",
+      "In1/In2 ground",
+      "F silkscreen"
+    ],
+    "remaining_visual_issue": "Final DUT PWR/polarity silk spacing to tidy",
+    "hardware_validated": false,
+    "latest_assembly_validated": false,
+    "procurement_bom_delta_cny_per_board": 0,
+    "evidence": "design/reports/u1-final-exits-2026-11-13",
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "904387ac31a434e71f70f1928f0ba3ce9ec4da62259f92d2970831e0caac8141",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "7331c70e23da93ab0617e5fe29f3095709206cff2ea15d5fc9afbb336522cb3a",
+      "docs/control-analog-routing.md": "57f9c620077efde32af8fcf39262de0382814b3517cd5c8a705778e1cdbfd501",
+      "docs/u1-fanout.md": "3a746c69cd991f1633510fe71e69fa33866f1e05d502880de3987635cefdd074",
+      "docs/pcb-layout.md": "d13b0b032f06c65ac811f130a4976311ea01d78ceb6a6d7b1463b785e2e230a0"
+    }
   }
 }

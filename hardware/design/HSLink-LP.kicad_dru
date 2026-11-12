@@ -53,3 +53,10 @@
 # Keep Debug width and all manufacturing minima; all other Debug nets stay at 2.
 (rule "Reset driver control crossing" (condition "A.NetName == 'NRST_DRIVE' || A.NetName == 'NTRST_DRIVE'")
  (constraint via_count (max 4)))
+
+# One reviewed static VIO_EN crossing between NRST_DRIVE and VIO_LOCAL.
+# Local XY 54.8625,44.9; not a global via or power/ground exception.
+(rule "VIO enable local crossing via"
+ (condition "A.Type == 'Via' && A.hasNetclass('U1Signal') && A.NetName == 'VIO_EN' && A.Position_X >= 142.8525mm && A.Position_X <= 142.8725mm && A.Position_Y >= 105.89mm && A.Position_Y <= 105.91mm")
+ (constraint via_diameter (min 0.5mm) (opt 0.5mm) (max 0.5mm))
+ (constraint hole_size (min 0.25mm) (opt 0.25mm) (max 0.25mm)))
