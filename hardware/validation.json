@@ -3776,5 +3776,39 @@
       "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
       "hardware/design/mechanical/README.md": "4f39f6ec9fe34461c089d30cba87f54a677c8fc09283d3b4bbbeaa61dbca6948"
     }
+  },
+  "freecad_panel_colors": {
+    "date": "2026-11-13",
+    "fix": "印刷逐实体赋色，避免STEP组合颜色丢失",
+    "checked_objects": 82,
+    "native_version": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "checks": [
+      "FreeCAD原生导入RGB及盖板透明度断言通过",
+      "成功保存并重开原生装配，人工查看FreeCAD渲染图",
+      "FCStd ZIP完整性检查通过"
+    ],
+    "limitations": [
+      "后续离屏GUI初始化崩溃，批量自动化稳定性未解决",
+      "PCB使用既有布局快照",
+      "非实物色差验证"
+    ],
+    "pcb_schematic_modified": false,
+    "sha256": {
+      "hardware/design/mechanical/panel_artwork.py": "67db2d8a1fd14b465fec577a99606f825a2eeb424310ea44f2f8e41d859962c2",
+      "hardware/design/mechanical/README.md": "db92ff879d46d521efcf3457679a2815cae01d7afc5b95792853eae31e03feb5",
+      "hardware/design/reports/structure-compact-2026-11-12/HSLink-LP-assembly.step": "10ad48edbb996e4ad613f5e0fe9c2637dbcd41f68f65da255ec17fda52f58cf5",
+      "hardware/design/reports/structure-compact-2026-11-12/HSLink-LP-assembly.FCStd": "034c456d201d27d0ddaa4556523d663f84462b2d897f62449d12e37122c56fb6",
+      "hardware/design/reports/structure-compact-2026-11-12/freecad-appearance.json": "6e727e80d1ad1a482aaa64667d039160ad8adda50675d30aa246c25fbec4e64d",
+      "hardware/design/reports/structure-compact-2026-11-12/freecad-appearance.png": "d38223f5dc2344693ebd570a751c62a6f24d5f7bd0bf85a91d5bcd248c80a87e"
+    }
   }
 }

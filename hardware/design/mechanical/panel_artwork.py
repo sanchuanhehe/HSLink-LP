@@ -16,10 +16,13 @@ def add_artwork(assembly,lid,z):
             .edges('|Z').fillet(10).translate((63,-58,-.3)))
     s=(cq.Workplane('XY').box(140,110,.02,centered=(True,True,False))
        .translate((55,-40,0)).intersect(lid).cut(window))
-    assembly.add(s.translate((0,0,z)),name='Print_C_ivory_mask',color=cq.Color(.941,.910,.855))
+    # STEP importers may discard a compound-level color; color each solid.
+    for j, solid in enumerate(s.translate((0,0,z)).solids().vals()):
+        assembly.add(solid,name=f'Print_C_ivory_mask_{j}',color=cq.Color(.941,.910,.855))
     for i,(t,x,y,size) in enumerate(TEXT):
         s=cq.Workplane('XY').text(t,size,.02,font='Arial',halign='center',valign='center').translate((x,-y,z+.025))
-        assembly.add(s,name=f'Print_text_{i}',color=cq.Color(1,1,1) if y>50 else cq.Color(.12,.16,.16))
+        for j, solid in enumerate(s.solids().vals()):
+            assembly.add(solid,name=f'Print_text_{i}_{j}',color=cq.Color(1,1,1) if y>50 else cq.Color(.12,.16,.16))
     accent=cq.Workplane('XY').polyline([(57,-21),(57.45,-21),(60.45,-10),(60,-10)]).close().extrude(.02).translate((0,0,z+.025))
     assembly.add(accent,name='Print_vermilion_slash',color=cq.Color(.94,.22,.06))
 
