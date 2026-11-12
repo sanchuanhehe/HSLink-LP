@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "scope": "测试点原理图任务完成后，继续接口与器件布局整理、测试点PCB局部手工连接及结构探测包络检查；整板布线未完成",
-  "checked_at": "2026-11-13T04:45:26.330193+08:00",
+  "checked_at": "2026-11-13T05:28:19.342446+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前211封装，0一般DRC违规、0原理图parity、90未连接项；759个原焊盘网络保持。以usb_control_routing源哈希为准，尚不能投板。",
+    "validation": "当前211封装，0一般DRC违规、0原理图parity、50未连接项；759个原焊盘网络保持。以u1_control_routing源哈希为准，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -424,10 +424,10 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "dcc6d078ba4a3ec267f488a9fb09db3f40e765faa7862b5aeed5cb49de68fb9d",
+    "docs/pcb-layout.md": "5b9f65b606d4af2c7810e2a2e49726ac642807e9a74aaf7fd13edfb7af3fdd4a",
     "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
-    "hardware/design/HSLink-LP.kicad_pcb": "e513fb4d3e3b5360875b3ac86dc3595c1a6e2381238410f15d3b048570ce3ebf",
-    "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
+    "hardware/design/HSLink-LP.kicad_pcb": "96cb71c376b520b1b959d87b931cbc41fa367ccb31c78316f72be3c48b9829b1",
+    "hardware/design/HSLink-LP.kicad_dru": "f11eeb7477f9595260aba37c9941af5698e0cea5b9235cb698360026d5c0de8c",
     "hardware/design/mechanical/README.md": "e025ab3784c73a571abfacc2d7a75b57a8c290a5f126fb37c969abd5a527f0fc",
     "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
     "hardware/design/mechanical/hslink_lp.py": "7aaaaadc6b4bbc97ba0848ed059a8ad4dc71ee248dcbf346984ba372c6e39e29",
@@ -446,8 +446,8 @@
     ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc",
     "docs/test-points.md": "9e8486ebaa13406c79f8e624a7dff5764890aba07b85e362c57daf1dadc963bc",
     "hardware/bom/pcb-features.csv": "c9fbbd210c968560a271024fec36da17edac478db327d0ce86880d5ded2c52ba",
-    "docs/u1-fanout.md": "68f3b5744e08a38c40f9fe9557c8552a17a99442f3c4efe7e338a092d1699ad9",
-    "docs/control-analog-routing.md": "4d709e1d73240a3d4e209820fe3704951b0f122f5083ac45b73179ee9885cbb9"
+    "docs/u1-fanout.md": "d615eec93879b26bde293571b34b924e50c72ca23f1d7482f53af452c5d94f7c",
+    "docs/control-analog-routing.md": "77ff28858d2629fe567c9dc1dbf383d316e298cc34fdd6ccf8c2345a996f4174"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -987,7 +987,39 @@
     "hardware/design/reports/layout-ux-2026-11-12/HSLink-LP-assembly.glb": "ea2603f8bc9e6f3f0a853f2e42d9781f26b303cb46f5558f2bc7c963aa192079",
     "hardware/design/reports/layout-ux-2026-11-12/sync-repair-result.json": "35dc37729d9c02797f0740c4f8aa240e2b64ea6750a1ac4b403b1861ec9df2cf",
     "hardware/design/reports/layout-ux-2026-11-12/testpoint-candidate-check.json": "09d753db704cc55865f74065c7e75c7eebbf9aed8590fe206e9ffcc1bc9c3fd0",
-    "hardware/design/reports/layout-ux-2026-11-12/sync-repair-plan.json": "bfcf1ea79281edb0d5865842f547cbc638e58a3b66c1c61344cf56efb3e2fcb2"
+    "hardware/design/reports/layout-ux-2026-11-12/sync-repair-plan.json": "bfcf1ea79281edb0d5865842f547cbc638e58a3b66c1c61344cf56efb3e2fcb2",
+    "hardware/design/reports/u1-control-routing-2026-11-13/interlock-B_Cu.png": "9c33463caa4a227529e85a07a0520bff54ec62b70eb759cd5a0c1e2cc7daf56b",
+    "hardware/design/reports/u1-control-routing-2026-11-13/sig-arm-drc.json": "6c203268ef161980bc7b1a31f858a92dfffdff6afc5732cdbc07f5c89da18e55",
+    "hardware/design/reports/u1-control-routing-2026-11-13/routing-audit.json": "11c78bc0d25e49ec59603a0a1026dc1799bd8fa54d5543b8b3e5df9703b9d21b",
+    "hardware/design/reports/u1-control-routing-2026-11-13/rule-NRST_DRIVE-4.json": "1642fbe389ce3a874535babdbd865c1afeb6c9b100b1f6ceedfba0dd865ec5ee",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u1-F_Cu.png": "e70cca18380ecbda8dc954f0c2479fd24bb8efa7a8c855cb7d0e81b5c8878197",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u201-drc.json": "af87f97c5009d894fee8e8cf2aedbab2e915c3fb4274a37ecc989fb2053e3c86",
+    "hardware/design/reports/u1-control-routing-2026-11-13/board-F_Silkscreen.png": "f15002496f376622d751406d607b3711967e0342fa2cec0dcc9467fe4e73e2c7",
+    "hardware/design/reports/u1-control-routing-2026-11-13/rule-SWD_DIR-3.json": "cf23c8a1ae1853437edc351fa60abc339eef60a51eab954e44ca5bf859215612",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u1-B_Cu.png": "f5bc3fed1d661616ba6dbadf3ce32e41c226a5c345efac9358842e0b13e8e04d",
+    "hardware/design/reports/u1-control-routing-2026-11-13/board-In1_Cu.png": "d05d2ffb9533c06780046f2635efb0ed8423ed51daf4d09eaae0bb32ace34ce8",
+    "hardware/design/reports/u1-control-routing-2026-11-13/reset-rule-proof.json": "bbbe029bbe257934945acd9f69a7546bdc694d5c2ac2e87fdbacb94eccf393c9",
+    "hardware/design/reports/u1-control-routing-2026-11-13/rule-NTRST_DRIVE-5.json": "0498ec4b8470fe7834d5ed755840dcf751009f0a8368129a8826b89912b58a95",
+    "hardware/design/reports/u1-control-routing-2026-11-13/final-drc.json": "4b81a0d5ea159e3744f1518e01ed9e1b36ee03bd81c4a7a3ab860a4f7c220d41",
+    "hardware/design/reports/u1-control-routing-2026-11-13/rule-NTRST_DRIVE-4.json": "1159e4e0115c49159f663d66ef01a9e3b2ebe7221550c6e58b9adffdd777dd9b",
+    "hardware/design/reports/u1-control-routing-2026-11-13/interlock-F_Cu.png": "dcc5b80190f9e8594c0bcb3c0dd965896c8f76dc3aee54d3e8c38540d08fc7ba",
+    "hardware/design/reports/u1-control-routing-2026-11-13/ntrst-drc.json": "0930bbf29391daf3b8a0e28d610cbe75bea4dd598980e96e22a8295c82fd0588",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u1-F_Silkscreen.png": "6fe3470adc7ba0a97d1e7293446511a57ee79d52a0bc53786a8c78291b32ffac",
+    "hardware/design/reports/u1-control-routing-2026-11-13/interlock-F_Silkscreen.png": "337da78ba614d74344aa7f00e1a385fa8766e29dfe59401f3a96f7dae476b26d",
+    "hardware/design/reports/u1-control-routing-2026-11-13/rule-TCK_MCU-3.json": "a6ca3aa458cdf23225f0bc5d49aa0d9c76ee04a258e775bb7cdf77b307ba3748",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u201-F_Cu.png": "e1ed1c70157ed55759fef3fefe8793f51accbc3db04ba1507a81d2f661faa3d8",
+    "hardware/design/reports/u1-control-routing-2026-11-13/north-F_Cu.png": "9b121f9ff5a207c5a813e94d5e72476fcdc2498dbd5ed3be5a86be229036f3fd",
+    "hardware/design/reports/u1-control-routing-2026-11-13/board-F_Cu.png": "566b641c1ccc1535b9a1e5c855789d3dd4273f0ea9dfe8fea703b6c786ba1c06",
+    "hardware/design/reports/u1-control-routing-2026-11-13/north-B_Cu.png": "7a8928774d6c7ab9a356945c9186a4e938a21d63bf3f02e0a5695b3ac96912dc",
+    "hardware/design/reports/u1-control-routing-2026-11-13/board-B_Cu.png": "13dccf966fb3b34065c21375ceccb6654b12e9e4b764e8ae9cab9bdc646c7677",
+    "hardware/design/reports/u1-control-routing-2026-11-13/board-In2_Cu.png": "af79c7a12a8b5a5dbb435245a3a203f081c43e0a4ad68de0026b0607ba070e68",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u201-F_Silkscreen.png": "687ebfd142e22a867bb97780db5f652f59f2974176dd1b9a4dddaa833577f28c",
+    "hardware/design/reports/u1-control-routing-2026-11-13/u201-B_Cu.png": "77431ac93b191c2d48fe990230a6f3954553fbd9e2154baa16f20d4d29e8001e",
+    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-B_Cu.svg": "dbcc395b1a8bfadc4c2a76fed4a11a7add5256728e9f66e07a42249a2fb79786",
+    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In2_Cu.svg": "f21d572f14e9b6bd42e0364994344b2ff6d24c0e6285f91dfca0dc59c3f1dc0d",
+    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-F_Cu.svg": "076702c311fc7d1cb9e4a8eacf3df3e70a41cc1fc8b40b0795c59d910d4cfe39",
+    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-F_Silkscreen.svg": "af82d40a3477fc8caf59e41a640102ef1c042976ab5560228760ff5bf6a0d951",
+    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In1_Cu.svg": "074b2b53f7f8a9d688d02256237add9416b0921015eabaa7ed888ce59a7cedbd"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -3431,7 +3463,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-13",
-    "stage": "control_analog_and_reset_partial",
+    "stage": "u1_control_and_interlock_partial",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3449,9 +3481,9 @@
     },
     "drc": {
       "general_violations": 0,
-      "unconnected_items": 70,
+      "unconnected_items": 50,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/control-analog-routing-2026-11-13/final-drc.json"
+      "report": "hardware/design/reports/u1-control-routing-2026-11-13/final-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3461,18 +3493,18 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "e513fb4d3e3b5360875b3ac86dc3595c1a6e2381238410f15d3b048570ce3ebf",
+      "hardware/design/HSLink-LP.kicad_pcb": "96cb71c376b520b1b959d87b931cbc41fa367ccb31c78316f72be3c48b9829b1",
       "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
-      "hardware/design/HSLink-LP.kicad_dru": "4b9707330f2ab498f0a7838ec6df022faa64e04905542419319517527dae1919",
+      "hardware/design/HSLink-LP.kicad_dru": "f11eeb7477f9595260aba37c9941af5698e0cea5b9235cb698360026d5c0de8c",
       "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
-      "docs/pcb-layout.md": "dcc6d078ba4a3ec267f488a9fb09db3f40e765faa7862b5aeed5cb49de68fb9d",
-      "docs/u1-fanout.md": "68f3b5744e08a38c40f9fe9557c8552a17a99442f3c4efe7e338a092d1699ad9",
-      "docs/control-analog-routing.md": "4d709e1d73240a3d4e209820fe3704951b0f122f5083ac45b73179ee9885cbb9"
+      "docs/pcb-layout.md": "5b9f65b606d4af2c7810e2a2e49726ac642807e9a74aaf7fd13edfb7af3fdd4a",
+      "docs/u1-fanout.md": "d615eec93879b26bde293571b34b924e50c72ca23f1d7482f53af452c5d94f7c",
+      "docs/control-analog-routing.md": "77ff28858d2629fe567c9dc1dbf383d316e298cc34fdd6ccf8c2345a996f4174"
     },
-    "report_directory": "hardware/design/reports/control-analog-routing-2026-11-13",
+    "report_directory": "hardware/design/reports/u1-control-routing-2026-11-13",
     "remaining": [
-      "U1相关UART/VIO_EN/SIG_ARM_REQ/FAULTn/POWER_REQ/NTRST_DRIVE/SPI_CS跨模块",
-      "VREF_SENSE_IN、使能/互锁、继电器线圈及其余低速控制",
+      "U1 UART TX/RX、VIO_EN、POWER_REQ、SPI_CS及FAULTn远端汇接",
+      "VREF_SENSE_IN、控制请求/使能/互锁/继电器线圈等50个未连接项",
       "最终SI/PDN/DFM与最新PCB结构C装配",
       "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
     ],
@@ -3551,10 +3583,10 @@
       "tracks": 633,
       "vias": 258
     },
-    "visual_review": "已人工查看U1正反面、启动/复位、模拟局部、整板正反面及两内层实际导出；最终STEP装配未检查",
+    "visual_review": "已看U1正反面、U201和互锁局部、整板F/B、两内层GND及局部丝印；没有执行本阶段最新STEP整机装配验收",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
-    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见control_analog_routing，旧快照不能作为当前整板验收。"
+    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见u1_control_routing，旧快照不能作为当前整板验收。"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -7609,5 +7641,595 @@
       "最终SI/PDN/DFM与最新PCB结构C装配",
       "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
     ]
+  },
+  "u1_control_routing": {
+    "baseline": "2a854b9",
+    "pad_objects": 759,
+    "pad_net_groups_unchanged": true,
+    "protected_signal_geometry_unchanged": [
+      "USB_DP",
+      "USB_DM",
+      "XTALI",
+      "XTALO",
+      "SWD_MCU",
+      "TCK_MCU",
+      "SWD_DIR",
+      "TDI_MCU",
+      "TDO_MCU",
+      "F_SWDIO",
+      "F_TCK",
+      "F_TDI",
+      "F_TDO",
+      "DUT_SWDIO",
+      "DUT_TCK",
+      "DUT_TDI",
+      "DUT_TDO"
+    ],
+    "footprints": 211,
+    "moved_footprints": [
+      {
+        "ref": "R25",
+        "old": [
+          16.5,
+          16.5
+        ],
+        "new": [
+          16.5,
+          24.5
+        ],
+        "angle_old_new": [
+          0.0,
+          180.0
+        ]
+      },
+      {
+        "ref": "R28",
+        "old": [
+          28.0,
+          20.5
+        ],
+        "new": [
+          29.5,
+          23.5
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "ref": "R24",
+        "old": [
+          16.5,
+          18.5
+        ],
+        "new": [
+          16.5,
+          22.5
+        ],
+        "angle_old_new": [
+          0.0,
+          180.0
+        ]
+      },
+      {
+        "ref": "R23",
+        "old": [
+          16.5,
+          20.5
+        ],
+        "new": [
+          16.5,
+          20.5
+        ],
+        "angle_old_new": [
+          0.0,
+          180.0
+        ]
+      },
+      {
+        "ref": "R30",
+        "old": [
+          56.0,
+          33.5
+        ],
+        "new": [
+          66.5,
+          36.4
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "ref": "R29",
+        "old": [
+          28.0,
+          22.5
+        ],
+        "new": [
+          29.5,
+          21.5
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "ref": "R26",
+        "old": [
+          16.5,
+          22.5
+        ],
+        "new": [
+          17.8,
+          26.0
+        ],
+        "angle_old_new": [
+          0.0,
+          180.0
+        ]
+      },
+      {
+        "ref": "R27",
+        "old": [
+          28.0,
+          18.5
+        ],
+        "new": [
+          29.5,
+          25.5
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "tracks": 1602,
+    "vias": 487,
+    "via_sizes": {
+      "(0.6, 0.3)": 454,
+      "(0.5, 0.25)": 33
+    },
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "new_signal_power_via_returns": [
+      {
+        "net": "NTRST_DRIVE",
+        "xy": [
+          38.0,
+          53.6
+        ],
+        "ground_xy": [
+          37.75,
+          51.975
+        ],
+        "distance_mm": 1.6441,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "FAULTn",
+        "xy": [
+          30.0,
+          24.5
+        ],
+        "ground_xy": [
+          31.075,
+          25.5
+        ],
+        "distance_mm": 1.4682,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SIG_ARM_REQ",
+        "xy": [
+          32.7,
+          28.0
+        ],
+        "ground_xy": [
+          33.575,
+          29.0
+        ],
+        "distance_mm": 1.3288,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SIG_ARM_REQ",
+        "xy": [
+          43.4,
+          27.7
+        ],
+        "ground_xy": [
+          44.4,
+          28.4
+        ],
+        "distance_mm": 1.2207,
+        "size_drill_mm": [
+          0.5,
+          0.25
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SIG_ARM_REQ",
+        "xy": [
+          47.8,
+          25.4
+        ],
+        "ground_xy": [
+          48.3,
+          24.5
+        ],
+        "distance_mm": 1.0296,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "NTRST_DRIVE",
+        "xy": [
+          47.0,
+          52.1
+        ],
+        "ground_xy": [
+          48.0,
+          52.1
+        ],
+        "distance_mm": 1.0,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SIG_ARM",
+        "xy": [
+          59.6,
+          38.3
+        ],
+        "ground_xy": [
+          59.4,
+          37.4
+        ],
+        "distance_mm": 0.922,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SIG_ARM",
+        "xy": [
+          57.2,
+          39.35
+        ],
+        "ground_xy": [
+          56.4,
+          39.8
+        ],
+        "distance_mm": 0.9179,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "FAULTn",
+        "xy": [
+          27.6,
+          19.675
+        ],
+        "ground_xy": [
+          28.4,
+          19.3
+        ],
+        "distance_mm": 0.8835,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "SIG_ARM_REQ",
+        "xy": [
+          44.5,
+          26.5
+        ],
+        "ground_xy": [
+          43.699999,
+          26.5
+        ],
+        "distance_mm": 0.8,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "NTRST_DRIVE",
+        "xy": [
+          36.0,
+          53.7
+        ],
+        "ground_xy": [
+          35.2,
+          53.7
+        ],
+        "distance_mm": 0.8,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      },
+      {
+        "net": "NTRST_DRIVE",
+        "xy": [
+          45.15,
+          45.3
+        ],
+        "ground_xy": [
+          45.75,
+          44.8
+        ],
+        "distance_mm": 0.781,
+        "size_drill_mm": [
+          0.6,
+          0.3
+        ],
+        "tented_fb": [
+          true,
+          true
+        ]
+      }
+    ],
+    "date": "2026-11-13",
+    "status": "INCOMPLETE",
+    "method": "pcbnew 原生对象修改与碰撞预查；KiCad10磁盘重载、填铜、完整DRC；实际导出图人工审查",
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 50,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/u1-control-routing-2026-11-13/final-drc.json"
+    },
+    "inner_signal_tracks": 0,
+    "reference_sampling": {
+      "step_mm": 0.2,
+      "not_si_validation": true,
+      "nets": {
+        "GND": {
+          "samples": 40,
+          "in_reference": 40,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "SYS_RESETn": {
+          "samples": 19,
+          "in_reference": 19,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "ADC_VREF": {
+          "samples": 11,
+          "in_reference": 11,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "SIG_ARM_REQ": {
+          "samples": 268,
+          "in_reference": 241,
+          "own_via_void": 27,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "VIO_EN": {
+          "samples": 58,
+          "in_reference": 54,
+          "own_via_void": 4,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "FAULTn": {
+          "samples": 96,
+          "in_reference": 84,
+          "own_via_void": 12,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "NTRST_DRIVE": {
+          "samples": 212,
+          "in_reference": 183,
+          "own_via_void": 29,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "SIG_ARM": {
+          "samples": 175,
+          "in_reference": 157,
+          "own_via_void": 18,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_B_REQ": {
+          "samples": 23,
+          "in_reference": 23,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "DISCH_REQ": {
+          "samples": 24,
+          "in_reference": 24,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "DEBUG_REQ": {
+          "samples": 14,
+          "in_reference": 14,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "UART_A_REQ": {
+          "samples": 14,
+          "in_reference": 14,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "INT_EN": {
+          "samples": 25,
+          "in_reference": 25,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "RESET_REQ": {
+          "samples": 27,
+          "in_reference": 27,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        },
+        "SENSE_REQ": {
+          "samples": 26,
+          "in_reference": 26,
+          "own_via_void": 0,
+          "own_pth_void": 0,
+          "unexplained": []
+        }
+      }
+    },
+    "netclasses": 12,
+    "netclass_patterns": 142,
+    "global_manufacturing_limits_unchanged": true,
+    "small_via_area_unchanged": true,
+    "new_ignored_checks": [],
+    "reset_control_rule": {
+      "nets": [
+        "NRST_DRIVE",
+        "NTRST_DRIVE"
+      ],
+      "max_vias": 4,
+      "other_debug_max_vias": 2,
+      "proof": "hardware/design/reports/u1-control-routing-2026-11-13/reset-rule-proof.json",
+      "positive_negative_tests_pass": true
+    },
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "96cb71c376b520b1b959d87b931cbc41fa367ccb31c78316f72be3c48b9829b1",
+      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+      "hardware/design/HSLink-LP.kicad_dru": "f11eeb7477f9595260aba37c9941af5698e0cea5b9235cb698360026d5c0de8c",
+      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
+      "docs/pcb-layout.md": "5b9f65b606d4af2c7810e2a2e49726ac642807e9a74aaf7fd13edfb7af3fdd4a",
+      "docs/u1-fanout.md": "d615eec93879b26bde293571b34b924e50c72ca23f1d7482f53af452c5d94f7c",
+      "docs/control-analog-routing.md": "77ff28858d2629fe567c9dc1dbf383d316e298cc34fdd6ccf8c2345a996f4174"
+    },
+    "reports_sha256": {
+      "hardware/design/reports/u1-control-routing-2026-11-13/interlock-B_Cu.png": "9c33463caa4a227529e85a07a0520bff54ec62b70eb759cd5a0c1e2cc7daf56b",
+      "hardware/design/reports/u1-control-routing-2026-11-13/sig-arm-drc.json": "6c203268ef161980bc7b1a31f858a92dfffdff6afc5732cdbc07f5c89da18e55",
+      "hardware/design/reports/u1-control-routing-2026-11-13/routing-audit.json": "11c78bc0d25e49ec59603a0a1026dc1799bd8fa54d5543b8b3e5df9703b9d21b",
+      "hardware/design/reports/u1-control-routing-2026-11-13/rule-NRST_DRIVE-4.json": "1642fbe389ce3a874535babdbd865c1afeb6c9b100b1f6ceedfba0dd865ec5ee",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u1-F_Cu.png": "e70cca18380ecbda8dc954f0c2479fd24bb8efa7a8c855cb7d0e81b5c8878197",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u201-drc.json": "af87f97c5009d894fee8e8cf2aedbab2e915c3fb4274a37ecc989fb2053e3c86",
+      "hardware/design/reports/u1-control-routing-2026-11-13/board-F_Silkscreen.png": "f15002496f376622d751406d607b3711967e0342fa2cec0dcc9467fe4e73e2c7",
+      "hardware/design/reports/u1-control-routing-2026-11-13/rule-SWD_DIR-3.json": "cf23c8a1ae1853437edc351fa60abc339eef60a51eab954e44ca5bf859215612",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u1-B_Cu.png": "f5bc3fed1d661616ba6dbadf3ce32e41c226a5c345efac9358842e0b13e8e04d",
+      "hardware/design/reports/u1-control-routing-2026-11-13/board-In1_Cu.png": "d05d2ffb9533c06780046f2635efb0ed8423ed51daf4d09eaae0bb32ace34ce8",
+      "hardware/design/reports/u1-control-routing-2026-11-13/reset-rule-proof.json": "bbbe029bbe257934945acd9f69a7546bdc694d5c2ac2e87fdbacb94eccf393c9",
+      "hardware/design/reports/u1-control-routing-2026-11-13/rule-NTRST_DRIVE-5.json": "0498ec4b8470fe7834d5ed755840dcf751009f0a8368129a8826b89912b58a95",
+      "hardware/design/reports/u1-control-routing-2026-11-13/final-drc.json": "4b81a0d5ea159e3744f1518e01ed9e1b36ee03bd81c4a7a3ab860a4f7c220d41",
+      "hardware/design/reports/u1-control-routing-2026-11-13/rule-NTRST_DRIVE-4.json": "1159e4e0115c49159f663d66ef01a9e3b2ebe7221550c6e58b9adffdd777dd9b",
+      "hardware/design/reports/u1-control-routing-2026-11-13/interlock-F_Cu.png": "dcc5b80190f9e8594c0bcb3c0dd965896c8f76dc3aee54d3e8c38540d08fc7ba",
+      "hardware/design/reports/u1-control-routing-2026-11-13/ntrst-drc.json": "0930bbf29391daf3b8a0e28d610cbe75bea4dd598980e96e22a8295c82fd0588",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u1-F_Silkscreen.png": "6fe3470adc7ba0a97d1e7293446511a57ee79d52a0bc53786a8c78291b32ffac",
+      "hardware/design/reports/u1-control-routing-2026-11-13/interlock-F_Silkscreen.png": "337da78ba614d74344aa7f00e1a385fa8766e29dfe59401f3a96f7dae476b26d",
+      "hardware/design/reports/u1-control-routing-2026-11-13/rule-TCK_MCU-3.json": "a6ca3aa458cdf23225f0bc5d49aa0d9c76ee04a258e775bb7cdf77b307ba3748",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u201-F_Cu.png": "e1ed1c70157ed55759fef3fefe8793f51accbc3db04ba1507a81d2f661faa3d8",
+      "hardware/design/reports/u1-control-routing-2026-11-13/north-F_Cu.png": "9b121f9ff5a207c5a813e94d5e72476fcdc2498dbd5ed3be5a86be229036f3fd",
+      "hardware/design/reports/u1-control-routing-2026-11-13/board-F_Cu.png": "566b641c1ccc1535b9a1e5c855789d3dd4273f0ea9dfe8fea703b6c786ba1c06",
+      "hardware/design/reports/u1-control-routing-2026-11-13/north-B_Cu.png": "7a8928774d6c7ab9a356945c9186a4e938a21d63bf3f02e0a5695b3ac96912dc",
+      "hardware/design/reports/u1-control-routing-2026-11-13/board-B_Cu.png": "13dccf966fb3b34065c21375ceccb6654b12e9e4b764e8ae9cab9bdc646c7677",
+      "hardware/design/reports/u1-control-routing-2026-11-13/board-In2_Cu.png": "af79c7a12a8b5a5dbb435245a3a203f081c43e0a4ad68de0026b0607ba070e68",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u201-F_Silkscreen.png": "687ebfd142e22a867bb97780db5f652f59f2974176dd1b9a4dddaa833577f28c",
+      "hardware/design/reports/u1-control-routing-2026-11-13/u201-B_Cu.png": "77431ac93b191c2d48fe990230a6f3954553fbd9e2154baa16f20d4d29e8001e",
+      "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-B_Cu.svg": "dbcc395b1a8bfadc4c2a76fed4a11a7add5256728e9f66e07a42249a2fb79786",
+      "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In2_Cu.svg": "f21d572f14e9b6bd42e0364994344b2ff6d24c0e6285f91dfca0dc59c3f1dc0d",
+      "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-F_Cu.svg": "076702c311fc7d1cb9e4a8eacf3df3e70a41cc1fc8b40b0795c59d910d4cfe39",
+      "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-F_Silkscreen.svg": "af82d40a3477fc8caf59e41a640102ef1c042976ab5560228760ff5bf6a0d951",
+      "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In1_Cu.svg": "074b2b53f7f8a9d688d02256237add9416b0921015eabaa7ed888ce59a7cedbd"
+    },
+    "visual_review": "已看U1正反面、U201和互锁局部、整板F/B、两内层GND及局部丝印；没有执行本阶段最新STEP整机装配验收",
+    "procurement_delta_cny_per_board": 0,
+    "procurement_delta_cny_10_sets": 0,
+    "hardware_acceptance_passed": false
   }
 }
