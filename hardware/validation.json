@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "scope": "测试点原理图任务完成后，继续接口与器件布局整理、测试点PCB局部手工连接及结构探测包络检查；整板布线未完成",
-  "checked_at": "2026-11-13T07:37:32.299183+08:00",
+  "checked_at": "2026-11-13T07:54:44.847478+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前211封装，0一般DRC违规、0原理图parity、43未连接项；759个原焊盘网络保持，U1 31个已用信号脚铜连通检查通过。以uart_b_source源哈希为准，尚不能投板。",
+    "validation": "当前211封装，0一般DRC违规、0原理图parity、34未连接项；759个原焊盘网络保持。U1 31个已用信号脚铜连通检查见 uart_b_source；当前PCB源哈希以 peripheral_control 为准，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -8601,6 +8601,106 @@
       "docs/uart-source-routing.md": "9de47dd1a9291c119bbc4b14eb82f236601cb29c231836ca9ae020eaf09882fb",
       "docs/u1-fanout.md": "81618cc32eefef62ce481d155b635afccf8e8857ea10f70b0d40fcfa5f4d36e0",
       "docs/pcb-layout.md": "368096371cfe105c31088c5c11d9c9eb6443e4882534ca7d7fe663427867e344"
+    }
+  },
+  "peripheral_control": {
+    "baseline": "df60f4a",
+    "pcb_sha256": "ffe7cc3fdac00fd559bcc1b13dc4c127b5aa0a2ca49e950c48be9d788694847b",
+    "pad_objects": 759,
+    "pad_net_groups_unchanged": true,
+    "protected_signal_geometry_unchanged": [
+      "USB_DP",
+      "USB_DM",
+      "XTALI",
+      "XTALO",
+      "SWD_MCU",
+      "TCK_MCU",
+      "SWD_DIR",
+      "TDI_MCU",
+      "TDO_MCU",
+      "F_SWDIO",
+      "F_TCK",
+      "F_TDI",
+      "F_TDO",
+      "DUT_SWDIO",
+      "DUT_TCK",
+      "DUT_TDI",
+      "DUT_TDO"
+    ],
+    "footprints": 211,
+    "moved_footprints": [],
+    "tracks": 1905,
+    "vias": 559,
+    "via_sizes": {
+      "(0.6, 0.3)": 493,
+      "(0.5, 0.25)": 66
+    },
+    "inner_signal_tracks": [],
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "status": "INCOMPLETE",
+    "completed_connections": [
+      "UART_B_RX J1 branch",
+      "POWER_SAFE all schematic terminals",
+      "DISCH_ARM U302.11-U303.1",
+      "U304.4-U303.2",
+      "Q601.3-D601.2-K601.16 coil drive"
+    ],
+    "drc": {
+      "violations": 0,
+      "unconnected": 34,
+      "schematic_parity": 0
+    },
+    "new_ignored_checks": [],
+    "netclasses": 13,
+    "netclass_assignments": 146,
+    "new_signal_via_nearest_ground_range_mm": [
+      0.7392,
+      1.8825
+    ],
+    "reference_centerline_sampling": {
+      "step_mm": 0.2,
+      "unexplained": 0,
+      "not_si_validation": true
+    },
+    "visual_review": [
+      "maintenance F/B copper",
+      "POWER_SAFE and discharge logic F/B",
+      "relay coil F copper",
+      "In1/In2 ground",
+      "local silkscreen"
+    ],
+    "remaining": [
+      "J1 UART_B_TX branch",
+      "FAULTn remotes",
+      "request/enable/handshake/USB tier/source control nets",
+      "DISCH_ON and INT_EN",
+      "VREF_SENSE_IN",
+      "final SI/PDN/DFM/assembly",
+      "hardware acceptance"
+    ],
+    "hardware_validated": false,
+    "latest_assembly_validated": false,
+    "procurement_bom_delta_cny_per_board": 0,
+    "evidence": "design/reports/u1-uart-source-2026-11-13/peripheral-*",
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "ffe7cc3fdac00fd559bcc1b13dc4c127b5aa0a2ca49e950c48be9d788694847b",
+      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "docs/control-analog-routing.md": "6f8cc29c2b0bd4fdd636702d93a02fd174df3ab4447c5cf145b6ecfac3dda6bd",
+      "docs/pcb-layout.md": "5927ff48abaf1bc0ae57024b6533c97cf7ba47fd978bc8a8ad790d3bb0a50213",
+      "docs/u1-fanout.md": "fd0c198ad1e1847b50883b005c7ec49fd5895c1b8163e2a56225e1dd81c76136",
+      "docs/uart-source-routing.md": "9dac437dfb0a50c0fe85c388827e5d46efac6865171a30181a545d05974d45b4"
     }
   }
 }
