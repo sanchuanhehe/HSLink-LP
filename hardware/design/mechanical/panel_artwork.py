@@ -26,7 +26,7 @@ def add_artwork(assembly,lid,z):
 def export_svg():
     a=['<svg xmlns="http://www.w3.org/2000/svg" width="118mm" height="88mm" viewBox="-4 -4 118 88">',
        '<title>HSLink-LP panel print / 1:1 mm / top side</title>']
-    outline='M1 -4 H65.5 V11 Q65.5 13 67.5 13 H79.5 Q81.5 13 81.5 11 V-4 H109 Q114 -4 114 1 V79 Q114 84 109 84 H101 V67 Q101 65 99 65 H10 Q8 65 8 67 V84 H1 Q-4 84 -4 79 V1 Q-4 -4 1 -4 Z'
+    outline='M1 -4 H63.5 A2 2 0 0 1 65.5 -2 V11 A2 2 0 0 0 67.5 13 H79.5 A2 2 0 0 0 81.5 11 V-2 A2 2 0 0 1 83.5 -4 H109 A5 5 0 0 1 114 1 V79 A5 5 0 0 1 109 84 H103 A2 2 0 0 1 101 82 V67 A2 2 0 0 0 99 65 H10 A2 2 0 0 0 8 67 V82 A2 2 0 0 1 6 84 H1 A5 5 0 0 1 -4 79 V1 A5 5 0 0 1 1 -4 Z'
     holes=' '.join(f'M{x-1.7} {y} a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z' for x,y in [(4,4),(106,4),(4,76),(106,76)])
     holes+=' M92.75 12 a3.25 3.25 0 1 0 6.5 0 a3.25 3.25 0 1 0 -6.5 0 Z'
     a.append(f'<defs><clipPath id="lid"><path d="{outline} {holes}" clip-rule="evenodd"/></clipPath></defs><g clip-path="url(#lid)">')

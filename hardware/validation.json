@@ -3753,5 +3753,28 @@
       "hardware/design/mechanical/hslink_lp_lid.dxf": "ce3cb5641bcd264600c69e23d7940c6879c3d9415a4ff66452033e84bdcac8cf",
       "hardware/design/mechanical/hslink_lp.py": "3e3faecc09ca6f9c7990987f649b16f05049bbbbe5681b03660784e3da5e53dd"
     }
+  },
+  "lid_outline_rounding": {
+    "date": "2026-11-13",
+    "outer_radius_mm": 5,
+    "notch_corner_radius_mm": 2,
+    "notch_corners": 8,
+    "lid_valid": true,
+    "collisions": 0,
+    "pcb_snapshot_sha256": "808fdf66f4091422c61bbeba046ccf62d3133507593f97ad004cd7ed1b025990",
+    "visual_check": "装配俯视图人工检查入口和内角，无原来的非相切尖点",
+    "limits": [
+      "厚度方向切割边需去毛刺",
+      "最新PCB、实物公差及FreeCAD颜色待复核"
+    ],
+    "source_sha256": {
+      "hardware/design/mechanical/hslink_lp.py": "35e47809587bbf72272675d2dd861429c9ba9cf02647867328d6f7bbe98a8abf",
+      "hardware/design/mechanical/panel_artwork.py": "5e83f1501a35e36d92c411c54162b74ed162d1b8d38260407c501ccd705210ee",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "41ba1172d2b46abcb4936c5d2ea73519f14d3ebf531cdbda7470d0d7959be82c",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/README.md": "4f39f6ec9fe34461c089d30cba87f54a677c8fc09283d3b4bbbeaa61dbca6948"
+    }
   }
 }

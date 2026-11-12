@@ -59,10 +59,22 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
         base = base.cut(cylinder(P['foot_diameter'], P['foot_recess']+1, x, -y, -1))
     for x in [29, 35, 41, 47, 53, 80, 86, 92]:
         base = base.cut(block(2.5, 18, 5, x, -28, -1, 1.24))
-    lid = block(P['base_width'], P['base_depth'], P['lid_thickness'], cx, cy,
-                radius=P['base_radius'])
-    for key in ['front_notch', 'external_input_notch']:
-        lid = cut_window(lid, P[key], P['lid_thickness'])
+    # Build open notches in the outline before rounding: a rounded cutting
+    # rectangle crossing the edge leaves a non-tangent cusp at its mouth.
+    left=cx-P['base_width']/2; right=cx+P['base_width']/2
+    back=cy+P['base_depth']/2; front=cy-P['base_depth']/2
+    fx1,fy1,fx2,_=P['front_notch']; ex1,_,ex2,ey2=P['external_input_notch']
+    points=[(left,back),(ex1,back),(ex1,-ey2),(ex2,-ey2),(ex2,back),
+            (right,back),(right,front),(fx2,front),(fx2,-fy1),
+            (fx1,-fy1),(fx1,front),(left,front)]
+    lid=cq.Workplane('XY').polyline(points).close().extrude(P['lid_thickness'])
+    outer=[(left,back),(right,back),(right,front),(left,front)]
+    def at_points(edge, locations):
+        c=edge.Center()
+        return any(abs(c.x-x)<1e-6 and abs(c.y-y)<1e-6 for x,y in locations)
+    lid=lid.edges('|Z').filter(lambda e: at_points(e,outer)).fillet(P['base_radius'])
+    notch_points=[p for p in points if p not in outer]
+    lid=lid.edges('|Z').filter(lambda e: at_points(e,notch_points)).fillet(P['notch_radius'])
     sx,sy = P['source_switch_center']
     lid = lid.cut(cylinder(P['source_switch_hole_diameter'],
                           P['lid_thickness']+2,sx,-sy,-1))

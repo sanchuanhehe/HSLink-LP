@@ -66,3 +66,8 @@ uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline py
   --probe-map hardware/design/reports/layout-ux-2026-11-12/testpoint-connectivity.json \
   --reports hardware/design/reports/layout-ux-2026-11-12
 ```
+
+
+## 盖板轮廓圆角修正（2026-11-13）
+
+开口先并入板外轮廓再倒圆，避免圆角切削矩形与外板边相交形成尖点。四个外角R5；前沿接口大开口、后沿外部电源开口的入口与内角共八处统一R2，圆弧与直线相切。圆孔、安装孔位置及板厚不变，SVG裁切轮廓同步采用圆弧。上下表面厚度方向的边缘仍为板材切割边，实物需去毛刺；本轮不是三维全边滚圆。重新导出STEP/STL/DXF及装配，俯视人工检查未见开口尖点。既有PCB快照干涉检查通过，最新PCB与实物公差仍待复核。FreeCAD颜色问题尚未修复。
