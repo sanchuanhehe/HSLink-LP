@@ -26,7 +26,7 @@
  (constraint diff_pair_uncoupled (max 7mm)))
 (rule "USB top only" (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Layer != 'F.Cu'") (constraint disallow track))
 (rule "USB controlled trunk"
- (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Type == 'Track' && A.Start_Y > 13mm && A.End_Y > 13mm && A.Start_Y < 27mm && A.End_Y < 27mm")
+ (condition "(A.NetName == 'USB_DP' || A.NetName == 'USB_DM') && A.Type == 'Track' && (A.End_Y - A.Start_Y > 10mm || A.Start_Y - A.End_Y > 10mm)")
  (constraint track_width (min 0.2474mm) (max 0.2474mm)))
 (rule "40MHz debug" (condition "A.hasNetclass('Debug')")
  (constraint track_width (min 0.15mm) (opt 0.15mm)) (constraint via_count (max 2)))

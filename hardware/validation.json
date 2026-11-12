@@ -424,10 +424,10 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "5337f094e28b03ba88a0ce97720cede9dcdcaf7a14d0f95016241cf94bdb1056",
+    "docs/pcb-layout.md": "bfb852835c97c87f4170d1efd3026271bb26b0a7674d0740ca3ee962d651a2bc",
     "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
-    "hardware/design/HSLink-LP.kicad_pcb": "70c4cec14f7418aef9f059448ff499f0f07097c43ca5f258e60883f608e7810e",
-    "hardware/design/HSLink-LP.kicad_dru": "89dc42bb4fc0ff2762c430e41b8e507f8fe275cba82c032696288b083eed7620",
+    "hardware/design/HSLink-LP.kicad_pcb": "cac62cd361aa066f155b9e2ced334046ad8d5082be0057c14e20a26ff4b90a26",
+    "hardware/design/HSLink-LP.kicad_dru": "42d15db28f00cd6fe9821b5d99579bf0cfa440cae11776b800d25e9aadd5337c",
     "hardware/design/mechanical/README.md": "e025ab3784c73a571abfacc2d7a75b57a8c290a5f126fb37c969abd5a527f0fc",
     "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
     "hardware/design/mechanical/hslink_lp.py": "7aaaaadc6b4bbc97ba0848ed059a8ad4dc71ee248dcbf346984ba372c6e39e29",
@@ -3428,8 +3428,8 @@
     }
   },
   "pcb_completion": {
-    "date": "2026-11-12",
-    "stage": "stackup_constraints_ground_fanout",
+    "date": "2026-11-13",
+    "stage": "core_auxiliary_power_usb_crystal",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3446,10 +3446,10 @@
       "fabricator_order_confirmation": false
     },
     "drc": {
-      "violations": 0,
-      "unconnected_items": 293,
+      "general_violations": 0,
+      "unconnected_items": 209,
       "schematic_parity": 0,
-      "added_ignores": 0
+      "report": "hardware/design/reports/full-board-2026-11-12/power-stage-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3459,20 +3459,96 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "70c4cec14f7418aef9f059448ff499f0f07097c43ca5f258e60883f608e7810e",
+      "hardware/design/HSLink-LP.kicad_pcb": "cac62cd361aa066f155b9e2ced334046ad8d5082be0057c14e20a26ff4b90a26",
       "hardware/design/HSLink-LP.kicad_pro": "11a7593811cd72bde28633693456cc6dd33462b4440854dbf19a9fd1f51b45bc",
-      "hardware/design/HSLink-LP.kicad_dru": "89dc42bb4fc0ff2762c430e41b8e507f8fe275cba82c032696288b083eed7620",
-      "docs/pcb-layout.md": "5337f094e28b03ba88a0ce97720cede9dcdcaf7a14d0f95016241cf94bdb1056"
+      "hardware/design/HSLink-LP.kicad_dru": "42d15db28f00cd6fe9821b5d99579bf0cfa440cae11776b800d25e9aadd5337c",
+      "docs/pcb-layout.md": "bfb852835c97c87f4170d1efd3026271bb26b0a7674d0740ca3ee962d651a2bc"
     },
     "report_directory": "hardware/design/reports/full-board-2026-11-12",
     "remaining": [
-      "USB trunk geometry",
-      "power distribution",
-      "crystal",
-      "40MHz debug",
-      "VIO/sense/interlock and UART/control completion",
-      "reference planes neck/return review",
-      "final mechanical fit and manufacturing outputs"
-    ]
+      "peripheral 3.3V and U402 input",
+      "40MHz debug and direction control",
+      "dual UART and low-speed controls",
+      "VIO/ADC/interlock cross-block routes",
+      "final copper return/neck, assembly and manufacturing review"
+    ],
+    "status": "INCOMPLETE",
+    "geometry": {
+      "source_sha256": "cac62cd361aa066f155b9e2ced334046ad8d5082be0057c14e20a26ff4b90a26",
+      "usb": {
+        "USB_DP": {
+          "paths_to_mcu_mm": {
+            "A6": 29.42371843353824,
+            "B6": 26.713718433538233
+          },
+          "vias": 0,
+          "layers": [
+            "F.Cu"
+          ],
+          "main_segments": [
+            {
+              "start": [
+                130.4,
+                72.4
+              ],
+              "end": [
+                130.4,
+                92.4
+              ],
+              "width": 0.2474
+            }
+          ],
+          "reference_centerline_samples": 311,
+          "unsupported_samples": []
+        },
+        "USB_DM": {
+          "paths_to_mcu_mm": {
+            "A7": 29.42779113653827,
+            "B7": 26.713577574165193
+          },
+          "vias": 0,
+          "layers": [
+            "F.Cu"
+          ],
+          "main_segments": [
+            {
+              "start": [
+                130.7998,
+                72.4
+              ],
+              "end": [
+                130.7998,
+                92.4
+              ],
+              "width": 0.2474
+            }
+          ],
+          "reference_centerline_samples": 327,
+          "unsupported_samples": []
+        }
+      },
+      "crystal": {
+        "XTALI": {
+          "total_track_mm": 7.57037696657757,
+          "vias": 0,
+          "layers": [
+            "F.Cu"
+          ]
+        },
+        "XTALO": {
+          "total_track_mm": 7.592336854398791,
+          "vias": 0,
+          "layers": [
+            "F.Cu"
+          ]
+        }
+      },
+      "parts": 211,
+      "tracks": 633,
+      "vias": 258
+    },
+    "visual_review": "正反面铜与丝印已查看；最终3D装配仍待当前PCB全部布线结束后复查",
+    "procurement_bom_delta_cny": 0,
+    "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested"
   }
 }
