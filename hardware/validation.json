@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "PCB全部连接保持；修复放置类型与制造坐标遗漏风险；制造数据回读、结构原点/孔位/碰撞检查；实际配套插头及国内最终叠层待核对",
-  "checked_at": "2026-11-14T05:38:14.549191+08:00",
+  "scope": "PCB全部连接保持；制造数据与结构几何检查；国内动态阻抗计算器复核；实际插头及工厂接受仍待确认",
+  "checked_at": "2026-11-14T05:46:16.691634+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "ROUTED_CAD_CHECKED",
-    "validation": "仅U501/SW601/K601三处放置属性改变；759焊盘对象及全部铜/布局保持；完整DRC0一般违规/0未连接/0parity。185SMT/8THT制造数据回读匹配。物理装配、国内最终阻抗叠层及实板性能未放行。",
+    "validation": "仅U501/SW601/K601三处放置属性改变；759焊盘对象及全部铜/布局保持；完整DRC0一般违规/0未连接/0parity。185SMT/8THT制造数据回读匹配。物理装配、工厂阻抗订单接受及实板性能未放行。",
     "working_dimensions_mm": [
       110,
       80,
@@ -425,7 +425,7 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "e3c2cf3817da715c371d094a06b1a2aadd7680d432b8c186a326a750d818868c",
+    "docs/pcb-layout.md": "c0acb694db92ff3ee1d95433986b6d02f4910a8da9187e92f840bdea06305cd9",
     "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
     "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
     "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
@@ -454,7 +454,7 @@
     "hardware/design/libraries/models/HPM5301_envelope.step": "99da97d6fd6500989ea6ab6fabe4e2df1fbc755f79fec22aea590e72d7d57ad1",
     "hardware/design/libraries/models/TPS259531_envelope.step": "9fc3d38082996e3c9cb2aae9cfc65c77115f570329add53560dcd03bec09d55f",
     "hardware/design/libraries/models/TS1187A_envelope.step": "49b86ed3fa3787db9b0b097d720d65e414334a620a54ddf14e75e0a16c7d3110",
-    "docs/manufacturing.md": "242548d30898abf369fbe13f4919d5ac3b37cf0f98eeb875fdb28b7a409d97c0",
+    "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
     "hardware/design/mechanical/hslink_lp_panel_print.svg": "41ba1172d2b46abcb4936c5d2ea73519f14d3ebf531cdbda7470d0d7959be82c"
   },
   "evidence_sha256": {
@@ -2487,7 +2487,7 @@
       ]
     }
   },
-  "historical_sections_note": "此前审查/仿真/布线阶段只对应自身源哈希；当前源与数据以pcb、pcb_completion和manufacturing_review为准。8b3c89b之后仅三处放置属性变化，原有几何证据由metadata-only-proof关联；实际插头及国内最终叠层仍待核对。",
+  "historical_sections_note": "此前审查/仿真/布线阶段只对应自身源哈希；当前源与数据以pcb、pcb_completion和manufacturing_review为准。8b3c89b之后仅三处放置属性变化，原有几何证据由metadata-only-proof关联；国内动态叠层/名义线宽现已核对，实际插头与工厂订单接受仍待确认。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -3475,7 +3475,7 @@
   "pcb_completion": {
     "date": "2026-11-14",
     "stage": "manufacturing_data_and_structure_fit_guards",
-    "verdict": "CAD_DATA_CHECKS_PASSED_MATING_AND_DOMESTIC_STACK_INCOMPLETE",
+    "verdict": "CAD_DATA_CHECKS_PASSED_ACTUAL_MATING_INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
     "sources": [
@@ -3506,9 +3506,9 @@
     "source_sha256": {
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
       "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
-      "docs/manufacturing.md": "242548d30898abf369fbe13f4919d5ac3b37cf0f98eeb875fdb28b7a409d97c0",
+      "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
       "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
-      "docs/pcb-layout.md": "e3c2cf3817da715c371d094a06b1a2aadd7680d432b8c186a326a750d818868c",
+      "docs/pcb-layout.md": "c0acb694db92ff3ee1d95433986b6d02f4910a8da9187e92f840bdea06305cd9",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
       "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
@@ -3537,7 +3537,7 @@
     "report_directory": "hardware/design/reports/manufacturing-review-2026-11-14",
     "remaining": [
       "CBL801 actual plug dimensions, mating height, cable bend/switch travel and physical clearances",
-      "domestic final stack/impedance calculator reconciliation and factory CAM/assembly process confirmation",
+      "factory final stack/impedance order acceptance and CAM/assembly process confirmation",
       "prototype materials/fastener complete MPNs and fit coupons",
       "hardware electrical performance acceptance; firmware/host outside this CAD stage"
     ],
@@ -9410,15 +9410,15 @@
     "software_lock_or_HID_implementation_changed": false
   },
   "manufacturing_review": {
-    "checked_at": "2026-11-14T05:38:14.549191+08:00",
+    "checked_at": "2026-11-14T05:46:16.691634+08:00",
     "baseline_commit": "8b3c89b",
-    "status": "DATA_CHECKS_PASSED_MATING_GEOMETRY_AND_DOMESTIC_STACK_OPEN",
+    "status": "DATA_CHECKS_PASSED_ACTUAL_MATING_GEOMETRY_OPEN",
     "source_sha256": {
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
       "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
-      "docs/manufacturing.md": "242548d30898abf369fbe13f4919d5ac3b37cf0f98eeb875fdb28b7a409d97c0",
+      "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
       "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
-      "docs/pcb-layout.md": "e3c2cf3817da715c371d094a06b1a2aadd7680d432b8c186a326a750d818868c",
+      "docs/pcb-layout.md": "c0acb694db92ff3ee1d95433986b6d02f4910a8da9187e92f840bdea06305cd9",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
       "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
@@ -9510,8 +9510,15 @@
       "hardware/design/reports/manufacturing-review-2026-11-14/pcb.step": "9b6b1dc820e905e392528c4aa443abba42471098f6456dfcf00d15997c271b32",
       "hardware/design/reports/manufacturing-review-2026-11-14/position-export.log": "f864bb5351672959ef660cacd500b54a91caf222908c0094143a91925fbfc3da",
       "hardware/design/reports/manufacturing-review-2026-11-14/step-export.log": "2f4ce9d79f3a2201db080edddad3e60957e561c11c10ae7c1af82c068cfcec5f",
-      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "124e7f8fb6866954550fc7a2ef972e4f965f4231cb60f00f430d3a9449b8261e",
-      "hardware/design/reports/manufacturing-review-2026-11-14/goal-completion-audit.md": "49a3320f811a4ab8d4142eebc027bbbca108faff20415fd18ac74d53348776ec"
+      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "67cfef17a8a3bd8063794bed9502329c7ee12fc2727add785f2da5bedb60b8c0",
+      "hardware/design/reports/manufacturing-review-2026-11-14/goal-completion-audit.md": "4101bd48e06a439d68a67f8a227b11a7e18c2777519674d486a37db776f1ed4c",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/reconciliation.json": "2bd962880e4eef791bffbe89fc53ef025bf20df31b80088d0db72353d1309755",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/98.jpg": "71bd54ad278c2875d5e5bf7cad07e8c985ac10fadf1600572d3442e358343224",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/98.txt": "f6779976faf8f9db8670c26d5f76b41786c14a9c68f8e9a2c3e42b9995a32642",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/current.txt": "a64e73f7a5ff7546c0cb4f464adc9c13dafdffed076c06fd5eeaeebe6fb7bcf5",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/97.txt": "a64e73f7a5ff7546c0cb4f464adc9c13dafdffed076c06fd5eeaeebe6fb7bcf5",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/current.jpg": "7e2675e40636c9a69dc68aca766c11032a69c703aeb3fca28c64d645b1b3fa53",
+      "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/97.jpg": "7e2675e40636c9a69dc68aca766c11032a69c703aeb3fca28c64d645b1b3fa53"
     },
     "placement_types": {
       "U501": "smd",
@@ -9604,7 +9611,7 @@
       "project_and_rules_unchanged": true,
       "no_global_relaxation": true,
       "selected_stackup": "JLC04161H-7628",
-      "domestic_calculator_current_result_verified": false,
+      "domestic_calculator_current_result_verified": true,
       "domestic_order_stack_accepted": false
     },
     "cost_delta_cny": {
@@ -9620,9 +9627,93 @@
     ],
     "remaining": [
       "CBL801 actual plug dimensions, mating height, cable bend/switch travel and physical clearances",
-      "domestic final stack/impedance calculator reconciliation and factory CAM/assembly process confirmation",
+      "factory final stack/impedance order acceptance and CAM/assembly process confirmation",
       "prototype materials/fastener complete MPNs and fit coupons",
       "hardware electrical performance acceptance; firmware/host outside this CAD stage"
-    ]
+    ],
+    "domestic_stack_reconciliation": {
+      "checked_at": "2026-11-14T05:46:16.691634+08:00",
+      "source_url": "https://tools.jlc.com/jlcTools/index.html#/impedanceCalculatenew",
+      "guide_url": "https://www.jlc.com/portal/q7i37381.html",
+      "PCB_sha256": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "job_sha256": "66ba94fff47de937d6450f3aecd3235f29287e756a9a6ba062597b292ee5bdb0",
+      "inputs": {
+        "layers": 4,
+        "nominal_thickness_mm": 1.6,
+        "outer_copper_oz": 1,
+        "inner_copper_oz": 0.5,
+        "impedance_ohm": 90,
+        "mode": "差分阻抗（外层）",
+        "signal_layer": "L1",
+        "reference_layer": "L2",
+        "gap_mil": 6
+      },
+      "selected_stack": "JLC04161H-7628",
+      "displayed_finished_thickness_mm": 1.59,
+      "displayed_thickness_tolerance_percent": 10,
+      "displayed_thickness_range_mm": [
+        1.43,
+        1.74
+      ],
+      "stack_mm": [
+        [
+          "F.Cu",
+          0.035
+        ],
+        [
+          "F.Cu/In1.Cu",
+          0.2104
+        ],
+        [
+          "In1.Cu",
+          0.0152
+        ],
+        [
+          "In1.Cu/In2.Cu",
+          1.065
+        ],
+        [
+          "In2.Cu",
+          0.0152
+        ],
+        [
+          "In2.Cu/B.Cu",
+          0.2104
+        ],
+        [
+          "B.Cu",
+          0.035
+        ]
+      ],
+      "native_job_matches_domestic_geometry": true,
+      "displayed_forward_width_mil": 9.7,
+      "reverse_checks": [
+        {
+          "displayed_width_mil": 9.7,
+          "displayed_impedance_ohm": 90.126
+        },
+        {
+          "displayed_width_mil": 9.8,
+          "displayed_impedance_ohm": 89.916
+        }
+      ],
+      "existing_width_mm": 0.2474,
+      "existing_width_mil": 9.740157480314961,
+      "existing_gap_mm": 0.1524,
+      "decision": "保留现有铜线；相邻线宽反算支持名义90Ω工程选择，非实际板阻抗保证",
+      "exact_width_reverse_verified": false,
+      "precision_note": "输入9.74015748mil后页面显示9.7，反算仍为90.126；不将该结果声称为精确9.74015748mil的阻值。仅用相邻显示值给出局部敏感性范围，不当作制造/全容差界限。",
+      "dielectric_note": "本次动态页面未列Er/损耗角；PCB的4.4/4.6/0.02未修改，不把旧网页Er替换进计算结果。",
+      "factory_stack_order_accepted": false,
+      "impedance_coupon_measured": false,
+      "sources_sha256": {
+        "98.jpg": "71bd54ad278c2875d5e5bf7cad07e8c985ac10fadf1600572d3442e358343224",
+        "98.txt": "f6779976faf8f9db8670c26d5f76b41786c14a9c68f8e9a2c3e42b9995a32642",
+        "current.txt": "a64e73f7a5ff7546c0cb4f464adc9c13dafdffed076c06fd5eeaeebe6fb7bcf5",
+        "97.txt": "a64e73f7a5ff7546c0cb4f464adc9c13dafdffed076c06fd5eeaeebe6fb7bcf5",
+        "current.jpg": "7e2675e40636c9a69dc68aca766c11032a69c703aeb3fca28c64d645b1b3fa53",
+        "97.jpg": "7e2675e40636c9a69dc68aca766c11032a69c703aeb3fca28c64d645b1b3fa53"
+      }
+    }
   }
 }
