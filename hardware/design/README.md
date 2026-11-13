@@ -1,6 +1,6 @@
-# HSLink-LP 降本原理图审阅稿
+# HSLink-LP 硬件设计
 
-打开 `HSLink-LP.kicad_pro`。唯一工作区基于固定 HSLink Pro 1.2.0 原图增改，参考仓库未修改；版本通过 Git 回溯。当前已有PCB布局、关键手工布线和结构C样件；未完成PCB全布线，没有生产放行或硬件验收结果。
+打开 `HSLink-LP.kicad_pro`。唯一工作区基于固定 HSLink Pro 1.2.0 原图增改，参考仓库未修改；版本通过 Git 回溯。2026-11-14当前PCB全布线完成，完整DRC为0一般违规/0未连接/0parity；制造审阅数据含185个SMT位号和8个THT件，结构C已做当前模型检查。仍无生产放行或硬件验收；所选排线实际尺寸等缺项见[制造说明](../../docs/manufacturing.md)。
 
 ## 本次设计
 

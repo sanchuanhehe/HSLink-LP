@@ -29,7 +29,29 @@ def cut_window(part, rectangle, height):
     return part.cut(tool)
 
 
+def check_pcb_frame(board):
+    """拒绝错原点STEP；孔内净空只验证几何，不保证加工/紧固件公差。"""
+    bb = board.BoundingBox()
+    actual = [bb.xmin, bb.xmax, bb.ymin, bb.ymax]
+    expected = [0, P['pcb_width'], -P['pcb_depth'], 0]
+    if any(abs(a-b) > .03 for a,b in zip(actual,expected)):
+        raise ValueError(f'PCB STEP XY origin/outline mismatch: {actual}; expected {expected}')
+    holes = []
+    for x,y in P['holes']:
+        probe = cylinder(3.19, bb.zlen+.2, x, -y, bb.zmin-.1).val()
+        volume = board.intersect(probe).Volume()
+        holes.append({'xy_mm':[x,y], 'clearance_probe_diameter_mm':3.19,
+                      'intersection_mm3':volume})
+        if volume > 1e-5:
+            raise ValueError(f'PCB mounting hole missing or offset at {(x,y)}: {volume}')
+    return {'status':'passed', 'xy_bounds_mm':actual, 'expected_xy_bounds_mm':expected,
+            'origin_tolerance_mm':.03, 'mounting_clearance_probes':holes,
+            'note':'3.19mm净空探针不是3.2mm孔径公差测量；PCB原生钻孔另行核对'}
+
+
 def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
+    if probe_map and not pcb_step:
+        raise ValueError('Probe access requires a PCB STEP model')
     cx, cy = P['pcb_width']/2, -P['pcb_depth']/2
     base = block(P['base_width'], P['base_depth'], P['floor_thickness'], cx, cy,
                  radius=P['base_radius'])
@@ -112,6 +134,9 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
             if name in ['Standoff','Washer','Screw']:
                 fastener_shapes.append((f'{name}_{i}',shape.val()))
     result={'status':'geometry_checked_not_physical_fit_tested','dimensions_mm':P,
+            'pcb_evaluated':bool(pcb_step),'probe_access_evaluated':bool(pcb_step and probe_map),
+            'source_sha256':{f.name:hashlib.sha256(f.read_bytes()).hexdigest()
+                             for f in [Path(__file__),HERE/'parameters.json',HERE/'panel_artwork.py']},
             'lid_bottom_z':lid_z,'pcb_top_z':pcb_top,
             'base_valid':base.val().isValid(),'lid_valid':lid.val().isValid(),
             'base_solids':len(base.val().Solids()),'lid_solids':len(lid.val().Solids()),
@@ -140,6 +165,7 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
         raw=cq.importers.importStep(str(pcb_step)).val()
         board=max((s for s in raw.Solids() if s.BoundingBox().xlen>100 and s.BoundingBox().ylen>70),
                   key=lambda s:s.Volume())
+        result['pcb_frame_check']=check_pcb_frame(board)
         bb=board.BoundingBox()
         dz=P['pcb_bottom_z']-bb.zmin
         pcb=raw.translate((0,0,dz))
@@ -183,6 +209,18 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
                 volume=solid.intersect(probe).Volume()
                 if volume>1e-5:collisions.append({'solid_index':i,'volume_mm3':volume})
             result['probe_access']['points'].append({'ref':point['ref'],'xy_mm':[x,y],'component_collisions':collisions,'lid_intersection_mm3':lid.val().translate((0,0,lid_z)).intersect(probe).Volume()})
+    component_ok=all(not check['collisions'] for check in result['checks'])
+    probe_ok=all(not point['component_collisions']
+                 for point in result.get('probe_access',{}).get('points',[]))
+    result['geometry_passed']=component_ok and probe_ok
+    result['status']=('geometry_checks_passed_not_physical_fit_tested' if pcb_step and result['geometry_passed']
+                      else 'structure_parts_only_no_pcb_evaluated' if not pcb_step and result['geometry_passed']
+                      else 'geometry_check_failed')
+    if not result['geometry_passed']:
+        if reports:
+            reports.mkdir(parents=True,exist_ok=True)
+            (reports/'mechanical-checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+        raise ValueError('PCB/structure/probe collision; inspect mechanical-checks.json')
     if reports:
         reports.mkdir(parents=True,exist_ok=True)
         assembly.export(str(reports/'HSLink-LP-assembly.step'))

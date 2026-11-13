@@ -1,94 +1,54 @@
-# 结构 C 工程样件
+# 结构 C 当前设计
 
-## 2026-11-14 当前PCB装配复查
+2026-11-14。开放底座＋可拆透明盖，前沿ARM20→UART A→UART B→DUT电源。形态C已确认；以下具体尺寸、材料与颜色为工程方案，未实物装配或生产放行。版本历史使用Git，当前仅本目录一份设计。
 
-当前整板已经布完，完整DRC 0一般违规/0未连接/0parity；原理图及接口/孔位不变。使用当前PCB的STEP、TP2～TP11原生位置重新生成装配，证据在`../reports/final-control-routing-2026-11-13/assembly`，源与STEP哈希见`hardware/validation.json`。当前查看`../reports/final-control-routing-2026-11-13/assembly/HSLink-LP-assembly.step`及同目录最新PNG；旧FCStd仅为历史配色快照。下面11月12/13日的快照说明保留历史意义，不是本轮证据。
+## 源与交付
 
-当前模型检查：底座/盖板各一个有效实体；PCB器件对底座/盖板/四组螺柱、垫圈、螺钉的体积干涉均未超过1e-5mm³。10个测试点均未与D2mm、向上35mm的假定探针包络相交，仍需拆盖；探针与盖板相交是预期操作边界。透明盖保持可拆，前沿顺序ARM20→UART A→UART B→DUT电源。已查看最新装配俯视和透视，材质/配色仅示意。
+|文件|用途|
+|---|---|
+|`parameters.json`|毫米参数、孔位与开口|
+|`hslink_lp.py`|CadQuery底座、盖板、装配及几何检查|
+|`component_envelopes.py`|十类有资料出处的简化器件外形；不是厂家精细STEP|
+|`panel_artwork.py`|统一的面板SVG及装配印刷示意|
+|`hslink_lp_base.step/.stl`|底座单件|
+|`hslink_lp_lid.step/.stl/.dxf`|2mm盖板；DXF单位毫米、1:1|
+|`hslink_lp_panel_print.svg`|118×88mm正面印刷稿；透明区域不印|
 
-补齐当前安装库缺失的四类STEP：FSA2466（1.8×2.6×0.55mm，onsemi CASE523BF/98AON13709G issueB）；HPM5301（最大6.1×6.1×0.8mm，HPM5300DS Rev0.11图21）；TPS259531（最大2.1×2.1×0.8mm，TI DSG0008A/4218900E）；TS1187A（5.15mm体宽、1.55mm总高、含简化引脚，XKB图纸及A高度码）。新模型源在`component_envelopes.py`，只为装配外形检查，不表达引脚朝向、电气连接、内部结构或完整GD&T。板上8个实例关联项目模型，标准全局库未改；刷新库封装时需保留这些板级模型关联。
+当前PCB、装配STEP/GLB、PNG及检查记录在忽略的`../reports/manufacturing-review-2026-11-14`，包名`HSLink-LP-mechanical-review.zip`。可用FreeCAD打开其中`mechanical/HSLink-LP-assembly.step`；旧reports中的FCStd只属历史快照。精确源与输出哈希见`hardware/validation.json`。
 
-加上此前六类，现有十类自建包络均非厂家精细STEP；无模型位号只剩安装孔、定位点及裸铜测试点。结构单件参数/STEP/STL/DXF及面板印刷源未改变，未重新报价或选定材料/紧固件。
+## 尺寸及使用
 
-尚待样品/采购闭合：实际ARM20排线插头与弯曲、两串口插拔、端子螺丝刀空间、拨杆全行程、USB护套、板厚/模型/打印公差、盖板挠曲和通风温升。现有USB插头14×8mm直线扫掠仅为工程假设，不能代表已选线缆；来源拨杆方向仍须样品导通确认。尺寸包络无干涉不等于实物装配通过，漏电仍包括线束/PCB清洁度/结构材料。
+- PCB110×80×名义1.6mm，四孔(4,4)/(106,4)/(4,76)/(106,76)mm；底座118×88mm，外角R5。
+- 底板3mm、围边高10mm，PCB下表面Z9mm；围边单边离板0.8mm，不承托焊点。仅USB处有22mm宽、4mm深的圆滑U形避让，中间14mm平底与两侧三次Bezier相切过渡。
+- 12mm螺柱支承2mm盖，盖板下表面Z22.6mm、上表面24.6mm。前沿开口X8～101、Y65向外开放；外部电源开口X65.5～81.5、向内至Y13mm，八处开口转角R2。切割边仍需去毛刺。
+- 来源拨杆圆孔中心(96,12)mm、直径6.5mm，围绕模型5mm轴套留0.75mm径向间隙，盖板不夹持开关。当前只建直立拨杆，完整动作/倾斜及样品公差未验证。
+- 所有新增TP2～TP11拆盖后探测，不增加盖板探针孔。D2mm竖直探针包络仅用于布局筛查。
 
-## 本轮围边与面板标识
+基于厂家图纸和现有引脚推导，拨杆朝后为INT、朝前为EXT；印刷放行前须样品导通确认。没有新增实体MEASURE键/状态灯；参考效果图的这些功能不作为已确认电路。
 
-2026-11-13：按用户指图删除盖板左侧原service_button_notch大U形开槽，恢复连续板面。覆盖区域服务操作需拆盖；未改PCB、原理图和USB底座避让口。装配检查仍基于既有PCB STEP快照，不能替代主线程最新布局复核。
+当前显示为暖米白PETG底座、透明PC2mm盖板、黄铜柱、银色螺钉及黑色脚垫；均为工程外观/材料建议。紧固件建议尺寸见`../../bom/mechanical.csv`，尚无完整供应商型号及价格。热熔预孔4.1mm是试片起点，需按实际螺母和打印机确定。
 
-USB过渡曲线最终采用三次Bezier精确相切构造。早期余弦采样插值出现微小越界并导致布尔切削未清除预期区域，已替换；最终假设插头包络与底座、盖板相交体积均为0。请打开重新导出的STEP，不沿用旧截图。
+面板SVG与装配0.02mm薄层表达印刷，不能当作加工凸字。白色/米白需印厂确认白墨工艺，生产前字体转曲、1:1纸样对位和色差确认。SVG裁切边界不替代DXF切割轮廓。
 
-下围边恢复连续，仅USB保留总宽22mm、深4mm的圆滑U形下凹，中间14mm平底、左右各4mm三次Bezier相切过渡；肩部与底部斜率连续，底面Z=6mm，底板厚3mm保持。其他接口模型未与围边干涉。以宽14mm、高8mm、中心Z=12.5mm、Y=-0.5～25mm的假设插头护套直线扫掠检查底座与盖板；这是工程包络，不是已选线缆的尺寸保证，不覆盖弯头、加厚护套、斜插或实际配合。下文先前“接口处避让”的描述由本段取代，上盖开口保持原样。
+## 再生成
 
-`panel_artwork.py`统一生成`hslink_lp_panel_print.svg`及装配中的薄层印刷示意。SVG为118×88mm、1:1毫米、正面非镜像稿；透明区域不印，米白色块下需要白墨底。提交印厂前须转曲字体、确认白墨工艺并进行1:1纸样对位。当前是工程标识稿，不是已确认的印刷生产文件。不要将STEP中0.02mm示意层当作加工凸字。
+从PCB原生辅助原点(88,61)mm导出，不能使用绝对原点(0,0)mm。在工程根目录运行：
 
-标识采用用户选定C方向：连贯米白色块、透明中央窗口、深色HSLP文字、橙红斜线和白色接口文字。补充SOURCE两侧INT/EXT、EXT IN、ARM20 / JTAG / SWD、UART A/B及DUT OUT。无对应实体的按钮及指示灯不虚构。SVG和装配薄层由同一文本清单生成，未修改PCB或原理图。SVG外轮廓用于图形裁切，不替代盖板DXF加工轮廓。
-
-SOURCE方向依据Dailywell图纸2MDP0428 Rev.A及现有引脚连接分析：以前沿调试接口朝向使用者的俯视方向，拨杆朝后为INT，朝前为EXT。SW601的1脚为INT_PROTECTED、2脚为SOURCE_POWER、3脚为EXT_INPUT；图纸的拨杆方向与闭合触点位于相反侧。此为资料推导，尚未样件导通验证，印刷放行前必须复核两个档位，不能将此写作硬件验证通过。
-
-2026-11-13装配印刷层已导出并人工查看：文字与孔、接口未见明显重叠；透视图中拨杆可能遮挡后侧INT字样，俯视读取。SVG保留可编辑文字，生产前仍须转曲、纸样对位和白墨工艺确认。装配使用既有PCB STEP快照，不代表主线程最新PCB。
-
-PCB STEP经普通实体导入后原颜色未保留；本轮绿色端子、银灰开关为尺寸分类示意配色，其他器件仍有简化显示。六类自建模型不是厂家精细模型。旧原生检查快照无模型项仅含安装孔、定位点及TP1，新增裸铜测试点也不需要实体。尚不能据此证明主线程最新PCB的全部模型覆盖。
-
-开放底座＋可拆盖板。此目录是唯一当前结构设计，版本使用Git；没有实物装配或生产放行。
-
-- `parameters.json`：板框/孔位/高度/开口的毫米参数。
-- `hslink_lp.py`：CadQuery参数化底座、盖板及装配。Python依赖通过用户已安装的uv工程运行。
-- `component_envelopes.py`：十类缺少厂家STEP的器件外形模型源；输出到项目`libraries/models`。模型按已查尺寸图建立，但不覆盖完整公差、端子内部结构或所有活动位置。
-- `hslink_lp_base.step/.stl`、`hslink_lp_lid.step/.stl/.dxf`：当前参数的导出件。STEP/STL可用FreeCAD打开；盖板DXF保持1:1毫米。文件随源参数一起更新，不作为独立版本副本。
-
-底座118×88mm，底板3mm、围边高10mm；PCB底面距底座底面9mm。PCB110×80mm，四个M3孔与PCB坐标一致。12mm螺柱支承2mm盖板；盖板下表面22.6mm、顶面24.6mm，与简化电源端子顶面名义齐平。围边单边距板边0.8mm，不承托焊点；围边仅USB处保留圆滑避让。尺寸仍需公差和样品验证。
-
-装配建议件见`../../bom/mechanical.csv`：M3×12黄铜公母柱、公端6mm、4个M3×6上盖螺钉、垫圈、热熔螺母、脚垫。均尚未选定可采购的完整型号或核价。热熔螺母外径4.6/长度4mm和预孔4.1mm仅为试片起点，不能直接承诺热熔/打印配合。
-
-本轮外观：暖米白PETG底座、近无色透明PC盖板、黄铜柱、银色金属螺钉和垫圈、黑色脚垫。颜色是显示属性，不构成材料采购认证；透明板保留既有PC建议，未自动改为PMMA亚克力。拨杆开口改为中心(96,12)mm、直径6.5mm圆孔，围绕模型直径5mm轴套留0.75mm径向间隙，不夹持PCB开关。模型轴套顶面比盖板顶面高约0.23mm；现有模型仅含直立拨杆，全行程、倾斜装配及样品公差必须复核。
-
-降低盖板后装配导出与干涉报告见`../reports/structure-compact-2026-11-12`。本轮使用既有布局快照`layout-ux-2026-11-12/pcb.step`，没有修改PCB或原理图。主线程仍在布线，最新布局若变化需重新导出PCB并检查；既有旧装配报告不能代表本轮结构。
-
-## 重新生成
-
-先使用KiCad MCP导出当前PCB STEP（原点0,0mm、替换模型启用），放入忽略的`../reports/pcb-structure-2026-11-12/pcb.step`。在工程根目录运行：
-
-```bash
-uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline python \
-  hardware/design/mechanical/hslink_lp.py \
-  --pcb-step hardware/design/reports/pcb-structure-2026-11-12/pcb.step
+```sh
+kicad-cli pcb export step --force --subst-models --no-optimize-step --user-origin 88x61mm -o hardware/design/reports/manufacturing-review-2026-11-14/pcb.step hardware/design/HSLink-LP.kicad_pcb
+uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline python hardware/design/mechanical/hslink_lp.py --assembly-only --pcb-step hardware/design/reports/manufacturing-review-2026-11-14/pcb.step --probe-map hardware/design/reports/final-control-routing-2026-11-13/probe-map.json --reports hardware/design/reports/manufacturing-review-2026-11-14/mechanical
 ```
 
-用户工具路径可按本机CadQuery安装目录修改。无PCB参数时仅生成结构单件；包含PCB时还输出忽略的装配STEP/GLB及几何检查JSON。渲染颜色用于辨识，不表示实际材料或PCB已布完。
+`--assembly-only`保留未变的单件STEP/STL/DXF；需要重生成单件时去掉它。探针位置必须来自当前PCB原生导出；变更布局时不可盲用旧map。Python统一uv，CadQuery运行环境在用户工具目录。
 
-## 检查边界
+检查器现在拒绝偏离板局部原点的STEP、缺少安装孔及器件/探针碰撞。3.19mm净空柱用于确认孔位，不代替3.2mm孔径公差；无PCB输入时只报告结构单件检查，不能宣称已检查装配。源码和参数哈希随报告记录。故意平移STEP、缺孔板体及把探针放入K601的反例均被拒绝。
 
-底座和盖板各为一个有效实体；导入PCB器件与底座/盖板/四组螺柱、垫圈、螺钉未发现超过1e-5mm³的体积干涉。板体STEP厚度不完全包含铜/阻焊，安装高度仍按名义1.6mm，必须计入板厚和模型公差。没有用无干涉结果替代实物插拔和装配验证。
+## 已完成检查及边界
 
-ARM20排线资料未给出准确插头外包络；当前开口不是经实测确认的插头模型。还需检查排线出线/弯曲、端子螺丝刀可达、拨杆全行程、USB插头、打印收缩、螺柱/螺母采购公差、透明盖挠曲、通风与温升。6个简化外形不是厂家原始STEP。整夹具140nA漏电仍需包括线束、PCB污染和结构材料进行实测。
+当前原生PCB中211封装、759焊盘对象保持；本轮仅三处放置属性变化，全部几何不变。当前STEP的110×80mm边界与四安装孔通过新增检查。底座/盖板各一个有效实体，器件与底座、盖板及螺柱/垫圈/螺丝没有超过1e-5mm³的体积干涉；10个探针包络无器件干涉，使用时需拆盖。
 
-## 接口重排与测试点检查（2026-11-12）
+既有单件STEP体积与当前CadQuery源一致，STL闭合、无边界/非流形边，体积误差<0.1%、边界差<0.04mm（网格逼近，非加工精度）；盖板DXF读回为毫米及四孔/拨杆孔正确。已查看当前装配俯视/透视和制造数据铜层。
 
-当前前沿顺序为ARM20、UART A、UART B、DUT电源。板框、安装孔及结构开口未改变，继续使用本目录唯一单件STEP/STL/DXF；按新PCB重新导出的装配位于忽略目录`../reports/layout-ux-2026-11-12`，未发现当前简化器件与底座/盖板/紧固件体积干涉。
+ARM20的34×12mm、UART的13×4mm插头包络以及D4mm竖直螺丝刀杆对结构件无干涉，**均为工程试探包络**。CBL801图纸只给针距/线长，缺少插头外形及最小弯曲半径，不能称所选排线匹配通过；USB护套14×8mm同样未指定真实线缆。实际插拔/手指/刀柄、拨杆全行程、板厚/模型/打印/紧固件公差、盖板挠曲、材料采购、温升和140nA污染漏电仍待验证。
 
-TP2～TP11均需要拆下透明盖板后使用。按直径2mm、竖直向上35mm的探针包络检查，未与PCB器件模型相交；这个假设不能代替实际探头外形/公差/手持角度和试针行程检查。盖板不为这些点增加孔；保持可拆即可进行首板调试和外部校准。
-
-只更新装配而不重写未变单件，可增加`--assembly-only`。使用KiCad原生位置JSON（列表，每项含`ref`和`position_mm:[x,y]`）可增加`--probe-map PATH`进行上述包络检查，例：
-
-```bash
-uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline python \
-  hardware/design/mechanical/hslink_lp.py --assembly-only \
-  --pcb-step hardware/design/reports/layout-ux-2026-11-12/pcb.step \
-  --probe-map hardware/design/reports/layout-ux-2026-11-12/testpoint-connectivity.json \
-  --reports hardware/design/reports/layout-ux-2026-11-12
-```
-
-
-## 盖板轮廓圆角修正（2026-11-13）
-
-开口先并入板外轮廓再倒圆，避免圆角切削矩形与外板边相交形成尖点。四个外角R5；前沿接口大开口、后沿外部电源开口的入口与内角共八处统一R2，圆弧与直线相切。圆孔、安装孔位置及板厚不变，SVG裁切轮廓同步采用圆弧。上下表面厚度方向的边缘仍为板材切割边，实物需去毛刺；本轮不是三维全边滚圆。重新导出STEP/STL/DXF及装配，俯视人工检查未见开口尖点。既有PCB快照干涉检查通过，最新PCB与实物公差仍待复核。FreeCAD颜色问题尚未修复。
-
-
-## FreeCAD配色修复（2026-11-13）
-
-FreeCAD 1.1.4原生导入确认：盖板透明度78%正常，但多实体组合的印刷底色和文字丢失组合级STEP颜色，显示默认灰色。现在按每个实体分别赋色导出；重新导入的米白、深色、白色、橙红颜色断言通过。尺寸及电路文件未改。
-
-优先打开reports/structure-compact-2026-11-12/HSLink-LP-assembly.FCStd，已保存着色（Shaded、无边线）及透明度。原生装配成功保存、重新打开并生成freecad-appearance.png，已人工检查配色。STEP导入颜色也已修复，但新导入的显示模式可能仍为Flat Lines，需切换着色以免文字边线影响观感。
-
-FCStd是可再生显示结果，CadQuery仍是设计源。后续离屏批量复跑在GUI初始化阶段出现原生崩溃，未进入模型检查，自动化稳定性尚未解决。临时验证脚本已删除，成功的报告、原生文件和图片保留在忽略目录。显示配色不代表真实印刷色差认证。
+十类包络的尺寸与资料线索在`component_envelopes.py`，PDF来源哈希保留在`hardware/validation.json`的模型记录中；装配假设、工艺导出和未关闭项见[制造审阅说明](../../../docs/manufacturing.md)。资料/几何检查不代替实物验证。

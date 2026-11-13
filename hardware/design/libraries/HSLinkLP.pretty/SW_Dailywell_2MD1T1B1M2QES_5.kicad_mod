@@ -7,7 +7,7 @@
 	(property "Reference" "REF**"
 		(at 0 -5.7 0)
 		(layer "F.SilkS")
-		(uuid "03026eaf-b17e-4b10-90d6-636475e62644")
+		(uuid "d20a604b-06c0-4009-95fa-86b5bfd11f3d")
 		(effects
 			(font
 				(size 1 1)
@@ -18,7 +18,7 @@
 	(property "Value" "SW_Dailywell_2MD1T1B1M2QES_5"
 		(at 0 5.7 0)
 		(layer "F.Fab")
-		(uuid "4ccba9d4-bb84-44aa-975c-7d1c64f0454a")
+		(uuid "085e051d-4e9d-4468-aaf8-fcff72a937c6")
 		(effects
 			(font
 				(size 1 1)
@@ -29,7 +29,7 @@
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "77d9803c-720e-45f6-b12a-c50d55565297")
+		(uuid "1587fe74-58af-4967-b8ce-0dbef7ebadd8")
 		(effects
 			(font
 				(size 1 1)
@@ -41,13 +41,14 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "47cdf354-1ba5-44fb-a1ca-e220b131868e")
+		(uuid "5d3a40ee-9ea0-4b2c-8486-3395276be83f")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
+	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -3.14 4.25)
@@ -132,8 +133,14 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/models/Dailywell_2MD_envelope.step"
-		(offset (xyz 0 0 0))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

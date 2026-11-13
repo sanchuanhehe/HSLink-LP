@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "当前唯一PCB布线完成，完整DRC/原理图parity/焊盘网络/回流参考面与结构C尺寸包络检查；硬件性能和生产放行未完成",
-  "checked_at": "2026-11-14T04:35:13.469809+08:00",
+  "scope": "PCB全部连接保持；修复放置类型与制造坐标遗漏风险；制造数据回读、结构原点/孔位/碰撞检查；实际配套插头及国内最终叠层待核对",
+  "checked_at": "2026-11-14T05:38:14.549191+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,14 +15,14 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "ROUTED_CAD_CHECKED",
-    "validation": "211封装、759焊盘网络保持；0一般DRC违规、0未连接、0原理图parity；26个控制/模拟实际铜分组各1组。关键链路几何保持。结构C包络复查见control_whitelist_routing；较长Vref与控制线、实物线缆/公差及性能验收仍待完成。",
+    "validation": "仅U501/SW601/K601三处放置属性改变；759焊盘对象及全部铜/布局保持；完整DRC0一般违规/0未连接/0parity。185SMT/8THT制造数据回读匹配。物理装配、国内最终阻抗叠层及实板性能未放行。",
     "working_dimensions_mm": [
       110,
       80,
       1.6
     ],
     "copper_layers": 4,
-    "source_sha256": "ab7ba61fcb7b909f1d05068a2e6311aa2608630b70b2e9be4bc5bdce2ab6674c"
+    "source_sha256": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd"
   },
   "firmware": {
     "version": null,
@@ -32,7 +32,7 @@
     "version": "0.1.0.dev0",
     "status": "本地info骨架，无真实HID；新增离线安全策略参考及12项测试，不代表真实控制或固件测量锁"
   },
-  "document_checks": "同步当前0未连接状态、白名单/Vref及回流/参考面限制、当前结构C包络；未刷新采购报价或硬件验收",
+  "document_checks": "已同步当前PCB/装配和制造数据状态，修正原点说明、185SMT/8THT及真实未闭合项；没有刷新历史报价或声称硬件验收",
   "hardware_readiness": "NOT_READY",
   "erc": {
     "errors": 0,
@@ -348,7 +348,7 @@
     "HSLink-LP.code-workspace": "ce138222cb6ad122838d00b117f3869a22439c92f372e65d42883081a0b38535",
     "README.md": "62c9dbed9bcc8a3d3333023ae983e613a6ea2fcb70545a15ce6106275c2b12e1",
     "docs/architecture.md": "2d6533569b2ad10e4573c479380226fdf01ce8ad9269250382180fc07c2c5d5e",
-    "docs/arm20-interface.md": "38d1f8ab67fbaa3f9aa597b79defee8ed3bebf7a14fd1ee7b7721c35353a7163",
+    "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
     "docs/control-interface.md": "879e2c7de64f79f40e5250b9fdd1078bf999c49988af7f356c527b58230d3e5b",
     "docs/cost-down.md": "74f2dc3f95b969bb383d873155b86d7a53eb0d545d8d92e1126085bb4fee2bd0",
     "docs/cost.md": "0d369fd775ed53ea27c11ab4f98becf5b6bcbda06596fb837d9632ba6b7dbc5e",
@@ -361,7 +361,7 @@
     "docs/procurement-completion.md": "193ddcf43f8e16de60af2741dc9c5b273af02584489bf82c11724673d8f3f155",
     "docs/procurement-pinmap.md": "2f73f2bf8b312c5f4de2be407515bab4cc1b56088567a497ddd23f86ec327238",
     "docs/references.md": "268339d923de77c3b452f4defebfbbf83808c5ac4f7f5ea8f79e1aa0044e5fc3",
-    "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
+    "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
     "docs/sense-discharge.md": "60bd16b721f775669695d5ee562e0e1a2f511928ec93718b8d328cc32d34dd01",
     "docs/spice-validation.md": "38c895ae10be4f2e519b2faa0c52988dbcd7845c98eb58a68e828ca60f498e4c",
@@ -383,7 +383,7 @@
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
     "hardware/design/Power.kicad_sch": "42d844005782c6a1169872a362a22b5157f59761ea8c7265e38709a470daa12c",
-    "hardware/design/README.md": "d4dcf6474b61a2e28f0864117b9808fab25c41bdd6115fe30b56aeaf6c1c2909",
+    "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
     "hardware/design/Safety.kicad_sch": "d66231bf2b4111e3bdd97e05307fdf64f229fe52489c1c4ffd181985d83c806b",
     "hardware/design/Sense.kicad_sch": "a6a3e2d0e3c0813062db8f3e525dcc2cc61b402d4710a5328b0ca5f58d74a945",
     "hardware/design/TargetPower.kicad_sch": "76e3fcd14b206e109261777d451d90b90c7a87f5242a9f1bda739ac97b59365f",
@@ -393,10 +393,10 @@
     "hardware/design/libraries/HSLink-upstream-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "hardware/design/libraries/HSLinkLP.kicad_sym": "17304532854245d0c8f49d82578dfb518ad32a665aec7c47b242145c190930bc",
     "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "1de80d0ae779a9e236a7d13f31e40220669db94ede0159afcb3cad11a7c41f1a",
-    "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "d7da2c846e3a7bb59374e409ce8c87876b3a46510e9fb71ca43397347a7e51d0",
-    "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "f3ddf73666c385e0dbf7ab2e5e88b063b08e4017c4da88cc6e4e3fd61a27d2db",
+    "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "a93ed0fcb2723c2ebf9c2734c342de044b25cc6659b84077ca8da252e4d09485",
+    "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "9aaff9128a6293dac47868aa8044ac56c54c1c39a6709a16f5b0b4eafa675406",
     "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "cfd5cd80c90ead24b12a435d9aa729b7d10f00b2862ebd0e6edab4b6a4004e92",
-    "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "fdf0b2e073f230870aa3235815699926f312f7067461b04ce6dff2c4f8f90a15",
+    "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "83bbc12033fa858a26041e71b45e1690082494abfb92a85ea76b146139a14220",
     "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "603f6cfcc427e66b9a1b733cc31b1f4b7f5487785e541c0f05f9854fb2a322f5",
     "hardware/design/libraries/UpstreamCache.kicad_sym": "22241c62c2b41373c6d070942315426b605ce85f0fd0e64695d6e2664d26d192",
     "hardware/design/simulation/.spiceinit": "757189d0faa3efa41e2b3ac83cc1bbbae5e4ccfa5b2f96489748b56a411b4225",
@@ -425,13 +425,13 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "9959ad8732e795fbecd212df633bdeb08a38908aeccc3dd8cb021de963ec7740",
+    "docs/pcb-layout.md": "e3c2cf3817da715c371d094a06b1a2aadd7680d432b8c186a326a750d818868c",
     "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
-    "hardware/design/HSLink-LP.kicad_pcb": "ab7ba61fcb7b909f1d05068a2e6311aa2608630b70b2e9be4bc5bdce2ab6674c",
+    "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
     "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
-    "hardware/design/mechanical/README.md": "8935621003b9dd8df6dc4c3edd53203b584578445868925e9b95917bfb91da42",
+    "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
     "hardware/design/mechanical/component_envelopes.py": "c0a350f74ae88c31dd2c892c4fde66b10f5684d159fcd0e0f26be1d8818bcff5",
-    "hardware/design/mechanical/hslink_lp.py": "35e47809587bbf72272675d2dd861429c9ba9cf02647867328d6f7bbe98a8abf",
+    "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
     "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
     "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416",
     "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
@@ -453,7 +453,9 @@
     "hardware/design/libraries/models/FSA2466_envelope.step": "18de88f042130728fa0c1bbbe0cd2e1f8ca98d64a8ce2c327cb85a8bf1e3c975",
     "hardware/design/libraries/models/HPM5301_envelope.step": "99da97d6fd6500989ea6ab6fabe4e2df1fbc755f79fec22aea590e72d7d57ad1",
     "hardware/design/libraries/models/TPS259531_envelope.step": "9fc3d38082996e3c9cb2aae9cfc65c77115f570329add53560dcd03bec09d55f",
-    "hardware/design/libraries/models/TS1187A_envelope.step": "49b86ed3fa3787db9b0b097d720d65e414334a620a54ddf14e75e0a16c7d3110"
+    "hardware/design/libraries/models/TS1187A_envelope.step": "49b86ed3fa3787db9b0b097d720d65e414334a620a54ddf14e75e0a16c7d3110",
+    "docs/manufacturing.md": "242548d30898abf369fbe13f4919d5ac3b37cf0f98eeb875fdb28b7a409d97c0",
+    "hardware/design/mechanical/hslink_lp_panel_print.svg": "41ba1172d2b46abcb4936c5d2ea73519f14d3ebf531cdbda7470d0d7959be82c"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -2485,7 +2487,7 @@
       ]
     }
   },
-  "historical_sections_note": "历史审查、仿真和布局阶段只对应自身日期/哈希；当前PCB状态以pcb、pcb_completion及control_whitelist_routing为准。历史模型和仿真不作本轮性能验收。",
+  "historical_sections_note": "此前审查/仿真/布线阶段只对应自身源哈希；当前源与数据以pcb、pcb_completion和manufacturing_review为准。8b3c89b之后仅三处放置属性变化，原有几何证据由metadata-only-proof关联；实际插头及国内最终叠层仍待核对。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -3472,8 +3474,8 @@
   },
   "pcb_completion": {
     "date": "2026-11-14",
-    "stage": "control_whitelist_complete_and_structure_C_checked",
-    "verdict": "CAD_CHECKS_PASSED_HARDWARE_UNVERIFIED",
+    "stage": "manufacturing_data_and_structure_fit_guards",
+    "verdict": "CAD_DATA_CHECKS_PASSED_MATING_AND_DOMESTIC_STACK_INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
     "sources": [
@@ -3492,42 +3494,8 @@
       "general_violations": 0,
       "unconnected_items": 0,
       "schematic_parity": 0,
-      "included_severities": [
-        "error",
-        "warning"
-      ],
-      "report": "hardware/design/reports/final-control-routing-2026-11-13/final-drc.json",
-      "new_ignores": false,
-      "legacy_ignored_checks": [
-        {
-          "description": "Footprint has no courtyard defined",
-          "key": "missing_courtyard"
-        },
-        {
-          "description": "Track endpoint not centered on via",
-          "key": "track_not_centered_on_via"
-        },
-        {
-          "description": "Tuning profile track geometries",
-          "key": "tuning_profile_track_geometries"
-        },
-        {
-          "description": "Footprint doesn't match symbol's footprint filters",
-          "key": "footprint_filters_mismatch"
-        },
-        {
-          "description": "PTH inside courtyard",
-          "key": "pth_inside_courtyard"
-        },
-        {
-          "description": "NPTH inside courtyard",
-          "key": "npth_inside_courtyard"
-        },
-        {
-          "description": "Footprint component type doesn't match footprint pads",
-          "key": "footprint_type_mismatch"
-        }
-      ]
+      "report": "hardware/design/reports/manufacturing-review-2026-11-14/full-drc.json",
+      "ignored_checks_unchanged": true
     },
     "pad_net_groups_unchanged": true,
     "mcu_thermal_vias": 4,
@@ -3536,38 +3504,42 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "ab7ba61fcb7b909f1d05068a2e6311aa2608630b70b2e9be4bc5bdce2ab6674c",
+      "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
+      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
+      "docs/manufacturing.md": "242548d30898abf369fbe13f4919d5ac3b37cf0f98eeb875fdb28b7a409d97c0",
+      "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
+      "docs/pcb-layout.md": "e3c2cf3817da715c371d094a06b1a2aadd7680d432b8c186a326a750d818868c",
+      "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
       "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
       "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
       "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
-      "docs/control-analog-routing.md": "24227b5f745cb2c5d659b0838bfae0f26e3dd8ede176c9eb409865d694a3b35a",
-      "docs/pcb-layout.md": "9959ad8732e795fbecd212df633bdeb08a38908aeccc3dd8cb021de963ec7740",
-      "docs/u1-fanout.md": "741fd91744f6e29be19f0dc1ebad62e524663c9bffcc755759501c7cca7b4f81",
-      "docs/structure-and-pcb.md": "590cdf8111059770d3e218bec9e6eb197c27cf22962a9ef055dca1a3156ff2af",
-      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
-      "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
-      "hardware/design/mechanical/README.md": "8935621003b9dd8df6dc4c3edd53203b584578445868925e9b95917bfb91da42",
-      "hardware/design/mechanical/component_envelopes.py": "c0a350f74ae88c31dd2c892c4fde66b10f5684d159fcd0e0f26be1d8818bcff5",
-      "hardware/design/mechanical/hslink_lp.py": "35e47809587bbf72272675d2dd861429c9ba9cf02647867328d6f7bbe98a8abf",
+      "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
+      "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
       "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
       "hardware/design/mechanical/panel_artwork.py": "67db2d8a1fd14b465fec577a99606f825a2eeb424310ea44f2f8e41d859962c2",
-      "hardware/design/libraries/models/Dailywell_2MD_envelope.step": "07c7d9eb9634ab81335bbf16ac1ba1e7e21df1e4144c482c92fe3a73033ecce2",
-      "hardware/design/libraries/models/FSA2466_envelope.step": "18de88f042130728fa0c1bbbe0cd2e1f8ca98d64a8ce2c327cb85a8bf1e3c975",
-      "hardware/design/libraries/models/HFD2_envelope.step": "217aa694cbd84841db78d75f587f0c6422fb5d1ce54d3117108ed3650f340134",
-      "hardware/design/libraries/models/HPM5301_envelope.step": "99da97d6fd6500989ea6ab6fabe4e2df1fbc755f79fec22aea590e72d7d57ad1",
-      "hardware/design/libraries/models/KF128_2P_envelope.step": "344200d57ef795d4fbae84b17350b12d8be0e3f981014c673285e75ad6fde95b",
-      "hardware/design/libraries/models/SPH4018_envelope.step": "39c8e928109d81cedaab33fa3a0a3c4923ee4f67e9f82c06482f78ec5e688784",
-      "hardware/design/libraries/models/TPS259531_envelope.step": "9fc3d38082996e3c9cb2aae9cfc65c77115f570329add53560dcd03bec09d55f",
-      "hardware/design/libraries/models/TPS63810_YFF_envelope.step": "5456a84d2c417e2989ff6b8ce2e7817135d9d8fb1317e18a7b75d86890286570",
-      "hardware/design/libraries/models/TS1187A_envelope.step": "49b86ed3fa3787db9b0b097d720d65e414334a620a54ddf14e75e0a16c7d3110",
-      "hardware/design/libraries/models/WUSB3801_envelope.step": "f989c588b8fd1e67f032a2626c2ecce2d6f29cf8a6f3d41acb138529ac5bcef3"
+      "hardware/design/mechanical/component_envelopes.py": "c0a350f74ae88c31dd2c892c4fde66b10f5684d159fcd0e0f26be1d8818bcff5",
+      "hardware/bom/candidates.csv": "0c0c9fb90cf794260a325251736acb01db283fbea887f2945cbca24158913a81",
+      "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
+      "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "1de80d0ae779a9e236a7d13f31e40220669db94ede0159afcb3cad11a7c41f1a",
+      "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "a93ed0fcb2723c2ebf9c2734c342de044b25cc6659b84077ca8da252e4d09485",
+      "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "9aaff9128a6293dac47868aa8044ac56c54c1c39a6709a16f5b0b4eafa675406",
+      "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "cfd5cd80c90ead24b12a435d9aa729b7d10f00b2862ebd0e6edab4b6a4004e92",
+      "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "83bbc12033fa858a26041e71b45e1690082494abfb92a85ea76b146139a14220",
+      "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "603f6cfcc427e66b9a1b733cc31b1f4b7f5487785e541c0f05f9854fb2a322f5",
+      "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
+      "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "41ba1172d2b46abcb4936c5d2ea73519f14d3ebf531cdbda7470d0d7959be82c"
     },
-    "report_directory": "hardware/design/reports/final-control-routing-2026-11-13",
+    "report_directory": "hardware/design/reports/manufacturing-review-2026-11-14",
     "remaining": [
-      "实际ARM20插头、排线弯曲、USB护套、螺丝刀及拨杆全行程/样品公差",
-      "厂家DFM/最终叠层订单与材料紧固件选型核价",
-      "实际线缆/负载下40MHz、持续1A、140nA/20～30°C、VIO±1%及长控制线/采样动态验收",
-      "真实固件/主机传输及测量锁联调；本轮未修改软件"
+      "CBL801 actual plug dimensions, mating height, cable bend/switch travel and physical clearances",
+      "domestic final stack/impedance calculator reconciliation and factory CAM/assembly process confirmation",
+      "prototype materials/fastener complete MPNs and fit coupons",
+      "hardware electrical performance acceptance; firmware/host outside this CAD stage"
     ],
     "status": "ROUTED_CAD_CHECKED",
     "visual_review": "见control_angle_routing；已看实际铜层/丝印，最终整机装配尚未重验",
@@ -9436,5 +9408,221 @@
       "VIO_1_8_3_3V_1percent": "待逐板外部校准、启动和动态验收"
     },
     "software_lock_or_HID_implementation_changed": false
+  },
+  "manufacturing_review": {
+    "checked_at": "2026-11-14T05:38:14.549191+08:00",
+    "baseline_commit": "8b3c89b",
+    "status": "DATA_CHECKS_PASSED_MATING_GEOMETRY_AND_DOMESTIC_STACK_OPEN",
+    "source_sha256": {
+      "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
+      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
+      "docs/manufacturing.md": "242548d30898abf369fbe13f4919d5ac3b37cf0f98eeb875fdb28b7a409d97c0",
+      "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
+      "docs/pcb-layout.md": "e3c2cf3817da715c371d094a06b1a2aadd7680d432b8c186a326a750d818868c",
+      "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
+      "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
+      "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
+      "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
+      "hardware/design/mechanical/panel_artwork.py": "67db2d8a1fd14b465fec577a99606f825a2eeb424310ea44f2f8e41d859962c2",
+      "hardware/design/mechanical/component_envelopes.py": "c0a350f74ae88c31dd2c892c4fde66b10f5684d159fcd0e0f26be1d8818bcff5",
+      "hardware/bom/candidates.csv": "0c0c9fb90cf794260a325251736acb01db283fbea887f2945cbca24158913a81",
+      "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
+      "hardware/design/libraries/HSLinkLP.pretty/L_Sunlord_SPH4018.kicad_mod": "1de80d0ae779a9e236a7d13f31e40220669db94ede0159afcb3cad11a7c41f1a",
+      "hardware/design/libraries/HSLinkLP.pretty/Relay_Hongfa_HFD2.kicad_mod": "a93ed0fcb2723c2ebf9c2734c342de044b25cc6659b84077ca8da252e4d09485",
+      "hardware/design/libraries/HSLinkLP.pretty/SW_Dailywell_2MD1T1B1M2QES_5.kicad_mod": "9aaff9128a6293dac47868aa8044ac56c54c1c39a6709a16f5b0b4eafa675406",
+      "hardware/design/libraries/HSLinkLP.pretty/TerminalBlock_KEFA_KF128_5.08_1x02.kicad_mod": "cfd5cd80c90ead24b12a435d9aa729b7d10f00b2862ebd0e6edab4b6a4004e92",
+      "hardware/design/libraries/HSLinkLP.pretty/Texas_YFF0015_1.344x2.255mm_P0.4mm.kicad_mod": "83bbc12033fa858a26041e71b45e1690082494abfb92a85ea76b146139a14220",
+      "hardware/design/libraries/HSLinkLP.pretty/WillSemi_QFN1616_12L.kicad_mod": "603f6cfcc427e66b9a1b733cc31b1f4b7f5487785e541c0f05f9854fb2a322f5",
+      "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
+      "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "41ba1172d2b46abcb4936c5d2ea73519f14d3ebf531cdbda7470d0d7959be82c"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/manufacturing-review-2026-11-14/HSLink-LP-fabrication-review.zip": "5a024d13f3aee7a37942ea5eb637b5f409de91f760a126e6aaf83f9633ad6ac1",
+      "hardware/design/reports/manufacturing-review-2026-11-14/HSLink-LP-ipc356.d356": "d8dac5bf213e99728b24cd42e8cec3896f3a4410568d9a22073aba0c9e6b6d59",
+      "hardware/design/reports/manufacturing-review-2026-11-14/HSLink-LP-mechanical-review.zip": "cf988a58dbac8438e92eccce6b82fd9f0e0f9f35cd09408f0b8335dce501dafd",
+      "hardware/design/reports/manufacturing-review-2026-11-14/all-position-export.log": "c0773047b477b9c9d0ae6d757b0633b280274cdbdf3417795d3a64839408c035",
+      "hardware/design/reports/manufacturing-review-2026-11-14/assembly/jlc-smt-bom.csv": "8b5ad4a163320c931eaac9966063585df947b365d658c550e16d34334463071f",
+      "hardware/design/reports/manufacturing-review-2026-11-14/assembly/jlc-smt-cpl.csv": "8c8b1f74e88637598280160dee422f1a44332116c23b2c890f0fa2a8d0161c43",
+      "hardware/design/reports/manufacturing-review-2026-11-14/assembly/kicad-all-positions.csv": "fe7ec59cda1a928c843c313cb4e0fbd6a3831a0678f848f4fcff9a521d450d84",
+      "hardware/design/reports/manufacturing-review-2026-11-14/assembly/kicad-smd-positions.csv": "4bbe9b8f4788a78112a5e17be8943e16c329614a5e19366b430b761c07d91515",
+      "hardware/design/reports/manufacturing-review-2026-11-14/assembly/through-hole-assembly.csv": "eacbcdb4a65bc72badcbc2fb40232335e677e20cd77189b62386c5e4789e4da9",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-bottom-copper.png": "d76d732da992fea1a66f1bdb9a4b5ac7e00c1711e1832a02e1a2e6f5605e7d57",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-bottom-copper.svg": "f50bce34bc82f64efc734dec2345cfa1ef9a4bec24364ab2376a86502cebd11d",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-inner_1-copper.png": "297e11fdbf1f0f9e57911659d23ef79d2378d7f5269b259ccb00dad8511de6b6",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-inner_1-copper.svg": "9f8adef114225dc08fcdee8d2100536bf9970392ff4b2571e9e2e4ba41807405",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-inner_2-copper.png": "297e11fdbf1f0f9e57911659d23ef79d2378d7f5269b259ccb00dad8511de6b6",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-inner_2-copper.svg": "9f8adef114225dc08fcdee8d2100536bf9970392ff4b2571e9e2e4ba41807405",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-top-copper.png": "07a1c01c22509fd920c2400c279c629689e920e29b4d01be47ef81100e71e281",
+      "hardware/design/reports/manufacturing-review-2026-11-14/cam-top-copper.svg": "aceab468f756e892a39c10b6522913c94b9c28f3cb2f704fd4febc570a56071c",
+      "hardware/design/reports/manufacturing-review-2026-11-14/clearance-query.log": "78aa7566e7c0c1db988d9e0a46dd9fe3bdf8fa2fa9b44cb3cfb4c4d87180bde5",
+      "hardware/design/reports/manufacturing-review-2026-11-14/drill-export.log": "f6f1ba09179f0858f37665da5e01072a783906c482ca38d517f537cfd87b6a19",
+      "hardware/design/reports/manufacturing-review-2026-11-14/drill-report.txt": "7a122736c36e29e4e62612f97a73d545c093e89890316d42aadc69d1e7e0cb13",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Cu.gbr": "178db575eb90861461a966befa686bc105500c4633eacaabe2b27b74d1477d67",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Mask.gbr": "802955a90d226186c3648c432e872da74b7483f85d422068604b275d86ee8cfb",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Paste.gbr": "a4424b955a6b09b3aa35a49c17b649f24e31c033f337dd250b80b7caed534a2d",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Silkscreen.gbr": "fa197015452165dfb7b42e2c582a6bd7ebef9330391ffb633c99e7e2f0beaa13",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-Edge_Cuts.gbr": "00130049b014532d787ff94b637f8e6720b3b20fd96cdec5e6fb4b583bc4a755",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Cu.gbr": "15f278a7730856a541d90f853fcf90bd74c24bbe267e086b7e4a6f78365dbd9a",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Mask.gbr": "2c73580a3e5dd04ac3daedd5cfa799d5b6f2fce56f202b53e333e3e361e6f8bc",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Paste.gbr": "34aa6a4ee9dfe06bbd1e7268da7f97a7a884bb12bc1a6f26e46732a685a39368",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Silkscreen.gbr": "8b3e6389362eb6f95e34e3c4b7d60a39202f0e7b7431969a0a2507780a60f2c8",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-In1_Cu.gbr": "9332213678d2f803ee799d58dbe1fe683105db537ebadcd680bccf750b37b73d",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-In2_Cu.gbr": "b729f1be60afbd76b9b2ce0224fdaf57a24c2dd9460ada5554bb7db7138bccfb",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-NPTH-drl_map.svg": "c4a0c2c5fe038d633567ddfc6d9232bdaad628d340fd8d391fcf40500bd14522",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-NPTH.drl": "c8fa8ed9686817a0e387a3bc6100c9fd82d7468fae6309ef548976c13d675b16",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-PTH-drl_map.svg": "78dd444287c46a8cac5aeeb574941340482e41787719eb373e750d63cc14e951",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-PTH.drl": "aa5585e276081f251dd4b51998c95ba3afca595c0b1bf179fca2776d64d9da50",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-job.gbrjob": "66ba94fff47de937d6450f3aecd3235f29287e756a9a6ba062597b292ee5bdb0",
+      "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/fabrication-notes.txt": "8200dbe4f7f346acb157bee42587582077307f6dc7fba80e5a55da083b08ac4e",
+      "hardware/design/reports/manufacturing-review-2026-11-14/full-drc.json": "6d31dfb82ffc1987055c7699b9586cf8f691ba078a22dbf740bb7422e9340816",
+      "hardware/design/reports/manufacturing-review-2026-11-14/full-drc.log": "816f1f98cd1dd973a1d86a2ce31f73d2a1cc7db529c5494c2f930bc89ae3c5dc",
+      "hardware/design/reports/manufacturing-review-2026-11-14/gerber-export.log": "3d258cc8a972e5bf5c8e5fb737fc5b2848c5fb501909ef2cc01f922af1794378",
+      "hardware/design/reports/manufacturing-review-2026-11-14/ipc-export.log": "4e0f66a59c896df22c10e36cd7f92098faccfd7d47e3a4d6df92c03f04be038e",
+      "hardware/design/reports/manufacturing-review-2026-11-14/job-revision-trace.json": "b9e4eeb38baeb93d9d182554862b558f67a0890446981dff4f6790b2425dd244",
+      "hardware/design/reports/manufacturing-review-2026-11-14/library-placement-fix.json": "eee3d6bbef482bf947fcb2d4327b849190d1e275033ec31765d0f02310afd730",
+      "hardware/design/reports/manufacturing-review-2026-11-14/lid-dxf-readback.json": "ca7945ecf5668eb3f3f04041ae7edc6e1205c8396802cfc8f38064a74c1ed149",
+      "hardware/design/reports/manufacturing-review-2026-11-14/manufacturing-readback.json": "f950e13f263b180feae7e275989479707db62bf98da5a27272ed97394035745b",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mcp-placement-fix.json": "46a71e28f5cd7ca8113540f5d4c81f900785ca2e53fd09bdf0ccdee3bb8ddea9",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mcp-through-hole-fix.json": "759698de4071707d6b0260eabc90f1f62bbc82f29cc0206b7ff0c6676d33d55a",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical/HSLink-LP-assembly.glb": "6087ce482a356f5366da3ed0c453df880621322aeb2806bf92fa3249e91ce54f",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical/HSLink-LP-assembly.step": "ff9e742653c78db732b45a348c304cf53224cc9fe4800394fa0375f55990961d",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical/assembly-perspective.png": "755bb754a68393f82b6bbadc8e9ef3f45488ff275421efe659f0591a6787596c",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical/assembly-top.png": "d8bbd53cc005ab60e1271baad6e9cadf612aec31dd71b92a69fb468815c778fa",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical/mechanical-checks.json": "d62ee9714d65118609a6259cea3329b1c5a37e4b4288c5485676eae4a8242d40",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical-access-envelope.json": "d1ec955be3e565504a6d809d0b99eefe1df25cf1c487cfd2a26cd7c5650ef47d",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical-frame-negative-checks.json": "843459614aec4afe2543d5cf856a9c18a4eb7260d17194b052efb07f6b232e0f",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical-part-check.log": "168baadc8d60094e40d9e4ff3ceee86e02c4ac280a3ac94d6e38001bd788ae0a",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical-part-readback.json": "c651379ef80f53211dcd6a89a78a111d9bcc6fb47438ef5c0516279b9d9e2236",
+      "hardware/design/reports/manufacturing-review-2026-11-14/mechanical-run.log": "d62ee9714d65118609a6259cea3329b1c5a37e4b4288c5485676eae4a8242d40",
+      "hardware/design/reports/manufacturing-review-2026-11-14/metadata-only-proof.json": "2def608f6155920c4972026ad02e76fd4b7fd548397b3ea90f3b2926c22c370b",
+      "hardware/design/reports/manufacturing-review-2026-11-14/metadata-proof.log": "143a4f9644d8b018d5269cfe5c6026967e968fed9d3c840e5c524857dd8da3fb",
+      "hardware/design/reports/manufacturing-review-2026-11-14/native-manufacturing-inventory.json": "8265a48a721e6e9e3c8355240295c9ac4734117964c5c3a0d7521b8e4dd46fbf",
+      "hardware/design/reports/manufacturing-review-2026-11-14/negative-probe-check/mechanical-checks.json": "033b933c8cdfebaca932529ee4a62e36e893f01610f53ebe269af606ece7f9d8",
+      "hardware/design/reports/manufacturing-review-2026-11-14/negative-probe-check/result.json": "050f20a78d709f817371a8fe775002ce4dd04878640514a8ba2b0673c7e966ed",
+      "hardware/design/reports/manufacturing-review-2026-11-14/pcb.step": "9b6b1dc820e905e392528c4aa443abba42471098f6456dfcf00d15997c271b32",
+      "hardware/design/reports/manufacturing-review-2026-11-14/position-export.log": "f864bb5351672959ef660cacd500b54a91caf222908c0094143a91925fbfc3da",
+      "hardware/design/reports/manufacturing-review-2026-11-14/step-export.log": "2f4ce9d79f3a2201db080edddad3e60957e561c11c10ae7c1af82c068cfcec5f",
+      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "124e7f8fb6866954550fc7a2ef972e4f965f4231cb60f00f430d3a9449b8261e",
+      "hardware/design/reports/manufacturing-review-2026-11-14/goal-completion-audit.md": "49a3320f811a4ab8d4142eebc027bbbca108faff20415fd18ac74d53348776ec"
+    },
+    "placement_types": {
+      "U501": "smd",
+      "SW601": "through_hole",
+      "K601": "through_hole",
+      "library_and_board_fixed": true,
+      "standard_MCP_for_placed_instances": true,
+      "temporary_MCP_adapter_for_library_native_API": true,
+      "library_pad_UUID_geometry_and_models_preserved": true
+    },
+    "drc": {
+      "general_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "report": "hardware/design/reports/manufacturing-review-2026-11-14/full-drc.json",
+      "ignored_checks_unchanged": true
+    },
+    "PCB_geometry": {
+      "baseline_commit": "8b3c89b",
+      "source_sha256": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "pad_objects": 759,
+      "pad_geometry_and_networks_unchanged": true,
+      "all_track_and_via_geometry_unchanged": true,
+      "all_other_PCB_bytes_preserved_in_Git_diff": true,
+      "footprint_positions_models_unchanged": true,
+      "attribute_changes": {
+        "SW601": [
+          0,
+          1
+        ],
+        "K601": [
+          0,
+          1
+        ],
+        "U501": [
+          0,
+          2
+        ]
+      },
+      "project_and_rules_sha256": {
+        "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+        "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5"
+      },
+      "previous_STEP_geometry_still_applicable": true
+    },
+    "manufacturing": {
+      "graphic_layers": 11,
+      "smt_refs": 185,
+      "tht_refs": 8,
+      "BOM_CPL_native_match": true,
+      "purchased_test_points": 0,
+      "PTH_drills": 836,
+      "NPTH_drills": 6,
+      "routed_slots": 4,
+      "total_drills": 842,
+      "drill_coordinate_quantization_mm": 0.001,
+      "drill_max_axis_rounding_mm": 0.0005000000000023874,
+      "IPC_records": 1524,
+      "IPC_pad_records": 746,
+      "IPC_via_records": 778,
+      "paste_only_pad_objects_excluded": 13,
+      "IPC_network_groups": 162,
+      "IPC_native_network_mapping_bijective": true,
+      "IPC_position_error_max_mm": 0.0017538529014679393,
+      "parser_warnings_retained": [
+        "/Users/sanchuanhehe/Documents/HSLink-LP/hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+        "/Users/sanchuanhehe/Documents/HSLink-LP/hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-PTH.drl:22 \"G90\": G90 header statement found after end of header"
+      ],
+      "online_factory_DFM_or_rotation_approval": false,
+      "job_revision_is_source_hash": true
+    },
+    "mechanical": {
+      "source_frame_and_hole_check": true,
+      "collision_threshold_mm3": 1e-05,
+      "component_collisions_over_threshold": false,
+      "probe_access_D2mm_points": 10,
+      "lid_removal_required": true,
+      "STEP_STL_source_geometry_match": true,
+      "STL_closed_manifold": true,
+      "DXF_1to1_mm": true,
+      "wrong_origin_missing_hole_collision_probe_negative_cases_rejected": true,
+      "actual_selected_plug_geometry_verified": false,
+      "actual_ribbon_bend_and_switch_sweep_verified": false,
+      "physical_fit_tested": false,
+      "materials_and_fastener_complete_MPNs_confirmed": false
+    },
+    "constraints": {
+      "netclasses": 13,
+      "netclass_patterns": 146,
+      "project_and_rules_unchanged": true,
+      "no_global_relaxation": true,
+      "selected_stackup": "JLC04161H-7628",
+      "domestic_calculator_current_result_verified": false,
+      "domestic_order_stack_accepted": false
+    },
+    "cost_delta_cny": {
+      "purchased_BOM_per_board": 0,
+      "purchased_BOM_ten_boards": 0,
+      "PCB_assembly_structure_requoted": false
+    },
+    "hardware_targets_not_verified": [
+      "40MHz",
+      "continuous1A",
+      "140nA/20～30°C",
+      "VIO1.8～3.3V calibrated±1%"
+    ],
+    "remaining": [
+      "CBL801 actual plug dimensions, mating height, cable bend/switch travel and physical clearances",
+      "domestic final stack/impedance calculator reconciliation and factory CAM/assembly process confirmation",
+      "prototype materials/fastener complete MPNs and fit coupons",
+      "hardware electrical performance acceptance; firmware/host outside this CAD stage"
+    ]
   }
 }

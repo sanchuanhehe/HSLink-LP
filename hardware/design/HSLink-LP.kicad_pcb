@@ -25957,6 +25957,7 @@
 				)
 			)
 		)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -3.14 4.25)
@@ -46414,6 +46415,7 @@
 				)
 			)
 		)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -9.49 5.25)
@@ -49838,6 +49840,7 @@
 				)
 			)
 		)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.55 -1.25)

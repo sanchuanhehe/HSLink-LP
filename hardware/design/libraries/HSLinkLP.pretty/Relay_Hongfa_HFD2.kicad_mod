@@ -7,7 +7,7 @@
 	(property "Reference" "REF**"
 		(at 0 -6.8 0)
 		(layer "F.SilkS")
-		(uuid "6d307758-385f-4162-838a-9e19683fd1e0")
+		(uuid "4d19a38b-435e-4b4d-a504-a55bf3dfdade")
 		(effects
 			(font
 				(size 1 1)
@@ -18,7 +18,7 @@
 	(property "Value" "Relay_Hongfa_HFD2"
 		(at 0 6.8 0)
 		(layer "F.Fab")
-		(uuid "accbcae3-b970-4611-9a00-898da11d7358")
+		(uuid "5ccd3a7d-5a9d-47b8-b2fe-093797077b97")
 		(effects
 			(font
 				(size 1 1)
@@ -29,7 +29,7 @@
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "887354a6-aba5-4e08-a3e1-57fe606753e4")
+		(uuid "766a7c0e-cb3a-4800-a617-7c417e38b27d")
 		(effects
 			(font
 				(size 1 1)
@@ -41,13 +41,14 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "16170a61-26f7-4791-a50f-b84b447500c7")
+		(uuid "ce4e4370-d2cb-4db1-a5c9-bd497063e136")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
+	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -9.49 5.25)
@@ -148,8 +149,14 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/models/HFD2_envelope.step"
-		(offset (xyz 0 0 0))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -2 0)
 		(layer "F.SilkS")
-		(uuid "52dce032-e315-41bb-b045-87b34fc54767")
+		(uuid "1772e9be-ff22-4228-8e83-e97a65d4c896")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "Texas_YFF0015_1.344x2.255mm_P0.4mm"
 		(at 0 2 0)
 		(layer "F.Fab")
-		(uuid "526b6fbc-7cc4-42f1-b009-4cca59622f5c")
+		(uuid "28e4dfa4-1877-40a0-a7c3-e49dd06270a0")
 		(effects
 			(font
 				(size 1 1)
@@ -30,7 +30,7 @@
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "502b8c2b-8049-488a-9341-46e0201bfd21")
+		(uuid "439232e2-f463-4e64-8519-966676d988d1")
 		(effects
 			(font
 				(size 1 1)
@@ -42,13 +42,14 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4c0c55a5-f358-4f77-94c9-0d37e8faa362")
+		(uuid "4cf8a2e4-ea6e-4a59-b187-90a7bf97eae3")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
+	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.85 -1.25)
@@ -209,8 +210,14 @@
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/models/TPS63810_YFF_envelope.step"
-		(offset (xyz 0 0 0))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
