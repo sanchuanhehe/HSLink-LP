@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "scope": "测试点原理图任务完成后，继续接口与器件布局整理、测试点PCB局部手工连接及结构探测包络检查；整板布线未完成",
-  "checked_at": "2026-11-13T07:54:44.847478+08:00",
+  "checked_at": "2026-11-13T21:13:46.820115+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "INCOMPLETE",
-    "validation": "当前211封装，0一般DRC违规、0原理图parity、34未连接项；759个原焊盘网络保持。U1 31个已用信号脚铜连通检查见 uart_b_source；当前PCB源哈希以 peripheral_control 为准，尚不能投板。",
+    "validation": "当前211封装、759焊盘网络保持；0一般DRC违规、0原理图parity、27未连接项。U1已用信号脚既有出口保持，局部角度整理未新增断线；当前源哈希见control_angle_routing，尚不能投板。",
     "working_dimensions_mm": [
       110,
       80,
@@ -364,7 +364,7 @@
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
     "docs/sense-discharge.md": "60bd16b721f775669695d5ee562e0e1a2f511928ec93718b8d328cc32d34dd01",
     "docs/spice-validation.md": "38c895ae10be4f2e519b2faa0c52988dbcd7845c98eb58a68e828ca60f498e4c",
-    "docs/structure-and-pcb.md": "df8500b5e6f7f1b25f0028ef77988c966473cc7c5ed9b1b397a098f06254819e",
+    "docs/structure-and-pcb.md": "2669e8562db614141fa131cff092bf6bbcf04d770e73015ac148508036f1df7a",
     "docs/upstream-swd-timing.md": "01a31d841718c829a9d58eb85b6f30ca7a856279238446736841e30200316d57",
     "docs/upstream.md": "7337084ef16707a9c9ba5812d329700b4bbdb225278c40a2f9f34f314f0ac12d",
     "docs/validation.md": "371a0a3f8a955e48fb73955d1be211369266f22c890a9db97d4f1d80b2eef31e",
@@ -377,7 +377,7 @@
     "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
     "hardware/design/Control.kicad_sch": "0e7f71461fca33fcbcf75f0a4fab188cf4ee874a227f7a0ff4352603adae18dc",
     "hardware/design/Disconnect.kicad_sch": "0226386ae30328d96c3bf7fadbc8ccb45b1c229876c7ed7c57908acaefe7523d",
-    "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
+    "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
     "hardware/design/HSLink-LP.kicad_sch": "bd0c9b6032643fde59b51d51a0b9a4d83bbdd3fd380803e5aebec6cb9a269c9b",
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
@@ -424,10 +424,10 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "5b9f65b606d4af2c7810e2a2e49726ac642807e9a74aaf7fd13edfb7af3fdd4a",
+    "docs/pcb-layout.md": "6687ed0fc005f4a31d69dadda01907ea81744065db913966fceee871b015072c",
     "hardware/bom/mechanical.csv": "d37b7c78d907fbe30b0ed23db703334a7dfdd7dc69536c81313927d9b745a9cb",
-    "hardware/design/HSLink-LP.kicad_pcb": "96cb71c376b520b1b959d87b931cbc41fa367ccb31c78316f72be3c48b9829b1",
-    "hardware/design/HSLink-LP.kicad_dru": "f11eeb7477f9595260aba37c9941af5698e0cea5b9235cb698360026d5c0de8c",
+    "hardware/design/HSLink-LP.kicad_pcb": "7b556a9c924a84e1d486798fcea07d8a884b7b895598ab620d56e27d3cf700a9",
+    "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
     "hardware/design/mechanical/README.md": "e025ab3784c73a571abfacc2d7a75b57a8c290a5f126fb37c969abd5a527f0fc",
     "hardware/design/mechanical/component_envelopes.py": "3a0a34e15e9a64ca49cb1f1a0b5ba3fadcfd705e638054db385465d79c68aaf0",
     "hardware/design/mechanical/hslink_lp.py": "7aaaaadc6b4bbc97ba0848ed059a8ad4dc71ee248dcbf346984ba372c6e39e29",
@@ -446,8 +446,8 @@
     ".gitattributes": "2fb23e3220383ca8c0d8a67d0e45a13e990e315eeeca00908b03f9d1e1ad4ecc",
     "docs/test-points.md": "9e8486ebaa13406c79f8e624a7dff5764890aba07b85e362c57daf1dadc963bc",
     "hardware/bom/pcb-features.csv": "c9fbbd210c968560a271024fec36da17edac478db327d0ce86880d5ded2c52ba",
-    "docs/u1-fanout.md": "d615eec93879b26bde293571b34b924e50c72ca23f1d7482f53af452c5d94f7c",
-    "docs/control-analog-routing.md": "77ff28858d2629fe567c9dc1dbf383d316e298cc34fdd6ccf8c2345a996f4174"
+    "docs/u1-fanout.md": "d975569a1f2967f1604db7ebac059b7db5d3e79e2a023a532ea39dd743840056",
+    "docs/control-analog-routing.md": "114d1e91a1bfb38b80c4a3a7e4d1d188361ea843a85158e57aa67ae05d14474a"
   },
   "evidence_sha256": {
     "design/reports/jlc-2026-11-07/final.xml": "7b0ebbddbc772540bcb31908e818c47498447dd6d71c45a0561ba58ac03a3dc3",
@@ -1019,7 +1019,10 @@
     "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In2_Cu.svg": "f21d572f14e9b6bd42e0364994344b2ff6d24c0e6285f91dfca0dc59c3f1dc0d",
     "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-F_Cu.svg": "076702c311fc7d1cb9e4a8eacf3df3e70a41cc1fc8b40b0795c59d910d4cfe39",
     "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-F_Silkscreen.svg": "af82d40a3477fc8caf59e41a640102ef1c042976ab5560228760ff5bf6a0d951",
-    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In1_Cu.svg": "074b2b53f7f8a9d688d02256237add9416b0921015eabaa7ed888ce59a7cedbd"
+    "hardware/design/reports/u1-control-routing-2026-11-13/layers/HSLink-LP-In1_Cu.svg": "074b2b53f7f8a9d688d02256237add9416b0921015eabaa7ed888ce59a7cedbd",
+    "hardware/design/reports/u1-uart-source-2026-11-13/control-angle-final-drc.json": "56b52ed54c9c2899abfc0e0d60c85709a2a4b567aa5c0bb9df9d048d920f78f0",
+    "hardware/design/reports/u1-uart-source-2026-11-13/control-angle-routing-audit.json": "cbd6a66292ff514d89e56a7fec621117b7076d7ce106d77026fe3aa0eff2a696",
+    "hardware/design/reports/u1-uart-source-2026-11-13/control-angle-check.json": "bacbfce9eeff9ccc42961e99345f4820d17e88a345b22c43e46125e6b17fafa6"
   },
   "upstream_firmware_timing_review": {
     "checked_at": "2026-11-07T11:10:40+08:00",
@@ -2476,7 +2479,7 @@
       ]
     }
   },
-  "historical_sections_note": "旧审查、仿真及各阶段布局记录保留其时点与哈希；最新PCB见pcb_completion/reset_uart_routing，结构各阶段按自身源哈希记录，最终PCB装配待更新；历史摘要不是当前整板验收。 最新PCB进度以usb_control_routing源哈希和pcb_completion为准；旧阶段检查仅对应各自快照。",
+  "historical_sections_note": "历史审查、仿真及布局阶段分别对应自身日期和源哈希；最新 PCB 状态以 pcb、pcb_completion 及 control_angle_routing 为准。最新 PCB 的整机装配仍待完成，历史快照不是当前整板验收。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -3463,7 +3466,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-13",
-    "stage": "u1_control_and_interlock_partial",
+    "stage": "control_requests_and_45_degree_cleanup_partial",
     "verdict": "INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3481,9 +3484,9 @@
     },
     "drc": {
       "general_violations": 0,
-      "unconnected_items": 50,
+      "unconnected_items": 27,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/u1-control-routing-2026-11-13/final-drc.json"
+      "report": "hardware/design/reports/u1-uart-source-2026-11-13/control-angle-final-drc.json"
     },
     "pad_net_groups_unchanged": true,
     "ground_short_fanouts": 104,
@@ -3493,20 +3496,24 @@
       61
     ],
     "source_sha256": {
-      "hardware/design/HSLink-LP.kicad_pcb": "96cb71c376b520b1b959d87b931cbc41fa367ccb31c78316f72be3c48b9829b1",
-      "hardware/design/HSLink-LP.kicad_pro": "dd87c762d0dd4181bc866a0d447e0de668eeeeb6fcaeb0b08d963f9a0d3e651b",
-      "hardware/design/HSLink-LP.kicad_dru": "f11eeb7477f9595260aba37c9941af5698e0cea5b9235cb698360026d5c0de8c",
-      "docs/requirements.md": "3d2b988a7bcc80f1d3ae6e3a5dcd6e53464e4541ed49bf68a229a33ca0f28055",
-      "docs/pcb-layout.md": "5b9f65b606d4af2c7810e2a2e49726ac642807e9a74aaf7fd13edfb7af3fdd4a",
-      "docs/u1-fanout.md": "d615eec93879b26bde293571b34b924e50c72ca23f1d7482f53af452c5d94f7c",
-      "docs/control-analog-routing.md": "77ff28858d2629fe567c9dc1dbf383d316e298cc34fdd6ccf8c2345a996f4174"
+      "hardware/design/HSLink-LP.kicad_pcb": "7b556a9c924a84e1d486798fcea07d8a884b7b895598ab620d56e27d3cf700a9",
+      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "docs/control-analog-routing.md": "114d1e91a1bfb38b80c4a3a7e4d1d188361ea843a85158e57aa67ae05d14474a",
+      "docs/pcb-layout.md": "6687ed0fc005f4a31d69dadda01907ea81744065db913966fceee871b015072c",
+      "docs/u1-fanout.md": "d975569a1f2967f1604db7ebac059b7db5d3e79e2a023a532ea39dd743840056",
+      "docs/structure-and-pcb.md": "2669e8562db614141fa131cff092bf6bbcf04d770e73015ac148508036f1df7a"
     },
-    "report_directory": "hardware/design/reports/u1-control-routing-2026-11-13",
+    "report_directory": "hardware/design/reports/u1-uart-source-2026-11-13",
     "remaining": [
-      "U1 UART TX/RX、VIO_EN、POWER_REQ、SPI_CS及FAULTn远端汇接",
-      "VREF_SENSE_IN、控制请求/使能/互锁/继电器线圈等50个未连接项",
-      "最终SI/PDN/DFM与最新PCB结构C装配",
-      "40MHz/持续1A/140nA(20–30°C)/校准VIO±1%实板验收"
+      "J1 UART_B_TX branch",
+      "four UART handshake controls",
+      "FAULTn remote branches",
+      "DEBUG_REQ/UART_A_REQ/UART_B_REQ/DISCH_REQ",
+      "enable/discharge/INT_EN/USB tier/source controls",
+      "VREF_SENSE_IN",
+      "final corner/silkscreen/SI/PDN/DFM and assembly checks",
+      "hardware acceptance"
     ],
     "status": "INCOMPLETE",
     "geometry": {
@@ -3583,10 +3590,10 @@
       "tracks": 633,
       "vias": 258
     },
-    "visual_review": "已看U1正反面、U201和互锁局部、整板F/B、两内层GND及局部丝印；没有执行本阶段最新STEP整机装配验收",
+    "visual_review": "见control_angle_routing；已看实际铜层/丝印，最终整机装配尚未重验",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
-    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振检查；最新布线见u1_control_routing，旧快照不能作为当前整板验收。"
+    "geometry_previous_stage_note": "geometry保留8c146c4历史USB/晶振几何；当前布线/回流摘要见control_angle_routing，历史记录不能作为当前整板验收。"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -8702,5 +8709,159 @@
       "docs/u1-fanout.md": "fd0c198ad1e1847b50883b005c7ec49fd5895c1b8163e2a56225e1dd81c76136",
       "docs/uart-source-routing.md": "9dac437dfb0a50c0fe85c388827e5d46efac6865171a30181a545d05974d45b4"
     }
+  },
+  "control_angle_routing": {
+    "date": "2026-11-13",
+    "baseline": "9ae3269",
+    "status": "INCOMPLETE",
+    "completed_connections": [
+      "DEBUG_ON U301-R32",
+      "UART_A_ON U301-R33",
+      "SENSE_ON U302-R36 and U901-R61",
+      "DISCH_ON Q902-R62",
+      "SENSE_REQ",
+      "RESET_REQ"
+    ],
+    "moved_footprints": [
+      {
+        "ref": "R33",
+        "old": [
+          65.0,
+          46.0
+        ],
+        "new": [
+          69.0,
+          46.0
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "ref": "R32",
+        "old": [
+          69.0,
+          46.0
+        ],
+        "new": [
+          65.0,
+          46.0
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "ref": "R61",
+        "old": [
+          11.5,
+          60.5
+        ],
+        "new": [
+          15.5,
+          65.1
+        ],
+        "angle_old_new": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "pad_objects": 759,
+    "pad_net_groups_unchanged": true,
+    "parts": 211,
+    "tracks": 1987,
+    "vias": 579,
+    "via_sizes": {
+      "(0.6, 0.3)": 513,
+      "(0.5, 0.25)": 66
+    },
+    "drc": {
+      "violations": 0,
+      "unconnected": 27,
+      "schematic_parity": 0
+    },
+    "angle_cleanup": {
+      "replaced_non_octilinear_signal_segments": 23,
+      "remaining_non_octilinear_signal_segments": 0,
+      "unchanged_power_ground_non_octilinear_segments": 15,
+      "all_corner_bevels_verified": false,
+      "critical_nets_manually_adjusted": [
+        "DUT_TDO",
+        "TDO_MCU",
+        "SWD_DIR"
+      ],
+      "no_additional_signal_vias_for_angle_cleanup": true,
+      "unconnected_net_counts_before_after_equal": true
+    },
+    "usb_crystal_geometry_unchanged": true,
+    "ordinary_control_usb_projection_crossing": {
+      "layer": "B.Cu",
+      "between_signal_layers": [
+        "In1.Cu GND",
+        "In2.Cu GND"
+      ],
+      "not_si_validation": true
+    },
+    "inner_planes": [
+      {
+        "layer": "In1.Cu",
+        "net": "GND",
+        "outlines": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "outlines": 1
+      }
+    ],
+    "inner_signal_tracks": 0,
+    "new_signal_via_nearest_ground_range_mm": [
+      0.8,
+      1.831
+    ],
+    "reference_centerline_sampling": {
+      "step_mm": 0.2,
+      "unexplained": 0,
+      "not_si_validation": true
+    },
+    "netclasses": 13,
+    "netclass_assignments": 146,
+    "new_ignored_checks": [],
+    "visual_review": [
+      "U1 back",
+      "UART B front",
+      "local controls front",
+      "U901 front",
+      "request corridor back",
+      "whole front/back copper",
+      "In1/In2",
+      "silkscreen"
+    ],
+    "latest_assembly_validated": false,
+    "hardware_validated": false,
+    "procurement_bom_delta_cny_per_board": 0,
+    "remaining": [
+      "J1 UART_B_TX branch",
+      "four UART handshake controls",
+      "FAULTn remote branches",
+      "DEBUG_REQ/UART_A_REQ/UART_B_REQ/DISCH_REQ",
+      "enable/discharge/INT_EN/USB tier/source controls",
+      "VREF_SENSE_IN",
+      "final corner/silkscreen/SI/PDN/DFM and assembly checks",
+      "hardware acceptance"
+    ],
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "7b556a9c924a84e1d486798fcea07d8a884b7b895598ab620d56e27d3cf700a9",
+      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "docs/control-analog-routing.md": "114d1e91a1bfb38b80c4a3a7e4d1d188361ea843a85158e57aa67ae05d14474a",
+      "docs/pcb-layout.md": "6687ed0fc005f4a31d69dadda01907ea81744065db913966fceee871b015072c",
+      "docs/u1-fanout.md": "d975569a1f2967f1604db7ebac059b7db5d3e79e2a023a532ea39dd743840056",
+      "docs/structure-and-pcb.md": "2669e8562db614141fa131cff092bf6bbcf04d770e73015ac148508036f1df7a"
+    },
+    "evidence": "design/reports/u1-uart-source-2026-11-13/control-angle-*"
   }
 }
