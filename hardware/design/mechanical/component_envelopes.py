@@ -10,7 +10,7 @@ def block(x, y, z, cx=0, cy=0, bottom=0):
     return cq.Workplane('XY').box(x,y,z,centered=(True,True,False)).translate((cx,cy,bottom))
 
 
-def build():
+def build(only=None):
     OUT.mkdir(parents=True,exist_ok=True)
     parts={}
     # Hongfa HFD2 single-stable drawing p4: 20.2 x 10.2 x 10.6; leads 3 mm.
@@ -37,7 +37,23 @@ def build():
     parts['SPH4018_envelope']=block(4.2,4.2,2.0)
     parts['WUSB3801_envelope']=block(1.7,1.7,1.0)
     parts['TPS63810_YFF_envelope']=block(1.344,2.255,1.0)
+    # Manufacturer dimension envelopes, no electrical leads/pin orientation model.
+    # onsemi CASE 523BF / 98AON13709G, issue B: A max 0.55, D/E BSC.
+    parts['FSA2466_envelope']=block(1.8,2.6,.55)
+    # XKB TS-1187A, A height code: H=1.5 +/-0.05; include lead extremities.
+    parts['TS1187A_envelope']=block(5.15,5.15,1.2)
+    parts['TS1187A_envelope']=parts['TS1187A_envelope'].union(
+        cq.Workplane('XY').circle(1).extrude(.35).translate((0,0,1.2)))
+    for x in (-3.25,3.25):
+        for y in (-1.85,1.85):
+            parts['TS1187A_envelope']=parts['TS1187A_envelope'].union(block(.5,.5,.3,x,y))
+    # HPM5300 DS Rev0.11 fig21: D/E max6.10, A max0.80.
+    parts['HPM5301_envelope']=block(6.1,6.1,.8)
+    # TI DSG0008A 4218900/E: D/E max2.1, A max0.8.
+    parts['TPS259531_envelope']=block(2.1,2.1,.8)
     for name,part in parts.items():
+        if only is not None and name not in only:
+            continue
         assert part.val().isValid(),name
         cq.exporters.export(part,str(OUT/(name+'.step')))
     return parts
