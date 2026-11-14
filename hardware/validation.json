@@ -10428,5 +10428,81 @@
       "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-assembly.step": "e1ce30097de540586c504e76cada389ab4682cad6f85853ba804140e38f0a9b3",
       "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-base-order.zip": "90f64c3c54f603674dce44a752a78b276c9f4d907c91b314c0c7f7e7812b72ab"
     }
+  },
+  "marketplace_bom_template_2026_11_15": {
+    "recorded_at": "2026-11-15",
+    "scope": "按用户附件模板整理采购信息；未下单，未实时核价/库存/MOQ",
+    "counts": {
+      "headers_equal_template": true,
+      "original_sheet_names_preserved": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3"
+      ],
+      "electronic_rows": 57,
+      "references_per_board": 193,
+      "physical_quantity_for_10_boards_without_spares": 1930,
+      "all_row_cells_equal_mapped_source": true,
+      "positive_numeric_qty_cells": true,
+      "C_codes_are_text": true,
+      "no_formulas_or_formula_errors": true,
+      "native_PCB_reference_set_equal": true,
+      "mechanical_rows": 8,
+      "mechanical_plan_quantity": 23,
+      "template_not_overwritten": true,
+      "render_review": [
+        "electronics-start",
+        "electronics-end",
+        "mechanical",
+        "notes"
+      ],
+      "no_live_price_stock_MOQ_check": true
+    },
+    "source_mappings": {
+      "source": "hardware/bom/candidates.csv",
+      "template_path": "/Users/sanchuanhehe/Downloads/立创商城BOM模板.xlsx",
+      "pcb_sha256": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "electronic_groups": 57,
+      "procured_refs_per_board": 193,
+      "quantity_for_10": 1930,
+      "missing_optional_fields": [],
+      "quantity_policy": "Sheet1单套用量按1板；商城选择10套。Sheet2本次结构件准备1套/两种盖板各1，不乘10；无库存/价格复核",
+      "scope_excluded": [
+        "11个裸铜TP",
+        "安装孔/定位点",
+        "CBL801排线",
+        "已取消嵌件"
+      ],
+      "U901_brand_source": "Sense.kicad_sch Manufacturer=Vishay；docs/sense-discharge.md 官方资料链接",
+      "native_PCB_procurement_reference_set_equal": true,
+      "native_inventory_source_sha256_matches_PCB": true,
+      "specification_corrections": {
+        "C7843": "去除旧供应商通用“输出使能高阻/420Mbps”等非工程描述，明确无独立OE；型号、C料号和价格/数量未变"
+      },
+      "package_text_rule": "英制0603/1206等附加公制尺寸，避免表格预览省略前导零；不改实物封装"
+    },
+    "electronic_material_change_cny": 0,
+    "template_sha256": "a4e62ca8b1bdc029da8babd16c24250f3c9ec3c17788ebbe790f2f27be4113ea",
+    "xlsx_sha256": "036f1d48ed15d5f58512677cc4ea73b4f35ffd758241e2d623df504c86b30e32",
+    "current_CAD_commit": "8b3bb62",
+    "PCB_and_netlist_unchanged": true,
+    "source_sha256": {
+      "hardware/bom/candidates.csv": "5015069f7ca4a1f54119c35109ec44b643e693acbacc7757a39709d6cdc83855",
+      "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
+      "hardware/bom/mechanical.csv": "7221daf3d96627afc1aa63a27acf3ec441ab8a83dced71bf0822ff9fc6b78102",
+      "hardware/bom/README.md": "eedb43c20a7ff5d3a30277d7da3b30ef0756103cee0601d988cd490fc7f03604",
+      "docs/manufacturing.md": "45623f8a2a590e6a883490fa0147a1e5f663634ffcb8f6646c7b8ec7b0c14a1a",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/Sense.kicad_sch": "a6a3e2d0e3c0813062db8f3e525dcc2cc61b402d4710a5328b0ca5f58d74a945"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/marketplace-bom-2026-11-15/mechanical.png": "dd913a30ebbade735237042502be5d0aba7244aa37f69c7fcade808edfda4826",
+      "hardware/design/reports/marketplace-bom-2026-11-15/xlsx-readback.json": "8e28dfe190af7e446724ff26c0f63831b87324d47bc6223e25bd2619e6dbc370",
+      "hardware/design/reports/marketplace-bom-2026-11-15/template-preview.png": "78ea43c4fba403b87fec5d657efb6a57e0ba8a81cf49525b6d152ec046685720",
+      "hardware/design/reports/marketplace-bom-2026-11-15/notes.png": "0cd6d68098a844430a499626bc8e00eab7b097c9d13c704e904203851c53afe5",
+      "hardware/design/reports/marketplace-bom-2026-11-15/mapping-metadata.json": "fd068ffb6280e9fab3250350bb5bef18c1a72984ce2260d994c0e621f91dbfca",
+      "hardware/design/reports/marketplace-bom-2026-11-15/electronics-end.png": "9a7d7231a93da02a7b10397f51112859d6a1bd4516ea0b685573105fed2ca8e2",
+      "hardware/design/reports/marketplace-bom-2026-11-15/electronics-start.png": "33667861acfedd9005feaf3e10e53a50f91b49a1f4f27533e18843d4e4e07448"
+    }
   }
 }
