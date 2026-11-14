@@ -75,7 +75,15 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
             .lineTo(ux+uw/2,rh+4).lineTo(ux-uw/2,rh+4).close().extrude(8,both=True))
     base=base.cut(relief)
     for x, y in P['holes']:
-        base = base.union(cylinder(P['pillar_diameter'], P['pcb_bottom_z'], x, -y, 0))
+        # 厂家镶嵌服务需要14x14mm平面；孔位、PCB支承高度保持。
+        pad_side = P.get('pillar_pad_side', P['pillar_diameter'])
+        offset = P.get('pillar_pad_outward_offset', 0)
+        px = x + (-offset if x < cx else offset)
+        py = -y + (offset if y < P['pcb_depth']/2 else -offset)
+        base = base.union(block(pad_side, pad_side, P['pcb_bottom_z'], px, py))
+        # 降低平台上方的围边，形成完整的同高镶嵌工具平面。
+        base = base.cut(block(pad_side, pad_side, P['rim_height']+2, px, py,
+                              P['pcb_bottom_z']))
         base = base.cut(cylinder(P['insert_pilot_diameter'], P['insert_pilot_depth']+1,
                                 x, -y, P['pcb_bottom_z']-P['insert_pilot_depth']))
         base = base.cut(cylinder(P['foot_diameter'], P['foot_recess']+1, x, -y, -1))
@@ -83,8 +91,8 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
         base = base.cut(block(2.5, 18, 5, x, -28, -1, 1.24))
     # Build open notches in the outline before rounding: a rounded cutting
     # rectangle crossing the edge leaves a non-tangent cusp at its mouth.
-    left=cx-P['base_width']/2; right=cx+P['base_width']/2
-    back=cy+P['base_depth']/2; front=cy-P['base_depth']/2
+    left=cx-P.get('lid_width',P['base_width'])/2; right=cx+P.get('lid_width',P['base_width'])/2
+    back=cy+P.get('lid_depth',P['base_depth'])/2; front=cy-P.get('lid_depth',P['base_depth'])/2
     fx1,fy1,fx2,_=P['front_notch']; ex1,_,ex2,ey2=P['external_input_notch']
     points=[(left,back),(ex1,back),(ex1,-ey2),(ex2,-ey2),(ex2,back),
             (right,back),(right,front),(fx2,front),(fx2,-fy1),
@@ -94,7 +102,7 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
     def at_points(edge, locations):
         c=edge.Center()
         return any(abs(c.x-x)<1e-6 and abs(c.y-y)<1e-6 for x,y in locations)
-    lid=lid.edges('|Z').filter(lambda e: at_points(e,outer)).fillet(P['base_radius'])
+    lid=lid.edges('|Z').filter(lambda e: at_points(e,outer)).fillet(P.get('lid_radius', P['base_radius']))
     notch_points=[p for p in points if p not in outer]
     lid=lid.edges('|Z').filter(lambda e: at_points(e,notch_points)).fillet(P['notch_radius'])
     sx,sy = P['source_switch_center']
@@ -105,7 +113,7 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
     pcb_top = P['pcb_bottom_z'] + P['pcb_thickness']
     lid_z = pcb_top + P['standoff_length']
     assembly = cq.Assembly(name='HSLink_LP_structure_C')
-    assembly.add(base, name='Base_warm_ivory_PETG_prototype', color=cq.Color(.86,.81,.71))
+    assembly.add(base, name='Base_white_ABS_prototype', color=cq.Color(.86,.81,.71))
     assembly.add(lid, name='Lid_PC_2mm_prototype', loc=cq.Location((0,0,lid_z)),
                  color=cq.Color(.94,.96,.97,.22))
     add_artwork(assembly,lid,lid_z+P['lid_thickness']+.01)
@@ -142,8 +150,8 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
             'base_solids':len(base.val().Solids()),'lid_solids':len(lid.val().Solids()),
             'base_volume_mm3':base.val().Volume(),'lid_volume_mm3':lid.val().Volume(),
             'checks':[],'limits':['尺寸模型含简化器件外形，不能覆盖厂商全公差或配套插头实际尺寸',
-                                  '透明盖建议PC 2mm；底座建议PETG打印，尚无材料报价或实物样件',
-                                  '热熔螺母孔需按实际螺母和打印机做试片，不含螺纹/滚花几何',
+                                  '透明盖PC/PMMA 2mm各一片；底座建议FDM ABS，精确报价/工厂接受/实物样件待确认',
+                                  '孔径/深度按嘉立创M3*4*3资料；打印公差与镶嵌保持力需工厂审核/样件验收，不含螺纹滚花',
                                   '未验证温升、跌落、拔插力、绝缘污染及140nA漏电']}
     assert result['base_valid'] and result['lid_valid']
     assert result['base_solids']==1 and result['lid_solids']==1

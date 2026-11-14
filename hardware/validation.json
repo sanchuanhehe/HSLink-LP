@@ -10192,5 +10192,79 @@
       "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-print-1to1.pdf": "1081ba12c9dbc565a7e60ddd330b9b98cadff2e39e8c97a4ef4309c14d8ada43",
       "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-preview.png": "106c7b84229f2cb06c03e1b484030ddd60876669056896ba5e99db50f33dc6aa"
     }
+  },
+  "jlc_insert_adapter": {
+    "recorded_at": "2026-11-15",
+    "engineering_choice_not_user_specified": "JLC M3*4*3 x4",
+    "reference": "https://www.jlc-3dp.cn/technicalColumnsDetails/41455",
+    "nominal_pre_hole_mm": [
+      3.6,
+      5
+    ],
+    "base_bbox_mm": [
+      124,
+      94,
+      10
+    ],
+    "previous_base_bbox_mm": [
+      118,
+      88,
+      10
+    ],
+    "tool_plane_mm": [
+      14.2,
+      14.2
+    ],
+    "min_pre_hole_side_wall_mm": 3.1,
+    "bottom_wall_to_foot_recess_mm": 3.5,
+    "pcb_holes_height_and_front_interface_order_preserved": true,
+    "lid_boolean_geometry_comparison": "equal in both differences <1e-5 mm3; DXF not changed",
+    "CAD_checks_passed": true,
+    "hardware_fit_or_factory_acceptance": false,
+    "volume_comparison": {
+      "old_base_mm3": 39103.25291058175,
+      "new_base_mm3": 52572.06025616348,
+      "delta_percent": 34.44421203622405
+    },
+    "cost_status": {
+      "old_model_quote_cny": 61,
+      "old_quote_not_applicable_to_updated_model": true,
+      "public_historical_insert_service_reference_cny": 20,
+      "current_base_or_service_quote_verified": false
+    },
+    "panel_guide": "正面1:1图案、118x88尺寸、切割红线不印、透明黄色不印、白字白墨、无背胶/鼓包、RGB、全部字转曲；PRINT/CUT未改",
+    "source_sha256": {
+      "docs/manufacturing.md": "60c8bc7ad68a664e22b032ca8cb23b26a8738ff30b40caea71ebf26ed2e1051d",
+      "hardware/design/mechanical/README.md": "db4e1bf3878ddc278f1438ea774c35da5b92694f082468a51d928ef2d4345311",
+      "hardware/bom/mechanical.csv": "b016edffd8172ef0eab3d18e4a0904896842ec136da157deb1548d200ef307ac",
+      "hardware/design/mechanical/parameters.json": "72da7827f41ecff030d50765b886b8409e95a91a4cca108eed2963ea21bcc42e",
+      "hardware/design/mechanical/hslink_lp.py": "dec08391a07b0e2d0bc2edfbfe10e4a36811341e4fa0c1be299deb12ee8c471a",
+      "hardware/design/mechanical/hslink_lp_base.step": "73d25f4248ba86409d63848a046354b620da4c93447420028ae724b80ca19d48",
+      "hardware/design/mechanical/hslink_lp_base.stl": "f7030630f5e33b0680542441dd5687b5c3814b55bd14216d72a463dfbf6fcc5e",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/insert-fit-2026-11-15/mechanical-checks.json": "1455a7a7d91933c38e3a40ad2971716a4cd0539ba8b72b3359ded6e1c9d14ba1",
+      "hardware/design/reports/insert-fit-2026-11-15/insert-fit-checks.json": "008ea29824401b462b9a9ccef3580e9edb3f2adb718d20248c6ae23f7c9b671c",
+      "hardware/design/reports/insert-fit-2026-11-15/stl-readback.json": "0a02b89d1bc66d76a080a0d003c0b3411555a2c222ea69f7c1de3aba48bc3669",
+      "hardware/design/reports/insert-fit-2026-11-15/HSLink-LP-insert-installation.pdf": "3d00cd35b1c7af27e8e0378384843477055f1055d70688f9969e8f72b81ac8be",
+      "hardware/design/reports/insert-fit-2026-11-15/HSLink-LP-insert-installation.png": "8790c173e0eb5f8c9d8942976fb92da4175cf97cbcec9a592adf96cdcbbf5f79",
+      "hardware/design/reports/insert-fit-2026-11-15/HSLink-LP-panel-process-guide.pdf": "b9025bcca08fa12017637c17ec8660c30a94098c2ef721f250a5b11cd34092ea",
+      "hardware/design/reports/insert-fit-2026-11-15/HSLink-LP-panel-process-guide.png": "c7eae7a2f847ce3af3e7e9cb99dae0fef6be00c0b01e6d24089c283f61e3fdcf",
+      "hardware/design/reports/insert-fit-2026-11-15/HSLink-LP-base-order.zip": "252b0a1361aa17a975764dfcbf243cbcf9f06ac5851e397849c6fc856fa08e96",
+      "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order.zip": "4403e1203c48f457114bed050bbafc929f3ea0dab0373dd13b417440cced150c"
+    },
+    "unresolved": [
+      "FDM尺寸公差和工厂镶嵌接受",
+      "实际螺母尺寸/螺纹、保持力与扭矩",
+      "实际来源开关/接口/整体装配公差",
+      "新模型报价与运输",
+      "2mmPC切割印刷渠道",
+      "40MHz/1A/140nA/VIO实板验收"
+    ]
   }
 }
