@@ -10107,5 +10107,90 @@
       "40MHz、持续1A、140nA/20～30°C、VIO±1%实板验收"
     ],
     "cost_delta_cny": 0
+  },
+  "first_prototype_order": {
+    "recorded_at": "2026-11-14",
+    "user_accepted": {
+      "pcb_quantity": 5,
+      "components_sets": 10,
+      "assembly": "loose parts / self assembly",
+      "pcb_finish": "lead-free OSP",
+      "impedance_tolerance_percent": 20,
+      "min_drill_mm": 0.25,
+      "min_drill_evidence": "用户说明已设置；尚未独立检查订单生产稿",
+      "cover_samples": [
+        {
+          "material": "clear PC",
+          "thickness_mm": 2,
+          "quantity": 1,
+          "custom_print": true
+        },
+        {
+          "material": "clear PMMA",
+          "thickness_mm": 2,
+          "quantity": 1,
+          "custom_print": true
+        }
+      ]
+    },
+    "layer_order_in_uploaded_zip": [
+      "F.Cu L1 Top",
+      "In1.Cu L2 Inr",
+      "In2.Cu L3 Inr",
+      "B.Cu L4 Bot"
+    ],
+    "uploaded_pcb_zip_modified": false,
+    "pcb_zip_historical_finish": "ENIG；本次订单OSP优先，工厂需知悉覆盖旧工艺说明",
+    "base_recommendation_not_user_confirmed": {
+      "process": "FDM",
+      "material": "ABS",
+      "color": "white",
+      "quantity": 1,
+      "bbox_mm": [
+        118,
+        88,
+        10
+      ],
+      "thermal_insert_fit": "not tested"
+    },
+    "panel_artwork_checks": {
+      "outlined_labels": 14,
+      "remaining_svg_text_elements": 0,
+      "pdf_page_mm": [
+        118,
+        88
+      ],
+      "raster_render_visually_reviewed": true,
+      "cut_DXF_unchanged": true,
+      "content_color_cut_boundary_preserved": true
+    },
+    "geometry_or_connectivity_change": false,
+    "new_DRC_or_electrical_test": false,
+    "prior_DRC_0_0_0_applies_to_unchanged_sources": true,
+    "unresolved": [
+      "2mmPC板切割印刷渠道及实际报价",
+      "打印及板材公差/白墨附着和套准/总厚度",
+      "完整紧固件型号与热熔试装",
+      "INT/EXT方向样品核对",
+      "工厂CAM/DFM接受及实板电气验收"
+    ],
+    "source_sha256": {
+      "docs/requirements.md": "d42458e1b3d9b2c7f4cc2a6c522774ef7188af43023280f5f293c17847f41bbc",
+      "docs/manufacturing.md": "730aa1a1426ad9ebbda403f05cbd3d06cdfe1d8d74977dd6eed9f2eca1f7aa8e",
+      "hardware/design/mechanical/README.md": "04b803de4f6f62278578a33e15f29788a0cc23806896c5a6767d2d311a79a080",
+      "hardware/design/mechanical/panel_artwork.py": "fe9153b07e6a893d737382af3cb1d40d0f9e3f258eef8c8f8ba264aea9bbefe2",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "257effb05c9a7af593e2b72018efed177e32f09b5978aa0fba4f32b72f92a129",
+      "hardware/design/mechanical/hslink_lp_base.stl": "91ce4724117d395c2c3bb1e72511dd0d7c320a1d36b59624dfe238da15ed0416",
+      "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5"
+    },
+    "output_sha256": {
+      "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order.zip": "65667a5fc52b63166e82ab1ab944107447f0ec956578200014e368e427f862ed",
+      "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-print-1to1.pdf": "1081ba12c9dbc565a7e60ddd330b9b98cadff2e39e8c97a4ef4309c14d8ada43",
+      "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-preview.png": "106c7b84229f2cb06c03e1b484030ddd60876669056896ba5e99db50f33dc6aa"
+    }
   }
 }

@@ -1,5 +1,6 @@
 """面板矢量标识及装配薄层；不改PCB，不增加实体按钮或指示灯。"""
 from pathlib import Path
+from html import escape
 import cadquery as cq
 
 HERE=Path(__file__).resolve().parent
@@ -26,6 +27,31 @@ def add_artwork(assembly,lid,z):
     accent=cq.Workplane('XY').polyline([(57,-21),(57.45,-21),(60.45,-10),(60,-10)]).close().extrude(.02).translate((0,0,z+.025))
     assembly.add(accent,name='Print_vermilion_slash',color=cq.Color(.94,.22,.06))
 
+
+def _outlined_text_svg(text, x, y, size, color):
+    """把文字写成精确Bezier路径，交付印刷时不依赖工厂字体。"""
+    from matplotlib.font_manager import FontProperties, findfont
+    from matplotlib.textpath import TextPath
+    from matplotlib.transforms import Affine2D
+    from matplotlib.path import Path as MplPath
+
+    font = findfont(FontProperties(family='Arial'), fallback_to_default=False)
+    path = TextPath((0, 0), text, size=size, prop=FontProperties(fname=font))
+    bounds = path.get_extents()
+    path = path.transformed(Affine2D().scale(1, -1).translate(
+        x - (bounds.x0 + bounds.x1) / 2,
+        y + (bounds.y0 + bounds.y1) / 2))
+    commands = []
+    letters = {MplPath.MOVETO: 'M', MplPath.LINETO: 'L',
+               MplPath.CURVE3: 'Q', MplPath.CURVE4: 'C'}
+    for points, kind in path.iter_segments(curves=True, simplify=False):
+        if kind == MplPath.CLOSEPOLY:
+            commands.append('Z')
+        else:
+            commands.append(letters[kind] + ' '.join(f'{v:.7f}' for v in points))
+    return (f'<path data-label="{escape(text, quote=True)}" fill="{color}" '
+            f'd="{" ".join(commands)}"/>')
+
 def export_svg():
     a=['<svg xmlns="http://www.w3.org/2000/svg" width="118mm" height="88mm" viewBox="-4 -4 118 88">',
        '<title>HSLink-LP panel print / 1:1 mm / top side</title>']
@@ -37,6 +63,6 @@ def export_svg():
     a.append('<path fill="#ef380f" d="M57 21 L57.45 21 L60.45 10 L60 10 Z"/>')
     for t,x,y,size in TEXT:
         color='#ffffff' if y>50 else '#1f2929'
-        a.append(f'<text x="{x}" y="{y}" font-family="Arial,sans-serif" font-size="{size}" text-anchor="middle" dominant-baseline="central" fill="{color}">{t}</text>')
+        a.append(_outlined_text_svg(t, x, y, size, color))
     a.append('</g></svg>')
     (HERE/'hslink_lp_panel_print.svg').write_text('\n'.join(a)+'\n')
