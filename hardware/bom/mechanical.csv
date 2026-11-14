@@ -1,8 +1,10 @@
-item,description,quantity_per_unit,quantity_for_10,unit_price_cny,status
-BASE,开放底座118x88x10mm；四个D7圆柱；底部隐藏螺钉；建议FDM ABS白色,1,10,,本轮几何检查记录另见validation；重传STL报价；打印公差/实物待验
-LID,透明盖118x88x2mm；PC与亚克力各1片，均底面印刷,1,10,,切割及转曲稿已备；PC厚板加工/样件待确认
-STANDOFF,M3双通黄铜六角柱 长12mm 对边≤5.5mm；贯通内螺纹/每端有效牙深≥5mm,4,40,,工程尺寸要求，待完整商品图/实际有效牙深/核价；不可沿用12+6公母柱
-SCREW,M3x6上盖内六角圆柱头螺钉；头径≤5.5mm,4,40,,保留上盖尺寸方案；实际长度/样件及核价待核
-BOTTOM_SCREW,M3x12内六角平圆头螺钉 GB/T70.2；头径≤5.7mm/头高≤1.65mm,4,40,,厂家标准尺寸已核；精确商品/价格待核；不能换普通高圆柱头
-WASHER,M3垫圈 外径7mm 内径3.2mm 厚0.5mm,4,40,,尺寸方案；待核价
-FOOT,绝缘防滑脚垫 D10mm 厚2mm；遮住底部螺钉；最后贴合,4,40,,待选非导电材料/胶/核价；拆卸螺钉需移除脚垫
+item,description,quantity_per_unit,quantity_current_batch,brand,mpn,product_code,supplier,purchase_unit,purchase_quantity,unit_price_cny,stock_snapshot,moq,purchase_increment,line_total_cny,source_url,retrieved_at,status
+BASE,开放底座118×88×10mm；D7圆柱；无嵌件；FDM ABS白色建议,1,1,,,,,,,,,,,,,,建议数量1；打印报价/样件待确认
+LID_PC,透明PC 118×88×2mm；底面定制印刷,1,1,,,,,,,,,,,,,,已确认样件1片；报价/工艺待确认
+LID_PMMA,透明亚克力118×88×2mm；底面定制印刷,1,1,,,,,,,,,,,,,,已确认样件1片；报价/工艺待确认
+STANDOFF,M3双通黄铜六角柱12mm；M3贯通内螺纹；AF4.70±0.10mm,4,4,Shuntian(顺天五金),M3*12,C551332,立创商城自营,个,10,0.258305,370,10,10,2.58,https://item.szlcsc.com/mro/575022.html,2026-11-15,现货快照；家族图长度公差样本为5mm，12mm长度/完整牙深到货核验
+SCREW,M3×6内六角圆柱头；SUS304/A2-70；D5.5/K3mm,4,4,嘉立创FA,EDLA-S1-M3-L6,EDLA-S1-M3-L6,嘉立创FA,个,100,0.039466,32502,100,,3.95,https://www.jlcfa.com/serial/2129403909149.html?codeModel=EDLA-S1&productModel=EDLA-S1-M3-L6,2026-11-15,现货；以完整FA型号下单，无已核实C编号；公差/紧固力待实物
+BOTTOM_SCREW,M3×12内六角平圆头；SUS304/A2-70；D≤5.7/K≤1.7mm,4,4,嘉立创FA,EDLG-S1-M3-L12,EDLG-S1-M3-L12,嘉立创FA,个,100,0.038125,157946,100,,3.81,https://www.jlcfa.com/serial/1211597773677.html?codeModel=EDLG-S1&productModel=EDLG-S1-M3-L12,2026-11-15,现货；ISO7380资料头高上限1.7mm；底座沉孔不改；有效牙/释放脚垫到货检查
+WASHER,DIN125 M3标准平垫圈；SUS304；ID3.2/OD7/T0.5mm,4,4,嘉立创FA,EPDA-S1W-B-3,EPDA-S1W-B-3,嘉立创FA,个,200,0.009755,38543,200,,1.95,https://www.jlcfa.com/serial/1876808811244.html?codeModel=EPDA-S1W-B&productModel=EPDA-S1W-B-3,2026-11-15,现货；C24867资料ID3mm且±0.5参考，未采用；垫圈去毛刺/轻紧盖板
+FOOT,自制圆脚垫D9.6mm；按实际D10槽修边；T2mm+0.14～0.2mm胶层,4,4,,HSLink-LP-FOOT-CUT-D9.6,,由FOOT_RAW自行裁切,,,,,,,,,,不重复采购；无已核现成C编号；圆周粘接环约1.5mm；先轻紧试装再贴
+FOOT_RAW,乳白硅橡胶A50；自粘200×200×2mm；胶层0.14～0.20mm；裁4片供1台,1,1,嘉立创FA,HJDC-R-Q-T2-A200-YJ,HJDC-R-Q-T2-A200-YJ,嘉立创FA,200×200mm整片,1,23,,1,,23.0,https://www.jlcfa.com/serial/2067754024206.html?codeModel=HJDC-R-Q&productModel=HJDC-R-Q-T2-A200-YJ,2026-11-15,非现货；订货约7～9工作日；需自行冲切，非现成圆脚垫；未核整板绝缘/胶接

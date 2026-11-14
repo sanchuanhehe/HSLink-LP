@@ -14,7 +14,7 @@
 |`hslink_lp_lid.step/.stl/.dxf`|2mm盖板；DXF单位毫米、1:1|
 |`hslink_lp_panel_print.svg`|118×88mm正面印刷稿；透明区域不印|
 
-当前装配STEP/GLB、底座PNG及检查记录在忽略的`../reports/compact-fastening-2026-11-15`。可用FreeCAD打开其中`HSLink-LP-assembly.step`；PCB STEP仍来自`../reports/manufacturing-review-2026-11-14/pcb.step`。旧reports中的装配包/FCStd只属历史快照。精确源与输出哈希见`hardware/validation.json`。
+当前装配STEP/GLB、俯视/底视PNG及检查记录在忽略的`../reports/retail-fasteners-2026-11-15/mechanical`。可用FreeCAD打开其中`HSLink-LP-assembly.step`；PCB STEP仍来自`../reports/manufacturing-review-2026-11-14/pcb.step`。旧reports中的装配包/FCStd只属历史快照。精确源与输出哈希见`hardware/validation.json`。
 
 ## 尺寸及使用
 
@@ -26,7 +26,7 @@
 
 基于厂家图纸和现有引脚推导，拨杆朝后为INT、朝前为EXT；印刷放行前须样品导通确认。没有新增实体MEASURE键/状态灯；参考效果图的这些功能不作为已确认电路。
 
-装配显示采用白色底座、透明2mm盖板、黄铜柱、银色螺钉及黑色脚垫；本次底座采购建议FDM ABS白色，透明PC/亚克力各一片，均定制印刷。紧固件建议尺寸见`../../bom/mechanical.csv`，尚无完整供应商型号及价格。当前底部隐藏螺钉＋双通柱，无嵌件/方平台；参数及装配检查见下节。打印公差、完整牙及紧固力待样件确认。
+装配显示采用白色底座、透明2mm盖板、黄铜柱、银色螺钉及乳白脚垫；本次底座采购建议FDM ABS白色，透明PC/亚克力各一片，均定制印刷。紧固件准确型号、渠道及本次采购量见`../../bom/mechanical.csv`与`../../bom/mechanical-quotes.json`；脚垫为订货原材自行裁切，非现成圆垫现货。当前底部隐藏螺钉＋双通柱，无嵌件/方平台；参数及装配检查见下节。打印公差、完整牙及紧固力待样件确认。
 
 面板SVG与装配0.02mm薄层表达印刷，不能当作加工凸字。白色/米白需印厂确认白墨工艺，本次SVG的14组文字已转曲，并生成118×88mm的1:1矢量PDF；1:1纸样对位、色差和实际开关方向仍需确认。SVG裁切边界不替代DXF切割轮廓。
 
@@ -36,7 +36,7 @@
 
 ```sh
 kicad-cli pcb export step --force --subst-models --no-optimize-step --user-origin 88x61mm -o hardware/design/reports/manufacturing-review-2026-11-14/pcb.step hardware/design/HSLink-LP.kicad_pcb
-uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline python hardware/design/mechanical/hslink_lp.py --assembly-only --pcb-step hardware/design/reports/manufacturing-review-2026-11-14/pcb.step --probe-map hardware/design/reports/final-control-routing-2026-11-13/probe-map.json --reports hardware/design/reports/compact-fastening-2026-11-15
+uv run --project /Users/sanchuanhehe/.local/share/cadquery --locked --offline python hardware/design/mechanical/hslink_lp.py --assembly-only --pcb-step hardware/design/reports/manufacturing-review-2026-11-14/pcb.step --probe-map hardware/design/reports/final-control-routing-2026-11-13/probe-map.json --reports hardware/design/reports/retail-fasteners-2026-11-15/mechanical
 ```
 
 `--assembly-only`保留未变的单件STEP/STL/DXF；需要重生成单件时去掉它。探针位置必须来自当前PCB原生导出；变更布局时不可盲用旧map。Python统一uv，CadQuery运行环境在用户工具目录。
@@ -66,8 +66,16 @@ ARM20的34×12mm、UART的13×4mm插头包络以及D4mm竖直螺丝刀杆对结�
 
 ## 2026-11-15 当前紧凑固定方案
 
-用户拒绝外扩嵌件平台，当前底座恢复118×88mm、四个D7圆柱，取消镶嵌服务。底部M3×12平圆头螺钉经D3.4孔穿过底座及PCB，拧入12mm M3双通柱；上盖保留M3×6及0.5mm垫圈。下螺钉头藏在D6.6沉孔内，脚垫盖住入口；柱两端不能使用旧公母12+6型号。全部精确商品/公差/扭矩/采购报价仍待核，资料与名义几何检查不是实物强度验收。
+用户拒绝外扩嵌件平台，当前底座恢复118×88mm、四个D7圆柱，取消镶嵌服务。底部M3×12平圆头螺钉经D3.4孔穿过底座及PCB，拧入12mm M3双通柱；上盖保留M3×6及0.5mm垫圈。下螺钉头藏在D6.6沉孔内，脚垫盖住入口；柱两端不能使用旧公母12+6型号。具体商品/含税报价已补齐；完整公差/扭矩及实物试装仍待核，资料与名义几何检查不是实物强度验收。
 
-脚垫槽深0.5mm；螺钉头沉孔从槽面再深2.0mm，承压面Z2.5mm。下端几何插入3.9mm、上端3.5mm、尖端间隔4.6mm、头至脚垫间隔0.35mm；完整牙有效啮合须到货检查。拆上盖不用揭脚垫；全拆再揭，避免反复损伤胶面。无需热熔螺母和14mm工具平面。
+脚垫槽深0.5mm；螺钉头沉孔从槽面再深2.0mm，承压面Z2.5mm。下端几何插入3.9mm、上端3.5mm、尖端间隔4.6mm、头至脚垫间隔0.30mm（EDLG头高上限1.70mm）；完整牙有效啮合须到货检查。拆上盖不用揭脚垫；全拆再揭，避免反复损伤胶面。无需热熔螺母和14mm工具平面。
 
 最新装配/沉孔图/检查在`../reports/compact-fastening-2026-11-15`，当前底座上传包`HSLink-LP-base-order.zip`。旧`insert-fit-2026-11-15`仅作历史证据，勿用其124×94mm STL/镶嵌图下单。盖板、DXF和印刷稿保持不变，原面板上传包仍适用。详见制造说明当前底座节。
+
+## 2026-11-15 采购包络复核
+
+采用顺天C551332双通M3×12，FA EDLA-S1-M3-L6上螺钉、EDLG-S1-M3-L12下螺钉、EPDA-S1W-B-3垫圈。柱AF4.70±0.10被CAD AF5.5包络包含；头高包络由1.65改1.70，沉孔仍D6.6×2.0，头/脚垫间隙0.30。上下插入/尖端间隔维持3.9/3.5/4.6mm；不是有效牙或强度保证。
+
+脚垫用HJDC-R-Q-T2-A200-YJ乳白自粘硅胶片，需订货约7～9工作日并自行裁4片D9.6、按实槽修边。基材T2±0.2及胶0.14～0.20mm，CAD D10/T2.4最大外包络不等于实物名义圆片；底座与盖板单件不改。采购件按MOQ合计¥35.29，不含定制件/运费，结构数量仍按1套准备假设。
+
+最新装配STEP/GLB及检查位于`../reports/retail-fasteners-2026-11-15/mechanical`；原底座/盖板下单单件仍适用。实际螺纹、打印公差、盖板轻紧、脚垫胶接/压缩、防滑及电气目标仍待样件。详情见制造说明当前采购节。

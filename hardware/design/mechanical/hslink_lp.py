@@ -133,7 +133,7 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
                         P['foot_recess']-P['foot_thickness'])
         for name,shape,color in [('BottomScrew',bottom_screw,(.78,.80,.82)),('Standoff',stand,(.70,.57,.30)),
                                  ('Washer',washer,(.78,.80,.82)),('Screw',screw,(.78,.80,.82)),
-                                 ('Foot',foot,(.08,.09,.1))]:
+                                 ('Foot',foot,(.88,.88,.85))]:
             assembly.add(shape,name=f'{name}_{i}',color=cq.Color(*color))
             if name in ['BottomScrew','Standoff','Washer','Screw']:
                 fastener_shapes.append((f'{name}_{i}',shape.val()))
@@ -147,7 +147,8 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
             'base_volume_mm3':base.val().Volume(),'lid_volume_mm3':lid.val().Volume(),
             'checks':[],'limits':['尺寸模型含简化器件外形，不能覆盖厂商全公差或配套插头实际尺寸',
                                   '透明盖PC/PMMA 2mm各一片；底座建议FDM ABS，精确报价/工厂接受/实物样件待确认',
-                                  '底部螺钉按GB/T70.2 M3头部包络；双通柱为功能包络，螺纹/公差/拧紧力未实测',
+                                  '底螺钉采用EDLG-S1-M3-L12资料D5.7/K1.7包络；铜柱保持AF5.5保守包络，实际C551332约4.7；完整牙/扭矩未实测',
+                                  '脚垫为HJDC-R-Q-T2-A200-YJ自行裁切；CAD D10/T2.4为最大外包络，不代表成品尺寸或胶接验收',
                                   '未验证温升、跌落、拔插力、绝缘污染及140nA漏电']}
     seat_z = P['foot_recess'] + P['bottom_counterbore_depth']
     lower_engagement = seat_z + P['bottom_screw_length'] - pcb_top

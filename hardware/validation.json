@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "scope": "用户排除本轮排线事项；PCB布线/约束/DRC/制造数据与结构CAD静态检查完成；材料/紧固件最终选型、动态/样件装配和生产/实板验收仍未完成",
+  "scope": "PCB布线/结构CAD与既有检查记录保留；本轮5套电子零售报价核对与金属紧固件/脚垫原材选型完成，含订货和自行裁切方案；全公差/实物装配、生产与电气性能未验收",
   "checked_at": "2026-11-14T18:14:26.929690+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
@@ -10756,5 +10756,184 @@
     },
     "review_scope": "资料/采购字段与既有连接保持检查；非完整上电/瞬态/硬件验收",
     "PCB_metadata_warnings_intentionally_retained_without_waiver": true
+  },
+  "retail_fasteners_quote_audit_2026_11_15": {
+    "date_local": "2026-11-15",
+    "baseline_commit": "6e4055125fef931814c439a15da661b56fdab0e1",
+    "status": "procurement_data_and_geometry_checked_not_hardware_validated",
+    "user_decisions_synced": [
+      "电子散件改5套；PCB5片，单板193件、5套实用965件",
+      "保留PC/PMMA各一片；结构1套仍是准备假设"
+    ],
+    "concurrent_change_preserved": "6e40551 安世74LVC08APW,118/C6053；未恢复原XLS的TI门",
+    "workbook": {
+      "baseline_commit": "6e4055125fef931814c439a15da661b56fdab0e1",
+      "sheets": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3",
+        "报价核对"
+      ],
+      "electronic_import_unchanged": true,
+      "rows": 57,
+      "references": 193,
+      "electronic_sets": 5,
+      "required_components": 965,
+      "proposed_purchase_components": 2385,
+      "formula_errors": [],
+      "cached_revised_electronic_lines_cny": 730.27,
+      "cached_header_delta_cny": 0.72,
+      "cached_mechanical_purchase_cny": 35.29,
+      "nexperia_C6053_retained": true,
+      "formula_cache_read_back": true
+    },
+    "quotation": {
+      "original_input_sha256": "d994928d0d76a5b15ada2f6311356fd0c590584e569f94fb1b5ce929d07398c5",
+      "original_quote": {
+        "header_before_discount": 788.48,
+        "header_discount": 16.48,
+        "header_after_discount": 772.0,
+        "sum_displayed_lines": 787.76,
+        "sum_exact_products": "787.750500",
+        "unexplained_header_difference": 0.72
+      },
+      "proposed_electronic_lines_cny": 730.27,
+      "source_note": "56行用户原XLS＋1行同日5+档安世既有快照；均非锁价锁库；无重新应用旧券",
+      "needed_material_cny": 667.289035,
+      "moq_extra_material_cny": 62.972465,
+      "backorder": "C14663原报价7～10工作日",
+      "known_stock_constraint": "SW601原报价9颗、需5；未预留"
+    },
+    "mechanical": {
+      "source": "bom/mechanical-quotes.json",
+      "metal_stock_snapshots": {
+        "C551332": 370,
+        "EDLA-S1-M3-L6": 32502,
+        "EDLG-S1-M3-L12": 157946,
+        "EPDA-S1W-B-3": 38543
+      },
+      "purchase_cny": 35.29,
+      "includes_MOQ_leftovers": true,
+      "excludes": [
+        "打印底座",
+        "两片盖板及印刷",
+        "运输",
+        "裁切工具/工时"
+      ],
+      "foot_raw": "HJDC-R-Q-T2-A200-YJ ¥23/200×200片；订货7～9工作日，自行裁切4片；不是现成圆垫现货",
+      "geometry_checks": 34,
+      "geometry_collisions": 0,
+      "lid_removed_probe_envelopes": 10,
+      "head_to_foot_clearance_mm": 0.3,
+      "nominal_lower_upper_engagement_tip_gap_mm": [
+        3.9,
+        3.5,
+        4.6
+      ],
+      "base_lid_parts_unchanged": true,
+      "actual_fit_validated": false
+    },
+    "unchanged_design_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "hardware/design/Safety.kicad_sch": "198778f37e6809c5e018828518f9e2a6b8b5ad78bfdd2cc2ee34c0659f907edb",
+      "hardware/design/connectivity.json": "778af899f316f5fd3930c5640e3cd128f80ba5f43abe5bd5faaf887055484566",
+      "hardware/bom/candidates.csv": "c7d84f5248631b156281c21d6e235fdc113bfcc224371068aa679743f1096db0",
+      "hardware/design/mechanical/hslink_lp_base.step": "3042c20d10dbdb65992bf4d3f01c0954ce1e572f3cfb788e0789dd891dbeaa32",
+      "hardware/design/mechanical/hslink_lp_base.stl": "0b6b1e8503a039c5358848c8ba0bb548a74ea54a034539d628785f9459534b0e",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "257effb05c9a7af593e2b72018efed177e32f09b5978aa0fba4f32b72f92a129"
+    },
+    "electrical_checks_reused": {
+      "basis": "与6e40551原理图/PCB/pro/dru/连接定义哈希完全相同，未重复测试",
+      "general_DRC": 0,
+      "unconnected": 0,
+      "attribute_warnings": 6,
+      "note": "仅U301/U302/U303 Value/Specification属性，保留侧线程未改PCB决定；不是全属性零差异"
+    },
+    "source_sha256": {
+      "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
+      "docs/requirements.md": "1501f7639c445ccdc50e8207d0422a3dccb29f866fcfd2af1fc021ab9d71a2e2",
+      "docs/manufacturing.md": "9ad77684c5e7b8fa0b1fbf9cd497ecc1be2dc1a014d9d5e52318bd64e4dc4082",
+      "docs/cost.md": "a5e0d7d24815d26c6b9db9a8ae4d26ebf4188f1b64913d295efd6ab536744b7f",
+      "hardware/bom/README.md": "3fc7d5b63ac7e2f3af102e0e7cd2ce5e8b3fa139971d9d2e0a0c2fe0613e6041",
+      "hardware/bom/HSLink-LP-立创商城BOM.xlsx": "ef5bf9cd6b1c058332c4c818a6330053a25dfc9ab18d3179868dc5e8c22fdb52",
+      "hardware/bom/retail-procurement.json": "c1826df43aa2f17b470727e6687b2ce60ebf367caf106869161ea0711fc7bde6",
+      "hardware/bom/mechanical.csv": "3bd095e176f224c71405310409a507a625327a3d76381eefc521a8d4aae1e71a",
+      "hardware/bom/mechanical-quotes.json": "de2c186be77863aad9287840f7c40fbbe92a5243a34ec5510d44b3aa6dfa481c",
+      "hardware/bom/cost-summary.json": "8ffe090992104ee86b883e9fbf98837493b39282a0c8c915988a466545373259",
+      "hardware/design/mechanical/README.md": "82074c0f534b2a627fa50f42e59294ee52f43a942c3778810eed538c2a2668a7",
+      "hardware/design/mechanical/parameters.json": "5d2214ce91c7c19f37cc9261c13475313823fc629726736a45a531cb8294b276",
+      "hardware/design/mechanical/hslink_lp.py": "08ff6d1c86dedccb9620fa9121b93d0d793db82a3b19e2e6f54cfd8cf493060a",
+      "hardware/design/mechanical/panel_artwork.py": "fe9153b07e6a893d737382af3cb1d40d0f9e3f258eef8c8f8ba264aea9bbefe2",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "hardware/design/Safety.kicad_sch": "198778f37e6809c5e018828518f9e2a6b8b5ad78bfdd2cc2ee34c0659f907edb",
+      "hardware/design/connectivity.json": "778af899f316f5fd3930c5640e3cd128f80ba5f43abe5bd5faaf887055484566",
+      "hardware/bom/candidates.csv": "c7d84f5248631b156281c21d6e235fdc113bfcc224371068aa679743f1096db0",
+      "hardware/design/mechanical/hslink_lp_base.step": "3042c20d10dbdb65992bf4d3f01c0954ce1e572f3cfb788e0789dd891dbeaa32",
+      "hardware/design/mechanical/hslink_lp_base.stl": "0b6b1e8503a039c5358848c8ba0bb548a74ea54a034539d628785f9459534b0e",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "257effb05c9a7af593e2b72018efed177e32f09b5978aa0fba4f32b72f92a129"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/retail-fasteners-2026-11-15/before-Sheet3.png": "3e1da9a27ff4ef11e9eb848cbed6b335e9ed4d40ab7773f4d4faa5064780487b",
+      "hardware/design/reports/retail-fasteners-2026-11-15/EDLG-button-head.pdf": "562700e337eb40e06f691f75459d2b321092a0b695cb83993520be32aebbb128",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical.png": "f0e1b29626f298976134d21be3a5817d99b595fec843f60783513382e5c2a38c",
+      "hardware/design/reports/retail-fasteners-2026-11-15/before-Sheet2.png": "37cd5d6d50da22c6d1697ee5dc355b2aee4274e4c6af7a7eee8d078af25218e5",
+      "hardware/design/reports/retail-fasteners-2026-11-15/EDLA-cap-head.pdf": "6b41174a29f2d483876b948f5df061b5e1abc0f683f588db9d3205ae2ec6621e",
+      "hardware/design/reports/retail-fasteners-2026-11-15/audit-first.png": "35993f2b3491d4fe6847a7ea2abe9dfdb24e49d90ca6a080e5cc4be164954d79",
+      "hardware/design/reports/retail-fasteners-2026-11-15/unchanged-design-hashes.json": "718d73c39219cb71a0688868205f9933f2a8c3b92a314ee642f048a0ae877dcc",
+      "hardware/design/reports/retail-fasteners-2026-11-15/audit.png": "a8b9f5b5bf1db415662a694cd980368a07e679da6dc5b5aabdcf0861ac64665f",
+      "hardware/design/reports/retail-fasteners-2026-11-15/xlsx-readback.json": "53f8b520dca2038adb9cb4d5110bd76b2a5c2e987aa1bda60cf6e109312ebc69",
+      "hardware/design/reports/retail-fasteners-2026-11-15/audit-end.png": "6471376b89235a0f4772dad6975765f7dec56a837ad08ef9a665d6ac16b8503d",
+      "hardware/design/reports/retail-fasteners-2026-11-15/notes.png": "44ce0fe1690f78e826934215ddca347341137b4b79becc4f6cad6cfa1b3af283",
+      "hardware/design/reports/retail-fasteners-2026-11-15/workbook-inspect.ndjson": "e015dc6daa832b7d1b6b695cc68a5134d417d1c07c70c1c116c9b7604f00bd98",
+      "hardware/design/reports/retail-fasteners-2026-11-15/HSLink-LP-立创商城BOM-立创_20261115.xls": "d994928d0d76a5b15ada2f6311356fd0c590584e569f94fb1b5ce929d07398c5",
+      "hardware/design/reports/retail-fasteners-2026-11-15/prices.png": "00a3ce30c7f5f4ee078e509000aa2e16df8ed8fb5fd1393bd328f6498894cbbc",
+      "hardware/design/reports/retail-fasteners-2026-11-15/HJDC-silicone.pdf": "4dcdfd6779f6ffa7502c0b1ba8eeb993394731eee9f8f9d274d8a3d17add600a",
+      "hardware/design/reports/retail-fasteners-2026-11-15/quote-audit.json": "c1826df43aa2f17b470727e6687b2ce60ebf367caf106869161ea0711fc7bde6",
+      "hardware/design/reports/retail-fasteners-2026-11-15/C551332-standoff.pdf": "08f6ddc533c99a6a030c893cc033eadd95d122b749698e6c3b728bf3142970d9",
+      "hardware/design/reports/retail-fasteners-2026-11-15/review.md": "372a40dce21da843adbf4f9ee58491e650e461848b9efb3ea33529716ae300b0",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical-status.png": "13787bb47382b7fc921b4c49c0a43b0ed27b3b53f59f521e1b79c084a7a7bc8d",
+      "hardware/design/reports/retail-fasteners-2026-11-15/C24867-washer.pdf": "1ba5e56d68aaf901c7d5a4d1c4a355b5bce7dd87952a58473d60bc8c1cb70bc6",
+      "hardware/design/reports/retail-fasteners-2026-11-15/notes-start.png": "4bcfa5cf8c2886dfe0a540ce300393328c72d0b1bd6dbb795b9b134442f2882d",
+      "hardware/design/reports/retail-fasteners-2026-11-15/EPDA-washer.pdf": "f155b0f749802bb09e9f7cc3682c2730322d2e31415e44a403bef24936cade40",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/assembly-bottom.png": "e1bdd36804b1c79a91d1b2b0e297a2e5a2046b7fc7aee8ea968ab364c63270c7",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/assembly-top.png": "629dfe10fb986944a3c650e17c10c0e99a625f44683004ee74578e43c34fb1d7",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/HSLink-LP-assembly.glb": "c612d62049280fa69547a4935f533a005b2a08d0d48be4fdba0392e0b6ce6fd2",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/mechanical-checks.json": "2767c0274b02c1a04c89f590125b9ae3f0a8c0a2c35bc827d9037dc0cd73ca13",
+      "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/HSLink-LP-assembly.step": "4426e9296326f2adc6f35134dc1e991cbfb3539b516aedfa21ac2749977ffaac"
+    },
+    "pending": [
+      "确认商城原XLS表头差0.72和重新优惠",
+      "C14663订货/实际库存下单前复核",
+      "足部原材订货与自行裁切；需现成国内现货圆垫时仍需另选",
+      "铜柱完整牙及实际长度、底螺钉头圆角/沉孔孔口、打印公差、盖板轻紧及胶接防滑试装",
+      "40MHz、持续1A、140nA/20～30°C、VIO±1%实板验收"
+    ],
+    "visual_review": {
+      "views": [
+        "Sheet2 A1:J10 / K1:O12 / P5:Q10",
+        "Sheet3 A1:B12 / A15:D20",
+        "报价核对 A2:J10 / A12:K20 / A65:K71",
+        "当前装配GLB正面/底部"
+      ],
+      "result": "文字、位号、价格/公式与采购边界可读；紧凑底座、隐藏底部螺钉/脚垫及前沿接口顺序保持；非实物或全公差验证"
+    }
+  },
+  "current_procurement_summary": {
+    "electronic_sets": 5,
+    "mechanical_sets_assumption": 1,
+    "electronic_purchase_cny": 730.27,
+    "mechanical_purchase_cny": 35.29,
+    "known_purchase_subtotal_cny": 765.56,
+    "scope": "不含优惠重新核定、PCB、打印/切割/印刷、运费/自焊耗材；含订货和MOQ余料；未下单"
   }
 }

@@ -56,7 +56,7 @@
   "limitations": [
     "晶体负载/起振、按钮机构、BBM/DC额定及全部实板性能未验收",
     "TPS63810启动3.3V需固件隔离与编程时序；R42已改806Ω打样，典型限流约1.487A，无该档厂家保证窗口；逐板持续1A/过载/短路/温升投用前必验",
-    "PCB未设计，YFF 0.4mm逃线/钢网/DFM、贴装和通孔制造价未知",
+    "PCB布线与资料检查已完成；YFF 0.4mm钢网/实际焊接工艺、贴装和通孔服务制造价未核",
     "实际MOQ/备损/换料优惠/运费未下单确认；当前是裸材料完整快照",
     "配套排线C7496759绝缘≥5MΩ不足以保证0.14µA；打样配套未通过低漏电和20cm/40MHz验收",
     "K601 NC+Q902放电为资料/连接审查；转换抖动、续流释放、复位/掉电栅极状态和OFF泄漏待实测；50ms非保证值",
@@ -281,7 +281,7 @@
     "combined_vio_r42_increase_vs_cad895d_batch_10_cny": 4.629
   },
   "mechanical": {
-    "status": "未报价；不包含于既有板上/排线材料合计",
+    "status": "金属紧固件现货与脚垫订货原材已选；按1套准备，采购小计35.29；定制底座/盖板和运输未报价，不包含在历史板上/排线合计",
     "quantity_file": "hardware/bom/mechanical.csv",
     "per_unit_cny": null,
     "batch_10_cny": null,
@@ -290,7 +290,9 @@
       80
     ],
     "electronic_bom_delta_this_layout_cny": 0,
-    "price_snapshot_unchanged": "2026-11-07"
+    "price_snapshot_unchanged": "历史电子材料快照保持；当前结构采购件为2026-11-15单独零售场景",
+    "current_quotes": "hardware/bom/mechanical-quotes.json",
+    "purchase_subset_for_one_prepared_structure_cny": 35.29
   },
   "quoted_purchase_references": 193,
   "pcb_feature_references": 11,
@@ -341,5 +343,19 @@
     "hardware_validated": false,
     "quote_refresh_status": "本对话前轮已读取，实施时浏览器连接中断，未再次刷新",
     "PCB_metadata_note": "按用户要求PCB字节不改；PCB内部Value仍为旧TI名称，采购以当前原理图MPN与BOM为准。"
+  },
+  "current_retail_5_sets": {
+    "date_local": "2026-11-15",
+    "source": "retail-procurement.json",
+    "electronic_sets": 5,
+    "electronic_purchase_lines_cny": 730.27,
+    "needed_material_at_order_tiers_cny": 667.289035,
+    "moq_extra_material_cny": 62.972465,
+    "original_quote_unexplained_header_delta_cny": 0.72,
+    "coupon_reapplied": false,
+    "mechanical_sets_assumption": 1,
+    "mechanical_purchase_excluding_custom_parts_shipping_cny": 35.29,
+    "combined_known_procurement_lines_cny": 765.56,
+    "status": "采购建议/原表核对；含订货项；未重新出单/锁价/付款；与上方10套混合台账独立"
   }
 }
