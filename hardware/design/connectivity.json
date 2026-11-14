@@ -1247,7 +1247,7 @@
   {
     "reference": "U301",
     "symbol": "HSLinkLP:SN74LVC08APWR",
-    "value": "SN74LVC08APWR",
+    "value": "74LVC08APW,118",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
     "sheet": "Safety",
     "nets": {
@@ -1266,16 +1266,18 @@
       "13": "SIG_ARM",
       "14": "P3V3"
     },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
-    "display_value": "SN74LVC08APWR",
-    "mpn": "SN74LVC08APWR",
-    "lcsc": "C465737",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf",
+    "display_value": "74LVC08APW,118",
+    "mpn": "74LVC08APW,118",
+    "lcsc": "C6053",
+    "engineering_status": "物理引脚/封装及3.3V门控资料核对；上/掉电与互锁实板待验；PCB未改",
+    "manufacturer": "Nexperia",
+    "procurement_specification": "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换"
   },
   {
     "reference": "U302",
     "symbol": "HSLinkLP:SN74LVC08APWR",
-    "value": "SN74LVC08APWR",
+    "value": "74LVC08APW,118",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
     "sheet": "Safety",
     "nets": {
@@ -1294,16 +1296,18 @@
       "13": "SIG_ARM",
       "14": "P3V3"
     },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
-    "display_value": "SN74LVC08APWR",
-    "mpn": "SN74LVC08APWR",
-    "lcsc": "C465737",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf",
+    "display_value": "74LVC08APW,118",
+    "mpn": "74LVC08APW,118",
+    "lcsc": "C6053",
+    "engineering_status": "物理引脚/封装及3.3V门控资料核对；上/掉电与互锁实板待验；PCB未改",
+    "manufacturer": "Nexperia",
+    "procurement_specification": "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换"
   },
   {
     "reference": "U303",
     "symbol": "HSLinkLP:SN74LVC08APWR",
-    "value": "SN74LVC08APWR",
+    "value": "74LVC08APW,118",
     "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
     "sheet": "Safety",
     "nets": {
@@ -1322,11 +1326,13 @@
       "13": "GND",
       "14": "P3V3"
     },
-    "datasheet": "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf",
-    "display_value": "SN74LVC08APWR",
-    "mpn": "SN74LVC08APWR",
-    "lcsc": "C465737",
-    "engineering_status": "资料选型/价格核对；未硬件验证"
+    "datasheet": "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf",
+    "display_value": "74LVC08APW,118",
+    "mpn": "74LVC08APW,118",
+    "lcsc": "C6053",
+    "engineering_status": "物理引脚/封装及3.3V门控资料核对；上/掉电与互锁实板待验；PCB未改",
+    "manufacturer": "Nexperia",
+    "procurement_specification": "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换"
   },
   {
     "reference": "U304",

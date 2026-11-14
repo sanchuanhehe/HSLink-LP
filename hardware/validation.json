@@ -10504,5 +10504,257 @@
       "hardware/design/reports/marketplace-bom-2026-11-15/electronics-end.png": "9a7d7231a93da02a7b10397f51112859d6a1bd4516ea0b685573105fed2ca8e2",
       "hardware/design/reports/marketplace-bom-2026-11-15/electronics-start.png": "33667861acfedd9005feaf3e10e53a50f91b49a1f4f27533e18843d4e4e07448"
     }
+  },
+  "logic_gate_replacement_2026_11_15": {
+    "date_local": "2026-11-15",
+    "baseline_commit": "1946877331449d6d2fee49d068a3e9b3906dde91",
+    "user_confirmed": "U301/U302/U303 -> Nexperia 74LVC08APW,118 C6053；保留硬件互锁，不改PCB",
+    "checks": {
+      "before_after_network_groups_equal": true,
+      "component_count": 204,
+      "net_group_count_including_NC": 162,
+      "ERC": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "MCP_DRC": {
+        "violations": 0
+      },
+      "native_full_DRC": {
+        "violations": 0,
+        "unconnected": 0,
+        "metadata_warnings": 6,
+        "details": [
+          {
+            "description": "值 (U301) 与符号的值 (SN74LVC08APWR) 不匹配",
+            "items": [
+              {
+                "description": "封装 U301",
+                "pos": {
+                  "x": 149.0,
+                  "y": 101.0
+                },
+                "uuid": "55da2ef7-a966-4df4-927c-e76f6a293958"
+              }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+          },
+          {
+            "description": "字段 'Specification' 不一致: (PCB: 'SN74LVC08APWR', 原理图: '四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换')",
+            "items": [
+              {
+                "description": "封装 U301",
+                "pos": {
+                  "x": 149.0,
+                  "y": 101.0
+                },
+                "uuid": "55da2ef7-a966-4df4-927c-e76f6a293958"
+              }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+          },
+          {
+            "description": "值 (U302) 与符号的值 (SN74LVC08APWR) 不匹配",
+            "items": [
+              {
+                "description": "封装 U302",
+                "pos": {
+                  "x": 160.0,
+                  "y": 101.0
+                },
+                "uuid": "ed9b78a7-9d72-4661-b4ce-35872b55e4d9"
+              }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+          },
+          {
+            "description": "字段 'Specification' 不一致: (PCB: 'SN74LVC08APWR', 原理图: '四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换')",
+            "items": [
+              {
+                "description": "封装 U302",
+                "pos": {
+                  "x": 160.0,
+                  "y": 101.0
+                },
+                "uuid": "ed9b78a7-9d72-4661-b4ce-35872b55e4d9"
+              }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+          },
+          {
+            "description": "值 (U303) 与符号的值 (SN74LVC08APWR) 不匹配",
+            "items": [
+              {
+                "description": "封装 U303",
+                "pos": {
+                  "x": 173.0,
+                  "y": 101.0
+                },
+                "uuid": "90116569-7d23-42cc-831f-df6254c25a2d"
+              }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+          },
+          {
+            "description": "字段 'Specification' 不一致: (PCB: 'SN74LVC08APWR', 原理图: '四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换')",
+            "items": [
+              {
+                "description": "封装 U303",
+                "pos": {
+                  "x": 173.0,
+                  "y": 101.0
+                },
+                "uuid": "90116569-7d23-42cc-831f-df6254c25a2d"
+              }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+          }
+        ]
+      },
+      "PCB_project_DRU_sha256_unchanged": true,
+      "XLSX_changed_cells": [
+        {
+          "sheet": "Sheet1",
+          "cell": "B29",
+          "before": [
+            "SN74LVC08APWR",
+            ""
+          ],
+          "after": [
+            "74LVC08APW,118",
+            ""
+          ]
+        },
+        {
+          "sheet": "Sheet1",
+          "cell": "H29",
+          "before": [
+            "C465737",
+            ""
+          ],
+          "after": [
+            "C6053",
+            ""
+          ]
+        },
+        {
+          "sheet": "Sheet1",
+          "cell": "D29",
+          "before": [
+            "SN74LVC08APWR",
+            ""
+          ],
+          "after": [
+            "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换",
+            ""
+          ]
+        },
+        {
+          "sheet": "Sheet1",
+          "cell": "F29",
+          "before": [
+            "TI(德州仪器)",
+            ""
+          ],
+          "after": [
+            "Nexperia(安世)",
+            ""
+          ]
+        },
+        {
+          "sheet": "Sheet3",
+          "cell": "B12",
+          "before": [
+            "电子C编号来自现有嘉立创SMT记录；本次是商城模板，不是实时散件报价。",
+            ""
+          ],
+          "after": [
+            "安世C6053来自立创商城散件；其他56行沿用既有选型记录，未核全单散件价格。",
+            ""
+          ]
+        },
+        {
+          "sheet": "Sheet3",
+          "cell": "B5",
+          "before": [
+            "电子C料号沿用已核选型；此次只整理模板，未重新查询零售库存、MOQ和价格。以商城匹配后报价为准。",
+            ""
+          ],
+          "after": [
+            "本轮仅三颗与门改安世C6053并读取本对话散件快照；其余物料沿用选型，整单价格、库存和MOQ以商城匹配为准。",
+            ""
+          ]
+        }
+      ],
+      "XLSX_styles_and_structure_unchanged": true,
+      "pinmap_U301_14_pads_matches_connectivity": true,
+      "schematic_visual_review": "Safety页实际渲染已查看，新增型号清晰，无新增重叠",
+      "workbook_visual_review": "已查看Sheet1变更行及Sheet3说明，未改布局",
+      "hardware_validated": false,
+      "pending": [
+        "SYS_RESETn慢沿/启动/USB缓降恢复与门输出",
+        "供电/放电动态互锁及MOS栅极残压",
+        "40MHz/持续1A/140nA20～30°C/VIO±1%实板验收"
+      ]
+    },
+    "quote_source": "https://item.szlcsc.com/6519.html",
+    "quote_status": "前轮Chrome已读取，本轮连接中断，未再次刷新/锁价/锁库",
+    "datasheet_source": "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf",
+    "datasheet_revision": "Rev.12 2025-05-02",
+    "retail_savings_batch_10_cny": 103.278,
+    "record": "docs/logic-gates.md",
+    "source_sha256": {
+      "docs/logic-gates.md": "bef41bdc20b623bd3f20914dc265e20799fa12748f8dbed8fb0810a6a1d6e6ae",
+      "docs/cost.md": "794afe0a1ce9113b5820a5455cc38486ac5ea0bf5e8958609cb38c5416473c87",
+      "docs/requirements.md": "eadc571d45b8e6144c805fe0248761fb5fcc53d664f9bbfd4ffcbce23adfa80e",
+      "hardware/bom/README.md": "83c925594f99ad58e204a7ae78775a5cecf68009ef94d5e67448ce85cd2b9e27",
+      "hardware/bom/candidates.csv": "c7d84f5248631b156281c21d6e235fdc113bfcc224371068aa679743f1096db0",
+      "hardware/bom/cost-summary.json": "384572c6926a4c8443d0aac367b2553db81aacc1f5ca7f3a2f26ef4fab3ec873",
+      "hardware/bom/jlc-quotes.json": "259448bbdc847a8cf4c0d2eb4f28dd506639b3271d2394fe37c2213f081ef709",
+      "hardware/bom/HSLink-LP-立创商城BOM.xlsx": "f34962dd5b7596551437c792211eed3fd3264b5d0bb084bfe53197fd05fd352f",
+      "hardware/design/Safety.kicad_sch": "198778f37e6809c5e018828518f9e2a6b8b5ad78bfdd2cc2ee34c0659f907edb",
+      "hardware/design/connectivity.json": "778af899f316f5fd3930c5640e3cd128f80ba5f43abe5bd5faaf887055484566",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/logic-gates-2026-11-15/export_netlist.json": "8295e7f1ff2a17aead3203a5db15b6d12d7f0bdfc1e2dea765e8ffe6997afc3b",
+      "hardware/design/reports/logic-gates-2026-11-15/after_erc.json": "68677dddf5c7154a18b520cc4bf41a3b2f226994c621190092d1f71c5068bedc",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-export-inspect.ndjson": "ecbdaf14111987affab9998084bd7f02324650f03210a20f10feb3153638033d",
+      "hardware/design/reports/logic-gates-2026-11-15/check-tool-schemas.json": "533ef269eea450038c4a8f7ba6af1e2300403e7676bd66b310c6318681577d82",
+      "hardware/design/reports/logic-gates-2026-11-15/netlist_comparison.json": "95b27e036c67499631a349b88c5f9574555e6e2961a2209da5a76e7a0ee65e2e",
+      "hardware/design/reports/logic-gates-2026-11-15/export_sch_svg.json": "5228dd2c62ddb476c2ed031ca745915ad385ae726c5d34d7d428f54a1f8e8b12",
+      "hardware/design/reports/logic-gates-2026-11-15/export_sch_pdf.json": "1fe1080bc6ade946658025d3b6a601d54495bd5cb2db3400b9bd345362bb4cc9",
+      "hardware/design/reports/logic-gates-2026-11-15/drc-full.json": "aefd37898f0220fb8c0311be84ee3edc27a9b0124a2db36915f23f56810f7696",
+      "hardware/design/reports/logic-gates-2026-11-15/after.pdf": "8837a9b8d5e87eea6c7c4f8164e36efdcb080bf8747ada60301a54d80a251833",
+      "hardware/design/reports/logic-gates-2026-11-15/after.xml": "b580d5fd59d16f10516474fabe0d04d6c4efdb8f21736583402ffb3fcc408160",
+      "hardware/design/reports/logic-gates-2026-11-15/mcp-drc-violations.json": "17da3ae63f2302ba09f0a322b53acf027f4dddb08a691f5f61bd227100640275",
+      "hardware/design/reports/logic-gates-2026-11-15/before-hashes.json": "86a2a9a2ed4fb59ebc7503fa1ad21859b8be8f59ccd49a2b6c4bf7b7e570ec73",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-before-values.json": "57f75d78f1a0fc8914fcc1fa0f307f1517902faf38d4858f243634daf7806072",
+      "hardware/design/reports/logic-gates-2026-11-15/retail-quote-snapshot.json": "b26aa0fa0ca8767bc6fae2cb831638d17dd2b2f81cc543ea22ad9fa0998f5795",
+      "hardware/design/reports/logic-gates-2026-11-15/run_drc.json": "c8e64f77afddb939d844e22b102c8a23969feb101d11fd77aaf8b68eab965305",
+      "hardware/design/reports/logic-gates-2026-11-15/drc-mcp.rpt": "bb3efbfdf8b6dae6558e65953923580ca35fca502f274413c6576531f5a8370b",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-independent-check.json": "536b5fe107a5c0a464f3821494dc5b730ef197b3ea0befd1188ac6918dbc1ae8",
+      "hardware/design/reports/logic-gates-2026-11-15/checks.json": "de47a36ab1e124be073481c1d989762d99049fbbcb13f45077f27fb2876506a9",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-change-check.json": "ad49915337d3d3b475714e45c8d6aa571045f1de70b4f30d34ff1d313427f920",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-after.png": "6cc6cb45f9edf64fe809f33d8d25ff9250ff4f325b6adb9f9bea096cf0ce264b",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-before.png": "fc62226347c5801c4fde594cc48d9bd3cf2f1e35d743ee478bce160af36e680a",
+      "hardware/design/reports/logic-gates-2026-11-15/before-netlist-mcp.json": "93f091089f18e82c621861d73699caf7178430c12295ee132a29e01572e587c1",
+      "hardware/design/reports/logic-gates-2026-11-15/get_component_pads.json": "ce71a6e553fad55d829cced5aa0af93675728bb4b00cf78772fa81d5f8855d6f",
+      "hardware/design/reports/logic-gates-2026-11-15/after_netlist.json": "fe581a14b2cf7b356a051daef66f5122dcab520c24f6a11a5085e0a54634a640",
+      "hardware/design/reports/logic-gates-2026-11-15/open_board.json": "f75acd0872295c9d2d8d0877dba3bdecbfa5f688b9835d3029c1a0c46b3f4608",
+      "hardware/design/reports/logic-gates-2026-11-15/xlsx-notes-after.png": "51a1cb4e542cdb2769228b8cae31715547eec4d7fafc57bed17954404fd5d3ce",
+      "hardware/design/reports/logic-gates-2026-11-15/schematic_edit.json": "2f0b67867117fda9408b39a012834dc685e7cbb237bb972a7ac3145a97732631",
+      "hardware/design/reports/logic-gates-2026-11-15/svg/Safety.svg": "ea2ecba21b69973438b0c6cafced2c2d17b4617b2379ed14d737e416ab98fe68"
+    },
+    "review_scope": "资料/采购字段与既有连接保持检查；非完整上电/瞬态/硬件验收",
+    "PCB_metadata_warnings_intentionally_retained_without_waiver": true
   }
 }

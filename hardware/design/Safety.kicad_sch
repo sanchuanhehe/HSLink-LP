@@ -3286,7 +3286,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC08APWR"
+		(property "Value" "74LVC08APW,118"
 			(at 184.15 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3308,7 +3308,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf"
 			(at 173.99 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -3330,7 +3330,7 @@
 				)
 			)
 		)
-		(property "Specification" "SN74LVC08APWR"
+		(property "Specification" "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换"
 			(at 173.99 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3341,7 +3341,7 @@
 				)
 			)
 		)
-		(property "MPN" "SN74LVC08APWR"
+		(property "MPN" "74LVC08APW,118"
 			(at 173.99 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3352,7 +3352,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C465737"
+		(property "LCSC" "C6053"
 			(at 173.99 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3363,7 +3363,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "物理引脚/封装及3.3V门控资料核对；上/掉电与互锁实板待验；PCB未改"
 			(at 173.99 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3374,6 +3374,9 @@
 				)
 			)
 		)
+    (property "Manufacturer" "Nexperia" (at 173.99 53.34 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "875b3627-203f-45e7-942f-7f18f990924c")
 		)
@@ -3772,7 +3775,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC08APWR"
+		(property "Value" "74LVC08APW,118"
 			(at 60.96 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3794,7 +3797,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf"
 			(at 50.8 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -3816,7 +3819,7 @@
 				)
 			)
 		)
-		(property "Specification" "SN74LVC08APWR"
+		(property "Specification" "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换"
 			(at 50.8 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3827,7 +3830,7 @@
 				)
 			)
 		)
-		(property "MPN" "SN74LVC08APWR"
+		(property "MPN" "74LVC08APW,118"
 			(at 50.8 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3838,7 +3841,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C465737"
+		(property "LCSC" "C6053"
 			(at 50.8 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3849,7 +3852,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "物理引脚/封装及3.3V门控资料核对；上/掉电与互锁实板待验；PCB未改"
 			(at 50.8 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3860,6 +3863,9 @@
 				)
 			)
 		)
+    (property "Manufacturer" "Nexperia" (at 50.8 53.34 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "f3196a8f-4bde-4ad5-96d5-f7acccaeda4a")
 		)
@@ -4144,7 +4150,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SN74LVC08APWR"
+		(property "Value" "74LVC08APW,118"
 			(at 184.15 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4166,7 +4172,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/sn74lvc08a.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf"
 			(at 173.99 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4188,7 +4194,7 @@
 				)
 			)
 		)
-		(property "Specification" "SN74LVC08APWR"
+		(property "Specification" "四路双输入与门；TSSOP-14/SOT402-1；P3V3供电；引脚兼容替换"
 			(at 173.99 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4199,7 +4205,7 @@
 				)
 			)
 		)
-		(property "MPN" "SN74LVC08APWR"
+		(property "MPN" "74LVC08APW,118"
 			(at 173.99 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4210,7 +4216,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C465737"
+		(property "LCSC" "C6053"
 			(at 173.99 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4221,7 +4227,7 @@
 				)
 			)
 		)
-		(property "EngineeringStatus" "资料选型/价格核对；未硬件验证"
+		(property "EngineeringStatus" "物理引脚/封装及3.3V门控资料核对；上/掉电与互锁实板待验；PCB未改"
 			(at 173.99 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4232,6 +4238,9 @@
 				)
 			)
 		)
+    (property "Manufacturer" "Nexperia" (at 173.99 130.81 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
 		(pin "1"
 			(uuid "447ad5bd-ed8f-42b7-adf6-a8cef7fb81a8")
 		)

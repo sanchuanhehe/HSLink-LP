@@ -2,21 +2,21 @@
   "currency": "CNY",
   "tax_included": true,
   "prototype_quantity": 10,
-  "updated_at": "2026-11-07",
-  "baseline_commit": "4a619c1",
-  "status": "完整裸材料快照；R42采用本轮同日嘉立创现货记录，其他报价时间保持；未锁价/锁库，非硬件验收",
+  "updated_at": "2026-11-15",
+  "baseline_commit": "1946877331449d6d2fee49d068a3e9b3906dde91",
+  "status": "混合日期/渠道材料台账：56行沿用历史SMT快照，U301/U302/U303使用本对话2026-11-15散件快照；非完整散件现价或制造报价",
   "physical_references": 204,
-  "bom_per_board": 124.9924,
-  "bom_batch": 1249.924,
-  "quoted_material_subtotal_per_board": 124.9924,
-  "quoted_material_subtotal_batch": 1249.924,
+  "bom_per_board": 118.3756,
+  "bom_batch": 1183.756,
+  "quoted_material_subtotal_per_board": 118.3756,
+  "quoted_material_subtotal_batch": 1183.756,
   "unquoted": [],
   "spares": {
     "policy": "仅情景：每种料十套实用量的 10%，逐种向上取整；不是厂家实际备损要求",
-    "quoted_subset_extra_material": 124.9924,
-    "quoted_subset_purchase_with_spares": 1374.9164,
-    "full_spares_cost": 124.9924,
-    "scope": "193个板上采购位号的10%示例；配件另列，实际备损/MOQ未确认"
+    "quoted_subset_extra_material": 118.3756,
+    "quoted_subset_purchase_with_spares": 1302.1316,
+    "full_spares_cost": 118.3756,
+    "scope": "193个采购位号10%情景；安世30+3颗仍处5颗档；其他MOQ/采购倍数未复核；混合快照，非整单零售价"
   },
   "moq_leftovers": null,
   "pcb": null,
@@ -30,7 +30,7 @@
     "base_smt_skus": 19,
     "known_sku_scenario_cny": 640,
     "full_order_quote": null,
-    "note": "不含通孔件；不同子型号按不同种类；无优惠券，实际免换料/可贴状态以订单为准"
+    "note": "仅历史未来SMT情景；本次为散件自行装配，不发生SMT换料费。C6053未核本轮SMT单价，不用散件价冒充完整SMT报价。"
   },
   "same_platform_material_replacements": {
     "L1_savings": 1.775,
@@ -122,10 +122,10 @@
     "spares_10_percent_scenario_cny": 3.843,
     "low_leakage_qualified": false
   },
-  "kit_material_per_unit_cny": 128.8354,
-  "kit_material_batch_10_cny": 1288.354,
-  "kit_material_with_spares_batch_10_cny": 1417.1894,
-  "kit_material_spares_feeder_scenario_batch_10_cny": 2057.1894,
+  "kit_material_per_unit_cny": 122.2186,
+  "kit_material_batch_10_cny": 1222.186,
+  "kit_material_with_spares_batch_10_cny": 1344.4046,
+  "kit_material_spares_feeder_scenario_batch_10_cny": 1984.4046,
   "arm20_interface": {
     "record": "../../docs/arm20-interface.md",
     "j801_mpn": "2.54-2*10P简牛",
@@ -306,5 +306,40 @@
     "new_quote": false,
     "pcb_fixture_calibration_cost": null,
     "note": "报价仍为2026-11-07快照；PCB焊盘不作为供应商现货报价或采购元件；PCB面积/治具/人工未报价。"
+  },
+  "cost_basis": {
+    "unchanged_56_rows": "2026-11-07嘉立创SMT历史快照，未重新核价",
+    "changed_one_row": "立创商城国内散件2026-11-15本对话快照",
+    "complete_current_retail_bom_per_board": null,
+    "complete_current_retail_bom_batch_10": null,
+    "historical_remaining_material_per_board": 116.1334,
+    "current_retail_quoted_subset_per_board": 2.2422,
+    "current_retail_quoted_subset_batch_10": 22.422
+  },
+  "logic_gate_replacement": {
+    "record": "../../docs/logic-gates.md",
+    "date": "2026-11-15",
+    "baseline_commit": "1946877",
+    "references": [
+      "U301",
+      "U302",
+      "U303"
+    ],
+    "old_mpn": "SN74LVC08APWR",
+    "new_mpn": "74LVC08APW,118",
+    "lcsc": "C6053",
+    "hardware_interlock_retained": true,
+    "pcb_file_changed": false,
+    "old_recorded_smt_unit_cny": 2.953,
+    "old_current_retail_unit_cny": 4.19,
+    "new_retail_unit_cny": 0.7474,
+    "current_retail_saving_per_board_cny": 10.3278,
+    "current_retail_saving_batch_10_cny": 103.278,
+    "baseline_price_basis_correction_per_board_cny": 3.711,
+    "ledger_change_per_board_cny": -6.6168,
+    "ledger_change_batch_10_cny": -66.168,
+    "hardware_validated": false,
+    "quote_refresh_status": "本对话前轮已读取，实施时浏览器连接中断，未再次刷新",
+    "PCB_metadata_note": "按用户要求PCB字节不改；PCB内部Value仍为旧TI名称，采购以当前原理图MPN与BOM为准。"
   }
 }

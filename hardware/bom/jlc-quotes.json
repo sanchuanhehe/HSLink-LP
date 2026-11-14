@@ -4009,7 +4009,162 @@
       "adopted": true,
       "note": "用户接受R42低成本打样方案；已纳入当前BOM，逐板持续1A/过载/短路/温升投用前必验；非硬件验收。价格/库存沿用所列同日本轮读取时间，未重新锁价或预留。",
       "evidence": "hardware/design/reports/margins-2026-11-07/C861567.json"
+    },
+    {
+      "componentCode": "C6053",
+      "componentModel": "74LVC08APW,118",
+      "componentBrand": "Nexperia(安世)",
+      "componentSpecification": "TSSOP-14",
+      "orderLibraryType": "expand",
+      "supplier": "立创商城国内散件",
+      "currency": "CNY",
+      "tax_included": true,
+      "source_url": "https://item.szlcsc.com/6519.html",
+      "retrieved_at": "2026-11-15",
+      "retrieved_at_precision": "Asia/Singapore本地日期；本侧线程上一轮Chrome已读取；本轮浏览器连接中断，未再次刷新",
+      "rendered_stock": 1835,
+      "rendered_price_rows": [
+        {
+          "start": 5,
+          "price": 0.7474
+        },
+        {
+          "start": 50,
+          "price": 0.5891
+        },
+        {
+          "start": 150,
+          "price": 0.5099
+        },
+        {
+          "start": 500,
+          "price": 0.4505
+        },
+        {
+          "start": 2500,
+          "price": 0.4031
+        },
+        {
+          "start": 5000,
+          "price": 0.3793
+        }
+      ],
+      "selected_quantity": 30,
+      "selected_unit_price_cny": 0.7474,
+      "moq": 5,
+      "purchase_increment": null,
+      "page_shows_book_price": false,
+      "stock_reserved": false,
+      "dataBookUrl": "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf",
+      "evidence": "本侧线程Chrome商品详情DOM读取；原料同轮散件对比见retail_logic_gate_comparison；不是SMT单价"
     }
   ],
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "additional_quote_sources": [
+    {
+      "supplier": "立创商城国内散件",
+      "date_local": "2026-11-15",
+      "scope": [
+        "C6053"
+      ],
+      "note": "quotes内该行supplier覆盖顶层历史SMT供应商；其他报价未刷新"
+    }
+  ],
+  "retail_logic_gate_comparison": {
+    "quantity": 30,
+    "currency": "CNY",
+    "tax_included": true,
+    "date_local": "2026-11-15",
+    "original": {
+      "mpn": "SN74LVC08APWR",
+      "lcsc": "C465737",
+      "source_url": "https://item.szlcsc.com/470955.html",
+      "stock": 1463,
+      "moq": 1,
+      "tiers": [
+        [
+          1,
+          5.36
+        ],
+        [
+          10,
+          4.58
+        ],
+        [
+          30,
+          4.19
+        ],
+        [
+          100,
+          3.8
+        ],
+        [
+          500,
+          3.57
+        ],
+        [
+          1000,
+          3.45
+        ]
+      ],
+      "selected_unit_price": 4.19
+    },
+    "adopted": {
+      "componentCode": "C6053",
+      "componentModel": "74LVC08APW,118",
+      "componentBrand": "Nexperia(安世)",
+      "componentSpecification": "TSSOP-14",
+      "orderLibraryType": "expand",
+      "supplier": "立创商城国内散件",
+      "currency": "CNY",
+      "tax_included": true,
+      "source_url": "https://item.szlcsc.com/6519.html",
+      "retrieved_at": "2026-11-15",
+      "retrieved_at_precision": "Asia/Singapore本地日期；本侧线程上一轮Chrome已读取；本轮浏览器连接中断，未再次刷新",
+      "rendered_stock": 1835,
+      "rendered_price_rows": [
+        {
+          "start": 5,
+          "price": 0.7474
+        },
+        {
+          "start": 50,
+          "price": 0.5891
+        },
+        {
+          "start": 150,
+          "price": 0.5099
+        },
+        {
+          "start": 500,
+          "price": 0.4505
+        },
+        {
+          "start": 2500,
+          "price": 0.4031
+        },
+        {
+          "start": 5000,
+          "price": 0.3793
+        }
+      ],
+      "selected_quantity": 30,
+      "selected_unit_price_cny": 0.7474,
+      "moq": 5,
+      "purchase_increment": null,
+      "page_shows_book_price": false,
+      "stock_reserved": false,
+      "dataBookUrl": "https://assets.nexperia.com/documents/data-sheet/74LVC08A.pdf",
+      "evidence": "本侧线程Chrome商品详情DOM读取；原料同轮散件对比见retail_logic_gate_comparison；不是SMT单价"
+    },
+    "rejected_unavailable": {
+      "mpn": "SN74LVC08APW",
+      "lcsc": "C2869419",
+      "source_url": "https://item.szlcsc.com/3074096.html",
+      "stock": 0,
+      "displayed_reference_unit_price": 0.5411,
+      "reason": "缺货；不作为现货报价或已落实收益"
+    },
+    "refresh_status": "本侧线程上一轮已读取；本次连接中断，未再刷新；非锁价锁库"
+  }
 }
