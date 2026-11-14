@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "PCB全部连接保持；制造数据与结构几何检查；国内动态阻抗计算器复核；实际插头及工厂接受仍待确认",
-  "checked_at": "2026-11-14T05:58:56.398113+08:00",
+  "scope": "PCB源保持；修复外部保存后的宽泛网类分配；原生有效网类、隔离读写和GUI重载确认；新完整DRC0/0/0；实际成品排线几何仍未闭合",
+  "checked_at": "2026-11-14T09:00:51.515415+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -15,7 +15,7 @@
   "pcb": {
     "version": "本次Git提交的唯一hardware/design工程；精确内容由source_sha256标识",
     "status": "ROUTED_CAD_CHECKED",
-    "validation": "仅U501/SW601/K601三处放置属性改变；759焊盘对象及全部铜/布局保持；完整DRC0一般违规/0未连接/0parity。185SMT/8THT制造数据回读匹配。物理装配、工厂阻抗订单接受及实板性能未放行。",
+    "validation": "PCB铜几何/焊盘网络保持；PA28/PA29前缀模式修复并重载KiCad；新完整DRC0一般违规/0未连接/0parity，无新增忽略项。实际排线装配与硬件性能待验证。",
     "working_dimensions_mm": [
       110,
       80,
@@ -378,7 +378,7 @@
     "hardware/bom/jlc-quotes.json": "97244c77480c391cff4a848cc58ac8e3d34f4bced27ee9467af8e3b980da5cea",
     "hardware/design/Control.kicad_sch": "0e7f71461fca33fcbcf75f0a4fab188cf4ee874a227f7a0ff4352603adae18dc",
     "hardware/design/Disconnect.kicad_sch": "0226386ae30328d96c3bf7fadbc8ccb45b1c229876c7ed7c57908acaefe7523d",
-    "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+    "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
     "hardware/design/HSLink-LP.kicad_sch": "bd0c9b6032643fde59b51d51a0b9a4d83bbdd3fd380803e5aebec6cb9a269c9b",
     "hardware/design/Interface.kicad_sch": "eb5e4560316ad875d306b7dcaf00f14b4a474f17d8409df468763c44aef84155",
     "hardware/design/LogicTranslation.kicad_sch": "131702860ddb66680c614059defbd228ed6d0366b6fdf8386500387f6c19b369",
@@ -425,7 +425,7 @@
     "firmware/sdk/hpm_sdk/drivers/inc/hpm_adc16_drv.h": "8fa8bb0dda1042ca49b1bba92eedecdcedfdd052f712e70fdcb58ad245be7132",
     "firmware/sdk/hpm_sdk/drivers/src/hpm_adc16_drv.c": "348346f89581f040a02b1033542187985a8cfacb8eeb41fd635bdf104179c4c6",
     "firmware/sdk/hpm_sdk/soc/HPM5300/ip/hpm_adc16_regs.h": "007088d1e8823fd56bba8579f970084476e617da0032ac3a929cdf48c0130ecc",
-    "docs/pcb-layout.md": "7df23ac3a2f6f18ee26ff7dfabdd4fdf4bba773c7aaba08c62488f1bf85b0e98",
+    "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
     "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
     "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
     "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
@@ -2487,7 +2487,7 @@
       ]
     }
   },
-  "historical_sections_note": "此前审查/仿真/布线阶段只对应自身源哈希；当前源与数据以pcb、pcb_completion和manufacturing_review为准。8b3c89b之后仅三处放置属性变化，原有几何证据由metadata-only-proof关联；国内动态叠层/名义线宽现已核对，实际插头与工厂订单接受仍待确认。",
+  "historical_sections_note": "此前审查/仿真/布线阶段只对应自身源哈希；当前源与数据以pcb、pcb_completion和manufacturing_review为准。8b3c89b之后仅三处放置属性变化，原有几何证据由metadata-only-proof关联；国内动态叠层/名义线宽现已核对，实际插头与工厂订单接受仍待确认。 当前项目参数还以netclass_pattern_roundtrip为准；PCB/DRU哈希未变，制造数据回读仍适用，完整DRC已按新的参数重新执行。",
   "tooling": {
     "cadquery": {
       "checked_at": "2026-11-11T22:57:24.607150+08:00",
@@ -3474,7 +3474,7 @@
   },
   "pcb_completion": {
     "date": "2026-11-14",
-    "stage": "manufacturing_data_and_structure_fit_guards",
+    "stage": "netclass_pattern_persistence_and_complete_DRC",
     "verdict": "CAD_DATA_CHECKS_PASSED_ACTUAL_MATING_INCOMPLETE",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
@@ -3491,10 +3491,11 @@
       "fabricator_order_confirmation": false
     },
     "drc": {
+      "report": "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json",
+      "source_project_sha256": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
       "general_violations": 0,
       "unconnected_items": 0,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/manufacturing-review-2026-11-14/full-drc.json",
       "ignored_checks_unchanged": true
     },
     "pad_net_groups_unchanged": true,
@@ -3508,10 +3509,10 @@
       "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
       "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
       "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
-      "docs/pcb-layout.md": "7df23ac3a2f6f18ee26ff7dfabdd4fdf4bba773c7aaba08c62488f1bf85b0e98",
+      "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
-      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
       "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
       "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
       "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
@@ -9418,10 +9419,10 @@
       "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
       "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
       "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
-      "docs/pcb-layout.md": "7df23ac3a2f6f18ee26ff7dfabdd4fdf4bba773c7aaba08c62488f1bf85b0e98",
+      "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
-      "hardware/design/HSLink-LP.kicad_pro": "d982e657f6e7db2ffce14f5656d36b49db2441df203a96ad0b870a2debffa50c",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
       "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
       "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
       "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
@@ -9510,7 +9511,7 @@
       "hardware/design/reports/manufacturing-review-2026-11-14/pcb.step": "9b6b1dc820e905e392528c4aa443abba42471098f6456dfcf00d15997c271b32",
       "hardware/design/reports/manufacturing-review-2026-11-14/position-export.log": "f864bb5351672959ef660cacd500b54a91caf222908c0094143a91925fbfc3da",
       "hardware/design/reports/manufacturing-review-2026-11-14/step-export.log": "2f4ce9d79f3a2201db080edddad3e60957e561c11c10ae7c1af82c068cfcec5f",
-      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "66092c9ad4a67a685c999d572e17b5c9d9ba14c29fd3c8714f9cbbec3a15fbcf",
+      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "08d99a46ea34b12d4a847c184f7fb31fb1c30f1c1d650839f55aa8abb1b48fce",
       "hardware/design/reports/manufacturing-review-2026-11-14/goal-completion-audit.md": "4101bd48e06a439d68a67f8a227b11a7e18c2777519674d486a37db776f1ed4c",
       "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/reconciliation.json": "2bd962880e4eef791bffbe89fc53ef025bf20df31b80088d0db72353d1309755",
       "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/98.jpg": "71bd54ad278c2875d5e5bf7cad07e8c985ac10fadf1600572d3442e358343224",
@@ -9530,10 +9531,11 @@
       "library_pad_UUID_geometry_and_models_preserved": true
     },
     "drc": {
+      "report": "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json",
+      "source_project_sha256": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
       "general_violations": 0,
       "unconnected_items": 0,
       "schematic_parity": 0,
-      "report": "hardware/design/reports/manufacturing-review-2026-11-14/full-drc.json",
       "ignored_checks_unchanged": true
     },
     "PCB_geometry": {
@@ -9608,11 +9610,13 @@
     "constraints": {
       "netclasses": 13,
       "netclass_patterns": 146,
-      "project_and_rules_unchanged": true,
+      "project_and_rules_unchanged": false,
       "no_global_relaxation": true,
       "selected_stackup": "JLC04161H-7628",
       "domestic_calculator_current_result_verified": true,
-      "domestic_order_stack_accepted": false
+      "domestic_order_stack_accepted": false,
+      "subsequent_project_pattern_repair": "netclass_pattern_roundtrip",
+      "DRU_unchanged": true
     },
     "cost_delta_cny": {
       "purchased_BOM_per_board": 0,
@@ -9714,7 +9718,8 @@
         "current.jpg": "7e2675e40636c9a69dc68aca766c11032a69c703aeb3fca28c64d645b1b3fa53",
         "97.jpg": "7e2675e40636c9a69dc68aca766c11032a69c703aeb3fca28c64d645b1b3fa53"
       }
-    }
+    },
+    "subsequent_project_note": "PCB/制造数据仍未改变；后续只修复网类模式并保留外部排序/数值格式变化，现用DRC更新为netclass-roundtrip阶段；原metadata-only-proof只针对PCB几何。"
   },
   "vref_manual_optimization_review": {
     "checked_at": "2026-11-14T05:58:56.398113+08:00",
@@ -9823,5 +9828,71 @@
       "Vref is not an all-top shortest route; noise/coupling/settling measurements remain",
       "Actual selected CBL801 plug geometry/mating height and cable bend are still missing; structure-C physical fit not proven"
     ]
+  },
+  "netclass_pattern_roundtrip": {
+    "checked_at": "2026-11-14T09:00:51.515415+08:00",
+    "status": "PREFIX_PATTERNS_PERSIST_AND_NATIVE_CLASSES_VERIFIED_FULL_DRC_0_0_0",
+    "source_sha256": {
+      "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
+      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
+      "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/after.json": "d8783bf5556dd58d14371c6d8382a23336fdf327512e03b97b0ecd4ce43e59b0",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/before.json": "60b5a24c2d5c01c2b05acfade88ae411adfe1e5e95390221d324604024f77407",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/drc.log": "8edfea35e77d1e4b88c984707f566203ccb24c852cbfe1eea2509b396e3d63b8",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/effective-class-diff.json": "fd19305deaa2fadf407a94ca1542dd0b3af0cb1dea37000c47e2f4fd223ccede",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/external-before.json": "57e4a56941ee4e39b0a07e4250968b90b4090d576dc68ef5673b4f1f75229824",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json": "5cf10eaf95b9ed1bcba20a755ee0763ad182c8f100a41f964b9d4a327adfbd64",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/gui-reload.json": "266b5d8773ceb61ee7f174fc8d561c34a9c7794da64da5da8e02f75ba566f53b",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/map-after.log": "baa23b6135e4a9005ef93dc6406a2abc8100a4cb80e0477b6a7aa723bf96b456",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/map-before.log": "b4a8103e388c8dd5bd87d2727e62e939ba565c2cc1c65cadabc1aa7c25c58b1c",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/native-roundtrip.json": "e648ffd98f2edc6878f7ab093d76ea9b0aa04aae560a207eb5cae7869d9fc848",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/repair.json": "c415505dc318f976f47e8fc4c502703410e3c1cebdaa25acff2c6da8c4dd5fe1",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/roundtrip-isolated.log": "f02a9b3dc8e207a8147db9f10c94648fd96401e3fa85d53db99724f3129f0b31",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/settings_manager_10.0.7.cpp": "5bf723369c941b49bb195ac07597a647fbd2b0f1a83ebab6c1cd63661baaca29",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/manifest.json": "98c83fb896419f69376b86ef5b24531b77161a57500b0ce5fbc6194322c7a7c7"
+    },
+    "class_count": 13,
+    "pattern_count": 146,
+    "class_definitions_by_name_unchanged": true,
+    "class_sort_and_numeric_format_preserved": true,
+    "repair": "two broad slash patterns replaced by four PA28/PA29 prefix patterns",
+    "native_connected_net_classes_unchanged": true,
+    "only_native_netclass_delta": [
+      {
+        "net": "unconnected-(U1B-PB09{slash}TMR0.CAPT1{slash}URT2.RXD{slash}I2C2.SDA{slash}SPI2.CS1{slash}ACMP.COMP1{slash}USB0.OC{slash}ADC0.IN1{slash}CMP0.INP6{slash}CMP1.INP6-Pad26)",
+        "before": "Debug,U1Signal",
+        "after": "Default"
+      }
+    ],
+    "native_effective_classes_verified": [
+      [
+        "Net-(U1B-PA29{slash}I2C3.SCL{slash}SPI1.MOSI{slash}XPI0.CA_D2{slash}TRGM0.P05{slash}USB0.OC)",
+        "Debug,U1Signal"
+      ],
+      [
+        "Net-(U1B-PA28{slash}I2C3.SDA{slash}SPI1.MISO{slash}XPI0.CA_D0{slash}TRGM0.P04)",
+        "Debug,U1Signal"
+      ]
+    ],
+    "native_isolated_parameter_roundtrip_passed": true,
+    "GUI_current_project_reloaded": true,
+    "PCB_source_hash_unchanged": true,
+    "DRU_source_hash_unchanged": true,
+    "no_global_rule_relaxation": true,
+    "drc": {
+      "report": "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json",
+      "source_project_sha256": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "general_violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "ignored_checks_unchanged": true
+    },
+    "cost_delta_cny": 0,
+    "hardware_acceptance": false
   }
 }
