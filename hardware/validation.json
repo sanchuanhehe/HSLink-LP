@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "PCB源保持；修复外部保存后的宽泛网类分配；原生有效网类、隔离读写和GUI重载确认；新完整DRC0/0/0；实际成品排线几何仍未闭合",
-  "checked_at": "2026-11-14T09:00:51.515415+08:00",
+  "scope": "网类前缀修复/GUI重载与新完整DRC0/0/0已完成；排线三候选审查完成但未选用；实际成品排线几何/完整装配证据受阻",
+  "checked_at": "2026-11-14T09:02:56.865383+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -348,7 +348,7 @@
     "HSLink-LP.code-workspace": "ce138222cb6ad122838d00b117f3869a22439c92f372e65d42883081a0b38535",
     "README.md": "62c9dbed9bcc8a3d3333023ae983e613a6ea2fcb70545a15ce6106275c2b12e1",
     "docs/architecture.md": "2d6533569b2ad10e4573c479380226fdf01ce8ad9269250382180fc07c2c5d5e",
-    "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
+    "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
     "docs/control-interface.md": "879e2c7de64f79f40e5250b9fdd1078bf999c49988af7f356c527b58230d3e5b",
     "docs/cost-down.md": "74f2dc3f95b969bb383d873155b86d7a53eb0d545d8d92e1126085bb4fee2bd0",
     "docs/cost.md": "0d369fd775ed53ea27c11ab4f98becf5b6bcbda06596fb837d9632ba6b7dbc5e",
@@ -3475,7 +3475,7 @@
   "pcb_completion": {
     "date": "2026-11-14",
     "stage": "netclass_pattern_persistence_and_complete_DRC",
-    "verdict": "CAD_DATA_CHECKS_PASSED_ACTUAL_MATING_INCOMPLETE",
+    "verdict": "INCOMPLETE_ACTUAL_CABLE_ASSEMBLY_EVIDENCE_MISSING",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
     "sources": [
@@ -3508,7 +3508,7 @@
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
       "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
       "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
-      "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
+      "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
       "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
@@ -3542,7 +3542,7 @@
       "prototype materials/fastener complete MPNs and fit coupons",
       "hardware electrical performance acceptance; firmware/host outside this CAD stage"
     ],
-    "status": "ROUTED_CAD_CHECKED",
+    "status": "ROUTED_CAD_CHECKED_ACTUAL_MATING_BLOCKED",
     "visual_review": "见control_angle_routing；已看实际铜层/丝印，最终整机装配尚未重验",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
@@ -3621,7 +3621,8 @@
       "tracks": 633,
       "vias": 258
     },
-    "historical_ground_short_fanouts": 104
+    "historical_ground_short_fanouts": 104,
+    "blocking_evidence": "hardware/design/reports/cable-mechanical-review-2026-11-14/goal-audit.md"
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -9418,7 +9419,7 @@
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
       "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
       "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
-      "docs/arm20-interface.md": "5fb3ce0c483369308d73a5863dd2a45cf75ec94cea0362911a379cd8d90cf8c5",
+      "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
       "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
@@ -9511,7 +9512,7 @@
       "hardware/design/reports/manufacturing-review-2026-11-14/pcb.step": "9b6b1dc820e905e392528c4aa443abba42471098f6456dfcf00d15997c271b32",
       "hardware/design/reports/manufacturing-review-2026-11-14/position-export.log": "f864bb5351672959ef660cacd500b54a91caf222908c0094143a91925fbfc3da",
       "hardware/design/reports/manufacturing-review-2026-11-14/step-export.log": "2f4ce9d79f3a2201db080edddad3e60957e561c11c10ae7c1af82c068cfcec5f",
-      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "08d99a46ea34b12d4a847c184f7fb31fb1c30f1c1d650839f55aa8abb1b48fce",
+      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "ed51a89629ac2d05037b87d14b6a835bcffb9f3c40d08c38a30f51d02d9c608e",
       "hardware/design/reports/manufacturing-review-2026-11-14/goal-completion-audit.md": "4101bd48e06a439d68a67f8a227b11a7e18c2777519674d486a37db776f1ed4c",
       "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/reconciliation.json": "2bd962880e4eef791bffbe89fc53ef025bf20df31b80088d0db72353d1309755",
       "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/98.jpg": "71bd54ad278c2875d5e5bf7cad07e8c985ac10fadf1600572d3442e358343224",
@@ -9894,5 +9895,163 @@
     },
     "cost_delta_cny": 0,
     "hardware_acceptance": false
+  },
+  "cable_mechanical_review": {
+    "checked_at": "2026-11-14T09:02:56.865383+08:00",
+    "status": "CURRENT_CABLE_MECHANICAL_EVIDENCE_MISSING_ALTERNATIVES_NOT_QUALIFIED",
+    "source_sha256": {
+      "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
+      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
+      "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
+      "hardware/bom/accessories.csv": "8c201804416ad92fb68601198ad86894307bb8dfaf822cb746e0632d9d3f9da9",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/C20346.pdf": "1c726ebfeafb6150d74d85e6757755543f38d37f9a480c0556e69d33a0215bf5",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/C20346.png": "228e372d8a4dc0680e9584ae193a30a10a0ce0193eb53db1946a22bd2de6cc2e",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/C2977597.pdf": "6bb5d8ffbdee3ed11e4d4f8cb1df841c7a52093bc1089e9fe33e6f6861c24454",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/C2977597.png": "ac322be4c7cc241decdf80b3850c23c0636217dc10e2e8e0683903d948bd4374",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/C53309339.pdf": "ecad734817189e2d7472a61ed27b0fee3b9d4a1e51ff27a2882897bcc9429420",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/C53309339.png": "45a4dc1254643ae032b58e011b1fab86d3cf35f472c70bfa74faaaae55e43e7d",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/c53309339-live.txt": "aa4de4f77d3b4c8f9ea0c0c4986b5be2b502ba31581e9ba8d165d8582adf9136",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/c53309339-price.jpg": "d8219af0e7eaff878b0f976cfc75ca3b99ec3112b566925680f91bd39e0a10fc",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/candidate-review.json": "41c33fdfc53b8931de9a8d29e4238e5f2620b8b015e856070c52dc0b418e9880",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/goal-audit.md": "0b2d1e2c78b40e5a93dc660743cc4f89699fe0d5399f49211bdac255acfb0890",
+      "hardware/design/reports/cable-mechanical-review-2026-11-14/manifest.json": "bebf72b4c212923e387926ae444e6bba60a8c7424e995067b8e9aad1e05b7736"
+    },
+    "candidate_review": {
+      "checked_at": "2026-11-14T08:43:44.835658+08:00",
+      "baseline_commit": "bc5e991",
+      "PCB_sha256": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "user_reply": {
+        "has_physical_CBL801_sample": false,
+        "is_a_design_or_material_approval": false
+      },
+      "current_CBL801_retained": true,
+      "BOM_changed": false,
+      "PCB_or_structure_geometry_changed": false,
+      "candidates": [
+        {
+          "mpn": "2.54-2*10P压线头",
+          "lcsc": "C20346",
+          "manufacturer": "BOOMELE",
+          "source_url": "https://www.jlc-smt.com/lcsc/detail/C20346.html",
+          "observed_public_page_stock": 0,
+          "preorder_reference_cny": 0.757,
+          "live_browser_stock_verified": false,
+          "price_usable_as_current_instock_quote": false,
+          "pdf_url": "https://atta.szlcsc.com/upload/public/pdf/source/20151118/1457707578732.pdf",
+          "status": "未采用：裸压线头；公开页面只列缺货预订价；未提供所需完整成品线束证据"
+        },
+        {
+          "mpn": "FC-2.54-20P",
+          "lcsc": "C2977597",
+          "manufacturer": "ZHOURI",
+          "source_url": "https://www.jlc-smt.com/lcsc/detail/C2977597.html",
+          "observed_public_page_stock": 0,
+          "preorder_reference_cny": 0.433,
+          "live_browser_stock_verified": false,
+          "price_usable_as_current_instock_quote": false,
+          "pdf_url": "https://atta.szlcsc.com/upload/public/pdf/source/20220323/7B87557706E86DEEA7CBCDBF04424707.pdf",
+          "status": "未采用：裸压线头；公开页面只列缺货预订价；未提供所需完整成品线束证据"
+        },
+        {
+          "mpn": "XDFH-0258-2*10P",
+          "lcsc": "C53309339",
+          "manufacturer": "LX",
+          "source_url": "https://www.jlc-smt.com/lcsc/detail/C53309339.html",
+          "observed_smt_library_stock": 217,
+          "live_browser_stock_verified": true,
+          "price_ladder_cny": {
+            "1": 1.224,
+            "60": 0.962,
+            "216": 0.849,
+            "648": 0.709,
+            "3024": 0.647,
+            "6048": 0.609
+          },
+          "for_10_kits_connectors": 20,
+          "price_tier_quantity": 1,
+          "bare_connectors_per_kit_cny": 2.448,
+          "bare_connectors_ten_kits_cny": 24.48,
+          "pdf_url": "https://atta.szlcsc.com/upload/public/pdf/source/20260105/DD2A6AAC80986A8274719E0080DA987B.pdf",
+          "drawing_revision": "A0",
+          "dimension_notes": {
+            "2x10_A_mm": 30.0,
+            "A_tolerance_body_mm": 0.2,
+            "A_tolerance_cap_strain_mm": 0.3,
+            "B_mm": 22.86,
+            "B_tolerance_mm": 0.15,
+            "C_mm": 24.13,
+            "C_tolerance_mm": 0.15,
+            "body_depth_mm": 6.0,
+            "polarizing_key_projection_mm": 0.9,
+            "body_height_mm": 7.0,
+            "IDC_teeth_height_mm": 2.4,
+            "crimp_cap_height_mm": 3.5,
+            "strain_bar_thickness_mm": 1.3,
+            "mated_height_specified": false,
+            "assembled_three_piece_total_height_specified": false,
+            "flat_cable_pitch_mm": 1.27,
+            "wire_gauge_acceptance_specified": false,
+            "cable_bend_radius_specified": false
+          },
+          "engineering_status": "只完成目录价格与未装配零件图核对；线材/压接/交付/最终高度/配合/低漏电/40MHz未核齐，不是完整可下单线束或装配通过"
+        }
+      ],
+      "complete_cable_cost_quoted": false,
+      "counted_savings_cny": 0,
+      "procurement_or_hardware_acceptance": false,
+      "sources_sha256": {
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/C20346.pdf": "1c726ebfeafb6150d74d85e6757755543f38d37f9a480c0556e69d33a0215bf5",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/C20346.png": "228e372d8a4dc0680e9584ae193a30a10a0ce0193eb53db1946a22bd2de6cc2e",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/C2977597.pdf": "6bb5d8ffbdee3ed11e4d4f8cb1df841c7a52093bc1089e9fe33e6f6861c24454",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/C2977597.png": "ac322be4c7cc241decdf80b3850c23c0636217dc10e2e8e0683903d948bd4374",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/C53309339.pdf": "ecad734817189e2d7472a61ed27b0fee3b9d4a1e51ff27a2882897bcc9429420",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/C53309339.png": "45a4dc1254643ae032b58e011b1fab86d3cf35f472c70bfa74faaaae55e43e7d",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/c53309339-live.txt": "aa4de4f77d3b4c8f9ea0c0c4986b5be2b502ba31581e9ba8d165d8582adf9136",
+        "hardware/design/reports/cable-mechanical-review-2026-11-14/c53309339-price.jpg": "d8219af0e7eaff878b0f976cfc75ca3b99ec3112b566925680f91bd39e0a10fc"
+      },
+      "remaining_evidence_needed": [
+        "Selected finished cable maximum plug outer dimensions including strain relief",
+        "Fully mated height above PCB and mechanical mating references/tolerances",
+        "Cable exit geometry/bend requirements or an actual sample",
+        "If changing to crimped custom cable: exact wire gauge/type, controlled crimp process, full material/labor/supply quote and continuity/insulation tests"
+      ],
+      "conclusion": "所查公开目录与零件图不能闭合现用成品线束装配；不存在可据此认定已经满足全部机械要求的替换方案。不是全部市场搜索穷尽声明。"
+    },
+    "board_or_rules_or_BOM_changed": false,
+    "existing_complete_DRC_reused_source_unchanged": false,
+    "general_DRC": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "new_DRC_run": false,
+    "goal_completion_proven": false,
+    "blocked_condition": "Selected finished cable geometry/mating and actual assembly evidence missing; no physical sample; surveyed catalog parts do not provide a qualified complete substitute",
+    "blocker_recurrence_goal_turns_at_least": 3,
+    "baseline_commit": "f03ee49",
+    "cable_investigation_changed_electrical_or_BOM": false,
+    "source_constraint_repair_completed_in_prior_commit": "f03ee49",
+    "current_complete_DRC_report": "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json",
+    "new_DRC_run_in_separate_constraint_stage": true
+  },
+  "goal_completion_audit": {
+    "checked_at": "2026-11-14T09:02:56.865383+08:00",
+    "verdict": "NOT_COMPLETE_EXTERNAL_MECHANICAL_EVIDENCE_REQUIRED",
+    "consecutive_goal_turns_same_blocker_at_least": 3,
+    "report": "hardware/design/reports/cable-mechanical-review-2026-11-14/goal-audit.md",
+    "no_physical_cable_sample_user_reply": true,
+    "next_required_input": "可靠成品排线最大外形、插合/出线/弯曲图，或可量测样件",
+    "active_jobs_polled_as_wait": false,
+    "PCB_hash": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+    "project_hash": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+    "full_DRC": [
+      0,
+      0,
+      0
+    ]
   }
 }
