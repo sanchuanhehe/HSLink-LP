@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "scope": "网类前缀修复/GUI重载与新完整DRC0/0/0已完成；排线三候选审查完成但未选用；实际成品排线几何/完整装配证据受阻",
-  "checked_at": "2026-11-14T09:02:56.865383+08:00",
+  "scope": "用户排除本轮排线事项；PCB布线/约束/DRC/制造数据与结构CAD静态检查完成；材料/紧固件最终选型、动态/样件装配和生产/实板验收仍未完成",
+  "checked_at": "2026-11-14T18:14:26.929690+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
   "schematic": {
@@ -348,7 +348,7 @@
     "HSLink-LP.code-workspace": "ce138222cb6ad122838d00b117f3869a22439c92f372e65d42883081a0b38535",
     "README.md": "62c9dbed9bcc8a3d3333023ae983e613a6ea2fcb70545a15ce6106275c2b12e1",
     "docs/architecture.md": "2d6533569b2ad10e4573c479380226fdf01ce8ad9269250382180fc07c2c5d5e",
-    "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
+    "docs/arm20-interface.md": "70db699b3eadfeb7c349352299a400ba67bbf7c12e706d26f6e8f520e956b760",
     "docs/control-interface.md": "879e2c7de64f79f40e5250b9fdd1078bf999c49988af7f356c527b58230d3e5b",
     "docs/cost-down.md": "74f2dc3f95b969bb383d873155b86d7a53eb0d545d8d92e1126085bb4fee2bd0",
     "docs/cost.md": "0d369fd775ed53ea27c11ab4f98becf5b6bcbda06596fb837d9632ba6b7dbc5e",
@@ -361,7 +361,7 @@
     "docs/procurement-completion.md": "193ddcf43f8e16de60af2741dc9c5b273af02584489bf82c11724673d8f3f155",
     "docs/procurement-pinmap.md": "2f73f2bf8b312c5f4de2be407515bab4cc1b56088567a497ddd23f86ec327238",
     "docs/references.md": "268339d923de77c3b452f4defebfbbf83808c5ac4f7f5ea8f79e1aa0044e5fc3",
-    "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
+    "docs/requirements.md": "e42662e2c68246fc667085ff4cafdc63fb53a807d107009a923ea4402d578245",
     "docs/roadmap.md": "31e087e43d1b7ad2ba1c3b880fbfa3c127763e2d6ed42642bfedcd1291545985",
     "docs/sense-discharge.md": "60bd16b721f775669695d5ee562e0e1a2f511928ec93718b8d328cc32d34dd01",
     "docs/spice-validation.md": "38c895ae10be4f2e519b2faa0c52988dbcd7845c98eb58a68e828ca60f498e4c",
@@ -429,7 +429,7 @@
     "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9",
     "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
     "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
-    "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
+    "hardware/design/mechanical/README.md": "7481c4923c9fde68a88f34a23d3eb12194ea39a149bc75e1ce6b8de31d610851",
     "hardware/design/mechanical/component_envelopes.py": "c0a350f74ae88c31dd2c892c4fde66b10f5684d159fcd0e0f26be1d8818bcff5",
     "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
     "hardware/design/mechanical/hslink_lp_base.step": "7f7bb4188d7b04d322a328442a1e6c96835280857617aaa4cbcabf7ad4cfb43a",
@@ -454,7 +454,7 @@
     "hardware/design/libraries/models/HPM5301_envelope.step": "99da97d6fd6500989ea6ab6fabe4e2df1fbc755f79fec22aea590e72d7d57ad1",
     "hardware/design/libraries/models/TPS259531_envelope.step": "9fc3d38082996e3c9cb2aae9cfc65c77115f570329add53560dcd03bec09d55f",
     "hardware/design/libraries/models/TS1187A_envelope.step": "49b86ed3fa3787db9b0b097d720d65e414334a620a54ddf14e75e0a16c7d3110",
-    "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
+    "docs/manufacturing.md": "ebb561fe0507e8096e29fb711d2a8c1f7bc5d3b2933285496286db002bd69273",
     "hardware/design/mechanical/hslink_lp_panel_print.svg": "41ba1172d2b46abcb4936c5d2ea73519f14d3ebf531cdbda7470d0d7959be82c"
   },
   "evidence_sha256": {
@@ -3475,7 +3475,7 @@
   "pcb_completion": {
     "date": "2026-11-14",
     "stage": "netclass_pattern_persistence_and_complete_DRC",
-    "verdict": "INCOMPLETE_ACTUAL_CABLE_ASSEMBLY_EVIDENCE_MISSING",
+    "verdict": "PCB_COMPLETE_MECHANICAL_FINALIZATION_AND_ACCEPTANCE_OPEN",
     "design_target_not_hardware_verified": true,
     "stackup": "JLC04161H-7628",
     "sources": [
@@ -3506,16 +3506,16 @@
     ],
     "source_sha256": {
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
-      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
-      "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
-      "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
+      "docs/requirements.md": "e42662e2c68246fc667085ff4cafdc63fb53a807d107009a923ea4402d578245",
+      "docs/manufacturing.md": "ebb561fe0507e8096e29fb711d2a8c1f7bc5d3b2933285496286db002bd69273",
+      "docs/arm20-interface.md": "70db699b3eadfeb7c349352299a400ba67bbf7c12e706d26f6e8f520e956b760",
       "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
       "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
       "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
       "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
-      "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
+      "hardware/design/mechanical/README.md": "7481c4923c9fde68a88f34a23d3eb12194ea39a149bc75e1ce6b8de31d610851",
       "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
       "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
       "hardware/design/mechanical/panel_artwork.py": "67db2d8a1fd14b465fec577a99606f825a2eeb424310ea44f2f8e41d859962c2",
@@ -3537,12 +3537,12 @@
     },
     "report_directory": "hardware/design/reports/manufacturing-review-2026-11-14",
     "remaining": [
-      "CBL801 actual plug dimensions, mating height, cable bend/switch travel and physical clearances",
-      "factory final stack/impedance order acceptance and CAM/assembly process confirmation",
-      "prototype materials/fastener complete MPNs and fit coupons",
-      "hardware electrical performance acceptance; firmware/host outside this CAD stage"
+      "结构材料及紧固件最终采购型号/成本",
+      "拨杆全行程及样件公差/实际试装",
+      "工厂CAM/DFM与具体器件贴装方向/工艺接受",
+      "40MHz、持续1A、140nA/20～30°C、VIO±1%实板验收"
     ],
-    "status": "ROUTED_CAD_CHECKED_ACTUAL_MATING_BLOCKED",
+    "status": "PCB_ROUTED_STRUCTURE_PROTOTYPE_CAD_CHECKED",
     "visual_review": "见control_angle_routing；已看实际铜层/丝印，最终整机装配尚未重验",
     "procurement_bom_delta_cny": 0,
     "hardware_acceptance": "40MHz, sustained 1A, 140nA at 20–30C, calibrated VIO ±1% remain untested",
@@ -3622,7 +3622,9 @@
       "vias": 258
     },
     "historical_ground_short_fanouts": 104,
-    "blocking_evidence": "hardware/design/reports/cable-mechanical-review-2026-11-14/goal-audit.md"
+    "deferred_by_user": [
+      "配套排线选型/核价与机械匹配"
+    ]
   },
   "structure_compact_side_thread": {
     "date": "2026-11-12",
@@ -9417,16 +9419,16 @@
     "status": "DATA_CHECKS_PASSED_ACTUAL_MATING_GEOMETRY_OPEN",
     "source_sha256": {
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
-      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
-      "docs/manufacturing.md": "c462569856e9e3027893c5250a6f853c8c04608f0b9ed267bb89fd13fd9c2f15",
-      "docs/arm20-interface.md": "870040dffe1fc125839fb094296b61c6dd5609635934918b95dd517e0994a323",
+      "docs/requirements.md": "e42662e2c68246fc667085ff4cafdc63fb53a807d107009a923ea4402d578245",
+      "docs/manufacturing.md": "ebb561fe0507e8096e29fb711d2a8c1f7bc5d3b2933285496286db002bd69273",
+      "docs/arm20-interface.md": "70db699b3eadfeb7c349352299a400ba67bbf7c12e706d26f6e8f520e956b760",
       "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/README.md": "57002188502d1a4b3aae0abbf52d9a68adee9a32a799bd45c99f01c114ca9483",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
       "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
       "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
       "hardware/design/connectivity.json": "9aa609f2c54582f4ff5571ae43d557b8443f5dd13ee567f066f98f8357b36e85",
-      "hardware/design/mechanical/README.md": "de518c3147f26fe0d0e30ddcc8afe428ea5f551d67ac092603b6ed06dbc2df18",
+      "hardware/design/mechanical/README.md": "7481c4923c9fde68a88f34a23d3eb12194ea39a149bc75e1ce6b8de31d610851",
       "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
       "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
       "hardware/design/mechanical/panel_artwork.py": "67db2d8a1fd14b465fec577a99606f825a2eeb424310ea44f2f8e41d859962c2",
@@ -9512,7 +9514,7 @@
       "hardware/design/reports/manufacturing-review-2026-11-14/pcb.step": "9b6b1dc820e905e392528c4aa443abba42471098f6456dfcf00d15997c271b32",
       "hardware/design/reports/manufacturing-review-2026-11-14/position-export.log": "f864bb5351672959ef660cacd500b54a91caf222908c0094143a91925fbfc3da",
       "hardware/design/reports/manufacturing-review-2026-11-14/step-export.log": "2f4ce9d79f3a2201db080edddad3e60957e561c11c10ae7c1af82c068cfcec5f",
-      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "ed51a89629ac2d05037b87d14b6a835bcffb9f3c40d08c38a30f51d02d9c608e",
+      "hardware/design/reports/manufacturing-review-2026-11-14/manifest.json": "de973179bdb5ff60ab950d371e3d296bdb809fee035665b387fdb16f98816e29",
       "hardware/design/reports/manufacturing-review-2026-11-14/goal-completion-audit.md": "4101bd48e06a439d68a67f8a227b11a7e18c2777519674d486a37db776f1ed4c",
       "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/reconciliation.json": "2bd962880e4eef791bffbe89fc53ef025bf20df31b80088d0db72353d1309755",
       "hardware/design/reports/manufacturing-review-2026-11-14/domestic-stack/98.jpg": "71bd54ad278c2875d5e5bf7cad07e8c985ac10fadf1600572d3442e358343224",
@@ -9835,7 +9837,7 @@
     "status": "PREFIX_PATTERNS_PERSIST_AND_NATIVE_CLASSES_VERIFIED_FULL_DRC_0_0_0",
     "source_sha256": {
       "AGENTS.md": "05b20387e6b06bc689bf46b9c56551e1f8fb94602ab54bae5c25c0e86802db28",
-      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7",
+      "docs/requirements.md": "e42662e2c68246fc667085ff4cafdc63fb53a807d107009a923ea4402d578245",
       "docs/pcb-layout.md": "643091deba9764658e23380eb7244d466bff256843c3b3888977ea6f85496be3",
       "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
       "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
@@ -9894,7 +9896,11 @@
       "ignored_checks_unchanged": true
     },
     "cost_delta_cny": 0,
-    "hardware_acceptance": false
+    "hardware_acceptance": false,
+    "original_document_sha256": {
+      "docs/requirements.md": "8eab1020c5303d3adc6fc15629a5aca2339fbdc552ece9647d269b324e77a8f7"
+    },
+    "subsequent_document_scope_note": "需求文档只增加本轮排线范围排除；PCB/pro/dru源未变，电气要求不变，已复核旧检查仍适用。"
   },
   "cable_mechanical_review": {
     "checked_at": "2026-11-14T09:02:56.865383+08:00",
@@ -10039,13 +10045,17 @@
     "new_DRC_run_in_separate_constraint_stage": true
   },
   "goal_completion_audit": {
-    "checked_at": "2026-11-14T09:02:56.865383+08:00",
-    "verdict": "NOT_COMPLETE_EXTERNAL_MECHANICAL_EVIDENCE_REQUIRED",
-    "consecutive_goal_turns_same_blocker_at_least": 3,
-    "report": "hardware/design/reports/cable-mechanical-review-2026-11-14/goal-audit.md",
-    "no_physical_cable_sample_user_reply": true,
-    "next_required_input": "可靠成品排线最大外形、插合/出线/弯曲图，或可量测样件",
-    "active_jobs_polled_as_wait": false,
+    "checked_at": "2026-11-14T18:14:26.929690+08:00",
+    "verdict": "NOT_ALL_DESIGN_FINALIZATION_AND_ACCEPTANCE_COMPLETE",
+    "prior_cable_blocking_condition_removed_by_user": true,
+    "user_cable_scope_exclusion": true,
+    "report": "hardware/design/reports/scope-review-2026-11-14/status-review.md",
+    "remaining": [
+      "结构材料及紧固件最终采购型号/成本",
+      "拨杆全行程及样件公差/实际试装",
+      "工厂CAM/DFM与具体器件贴装方向/工艺接受",
+      "40MHz、持续1A、140nA/20～30°C、VIO±1%实板验收"
+    ],
     "PCB_hash": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
     "project_hash": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
     "full_DRC": [
@@ -10053,5 +10063,49 @@
       0,
       0
     ]
+  },
+  "scope_review": {
+    "checked_at": "2026-11-14T18:14:26.929690+08:00",
+    "user_decision": "排线可以不考虑",
+    "cable_removed_from_current_delivery_gates": true,
+    "cable_electrical_or_mechanical_qualified": false,
+    "other_requirements_waived": false,
+    "source_sha256": {
+      "docs/requirements.md": "e42662e2c68246fc667085ff4cafdc63fb53a807d107009a923ea4402d578245",
+      "docs/arm20-interface.md": "70db699b3eadfeb7c349352299a400ba67bbf7c12e706d26f6e8f520e956b760",
+      "docs/manufacturing.md": "ebb561fe0507e8096e29fb711d2a8c1f7bc5d3b2933285496286db002bd69273",
+      "hardware/design/mechanical/README.md": "7481c4923c9fde68a88f34a23d3eb12194ea39a149bc75e1ce6b8de31d610851",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "hardware/design/mechanical/parameters.json": "b9c44710ee9871e6c1303fd67438eb0d4f1637640785963c38f42b415149cf28",
+      "hardware/design/mechanical/hslink_lp.py": "8e6180972e37d188e9d83c9ae6183bc511d8e30a3ed23de1f020d775ecb605b2",
+      "hardware/bom/candidates.csv": "0c0c9fb90cf794260a325251736acb01db283fbea887f2945cbca24158913a81",
+      "hardware/bom/accessories.csv": "8c201804416ad92fb68601198ad86894307bb8dfaf822cb746e0632d9d3f9da9",
+      "hardware/bom/mechanical.csv": "41b9b125f0d92d363ef9511f68e7e1f7999de646a3ddc0261050d2fce64b8bc9"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/scope-review-2026-11-14/status-review.md": "cc0def6ee5a99ef6a5d9ca8428a79b73e9e7a0a6622140ca5e15cd0df8a6c071",
+      "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json": "5cf10eaf95b9ed1bcba20a755ee0763ad182c8f100a41f964b9d4a327adfbd64",
+      "hardware/design/reports/scope-review-2026-11-14/manifest.json": "d286af9dc8fa4f53bfe90000f3dda659ccd6d5c126853fce354d3b85db0dd525"
+    },
+    "existing_DRC": [
+      0,
+      0,
+      0
+    ],
+    "current_static_CAD_geometry_check_passed": true,
+    "new_DRC_or_geometry_run": false,
+    "BOM_or_electrical_or_mechanical_source_change": false,
+    "PCB_design_files_complete": true,
+    "structure_prototype_CAD_files_complete": true,
+    "all_manufacturing_and_hardware_acceptance_complete": false,
+    "remaining": [
+      "结构材料及紧固件最终采购型号/成本",
+      "拨杆全行程及样件公差/实际试装",
+      "工厂CAM/DFM与具体器件贴装方向/工艺接受",
+      "40MHz、持续1A、140nA/20～30°C、VIO±1%实板验收"
+    ],
+    "cost_delta_cny": 0
   }
 }
