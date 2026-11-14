@@ -75,18 +75,12 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
             .lineTo(ux+uw/2,rh+4).lineTo(ux-uw/2,rh+4).close().extrude(8,both=True))
     base=base.cut(relief)
     for x, y in P['holes']:
-        # 厂家镶嵌服务需要14x14mm平面；孔位、PCB支承高度保持。
-        pad_side = P.get('pillar_pad_side', P['pillar_diameter'])
-        offset = P.get('pillar_pad_outward_offset', 0)
-        px = x + (-offset if x < cx else offset)
-        py = -y + (offset if y < P['pcb_depth']/2 else -offset)
-        base = base.union(block(pad_side, pad_side, P['pcb_bottom_z'], px, py))
-        # 降低平台上方的围边，形成完整的同高镶嵌工具平面。
-        base = base.cut(block(pad_side, pad_side, P['rim_height']+2, px, py,
-                              P['pcb_bottom_z']))
-        base = base.cut(cylinder(P['insert_pilot_diameter'], P['insert_pilot_depth']+1,
-                                x, -y, P['pcb_bottom_z']-P['insert_pilot_depth']))
+        # 结构C紧凑圆柱；下方通孔螺钉连接双通铜柱，无嵌件/大工具平台。
+        base = base.union(cylinder(P['pillar_diameter'], P['pcb_bottom_z'], x, -y, 0))
+        base = base.cut(cylinder(P['mount_hole_diameter'], P['pcb_bottom_z']+2, x, -y, -1))
         base = base.cut(cylinder(P['foot_diameter'], P['foot_recess']+1, x, -y, -1))
+        seat_z = P['foot_recess'] + P['bottom_counterbore_depth']
+        base = base.cut(cylinder(P['bottom_counterbore_diameter'], seat_z+1, x, -y, -1))
     for x in [29, 35, 41, 47, 53, 80, 86, 92]:
         base = base.cut(block(2.5, 18, 5, x, -28, -1, 1.24))
     # Build open notches in the outline before rounding: a rounded cutting
@@ -113,7 +107,7 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
     pcb_top = P['pcb_bottom_z'] + P['pcb_thickness']
     lid_z = pcb_top + P['standoff_length']
     assembly = cq.Assembly(name='HSLink_LP_structure_C')
-    assembly.add(base, name='Base_white_ABS_prototype', color=cq.Color(.86,.81,.71))
+    assembly.add(base, name='Base_white_ABS_prototype', color=cq.Color(.92,.92,.89))
     assembly.add(lid, name='Lid_PC_2mm_prototype', loc=cq.Location((0,0,lid_z)),
                  color=cq.Color(.94,.96,.97,.22))
     add_artwork(assembly,lid,lid_z+P['lid_thickness']+.01)
@@ -121,13 +115,15 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
     fastener_shapes=[]
     for i,(x,y) in enumerate(P['holes'],1):
         # Functional envelopes only: no helical threads/knurl. Fit requires a coupon.
-        insert = cylinder(P['insert_nominal_outer_diameter'], P['insert_length'],
-                          x,-y,P['pcb_bottom_z']-P['insert_length']).cut(cylinder(3,6,x,-y,4))
         stand = (cq.Workplane('XY').polygon(6,P['standoff_hex_af']/math.cos(math.pi/6))
                  .extrude(P['standoff_length']).translate((x,-y,pcb_top)))
-        stand = stand.cut(cylinder(2.5,6,x,-y,lid_z-6))
-        stand = stand.union(cylinder(3,P['standoff_male_thread_length'],x,-y,
-                                    pcb_top-P['standoff_male_thread_length']))
+        # D3.1 is an assembly-clearance envelope, not a manufactured thread minor diameter.
+        stand = stand.cut(cylinder(3.1,P['standoff_length']+2,x,-y,pcb_top-1))
+        seat_z = P['foot_recess'] + P['bottom_counterbore_depth']
+        bottom_screw = cylinder(3,P['bottom_screw_length'],x,-y,seat_z)
+        # Cylindrical head bounds the smaller domed GB/T70.2 M3 head conservatively.
+        bottom_screw = bottom_screw.union(cylinder(P['bottom_screw_head_diameter'],
+            P['bottom_screw_head_height'],x,-y,seat_z-P['bottom_screw_head_height']))
         washer = cylinder(7,P['washer_thickness'],x,-y,lid_z+P['lid_thickness']).cut(
             cylinder(3.2,1,x,-y,lid_z+P['lid_thickness']))
         screw = cylinder(3,P['top_screw_length'],x,-y,
@@ -135,11 +131,11 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
         screw = screw.union(cylinder(5.5,3,x,-y,lid_z+P['lid_thickness']+P['washer_thickness']))
         foot = cylinder(P['foot_diameter'],P['foot_thickness'],x,-y,
                         P['foot_recess']-P['foot_thickness'])
-        for name,shape,color in [('Insert',insert,(.68,.51,.22)),('Standoff',stand,(.70,.57,.30)),
+        for name,shape,color in [('BottomScrew',bottom_screw,(.78,.80,.82)),('Standoff',stand,(.70,.57,.30)),
                                  ('Washer',washer,(.78,.80,.82)),('Screw',screw,(.78,.80,.82)),
                                  ('Foot',foot,(.08,.09,.1))]:
             assembly.add(shape,name=f'{name}_{i}',color=cq.Color(*color))
-            if name in ['Standoff','Washer','Screw']:
+            if name in ['BottomScrew','Standoff','Washer','Screw']:
                 fastener_shapes.append((f'{name}_{i}',shape.val()))
     result={'status':'geometry_checked_not_physical_fit_tested','dimensions_mm':P,
             'pcb_evaluated':bool(pcb_step),'probe_access_evaluated':bool(pcb_step and probe_map),
@@ -151,8 +147,39 @@ def build(pcb_step=None, reports=None, export_parts=True, probe_map=None):
             'base_volume_mm3':base.val().Volume(),'lid_volume_mm3':lid.val().Volume(),
             'checks':[],'limits':['尺寸模型含简化器件外形，不能覆盖厂商全公差或配套插头实际尺寸',
                                   '透明盖PC/PMMA 2mm各一片；底座建议FDM ABS，精确报价/工厂接受/实物样件待确认',
-                                  '孔径/深度按嘉立创M3*4*3资料；打印公差与镶嵌保持力需工厂审核/样件验收，不含螺纹滚花',
+                                  '底部螺钉按GB/T70.2 M3头部包络；双通柱为功能包络，螺纹/公差/拧紧力未实测',
                                   '未验证温升、跌落、拔插力、绝缘污染及140nA漏电']}
+    seat_z = P['foot_recess'] + P['bottom_counterbore_depth']
+    lower_engagement = seat_z + P['bottom_screw_length'] - pcb_top
+    upper_engagement = P['top_screw_length'] - P['lid_thickness'] - P['washer_thickness']
+    result['fastening_stack'] = {
+        'type': 'bottom hidden button head screws / female-female standoffs / upper screws',
+        'lower_head_seat_z_mm': seat_z,
+        'lower_geometric_engagement_mm': lower_engagement,
+        'upper_geometric_engagement_mm': upper_engagement,
+        'opposed_screw_tip_gap_mm': P['standoff_length']-lower_engagement-upper_engagement,
+        'head_to_foot_top_clearance_mm': P['bottom_counterbore_depth']-P['bottom_screw_head_height'],
+        'counterbore_radial_head_clearance_mm': (P['bottom_counterbore_diameter']-P['bottom_screw_head_diameter'])/2,
+        'lower_head_seat_below_floor_top_mm': P['floor_thickness']-seat_z,
+        'note': '几何插入深度不等于完整牙有效啮合或强度保证；须核对端部倒角/不完整牙/实物有效牙深，手工轻紧后检查',
+        'reference': 'https://www.jlc-jdgf.com/mcbook/GBT70-2.htm?navbar=off'}
+    assert lower_engagement > 3 and upper_engagement > 3
+    assert result['fastening_stack']['opposed_screw_tip_gap_mm'] > 2
+    assert result['fastening_stack']['head_to_foot_top_clearance_mm'] > .2
+    assert seat_z < P['floor_thickness']
+    for i,(x,y) in enumerate(P['holes'],1):
+        # Check the actual machined solids, not only the nominal stack arithmetic.
+        passage = cylinder(P['mount_hole_diameter']-.01,P['pcb_bottom_z']+2,x,-y,-1).val()
+        pocket = cylinder(P['bottom_counterbore_diameter']-.01,seat_z+.99,x,-y,-1).val()
+        checks = [('mount_through_'+str(i),base.val().intersect(passage).Volume()),
+                  ('head_pocket_'+str(i),base.val().intersect(pocket).Volume())]
+        bottom = dict(fastener_shapes)['BottomScrew_'+str(i)]
+        foot = cylinder(P['foot_diameter'],P['foot_thickness'],x,-y,
+                        P['foot_recess']-P['foot_thickness']).val()
+        checks += [('base_vs_bottom_screw_'+str(i),base.val().intersect(bottom).Volume()),
+                   ('foot_vs_bottom_screw_'+str(i),foot.intersect(bottom).Volume())]
+        for name,volume in checks:
+            result['checks'].append({'test':name,'collisions':[] if volume<1e-5 else [{'volume_mm3':volume}]})
     assert result['base_valid'] and result['lid_valid']
     assert result['base_solids']==1 and result['lid_solids']==1
     # Assumed straight plug-overmould sweep, not a vendor-qualified cable model.

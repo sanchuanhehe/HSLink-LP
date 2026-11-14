@@ -21,8 +21,8 @@
       76
     ]
   ],
-  "base_width": 124.0,
-  "base_depth": 94.0,
+  "base_width": 118.0,
+  "base_depth": 88.0,
   "base_radius": 5.0,
   "floor_thickness": 3.0,
   "rim_height": 10.0,
@@ -34,13 +34,8 @@
   "usb_relief_depth": 4.0,
   "pcb_bottom_z": 9.0,
   "pillar_diameter": 7.0,
-  "insert_pilot_diameter": 3.6,
-  "insert_pilot_depth": 5.0,
-  "insert_nominal_outer_diameter": 4.0,
-  "insert_length": 3.0,
   "standoff_length": 12.0,
   "standoff_hex_af": 5.5,
-  "standoff_male_thread_length": 6.0,
   "lid_thickness": 2.0,
   "lid_hole_diameter": 3.4,
   "top_screw_length": 6.0,
@@ -67,9 +62,14 @@
   "foot_thickness": 2.0,
   "foot_recess": 0.5,
   "lid_radius": 5.0,
-  "pillar_pad_side": 14.2,
-  "insert_model": "JLC M3*4*3",
-  "pillar_pad_outward_offset": 2.2,
   "lid_width": 118.0,
-  "lid_depth": 88.0
+  "lid_depth": 88.0,
+  "mount_hole_diameter": 3.4,
+  "bottom_counterbore_diameter": 6.6,
+  "bottom_counterbore_depth": 2.0,
+  "bottom_screw_length": 12.0,
+  "bottom_screw_head_diameter": 5.7,
+  "bottom_screw_head_height": 1.65,
+  "standoff_type": "M3 female/female through threaded; nominal 12 mm; AF <=5.5 mm",
+  "standoff_min_effective_thread_depth_each_end": 5.0
 }

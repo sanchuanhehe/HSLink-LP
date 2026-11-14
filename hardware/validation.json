@@ -10265,6 +10265,168 @@
       "新模型报价与运输",
       "2mmPC切割印刷渠道",
       "40MHz/1A/140nA/VIO实板验收"
-    ]
+    ],
+    "superseded_by": "compact_fastening_2026_11_15",
+    "status": "历史检查：用户已拒绝外扩平台/嵌件，不用于当前下单"
+  },
+  "compact_fastening_2026_11_15": {
+    "recorded_at": "2026-11-15",
+    "user_decision": "拒绝外扩平台，采用紧凑底座/隐藏底螺钉＋双通柱方向，取消嵌件及代镶嵌服务",
+    "engineering_dimensions_not_individually_user_specified": {
+      "base_bbox_mm": [
+        118,
+        88,
+        10
+      ],
+      "pillar_diameter_mm": 7,
+      "mount_through_mm": 3.4,
+      "counterbore_diameter_mm": 6.6,
+      "counterbore_depth_from_foot_recess_mm": 2,
+      "foot_recess_mm": 0.5,
+      "bottom_screw": "GB/T70.2 M3x12 button head",
+      "standoff": "M3 female/female 12mm; AF<=5.5; through thread / effective depth each end>=5"
+    },
+    "references": [
+      "https://www.jlc-jdgf.com/mcbook/GBT70-2.htm?navbar=off"
+    ],
+    "checks": {
+      "base_and_lid_valid_single_solids": true,
+      "solid_check_count": 34,
+      "probe_envelopes_checked": 10,
+      "geometry_passed": true,
+      "lid_added_removed_mm3": [
+        0.0,
+        0.0
+      ],
+      "base_STL_closed_and_manifold": true,
+      "STL_relative_volume_error": 9.651161582580059e-06,
+      "actual_CAD_views_reviewed": [
+        "base-top",
+        "base-bottom",
+        "compact-assembly"
+      ],
+      "assembly_guide_render_reviewed": true,
+      "guide_text_runs_outlined": 24,
+      "all_solid_collision_checks_passed": true
+    },
+    "nominal_fastening_stack": {
+      "type": "bottom hidden button head screws / female-female standoffs / upper screws",
+      "lower_head_seat_z_mm": 2.5,
+      "lower_geometric_engagement_mm": 3.9000000000000004,
+      "upper_geometric_engagement_mm": 3.5,
+      "opposed_screw_tip_gap_mm": 4.6,
+      "head_to_foot_top_clearance_mm": 0.3500000000000001,
+      "counterbore_radial_head_clearance_mm": 0.44999999999999973,
+      "lower_head_seat_below_floor_top_mm": 0.5,
+      "note": "几何插入深度不等于完整牙有效啮合或强度保证；须核对端部倒角/不完整牙/实物有效牙深，手工轻紧后检查",
+      "reference": "https://www.jlc-jdgf.com/mcbook/GBT70-2.htm?navbar=off"
+    },
+    "tolerance_screening": {
+      "standard_url": "https://www.jlc-jdgf.com/mcbook/GBT70-2.htm?navbar=off",
+      "retrieved_at": "2026-11-15",
+      "standard_m3_head_max_diameter_mm": 5.7,
+      "standard_m3_head_max_height_mm": 1.65,
+      "standard_m3_12_length_limits_mm": [
+        11.65,
+        12.35
+      ],
+      "screening_assumptions_not_supplier_guarantees": {
+        "plastic_seat_to_pcb_bottom_mm": [
+          6.1,
+          6.9
+        ],
+        "pcb_thickness_mm": [
+          1.44,
+          1.76
+        ],
+        "lid_thickness_mm": [
+          1.8,
+          2.2
+        ],
+        "washer_thickness_mm": [
+          0.4,
+          0.6
+        ],
+        "standoff_length_mm": [
+          11.8,
+          12.2
+        ]
+      },
+      "lower_geometric_insertion_mm": [
+        2.99,
+        4.8100000000000005
+      ],
+      "upper_geometric_insertion_mm": [
+        2.9599999999999995,
+        4.04
+      ],
+      "minimum_opposed_screw_tip_gap_mm": 2.95,
+      "limits": [
+        "不完整牙、入口倒角、实际轴向公差需采购图/样件核对",
+        "无扭矩/强度/蠕变/跌落实测",
+        "STANDOFF完整料号和价格未核实"
+      ]
+    },
+    "PCB_and_constraints_unchanged": true,
+    "lid_files_and_artwork_unchanged": true,
+    "new_DRC_or_electrical_test": false,
+    "prior_full_DRC": {
+      "path": "hardware/design/reports/netclass-roundtrip-2026-11-14/full-drc.json",
+      "violations": 0,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "applies_only_to_unchanged_PCB_pro_dru_sources": true
+    },
+    "material_volume_change_percent": -26.087072188780592,
+    "cost": {
+      "electronic_BOM_change_cny": 0,
+      "insert_quantity_removed": 4,
+      "bottom_screws_added": 4,
+      "standoff_type_changed": true,
+      "new_base_and_fasteners_quote_verified": false,
+      "net_savings_cny": null,
+      "note": "取消嵌件服务；历史20元服务参考和旧模型61元截图都不是本方案锁价，不计已验证净节省"
+    },
+    "unresolved": [
+      "精确双通柱/螺钉商品图、有效牙深与零售报价",
+      "FDM孔/轴向尺寸与收缩翘曲",
+      "夹紧力/扭矩/塑料蠕变/实物试装",
+      "脚垫胶与维护、材料绝缘污染",
+      "2mmPC切割印刷渠道与生产稿",
+      "拨杆全行程/盖板挠曲",
+      "40MHz/持续1A/140nA20～30°C/VIO±1%实板验收"
+    ],
+    "source_sha256": {
+      "docs/requirements.md": "8835b931192478534fe5e7e29f7c979f998219b9d98a83ce071c2ac1f9cb4561",
+      "docs/manufacturing.md": "18e3ea9764bcc3b7e1d984b22afc6cc2e8cdb29cf8370695fe2863f98c9dc846",
+      "hardware/bom/mechanical.csv": "7221daf3d96627afc1aa63a27acf3ec441ab8a83dced71bf0822ff9fc6b78102",
+      "hardware/design/mechanical/README.md": "3a38d02e474750311a2376053c32158aac1b2cefc4ef4d248b2cbf7de6dd38db",
+      "hardware/design/mechanical/parameters.json": "7f6e01245abd4bd1ce389837254176213f1865bfcf38847fd863a1f5b0dce641",
+      "hardware/design/mechanical/hslink_lp.py": "f427c9d3b9d613b9f4b1c6a79c32179e2dd506e65b7b37dacb7c58b95f2d2ef4",
+      "hardware/design/mechanical/hslink_lp_base.step": "3042c20d10dbdb65992bf4d3f01c0954ce1e572f3cfb788e0789dd891dbeaa32",
+      "hardware/design/mechanical/hslink_lp_base.stl": "0b6b1e8503a039c5358848c8ba0bb548a74ea54a034539d628785f9459534b0e",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+      "hardware/design/mechanical/hslink_lp_panel_print.svg": "257effb05c9a7af593e2b72018efed177e32f09b5978aa0fba4f32b72f92a129",
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-compact-assembly-guide.png": "29aee355d7e64bba77f64b6d83b909af1d3ead0d2cd6255693e8c3194834ac70",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-compact-assembly-guide.pdf": "4c2a1000f73df908eb137c4c7461469c462ebedb07f324ecbc22150dc38ff5a7",
+      "hardware/design/reports/compact-fastening-2026-11-15/stl-readback.json": "0da9e70969048ae7a325b1d4f5a7d135da23c92b9606d40f2369dd511f81a2ac",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-base-bottom.png": "a7a9aa0277bb389ebf383d7693d5bfe57001c48ce134efc47a43f1a5e3598596",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-base-top.png": "69b88ffe75c5169787f121f158bb1ce103828daebc037f7b75eb472524f93dab",
+      "hardware/design/reports/compact-fastening-2026-11-15/READ-ME.txt": "bcfd8fdea8dc2135f7a4f87d240ffbe5f73c8ab87b2d91eb8097c2a481dc8107",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-compact-assembly.png": "7a09529d14f5fd2bfc528a09128b6b6e267e8774163d1148f03492fde72815dd",
+      "hardware/design/reports/compact-fastening-2026-11-15/fastener-tolerance-screen.json": "7091e79c57c65be04643cddd7fee56357d2731ee2be0106a0e450613d5f6328e",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-assembly.glb": "97b542bc4da62d6fdfda2675cd95f32cab96bb96eb7110535d65a190b0f74d19",
+      "hardware/design/reports/compact-fastening-2026-11-15/geometry-comparison.json": "43f7441ffd08962b3f4a0e21c07fdca269676f0909832fb2fee580564c0c1d98",
+      "hardware/design/reports/compact-fastening-2026-11-15/mechanical-checks.json": "cbbfc69d3971ce59f4507e76b090c4788084b21386a9603ddbdecde426ff3b71",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-assembly.step": "e1ce30097de540586c504e76cada389ab4682cad6f85853ba804140e38f0a9b3",
+      "hardware/design/reports/compact-fastening-2026-11-15/HSLink-LP-base-order.zip": "90f64c3c54f603674dce44a752a78b276c9f4d907c91b314c0c7f7e7812b72ab"
+    }
   }
 }
