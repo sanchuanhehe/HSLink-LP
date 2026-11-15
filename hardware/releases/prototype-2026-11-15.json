@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "tag": "prototype-2026-11-15",
+  "release_url": "https://github.com/sanchuanhehe/HSLink-LP/releases/tag/prototype-2026-11-15",
+  "source_commit": "0fe1c4ef0dfc469ad659218d97282f4c92a202f9",
+  "status": "prototype-prerelease",
+  "archive_directory": "hardware/design/reports/prototype-2026-11-15",
+  "assets": [
+    {
+      "name": "HSLink-LP-PCB-Gerber.zip",
+      "bytes": 350592,
+      "sha256": "b51718cdbe2536f7feb439cbfcaa14cbf821e5bf8407d31edd175a64757641fb"
+    },
+    {
+      "name": "HSLink-LP-Mechanical.zip",
+      "bytes": 9539442,
+      "sha256": "028a66500f0777a0f9476c5ff6322aedb7545cffa1ba611b3a9dbd93c630b6cc"
+    },
+    {
+      "name": "HSLink-LP-BOM.zip",
+      "bytes": 32205,
+      "sha256": "7149ac815a81891dc7bce5004e3a95de9db660aff49fefacd7675781c9964788"
+    },
+    {
+      "name": "HSLink-LP-Top-Stencil.zip",
+      "bytes": 6531,
+      "sha256": "76abf3e04a99896be4864054dd0d66e582958ebd84e2db5ed328c35a39e8348d"
+    },
+    {
+      "name": "HSLink-LP-Prototype-2026-11-15.zip",
+      "bytes": 10467995,
+      "sha256": "6c3600b17c6665e3058fb901a96100cd48f9dd4910d2d1da7b78678dcebd5c37"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 23711,
+      "sha256": "be0f151b611fed595435576b15289ccadb01101ae87aa938e1e3b27e39be2987"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 539,
+      "sha256": "5b2eea3f4d94871aa3d1470aa80321301cebfd044f996c21b65b82cc2796e20b"
+    }
+  ],
+  "manifest_sha256": "be0f151b611fed595435576b15289ccadb01101ae87aa938e1e3b27e39be2987",
+  "source_sha256": {
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Cu.gbr": "178db575eb90861461a966befa686bc105500c4633eacaabe2b27b74d1477d67",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Mask.gbr": "802955a90d226186c3648c432e872da74b7483f85d422068604b275d86ee8cfb",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Paste.gbr": "a4424b955a6b09b3aa35a49c17b649f24e31c033f337dd250b80b7caed534a2d",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-B_Silkscreen.gbr": "fa197015452165dfb7b42e2c582a6bd7ebef9330391ffb633c99e7e2f0beaa13",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-Edge_Cuts.gbr": "00130049b014532d787ff94b637f8e6720b3b20fd96cdec5e6fb4b583bc4a755",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Cu.gbr": "15f278a7730856a541d90f853fcf90bd74c24bbe267e086b7e4a6f78365dbd9a",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Mask.gbr": "2c73580a3e5dd04ac3daedd5cfa799d5b6f2fce56f202b53e333e3e361e6f8bc",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Paste.gbr": "34aa6a4ee9dfe06bbd1e7268da7f97a7a884bb12bc1a6f26e46732a685a39368",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-F_Silkscreen.gbr": "8b3e6389362eb6f95e34e3c4b7d60a39202f0e7b7431969a0a2507780a60f2c8",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-In1_Cu.gbr": "9332213678d2f803ee799d58dbe1fe683105db537ebadcd680bccf750b37b73d",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-In2_Cu.gbr": "b729f1be60afbd76b9b2ce0224fdaf57a24c2dd9460ada5554bb7db7138bccfb",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-NPTH.drl": "c8fa8ed9686817a0e387a3bc6100c9fd82d7468fae6309ef548976c13d675b16",
+    "hardware/design/reports/manufacturing-review-2026-11-14/fabrication/HSLink-LP-PTH.drl": "aa5585e276081f251dd4b51998c95ba3afca595c0b1bf179fca2776d64d9da50",
+    "hardware/design/reports/stencil-2026-11-15/export/HSLink-LP-F_Paste.gbr": "e7a5cc20b28741dde6f7859d9830427e3da297edc4511d01f89a7f11a025228e",
+    "hardware/design/reports/stencil-2026-11-15/export/HSLink-LP-Edge_Cuts.gbr": "080c169d1fea8da781574e6c0cb93d169af8f7c1fa3d610d033962da73f0fd0f",
+    "hardware/design/reports/stencil-2026-11-15/README-stencil.txt": "75c4909c21d3f8d6240193fb917a0587d2e56a48a3f049e749a9429c78b3215f",
+    "hardware/design/mechanical/hslink_lp_base.step": "3042c20d10dbdb65992bf4d3f01c0954ce1e572f3cfb788e0789dd891dbeaa32",
+    "hardware/design/mechanical/hslink_lp_base.stl": "0b6b1e8503a039c5358848c8ba0bb548a74ea54a034539d628785f9459534b0e",
+    "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+    "hardware/design/mechanical/hslink_lp_lid.stl": "e95eaaa68f9ce5a7c134d9bf548cf063fd74e0db3dcf865da5fd98e08b39ea3c",
+    "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/CUT-HSLink-LP-lid-mm.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/GUIDE-HSLink-LP-panel-process.pdf": "b9025bcca08fa12017637c17ec8660c30a94098c2ef721f250a5b11cd34092ea",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/GUIDE-HSLink-LP-panel-process.png": "c7eae7a2f847ce3af3e7e9cb99dae0fef6be00c0b01e6d24089c283f61e3fdcf",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/PREVIEW-NOT-FOR-PRINT.png": "106c7b84229f2cb06c03e1b484030ddd60876669056896ba5e99db50f33dc6aa",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/PRINT-HSLink-LP-1to1.pdf": "1081ba12c9dbc565a7e60ddd330b9b98cadff2e39e8c97a4ef4309c14d8ada43",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/PRINT-HSLink-LP-outlined.svg": "257effb05c9a7af593e2b72018efed177e32f09b5978aa0fba4f32b72f92a129",
+    "hardware/design/reports/procurement-2026-11-14/HSLink-LP-panel-order/READ-ME.txt": "0051269e4f2772ddb6eca352f9bc4088f66c3f7a31ebf7e0af6d54a007b5e490",
+    "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/HSLink-LP-assembly.step": "4426e9296326f2adc6f35134dc1e991cbfb3539b516aedfa21ac2749977ffaac",
+    "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/HSLink-LP-assembly.glb": "c612d62049280fa69547a4935f533a005b2a08d0d48be4fdba0392e0b6ce6fd2",
+    "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/assembly-top.png": "629dfe10fb986944a3c650e17c10c0e99a625f44683004ee74578e43c34fb1d7",
+    "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/assembly-bottom.png": "e1bdd36804b1c79a91d1b2b0e297a2e5a2046b7fc7aee8ea968ab364c63270c7",
+    "hardware/design/mechanical/parameters.json": "5d2214ce91c7c19f37cc9261c13475313823fc629726736a45a531cb8294b276",
+    "hardware/bom/HSLink-LP-立创商城BOM.xlsx": "02d3be478e1405e9f94c969b63161b0680ec0f5ad5f75ad2ce69a794a40110d7",
+    "hardware/bom/mechanical.csv": "c1a1b5b0396c295e2e51f2863112ed5627b395ee7312e2d54543cc0500f0c7fa",
+    "hardware/bom/mechanical-quotes.json": "01c98a9e108d841c35d0955431ac7d103dedda6805f8f73accf521c093432ad1",
+    "hardware/bom/README.md": "cd1bba4b8fc40b813a2a39c15950bfbee79b018b9a6a654adad89f35cdb75509",
+    "hardware/bom/retail-procurement.json": "c1826df43aa2f17b470727e6687b2ce60ebf367caf106869161ea0711fc7bde6",
+    "hardware/design/reports/manufacturing-review-2026-11-14/manufacturing-readback.json": "f950e13f263b180feae7e275989479707db62bf98da5a27272ed97394035745b",
+    "hardware/design/reports/stencil-2026-11-15/readback.json": "3e61d75bf596649d2a79ae6188a492d6dcb201593d538c15a8812883c660d196",
+    "hardware/design/reports/retail-fasteners-2026-11-15/mechanical/mechanical-checks.json": "2767c0274b02c1a04c89f590125b9ae3f0a8c0a2c35bc827d9037dc0cd73ca13",
+    "hardware/validation.json": "cd8540f9db30a0cd0daa325caf5620b77c97cd270832ddcfb1457df7276a2413",
+    "hardware/design/UPSTREAM-LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "upstream.lock.json": "1325caffec12a6067fcd36cfbdd4ee9c63488ebd2b74e9b17cc9f2fba73c79a9",
+    "hardware/design/reports/manufacturing-review-2026-11-14/HSLink-LP-fabrication-review.zip": "5a024d13f3aee7a37942ea5eb637b5f409de91f760a126e6aaf83f9633ad6ac1",
+    "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+    "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+    "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+    "hardware/design/connectivity.json": "778af899f316f5fd3930c5640e3cd128f80ba5f43abe5bd5faaf887055484566",
+    "docs/requirements.md": "ea2eabf4bdb6f18bcc3135bba0096868f29b0b606f98804744c0adaf2a8a2869",
+    "hardware/design/mechanical/hslink_lp.py": "08ff6d1c86dedccb9620fa9121b93d0d793db82a3b19e2e6f54cfd8cf493060a",
+    "hardware/design/mechanical/panel_artwork.py": "fe9153b07e6a893d737382af3cb1d40d0f9e3f258eef8c8f8ba264aea9bbefe2",
+    "docs/test-points.md": "6ac5a5b92305bd688fb44e737f65b3f9f71d245a527898bb8636c80a80ae15d5",
+    "docs/arm20-interface.md": "70db699b3eadfeb7c349352299a400ba67bbf7c12e706d26f6e8f520e956b760",
+    "docs/electrical-margins.md": "61eda792217ca90e3b66b37ad36b3ac05858f762479ba5a3f48a8620b951ec71",
+    "docs/logic-gates.md": "bef41bdc20b623bd3f20914dc265e20799fa12748f8dbed8fb0810a6a1d6e6ae",
+    "docs/prefab-analysis.md": "06b074cb04d6881a36b5c23de35459560afb07ad79fb0dffd108993353dbc505"
+  },
+  "checks": {
+    "source_matches_recorded_validation": true,
+    "mechanical_source_matches": true,
+    "xlsx_unchanged": true,
+    "bom_types": 57,
+    "bom_components_per_board": 193,
+    "electronic_sets": 5,
+    "pcb_geometry_and_drill_files_unchanged": true,
+    "zip_crc": true
+  },
+  "files_count": 56,
+  "design_modified": false,
+  "hardware_validated": false
+}
