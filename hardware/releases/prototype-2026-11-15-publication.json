@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "tag": "prototype-2026-11-15",
+  "release_url": "https://github.com/sanchuanhehe/HSLink-LP/releases/tag/prototype-2026-11-15",
+  "release_id": 446002252,
+  "published_at": "2026-11-15T11:31:04Z",
+  "is_draft": false,
+  "is_prerelease": true,
+  "archive_tag_commit": "11060ac04a3ad8c20bb7469e794a88baef2da30d",
+  "checked_remote_main_commit": "11060ac04a3ad8c20bb7469e794a88baef2da30d",
+  "asset_count": 7,
+  "all_asset_sha256_match_server": true,
+  "downloaded_manifest_byte_identical": true,
+  "assets": [
+    {
+      "name": "HSLink-LP-BOM.zip",
+      "size": 32205,
+      "server_digest": "sha256:7149ac815a81891dc7bce5004e3a95de9db660aff49fefacd7675781c9964788",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/HSLink-LP-BOM.zip"
+    },
+    {
+      "name": "HSLink-LP-Mechanical.zip",
+      "size": 9539442,
+      "server_digest": "sha256:028a66500f0777a0f9476c5ff6322aedb7545cffa1ba611b3a9dbd93c630b6cc",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/HSLink-LP-Mechanical.zip"
+    },
+    {
+      "name": "HSLink-LP-PCB-Gerber.zip",
+      "size": 350592,
+      "server_digest": "sha256:b51718cdbe2536f7feb439cbfcaa14cbf821e5bf8407d31edd175a64757641fb",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/HSLink-LP-PCB-Gerber.zip"
+    },
+    {
+      "name": "HSLink-LP-Prototype-2026-11-15.zip",
+      "size": 10467995,
+      "server_digest": "sha256:6c3600b17c6665e3058fb901a96100cd48f9dd4910d2d1da7b78678dcebd5c37",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/HSLink-LP-Prototype-2026-11-15.zip"
+    },
+    {
+      "name": "HSLink-LP-Top-Stencil.zip",
+      "size": 6531,
+      "server_digest": "sha256:76abf3e04a99896be4864054dd0d66e582958ebd84e2db5ed328c35a39e8348d",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/HSLink-LP-Top-Stencil.zip"
+    },
+    {
+      "name": "manifest.json",
+      "size": 23711,
+      "server_digest": "sha256:be0f151b611fed595435576b15289ccadb01101ae87aa938e1e3b27e39be2987",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/manifest.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 539,
+      "server_digest": "sha256:5b2eea3f4d94871aa3d1470aa80321301cebfd044f996c21b65b82cc2796e20b",
+      "url": "https://github.com/sanchuanhehe/HSLink-LP/releases/download/prototype-2026-11-15/SHA256SUMS.txt"
+    }
+  ],
+  "note": "标签固定归档索引提交；本发布回执的后续提交只登记发布结果，不改变设计源或Release产物。"
+}

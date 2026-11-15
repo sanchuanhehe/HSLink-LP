@@ -11206,6 +11206,17 @@
     },
     "git_publication": "发布操作由tag/远端main和Release API记录核对；此记录在发布前生成，不把发布计划写成已发布",
     "design_modified": false,
-    "hardware_validated": false
+    "hardware_validated": false,
+    "publication": {
+      "release_url": "https://github.com/sanchuanhehe/HSLink-LP/releases/tag/prototype-2026-11-15",
+      "published_at": "2026-11-15T11:31:04Z",
+      "tag_commit": "11060ac04a3ad8c20bb7469e794a88baef2da30d",
+      "asset_count": 7,
+      "server_digest_matches_all_assets": true,
+      "downloaded_manifest_matches": true,
+      "receipt": "hardware/releases/prototype-2026-11-15-publication.json",
+      "receipt_sha256": "ce88d8e22fe5a034d02dc175d9021c94de69ebbf691aa26ece460e4cee8605dd",
+      "note": "main和标签在归档提交处已核对；发布回执的后续提交仅是记录。"
+    }
   }
 }
