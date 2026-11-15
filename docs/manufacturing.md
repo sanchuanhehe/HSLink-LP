@@ -166,3 +166,14 @@ FA使用完整型号作为商品编号，没有伪填立创C编号；上述价�
 底座/盖板单件与PCB几何不变，无需为此重传底座STL或盖板DXF。装配包络将下螺钉头高修为1.70mm，头至脚垫上表面剩**0.30mm**；下端3.9mm、上端3.5mm、两尖端4.6mm名义值保持。旧示意图0.35mm数字由本节覆盖。12mm铜柱长度公差与每端完整牙、打印孔/沉孔深度必须实测；标准螺纹M3×0.5，先扶柱轻紧，检查PCB/盖板不翘、螺钉不顶脚垫，禁止用扭矩压碎塑料或盖板。本轮无脚垫，拆卸底部螺钉无需揭垫；螺钉头相对外底面名义内缩2.5−1.7=0.8mm，实际沉孔/孔口与紧固仍需到货检查。
 
 本轮重跑更新包络的CAD装配/探针检查；PCB、原理图、pro/dru不改，沿用6e40551已记录检查：0一般DRC/0未连接，三颗与门与未改PCB有6项Value/Specification属性警告。不能称完整属性一致或硬件验收。最新证据在ignored `hardware/design/reports/retail-fasteners-2026-11-15`，源哈希见validation。
+
+
+## 2026-11-15 单独导出顶面钢网 Gerber
+
+当前PCB原生导出到ignored `hardware/design/reports/stencil-2026-11-15`，交付`HSLink-LP-top-stencil-gerber.zip`，只含`HSLink-LP-F_Paste.gbr`、`HSLink-LP-Edge_Cuts.gbr`与加工说明。板框仅作定位参考，不作为大开窗。毫米、1:1、不镜像，同一辅助原点(88,61)mm；板框中心线110×80mm。
+
+Gerbonara1.6.3独立回读：顶面682个Gerber图形、底面0个，板框8个图形；空B.Paste仅保留在报告作证据，不进入下单包。忽略生成日期后，三层与11月14日制造导出逐行一致。已人工查看实际Gerber渲染的顶面开口，ZIP解压/CRC与内容回读通过。PCB/pro/dru源哈希保持，未改开口、焊盘、布局、连接、约束或BOM；沿用对应源既有DRC/连接记录，不为纯导出重复ERC/DRC，也不宣称既有6项属性警告已关闭。
+
+复现：`kicad-cli pcb export gerbers --layers F.Paste,B.Paste,Edge.Cuts --use-drill-file-origin --precision 6 --no-protel-ext -o hardware/design/reports/stencil-2026-11-15/export/ hardware/design/HSLink-LP.kicad_pcb`。MCP当前未暴露Gerber导出调用，使用本机KiCad10.0.7原生命令，未重写PCB。源/产物哈希及检查摘要见`hardware/validation.json`。
+
+当前开口未经额外统一缩放；DSBGA等细间距器件的钢片厚度、脱模/开口优化与钢网边框规格仍需厂家CAM确认。本次是制造文件导出/回读，不代表钢网工艺、焊接良率或实板性能通过。

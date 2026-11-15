@@ -10997,5 +10997,90 @@
       "hardware/design/reports/foot-purchase-deferred-2026-11-15/readback.json": "b07e9ba1883d50f4fc94041da341eae70d568116d3d04069d5562b4d77dfef9f",
       "hardware/design/reports/foot-purchase-deferred-2026-11-15/prices.png": "9f54fa876251c2a07255a1d8add3ce964a88da01a943ba9e502d069c4c4932c8"
     }
+  },
+  "top_stencil_export_2026_11_15": {
+    "baseline_commit": "8235bd1",
+    "tool": "KiCad 10.0.7 native Gerber exporter; independent Gerbonara 1.6.3 readback",
+    "output_directory": "hardware/design/reports/stencil-2026-11-15",
+    "zip_contents": [
+      "HSLink-LP-F_Paste.gbr",
+      "HSLink-LP-Edge_Cuts.gbr",
+      "README-stencil.txt"
+    ],
+    "units": "mm",
+    "scale": 1,
+    "mirrored": false,
+    "pcb_outline_centerline_mm": [
+      110,
+      80
+    ],
+    "aux_origin_pcb_mm": [
+      88,
+      61
+    ],
+    "layers": {
+      "F_Paste": {
+        "objects": 682,
+        "bounding_box_mm": [
+          [
+            6.5,
+            -77.72500000000001
+          ],
+          [
+            107.1,
+            -0.45000000000000007
+          ]
+        ],
+        "sha256": "e7a5cc20b28741dde6f7859d9830427e3da297edc4511d01f89a7f11a025228e",
+        "geometry_matches_previous_export": true
+      },
+      "B_Paste": {
+        "objects": 0,
+        "bounding_box_mm": null,
+        "sha256": "40f135079d6848cd11bd3620dd1b38bfafde605eb0a006acc575a035f0e08e23",
+        "geometry_matches_previous_export": true
+      },
+      "Edge_Cuts": {
+        "objects": 8,
+        "bounding_box_mm": [
+          [
+            -0.05,
+            -80.05
+          ],
+          [
+            110.05,
+            0.05
+          ]
+        ],
+        "sha256": "080c169d1fea8da781574e6c0cb93d169af8f7c1fa3d610d033962da73f0fd0f",
+        "geometry_matches_previous_export": true
+      }
+    },
+    "checks": {
+      "zip_crc_and_content": true,
+      "actual_gerber_preview_reviewed": true,
+      "date_normalized_match_to_previous_export": true,
+      "source_unchanged": true,
+      "bottom_stencil_needed": false
+    },
+    "source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "docs/manufacturing.md": "32e899783de90b135820da34aa56db7f5351b89ea6325392e32bd38aca1525c4"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/stencil-2026-11-15/HSLink-LP-top-stencil-gerber.zip": "76abf3e04a99896be4864054dd0d66e582958ebd84e2db5ed328c35a39e8348d",
+      "hardware/design/reports/stencil-2026-11-15/readback.json": "3e61d75bf596649d2a79ae6188a492d6dcb201593d538c15a8812883c660d196",
+      "hardware/design/reports/stencil-2026-11-15/README-stencil.txt": "75c4909c21d3f8d6240193fb917a0587d2e56a48a3f049e749a9429c78b3215f",
+      "hardware/design/reports/stencil-2026-11-15/top-paste.svg": "a3d6d9efe530c1543a701095dfa4871f3ed7a8e392144d24dd07d2c5066b87a5",
+      "hardware/design/reports/stencil-2026-11-15/top-paste.png": "6fce1ef34aef5c9f3837bb90b87907b4a9871bfe0b40256140cfd1edaef93bf2"
+    },
+    "electrical_checks": "纯导出，源未改；沿用既有0一般DRC/0未连接和6项Value/Specification属性警告，未重复ERC/DRC",
+    "pending": [
+      "钢网厚度、边框/定位、细间距开口脱模与厂家CAM接受",
+      "实板印刷焊接与既有电气验收目标"
+    ],
+    "hardware_validated": false
   }
 }
