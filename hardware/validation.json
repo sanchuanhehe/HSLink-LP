@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "scope": "PCB布线/结构CAD与既有检查记录保留；本轮5套电子零售报价核对与金属紧固件/脚垫原材选型完成，含订货和自行裁切方案；全公差/实物装配、生产与电气性能未验收",
+  "scope": "PCB布线/结构CAD与既有检查记录保留；当前电子5套及金属紧固件采购核对完成，脚垫及原材按用户要求删除采购项；定制/运输和生产实板验收未完成",
   "checked_at": "2026-11-14T18:14:26.929690+08:00",
   "kicad_version": "10.0.7",
   "baseline_commit": "24e53096a7a186b45edc7951b1d461e6ced346c2",
@@ -10932,8 +10932,70 @@
     "electronic_sets": 5,
     "mechanical_sets_assumption": 1,
     "electronic_purchase_cny": 730.27,
-    "mechanical_purchase_cny": 35.29,
-    "known_purchase_subtotal_cny": 765.56,
-    "scope": "不含优惠重新核定、PCB、打印/切割/印刷、运费/自焊耗材；含订货和MOQ余料；未下单"
+    "mechanical_purchase_cny": 12.29,
+    "known_purchase_subtotal_cny": 742.56,
+    "scope": "不含优惠重新核定、PCB、打印/切割/印刷、运费/自焊耗材；含订货和MOQ余料；未下单",
+    "foot_purchase_deferred_by_user": true
+  },
+  "foot_purchase_deferred_2026_11_15": {
+    "baseline_commit": "2b8dc54dfc23d1c4b37b0e4d2a6c0982716cc480",
+    "user_decision": "脚垫先不采购；删除脚垫及原材采购项",
+    "removed_items": [
+      "FOOT",
+      "FOOT_RAW"
+    ],
+    "removed_purchase_cny": 23,
+    "mechanical_purchase_cny": 12.29,
+    "electronic_purchase_cny": 730.27,
+    "combined_known_purchase_cny": 742.56,
+    "scope": "不含PCB/打印/盖板及印刷/运输；现有报价快照不刷新",
+    "checks": {
+      "xlsx_readback": true,
+      "electronic_import_and_quote_sheets_unchanged": true,
+      "mechanical_rows": 7,
+      "metal_procurement_items": 4,
+      "foot_purchase_rows": 0,
+      "formula_errors": 0,
+      "rendered_views_reviewed": [
+        "Sheet2 A1:J10",
+        "Sheet2 K5:Q12",
+        "Sheet3 A15:B20"
+      ]
+    },
+    "unchanged_source_sha256": {
+      "hardware/design/HSLink-LP.kicad_pcb": "d619f93146bb323e5a8315bc513bc45ad4f83341e4e53c13e47b4aec415cc6bd",
+      "hardware/design/HSLink-LP.kicad_pro": "c0d82777e0dfa9d13597ed1a26a875be243440db186dcedb3d20285fe86034c9",
+      "hardware/design/HSLink-LP.kicad_dru": "6e09d80f16731d52a7838a6afc33612d88ed55c4e21dc12d97e1d8b544b5e8f5",
+      "hardware/design/Safety.kicad_sch": "198778f37e6809c5e018828518f9e2a6b8b5ad78bfdd2cc2ee34c0659f907edb",
+      "hardware/design/connectivity.json": "778af899f316f5fd3930c5640e3cd128f80ba5f43abe5bd5faaf887055484566",
+      "hardware/bom/candidates.csv": "c7d84f5248631b156281c21d6e235fdc113bfcc224371068aa679743f1096db0",
+      "hardware/bom/retail-procurement.json": "c1826df43aa2f17b470727e6687b2ce60ebf367caf106869161ea0711fc7bde6",
+      "hardware/design/mechanical/parameters.json": "5d2214ce91c7c19f37cc9261c13475313823fc629726736a45a531cb8294b276",
+      "hardware/design/mechanical/hslink_lp.py": "08ff6d1c86dedccb9620fa9121b93d0d793db82a3b19e2e6f54cfd8cf493060a",
+      "hardware/design/mechanical/hslink_lp_base.step": "3042c20d10dbdb65992bf4d3f01c0954ce1e572f3cfb788e0789dd891dbeaa32",
+      "hardware/design/mechanical/hslink_lp_base.stl": "0b6b1e8503a039c5358848c8ba0bb548a74ea54a034539d628785f9459534b0e",
+      "hardware/design/mechanical/hslink_lp_lid.step": "fabce0469361570ebf8b374f92b6aab7e0f4ef7205ddece9262537fe171fb77e",
+      "hardware/design/mechanical/hslink_lp_lid.dxf": "542d9102eed5a9ad7dd4f98014fff32b38ba636bac1da0904be6b491a6cf4768"
+    },
+    "mechanical_scope": "底座凹槽和旧脚垫预留包络保留；本轮不安装脚垫；未修改任何几何或电路，无需重复ERC/DRC/装配碰撞检查",
+    "hardware_validated": false,
+    "source_sha256": {
+      "docs/requirements.md": "ea2eabf4bdb6f18bcc3135bba0096868f29b0b606f98804744c0adaf2a8a2869",
+      "docs/cost.md": "84246bd2d00f20fa6e925c75a5181898d16954a36ffbf45dd8f51d6a6fbf40fb",
+      "docs/manufacturing.md": "8b7e7b8d5340607cd0873a36714cb1979d1ba005110f41c88126af2627380da6",
+      "hardware/bom/README.md": "cd1bba4b8fc40b813a2a39c15950bfbee79b018b9a6a654adad89f35cdb75509",
+      "hardware/bom/mechanical.csv": "c1a1b5b0396c295e2e51f2863112ed5627b395ee7312e2d54543cc0500f0c7fa",
+      "hardware/bom/mechanical-quotes.json": "01c98a9e108d841c35d0955431ac7d103dedda6805f8f73accf521c093432ad1",
+      "hardware/bom/cost-summary.json": "bc4ffb97e3fd999a92a8c448d97066e48daeee5f2849f828c279dd38ed7fadb5",
+      "hardware/bom/HSLink-LP-立创商城BOM.xlsx": "02d3be478e1405e9f94c969b63161b0680ec0f5ad5f75ad2ce69a794a40110d7",
+      "hardware/design/mechanical/README.md": "3501e676b52db1514218ccdea1c593d31c14f4375889824eb61ead36237de032"
+    },
+    "evidence_sha256": {
+      "hardware/design/reports/foot-purchase-deferred-2026-11-15/mechanical.png": "8016322d905d7e8b76880ce4de3336dd63ec6d3dae6d99515461e1e4d8c24b9c",
+      "hardware/design/reports/foot-purchase-deferred-2026-11-15/notes.png": "8c0582237803fd91dc0c3526c445804a69bb36f297f5ec4b69fca8063c61cfdb",
+      "hardware/design/reports/foot-purchase-deferred-2026-11-15/workbook-inspect.ndjson": "1c6f8b2ebfbea62b1da7a7fa342fad68489ef5ea8d1e7e44c8dc3469ba0daaf4",
+      "hardware/design/reports/foot-purchase-deferred-2026-11-15/readback.json": "b07e9ba1883d50f4fc94041da341eae70d568116d3d04069d5562b4d77dfef9f",
+      "hardware/design/reports/foot-purchase-deferred-2026-11-15/prices.png": "9f54fa876251c2a07255a1d8add3ce964a88da01a943ba9e502d069c4c4932c8"
+    }
   }
 }

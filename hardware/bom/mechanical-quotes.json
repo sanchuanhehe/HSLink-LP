@@ -63,7 +63,7 @@
       "moq": 100,
       "purchase_increment": null,
       "source_url": "https://www.jlcfa.com/serial/1211597773677.html?codeModel=EDLG-S1&productModel=EDLG-S1-M3-L12",
-      "status": "现货；ISO7380资料头高上限1.7mm；底座沉孔不改；有效牙/释放脚垫到货检查",
+      "status": "现货；ISO7380资料头高上限1.7mm；底座沉孔不改；有效牙/沉孔孔口到货检查；本轮不装脚垫",
       "retrieved_at": "2026-11-15",
       "line_total_cny": 3.81,
       "stock_reserved": false
@@ -88,35 +88,14 @@
       "retrieved_at": "2026-11-15",
       "line_total_cny": 1.95,
       "stock_reserved": false
-    },
-    {
-      "item": "FOOT_RAW",
-      "description": "乳白硅橡胶A50；自粘200×200×2mm；胶层0.14～0.20mm；裁4片供1台",
-      "quantity_per_unit": 1,
-      "quantity_current_batch": 1,
-      "brand": "嘉立创FA",
-      "mpn": "HJDC-R-Q-T2-A200-YJ",
-      "product_code": "HJDC-R-Q-T2-A200-YJ",
-      "supplier": "嘉立创FA",
-      "purchase_unit": "200×200mm整片",
-      "purchase_quantity": 1,
-      "unit_price_cny": 23,
-      "stock_snapshot": null,
-      "moq": 1,
-      "purchase_increment": null,
-      "source_url": "https://www.jlcfa.com/serial/2067754024206.html?codeModel=HJDC-R-Q&productModel=HJDC-R-Q-T2-A200-YJ",
-      "status": "非现货；订货约7～9工作日；需自行冲切，非现成圆脚垫；未核整板绝缘/胶接",
-      "retrieved_at": "2026-11-15",
-      "line_total_cny": 23.0,
-      "stock_reserved": false
     }
   ],
-  "cash_excluding_shipping_cny": 35.29,
+  "cash_excluding_shipping_cny": 12.29,
   "material_price_comparison": null,
   "notes": [
     "FA主表首列为未税，已选含税列；FA以完整型号为采购编号，不编造C编号",
-    "1片自粘硅胶原材足够本次；不能把整片价格再乘4",
-    "脚垫原材需订货/自行裁切，若必须现成且国内现货，此项仍未满足",
-    "没有底座、透明盖及运费报价，不能称完整结构总价"
-  ]
+    "用户2026-11-15明确脚垫先不采购：脚垫及原材从采购清单删除，不保留为待采购项",
+    "没有底座、透明盖及运费报价，12.29仅金属紧固件按MOQ小计，不是完整结构总价"
+  ],
+  "foot_purchase_deferred_by_user": true
 }

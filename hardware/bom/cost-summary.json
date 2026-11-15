@@ -281,7 +281,7 @@
     "combined_vio_r42_increase_vs_cad895d_batch_10_cny": 4.629
   },
   "mechanical": {
-    "status": "金属紧固件现货与脚垫订货原材已选；按1套准备，采购小计35.29；定制底座/盖板和运输未报价，不包含在历史板上/排线合计",
+    "status": "金属紧固件按MOQ已核12.29；用户暂不采购脚垫及原材；定制底座/盖板和运输未报价",
     "quantity_file": "hardware/bom/mechanical.csv",
     "per_unit_cny": null,
     "batch_10_cny": null,
@@ -292,7 +292,7 @@
     "electronic_bom_delta_this_layout_cny": 0,
     "price_snapshot_unchanged": "历史电子材料快照保持；当前结构采购件为2026-11-15单独零售场景",
     "current_quotes": "hardware/bom/mechanical-quotes.json",
-    "purchase_subset_for_one_prepared_structure_cny": 35.29
+    "purchase_subset_for_one_prepared_structure_cny": 12.29
   },
   "quoted_purchase_references": 193,
   "pcb_feature_references": 11,
@@ -354,8 +354,9 @@
     "original_quote_unexplained_header_delta_cny": 0.72,
     "coupon_reapplied": false,
     "mechanical_sets_assumption": 1,
-    "mechanical_purchase_excluding_custom_parts_shipping_cny": 35.29,
-    "combined_known_procurement_lines_cny": 765.56,
-    "status": "采购建议/原表核对；含订货项；未重新出单/锁价/付款；与上方10套混合台账独立"
+    "mechanical_purchase_excluding_custom_parts_shipping_cny": 12.29,
+    "combined_known_procurement_lines_cny": 742.56,
+    "status": "采购建议/原表核对；含订货项；未重新出单/锁价/付款；与上方10套混合台账独立",
+    "foot_purchase_deferred_by_user": true
   }
 }
